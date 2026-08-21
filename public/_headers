@@ -1,0 +1,10 @@
+# Cloudflare Pages / Netlify. Hashed build assets never change, so cache them
+# hard; HTML must revalidate so an hourly data refresh is picked up.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/brand/*
+  Cache-Control: public, max-age=86400
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate

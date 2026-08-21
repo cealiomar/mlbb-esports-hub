@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Home",
+    "regions": "Regions",
+    "matches": "Matches"
+  },
+  "home": {
+    "eyebrow": "The global MLBB arena",
+    "tagline": "Every region. Every match. One command center.",
+    "description": "Live fixtures, upcoming clashes and verified results across the competitive world of Mobile Legends.",
+    "explore": "Explore the schedule",
+    "allMatches": "View all matches",
+    "trackedMatches": "Matches tracked",
+    "activeRegions": "Active regions",
+    "recordedResults": "Recorded results",
+    "todayMatches": "Today's Matches",
+    "regions": "Regions",
+    "regionsDescription": "Jump into every active league, from Southeast Asia to MENA and beyond.",
+    "schedule": "The Schedule",
+    "scheduleDescription": "Kickoff times are shown in your local timezone.",
+    "liveNow": "{count} live now"
+  },
+  "matches": {
+    "upcoming": "Upcoming",
+    "completed": "Results",
+    "today": "Today",
+    "live": "Live",
+    "noMatches": "No matches scheduled",
+    "versus": "vs",
+    "bestOf": "Bo{count}",
+    "watch": "Watch live",
+    "matchTime": "Match time"
+  },
+  "region": {
+    "teams": "Teams",
+    "fixtures": "Fixtures",
+    "league": "League",
+    "live": "Live now",
+    "explore": "Explore region"
+  },
+  "team": {
+    "roster": "Roster",
+    "recentResults": "Recent Results",
+    "role": "Role"
+  },
+  "data": {
+    "attribution": "Match data from Liquipedia, licensed CC-BY-SA 3.0",
+    "delayed": "Data delayed",
+    "updated": "Updated {time}"
+  },
+  "footer": {
+    "developedBy": "Developed by",
+    "instagram": "Instagram",
+    "email": "Email"
+  },
+  "theme": {
+    "toggle": "Toggle color theme",
+    "light": "Use light mode",
+    "dark": "Use dark mode"
+  }
+}

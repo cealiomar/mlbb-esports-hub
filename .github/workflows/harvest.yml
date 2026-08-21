@@ -1,0 +1,46 @@
+name: Harvest Liquipedia
+
+on:
+  schedule:
+    # Hourly. Four action=parse calls per run, 30s apart — far inside
+    # Liquipedia's 1-per-30s ceiling, and fresh enough for a schedule site.
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: harvest
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Harvest
+        env:
+          RUN_INDEX: ${{ github.run_number }}
+        run: npm run harvest
+
+      - name: Commit snapshots
+        run: |
+          git config user.name  "mlbb-hub-bot"
+          git config user.email "bot@users.noreply.github.com"
+          # New team crests are downloaded during harvest and must ship with
+          # the snapshot. Omitting public/teams makes them break after deploy.
+          git add data/snapshots/matches.json data/snapshots/teams.json public/teams
+          if git diff --staged --quiet; then
+            echo "no data change"
+          else
+            git commit -m "chore: refresh Liquipedia snapshots"
+            git push
+          fi
