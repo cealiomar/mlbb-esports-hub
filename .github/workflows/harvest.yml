@@ -8,14 +8,22 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: harvest
+  # Share the Pages lock with deploy.yml so a scheduled refresh never races
+  # a deployment started by a normal push.
+  group: pages
   cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   harvest:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -44,3 +52,30 @@ jobs:
             git commit -m "chore: refresh Liquipedia snapshots"
             git push
           fi
+
+      # A push made with GITHUB_TOKEN deliberately does not start another
+      # workflow. Build and deploy here so every hourly refresh reaches the
+      # public site even when the snapshots changed.
+      - name: Work out the base path
+        id: base
+        run: |
+          if [ "${{ github.event.repository.name }}" = "${{ github.repository_owner }}.github.io" ]; then
+            echo "path=" >> "$GITHUB_OUTPUT"
+          else
+            echo "path=/${{ github.event.repository.name }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build refreshed site
+        env:
+          BASE_PATH: ${{ steps.base.outputs.path }}
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+      - name: Deploy refreshed site
+        id: deployment
+        uses: actions/deploy-pages@v4
