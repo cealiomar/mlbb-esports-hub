@@ -50,25 +50,47 @@ test('every team crest actually loads its pixels', async ({ page }) => {
   await page.goto('/en/matches/')
   await page.waitForLoadState('networkidle')
 
-  const report = await page.evaluate(async () => {
-    const imgs = Array.from(document.querySelectorAll<HTMLImageElement>('article img'))
-    await Promise.all(
-      imgs.map((i) =>
-        i.complete ? null : new Promise((r) => { i.onload = r; i.onerror = r }),
-      ),
-    )
+  const imgs = page.locator('article img')
+  const total = await imgs.count()
+  expect(total).toBeGreaterThan(0)
+
+  // Crests are intentionally lazy-loaded. Visit every card so the browser
+  // requests each real image before we inspect its decoded pixel width.
+  for (let index = 0; index < total; index++) {
+    const img = imgs.nth(index)
+    await img.scrollIntoViewIfNeeded()
+    await expect
+      .poll(() => img.evaluate((node) => (node as HTMLImageElement).naturalWidth))
+      .toBeGreaterThan(0)
+  }
+
+  const report = await imgs.evaluateAll((nodes) => {
+    const images = nodes as HTMLImageElement[]
     return {
-      total: imgs.length,
-      // naturalWidth is 0 for a broken image, however big the element is.
-      broken: imgs.filter((i) => i.naturalWidth === 0).map((i) => i.src),
-      remote: imgs
-        .filter((i) => new URL(i.src).origin !== location.origin)
-        .map((i) => i.src),
+      broken: images
+        .filter((node) => node.naturalWidth === 0)
+        .map((node) => node.src),
+      remote: images
+        .filter((node) => new URL(node.src).origin !== location.origin)
+        .map((node) => node.src),
     }
   })
 
-  expect(report.total).toBeGreaterThan(0)
   expect(report.broken).toEqual([])
   // Crests must be self-hosted; hotlinked ones 403 on a real domain.
   expect(report.remote).toEqual([])
+})
+
+test('layout stays contained across phone, tablet and desktop widths', async ({
+  page,
+}) => {
+  for (const width of [320, 390, 768, 1024, 1440]) {
+    await page.setViewportSize({ width, height: width < 600 ? 844 : 900 })
+    await page.goto('/en/matches/')
+    const overflow = await page.evaluate(
+      () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+    )
+    expect(overflow, `horizontal overflow at ${width}px`).toBeLessThanOrEqual(1)
+    await expect(page.locator('article').first()).toBeVisible()
+  }
 })

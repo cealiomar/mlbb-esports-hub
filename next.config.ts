@@ -12,6 +12,12 @@ const basePath = process.env.BASE_PATH ?? ''
 const nextConfig: NextConfig = {
   basePath,
   assetPrefix: basePath || undefined,
+  // Next applies basePath to its own chunks and links, but image URLs coming
+  // from harvested JSON are plain strings. Expose the path so shared asset
+  // helpers can prefix those URLs in both server and client components.
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 
   // The repo root, so Next does not walk up to a lockfile outside it.
   outputFileTracingRoot: import.meta.dirname,

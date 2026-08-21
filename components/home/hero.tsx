@@ -40,9 +40,10 @@ export function Hero({
         </div>
 
         <div
-          className="reveal mt-7"
+          className="hero-logo-stage reveal mt-7"
           style={{ '--reveal-delay': '80ms' } as React.CSSProperties}
         >
+          <span className="hero-logo-stage__halo" aria-hidden />
           <BrandMark width={430} priority className="hero-logo max-w-[72vw]" />
         </div>
 

@@ -6,6 +6,7 @@ import localFont from 'next/font/local'
 import { routing, isRtl } from '@/i18n/routing'
 import { Attribution } from '@/components/ui/attribution'
 import { Nav } from '@/components/layout/nav'
+import { SiteIntro } from '@/components/ui/site-intro'
 import '../globals.css'
 
 const display = localFont({
@@ -62,6 +63,7 @@ export default async function LocaleLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="grain flex min-h-screen flex-col">
+        <SiteIntro />
         <NextIntlClientProvider messages={messages}>
           <Nav locale={locale} />
           <div className="flex-1">{children}</div>

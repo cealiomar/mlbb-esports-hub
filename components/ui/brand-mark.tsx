@@ -1,4 +1,5 @@
 import { BRAND_LOGO } from '@/lib/content/brand'
+import { withBasePath } from '@/lib/assets'
 
 /**
  * The brand lockup. Rendered as a plain <img> because the asset is a local
@@ -17,12 +18,13 @@ export function BrandMark({
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={BRAND_LOGO.src}
+      src={withBasePath(BRAND_LOGO.src)}
       alt={BRAND_LOGO.alt}
       width={width}
       height={Math.round(width / BRAND_LOGO.aspect)}
       loading={priority ? 'eager' : 'lazy'}
       fetchPriority={priority ? 'high' : undefined}
+      data-brand-mark
       className={className}
       style={{ width, height: 'auto' }}
     />

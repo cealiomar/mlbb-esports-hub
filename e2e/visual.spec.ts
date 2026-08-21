@@ -11,7 +11,7 @@ test('captures desktop pages', async ({ page }) => {
     ['matches-ar', '/ar/matches/'],
   ] as const) {
     await page.goto(path)
-    await page.waitForTimeout(1400)
+    await page.waitForTimeout(2400)
     await page.screenshot({ path: `e2e/shots/${name}.png` })
   }
 })
@@ -24,7 +24,7 @@ test('captures mobile pages', async ({ page }) => {
     ['m-home-ar', '/ar/'],
   ] as const) {
     await page.goto(path)
-    await page.waitForTimeout(1400)
+    await page.waitForTimeout(2400)
     await page.screenshot({ path: `e2e/shots/${name}.png` })
   }
 })
@@ -32,7 +32,12 @@ test('captures mobile pages', async ({ page }) => {
 test('captures the dark glass theme', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('mlbb-theme', 'dark'))
   await page.setViewportSize({ width: 1440, height: 900 })
-  await page.goto('/en/')
-  await page.waitForTimeout(900)
-  await page.screenshot({ path: 'e2e/shots/home-dark.png' })
+  for (const [name, path] of [
+    ['home-dark', '/en/'],
+    ['matches-dark', '/en/matches/'],
+  ] as const) {
+    await page.goto(path)
+    await page.waitForTimeout(2400)
+    await page.screenshot({ path: `e2e/shots/${name}.png` })
+  }
 })
