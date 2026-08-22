@@ -1,65 +1,62 @@
 {
-  "harvestedAt": 1787419231,
+  "harvestedAt": 1787423454,
   "data": [
     {
-      "id": "1787403600-betboom-rise-of-legends-season-10-playoffs-yndx-ts",
-      "startsAt": 1787403600,
+      "id": "1787428800-adt-south-season-2-imp-drbr",
+      "startsAt": 1787428800,
       "status": "upcoming",
-      "bestOf": 7,
+      "bestOf": 5,
       "opponents": [
         {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "code": "IMP",
+          "name": "Imperio",
+          "pageSlug": "Imperio",
+          "logoUrl": "/teams/52px-Imperio_darkmode-9e6acb0e.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "TS",
-          "name": "Team Spirit",
-          "pageSlug": "Team_Spirit",
-          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
+          "code": "DRBR",
+          "name": "Dragon Empire BR",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": null,
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S10 - Playoffs",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_10/Playoffs",
-      "regionSlug": "cis",
+      "tournamentName": "ADT South S2",
+      "tournamentPageSlug": "ADT/South/Season_2",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
     {
-      "id": "1787403600-mpl-indonesia-season-18-regular-season-onic-rrq",
-      "startsAt": 1787403600,
-      "status": "live",
-      "bestOf": 3,
+      "id": "1787434200-adt-north-season-1-gmx-rto",
+      "startsAt": 1787434200,
+      "status": "upcoming",
+      "bestOf": 5,
       "opponents": [
         {
-          "code": "ONIC",
-          "name": "ONIC",
-          "pageSlug": "ONIC",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 1,
+          "code": "GMX",
+          "name": "GMX Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/71px-GMX_Gaming_allmode-fd98123a.png",
+          "score": null,
           "isWinner": false
         },
         {
-          "code": "RRQ",
-          "name": "RRQ Hoshi",
-          "pageSlug": "RRQ_Hoshi",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": 0,
+          "code": "RTO",
+          "name": "Retaliation",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
           "isWinner": false
         }
       ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
-      ],
+      "tournamentName": "ADT North S1",
+      "tournamentPageSlug": "ADT/North/Season_1",
+      "regionSlug": null,
+      "streamUrls": [],
       "vodUrls": []
     },
     {
@@ -1455,6 +1452,35 @@
       "vodUrls": []
     },
     {
+      "id": "1787403600-betboom-rise-of-legends-season-10-playoffs-yndx-ts",
+      "startsAt": 1787403600,
+      "status": "completed",
+      "bestOf": 7,
+      "opponents": [
+        {
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "TS",
+          "name": "Team Spirit",
+          "pageSlug": "Team_Spirit",
+          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
+          "score": 4,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S10 - Playoffs",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_10/Playoffs",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787403600-league-of-champions-tournament-season-7-playoffs-zino-df",
       "startsAt": 1787403600,
       "status": "completed",
@@ -1480,6 +1506,35 @@
       "tournamentName": "LOC S7 2026",
       "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787403600-mpl-indonesia-season-18-regular-season-onic-rrq",
+      "startsAt": 1787403600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ONIC",
+          "name": "ONIC",
+          "pageSlug": "ONIC",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "RRQ",
+          "name": "RRQ Hoshi",
+          "pageSlug": "RRQ_Hoshi",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2877,64 +2932,6 @@
           "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
           "score": 2,
           "isWinner": true
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Closed Qualifier - Round 1",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786957200-mlbb-continental-championships-season-8-closed-qualifier-inv-omnx",
-      "startsAt": 1786957200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "INV",
-          "name": "INVISION",
-          "pageSlug": "",
-          "logoUrl": "/teams/42px-INVISION_darkmode-563830fd.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "OMNX",
-          "name": "Omnix",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Closed Qualifier - Round 1",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786957200-mlbb-continental-championships-season-8-closed-qualifier-rkz-akla",
-      "startsAt": 1786957200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RKZ",
-          "name": "RAKUZAN",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "AKLA",
-          "name": "AKEOLA Academy",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
         }
       ],
       "tournamentName": "MCC Season 8 - Closed Qualifier - Round 1",
