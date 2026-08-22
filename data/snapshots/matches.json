@@ -1,41 +1,10 @@
 {
-  "harvestedAt": 1787373150,
+  "harvestedAt": 1787380779,
   "data": [
-    {
-      "id": "1787374800-mpl-cambodia-season-11-qualifier-rvz-ibs",
-      "startsAt": 1787374800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RVZ",
-          "name": "Team RVZ (page does not exist)",
-          "pageSlug": "index.php?title=Team_RVZ&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "IBS",
-          "name": "Team IBS (page does not exist)",
-          "pageSlug": "index.php?title=Team_IBS&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL KH S11 Qual.",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
-      "regionSlug": "cambodia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
-      ]
-    },
     {
       "id": "1787378400-mpl-philippines-season-18-regular-season-apbr-twph",
       "startsAt": 1787378400,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -43,7 +12,7 @@
           "name": "AP.Bren",
           "pageSlug": "AP.Bren",
           "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -51,7 +20,7 @@
           "name": "Twisted Minds PH",
           "pageSlug": "Twisted_Minds_PH",
           "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -89,7 +58,10 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ]
     },
     {
       "id": "1787382000-mpl-cambodia-season-11-qualifier-ne-ts",
@@ -117,7 +89,10 @@
       "tournamentName": "MPL KH S11 Qual.",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ]
     },
     {
       "id": "1787382000-mpl-indonesia-season-18-regular-season-tlid-evos",
@@ -145,7 +120,10 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ]
     },
     {
       "id": "1787387400-league-of-champions-tournament-season-7-playoffs-zino-fw",
@@ -173,7 +151,10 @@
       "tournamentName": "LOC S7 2026",
       "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/@atom-mm",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/ATOMLetsPlayArena"
+      ]
     },
     {
       "id": "1787389200-betboom-rise-of-legends-season-10-playoffs-ts-ch",
@@ -456,16 +437,16 @@
       "streamUrls": []
     },
     {
-      "id": "1787464800-mpl-cambodia-season-11-qualifier-tbd-tbd",
+      "id": "1787464800-mpl-cambodia-season-11-qualifier-rvz-tbd",
       "startsAt": 1787464800,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "RVZ",
+          "name": "Team RVZ (page does not exist)",
+          "pageSlug": "index.php?title=Team_RVZ&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
           "score": null,
           "isWinner": false
         },
@@ -1408,6 +1389,62 @@
       "streamUrls": []
     },
     {
+      "id": "1788080400-mpl-malaysia-season-18-regular-season-rrqt-ac",
+      "startsAt": 1788080400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RRQT",
+          "name": "RRQ Tora",
+          "pageSlug": "RRQ_Tora",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "AC",
+          "name": "AC Esports",
+          "pageSlug": "AC_Esports",
+          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": []
+    },
+    {
+      "id": "1787375700-mpl-cambodia-season-11-qualifier-rvz-ibs",
+      "startsAt": 1787375700,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RVZ",
+          "name": "Team RVZ (page does not exist)",
+          "pageSlug": "index.php?title=Team_RVZ&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "IBS",
+          "name": "Team IBS (page does not exist)",
+          "pageSlug": "index.php?title=Team_IBS&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL KH S11 Qual.",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
+      "regionSlug": "cambodia",
+      "streamUrls": []
+    },
+    {
       "id": "1787358600-adt-north-season-1-nopa-rto",
       "startsAt": 1787358600,
       "status": "completed",
@@ -1460,6 +1497,62 @@
       ],
       "tournamentName": "ADT North S1",
       "tournamentPageSlug": "ADT/North/Season_1",
+      "regionSlug": null,
+      "streamUrls": []
+    },
+    {
+      "id": "1787347800-adt-south-season-2-gn-drbr",
+      "startsAt": 1787347800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "GN",
+          "name": "General Rain (page does not exist)",
+          "pageSlug": "index.php?title=General_Rain&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "DRBR",
+          "name": "Dragon Empire BR (page does not exist)",
+          "pageSlug": "index.php?title=Dragon_Empire_BR&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "ADT South S2",
+      "tournamentPageSlug": "ADT/South/Season_2",
+      "regionSlug": null,
+      "streamUrls": []
+    },
+    {
+      "id": "1787342400-adt-south-season-2-imp-fs",
+      "startsAt": 1787342400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "IMP",
+          "name": "Imperio",
+          "pageSlug": "Imperio",
+          "logoUrl": "/teams/52px-Imperio_darkmode-9e6acb0e.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "FS",
+          "name": "Fénix Squad (page does not exist)",
+          "pageSlug": "index.php?title=Fénix_Squad&action=edit&redlink=1",
+          "logoUrl": "/teams/40px-F_C3_AAnix_Squad_allmode-3bda7d2d.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "ADT South S2",
+      "tournamentPageSlug": "ADT/South/Season_2",
       "regionSlug": null,
       "streamUrls": []
     },
@@ -2695,90 +2788,6 @@
       "tournamentName": "Esports Nations Cup 2026 - Europe West Qualifier",
       "tournamentPageSlug": "Esports_Nations_Cup/2026/Europe_West",
       "regionSlug": null,
-      "streamUrls": []
-    },
-    {
-      "id": "1786888800-esports-nations-cup-2026-mena-jor-mar",
-      "startsAt": 1786888800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "JOR",
-          "name": "Team Jordan (page does not exist)",
-          "pageSlug": "index.php?title=Team_Jordan&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_Jordan_4_by_3-6d789992.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "MAR",
-          "name": "Team Morocco (page does not exist)",
-          "pageSlug": "index.php?title=Team_Morocco&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_Morocco_4_by_3-c1df7939.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Esports Nations Cup 2026 - MENA Qualifier",
-      "tournamentPageSlug": "Esports_Nations_Cup/2026/MENA",
-      "regionSlug": null,
-      "streamUrls": []
-    },
-    {
-      "id": "1786888800-vietnam-mlbb-championship-2026-fall-open-qualifier-afo-got",
-      "startsAt": 1786888800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AFO",
-          "name": "AFO SQ (page does not exist)",
-          "pageSlug": "index.php?title=AFO_SQ&action=edit&redlink=1",
-          "logoUrl": "/teams/46px-AFO_SQ_allmode-c9573158.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "GOT",
-          "name": "God of Thunder (page does not exist)",
-          "pageSlug": "index.php?title=God_of_Thunder&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-God_of_Thunder_MLBB_darkmode-9d2aea16.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "VMC Fall 2026 - Open Qualifier - Group C",
-      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Open_Qualifier",
-      "regionSlug": "vietnam",
-      "streamUrls": []
-    },
-    {
-      "id": "1786888800-vietnam-mlbb-championship-2026-fall-open-qualifier-vrs-fro",
-      "startsAt": 1786888800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "VRS",
-          "name": "Viruss Slayer (page does not exist)",
-          "pageSlug": "index.php?title=Viruss_Slayer&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "FRO",
-          "name": "Fruity Robo (page does not exist)",
-          "pageSlug": "index.php?title=Fruity_Robo&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "VMC Fall 2026 - Open Qualifier - Group C",
-      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Open_Qualifier",
-      "regionSlug": "vietnam",
       "streamUrls": []
     },
     {
