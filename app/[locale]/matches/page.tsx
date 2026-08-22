@@ -7,10 +7,13 @@ import {
   upcomingMatches,
   recentResults,
 } from '@/lib/matches/select'
-import { MatchList } from '@/components/matches/match-list'
+import { getRegions } from '@/lib/content/regions'
+import {
+  MatchExplorer,
+  type MatchExplorerGroup,
+} from '@/components/matches/match-explorer'
 import { FreshnessBadge } from '@/components/ui/freshness-badge'
 import { SectionHeader } from '@/components/ui/section-header'
-import { Tabs } from '@/components/ui/tabs'
 import { routing } from '@/i18n/routing'
 import { BUILD_UNIX_TIME } from '@/lib/time/build'
 
@@ -40,34 +43,30 @@ export default async function MatchesPage({
 
   const live = liveMatches(all)
 
-  const tabs = [
+  const tabs: MatchExplorerGroup[] = [
     ...(live.length > 0
       ? [
           {
-            id: 'live',
+            id: 'live' as const,
             label: t('live'),
-            count: live.length,
-            content: <MatchList matches={live} />,
+            matches: live,
           },
         ]
       : []),
     {
-      id: 'today',
+      id: 'today' as const,
       label: t('today'),
-      count: todayMatches(all, now).length,
-      content: <MatchList matches={todayMatches(all, now)} />,
+      matches: todayMatches(all, now),
     },
     {
-      id: 'upcoming',
+      id: 'upcoming' as const,
       label: t('upcoming'),
-      count: upcomingMatches(all, now).length,
-      content: <MatchList matches={upcomingMatches(all, now)} />,
+      matches: upcomingMatches(all, now),
     },
     {
-      id: 'results',
+      id: 'results' as const,
       label: t('completed'),
-      count: recentResults(all, 24).length,
-      content: <MatchList matches={recentResults(all, 24)} />,
+      matches: recentResults(all, 60),
     },
   ]
 
@@ -76,9 +75,11 @@ export default async function MatchesPage({
       <SectionHeader
         as="h1"
         title={tn('matches')}
+        eyebrow={t('commandEyebrow')}
+        description={t('commandDescription')}
         meta={<FreshnessBadge harvestedAt={await source.getFreshness()} />}
       />
-      <Tabs items={tabs} />
+      <MatchExplorer groups={tabs} regions={getRegions()} />
     </main>
   )
 }

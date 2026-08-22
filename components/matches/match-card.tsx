@@ -8,18 +8,20 @@ import { TeamCrest } from './team-crest'
 function Side({
   side,
   showScore,
+  compact,
 }: {
   side: MatchOpponent
   showScore: boolean
+  compact: boolean
 }) {
   const dimmed = showScore && !side.isWinner
 
   return (
     <div className="match-side depth-layer flex min-w-0 flex-1 flex-col items-center text-center">
-      <span className="crest-stage">
-        <TeamCrest team={side} size={54} />
+      <span className={`crest-stage ${compact ? 'crest-stage--compact' : ''}`}>
+        <TeamCrest team={side} size={compact ? 42 : 54} />
       </span>
-      <div className="mt-3 min-w-0 max-w-full">
+      <div className={`${compact ? 'mt-2' : 'mt-3'} min-w-0 max-w-full`}>
         <p
           className={`truncate text-base leading-tight font-extrabold transition-colors ${
             dimmed ? 'text-[var(--ink-muted)]' : 'text-[var(--ink)]'
@@ -50,7 +52,13 @@ function Score({ match }: { match: Match }) {
   )
 }
 
-export function MatchCard({ match }: { match: Match }) {
+export function MatchCard({
+  match,
+  compact = false,
+}: {
+  match: Match
+  compact?: boolean
+}) {
   const t = useTranslations('matches')
   const format = useFormatter()
   const locale = useLocale()
@@ -63,7 +71,9 @@ export function MatchCard({ match }: { match: Match }) {
 
   return (
     <TiltCard className="h-full">
-      <article className="panel match-card flex h-full min-h-[320px] flex-col overflow-hidden p-4 sm:p-5">
+      <article className={`panel match-card flex h-full flex-col overflow-hidden p-4 ${
+        compact ? 'match-card--compact min-h-[230px]' : 'min-h-[320px] sm:p-5'
+      }`}>
         <div className="depth-layer flex items-start justify-between gap-3">
           <div className="min-w-0">
             {region && (
@@ -98,8 +108,8 @@ export function MatchCard({ match }: { match: Match }) {
           )}
         </div>
 
-        <div className="my-auto grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 py-6">
-          <Side side={match.opponents[0]} showScore={scored} />
+        <div className={`my-auto grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 ${compact ? 'py-3' : 'py-6'}`}>
+          <Side side={match.opponents[0]} showScore={scored} compact={compact} />
 
           {scored ? (
             <Score match={match} />
@@ -109,7 +119,7 @@ export function MatchCard({ match }: { match: Match }) {
             </span>
           )}
 
-          <Side side={match.opponents[1]} showScore={scored} />
+          <Side side={match.opponents[1]} showScore={scored} compact={compact} />
         </div>
 
         <div className="depth-layer mt-auto flex min-h-8 items-center justify-between gap-2 border-t border-[var(--line)] pt-3">

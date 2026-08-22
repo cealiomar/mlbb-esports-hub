@@ -60,6 +60,63 @@ test('tabs work in RTL', async ({ page }) => {
     .toBeLessThan(6)
 })
 
+test('the pro match center filters by team and replay availability', async ({
+  page,
+}) => {
+  await page.goto('/en/matches/')
+  await page.getByRole('tab', { name: /Today/ }).click()
+
+  const panel = page.getByRole('tabpanel')
+  const beforeSearch = await panel.locator('article').count()
+  const firstTeam = await panel.locator('.match-side p').first().innerText()
+  await page.getByRole('searchbox', { name: 'Search matches' }).fill(firstTeam)
+
+  const afterSearch = await panel.locator('article').count()
+  expect(afterSearch).toBeGreaterThan(0)
+  expect(afterSearch).toBeLessThanOrEqual(beforeSearch)
+  await expect(panel).toContainText(firstTeam)
+
+  await page.getByRole('button', { name: 'Clear filters' }).click()
+  await page.getByRole('tab', { name: /Results/ }).click()
+  const allResults = await panel.locator('article').count()
+  await page.getByRole('button', { name: 'Stream / VOD' }).click()
+  const replayResults = await panel.locator('article').count()
+
+  expect(replayResults).toBeGreaterThan(0)
+  expect(replayResults).toBeLessThanOrEqual(allResults)
+  await expect(page.getByRole('link', { name: 'Rewatch' })).toHaveCount(replayResults)
+})
+
+test('the pro match center offers compact and full card views', async ({
+  page,
+}) => {
+  await page.goto('/en/matches/')
+  await expect(page.getByRole('button', { name: 'Compact view' })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  )
+  await expect(page.locator('.match-card--compact').first()).toBeVisible()
+
+  await page.getByRole('button', { name: 'Card view' }).click()
+  await expect(page.getByRole('button', { name: 'Card view' })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  )
+  await expect(page.locator('.match-card--compact')).toHaveCount(0)
+})
+
+test('all match status tabs fit on a phone without page overflow', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/en/matches/')
+
+  const lastTab = page.getByRole('tab').last()
+  const box = await lastTab.boundingBox()
+  expect((box?.x ?? 400) + (box?.width ?? 0)).toBeLessThanOrEqual(390)
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390)
+})
+
 test('no globe canvas remains anywhere', async ({ page }) => {
   for (const route of ['/en/', '/en/matches/', '/en/regions/philippines/']) {
     await page.goto(route)
