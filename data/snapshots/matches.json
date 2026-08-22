@@ -1,37 +1,6 @@
 {
-  "harvestedAt": 1787383922,
+  "harvestedAt": 1787387416,
   "data": [
-    {
-      "id": "1787378400-mpl-philippines-season-18-regular-season-apbr-twph",
-      "startsAt": 1787378400,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "APBR",
-          "name": "AP.Bren",
-          "pageSlug": "AP.Bren",
-          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TWPH",
-          "name": "Twisted Minds PH",
-          "pageSlug": "Twisted_Minds_PH",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
-      ]
-    },
     {
       "id": "1787380200-mpl-malaysia-season-18-regular-season-rey-vms",
       "startsAt": 1787380200,
@@ -51,7 +20,7 @@
           "name": "Team Vamos",
           "pageSlug": "Team_Vamos",
           "logoUrl": "/teams/43px-Team_Vamos_darkmode-af6ed226.png",
-          "score": 0,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -82,7 +51,7 @@
           "name": "Torb Srouch (page does not exist)",
           "pageSlug": "index.php?title=Torb_Srouch&action=edit&redlink=1",
           "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": 0,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -97,7 +66,7 @@
     {
       "id": "1787382000-mpl-indonesia-season-18-regular-season-tlid-evos",
       "startsAt": 1787382000,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -105,7 +74,7 @@
           "name": "Team Liquid ID",
           "pageSlug": "Team_Liquid_ID",
           "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -113,7 +82,7 @@
           "name": "EVOS",
           "pageSlug": "EVOS",
           "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -303,6 +272,37 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ]
+    },
+    {
+      "id": "1787394600-league-of-champions-tournament-season-7-playoffs-df-av",
+      "startsAt": 1787394600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "DF",
+          "name": "D Family (page does not exist)",
+          "pageSlug": "index.php?title=D_Family&action=edit&redlink=1",
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "AV",
+          "name": "Astro Vex (page does not exist)",
+          "pageSlug": "index.php?title=Astro_Vex&action=edit&redlink=1",
+          "logoUrl": "/teams/72px-Astrov_darkmode-7d7e8305.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "LOC S7 2026",
+      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
+      "regionSlug": null,
       "streamUrls": []
     },
     {
@@ -1423,6 +1423,34 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
+      "streamUrls": []
+    },
+    {
+      "id": "1787378400-mpl-philippines-season-18-regular-season-apbr-twph",
+      "startsAt": 1787378400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "APBR",
+          "name": "AP.Bren",
+          "pageSlug": "AP.Bren",
+          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "TWPH",
+          "name": "Twisted Minds PH",
+          "pageSlug": "Twisted_Minds_PH",
+          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
       "streamUrls": []
     },
     {
@@ -2796,34 +2824,6 @@
       ],
       "tournamentName": "Esports Nations Cup 2026 - Europe West Qualifier",
       "tournamentPageSlug": "Esports_Nations_Cup/2026/Europe_West",
-      "regionSlug": null,
-      "streamUrls": []
-    },
-    {
-      "id": "1786888800-esports-nations-cup-2026-eeca-pol-ukr",
-      "startsAt": 1786888800,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "POL",
-          "name": "Team Poland (page does not exist)",
-          "pageSlug": "index.php?title=Team_Poland&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_Poland_4_by_3-018ac62f.png",
-          "score": 2,
-          "isWinner": false
-        },
-        {
-          "code": "UKR",
-          "name": "Team Ukraine (page does not exist)",
-          "pageSlug": "index.php?title=Team_Ukraine&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_Ukraine_4_by_3-8f6c7639.png",
-          "score": 3,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "Esports Nations Cup 2026 - EECA Qualifier",
-      "tournamentPageSlug": "Esports_Nations_Cup/2026/EECA",
       "regionSlug": null,
       "streamUrls": []
     }
