@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787380779,
+  "harvestedAt": 1787383922,
   "data": [
     {
       "id": "1787378400-mpl-philippines-season-18-regular-season-apbr-twph",
@@ -20,7 +20,7 @@
           "name": "Twisted Minds PH",
           "pageSlug": "Twisted_Minds_PH",
           "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": 0,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -35,7 +35,7 @@
     {
       "id": "1787380200-mpl-malaysia-season-18-regular-season-rey-vms",
       "startsAt": 1787380200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -43,7 +43,7 @@
           "name": "Team Rey",
           "pageSlug": "Team_Rey",
           "logoUrl": "/teams/34px-Team_Rey_allmode-d5112b3a.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -51,7 +51,7 @@
           "name": "Team Vamos",
           "pageSlug": "Team_Vamos",
           "logoUrl": "/teams/43px-Team_Vamos_darkmode-af6ed226.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -66,7 +66,7 @@
     {
       "id": "1787382000-mpl-cambodia-season-11-qualifier-ne-ts",
       "startsAt": 1787382000,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -74,7 +74,7 @@
           "name": "Nova Eclipse (page does not exist)",
           "pageSlug": "index.php?title=Nova_Eclipse&action=edit&redlink=1",
           "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -82,7 +82,7 @@
           "name": "Torb Srouch (page does not exist)",
           "pageSlug": "index.php?title=Torb_Srouch&action=edit&redlink=1",
           "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -210,7 +210,10 @@
       "tournamentName": "MPL KH S11 Qual.",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ]
     },
     {
       "id": "1787389200-mpl-malaysia-season-18-regular-season-ac-ig",
@@ -238,7 +241,10 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ]
     },
     {
       "id": "1787389200-mpl-philippines-season-18-regular-season-omg-tlph",
@@ -266,7 +272,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ]
     },
     {
       "id": "1787392800-mpl-indonesia-season-18-regular-season-navi-geek",
