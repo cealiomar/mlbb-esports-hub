@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787370116,
+  "harvestedAt": 1787373150,
   "data": [
     {
       "id": "1787374800-mpl-cambodia-season-11-qualifier-rvz-ibs",
@@ -58,7 +58,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ]
     },
     {
       "id": "1787380200-mpl-malaysia-season-18-regular-season-rey-vms",
@@ -1405,6 +1408,62 @@
       "streamUrls": []
     },
     {
+      "id": "1787358600-adt-north-season-1-nopa-rto",
+      "startsAt": 1787358600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "NOPA",
+          "name": "Nopa Esports (page does not exist)",
+          "pageSlug": "index.php?title=Nopa_Esports&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "RTO",
+          "name": "Retaliation (page does not exist)",
+          "pageSlug": "index.php?title=Retaliation&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "ADT North S1",
+      "tournamentPageSlug": "ADT/North/Season_1",
+      "regionSlug": null,
+      "streamUrls": []
+    },
+    {
+      "id": "1787353200-adt-north-season-1-gmx-b2g",
+      "startsAt": 1787353200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "GMX",
+          "name": "GMX Esports (page does not exist)",
+          "pageSlug": "index.php?title=GMX_Esports&action=edit&redlink=1",
+          "logoUrl": "/teams/71px-GMX_Gaming_allmode-fd98123a.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "B2G",
+          "name": "Deportivo B2G (page does not exist)",
+          "pageSlug": "index.php?title=Deportivo_B2G&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "ADT North S1",
+      "tournamentPageSlug": "ADT/North/Season_1",
+      "regionSlug": null,
+      "streamUrls": []
+    },
+    {
       "id": "1787314500-mpl-malaysia-season-18-regular-season-btrm-srg",
       "startsAt": 1787314500,
       "status": "completed",
@@ -2718,62 +2777,6 @@
         }
       ],
       "tournamentName": "VMC Fall 2026 - Open Qualifier - Group C",
-      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Open_Qualifier",
-      "regionSlug": "vietnam",
-      "streamUrls": []
-    },
-    {
-      "id": "1786888800-vietnam-mlbb-championship-2026-fall-open-qualifier-ape-ares",
-      "startsAt": 1786888800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "APE",
-          "name": "Aurora Petals (page does not exist)",
-          "pageSlug": "index.php?title=Aurora_Petals&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "ARES",
-          "name": "Ares (Vietnamese Team) (page does not exist)",
-          "pageSlug": "index.php?title=Ares_(Vietnamese_Team)&action=edit&redlink=1",
-          "logoUrl": "/teams/61px-Ares__28Vietnamese_Team_29_darkmode-00b565bd.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "VMC Fall 2026 - Open Qualifier - Group D",
-      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Open_Qualifier",
-      "regionSlug": "vietnam",
-      "streamUrls": []
-    },
-    {
-      "id": "1786888800-vietnam-mlbb-championship-2026-fall-open-qualifier-vgz-clw",
-      "startsAt": 1786888800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "VGZ",
-          "name": "Vie Gangz (page does not exist)",
-          "pageSlug": "index.php?title=Vie_Gangz&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "CLW",
-          "name": "Cupid's Last Wish (page does not exist)",
-          "pageSlug": "index.php?title=Cupid's_Last_Wish&action=edit&redlink=1",
-          "logoUrl": "/teams/64px-Cupid_27s_Last_Wish_full_allmode-8ffc481e.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "VMC Fall 2026 - Open Qualifier - Group D",
       "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Open_Qualifier",
       "regionSlug": "vietnam",
       "streamUrls": []
