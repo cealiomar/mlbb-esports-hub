@@ -1,37 +1,6 @@
 {
-  "harvestedAt": 1787390797,
+  "harvestedAt": 1787394203,
   "data": [
-    {
-      "id": "1787387400-league-of-champions-tournament-season-7-playoffs-zino-fw",
-      "startsAt": 1787387400,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "ZINO",
-          "name": "Zino Esports",
-          "pageSlug": "Zino_Esports",
-          "logoUrl": "/teams/43px-Zino_Esports_2026_allmode-c2ef6c21.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "FW",
-          "name": "Fantastic Warriors (page does not exist)",
-          "pageSlug": "index.php?title=Fantastic_Warriors&action=edit&redlink=1",
-          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "LOC S7 2026",
-      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/@atom-mm",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/ATOMLetsPlayArena"
-      ]
-    },
     {
       "id": "1787389200-betboom-rise-of-legends-season-10-playoffs-ts-ch",
       "startsAt": 1787389200,
@@ -61,40 +30,9 @@
       "streamUrls": []
     },
     {
-      "id": "1787389200-mpl-cambodia-season-11-qualifier-tnr-mg",
-      "startsAt": 1787389200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TNR",
-          "name": "TNR Esports (page does not exist)",
-          "pageSlug": "index.php?title=TNR_Esports&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "MG",
-          "name": "MCC GM (page does not exist)",
-          "pageSlug": "index.php?title=MCC_GM&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL KH S11 Qual.",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
-      "regionSlug": "cambodia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
-      ]
-    },
-    {
       "id": "1787389200-mpl-malaysia-season-18-regular-season-ac-ig",
       "startsAt": 1787389200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -102,7 +40,7 @@
           "name": "AC Esports",
           "pageSlug": "AC_Esports",
           "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -110,7 +48,7 @@
           "name": "Invictus Gaming",
           "pageSlug": "Invictus_Gaming",
           "logoUrl": "/teams/50px-Invictus_Gaming_darkmode-12a6d5dd.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -120,37 +58,6 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
-      ]
-    },
-    {
-      "id": "1787389200-mpl-philippines-season-18-regular-season-omg-tlph",
-      "startsAt": 1787389200,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "OMG",
-          "name": "Omega Esports",
-          "pageSlug": "Omega_Esports",
-          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TLPH",
-          "name": "Team Liquid PH",
-          "pageSlug": "Team_Liquid_PH",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
       ]
     },
     {
@@ -188,7 +95,7 @@
       "id": "1787394600-league-of-champions-tournament-season-7-playoffs-df-av",
       "startsAt": 1787394600,
       "status": "upcoming",
-      "bestOf": 5,
+      "bestOf": 3,
       "opponents": [
         {
           "code": "DF",
@@ -272,7 +179,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ]
     },
     {
       "id": "1787400900-mpl-malaysia-season-18-regular-season-btrm-rrqt",
@@ -1420,6 +1330,174 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
+      "streamUrls": []
+    },
+    {
+      "id": "1788094800-mpl-indonesia-season-18-regular-season-tlid-ae",
+      "startsAt": 1788094800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TLID",
+          "name": "Team Liquid ID",
+          "pageSlug": "Team_Liquid_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "AE",
+          "name": "Alter Ego",
+          "pageSlug": "Alter_Ego",
+          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": []
+    },
+    {
+      "id": "1788508800-mpl-indonesia-season-18-regular-season-navi-dewa",
+      "startsAt": 1788508800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "NAVI",
+          "name": "Natus Vincere",
+          "pageSlug": "Natus_Vincere",
+          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "DEWA",
+          "name": "Dewa United Esports",
+          "pageSlug": "Dewa_United_Esports",
+          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": []
+    },
+    {
+      "id": "1788512400-mpl-malaysia-season-18-regular-season-ac-fl",
+      "startsAt": 1788512400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AC",
+          "name": "AC Esports",
+          "pageSlug": "AC_Esports",
+          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "FL",
+          "name": "Team Flash",
+          "pageSlug": "Team_Flash",
+          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": []
+    },
+    {
+      "id": "1787389200-mpl-cambodia-season-11-qualifier-tnr-mg",
+      "startsAt": 1787389200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TNR",
+          "name": "TNR Esports (page does not exist)",
+          "pageSlug": "index.php?title=TNR_Esports&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "MG",
+          "name": "MCC GM (page does not exist)",
+          "pageSlug": "index.php?title=MCC_GM&action=edit&redlink=1",
+          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL KH S11 Qual.",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
+      "regionSlug": "cambodia",
+      "streamUrls": []
+    },
+    {
+      "id": "1787389200-mpl-philippines-season-18-regular-season-omg-tlph",
+      "startsAt": 1787389200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OMG",
+          "name": "Omega Esports",
+          "pageSlug": "Omega_Esports",
+          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "TLPH",
+          "name": "Team Liquid PH",
+          "pageSlug": "Team_Liquid_PH",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": []
+    },
+    {
+      "id": "1787387400-league-of-champions-tournament-season-7-playoffs-zino-fw",
+      "startsAt": 1787387400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ZINO",
+          "name": "Zino Esports",
+          "pageSlug": "Zino_Esports",
+          "logoUrl": "/teams/43px-Zino_Esports_2026_allmode-c2ef6c21.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "FW",
+          "name": "Fantastic Warriors (page does not exist)",
+          "pageSlug": "index.php?title=Fantastic_Warriors&action=edit&redlink=1",
+          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "LOC S7 2026",
+      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
+      "regionSlug": null,
       "streamUrls": []
     },
     {
@@ -2737,90 +2815,6 @@
       ],
       "tournamentName": "Esports Nations Cup 2026 - Central and West Africa Qualifier",
       "tournamentPageSlug": "Esports_Nations_Cup/2026/Central_and_West_Africa",
-      "regionSlug": null,
-      "streamUrls": []
-    },
-    {
-      "id": "1786899600-esports-nations-cup-2026-europe-west-ita-fra",
-      "startsAt": 1786899600,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "ITA",
-          "name": "Team Italy (page does not exist)",
-          "pageSlug": "index.php?title=Team_Italy&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_Italy_4_by_3-e749ca75.png",
-          "score": 2,
-          "isWinner": false
-        },
-        {
-          "code": "FRA",
-          "name": "Team France (page does not exist)",
-          "pageSlug": "index.php?title=Team_France&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_France_4_by_3-94e3144a.png",
-          "score": 3,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "Esports Nations Cup 2026 - Europe West Qualifier",
-      "tournamentPageSlug": "Esports_Nations_Cup/2026/Europe_West",
-      "regionSlug": null,
-      "streamUrls": []
-    },
-    {
-      "id": "1786896000-esports-nations-cup-2026-mena-mar-iri",
-      "startsAt": 1786896000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "MAR",
-          "name": "Team Morocco (page does not exist)",
-          "pageSlug": "index.php?title=Team_Morocco&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_Morocco_4_by_3-c1df7939.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "IRI",
-          "name": "Iran (page does not exist)",
-          "pageSlug": "index.php?title=Iran&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_Iran_4_by_3-bb684821.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Esports Nations Cup 2026 - MENA Qualifier",
-      "tournamentPageSlug": "Esports_Nations_Cup/2026/MENA",
-      "regionSlug": null,
-      "streamUrls": []
-    },
-    {
-      "id": "1786896000-esports-nations-cup-2026-north-america-ven-pan",
-      "startsAt": 1786896000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "VEN",
-          "name": "Team Venezuela (page does not exist)",
-          "pageSlug": "index.php?title=Team_Venezuela&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_Venezuela_4_by_3-33eaec2d.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "PAN",
-          "name": "Team Panama (page does not exist)",
-          "pageSlug": "index.php?title=Team_Panama&action=edit&redlink=1",
-          "logoUrl": "/teams/67px-Flag_of_Panama_4_by_3-105c50cd.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Esports Nations Cup 2026 - North America Qualifier",
-      "tournamentPageSlug": "Esports_Nations_Cup/2026/North_America",
       "regionSlug": null,
       "streamUrls": []
     }
