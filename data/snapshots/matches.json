@@ -1,38 +1,6 @@
 {
-  "harvestedAt": 1787405518,
+  "harvestedAt": 1787412057,
   "data": [
-    {
-      "id": "1787400900-mpl-malaysia-season-18-regular-season-btrm-rrqt",
-      "startsAt": 1787400900,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BTRM",
-          "name": "Bigetron MY by VIT",
-          "pageSlug": "Bigetron_MY_by_VIT",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "RRQT",
-          "name": "RRQ Tora",
-          "pageSlug": "RRQ_Tora",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1787403600-betboom-rise-of-legends-season-10-playoffs-yndx-ts",
       "startsAt": 1787403600,
@@ -63,41 +31,9 @@
       "vodUrls": []
     },
     {
-      "id": "1787403600-league-of-champions-tournament-season-7-playoffs-zino-df",
-      "startsAt": 1787403600,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ZINO",
-          "name": "Zino Esports",
-          "pageSlug": "Zino_Esports",
-          "logoUrl": "/teams/43px-Zino_Esports_2026_allmode-c2ef6c21.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "DF",
-          "name": "D Family",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "LOC S7 2026",
-      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/@atom-mm",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/ATOMLetsPlayArena"
-      ],
-      "vodUrls": []
-    },
-    {
       "id": "1787403600-mpl-indonesia-season-18-regular-season-onic-rrq",
       "startsAt": 1787403600,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -105,7 +41,7 @@
           "name": "ONIC",
           "pageSlug": "ONIC",
           "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -113,7 +49,7 @@
           "name": "RRQ Hoshi",
           "pageSlug": "RRQ_Hoshi",
           "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -239,35 +175,6 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787475600-mpl-cambodia-season-11-qualifier-tbd-tbd",
-      "startsAt": 1787475600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL KH S11 Qual.",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
-      "regionSlug": "cambodia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1455,6 +1362,151 @@
         }
       ],
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788589800-mpl-malaysia-season-18-regular-season-fl-rrqt",
+      "startsAt": 1788589800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FL",
+          "name": "Team Flash",
+          "pageSlug": "Team_Flash",
+          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RRQT",
+          "name": "RRQ Tora",
+          "pageSlug": "RRQ_Tora",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788589800-mpl-philippines-season-18-regular-season-omg-apbr",
+      "startsAt": 1788589800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OMG",
+          "name": "Omega Esports",
+          "pageSlug": "Omega_Esports",
+          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "APBR",
+          "name": "AP.Bren",
+          "pageSlug": "AP.Bren",
+          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788591600-mpl-indonesia-season-18-regular-season-dewa-onic",
+      "startsAt": 1788591600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DEWA",
+          "name": "Dewa United Esports",
+          "pageSlug": "Dewa_United_Esports",
+          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "ONIC",
+          "name": "ONIC",
+          "pageSlug": "ONIC",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787403600-league-of-champions-tournament-season-7-playoffs-zino-df",
+      "startsAt": 1787403600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ZINO",
+          "name": "Zino Esports",
+          "pageSlug": "Zino_Esports",
+          "logoUrl": "/teams/43px-Zino_Esports_2026_allmode-c2ef6c21.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "DF",
+          "name": "D Family",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "LOC S7 2026",
+      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787400900-mpl-malaysia-season-18-regular-season-btrm-rrqt",
+      "startsAt": 1787400900,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BTRM",
+          "name": "Bigetron MY by VIT",
+          "pageSlug": "Bigetron_MY_by_VIT",
+          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "RRQT",
+          "name": "RRQ Tora",
+          "pageSlug": "RRQ_Tora",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
       "streamUrls": [],
@@ -2888,64 +2940,6 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - Round 1",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786953600-league-of-champions-tournament-season-7-swiss-stage-fw-mib",
-      "startsAt": 1786953600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FW",
-          "name": "Fantastic Warriors",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "MiB",
-          "name": "Made in Burma",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Made_in_Burma_darkmode-4d815773.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "LOC S7 2026 - Mid (1-1)",
-      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786951800-mdl-indonesia-season-14-regular-season-evs-trix",
-      "startsAt": 1786951800,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "EVS",
-          "name": "EVOS Icon",
-          "pageSlug": "EVOS_Icon",
-          "logoUrl": "/teams/52px-EVOS_Icon_allmode-efec0f78.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "TRIX",
-          "name": "Ixon TRB",
-          "pageSlug": "",
-          "logoUrl": "/teams/39px-Ixon_TRB_allmode-32c3cc79.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 2",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     }
