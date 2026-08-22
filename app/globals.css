@@ -1485,7 +1485,20 @@ html[data-theme='dark'] .panel {
   transition: transform 0.28s ease, color 0.28s ease, border-color 0.28s ease, background-color 0.28s ease;
 }
 
+.coffee-link {
+  color: var(--brand-ink);
+  background: linear-gradient(120deg, var(--brand), #ffd16b 52%, var(--brand-hot));
+  background-size: 180% 100%;
+  box-shadow: 0 12px 30px -17px var(--brand-hot);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background-position 0.4s ease;
+}
+
 @media (hover: hover) {
+  .coffee-link:hover {
+    transform: translateY(-3px);
+    background-position: 100% 0;
+    box-shadow: 0 18px 38px -18px var(--brand-hot);
+  }
   .chip:hover {
     transform: translateY(-3px);
     border-color: color-mix(in srgb, var(--brand) 48%, var(--line));

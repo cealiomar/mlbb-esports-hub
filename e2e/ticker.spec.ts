@@ -59,11 +59,21 @@ test('the footer credits the developer with working links', async ({ page }) => 
   await expect(
     page.getByRole('link', { name: 'cealiomar@gmail.com' }),
   ).toHaveAttribute('href', 'mailto:cealiomar@gmail.com')
+
+  const coffee = page.getByRole('link', { name: 'Buy me a coffee' })
+  await expect(coffee).toHaveAttribute(
+    'href',
+    'https://www.paypal.com/paypalme/cealiomar?locale.x=en_US',
+  )
+  await expect(coffee).toHaveAttribute('target', '_blank')
 })
 
 test('the credit is present in Arabic too', async ({ page }) => {
   await page.goto('/ar/')
   await expect(
     page.getByRole('link', { name: 'cealiomar@gmail.com' }),
+  ).toBeVisible()
+  await expect(
+    page.getByRole('link', { name: 'ادعمني بكوباية قهوة' }),
   ).toBeVisible()
 })

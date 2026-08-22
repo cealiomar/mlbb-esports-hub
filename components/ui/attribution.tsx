@@ -36,6 +36,25 @@ function MailIcon() {
   )
 }
 
+function CoffeeIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="17"
+      height="17"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M5 8h12v5.5A4.5 4.5 0 0 1 12.5 18h-3A4.5 4.5 0 0 1 5 13.5V8Z" />
+      <path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M4 21h15M8 3v2M12 3v2M16 3v2" />
+    </svg>
+  )
+}
+
 export function Attribution() {
   const t = useTranslations('data')
   const tf = useTranslations('footer')
@@ -56,6 +75,15 @@ export function Attribution() {
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3">
+          <a
+            href={AUTHOR.paypal}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="coffee-link flex min-h-[44px] items-center gap-2 rounded-full px-5 text-[var(--step--1)] font-extrabold"
+          >
+            <CoffeeIcon />
+            {tf('buyMeCoffee')}
+          </a>
           <a
             href={AUTHOR.instagram}
             target="_blank"
