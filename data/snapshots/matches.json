@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787394203,
+  "harvestedAt": 1787396413,
   "data": [
     {
       "id": "1787389200-betboom-rise-of-legends-season-10-playoffs-ts-ch",
@@ -27,7 +27,8 @@
       "tournamentName": "BetBoom Rise of Legends S10 - Playoffs",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_10/Playoffs",
       "regionSlug": "cis",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787389200-mpl-malaysia-season-18-regular-season-ac-ig",
@@ -58,12 +59,13 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
-      ]
+      ],
+      "vodUrls": []
     },
     {
       "id": "1787392800-mpl-indonesia-season-18-regular-season-navi-geek",
       "startsAt": 1787392800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -71,7 +73,7 @@
           "name": "Natus Vincere",
           "pageSlug": "Natus_Vincere",
           "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -79,7 +81,7 @@
           "name": "Geek Fam ID",
           "pageSlug": "Geek_Fam_ID",
           "logoUrl": "/teams/43px-Geek_Fam_2019_allmode-1e9b1f3c.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -89,28 +91,29 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
-      ]
+      ],
+      "vodUrls": []
     },
     {
       "id": "1787394600-league-of-champions-tournament-season-7-playoffs-df-av",
       "startsAt": 1787394600,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
           "code": "DF",
-          "name": "D Family (page does not exist)",
-          "pageSlug": "index.php?title=D_Family&action=edit&redlink=1",
+          "name": "D Family",
+          "pageSlug": "",
           "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
           "code": "AV",
-          "name": "Astro Vex (page does not exist)",
-          "pageSlug": "index.php?title=Astro_Vex&action=edit&redlink=1",
+          "name": "Astro Vex",
+          "pageSlug": "",
           "logoUrl": "/teams/72px-Astrov_darkmode-7d7e8305.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -120,7 +123,8 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/@atom-mm",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/ATOMLetsPlayArena"
-      ]
+      ],
+      "vodUrls": []
     },
     {
       "id": "1787396400-mpl-cambodia-season-11-qualifier-sys-tfg",
@@ -138,9 +142,9 @@
         },
         {
           "code": "TFG",
-          "name": "Team From Gaming (page does not exist)",
-          "pageSlug": "index.php?title=Team_From_Gaming&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Team From Gaming",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": null,
           "isWinner": false
         }
@@ -151,7 +155,8 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
-      ]
+      ],
+      "vodUrls": []
     },
     {
       "id": "1787398200-mpl-philippines-season-18-regular-season-flcp-tnc",
@@ -182,7 +187,8 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
-      ]
+      ],
+      "vodUrls": []
     },
     {
       "id": "1787400900-mpl-malaysia-season-18-regular-season-btrm-rrqt",
@@ -210,7 +216,11 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
+      "vodUrls": []
     },
     {
       "id": "1787403600-betboom-rise-of-legends-season-10-playoffs-yndx-tbd",
@@ -220,8 +230,8 @@
       "opponents": [
         {
           "code": "YNDX",
-          "name": "Team Yandex (page does not exist)",
-          "pageSlug": "index.php?title=Team_Yandex&action=edit&redlink=1",
+          "name": "Team Yandex",
+          "pageSlug": "",
           "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
           "score": null,
           "isWinner": false
@@ -238,7 +248,8 @@
       "tournamentName": "BetBoom Rise of Legends S10 - Playoffs",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_10/Playoffs",
       "regionSlug": "cis",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787403600-mpl-indonesia-season-18-regular-season-onic-rrq",
@@ -266,7 +277,11 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
+      "vodUrls": []
     },
     {
       "id": "1787464800-mpl-cambodia-season-11-qualifier-rvz-ne",
@@ -276,17 +291,17 @@
       "opponents": [
         {
           "code": "RVZ",
-          "name": "Team RVZ (page does not exist)",
-          "pageSlug": "index.php?title=Team_RVZ&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Team RVZ",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": null,
           "isWinner": false
         },
         {
           "code": "NE",
-          "name": "Nova Eclipse (page does not exist)",
-          "pageSlug": "index.php?title=Nova_Eclipse&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Nova Eclipse",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": null,
           "isWinner": false
         }
@@ -294,7 +309,8 @@
       "tournamentName": "MPL KH S11 Qual.",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787466600-mpl-malaysia-season-18-regular-season-rey-ac",
@@ -322,7 +338,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787468400-mpl-indonesia-season-18-regular-season-dewa-ae",
@@ -350,17 +367,18 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
-      "id": "1787475600-mpl-cambodia-season-11-qualifier-tbd-tbd",
+      "id": "1787475600-mpl-cambodia-season-11-qualifier-tnr-tbd",
       "startsAt": 1787475600,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "TNR",
+          "name": "TNR Esports",
           "pageSlug": "",
           "logoUrl": null,
           "score": null,
@@ -378,7 +396,8 @@
       "tournamentName": "MPL KH S11 Qual.",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787475600-mpl-malaysia-season-18-regular-season-fl-srg",
@@ -406,7 +425,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787475600-mpl-philippines-season-18-regular-season-onph-apbr",
@@ -434,7 +454,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787479200-mpl-indonesia-season-18-regular-season-onic-btr",
@@ -462,7 +483,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787484600-mpl-philippines-season-18-regular-season-tnc-rora",
@@ -490,7 +512,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787490000-mpl-indonesia-season-18-regular-season-geek-evos",
@@ -518,7 +541,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787763600-queen-legends-season-4-playoffs-wbg-etw",
@@ -536,8 +560,8 @@
         },
         {
           "code": "ETW",
-          "name": "Earth Empress (page does not exist)",
-          "pageSlug": "index.php?title=Earth_Empress&action=edit&redlink=1",
+          "name": "Earth Empress",
+          "pageSlug": "",
           "logoUrl": "/teams/43px-Earth_Empress_allmode-a358464e.png",
           "score": null,
           "isWinner": false
@@ -546,7 +570,8 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787763600-queen-legends-season-4-playoffs-eye-vac",
@@ -556,16 +581,16 @@
       "opponents": [
         {
           "code": "EYE",
-          "name": "Evil Eye Serenity (page does not exist)",
-          "pageSlug": "index.php?title=Evil_Eye_Serenity&action=edit&redlink=1",
+          "name": "Evil Eye Serenity",
+          "pageSlug": "",
           "logoUrl": "/teams/68px-Evil_Eye_Serenity_2025_allmode-fddc0f58.png",
           "score": null,
           "isWinner": false
         },
         {
           "code": "VAC",
-          "name": "Vanguard Scarlet (page does not exist)",
-          "pageSlug": "index.php?title=Vanguard_Scarlet&action=edit&redlink=1",
+          "name": "Vanguard Scarlet",
+          "pageSlug": "",
           "logoUrl": "/teams/44px-Vanguard_Scarlet_allmode-36c2fd0d.png",
           "score": null,
           "isWinner": false
@@ -574,7 +599,8 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787850000-queen-legends-season-4-playoffs-val-tbd",
@@ -584,8 +610,8 @@
       "opponents": [
         {
           "code": "Val",
-          "name": "Valhalla Valkyries (page does not exist)",
-          "pageSlug": "index.php?title=Valhalla_Valkyries&action=edit&redlink=1",
+          "name": "Valhalla Valkyries",
+          "pageSlug": "",
           "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
           "score": null,
           "isWinner": false
@@ -602,7 +628,8 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787850000-queen-legends-season-4-playoffs-gxp-tbd",
@@ -630,7 +657,8 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787904000-mpl-indonesia-season-18-regular-season-btr-navi",
@@ -658,7 +686,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787907600-mpl-malaysia-season-18-regular-season-btrm-rey",
@@ -686,7 +715,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787907600-mpl-philippines-season-18-regular-season-apbr-tlph",
@@ -714,7 +744,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787914800-mpl-indonesia-season-18-regular-season-dewa-geek",
@@ -742,7 +773,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787916600-mpl-philippines-season-18-regular-season-twph-onph",
@@ -770,7 +802,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787919300-mpl-malaysia-season-18-regular-season-vms-rrqt",
@@ -798,7 +831,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787936400-queen-legends-season-4-playoffs-tbd-tbd",
@@ -826,7 +860,8 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787936400-queen-legends-season-4-playoffs-tbd-tbd-2",
@@ -854,7 +889,8 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787985000-mpl-malaysia-season-18-regular-season-fl-rey",
@@ -882,7 +918,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787985000-mpl-philippines-season-18-regular-season-apbr-tnc",
@@ -910,7 +947,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787986800-mpl-indonesia-season-18-regular-season-tlid-onic",
@@ -938,7 +976,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787994000-mpl-malaysia-season-18-regular-season-btrm-vms",
@@ -966,7 +1005,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787994000-mpl-philippines-season-18-regular-season-omg-flcp",
@@ -994,7 +1034,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787997600-mpl-indonesia-season-18-regular-season-ae-evos",
@@ -1022,7 +1063,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788003000-mpl-philippines-season-18-regular-season-tlph-rora",
@@ -1050,7 +1092,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788005700-mpl-malaysia-season-18-regular-season-srg-ac",
@@ -1078,7 +1121,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788008400-mpl-indonesia-season-18-regular-season-rrq-btr",
@@ -1106,7 +1150,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788022800-queen-legends-season-4-playoffs-tbd-tbd",
@@ -1134,7 +1179,8 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788022800-queen-legends-season-4-playoffs-tbd-tbd-2",
@@ -1162,7 +1208,8 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788071400-mpl-malaysia-season-18-regular-season-ig-fl",
@@ -1190,7 +1237,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788073200-mpl-indonesia-season-18-regular-season-navi-onic",
@@ -1218,7 +1266,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788080400-mpl-malaysia-season-18-regular-season-rrqt-ac",
@@ -1246,7 +1295,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788080400-mpl-philippines-season-18-regular-season-twph-flcp",
@@ -1274,7 +1324,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788084000-mpl-indonesia-season-18-regular-season-geek-rrq",
@@ -1302,7 +1353,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788089400-mpl-philippines-season-18-regular-season-onph-omg",
@@ -1330,7 +1382,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788094800-mpl-indonesia-season-18-regular-season-tlid-ae",
@@ -1358,7 +1411,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788508800-mpl-indonesia-season-18-regular-season-navi-dewa",
@@ -1386,7 +1440,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1788512400-mpl-malaysia-season-18-regular-season-ac-fl",
@@ -1414,7 +1469,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787389200-mpl-cambodia-season-11-qualifier-tnr-mg",
@@ -1424,17 +1480,17 @@
       "opponents": [
         {
           "code": "TNR",
-          "name": "TNR Esports (page does not exist)",
-          "pageSlug": "index.php?title=TNR_Esports&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "TNR Esports",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         },
         {
           "code": "MG",
-          "name": "MCC GM (page does not exist)",
-          "pageSlug": "index.php?title=MCC_GM&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "MCC GM",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 0,
           "isWinner": false
         }
@@ -1442,7 +1498,8 @@
       "tournamentName": "MPL KH S11 Qual.",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787389200-mpl-philippines-season-18-regular-season-omg-tlph",
@@ -1470,7 +1527,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787387400-league-of-champions-tournament-season-7-playoffs-zino-fw",
@@ -1488,8 +1546,8 @@
         },
         {
           "code": "FW",
-          "name": "Fantastic Warriors (page does not exist)",
-          "pageSlug": "index.php?title=Fantastic_Warriors&action=edit&redlink=1",
+          "name": "Fantastic Warriors",
+          "pageSlug": "",
           "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
           "score": 1,
           "isWinner": false
@@ -1498,7 +1556,8 @@
       "tournamentName": "LOC S7 2026",
       "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787382000-mpl-cambodia-season-11-qualifier-ne-ts",
@@ -1508,17 +1567,17 @@
       "opponents": [
         {
           "code": "NE",
-          "name": "Nova Eclipse (page does not exist)",
-          "pageSlug": "index.php?title=Nova_Eclipse&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Nova Eclipse",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         },
         {
           "code": "TS",
-          "name": "Torb Srouch (page does not exist)",
-          "pageSlug": "index.php?title=Torb_Srouch&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Torb Srouch",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 1,
           "isWinner": false
         }
@@ -1526,7 +1585,8 @@
       "tournamentName": "MPL KH S11 Qual.",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787382000-mpl-indonesia-season-18-regular-season-tlid-evos",
@@ -1554,7 +1614,8 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787380200-mpl-malaysia-season-18-regular-season-rey-vms",
@@ -1582,7 +1643,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787378400-mpl-philippines-season-18-regular-season-apbr-twph",
@@ -1610,7 +1672,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787375700-mpl-cambodia-season-11-qualifier-rvz-ibs",
@@ -1620,17 +1683,17 @@
       "opponents": [
         {
           "code": "RVZ",
-          "name": "Team RVZ (page does not exist)",
-          "pageSlug": "index.php?title=Team_RVZ&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Team RVZ",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         },
         {
           "code": "IBS",
-          "name": "Team IBS (page does not exist)",
-          "pageSlug": "index.php?title=Team_IBS&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Team IBS",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 0,
           "isWinner": false
         }
@@ -1638,7 +1701,8 @@
       "tournamentName": "MPL KH S11 Qual.",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787358600-adt-north-season-1-nopa-rto",
@@ -1648,17 +1712,17 @@
       "opponents": [
         {
           "code": "NOPA",
-          "name": "Nopa Esports (page does not exist)",
-          "pageSlug": "index.php?title=Nopa_Esports&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Nopa Esports",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         },
         {
           "code": "RTO",
-          "name": "Retaliation (page does not exist)",
-          "pageSlug": "index.php?title=Retaliation&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Retaliation",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 1,
           "isWinner": false
         }
@@ -1666,7 +1730,8 @@
       "tournamentName": "ADT North S1",
       "tournamentPageSlug": "ADT/North/Season_1",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787353200-adt-north-season-1-gmx-b2g",
@@ -1676,17 +1741,17 @@
       "opponents": [
         {
           "code": "GMX",
-          "name": "GMX Esports (page does not exist)",
-          "pageSlug": "index.php?title=GMX_Esports&action=edit&redlink=1",
+          "name": "GMX Esports",
+          "pageSlug": "",
           "logoUrl": "/teams/71px-GMX_Gaming_allmode-fd98123a.png",
           "score": 0,
           "isWinner": false
         },
         {
           "code": "B2G",
-          "name": "Deportivo B2G (page does not exist)",
-          "pageSlug": "index.php?title=Deportivo_B2G&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Deportivo B2G",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         }
@@ -1694,7 +1759,8 @@
       "tournamentName": "ADT North S1",
       "tournamentPageSlug": "ADT/North/Season_1",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787347800-adt-south-season-2-gn-drbr",
@@ -1704,17 +1770,17 @@
       "opponents": [
         {
           "code": "GN",
-          "name": "General Rain (page does not exist)",
-          "pageSlug": "index.php?title=General_Rain&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "General Rain",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 0,
           "isWinner": false
         },
         {
           "code": "DRBR",
-          "name": "Dragon Empire BR (page does not exist)",
-          "pageSlug": "index.php?title=Dragon_Empire_BR&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Dragon Empire BR",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         }
@@ -1722,7 +1788,8 @@
       "tournamentName": "ADT South S2",
       "tournamentPageSlug": "ADT/South/Season_2",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787342400-adt-south-season-2-imp-fs",
@@ -1740,8 +1807,8 @@
         },
         {
           "code": "FS",
-          "name": "Fénix Squad (page does not exist)",
-          "pageSlug": "index.php?title=Fénix_Squad&action=edit&redlink=1",
+          "name": "Fénix Squad",
+          "pageSlug": "",
           "logoUrl": "/teams/40px-F_C3_AAnix_Squad_allmode-3bda7d2d.png",
           "score": 0,
           "isWinner": false
@@ -1750,7 +1817,8 @@
       "tournamentName": "ADT South S2",
       "tournamentPageSlug": "ADT/South/Season_2",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787314500-mpl-malaysia-season-18-regular-season-btrm-srg",
@@ -1778,7 +1846,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787311800-mpl-philippines-season-18-regular-season-tlph-flcp",
@@ -1806,7 +1875,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787310000-mpl-indonesia-season-18-regular-season-btr-dewa",
@@ -1834,7 +1904,11 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=9t1g84BqIHQ",
+        "https://www.youtube.com/watch?v=vuVke2up1W4"
+      ]
     },
     {
       "id": "1787302800-mpl-malaysia-season-18-regular-season-ig-vms",
@@ -1862,7 +1936,8 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787302800-mpl-philippines-season-18-regular-season-rora-onph",
@@ -1890,7 +1965,8 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787299200-mpl-indonesia-season-18-regular-season-tlid-navi",
@@ -1918,7 +1994,11 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=wSneUu6hm00",
+        "https://www.youtube.com/watch?v=cOtKe2Akums"
+      ]
     },
     {
       "id": "1787225400-mdl-indonesia-season-14-regular-season-onpw-aex",
@@ -1946,7 +2026,8 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 2",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787211000-mdl-indonesia-season-14-regular-season-oncp-nvjr",
@@ -1974,7 +2055,8 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 2",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787139000-mdl-indonesia-season-14-regular-season-cfg-rrqs",
@@ -1984,8 +2066,8 @@
       "opponents": [
         {
           "code": "CFG",
-          "name": "Cosmic Frogs (page does not exist)",
-          "pageSlug": "index.php?title=Cosmic_Frogs&action=edit&redlink=1",
+          "name": "Cosmic Frogs",
+          "pageSlug": "",
           "logoUrl": "/teams/50px-Cosmic_Frogs_allmode-dce3123e.png",
           "score": 0,
           "isWinner": false
@@ -2002,7 +2084,8 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 2",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787133600-queen-legends-season-4-regular-season-ea-eye",
@@ -2012,16 +2095,16 @@
       "opponents": [
         {
           "code": "EA",
-          "name": "Emerald Apex (page does not exist)",
-          "pageSlug": "index.php?title=Emerald_Apex&action=edit&redlink=1",
+          "name": "Emerald Apex",
+          "pageSlug": "",
           "logoUrl": "/teams/55px-Emerald_Apex_darkmode-656f4137.png",
           "score": 0,
           "isWinner": false
         },
         {
           "code": "EYE",
-          "name": "Evil Eye Serenity (page does not exist)",
-          "pageSlug": "index.php?title=Evil_Eye_Serenity&action=edit&redlink=1",
+          "name": "Evil Eye Serenity",
+          "pageSlug": "",
           "logoUrl": "/teams/68px-Evil_Eye_Serenity_2025_allmode-fddc0f58.png",
           "score": 2,
           "isWinner": true
@@ -2030,7 +2113,11 @@
       "tournamentName": "Queen Legends S4 - RS: Week 4",
       "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/live/7iCoRYPT5sg?si=X1_3RDryH0Edviqd&t=11210",
+        "https://www.youtube.com/live/7iCoRYPT5sg?si=mW-jO-nj5X8nQM2M&t=13545"
+      ]
     },
     {
       "id": "1787126400-queen-legends-season-4-regular-season-wbg-etw",
@@ -2048,8 +2135,8 @@
         },
         {
           "code": "ETW",
-          "name": "Earth Empress (page does not exist)",
-          "pageSlug": "index.php?title=Earth_Empress&action=edit&redlink=1",
+          "name": "Earth Empress",
+          "pageSlug": "",
           "logoUrl": "/teams/43px-Earth_Empress_allmode-a358464e.png",
           "score": 0,
           "isWinner": false
@@ -2058,7 +2145,11 @@
       "tournamentName": "Queen Legends S4 - RS: Week 4",
       "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/live/7iCoRYPT5sg?si=Q7kZdN97bfs8qLfS&t=5450",
+        "https://www.youtube.com/live/7iCoRYPT5sg?si=IFh9lykrsY4-nKiD&t=7325"
+      ]
     },
     {
       "id": "1787124600-mdl-indonesia-season-14-regular-season-kage-vl",
@@ -2076,8 +2167,8 @@
         },
         {
           "code": "VL",
-          "name": "VL Team (page does not exist)",
-          "pageSlug": "index.php?title=VL_Team&action=edit&redlink=1",
+          "name": "VL Team",
+          "pageSlug": "",
           "logoUrl": "/teams/54px-VL_Team_allmode-bcf1c26c.png",
           "score": 3,
           "isWinner": true
@@ -2086,7 +2177,8 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 2",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787119200-queen-legends-season-4-regular-season-val-gxp",
@@ -2096,8 +2188,8 @@
       "opponents": [
         {
           "code": "Val",
-          "name": "Valhalla Valkyries (page does not exist)",
-          "pageSlug": "index.php?title=Valhalla_Valkyries&action=edit&redlink=1",
+          "name": "Valhalla Valkyries",
+          "pageSlug": "",
           "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
           "score": 2,
           "isWinner": true
@@ -2114,7 +2206,12 @@
       "tournamentName": "Queen Legends S4 - RS: Week 4",
       "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/live/niJCt1ShbXk?si=KX83Bvy0WKwxt_x3&t=2617",
+        "https://www.youtube.com/live/niJCt1ShbXk?si=KltcfyjcLt_COgBb&t=5093",
+        "https://www.youtube.com/live/7iCoRYPT5sg?si=LeLffsja1xOwDrpC&t=428"
+      ]
     },
     {
       "id": "1787052600-mdl-indonesia-season-14-regular-season-tlaid-btrac",
@@ -2142,7 +2239,8 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 2",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787047200-queen-legends-season-4-regular-season-ea-dg-a",
@@ -2152,16 +2250,16 @@
       "opponents": [
         {
           "code": "EA",
-          "name": "Emerald Apex (page does not exist)",
-          "pageSlug": "index.php?title=Emerald_Apex&action=edit&redlink=1",
+          "name": "Emerald Apex",
+          "pageSlug": "",
           "logoUrl": "/teams/55px-Emerald_Apex_darkmode-656f4137.png",
           "score": 1,
           "isWinner": false
         },
         {
           "code": "DG.A",
-          "name": "DG AngelZ (page does not exist)",
-          "pageSlug": "index.php?title=DG_AngelZ&action=edit&redlink=1",
+          "name": "DG AngelZ",
+          "pageSlug": "",
           "logoUrl": "/teams/81px-Diversity_Gaming_allmode-98c52a04.png",
           "score": 2,
           "isWinner": true
@@ -2170,7 +2268,12 @@
       "tournamentName": "Queen Legends S4 - RS: Week 4",
       "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/live/8ixdVy_CzfA?si=fXnY9p4ZwUevjC0N&t=17284",
+        "https://www.youtube.com/live/8ixdVy_CzfA?si=tmA-OboHh7yyEHKJ&t=19892",
+        "https://www.youtube.com/live/8ixdVy_CzfA?si=IFhjSAMJ4Hg95a3q&t=21918"
+      ]
     },
     {
       "id": "1787040000-queen-legends-season-4-regular-season-vac-wbg",
@@ -2180,8 +2283,8 @@
       "opponents": [
         {
           "code": "VAC",
-          "name": "Vanguard Scarlet (page does not exist)",
-          "pageSlug": "index.php?title=Vanguard_Scarlet&action=edit&redlink=1",
+          "name": "Vanguard Scarlet",
+          "pageSlug": "",
           "logoUrl": "/teams/44px-Vanguard_Scarlet_allmode-36c2fd0d.png",
           "score": 2,
           "isWinner": true
@@ -2198,7 +2301,11 @@
       "tournamentName": "Queen Legends S4 - RS: Week 4",
       "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/live/8ixdVy_CzfA?si=RjE3r-vkPybMr-Fg&t=10404",
+        "https://www.youtube.com/live/8ixdVy_CzfA?si=y7c8WlJDx5yFgRgo&t=12540"
+      ]
     },
     {
       "id": "1787038200-mdl-indonesia-season-14-regular-season-gfjr-duh",
@@ -2226,7 +2333,8 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 2",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1787032800-queen-legends-season-4-regular-season-etw-gxp",
@@ -2236,8 +2344,8 @@
       "opponents": [
         {
           "code": "ETW",
-          "name": "Earth Empress (page does not exist)",
-          "pageSlug": "index.php?title=Earth_Empress&action=edit&redlink=1",
+          "name": "Earth Empress",
+          "pageSlug": "",
           "logoUrl": "/teams/43px-Earth_Empress_allmode-a358464e.png",
           "score": 0,
           "isWinner": false
@@ -2254,7 +2362,11 @@
       "tournamentName": "Queen Legends S4 - RS: Week 4",
       "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/live/8ixdVy_CzfA?si=n6mLJa0iIxzbby0c&t=2275",
+        "https://www.youtube.com/live/8ixdVy_CzfA?si=1j9v4d9YF-3Au8ts&t=4550"
+      ]
     },
     {
       "id": "1786968000-mlbb-continental-championships-season-8-closed-qualifier-inv-akla",
@@ -2264,17 +2376,17 @@
       "opponents": [
         {
           "code": "INV",
-          "name": "INVISION (page does not exist)",
-          "pageSlug": "index.php?title=INVISION&action=edit&redlink=1",
+          "name": "INVISION",
+          "pageSlug": "",
           "logoUrl": "/teams/42px-INVISION_darkmode-563830fd.png",
           "score": 2,
           "isWinner": true
         },
         {
           "code": "AKLA",
-          "name": "AKEOLA Academy (page does not exist)",
-          "pageSlug": "index.php?title=AKEOLA_Academy&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "AKEOLA Academy",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 0,
           "isWinner": false
         }
@@ -2282,7 +2394,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - Mid (1-1)",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786968000-mlbb-continental-championships-season-8-closed-qualifier-omnx-af",
@@ -2292,16 +2405,16 @@
       "opponents": [
         {
           "code": "OMNX",
-          "name": "Omnix (page does not exist)",
-          "pageSlug": "index.php?title=Omnix&action=edit&redlink=1",
+          "name": "Omnix",
+          "pageSlug": "",
           "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
           "score": 2,
           "isWinner": true
         },
         {
           "code": "AF",
-          "name": "Aura Farmers (page does not exist)",
-          "pageSlug": "index.php?title=Aura_Farmers&action=edit&redlink=1",
+          "name": "Aura Farmers",
+          "pageSlug": "",
           "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
           "score": 0,
           "isWinner": false
@@ -2310,7 +2423,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - Mid (1-1)",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786966200-mdl-indonesia-season-14-regular-season-sdw-vesa",
@@ -2320,16 +2434,16 @@
       "opponents": [
         {
           "code": "SDW",
-          "name": "Shadow Esports (page does not exist)",
-          "pageSlug": "index.php?title=Shadow_Esports&action=edit&redlink=1",
+          "name": "Shadow Esports",
+          "pageSlug": "",
           "logoUrl": "/teams/41px-Shadow_Esports_allmode-d42d07b0.png",
           "score": 0,
           "isWinner": false
         },
         {
           "code": "VESA",
-          "name": "Vesakha Esports (page does not exist)",
-          "pageSlug": "index.php?title=Vesakha_Esports&action=edit&redlink=1",
+          "name": "Vesakha Esports",
+          "pageSlug": "",
           "logoUrl": "/teams/68px-Vesakha_Esports_2026_allmode-944f2d63.png",
           "score": 3,
           "isWinner": true
@@ -2338,7 +2452,8 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 2",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786962600-mlbb-continental-championships-season-8-closed-qualifier-gct-akla",
@@ -2356,9 +2471,9 @@
         },
         {
           "code": "AKLA",
-          "name": "AKEOLA Academy (page does not exist)",
-          "pageSlug": "index.php?title=AKEOLA_Academy&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "AKEOLA Academy",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         }
@@ -2366,7 +2481,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - Low (0-1)",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786962600-mlbb-continental-championships-season-8-closed-qualifier-omnx-ae",
@@ -2376,16 +2492,16 @@
       "opponents": [
         {
           "code": "OMNX",
-          "name": "Omnix (page does not exist)",
-          "pageSlug": "index.php?title=Omnix&action=edit&redlink=1",
+          "name": "Omnix",
+          "pageSlug": "",
           "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
           "score": 2,
           "isWinner": true
         },
         {
           "code": "AE",
-          "name": "Aterion Esports (page does not exist)",
-          "pageSlug": "index.php?title=Aterion_Esports&action=edit&redlink=1",
+          "name": "Aterion Esports",
+          "pageSlug": "",
           "logoUrl": "/teams/48px-Aterion_Esports_darkmode-2a65c0a3.png",
           "score": 0,
           "isWinner": false
@@ -2394,7 +2510,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - Low (0-1)",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786962600-mlbb-continental-championships-season-8-closed-qualifier-rkz-af",
@@ -2404,16 +2521,16 @@
       "opponents": [
         {
           "code": "RKZ",
-          "name": "RAKUZAN (page does not exist)",
-          "pageSlug": "index.php?title=RAKUZAN&action=edit&redlink=1",
+          "name": "RAKUZAN",
+          "pageSlug": "",
           "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
           "score": 2,
           "isWinner": true
         },
         {
           "code": "AF",
-          "name": "Aura Farmers (page does not exist)",
-          "pageSlug": "index.php?title=Aura_Farmers&action=edit&redlink=1",
+          "name": "Aura Farmers",
+          "pageSlug": "",
           "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
           "score": 0,
           "isWinner": false
@@ -2422,7 +2539,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - High (1-0)",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786962600-mlbb-continental-championships-season-8-closed-qualifier-ch-inv",
@@ -2440,8 +2558,8 @@
         },
         {
           "code": "INV",
-          "name": "INVISION (page does not exist)",
-          "pageSlug": "index.php?title=INVISION&action=edit&redlink=1",
+          "name": "INVISION",
+          "pageSlug": "",
           "logoUrl": "/teams/42px-INVISION_darkmode-563830fd.png",
           "score": 1,
           "isWinner": false
@@ -2450,7 +2568,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - High (1-0)",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786957200-mlbb-continental-championships-season-8-closed-qualifier-ae-ch",
@@ -2460,8 +2579,8 @@
       "opponents": [
         {
           "code": "AE",
-          "name": "Aterion Esports (page does not exist)",
-          "pageSlug": "index.php?title=Aterion_Esports&action=edit&redlink=1",
+          "name": "Aterion Esports",
+          "pageSlug": "",
           "logoUrl": "/teams/48px-Aterion_Esports_darkmode-2a65c0a3.png",
           "score": 1,
           "isWinner": false
@@ -2478,7 +2597,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - Round 1",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786957200-mlbb-continental-championships-season-8-closed-qualifier-gct-af",
@@ -2496,8 +2616,8 @@
         },
         {
           "code": "AF",
-          "name": "Aura Farmers (page does not exist)",
-          "pageSlug": "index.php?title=Aura_Farmers&action=edit&redlink=1",
+          "name": "Aura Farmers",
+          "pageSlug": "",
           "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
           "score": 2,
           "isWinner": true
@@ -2506,7 +2626,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - Round 1",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786957200-mlbb-continental-championships-season-8-closed-qualifier-inv-omnx",
@@ -2516,16 +2637,16 @@
       "opponents": [
         {
           "code": "INV",
-          "name": "INVISION (page does not exist)",
-          "pageSlug": "index.php?title=INVISION&action=edit&redlink=1",
+          "name": "INVISION",
+          "pageSlug": "",
           "logoUrl": "/teams/42px-INVISION_darkmode-563830fd.png",
           "score": 2,
           "isWinner": true
         },
         {
           "code": "OMNX",
-          "name": "Omnix (page does not exist)",
-          "pageSlug": "index.php?title=Omnix&action=edit&redlink=1",
+          "name": "Omnix",
+          "pageSlug": "",
           "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
           "score": 0,
           "isWinner": false
@@ -2534,7 +2655,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - Round 1",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786957200-mlbb-continental-championships-season-8-closed-qualifier-rkz-akla",
@@ -2544,17 +2666,17 @@
       "opponents": [
         {
           "code": "RKZ",
-          "name": "RAKUZAN (page does not exist)",
-          "pageSlug": "index.php?title=RAKUZAN&action=edit&redlink=1",
+          "name": "RAKUZAN",
+          "pageSlug": "",
           "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
           "score": 2,
           "isWinner": true
         },
         {
           "code": "AKLA",
-          "name": "AKEOLA Academy (page does not exist)",
-          "pageSlug": "index.php?title=AKEOLA_Academy&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "AKEOLA Academy",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 0,
           "isWinner": false
         }
@@ -2562,7 +2684,8 @@
       "tournamentName": "MCC Season 8 - Closed Qualifier - Round 1",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786953600-league-of-champions-tournament-season-7-swiss-stage-fw-mib",
@@ -2572,16 +2695,16 @@
       "opponents": [
         {
           "code": "FW",
-          "name": "Fantastic Warriors (page does not exist)",
-          "pageSlug": "index.php?title=Fantastic_Warriors&action=edit&redlink=1",
+          "name": "Fantastic Warriors",
+          "pageSlug": "",
           "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
           "score": 2,
           "isWinner": true
         },
         {
           "code": "MiB",
-          "name": "Made in Burma (page does not exist)",
-          "pageSlug": "index.php?title=Made_in_Burma&action=edit&redlink=1",
+          "name": "Made in Burma",
+          "pageSlug": "",
           "logoUrl": "/teams/50px-Made_in_Burma_darkmode-4d815773.png",
           "score": 1,
           "isWinner": false
@@ -2590,7 +2713,8 @@
       "tournamentName": "LOC S7 2026 - Mid (1-1)",
       "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786951800-mdl-indonesia-season-14-regular-season-evs-trix",
@@ -2608,8 +2732,8 @@
         },
         {
           "code": "TRIX",
-          "name": "Ixon TRB (page does not exist)",
-          "pageSlug": "index.php?title=Ixon_TRB&action=edit&redlink=1",
+          "name": "Ixon TRB",
+          "pageSlug": "",
           "logoUrl": "/teams/39px-Ixon_TRB_allmode-32c3cc79.png",
           "score": 0,
           "isWinner": false
@@ -2618,7 +2742,8 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 2",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786948200-league-of-champions-tournament-season-7-swiss-stage-av-atpm",
@@ -2628,17 +2753,17 @@
       "opponents": [
         {
           "code": "AV",
-          "name": "Astro Vex (page does not exist)",
-          "pageSlug": "index.php?title=Astro_Vex&action=edit&redlink=1",
+          "name": "Astro Vex",
+          "pageSlug": "",
           "logoUrl": "/teams/72px-Astrov_darkmode-7d7e8305.png",
           "score": 2,
           "isWinner": true
         },
         {
           "code": "ATPM",
-          "name": "Apyor Tnn Player Myr (page does not exist)",
-          "pageSlug": "index.php?title=Apyor_Tnn_Player_Myr&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Apyor Tnn Player Myr",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 0,
           "isWinner": false
         }
@@ -2648,7 +2773,8 @@
       "regionSlug": null,
       "streamUrls": [
         "https://www.youtube.com/live/tqSyWNqJygo?si=uCs2Vz82arBoYctp"
-      ]
+      ],
+      "vodUrls": []
     },
     {
       "id": "1786926600-adt-north-season-1-juda-rto",
@@ -2658,17 +2784,17 @@
       "opponents": [
         {
           "code": "JUDA",
-          "name": "Team Judas (page does not exist)",
-          "pageSlug": "index.php?title=Team_Judas&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Team Judas",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 0,
           "isWinner": false
         },
         {
           "code": "RTO",
-          "name": "Retaliation (page does not exist)",
-          "pageSlug": "index.php?title=Retaliation&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Retaliation",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         }
@@ -2676,7 +2802,8 @@
       "tournamentName": "ADT North S1",
       "tournamentPageSlug": "ADT/North/Season_1",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786921200-adt-north-season-1-nopa-da",
@@ -2686,16 +2813,16 @@
       "opponents": [
         {
           "code": "NOPA",
-          "name": "Nopa Esports (page does not exist)",
-          "pageSlug": "index.php?title=Nopa_Esports&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Nopa Esports",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         },
         {
           "code": "DA",
-          "name": "Devious Activity (page does not exist)",
-          "pageSlug": "index.php?title=Devious_Activity&action=edit&redlink=1",
+          "name": "Devious Activity",
+          "pageSlug": "",
           "logoUrl": "/teams/50px-Devious_Activity_darkmode-12d69c07.png",
           "score": 0,
           "isWinner": false
@@ -2704,7 +2831,8 @@
       "tournamentName": "ADT North S1",
       "tournamentPageSlug": "ADT/North/Season_1",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786915800-adt-south-season-2-bse-drbr",
@@ -2722,9 +2850,9 @@
         },
         {
           "code": "DRBR",
-          "name": "Dragon Empire BR (page does not exist)",
-          "pageSlug": "index.php?title=Dragon_Empire_BR&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Dragon Empire BR",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         }
@@ -2732,7 +2860,8 @@
       "tournamentName": "ADT South S2",
       "tournamentPageSlug": "ADT/South/Season_2",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786910400-adt-south-season-2-gn-unk",
@@ -2742,17 +2871,17 @@
       "opponents": [
         {
           "code": "GN",
-          "name": "General Rain (page does not exist)",
-          "pageSlug": "index.php?title=General_Rain&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "General Rain",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 2,
           "isWinner": true
         },
         {
           "code": "UNK",
-          "name": "Unknown Team (page does not exist)",
-          "pageSlug": "index.php?title=Unknown_Team&action=edit&redlink=1",
-          "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png",
+          "name": "Unknown Team",
+          "pageSlug": "",
+          "logoUrl": null,
           "score": 1,
           "isWinner": false
         }
@@ -2760,7 +2889,8 @@
       "tournamentName": "ADT South S2",
       "tournamentPageSlug": "ADT/South/Season_2",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786903200-esports-nations-cup-2026-north-america-dom-ven",
@@ -2770,16 +2900,16 @@
       "opponents": [
         {
           "code": "DOM",
-          "name": "Team Dominican Republic (page does not exist)",
-          "pageSlug": "index.php?title=Team_Dominican_Republic&action=edit&redlink=1",
+          "name": "Team Dominican Republic",
+          "pageSlug": "",
           "logoUrl": "/teams/67px-Flag_of_the_Dominican_Republic_4_by_3-6b7ce05c.png",
           "score": 3,
           "isWinner": true
         },
         {
           "code": "VEN",
-          "name": "Team Venezuela (page does not exist)",
-          "pageSlug": "index.php?title=Team_Venezuela&action=edit&redlink=1",
+          "name": "Team Venezuela",
+          "pageSlug": "",
           "logoUrl": "/teams/67px-Flag_of_Venezuela_4_by_3-33eaec2d.png",
           "score": 0,
           "isWinner": false
@@ -2788,7 +2918,8 @@
       "tournamentName": "Esports Nations Cup 2026 - North America Qualifier",
       "tournamentPageSlug": "Esports_Nations_Cup/2026/North_America",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     },
     {
       "id": "1786899600-esports-nations-cup-2026-central-and-west-africa-nga-mrt",
@@ -2798,16 +2929,16 @@
       "opponents": [
         {
           "code": "NGA",
-          "name": "Team Nigeria (page does not exist)",
-          "pageSlug": "index.php?title=Team_Nigeria&action=edit&redlink=1",
+          "name": "Team Nigeria",
+          "pageSlug": "",
           "logoUrl": "/teams/67px-Flag_of_Nigeria_4_by_3-4b51c058.png",
           "score": 3,
           "isWinner": true
         },
         {
           "code": "MRT",
-          "name": "Team Mauritania (page does not exist)",
-          "pageSlug": "index.php?title=Team_Mauritania&action=edit&redlink=1",
+          "name": "Team Mauritania",
+          "pageSlug": "",
           "logoUrl": "/teams/67px-Flag_of_Mauritania_4_by_3-b27b72f5.png",
           "score": 1,
           "isWinner": false
@@ -2816,7 +2947,8 @@
       "tournamentName": "Esports Nations Cup 2026 - Central and West Africa Qualifier",
       "tournamentPageSlug": "Esports_Nations_Cup/2026/Central_and_West_Africa",
       "regionSlug": null,
-      "streamUrls": []
+      "streamUrls": [],
+      "vodUrls": []
     }
   ]
 }

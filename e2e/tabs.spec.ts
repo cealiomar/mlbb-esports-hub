@@ -27,15 +27,20 @@ test('the sliding indicator tracks the selected tab', async ({ page }) => {
 
   const first = await tabs.first().boundingBox()
   await tabs.last().click()
-  await page.waitForTimeout(600)
+  await expect(tabs.last()).toHaveAttribute('aria-selected', 'true')
 
   const pill = page.locator('[role="tablist"] > span[aria-hidden]')
-  const pillBox = await pill.boundingBox()
-  const lastBox = await tabs.last().boundingBox()
+  // Wait on the actual geometry: under load the CSS transition can take a
+  // little longer than its nominal duration.
+  await expect
+    .poll(async () => {
+      const pillBox = await pill.boundingBox()
+      const lastBox = await tabs.last().boundingBox()
+      return Math.abs((pillBox?.x ?? 0) - (lastBox?.x ?? 0))
+    })
+    .toBeLessThan(6)
 
-  expect(pillBox).not.toBeNull()
-  // The pill sits under the last tab, not the first one it started on.
-  expect(Math.abs((pillBox!.x ?? 0) - (lastBox!.x ?? 0))).toBeLessThan(6)
+  const pillBox = await pill.boundingBox()
   expect(Math.abs((pillBox!.x ?? 0) - (first!.x ?? 0))).toBeGreaterThan(10)
 })
 
@@ -44,19 +49,33 @@ test('tabs work in RTL', async ({ page }) => {
   const tabs = page.getByRole('tab')
   await tabs.last().click()
   await expect(tabs.last()).toHaveAttribute('aria-selected', 'true')
-  // Let the sliding pill finish its transition before measuring.
-  await page.waitForTimeout(600)
 
   const pill = page.locator('[role="tablist"] > span[aria-hidden]')
-  const pillBox = await pill.boundingBox()
-  const lastBox = await tabs.last().boundingBox()
-  expect(Math.abs((pillBox!.x ?? 0) - (lastBox!.x ?? 0))).toBeLessThan(6)
+  await expect
+    .poll(async () => {
+      const pillBox = await pill.boundingBox()
+      const lastBox = await tabs.last().boundingBox()
+      return Math.abs((pillBox?.x ?? 0) - (lastBox?.x ?? 0))
+    })
+    .toBeLessThan(6)
 })
 
 test('no globe canvas remains anywhere', async ({ page }) => {
   for (const route of ['/en/', '/en/matches/', '/en/regions/philippines/']) {
     await page.goto(route)
     await expect(page.locator('canvas')).toHaveCount(0)
+  }
+})
+
+test('generic placeholder crests and source redlink labels never leak to cards', async ({
+  page,
+}) => {
+  await page.goto('/en/matches/')
+
+  for (const tab of await page.getByRole('tab').all()) {
+    await tab.click()
+    await expect(page.locator('article img[src*="Mobile_Legends_2025_allmode"]')).toHaveCount(0)
+    await expect(page.getByRole('tabpanel')).not.toContainText('page does not exist')
   }
 })
 

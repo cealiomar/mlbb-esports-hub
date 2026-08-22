@@ -1,5 +1,6 @@
 import { parse, type HTMLElement } from 'node-html-parser'
 import { getRegions } from '@/lib/content/regions'
+import { normalizeMatch } from '../normalize-matches'
 import type { Match, MatchOpponent, MatchStatus } from '../types'
 
 const WIKI_ORIGIN = 'https://liquipedia.net'
@@ -101,7 +102,7 @@ function readMatch(matchEl: HTMLElement, area: MatchStatus): Match | null {
   const status: MatchStatus =
     area === 'upcoming' && scoreA !== null ? 'live' : area
 
-  return {
+  return normalizeMatch({
     id: buildId(ts, tournamentPageSlug, a, b),
     startsAt: ts,
     status,
@@ -111,7 +112,11 @@ function readMatch(matchEl: HTMLElement, area: MatchStatus): Match | null {
     tournamentPageSlug,
     regionSlug: resolveRegion(tournamentPageSlug),
     streamUrls,
-  }
+    vodUrls: matchEl
+      .querySelectorAll('.match-info-vods-area a[href]')
+      .map((el) => absoluteUrl(el.getAttribute('href')))
+      .filter((u): u is string => u !== null),
+  })
 }
 
 function collect(root: HTMLElement, area: '1' | '2', status: MatchStatus) {

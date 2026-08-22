@@ -3,6 +3,7 @@ import { readSnapshot, DEFAULT_SNAPSHOT_DIR } from './snapshots'
 import { err, ok } from './source'
 import type { DataSource } from './source'
 import type { Match, Result, Snapshot, Team } from './types'
+import { normalizeMatch } from './normalize-matches'
 
 export interface LocalOptions {
   snapshotDir?: string
@@ -31,7 +32,7 @@ export function createLocalDataSource(options: LocalOptions = {}): DataSource {
 
   return {
     async getMatches(): Promise<Result<Match[]>> {
-      return ok(matches().data)
+      return ok(matches().data.map(normalizeMatch))
     },
 
     async getTeamsByRegion(regionSlug: string): Promise<Result<Team[]>> {

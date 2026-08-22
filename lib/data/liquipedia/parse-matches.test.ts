@@ -113,6 +113,38 @@ describe('parseMatches', () => {
     }
   })
 
+  it('does not present Liquipedia generic marks as team crests', () => {
+    const genericFallback = matches
+      .flatMap((m) => m.opponents)
+      .find((opponent) => opponent.code === 'VGZ')
+
+    expect(genericFallback).toMatchObject({
+      name: 'Vie Gangz',
+      pageSlug: '',
+      logoUrl: null,
+    })
+  })
+
+  it('keeps a real crest even when the team page is still a redlink', () => {
+    const fantasticWarriors = matches
+      .flatMap((m) => m.opponents)
+      .find((opponent) => opponent.code === 'FW' && opponent.logoUrl)
+
+    expect(fantasticWarriors?.name).toBe('Fantastic Warriors')
+    expect(fantasticWarriors?.logoUrl).toContain('FW_allmode')
+  })
+
+  it('captures direct replay links for completed matches', () => {
+    const withReplay = matches.filter((m) => (m.vodUrls?.length ?? 0) > 0)
+    expect(withReplay.length).toBeGreaterThan(0)
+    for (const match of withReplay) {
+      expect(match.status).toBe('completed')
+      for (const url of match.vodUrls ?? []) {
+        expect(url).toMatch(/^https:\/\//)
+      }
+    }
+  })
+
   it('gives every match a unique stable id', () => {
     const ids = matches.map((m) => m.id)
     expect(new Set(ids).size).toBe(ids.length)

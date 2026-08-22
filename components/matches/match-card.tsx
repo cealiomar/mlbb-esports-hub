@@ -1,6 +1,7 @@
 import { useFormatter, useLocale, useTranslations } from 'next-intl'
 import type { Match, MatchOpponent } from '@/lib/data/types'
 import { getRegionBySlug } from '@/lib/content/regions'
+import { replayUrl } from '@/lib/matches/replay'
 import { TiltCard } from '@/components/ui/tilt-card'
 import { TeamCrest } from './team-crest'
 
@@ -57,7 +58,8 @@ export function MatchCard({ match }: { match: Match }) {
   const startsAt = new Date(match.startsAt * 1000)
   const region = match.regionSlug ? getRegionBySlug(match.regionSlug) : undefined
   const localeKey = locale === 'ar' ? 'ar' : 'en'
-  const stream = match.streamUrls[0]
+  const stream = match.status === 'completed' ? undefined : match.streamUrls[0]
+  const replay = replayUrl(match)
 
   return (
     <TiltCard className="h-full">
@@ -123,6 +125,17 @@ export function MatchCard({ match }: { match: Match }) {
             >
               <span className="live-dot size-1.5 rounded-full bg-current" />
               {t('watch')}
+            </a>
+          )}
+          {replay && (
+            <a
+              href={replay}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="watch-link rewatch-link"
+            >
+              <span className="replay-play" aria-hidden />
+              {t('rewatch')}
             </a>
           )}
         </div>

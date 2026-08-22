@@ -28,6 +28,8 @@ export interface Match {
   /** Region slug from content/regions.json, or null for international events. */
   regionSlug: string | null
   streamUrls: string[]
+  /** Direct replay/VOD links supplied for completed games. */
+  vodUrls?: string[]
 }
 
 export interface Player {

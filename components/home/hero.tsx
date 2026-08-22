@@ -25,8 +25,6 @@ export function Hero({
 
   return (
     <section className="hero aurora relative isolate overflow-hidden px-5 pb-14 pt-16 text-center sm:pb-20 sm:pt-24">
-      <div className="hero-orbit hero-orbit--one" aria-hidden />
-      <div className="hero-orbit hero-orbit--two" aria-hidden />
       <div className="hero-cross hero-cross--one" aria-hidden />
       <div className="hero-cross hero-cross--two" aria-hidden />
 
@@ -43,7 +41,6 @@ export function Hero({
           className="hero-logo-stage reveal mt-7"
           style={{ '--reveal-delay': '80ms' } as React.CSSProperties}
         >
-          <span className="hero-logo-stage__halo" aria-hidden />
           <BrandMark width={430} priority className="hero-logo max-w-[72vw]" />
         </div>
 
