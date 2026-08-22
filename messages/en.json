@@ -18,7 +18,10 @@
     "regionsDescription": "Jump into every active league, from Southeast Asia to MENA and beyond.",
     "schedule": "The Schedule",
     "scheduleDescription": "Kickoff times are shown in your local timezone.",
-    "liveNow": "{count} live now"
+    "liveNow": "{count} live now",
+    "liveFeed": "Live feed",
+    "liveTitle": "Live right now",
+    "liveDescription": "{count, plural, one {One match is underway. Jump straight into the action.} other {# matches are underway. Jump straight into the action.}}"
   },
   "matches": {
     "upcoming": "Upcoming",
@@ -37,7 +40,11 @@
     "fixtures": "Fixtures",
     "league": "League",
     "live": "Live now",
-    "explore": "Explore region"
+    "explore": "Explore region",
+    "slideHint": "Swipe or use the arrows",
+    "previous": "Previous regions",
+    "next": "Next regions",
+    "carouselLabel": "All competitive regions"
   },
   "team": {
     "roster": "Roster",

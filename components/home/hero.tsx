@@ -67,10 +67,11 @@ export function Hero({
             <span aria-hidden>↗</span>
           </Link>
           {liveCount > 0 && (
-            <span className="live-pill">
+            <Link href="#live" className="live-pill live-pill-link">
               <span className="live-dot size-2 rounded-full bg-[var(--brand-hot)]" />
               {t('liveNow', { count: liveCount })}
-            </span>
+              <span aria-hidden>↓</span>
+            </Link>
           )}
         </div>
 

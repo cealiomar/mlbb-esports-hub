@@ -85,6 +85,56 @@ test('every region is reachable from the home page', async ({ page }) => {
   await expect(links).toHaveCount(11)
 })
 
+test('the home page puts live matches directly after the hero', async ({
+  page,
+}) => {
+  await page.goto('/en/')
+  const liveSection = page.locator('[data-home-live]')
+
+  if ((await liveSection.count()) > 0) {
+    const order = await liveSection.evaluate((node) => ({
+      previousIsHero: node.previousElementSibling?.classList.contains('hero'),
+      nextIsTicker: node.nextElementSibling?.classList.contains('marquee'),
+    }))
+    expect(order).toEqual({ previousIsHero: true, nextIsTicker: true })
+    await expect(page.locator('a[href="#live"]')).toBeVisible()
+  }
+})
+
+test('regions use a horizontal snap rail with working controls', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1280, height: 900 })
+  await page.goto('/en/')
+  await page.waitForTimeout(2400)
+
+  const rail = page.getByTestId('region-rail')
+  const sizes = await rail.evaluate((node) => ({
+    viewport: node.clientWidth,
+    content: node.scrollWidth,
+  }))
+  expect(sizes.content).toBeGreaterThan(sizes.viewport)
+
+  const before = Math.abs(await rail.evaluate((node) => node.scrollLeft))
+  await page.getByTestId('region-next').click()
+  await expect
+    .poll(() => rail.evaluate((node) => Math.abs(node.scrollLeft)))
+    .toBeGreaterThan(before + 40)
+})
+
+test('region rail controls follow the RTL direction', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 })
+  await page.goto('/ar/')
+  await page.waitForTimeout(2400)
+
+  const rail = page.getByTestId('region-rail')
+  const before = Math.abs(await rail.evaluate((node) => node.scrollLeft))
+  await page.getByTestId('region-next').click()
+  await expect
+    .poll(() => rail.evaluate((node) => Math.abs(node.scrollLeft)))
+    .toBeGreaterThan(before + 40)
+})
+
 test('the site root sends visitors to a locale', async ({ page }) => {
   await page.goto('/')
   await page.waitForURL(/\/(en|ar)\//)

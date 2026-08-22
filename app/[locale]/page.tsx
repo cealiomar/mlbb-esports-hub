@@ -3,6 +3,7 @@ import { createLocalDataSource } from '@/lib/data/local'
 import { isOk } from '@/lib/data/source'
 import { liveMatches, todayMatches, upcomingMatches, recentResults } from '@/lib/matches/select'
 import { Hero } from '@/components/home/hero'
+import { LiveNow } from '@/components/home/live-now'
 import { Ticker } from '@/components/matches/ticker'
 import { MatchList } from '@/components/matches/match-list'
 import { RegionList } from '@/components/regions/region-list'
@@ -50,16 +51,6 @@ export default async function HomePage({
   ]
 
   const tabs = [
-    ...(live.length > 0
-      ? [
-          {
-            id: 'live',
-            label: tm('live'),
-            count: live.length,
-            content: <MatchList matches={live} />,
-          },
-        ]
-      : []),
     {
       id: 'today',
       label: tm('today'),
@@ -88,6 +79,7 @@ export default async function HomePage({
         regionCount={getRegions().length}
         resultCount={all.filter((match) => match.status === 'completed').length}
       />
+      <LiveNow matches={live} locale={locale === 'ar' ? 'ar' : 'en'} />
       <Ticker matches={today.length > 0 ? today : upcoming.slice(0, 12)} />
 
       <section className="section">
