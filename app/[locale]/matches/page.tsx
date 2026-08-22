@@ -3,7 +3,6 @@ import { createLocalDataSource } from '@/lib/data/local'
 import { isOk } from '@/lib/data/source'
 import {
   liveMatches,
-  todayMatches,
   upcomingMatches,
   recentResults,
 } from '@/lib/matches/select'
@@ -54,11 +53,6 @@ export default async function MatchesPage({
         ]
       : []),
     {
-      id: 'today' as const,
-      label: t('today'),
-      matches: todayMatches(all, now),
-    },
-    {
       id: 'upcoming' as const,
       label: t('upcoming'),
       matches: upcomingMatches(all, now),
@@ -71,12 +65,11 @@ export default async function MatchesPage({
   ]
 
   return (
-    <main className="section">
+    <main className="section matches-page">
       <SectionHeader
         as="h1"
         title={tn('matches')}
-        eyebrow={t('commandEyebrow')}
-        description={t('commandDescription')}
+        description={t('pageDescription')}
         meta={<FreshnessBadge harvestedAt={await source.getFreshness()} />}
       />
       <MatchExplorer groups={tabs} regions={getRegions()} />
