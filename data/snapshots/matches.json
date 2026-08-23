@@ -1,74 +1,10 @@
 {
-  "harvestedAt": 1787480638,
+  "harvestedAt": 1787484034,
   "data": [
-    {
-      "id": "1787470200-mpl-cambodia-season-11-qualifier-tnr-sys",
-      "startsAt": 1787470200,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TNR",
-          "name": "TNR Esports",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": false
-        },
-        {
-          "code": "SYS",
-          "name": "See You Soon",
-          "pageSlug": "See_You_Soon",
-          "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png",
-          "score": 2,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL KH S11 Qual.",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
-      "regionSlug": "cambodia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787475600-mpl-malaysia-season-18-regular-season-fl-srg",
-      "startsAt": 1787475600,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FL",
-          "name": "Team Flash",
-          "pageSlug": "Team_Flash",
-          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "SRG",
-          "name": "Selangor Red Giants",
-          "pageSlug": "Selangor_Red_Giants",
-          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1787479200-mpl-indonesia-season-18-regular-season-onic-btr",
       "startsAt": 1787479200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -76,7 +12,7 @@
           "name": "ONIC",
           "pageSlug": "ONIC",
           "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -84,7 +20,7 @@
           "name": "Bigetron by Vitality",
           "pageSlug": "Bigetron_by_Vitality",
           "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -100,7 +36,7 @@
     {
       "id": "1787481000-league-of-champions-tournament-season-7-playoffs-zino-df",
       "startsAt": 1787481000,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -108,7 +44,7 @@
           "name": "Zino Esports",
           "pageSlug": "Zino_Esports",
           "logoUrl": "/teams/43px-Zino_Esports_2026_allmode-c2ef6c21.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -116,7 +52,7 @@
           "name": "D Family",
           "pageSlug": "",
           "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -126,6 +62,38 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/@atom-mm",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/ATOMLetsPlayArena"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1787483700-mpl-cambodia-season-11-qualifier-ne-tnr",
+      "startsAt": 1787483700,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "NE",
+          "name": "Nova Eclipse",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TNR",
+          "name": "TNR Esports",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL KH S11 Qual.",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
+      "regionSlug": "cambodia",
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
       ],
       "vodUrls": []
     },
@@ -187,7 +155,10 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -1467,6 +1438,64 @@
       "vodUrls": []
     },
     {
+      "id": "1788589800-mpl-malaysia-season-18-regular-season-fl-rrqt",
+      "startsAt": 1788589800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FL",
+          "name": "Team Flash",
+          "pageSlug": "Team_Flash",
+          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RRQT",
+          "name": "RRQ Tora",
+          "pageSlug": "RRQ_Tora",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787475600-mpl-malaysia-season-18-regular-season-fl-srg",
+      "startsAt": 1787475600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FL",
+          "name": "Team Flash",
+          "pageSlug": "Team_Flash",
+          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "SRG",
+          "name": "Selangor Red Giants",
+          "pageSlug": "Selangor_Red_Giants",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787475600-mpl-philippines-season-18-regular-season-onph-apbr",
       "startsAt": 1787475600,
       "status": "completed",
@@ -1521,6 +1550,35 @@
       "tournamentName": "LOC S7 2026",
       "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787470200-mpl-cambodia-season-11-qualifier-tnr-sys",
+      "startsAt": 1787470200,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TNR",
+          "name": "TNR Esports",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 2,
+          "isWinner": false
+        },
+        {
+          "code": "SYS",
+          "name": "See You Soon",
+          "pageSlug": "See_You_Soon",
+          "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png",
+          "score": 3,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL KH S11 Qual.",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
+      "regionSlug": "cambodia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2922,64 +2980,6 @@
         "https://www.youtube.com/live/8ixdVy_CzfA?si=n6mLJa0iIxzbby0c&t=2275",
         "https://www.youtube.com/live/8ixdVy_CzfA?si=1j9v4d9YF-3Au8ts&t=4550"
       ]
-    },
-    {
-      "id": "1786968000-mlbb-continental-championships-season-8-closed-qualifier-inv-akla",
-      "startsAt": 1786968000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "INV",
-          "name": "INVISION",
-          "pageSlug": "",
-          "logoUrl": "/teams/42px-INVISION_darkmode-563830fd.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "AKLA",
-          "name": "AKEOLA Academy",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Closed Qualifier - Mid (1-1)",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786968000-mlbb-continental-championships-season-8-closed-qualifier-omnx-af",
-      "startsAt": 1786968000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "OMNX",
-          "name": "Omnix",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "AF",
-          "name": "Aura Farmers",
-          "pageSlug": "",
-          "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Closed Qualifier - Mid (1-1)",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
