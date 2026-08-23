@@ -1,39 +1,10 @@
 {
-  "harvestedAt": 1787523674,
+  "harvestedAt": 1787527266,
   "data": [
-    {
-      "id": "1787515200-adt-south-season-2-relegation-tec-imp",
-      "startsAt": 1787515200,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TEC",
-          "name": "Titan Esports Club",
-          "pageSlug": "Titan_Esports_Club",
-          "logoUrl": "/teams/50px-Titan_Esports_Club_2025_allmode-dd31b871.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "IMP",
-          "name": "Imperio",
-          "pageSlug": "Imperio",
-          "logoUrl": "/teams/52px-Imperio_darkmode-9e6acb0e.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "ADT South S2 - Relegation",
-      "tournamentPageSlug": "ADT/South/Season_2/Relegation",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1787524200-adt-north-season-1-relegation-boss-rto",
       "startsAt": 1787524200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -41,7 +12,7 @@
           "name": "Boss Esports",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -49,7 +20,7 @@
           "name": "Retaliation",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -1448,6 +1419,64 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788598800-mpl-philippines-season-18-regular-season-tnc-tlph",
+      "startsAt": 1788598800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TNC",
+          "name": "TNC Pro Team",
+          "pageSlug": "TNC_Pro_Team",
+          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TLPH",
+          "name": "Team Liquid PH",
+          "pageSlug": "Team_Liquid_PH",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787515200-adt-south-season-2-relegation-tec-imp",
+      "startsAt": 1787515200,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TEC",
+          "name": "Titan Esports Club",
+          "pageSlug": "Titan_Esports_Club",
+          "logoUrl": "/teams/50px-Titan_Esports_Club_2025_allmode-dd31b871.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "IMP",
+          "name": "Imperio",
+          "pageSlug": "Imperio",
+          "logoUrl": "/teams/52px-Imperio_darkmode-9e6acb0e.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "ADT South S2 - Relegation",
+      "tournamentPageSlug": "ADT/South/Season_2/Relegation",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2936,39 +2965,6 @@
       "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1787119200-queen-legends-season-4-regular-season-val-gxp",
-      "startsAt": 1787119200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "Val",
-          "name": "Valhalla Valkyries",
-          "pageSlug": "",
-          "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "GXP",
-          "name": "Galaxy Phoenix",
-          "pageSlug": "Galaxy_Phoenix",
-          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - RS: Week 4",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/niJCt1ShbXk?si=KX83Bvy0WKwxt_x3&t=2617",
-        "https://www.youtube.com/live/niJCt1ShbXk?si=KltcfyjcLt_COgBb&t=5093",
-        "https://www.youtube.com/live/7iCoRYPT5sg?si=LeLffsja1xOwDrpC&t=428"
-      ]
     }
   ]
 }
