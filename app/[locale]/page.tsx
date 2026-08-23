@@ -7,6 +7,7 @@ import { LiveNow } from '@/components/home/live-now'
 import { Ticker } from '@/components/matches/ticker'
 import { MatchList } from '@/components/matches/match-list'
 import { RegionList } from '@/components/regions/region-list'
+import { StandingsOverview } from '@/components/standings/standings-overview'
 import { FreshnessBadge } from '@/components/ui/freshness-badge'
 import { SectionHeader } from '@/components/ui/section-header'
 import { Reveal } from '@/components/ui/reveal'
@@ -33,10 +34,13 @@ export default async function HomePage({
   setRequestLocale(locale)
   const t = await getTranslations('home')
   const tm = await getTranslations('matches')
+  const ts = await getTranslations('standings')
 
   const source = createLocalDataSource()
   const result = await source.getMatches()
   const all = isOk(result) ? result.value : []
+  const standingsResult = await source.getStandings()
+  const standings = isOk(standingsResult) ? standingsResult.value : []
   const now = BUILD_UNIX_TIME
 
   const live = liveMatches(all, now)
@@ -80,6 +84,22 @@ export default async function HomePage({
         resultCount={all.filter((match) => match.status === 'completed').length}
       />
       <LiveNow matches={live} locale={locale === 'ar' ? 'ar' : 'en'} />
+
+      {standings.length > 0 && (
+        <section data-home-standings className="section home-standings-section">
+          <Reveal>
+            <SectionHeader
+              title={ts('title')}
+              description={ts('description')}
+            />
+          </Reveal>
+          <StandingsOverview
+            tables={standings}
+            locale={locale === 'ar' ? 'ar' : 'en'}
+          />
+        </section>
+      )}
+
       <Ticker matches={today.length > 0 ? today : upcoming.slice(0, 12)} />
 
       <section className="section">

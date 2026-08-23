@@ -2,7 +2,7 @@ import fallbackMatches from '@/content/fallback/matches.json'
 import { readSnapshot, DEFAULT_SNAPSHOT_DIR } from './snapshots'
 import { err, ok } from './source'
 import type { DataSource } from './source'
-import type { Match, Result, Snapshot, Team } from './types'
+import type { Match, Result, Snapshot, StandingTable, Team } from './types'
 import { normalizeMatch } from './normalize-matches'
 
 export interface LocalOptions {
@@ -33,6 +33,16 @@ export function createLocalDataSource(options: LocalOptions = {}): DataSource {
   return {
     async getMatches(): Promise<Result<Match[]>> {
       return ok(matches().data.map(normalizeMatch))
+    },
+
+    async getStandings(regionSlug?: string): Promise<Result<StandingTable[]>> {
+      const snap = resolve<StandingTable[]>('standings', dir, null)
+      const all = snap?.data ?? []
+      return ok(
+        regionSlug
+          ? all.filter((table) => table.regionSlug === regionSlug)
+          : all,
+      )
     },
 
     async getTeamsByRegion(regionSlug: string): Promise<Result<Team[]>> {

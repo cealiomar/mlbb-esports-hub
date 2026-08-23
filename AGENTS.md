@@ -11,10 +11,11 @@ numbers, roadmap — see **[PROJECT.md](PROJECT.md)**.
 ## What this is
 
 A bilingual (English / Arabic) site showing **Mobile Legends: Bang Bang**
-esports fixtures, live matches, results and team rosters. It covers only
+esports fixtures, live matches, results, regional standings and team rosters. It covers only
 MLBB — there is no multi-game abstraction anywhere, and none should be added.
 
-**Content priority, highest first:** the schedule and who plays whom → results.
+**Content priority, highest first:** live matches → regional standings → the
+schedule and who plays whom → results.
 
 Live: not deployed yet. See [DEPLOY.md](DEPLOY.md).
 
@@ -133,20 +134,21 @@ app/
     layout.tsx          fonts, direction, nav, footer
     page.tsx            home
     matches/            all fixtures, tabbed
-    regions/[slug]/     one region: its fixtures and teams
+    regions/[slug]/     one region: standings, fixtures and teams
     teams/[slug]/       roster and recent results
 lib/
   content/regions.ts    region definitions and lookups
   content/brand.ts      the logo lockup — one place
   content/author.ts     footer credit
   data/
-    types.ts            Match, Team, Player, Article, Result
+    types.ts            Match, Team, Player, StandingTable, Result
     source.ts           the DataSource interface — the seam
     local.ts            reads snapshots, falls back to content/fallback
     snapshots.ts        read/write the committed JSON
     liquipedia/
       client.ts         rate limiting, headers, error handling
       parse-matches.ts  the match ticker → Match[]
+      parse-standings.ts rendered league table → StandingTable[]
       parse-league.ts   league wikitext → Team[]
       mirror.ts         crest filename derivation
       queue.ts          which league pages this run should fetch
@@ -154,11 +156,12 @@ lib/
   matches/select.ts     today / upcoming / live / results / by region
 components/
   matches/              card, list, crest, ticker
+  standings/            compact home rail + full accessible table
   regions/region-list.tsx
   ui/                   tabs, section header, reveal, freshness badge, footer
   layout/nav.tsx
 scripts/
-  harvest.ts            fixtures + rosters + crest mirroring
+  harvest.ts            fixtures + standings + rosters + crest mirroring
 content/
   regions.json          static region definitions
   fallback/matches.json seed data so the site is never blank
@@ -252,13 +255,13 @@ npm run dev            # development server
 npm run build          # static export into out/
 npm test
 npx playwright test
-npm run harvest        # fixtures + a batch of rosters + crest mirroring
+npm run harvest        # fixtures + standings + a roster batch + crest mirroring
 npx serve out          # preview the real export
 ```
 
-`LEAGUES_PER_RUN=11 npm run harvest` sweeps every region in one pass — about
-six minutes, because of the rate limit. `LEAGUES_PER_RUN=0` refreshes fixtures
-and crests only.
+`LEAGUES_PER_RUN=11 npm run harvest` sweeps every roster region in one pass.
+Standings refresh for every active region on every run. `LEAGUES_PER_RUN=0`
+skips the roster batch while still refreshing fixtures, standings and crests.
 
 `BASE_PATH=/repo-name npm run build` for GitHub project pages.
 
@@ -268,7 +271,6 @@ and crests only.
 
 - **News was removed by product request.** Do not add a news route, feed, or
   navigation item unless the owner explicitly asks for it again.
-- **No standings table.** Liquipedia has the data; nothing reads it yet.
 - Vietnam's roster page (`Vietnam_MLBB_Championship/2026/Fall`) may 404
   between splits. The harvester warns and moves on; fixtures still map to the
   region via `matchPrefixes`.

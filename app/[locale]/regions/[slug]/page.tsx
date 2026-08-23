@@ -14,6 +14,7 @@ import { MatchList } from '@/components/matches/match-list'
 import { SectionHeader } from '@/components/ui/section-header'
 import { Tabs } from '@/components/ui/tabs'
 import { Reveal } from '@/components/ui/reveal'
+import { StandingsTable } from '@/components/standings/standings-table'
 import { routing } from '@/i18n/routing'
 import { BUILD_UNIX_TIME } from '@/lib/time/build'
 
@@ -41,6 +42,7 @@ export default async function RegionPage({
 
   const t = await getTranslations('region')
   const tm = await getTranslations('matches')
+  const ts = await getTranslations('standings')
   const source = createLocalDataSource()
 
   const matchResult = await source.getMatches()
@@ -49,6 +51,8 @@ export default async function RegionPage({
 
   const teamResult = await source.getTeamsByRegion(slug)
   const teams = isOk(teamResult) ? teamResult.value : []
+  const standingsResult = await source.getStandings(slug)
+  const standings = isOk(standingsResult) ? standingsResult.value : []
 
   const localeKey = locale === 'ar' ? 'ar' : 'en'
   const live = liveMatches(all, now)
@@ -86,6 +90,44 @@ export default async function RegionPage({
         eyebrowColor={region.accent}
         title={region.name[localeKey]}
       />
+
+      <section id="standings" data-region-standings className="mb-20 scroll-mt-24">
+          <Reveal>
+            <SectionHeader
+              title={ts('title')}
+              description={ts('description')}
+            />
+          </Reveal>
+
+          {standings.length === 0 ? (
+            <div className="standings-empty standings-empty--region panel">
+              <span aria-hidden>—</span>
+              <strong>{ts('empty')}</strong>
+              <small>{ts('emptyHint')}</small>
+            </div>
+          ) : standings.length === 1 ? (
+            <StandingsTable
+              table={standings[0]}
+              locale={localeKey}
+              teamPageSlugs={teams.map((team) => team.pageSlug)}
+            />
+          ) : (
+            <Tabs
+              items={standings.map((table) => ({
+                id: table.id,
+                label: table.stageName,
+                count: table.rows.length,
+                content: (
+                  <StandingsTable
+                    table={table}
+                    locale={localeKey}
+                    teamPageSlugs={teams.map((team) => team.pageSlug)}
+                  />
+                ),
+              }))}
+            />
+          )}
+      </section>
 
       <Tabs items={tabs} />
 

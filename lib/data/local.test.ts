@@ -25,4 +25,12 @@ describe('local data source', () => {
 
     expect(isOk(r)).toBe(true)
   })
+
+  it('returns an empty standings list when no snapshot exists', async () => {
+    const source = createLocalDataSource({ snapshotDir: '/nonexistent' })
+    const r = await source.getStandings('philippines')
+
+    expect(isOk(r)).toBe(true)
+    if (isOk(r)) expect(r.value).toEqual([])
+  })
 })

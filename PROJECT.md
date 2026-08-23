@@ -3,12 +3,13 @@
 Complete reference for the project: what it does, how it is built, why it is
 built that way, and everything needed to run, extend or hand it over.
 
-> **Current product override (2026-08-21):** News has been removed. The visual
+> **Current product override (2026-08-23):** News has been removed. Regional
+> standings are now part of the primary flow. The visual
 > system now supports persisted light and dark glass themes, region flags and
 > pointer-driven 3D fixture cards. Any older news or dark-only notes below are
 > retained as historical implementation context and are no longer requirements.
 
-**Status:** feature-complete and tested; not yet deployed.
+**Status:** feature-complete, tested and deployed on GitHub Pages.
 **Author:** cealiomar — [Instagram](https://www.instagram.com/cealiomar.design/) · cealiomar@gmail.com
 **Repo layout:** single Next.js app, no monorepo, no services.
 
@@ -27,9 +28,9 @@ added.
 
 1. **Fixtures and the schedule** — who plays whom, and when
 2. **Live matches** — in progress right now, with running score
-3. **Results** — completed matches with the winner marked
-4. **Teams and rosters** — per region
-5. *News — secondary, parked*
+3. **Regional standings** — records, points and qualification zones
+4. **Results** — completed matches with the winner marked
+5. **Teams and rosters** — per region
 
 ### Live data, right now
 
@@ -52,9 +53,9 @@ Cambodia 10 · MENA 8 · LATAM 8 · Myanmar 9 · Thailand 10 · Vietnam 3 · CIS
 | Route | What it shows |
 |---|---|
 | `/` | Prerendered redirect to the visitor's locale |
-| `/{locale}` | Hero, live count, fixture ticker, region list, tabbed schedule |
+| `/{locale}` | Hero, live cards, standings rail, ticker, regions and schedule |
 | `/{locale}/matches` | All fixtures — Live / Today / Upcoming / Results |
-| `/{locale}/regions/{slug}` | One region: its league, tabbed fixtures, its teams |
+| `/{locale}/regions/{slug}` | One region: full standings, fixtures and teams |
 | `/{locale}/teams/{slug}` | Roster with roles and countries, recent results |
 | `/{locale}/news` | Aggregated headlines (secondary) |
 
@@ -87,7 +88,8 @@ GitHub Actions, hourly
    │
    ├─ npm run harvest
    │    ├─ Liquipedia:Matches ............. 100 fixtures + results, 1 call
-   │    ├─ 3 rotating league pages ........ rosters
+   │    ├─ all active league pages ......... standings
+   │    ├─ 3 rotating league pages ......... rosters
    │    └─ downloads any new team crests .. public/teams/
    │
    ├─ npm run harvest:news
@@ -143,7 +145,7 @@ blank.
 
 ## 4. Data sources
 
-### Liquipedia — fixtures, results, teams, rosters
+### Liquipedia — fixtures, results, standings, teams, rosters
 
 `https://liquipedia.net/mobilelegends/api.php`. **No API key is required.**
 
@@ -164,6 +166,7 @@ terms** — only `api.php`. Parsing the HTML that `action=parse&prop=text`
 Endpoints used:
 - `action=parse&page=Liquipedia:Matches&prop=text` — every fixture and result
   across all regions in one call
+- `action=parse&page=<league>&prop=text` — current regional standings
 - `action=parse&page=<league>&prop=wikitext` — participants and rosters
 - `action=query&list=allpages&apprefix=…` — checking which season pages exist
   (cheap: 1 req / 2 s)
@@ -251,6 +254,7 @@ components/
   layout/nav.tsx
   home/hero.tsx
   matches/  match-card · match-list · team-crest · ticker
+  standings/ standings-overview · standings-table
   regions/region-list.tsx
   ui/       tabs · section-header · reveal · freshness-badge · attribution · brand-mark
 
@@ -258,13 +262,14 @@ lib/
   content/  regions.ts · brand.ts · author.ts
   matches/select.ts         today / live / upcoming / results / by region
   data/
-    types.ts                Match · Team · Player · Article · Result
+    types.ts                Match · Team · Player · StandingTable · Result
     source.ts               the DataSource interface — the seam
     local.ts                reads snapshots, falls back
     snapshots.ts            read/write committed JSON
     liquipedia/
       client.ts             rate limiting, headers, errors
       parse-matches.ts      match ticker HTML → Match[]
+      parse-standings.ts    league table HTML → StandingTable[]
       parse-league.ts       league wikitext → Team[]
       mirror.ts             crest filename derivation
       queue.ts              which league pages this run fetches
@@ -272,7 +277,7 @@ lib/
     news/rss.ts             RSS/Atom → Article[]
 
 scripts/
-  harvest.ts                fixtures + rosters + crest mirroring
+  harvest.ts                fixtures + standings + rosters + crest mirroring
   harvest-news.ts
 
 content/
@@ -482,8 +487,6 @@ Dependencies: `next`, `react`, `react-dom`, `next-intl`, `node-html-parser`,
 
 ## 13. Known gaps and next steps
 
-- **No standings table.** Liquipedia has the data; nothing reads it yet. This
-  is the most valuable next feature for a schedule site.
 - **No match detail page** — no per-game scores, drafts or MVPs.
 - **News is parked.** `/news` works and is populated, but it is not in the
   primary flow and no further work is planned on it.

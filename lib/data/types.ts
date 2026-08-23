@@ -48,6 +48,36 @@ export interface Team {
   roster: Player[]
 }
 
+export type StandingZone = 'advance' | 'playoff' | 'eliminated' | 'neutral'
+
+export interface StandingTeam {
+  code: string
+  name: string
+  pageSlug: string
+  logoUrl: string | null
+}
+
+export interface StandingRow {
+  position: number
+  team: StandingTeam
+  matchWins: number | null
+  matchLosses: number | null
+  gameWins: number | null
+  gameLosses: number | null
+  gameDiff: number | null
+  points: number | null
+  zone: StandingZone
+}
+
+export interface StandingTable {
+  id: string
+  regionSlug: string
+  leagueName: string
+  leaguePageSlug: string
+  stageName: string
+  rows: StandingRow[]
+}
+
 export interface Snapshot<T> {
   /** Unix seconds when this snapshot was harvested. */
   harvestedAt: number

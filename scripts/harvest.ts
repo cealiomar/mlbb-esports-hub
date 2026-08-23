@@ -5,8 +5,9 @@ import { createLiquipediaClient } from '@/lib/data/liquipedia/client'
 import { parseMatches } from '@/lib/data/liquipedia/parse-matches'
 import { queueEntriesForRun } from '@/lib/data/liquipedia/queue'
 import { parseLeagueTeams } from '@/lib/data/liquipedia/parse-league'
+import { parseStandings } from '@/lib/data/liquipedia/parse-standings'
 import { readSnapshot, writeSnapshot } from '@/lib/data/snapshots'
-import type { Team } from '@/lib/data/types'
+import type { StandingTable, Team } from '@/lib/data/types'
 import {
   LOGO_PUBLIC_DIR,
   isRemote,
@@ -24,15 +25,10 @@ import type { Match } from '@/lib/data/types'
  * each one down once and serve it ourselves — more reliable, and it keeps us
  * off their bandwidth.
  */
-async function mirrorLogos(matches: Match[]): Promise<Match[]> {
+async function mirrorRemoteLogos(urls: Iterable<string>): Promise<void> {
   mkdirSync(LOGO_PUBLIC_DIR, { recursive: true })
 
-  const wanted = new Set<string>()
-  for (const match of matches) {
-    for (const side of match.opponents) {
-      if (isRemote(side.logoUrl)) wanted.add(side.logoUrl)
-    }
-  }
+  const wanted = new Set(urls)
 
   let fetched = 0
   let cached = 0
@@ -62,16 +58,57 @@ async function mirrorLogos(matches: Match[]): Promise<Match[]> {
   }
 
   console.log(`logos: ${fetched} fetched, ${cached} already local`)
+}
+
+function localizeLogo(url: string | null): string | null {
+  if (!isRemote(url)) return url
+  const exists = existsSync(join(LOGO_PUBLIC_DIR, localLogoName(url)))
+  return exists ? localLogoUrl(url) : url
+}
+
+function localizeStandingLogo(url: string | null): string | null {
+  if (!isRemote(url)) return url
+  const exists = existsSync(join(LOGO_PUBLIC_DIR, localLogoName(url)))
+  // Standings are a new surface: prefer the readable monogram fallback over
+  // shipping a fragile third-party image URL when a mirror download fails.
+  return exists ? localLogoUrl(url) : null
+}
+
+async function mirrorLogos(matches: Match[]): Promise<Match[]> {
+  const wanted = matches.flatMap((match) =>
+    match.opponents
+      .map((side) => side.logoUrl)
+      .filter((url): url is string => isRemote(url)),
+  )
+  await mirrorRemoteLogos(wanted)
 
   // Rewrite to local paths, but only where the file really exists — a failed
   // download must leave the original URL rather than a dead link.
   return matches.map((match) => ({
     ...match,
-    opponents: match.opponents.map((side) => {
-      if (!isRemote(side.logoUrl)) return side
-      const exists = existsSync(join(LOGO_PUBLIC_DIR, localLogoName(side.logoUrl)))
-      return exists ? { ...side, logoUrl: localLogoUrl(side.logoUrl) } : side
-    }) as Match['opponents'],
+    opponents: match.opponents.map((side) => ({
+      ...side,
+      logoUrl: localizeLogo(side.logoUrl),
+    })) as Match['opponents'],
+  }))
+}
+
+async function mirrorStandingLogos(
+  tables: StandingTable[],
+): Promise<StandingTable[]> {
+  const wanted = tables.flatMap((table) =>
+    table.rows
+      .map((row) => row.team.logoUrl)
+      .filter((url): url is string => isRemote(url)),
+  )
+  await mirrorRemoteLogos(wanted)
+
+  return tables.map((table) => ({
+    ...table,
+    rows: table.rows.map((row) => ({
+      ...row,
+      team: { ...row.team, logoUrl: localizeStandingLogo(row.team.logoUrl) },
+    })),
   }))
 }
 
@@ -105,8 +142,60 @@ async function main(): Promise<void> {
   writeSnapshot('matches', matches)
   console.log(`wrote ${matches.length} matches`)
 
+  const regions = getRegions()
+  const previousStandings =
+    readSnapshot<StandingTable[]>('standings')?.data ?? []
+  const refreshedRegions = new Set<string>()
+  const refreshedTables: StandingTable[] = []
+
+  // Standings change with every completed series, so refresh every active
+  // regional league each hour. The client spaces every parse call by 30s.
+  for (const region of regions) {
+    const rendered = await client.parsePage(region.liquipediaLeaguePage, 'text')
+    if (!isOk(rendered)) {
+      console.warn(
+        `standings harvest skipped for ${region.liquipediaLeaguePage}: ${rendered.error}`,
+      )
+      continue
+    }
+
+    const tables = parseStandings(rendered.value, {
+      regionSlug: region.slug,
+      leagueName: region.leagueName,
+      leaguePageSlug: region.liquipediaLeaguePage,
+    })
+    if (tables.length === 0) {
+      console.warn(
+        `no standings parsed from ${region.liquipediaLeaguePage}; snapshot unchanged`,
+      )
+      continue
+    }
+
+    refreshedRegions.add(region.slug)
+    refreshedTables.push(...tables)
+    console.log(
+      `parsed ${tables.reduce((sum, table) => sum + table.rows.length, 0)} standing rows for ${region.slug}`,
+    )
+  }
+
+  if (refreshedRegions.size > 0) {
+    const mergedStandings = [
+      ...previousStandings.filter(
+        (table) => !refreshedRegions.has(table.regionSlug),
+      ),
+      ...refreshedTables,
+    ].sort(
+      (a, b) =>
+        regions.findIndex((region) => region.slug === a.regionSlug) -
+        regions.findIndex((region) => region.slug === b.regionSlug),
+    )
+    const standings = await mirrorStandingLogos(mergedStandings)
+    writeSnapshot('standings', standings)
+    console.log(`wrote ${standings.length} standings tables`)
+  }
+
   // Then a batch of rotating league pages. The client enforces the 30s gap.
-  for (const entry of queueEntriesForRun(getRegions(), runIndex, batchSize)) {
+  for (const entry of queueEntriesForRun(regions, runIndex, batchSize)) {
     const league = await client.parsePage(entry.page, 'wikitext')
     if (!isOk(league)) {
       // A missing league page is not fatal — seasons start and end.

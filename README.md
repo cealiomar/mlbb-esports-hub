@@ -1,6 +1,6 @@
 # MLBB Esports Hub
 
-Fixtures, results and rosters for **Mobile Legends: Bang Bang** esports across
+Live matches, standings, fixtures, results and rosters for **Mobile Legends: Bang Bang** esports across
 every region that runs a league — in English and Arabic.
 
 > **[PROJECT.md](PROJECT.md)** is the full reference: architecture, data
@@ -15,8 +15,9 @@ Fetching is completely decoupled from serving.
 ```
 GitHub Actions (hourly)
   └── npm run harvest
-        ├── Liquipedia:Matches      → data/snapshots/matches.json
-        └── 3 rotating league pages → data/snapshots/teams.json
+        ├── Liquipedia:Matches       → data/snapshots/matches.json
+        ├── all active league pages  → data/snapshots/standings.json
+        └── 3 rotating league pages  → data/snapshots/teams.json
         └── commits snapshots and new crests → host redeploys
 ```
 
@@ -27,8 +28,9 @@ statically generated — nothing spins or loads in front of the reader.
 ### Why hourly
 
 Liquipedia's terms cap `action=parse` at **one request per 30 seconds**. A run
-makes four calls, spaced by the client itself, taking about 90 seconds. Results
-can therefore trail live play by up to an hour. That is deliberate: this is a
+refreshes matches, every current standings table and a rotating roster batch,
+with calls spaced by the client itself. Results can therefore trail live play
+by up to an hour. That is deliberate: this is a
 schedule site, and instant rendering matters more here than live scores.
 
 ## Deploying
@@ -45,7 +47,7 @@ npm run dev          # development server
 npm run build        # static export into out/ — every route must be ○ or ●
 npm test             # unit tests (no network)
 npx playwright test  # smoke and mobile tests
-npm run harvest      # fetch matches + a batch of league rosters
+npm run harvest      # fetch matches + standings + a batch of league rosters
 ```
 
 `LEAGUES_PER_RUN=11 npm run harvest` sweeps every region in one go — useful for
@@ -54,7 +56,7 @@ a first-run backfill. It takes roughly six minutes because of the rate limit.
 ## Data sources
 
 **Liquipedia** (`liquipedia.net/mobilelegends/api.php`) — fixtures, results,
-teams and rosters. No API key required, but three things are mandatory and the
+standings, teams and rosters. No API key required, but three things are mandatory and the
 request fails without them:
 
 - `Accept-Encoding: gzip` (otherwise HTTP 406, not data)

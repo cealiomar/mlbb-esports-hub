@@ -100,7 +100,7 @@ test('generic placeholder crests and source redlink labels never leak to cards',
 
 test('every region is reachable from the home page', async ({ page }) => {
   await page.goto('/en/')
-  const links = page.locator('a[href*="/regions/"]')
+  const links = page.getByTestId('region-rail').locator('a[href*="/regions/"]')
   await expect(links).toHaveCount(11)
 })
 
@@ -113,11 +113,47 @@ test('the home page puts live matches directly after the hero', async ({
   if ((await liveSection.count()) > 0) {
     const order = await liveSection.evaluate((node) => ({
       previousIsHero: node.previousElementSibling?.classList.contains('hero'),
-      nextIsTicker: node.nextElementSibling?.classList.contains('marquee'),
+      nextIsStandings:
+        node.nextElementSibling?.hasAttribute('data-home-standings'),
+      standingsThenTicker:
+        node.nextElementSibling?.nextElementSibling?.classList.contains('marquee'),
     }))
-    expect(order).toEqual({ previousIsHero: true, nextIsTicker: true })
+    expect(order).toEqual({
+      previousIsHero: true,
+      nextIsStandings: true,
+      standingsThenTicker: true,
+    })
     await expect(page.locator('a[href="#live"]')).toBeVisible()
   }
+})
+
+test('the home page shows compact standings by region', async ({ page }) => {
+  await page.goto('/en/')
+
+  const section = page.locator('[data-home-standings]')
+  await expect(section).toBeVisible()
+  await expect(section.getByRole('heading', { name: 'League standings' })).toBeVisible()
+
+  const cards = page.getByTestId('standings-rail').locator('article')
+  await expect(cards).toHaveCount(11)
+  expect(await cards.first().locator('tbody tr').count()).toBeLessThanOrEqual(4)
+  await expect(cards.first().getByRole('link', { name: /Full standings/ })).toBeVisible()
+  await expect(
+    page.getByTestId('standings-rail').locator('img[src*="liquipedia"]'),
+  ).toHaveCount(0)
+})
+
+test('a region page shows its complete standings and qualification legend', async ({
+  page,
+}) => {
+  await page.goto('/en/regions/philippines/')
+
+  const section = page.locator('[data-region-standings]')
+  await expect(section).toBeVisible()
+  await expect(section.locator('tbody tr').first()).toBeVisible()
+  expect(await section.locator('tbody tr').count()).toBeGreaterThan(4)
+  await expect(section.locator('[data-standing-legend="advance"]')).toBeVisible()
+  await expect(section.locator('[data-standing-legend="eliminated"]')).toBeVisible()
 })
 
 test('regions use a horizontal snap rail with working controls', async ({
