@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787477294,
+  "harvestedAt": 1787480638,
   "data": [
     {
       "id": "1787470200-mpl-cambodia-season-11-qualifier-tnr-sys",
@@ -20,7 +20,7 @@
           "name": "See You Soon",
           "pageSlug": "See_You_Soon",
           "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png",
-          "score": 1,
+          "score": 2,
           "isWinner": false
         }
       ],
@@ -30,38 +30,6 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787473800-league-of-champions-tournament-season-7-playoffs-df-fw",
-      "startsAt": 1787473800,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DF",
-          "name": "D Family",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "FW",
-          "name": "Fantastic Warriors",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "LOC S7 2026",
-      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/@atom-mm",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/ATOMLetsPlayArena"
       ],
       "vodUrls": []
     },
@@ -84,7 +52,7 @@
           "name": "Selangor Red Giants",
           "pageSlug": "Selangor_Red_Giants",
           "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": 0,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -94,38 +62,6 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787475600-mpl-philippines-season-18-regular-season-onph-apbr",
-      "startsAt": 1787475600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ONPH",
-          "name": "ONIC Philippines",
-          "pageSlug": "ONIC_Philippines",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "APBR",
-          "name": "AP.Bren",
-          "pageSlug": "AP.Bren",
-          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
       ],
       "vodUrls": []
     },
@@ -162,7 +98,7 @@
       "vodUrls": []
     },
     {
-      "id": "1787481000-league-of-champions-tournament-season-7-playoffs-zino-tbd",
+      "id": "1787481000-league-of-champions-tournament-season-7-playoffs-zino-df",
       "startsAt": 1787481000,
       "status": "upcoming",
       "bestOf": 5,
@@ -176,10 +112,10 @@
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "DF",
+          "name": "D Family",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
           "score": null,
           "isWinner": false
         }
@@ -219,7 +155,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
@@ -1466,6 +1405,122 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788521400-mpl-philippines-season-18-regular-season-tnc-onph",
+      "startsAt": 1788521400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TNC",
+          "name": "TNC Pro Team",
+          "pageSlug": "TNC_Pro_Team",
+          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "ONPH",
+          "name": "ONIC Philippines",
+          "pageSlug": "ONIC_Philippines",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788524100-mpl-malaysia-season-18-regular-season-rrqt-srg",
+      "startsAt": 1788524100,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RRQT",
+          "name": "RRQ Tora",
+          "pageSlug": "RRQ_Tora",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SRG",
+          "name": "Selangor Red Giants",
+          "pageSlug": "Selangor_Red_Giants",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787475600-mpl-philippines-season-18-regular-season-onph-apbr",
+      "startsAt": 1787475600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ONPH",
+          "name": "ONIC Philippines",
+          "pageSlug": "ONIC_Philippines",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "APBR",
+          "name": "AP.Bren",
+          "pageSlug": "AP.Bren",
+          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787473800-league-of-champions-tournament-season-7-playoffs-df-fw",
+      "startsAt": 1787473800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DF",
+          "name": "D Family",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "FW",
+          "name": "Fantastic Warriors",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "LOC S7 2026",
+      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2921,64 +2976,6 @@
         }
       ],
       "tournamentName": "MCC Season 8 - Closed Qualifier - Mid (1-1)",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786966200-mdl-indonesia-season-14-regular-season-sdw-vesa",
-      "startsAt": 1786966200,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "SDW",
-          "name": "Shadow Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/41px-Shadow_Esports_allmode-d42d07b0.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "VESA",
-          "name": "Vesakha Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/68px-Vesakha_Esports_2026_allmode-944f2d63.png",
-          "score": 3,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 2",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786962600-mlbb-continental-championships-season-8-closed-qualifier-gct-akla",
-      "startsAt": 1786962600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "GCT",
-          "name": "Geltek Cyber Team",
-          "pageSlug": "Geltek_Cyber_Team",
-          "logoUrl": "/teams/47px-Geltek_Cyber_Team_allmode-4dfb57d1.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "AKLA",
-          "name": "AKEOLA Academy",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Closed Qualifier - Low (0-1)",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
       "streamUrls": [],
