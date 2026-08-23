@@ -1,5 +1,12 @@
 import { describe, it, expect } from 'vitest'
-import { todayMatches, upcomingMatches, recentResults, byRegion } from './select'
+import {
+  todayMatches,
+  upcomingMatches,
+  liveMatches,
+  recentResults,
+  byRegion,
+  LIVE_ASSUMED_WINDOW_SECONDS,
+} from './select'
 import type { Match } from '@/lib/data/types'
 
 const HOUR = 3600
@@ -51,6 +58,36 @@ describe('match selection', () => {
   it('upcoming excludes live matches', () => {
     const result = upcomingMatches(
       [make({ id: 'live', status: 'live', startsAt: NOW + HOUR })],
+      NOW,
+    )
+    expect(result).toHaveLength(0)
+  })
+
+  it('keeps explicitly live matches visible', () => {
+    const result = liveMatches(
+      [make({ id: 'live', status: 'live', startsAt: NOW - 10 * HOUR })],
+      NOW,
+    )
+    expect(result.map((m) => m.id)).toEqual(['live'])
+  })
+
+  it('treats a recently started upcoming match as live while scores catch up', () => {
+    const result = liveMatches(
+      [make({ id: 'started', status: 'upcoming', startsAt: NOW - 10 * 60 })],
+      NOW,
+    )
+    expect(result.map((m) => m.id)).toEqual(['started'])
+  })
+
+  it('does not treat future or stale upcoming matches as live', () => {
+    const result = liveMatches(
+      [
+        make({ id: 'future', startsAt: NOW + HOUR }),
+        make({
+          id: 'stale',
+          startsAt: NOW - LIVE_ASSUMED_WINDOW_SECONDS - 1,
+        }),
+      ],
       NOW,
     )
     expect(result).toHaveLength(0)

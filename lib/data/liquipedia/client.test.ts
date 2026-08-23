@@ -85,6 +85,41 @@ describe('liquipedia client', () => {
     if (!isOk(r)) expect(r.error).toContain('406')
   })
 
+  it('retries a rate-limited parse request after the required delay', async () => {
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(
+        new Response('slow down', {
+          status: 429,
+          headers: { 'retry-after': '45' },
+        }),
+      )
+      .mockResolvedValueOnce(
+        jsonResponse({ parse: { text: { '*': '<p>recovered</p>' } } }),
+      ) as unknown as typeof fetch
+    const d = deps(fetchMock)
+
+    const r = await createLiquipediaClient(d).parsePage('A', 'text')
+
+    expect(isOk(r)).toBe(true)
+    expect(fetchMock).toHaveBeenCalledTimes(2)
+    expect(d.sleep).toHaveBeenCalledTimes(1)
+    expect(d.sleep.mock.calls[0][0]).toBe(45_000)
+  })
+
+  it('stops retrying after three temporary server failures', async () => {
+    const fetchMock = vi.fn(async () =>
+      new Response('unavailable', { status: 503 }),
+    ) as unknown as typeof fetch
+    const d = deps(fetchMock)
+
+    const r = await createLiquipediaClient(d).parsePage('A', 'text')
+
+    expect(isOk(r)).toBe(false)
+    expect(fetchMock).toHaveBeenCalledTimes(3)
+    expect(d.sleep).toHaveBeenCalledTimes(2)
+  })
+
   it('reports an error when the wiki returns an api error', async () => {
     const fetchMock = vi.fn(async () =>
       jsonResponse({ error: { info: 'The page you specified does not exist.' } }),

@@ -40,7 +40,7 @@ export default async function MatchesPage({
   const all = isOk(result) ? result.value : []
   const now = BUILD_UNIX_TIME
 
-  const live = liveMatches(all)
+  const live = liveMatches(all, now)
 
   const tabs: MatchExplorerGroup[] = [
     ...(live.length > 0

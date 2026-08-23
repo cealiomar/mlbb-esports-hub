@@ -51,7 +51,7 @@ export default async function RegionPage({
   const teams = isOk(teamResult) ? teamResult.value : []
 
   const localeKey = locale === 'ar' ? 'ar' : 'en'
-  const live = liveMatches(all)
+  const live = liveMatches(all, now)
 
   const tabs = [
     ...(live.length > 0

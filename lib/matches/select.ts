@@ -1,6 +1,7 @@
 import type { Match } from '@/lib/data/types'
 
 const DAY = 86_400
+export const LIVE_ASSUMED_WINDOW_SECONDS = 5 * 60 * 60
 
 function utcDayIndex(unixSeconds: number): number {
   return Math.floor(unixSeconds / DAY)
@@ -19,9 +20,15 @@ export function upcomingMatches(all: Match[], now: number): Match[] {
     .sort((a, b) => a.startsAt - b.startsAt)
 }
 
-export function liveMatches(all: Match[]): Match[] {
+export function liveMatches(all: Match[], now: number): Match[] {
   return all
-    .filter((m) => m.status === 'live')
+    .filter(
+      (m) =>
+        m.status === 'live' ||
+        (m.status === 'upcoming' &&
+          m.startsAt <= now &&
+          m.startsAt >= now - LIVE_ASSUMED_WINDOW_SECONDS),
+    )
     .sort((a, b) => a.startsAt - b.startsAt)
 }
 

@@ -39,7 +39,7 @@ export default async function HomePage({
   const all = isOk(result) ? result.value : []
   const now = BUILD_UNIX_TIME
 
-  const live = liveMatches(all)
+  const live = liveMatches(all, now)
   const today = todayMatches(all, now)
   const upcoming = upcomingMatches(all, now)
   const results = recentResults(all, 9)
