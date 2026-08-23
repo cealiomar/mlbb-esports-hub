@@ -1,36 +1,62 @@
 {
-  "harvestedAt": 1787516540,
+  "harvestedAt": 1787520107,
   "data": [
     {
-      "id": "1787490000-mpl-indonesia-season-18-regular-season-geek-evos",
-      "startsAt": 1787490000,
+      "id": "1787515200-adt-south-season-2-relegation-tec-imp",
+      "startsAt": 1787515200,
       "status": "upcoming",
-      "bestOf": 3,
+      "bestOf": 5,
       "opponents": [
         {
-          "code": "GEEK",
-          "name": "Geek Fam ID",
-          "pageSlug": "Geek_Fam_ID",
-          "logoUrl": "/teams/43px-Geek_Fam_2019_allmode-1e9b1f3c.png",
+          "code": "TEC",
+          "name": "Titan Esports Club",
+          "pageSlug": "Titan_Esports_Club",
+          "logoUrl": "/teams/50px-Titan_Esports_Club_2025_allmode-dd31b871.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "EVOS",
-          "name": "EVOS",
-          "pageSlug": "EVOS",
-          "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png",
+          "code": "IMP",
+          "name": "Imperio",
+          "pageSlug": "Imperio",
+          "logoUrl": "/teams/52px-Imperio_darkmode-9e6acb0e.png",
           "score": null,
           "isWinner": false
         }
       ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      "tournamentName": "ADT South S2 - Relegation",
+      "tournamentPageSlug": "ADT/South/Season_2/Relegation",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787524200-adt-north-season-1-relegation-boss-rto",
+      "startsAt": 1787524200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "BOSS",
+          "name": "Boss Esports",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RTO",
+          "name": "Retaliation",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
       ],
+      "tournamentName": "ADT North S1 - Relegation",
+      "tournamentPageSlug": "ADT/North/Season_1/Relegation",
+      "regionSlug": null,
+      "streamUrls": [],
       "vodUrls": []
     },
     {
@@ -1426,31 +1452,31 @@
       "vodUrls": []
     },
     {
-      "id": "1788598800-mpl-philippines-season-18-regular-season-tnc-tlph",
-      "startsAt": 1788598800,
-      "status": "upcoming",
+      "id": "1787490000-mpl-indonesia-season-18-regular-season-geek-evos",
+      "startsAt": 1787490000,
+      "status": "completed",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TNC",
-          "name": "TNC Pro Team",
-          "pageSlug": "TNC_Pro_Team",
-          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
-          "score": null,
+          "code": "GEEK",
+          "name": "Geek Fam ID",
+          "pageSlug": "Geek_Fam_ID",
+          "logoUrl": "/teams/43px-Geek_Fam_2019_allmode-1e9b1f3c.png",
+          "score": 0,
           "isWinner": false
         },
         {
-          "code": "TLPH",
-          "name": "Team Liquid PH",
-          "pageSlug": "Team_Liquid_PH",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
-          "isWinner": false
+          "code": "EVOS",
+          "name": "EVOS",
+          "pageSlug": "EVOS",
+          "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png",
+          "score": 2,
+          "isWinner": true
         }
       ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2943,35 +2969,6 @@
         "https://www.youtube.com/live/niJCt1ShbXk?si=KltcfyjcLt_COgBb&t=5093",
         "https://www.youtube.com/live/7iCoRYPT5sg?si=LeLffsja1xOwDrpC&t=428"
       ]
-    },
-    {
-      "id": "1787052600-mdl-indonesia-season-14-regular-season-tlaid-btrac",
-      "startsAt": 1787052600,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TLAID",
-          "name": "Team Liquid Academy ID",
-          "pageSlug": "Team_Liquid_Academy_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "BTRAC",
-          "name": "Bigetron Academy",
-          "pageSlug": "Bigetron_Academy",
-          "logoUrl": "/teams/50px-Bigetron_Academy_darkmode-c5d937cb.png",
-          "score": 3,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 2",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
