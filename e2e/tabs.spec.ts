@@ -156,6 +156,20 @@ test('a region page shows its complete standings and qualification legend', asyn
   await expect(section.locator('[data-standing-legend="eliminated"]')).toBeVisible()
 })
 
+test('an inactive season never leaks last season standings or teams', async ({
+  page,
+}) => {
+  await page.goto('/en/regions/mena/')
+
+  const standings = page.locator('[data-region-standings]')
+  await expect(standings.locator('tbody tr')).toHaveCount(0)
+  await expect(standings).toContainText('Standings not published yet')
+  await expect(page.locator('main')).not.toContainText(/GAMAX/i)
+  await expect(page.locator('main')).toContainText(
+    'Current-season teams will appear when the league publishes them.',
+  )
+})
+
 test('regions use a horizontal snap rail with working controls', async ({
   page,
 }) => {

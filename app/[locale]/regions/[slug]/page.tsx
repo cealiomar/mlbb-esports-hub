@@ -53,6 +53,13 @@ export default async function RegionPage({
   const teams = isOk(teamResult) ? teamResult.value : []
   const standingsResult = await source.getStandings(slug)
   const standings = isOk(standingsResult) ? standingsResult.value : []
+  const hasCurrentSeasonMatches = all.some(
+    (match) =>
+      match.tournamentPageSlug === region.liquipediaLeaguePage ||
+      match.tournamentPageSlug.startsWith(`${region.liquipediaLeaguePage}/`),
+  )
+  const currentTeams =
+    standings.length > 0 || hasCurrentSeasonMatches ? teams : []
 
   const localeKey = locale === 'ar' ? 'ar' : 'en'
   const live = liveMatches(all, now)
@@ -109,7 +116,7 @@ export default async function RegionPage({
             <StandingsTable
               table={standings[0]}
               locale={localeKey}
-              teamPageSlugs={teams.map((team) => team.pageSlug)}
+              teamPageSlugs={currentTeams.map((team) => team.pageSlug)}
             />
           ) : (
             <Tabs
@@ -121,7 +128,7 @@ export default async function RegionPage({
                   <StandingsTable
                     table={table}
                     locale={localeKey}
-                    teamPageSlugs={teams.map((team) => team.pageSlug)}
+                    teamPageSlugs={currentTeams.map((team) => team.pageSlug)}
                   />
                 ),
               }))}
@@ -137,9 +144,9 @@ export default async function RegionPage({
         </Reveal>
       </div>
 
-      {teams.length > 0 ? (
+      {currentTeams.length > 0 ? (
         <ul className="flex flex-wrap justify-center gap-3">
-          {teams.map((team, index) => (
+          {currentTeams.map((team, index) => (
             <li
               key={team.pageSlug}
               className="reveal w-full sm:w-[calc(50%-0.375rem)] lg:w-[calc(33.333%-0.5rem)]"
@@ -165,7 +172,7 @@ export default async function RegionPage({
           ))}
         </ul>
       ) : (
-        <p className="text-center text-[var(--ink-muted)]">{tm('noMatches')}</p>
+        <p className="text-center text-[var(--ink-muted)]">{t('teamsPending')}</p>
       )}
     </main>
   )

@@ -1,7 +1,11 @@
 import { beforeAll, describe, expect, it } from 'vitest'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { parseStandings } from './parse-standings'
+import {
+  isTournamentWindowActive,
+  parseStandings,
+  parseTournamentWindow,
+} from './parse-standings'
 import type { StandingTable } from '../types'
 
 let tables: StandingTable[]
@@ -84,5 +88,33 @@ describe('parseStandings', () => {
 
     expect(result[0].rows).toHaveLength(8)
     expect(new Set(result[0].rows.map((row) => row.team.name)).size).toBe(8)
+  })
+})
+
+describe('tournament freshness', () => {
+  const windowHtml = readFileSync(
+    join(__dirname, '__fixtures__', 'tournament-window-mena.html'),
+    'utf8',
+  )
+
+  it('reads the official start and end dates from the captured infobox', () => {
+    expect(parseTournamentWindow(windowHtml)).toEqual({
+      startAt: Date.parse('2026-04-10T00:00:00Z') / 1000,
+      endAt: Date.parse('2026-05-22T23:59:59Z') / 1000,
+    })
+  })
+
+  it('rejects a standings table after its tournament has ended', () => {
+    const window = parseTournamentWindow(windowHtml)
+    expect(
+      isTournamentWindowActive(
+        window,
+        Date.parse('2026-08-23T00:00:00Z') / 1000,
+      ),
+    ).toBe(false)
+  })
+
+  it('falls back to match evidence when the page has no dates', () => {
+    expect(isTournamentWindowActive(parseTournamentWindow('<main />'), 1)).toBeNull()
   })
 })

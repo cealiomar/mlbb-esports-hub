@@ -85,6 +85,15 @@ crest is remote and that every one has `naturalWidth > 0`.
 
 Do not "simplify" this back to remote URLs.
 
+### Standings must belong to an active season
+
+Rendered league pages keep their final table after the event ends. The
+harvester reads the infobox Start Date / End Date and publishes standings only
+while that tournament window is active. If those dates are absent, it requires
+a match from the exact configured season as evidence. A successful fetch with
+no current table clears that region's old rows; it must never preserve and
+relabel last season as current.
+
 ### Page titles drift, and the listing is alphabetical
 
 Season pages move (`MPL/MENA/Season_9` today, `Season_10` when it exists). To

@@ -67,6 +67,10 @@ Their content is CC-BY-SA 3.0, so Liquipedia is credited with a link in the
 footer of every page. Scraping their rendered HTML pages is forbidden by their
 terms; only `api.php` is used.
 
+Standings are additionally checked against each tournament's official start
+and end dates. Finished or not-yet-started seasons are omitted instead of
+showing the last available table as if it were current.
+
 ## Regions
 
 Defined in [`content/regions.json`](content/regions.json). A region is listed

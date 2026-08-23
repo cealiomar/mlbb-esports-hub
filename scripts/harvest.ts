@@ -5,7 +5,11 @@ import { createLiquipediaClient } from '@/lib/data/liquipedia/client'
 import { parseMatches } from '@/lib/data/liquipedia/parse-matches'
 import { queueEntriesForRun } from '@/lib/data/liquipedia/queue'
 import { parseLeagueTeams } from '@/lib/data/liquipedia/parse-league'
-import { parseStandings } from '@/lib/data/liquipedia/parse-standings'
+import {
+  isTournamentWindowActive,
+  parseStandings,
+  parseTournamentWindow,
+} from '@/lib/data/liquipedia/parse-standings'
 import { readSnapshot, writeSnapshot } from '@/lib/data/snapshots'
 import type { StandingTable, Team } from '@/lib/data/types'
 import {
@@ -159,6 +163,28 @@ async function main(): Promise<void> {
       continue
     }
 
+    // A successful response replaces this region, even when it proves the
+    // configured season has ended or has not published a table. Keeping the
+    // previous rows here would silently relabel last season as current.
+    refreshedRegions.add(region.slug)
+
+    const windowStatus = isTournamentWindowActive(
+      parseTournamentWindow(rendered.value),
+      Math.floor(Date.now() / 1000),
+    )
+    const hasCurrentMatch = matches.some(
+      (match) =>
+        match.tournamentPageSlug === region.liquipediaLeaguePage ||
+        match.tournamentPageSlug.startsWith(`${region.liquipediaLeaguePage}/`),
+    )
+    const isCurrentSeason = windowStatus ?? hasCurrentMatch
+    if (!isCurrentSeason) {
+      console.warn(
+        `standings suppressed for inactive season ${region.liquipediaLeaguePage}`,
+      )
+      continue
+    }
+
     const tables = parseStandings(rendered.value, {
       regionSlug: region.slug,
       leagueName: region.leagueName,
@@ -166,12 +192,11 @@ async function main(): Promise<void> {
     })
     if (tables.length === 0) {
       console.warn(
-        `no standings parsed from ${region.liquipediaLeaguePage}; snapshot unchanged`,
+        `no current standings parsed from ${region.liquipediaLeaguePage}; old rows cleared`,
       )
       continue
     }
 
-    refreshedRegions.add(region.slug)
     refreshedTables.push(...tables)
     console.log(
       `parsed ${tables.reduce((sum, table) => sum + table.rows.length, 0)} standing rows for ${region.slug}`,

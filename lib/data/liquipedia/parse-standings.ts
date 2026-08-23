@@ -14,6 +14,45 @@ export interface StandingsContext {
   leaguePageSlug: string
 }
 
+export interface TournamentWindow {
+  startAt: number | null
+  endAt: number | null
+}
+
+function tournamentDate(
+  root: HTMLElement,
+  label: 'start date' | 'end date',
+  endOfDay = false,
+): number | null {
+  const heading = root
+    .querySelectorAll('.infobox-description')
+    .find((element) => normaliseHeader(element.text).replace(/:$/, '') === label)
+  const value = heading?.nextElementSibling?.text.trim()
+  if (!value || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return null
+
+  const suffix = endOfDay ? 'T23:59:59Z' : 'T00:00:00Z'
+  const parsed = Date.parse(`${value}${suffix}`)
+  return Number.isNaN(parsed) ? null : Math.floor(parsed / 1000)
+}
+
+export function parseTournamentWindow(html: string): TournamentWindow {
+  const root = parse(html)
+  return {
+    startAt: tournamentDate(root, 'start date'),
+    endAt: tournamentDate(root, 'end date', true),
+  }
+}
+
+export function isTournamentWindowActive(
+  window: TournamentWindow,
+  now: number,
+): boolean | null {
+  if (window.startAt === null && window.endAt === null) return null
+  if (window.startAt !== null && now < window.startAt) return false
+  if (window.endAt !== null && now > window.endAt) return false
+  return true
+}
+
 function pageSlugFromHref(href: string | undefined): string {
   if (!href || !href.startsWith(PAGE_PREFIX)) return ''
   return decodeURIComponent(href.slice(PAGE_PREFIX.length).split('#')[0])

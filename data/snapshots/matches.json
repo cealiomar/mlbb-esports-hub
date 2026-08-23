@@ -1,106 +1,10 @@
 {
-  "harvestedAt": 1787485244,
+  "harvestedAt": 1787490439,
   "data": [
-    {
-      "id": "1787479200-mpl-indonesia-season-18-regular-season-onic-btr",
-      "startsAt": 1787479200,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ONIC",
-          "name": "ONIC",
-          "pageSlug": "ONIC",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "BTR",
-          "name": "Bigetron by Vitality",
-          "pageSlug": "Bigetron_by_Vitality",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787481000-league-of-champions-tournament-season-7-playoffs-zino-df",
-      "startsAt": 1787481000,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "ZINO",
-          "name": "Zino Esports",
-          "pageSlug": "Zino_Esports",
-          "logoUrl": "/teams/43px-Zino_Esports_2026_allmode-c2ef6c21.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "DF",
-          "name": "D Family",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "LOC S7 2026",
-      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/@atom-mm",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/ATOMLetsPlayArena"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787483700-mpl-cambodia-season-11-qualifier-ne-tnr",
-      "startsAt": 1787483700,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "NE",
-          "name": "Nova Eclipse",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TNR",
-          "name": "TNR Esports",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL KH S11 Qual.",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
-      "regionSlug": "cambodia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1787484600-mpl-philippines-season-18-regular-season-tnc-rora",
       "startsAt": 1787484600,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -108,7 +12,7 @@
           "name": "TNC Pro Team",
           "pageSlug": "TNC_Pro_Team",
           "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -116,7 +20,7 @@
           "name": "Aurora Gaming PH",
           "pageSlug": "Aurora_Gaming_PH",
           "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -1463,6 +1367,180 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788589800-mpl-philippines-season-18-regular-season-omg-apbr",
+      "startsAt": 1788589800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OMG",
+          "name": "Omega Esports",
+          "pageSlug": "Omega_Esports",
+          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "APBR",
+          "name": "AP.Bren",
+          "pageSlug": "AP.Bren",
+          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788591600-mpl-indonesia-season-18-regular-season-dewa-onic",
+      "startsAt": 1788591600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DEWA",
+          "name": "Dewa United Esports",
+          "pageSlug": "Dewa_United_Esports",
+          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "ONIC",
+          "name": "ONIC",
+          "pageSlug": "ONIC",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788598800-mpl-malaysia-season-18-regular-season-rey-ig",
+      "startsAt": 1788598800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "REY",
+          "name": "Team Rey",
+          "pageSlug": "Team_Rey",
+          "logoUrl": "/teams/34px-Team_Rey_allmode-d5112b3a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "iG",
+          "name": "Invictus Gaming",
+          "pageSlug": "Invictus_Gaming",
+          "logoUrl": "/teams/50px-Invictus_Gaming_darkmode-12a6d5dd.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787483700-mpl-cambodia-season-11-qualifier-ne-tnr",
+      "startsAt": 1787483700,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "NE",
+          "name": "Nova Eclipse",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "TNR",
+          "name": "TNR Esports",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 3,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL KH S11 Qual.",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
+      "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787481000-league-of-champions-tournament-season-7-playoffs-zino-df",
+      "startsAt": 1787481000,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "ZINO",
+          "name": "Zino Esports",
+          "pageSlug": "Zino_Esports",
+          "logoUrl": "/teams/43px-Zino_Esports_2026_allmode-c2ef6c21.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "DF",
+          "name": "D Family",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
+          "score": 3,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "LOC S7 2026",
+      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787479200-mpl-indonesia-season-18-regular-season-onic-btr",
+      "startsAt": 1787479200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ONIC",
+          "name": "ONIC",
+          "pageSlug": "ONIC",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "BTR",
+          "name": "Bigetron by Vitality",
+          "pageSlug": "Bigetron_by_Vitality",
+          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2886,99 +2964,6 @@
         "https://www.youtube.com/live/8ixdVy_CzfA?si=fXnY9p4ZwUevjC0N&t=17284",
         "https://www.youtube.com/live/8ixdVy_CzfA?si=tmA-OboHh7yyEHKJ&t=19892",
         "https://www.youtube.com/live/8ixdVy_CzfA?si=IFhjSAMJ4Hg95a3q&t=21918"
-      ]
-    },
-    {
-      "id": "1787040000-queen-legends-season-4-regular-season-vac-wbg",
-      "startsAt": 1787040000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "VAC",
-          "name": "Vanguard Scarlet",
-          "pageSlug": "",
-          "logoUrl": "/teams/44px-Vanguard_Scarlet_allmode-36c2fd0d.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "WBG",
-          "name": "Weibo Gaming",
-          "pageSlug": "Weibo_Gaming",
-          "logoUrl": "/teams/62px-Weibo_allmode-a8ba8ec3.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - RS: Week 4",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/8ixdVy_CzfA?si=RjE3r-vkPybMr-Fg&t=10404",
-        "https://www.youtube.com/live/8ixdVy_CzfA?si=y7c8WlJDx5yFgRgo&t=12540"
-      ]
-    },
-    {
-      "id": "1787038200-mdl-indonesia-season-14-regular-season-gfjr-duh",
-      "startsAt": 1787038200,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "GFJR",
-          "name": "Geek Fam ID Jr",
-          "pageSlug": "Geek_Fam_ID_Jr",
-          "logoUrl": "/teams/43px-Geek_Fam_2019_allmode-1e9b1f3c.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "DUH",
-          "name": "Dewa United Heka",
-          "pageSlug": "Dewa_United_Heka",
-          "logoUrl": "/teams/79px-Dewa_United_Heka_allmode-10ab0560.png",
-          "score": 2,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 2",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787032800-queen-legends-season-4-regular-season-etw-gxp",
-      "startsAt": 1787032800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ETW",
-          "name": "Earth Empress",
-          "pageSlug": "",
-          "logoUrl": "/teams/43px-Earth_Empress_allmode-a358464e.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "GXP",
-          "name": "Galaxy Phoenix",
-          "pageSlug": "Galaxy_Phoenix",
-          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - RS: Week 4",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/8ixdVy_CzfA?si=n6mLJa0iIxzbby0c&t=2275",
-        "https://www.youtube.com/live/8ixdVy_CzfA?si=1j9v4d9YF-3Au8ts&t=4550"
       ]
     }
   ]
