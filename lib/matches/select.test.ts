@@ -77,6 +77,7 @@ describe('match selection', () => {
       NOW,
     )
     expect(result.map((m) => m.id)).toEqual(['started'])
+    expect(result[0].status).toBe('live')
   })
 
   it('does not treat future or stale upcoming matches as live', () => {

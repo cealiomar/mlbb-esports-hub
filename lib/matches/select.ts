@@ -29,6 +29,7 @@ export function liveMatches(all: Match[], now: number): Match[] {
           m.startsAt <= now &&
           m.startsAt >= now - LIVE_ASSUMED_WINDOW_SECONDS),
     )
+    .map((m) => (m.status === 'live' ? m : { ...m, status: 'live' as const }))
     .sort((a, b) => a.startsAt - b.startsAt)
 }
 
