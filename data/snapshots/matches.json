@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787473808,
+  "harvestedAt": 1787477294,
   "data": [
     {
       "id": "1787470200-mpl-cambodia-season-11-qualifier-tnr-sys",
@@ -12,7 +12,7 @@
           "name": "TNR Esports",
           "pageSlug": "",
           "logoUrl": null,
-          "score": 0,
+          "score": 2,
           "isWinner": false
         },
         {
@@ -36,7 +36,7 @@
     {
       "id": "1787473800-league-of-champions-tournament-season-7-playoffs-df-fw",
       "startsAt": 1787473800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -44,7 +44,7 @@
           "name": "D Family",
           "pageSlug": "",
           "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -52,7 +52,7 @@
           "name": "Fantastic Warriors",
           "pageSlug": "",
           "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -68,7 +68,7 @@
     {
       "id": "1787475600-mpl-malaysia-season-18-regular-season-fl-srg",
       "startsAt": 1787475600,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -76,7 +76,7 @@
           "name": "Team Flash",
           "pageSlug": "Team_Flash",
           "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -84,7 +84,7 @@
           "name": "Selangor Red Giants",
           "pageSlug": "Selangor_Red_Giants",
           "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -187,7 +187,10 @@
       "tournamentName": "LOC S7 2026",
       "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/@atom-mm",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/ATOMLetsPlayArena"
+      ],
       "vodUrls": []
     },
     {
