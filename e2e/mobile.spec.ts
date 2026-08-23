@@ -25,11 +25,20 @@ for (const route of ROUTES) {
 test('primary navigation is reachable on mobile', async ({ page }) => {
   await page.goto('/en/')
   await expect(page.getByRole('link', { name: /matches/i }).first()).toBeVisible()
+  await expect(page.getByRole('link', { name: /standings/i }).first()).toBeVisible()
+})
+
+test('standings are one tap away from every page', async ({ page }) => {
+  await page.goto('/en/matches/')
+  const standingsLink = page.getByRole('link', { name: 'Standings' }).first()
+  await expect(standingsLink).toHaveAttribute('href', '/en/#standings')
+  await standingsLink.click()
+  await expect(page.locator('#standings')).toBeVisible()
 })
 
 test('every tap target in the nav is at least 44px tall', async ({ page }) => {
   await page.goto('/en/')
-  const links = page.locator('nav a')
+  const links = page.locator('nav a:visible')
   const count = await links.count()
   expect(count).toBeGreaterThan(0)
   for (let i = 0; i < count; i++) {

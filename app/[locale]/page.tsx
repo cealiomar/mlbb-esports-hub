@@ -86,7 +86,11 @@ export default async function HomePage({
       <LiveNow matches={live} locale={locale === 'ar' ? 'ar' : 'en'} />
 
       {standings.length > 0 && (
-        <section data-home-standings className="section home-standings-section">
+        <section
+          id="standings"
+          data-home-standings
+          className="section home-standings-section scroll-mt-24"
+        >
           <Reveal>
             <SectionHeader
               title={ts('title')}
