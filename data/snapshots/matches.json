@@ -1,38 +1,6 @@
 {
-  "harvestedAt": 1787462955,
+  "harvestedAt": 1787467250,
   "data": [
-    {
-      "id": "1787461200-mpl-cambodia-season-11-qualifier-rvz-ne",
-      "startsAt": 1787461200,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "RVZ",
-          "name": "Team RVZ",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "NE",
-          "name": "Nova Eclipse",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL KH S11 Qual.",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
-      "regionSlug": "cambodia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1787466600-mpl-malaysia-season-18-regular-season-rey-ac",
       "startsAt": 1787466600,
@@ -98,8 +66,8 @@
       "vodUrls": []
     },
     {
-      "id": "1787472000-mpl-cambodia-season-11-qualifier-tnr-sys",
-      "startsAt": 1787472000,
+      "id": "1787470200-mpl-cambodia-season-11-qualifier-tnr-sys",
+      "startsAt": 1787470200,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
@@ -123,7 +91,10 @@
       "tournamentName": "MPL KH S11 Qual.",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ],
       "vodUrls": []
     },
     {
@@ -1457,6 +1428,64 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788519600-mpl-indonesia-season-18-regular-season-tlid-rrq",
+      "startsAt": 1788519600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TLID",
+          "name": "Team Liquid ID",
+          "pageSlug": "Team_Liquid_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RRQ",
+          "name": "RRQ Hoshi",
+          "pageSlug": "RRQ_Hoshi",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787461200-mpl-cambodia-season-11-qualifier-rvz-ne",
+      "startsAt": 1787461200,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "RVZ",
+          "name": "Team RVZ",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "NE",
+          "name": "Nova Eclipse",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL KH S11 Qual.",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
+      "regionSlug": "cambodia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2937,35 +2966,6 @@
           "pageSlug": "",
           "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
           "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Closed Qualifier - High (1-0)",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786962600-mlbb-continental-championships-season-8-closed-qualifier-ch-inv",
-      "startsAt": 1786962600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "CH",
-          "name": "CyberHero",
-          "pageSlug": "CyberHero",
-          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "INV",
-          "name": "INVISION",
-          "pageSlug": "",
-          "logoUrl": "/teams/42px-INVISION_darkmode-563830fd.png",
-          "score": 1,
           "isWinner": false
         }
       ],
