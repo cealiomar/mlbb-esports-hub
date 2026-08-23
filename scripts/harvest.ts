@@ -130,15 +130,28 @@ async function main(): Promise<void> {
   })
 
   // Always refresh the ticker: one call, every region's fixtures and results.
+  const previousMatchSnapshot = readSnapshot<Match[]>('matches')
   const ticker = await client.parsePage('Liquipedia:Matches', 'text')
   if (!isOk(ticker)) {
-    console.error(`matches harvest failed: ${ticker.error}`)
+    if ((previousMatchSnapshot?.data.length ?? 0) > 0) {
+      console.warn(
+        `matches harvest unavailable after retries: ${ticker.error}; keeping ${previousMatchSnapshot?.data.length} last-known matches`,
+      )
+      return
+    }
+    console.error(`matches harvest failed with no fallback snapshot: ${ticker.error}`)
     process.exit(1)
   }
 
   const parsed = parseMatches(ticker.value)
   if (parsed.length === 0) {
-    console.error('parsed zero matches — refusing to overwrite the snapshot')
+    if ((previousMatchSnapshot?.data.length ?? 0) > 0) {
+      console.warn(
+        `parsed zero matches; keeping ${previousMatchSnapshot?.data.length} last-known matches`,
+      )
+      return
+    }
+    console.error('parsed zero matches with no fallback snapshot')
     process.exit(1)
   }
 

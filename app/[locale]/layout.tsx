@@ -7,6 +7,7 @@ import { routing, isRtl } from '@/i18n/routing'
 import { Attribution } from '@/components/ui/attribution'
 import { Nav } from '@/components/layout/nav'
 import { SiteIntro } from '@/components/ui/site-intro'
+import { EGYPT_TIME_ZONE } from '@/lib/time/egypt'
 import '../globals.css'
 
 const display = localFont({
@@ -64,7 +65,10 @@ export default async function LocaleLayout({
       </head>
       <body className="grain flex min-h-screen flex-col">
         <SiteIntro />
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider
+          messages={messages}
+          timeZone={EGYPT_TIME_ZONE}
+        >
           <Nav locale={locale} />
           <div className="flex-1">{children}</div>
           <Attribution />

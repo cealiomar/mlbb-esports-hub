@@ -2,6 +2,7 @@ import { useFormatter, useLocale, useTranslations } from 'next-intl'
 import type { Match, MatchOpponent } from '@/lib/data/types'
 import { getRegionBySlug } from '@/lib/content/regions'
 import { replayUrl } from '@/lib/matches/replay'
+import { EGYPT_TIME_ZONE } from '@/lib/time/egypt'
 import { TiltCard } from '@/components/ui/tilt-card'
 import { TeamCrest } from './team-crest'
 
@@ -68,6 +69,7 @@ export function MatchCard({
   const localeKey = locale === 'ar' ? 'ar' : 'en'
   const stream = match.status === 'completed' ? undefined : match.streamUrls[0]
   const replay = replayUrl(match)
+  const replayUnavailable = match.status === 'completed' && !replay
 
   return (
     <TiltCard className="h-full">
@@ -99,10 +101,21 @@ export function MatchCard({
               className="match-time shrink-0 rounded-xl px-2.5 py-1.5 text-center text-[10px] font-bold text-[var(--ink-muted)] tabular-nums"
             >
               <span className="block text-[var(--ink)]">
-                {format.dateTime(startsAt, { hour: '2-digit', minute: '2-digit' })}
+                {format.dateTime(startsAt, {
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  timeZone: EGYPT_TIME_ZONE,
+                })}
               </span>
               <span className="block whitespace-nowrap">
-                {format.dateTime(startsAt, { month: 'short', day: 'numeric' })}
+                {format.dateTime(startsAt, {
+                  month: 'short',
+                  day: 'numeric',
+                  timeZone: EGYPT_TIME_ZONE,
+                })}
+              </span>
+              <span className="mt-0.5 block whitespace-nowrap text-[8px] tracking-wide text-[var(--brand-strong)]">
+                {t('egyptTimeShort')}
               </span>
             </time>
           )}
@@ -147,6 +160,12 @@ export function MatchCard({
               <span className="replay-play" aria-hidden />
               {t('rewatch')}
             </a>
+          )}
+          {replayUnavailable && (
+            <span className="replay-unavailable">
+              <span aria-hidden>—</span>
+              {t('replayUnavailable')}
+            </span>
           )}
         </div>
       </article>

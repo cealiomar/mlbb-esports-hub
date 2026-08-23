@@ -31,7 +31,7 @@ function make(over: Partial<Match>): Match {
 }
 
 describe('match selection', () => {
-  it('includes matches within the same UTC day', () => {
+  it('includes matches within the same Egypt day', () => {
     expect(todayMatches([make({ id: 'a', startsAt: NOW + HOUR })], NOW)).toHaveLength(1)
   })
 
@@ -45,6 +45,22 @@ describe('match selection', () => {
       NOW,
     )
     expect(result.map((m) => m.id)).toEqual(['early', 'late'])
+  })
+
+  it('uses Cairo midnight instead of UTC midnight', () => {
+    const cairoAfterMidnight = Date.parse('2026-01-01T22:30:00Z') / 1000
+    const sameCairoDay = Date.parse('2026-01-02T21:30:00Z') / 1000
+    const previousCairoDay = Date.parse('2026-01-01T21:30:00Z') / 1000
+
+    const result = todayMatches(
+      [
+        make({ id: 'same', startsAt: sameCairoDay }),
+        make({ id: 'previous', startsAt: previousCairoDay }),
+      ],
+      cairoAfterMidnight,
+    )
+
+    expect(result.map((match) => match.id)).toEqual(['same'])
   })
 
   it('upcoming excludes anything already started', () => {

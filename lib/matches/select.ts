@@ -1,16 +1,12 @@
 import type { Match } from '@/lib/data/types'
+import { egyptDayKey } from '@/lib/time/egypt'
 
-const DAY = 86_400
 export const LIVE_ASSUMED_WINDOW_SECONDS = 5 * 60 * 60
 
-function utcDayIndex(unixSeconds: number): number {
-  return Math.floor(unixSeconds / DAY)
-}
-
 export function todayMatches(all: Match[], now: number): Match[] {
-  const today = utcDayIndex(now)
+  const today = egyptDayKey(now)
   return all
-    .filter((m) => utcDayIndex(m.startsAt) === today)
+    .filter((m) => egyptDayKey(m.startsAt) === today)
     .sort((a, b) => a.startsAt - b.startsAt)
 }
 

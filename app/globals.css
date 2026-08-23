@@ -672,6 +672,16 @@ html[data-theme='dark'] .panel {
   background: color-mix(in srgb, var(--brand) 9%, transparent);
 }
 
+.replay-unavailable {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--ink-muted);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
 .match-card--compact .crest-stage {
   width: 58px;
   height: 58px;

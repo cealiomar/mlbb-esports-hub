@@ -495,8 +495,10 @@ Dependencies: `next`, `react`, `react-dom`, `next-intl`, `node-html-parser`,
   between splits. The harvester warns and moves on; fixtures still map to the
   region through `matchPrefixes`.
 - **No search or filtering** across teams and players.
-- **No timezone control** — times render in the visitor's locale from a UTC
-  timestamp, with no explicit picker.
+- **No timezone picker** — by product choice, every fixture and the “Today”
+  grouping are fixed to Egypt time (`Africa/Cairo`) and labelled accordingly.
+- **Some completed matches have no direct replay** — only verified, match-level
+  VOD URLs are linked; cards say when the source has not published one.
 
 ---
 

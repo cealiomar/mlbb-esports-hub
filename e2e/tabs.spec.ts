@@ -30,6 +30,24 @@ test('upcoming matches are the clear default view', async ({ page }) => {
   await expect(page.getByRole('tabpanel').locator('article').first()).toBeVisible()
 })
 
+test('match times are explicitly Cairo time and replay states are honest', async ({
+  page,
+}) => {
+  await page.goto('/en/matches/')
+
+  await expect(page.locator('main')).toContainText('Egypt time (Cairo)')
+  await expect(page.locator('.match-time').first()).toContainText('Egypt time')
+
+  await page.getByRole('tab', { name: /Results/ }).click()
+  const replay = page.locator('.rewatch-link').first()
+  await expect(replay).toBeVisible()
+  await expect(replay).toHaveAttribute(
+    'href',
+    /(?:youtube\.com\/(?:watch|live)|youtu\.be\/)/,
+  )
+  await expect(page.locator('.replay-unavailable').first()).toBeVisible()
+})
+
 test('tabs work in RTL', async ({ page }) => {
   await page.goto('/ar/matches/')
   const tabs = page.getByRole('tab')
