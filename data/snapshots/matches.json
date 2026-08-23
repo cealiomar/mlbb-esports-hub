@@ -1,74 +1,10 @@
 {
-  "harvestedAt": 1787470419,
+  "harvestedAt": 1787473808,
   "data": [
-    {
-      "id": "1787466600-mpl-malaysia-season-18-regular-season-rey-ac",
-      "startsAt": 1787466600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "REY",
-          "name": "Team Rey",
-          "pageSlug": "Team_Rey",
-          "logoUrl": "/teams/34px-Team_Rey_allmode-d5112b3a.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "AC",
-          "name": "AC Esports",
-          "pageSlug": "AC_Esports",
-          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787468400-mpl-indonesia-season-18-regular-season-dewa-ae",
-      "startsAt": 1787468400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DEWA",
-          "name": "Dewa United Esports",
-          "pageSlug": "Dewa_United_Esports",
-          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "AE",
-          "name": "Alter Ego",
-          "pageSlug": "Alter_Ego",
-          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1787470200-mpl-cambodia-season-11-qualifier-tnr-sys",
       "startsAt": 1787470200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -76,7 +12,7 @@
           "name": "TNR Esports",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -84,7 +20,7 @@
           "name": "See You Soon",
           "pageSlug": "See_You_Soon",
           "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -94,6 +30,38 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1787473800-league-of-champions-tournament-season-7-playoffs-df-fw",
+      "startsAt": 1787473800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DF",
+          "name": "D Family",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "FW",
+          "name": "Fantastic Warriors",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "LOC S7 2026",
+      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/@atom-mm",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/ATOMLetsPlayArena"
       ],
       "vodUrls": []
     },
@@ -123,7 +91,10 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
       "vodUrls": []
     },
     {
@@ -152,7 +123,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
@@ -181,6 +155,38 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1787481000-league-of-champions-tournament-season-7-playoffs-zino-tbd",
+      "startsAt": 1787481000,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "ZINO",
+          "name": "Zino Esports",
+          "pageSlug": "Zino_Esports",
+          "logoUrl": "/teams/43px-Zino_Esports_2026_allmode-c2ef6c21.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "LOC S7 2026",
+      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1457,6 +1463,64 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787468400-mpl-indonesia-season-18-regular-season-dewa-ae",
+      "startsAt": 1787468400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DEWA",
+          "name": "Dewa United Esports",
+          "pageSlug": "Dewa_United_Esports",
+          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "AE",
+          "name": "Alter Ego",
+          "pageSlug": "Alter_Ego",
+          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787466600-mpl-malaysia-season-18-regular-season-rey-ac",
+      "startsAt": 1787466600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "REY",
+          "name": "Team Rey",
+          "pageSlug": "Team_Rey",
+          "logoUrl": "/teams/34px-Team_Rey_allmode-d5112b3a.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "AC",
+          "name": "AC Esports",
+          "pageSlug": "AC_Esports",
+          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2912,64 +2976,6 @@
         }
       ],
       "tournamentName": "MCC Season 8 - Closed Qualifier - Low (0-1)",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786962600-mlbb-continental-championships-season-8-closed-qualifier-omnx-ae",
-      "startsAt": 1786962600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "OMNX",
-          "name": "Omnix",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "AE",
-          "name": "Aterion Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Aterion_Esports_darkmode-2a65c0a3.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Closed Qualifier - Low (0-1)",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1786962600-mlbb-continental-championships-season-8-closed-qualifier-rkz-af",
-      "startsAt": 1786962600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RKZ",
-          "name": "RAKUZAN",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "AF",
-          "name": "Aura Farmers",
-          "pageSlug": "",
-          "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Closed Qualifier - High (1-0)",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Closed_Qualifier",
       "regionSlug": null,
       "streamUrls": [],
