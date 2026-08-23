@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787490765,
+  "harvestedAt": 1787492272,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -226,7 +226,23 @@
           "zone": "playoff"
         },
         {
-          "position": 5,
+          "position": 4,
+          "team": {
+            "code": "TPT",
+            "name": "TNC Pro Team",
+            "pageSlug": "TNC_Pro_Team",
+            "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 2,
+          "gameLosses": 3,
+          "gameDiff": -1,
+          "points": 1,
+          "zone": "playoff"
+        },
+        {
+          "position": 6,
           "team": {
             "code": "TMP",
             "name": "Twisted Minds PH",
@@ -242,28 +258,12 @@
           "zone": "playoff"
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
-            "code": "AGP",
-            "name": "Aurora Gaming PH",
-            "pageSlug": "Aurora_Gaming_PH",
-            "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png"
-          },
-          "matchWins": 0,
-          "matchLosses": 1,
-          "gameWins": 0,
-          "gameLosses": 2,
-          "gameDiff": -2,
-          "points": 0,
-          "zone": "playoff"
-        },
-        {
-          "position": 6,
-          "team": {
-            "code": "TPT",
-            "name": "TNC Pro Team",
-            "pageSlug": "TNC_Pro_Team",
-            "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png"
+            "code": "OE",
+            "name": "Omega Esports",
+            "pageSlug": "Omega_Esports",
+            "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png"
           },
           "matchWins": 0,
           "matchLosses": 1,
@@ -276,16 +276,16 @@
         {
           "position": 8,
           "team": {
-            "code": "OE",
-            "name": "Omega Esports",
-            "pageSlug": "Omega_Esports",
-            "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png"
+            "code": "AGP",
+            "name": "Aurora Gaming PH",
+            "pageSlug": "Aurora_Gaming_PH",
+            "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png"
           },
           "matchWins": 0,
-          "matchLosses": 1,
-          "gameWins": 0,
-          "gameLosses": 2,
-          "gameDiff": -2,
+          "matchLosses": 2,
+          "gameWins": 1,
+          "gameLosses": 4,
+          "gameDiff": -3,
           "points": 0,
           "zone": "eliminated"
         }

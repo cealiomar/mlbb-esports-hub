@@ -1,38 +1,6 @@
 {
-  "harvestedAt": 1787490439,
+  "harvestedAt": 1787491942,
   "data": [
-    {
-      "id": "1787484600-mpl-philippines-season-18-regular-season-tnc-rora",
-      "startsAt": 1787484600,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TNC",
-          "name": "TNC Pro Team",
-          "pageSlug": "TNC_Pro_Team",
-          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "RORA",
-          "name": "Aurora Gaming PH",
-          "pageSlug": "Aurora_Gaming_PH",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1787490000-mpl-indonesia-season-18-regular-season-geek-evos",
       "startsAt": 1787490000,
@@ -1458,6 +1426,64 @@
       "vodUrls": []
     },
     {
+      "id": "1788598800-mpl-philippines-season-18-regular-season-tnc-tlph",
+      "startsAt": 1788598800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TNC",
+          "name": "TNC Pro Team",
+          "pageSlug": "TNC_Pro_Team",
+          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TLPH",
+          "name": "Team Liquid PH",
+          "pageSlug": "Team_Liquid_PH",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787484600-mpl-philippines-season-18-regular-season-tnc-rora",
+      "startsAt": 1787484600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TNC",
+          "name": "TNC Pro Team",
+          "pageSlug": "TNC_Pro_Team",
+          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "RORA",
+          "name": "Aurora Gaming PH",
+          "pageSlug": "Aurora_Gaming_PH",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787483700-mpl-cambodia-season-11-qualifier-ne-tnr",
       "startsAt": 1787483700,
       "status": "completed",
@@ -1484,7 +1510,11 @@
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/live/FNnDxX80s8I?si=KVlxlWVOMzVYi8yJ&t=24465",
+        "https://www.youtube.com/live/FNnDxX80s8I?si=rioHN0AjcGDUlJ84&t=26420",
+        "https://www.youtube.com/live/FNnDxX80s8I?si=bLGIGsR8LRhq1-bp&t=28175"
+      ]
     },
     {
       "id": "1787481000-league-of-champions-tournament-season-7-playoffs-zino-df",
@@ -1658,7 +1688,13 @@
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/live/FNnDxX80s8I?si=8TnffGm0koTRbusI&t=11135",
+        "https://www.youtube.com/live/FNnDxX80s8I?si=2ZpyyoCYjVaRap1F&t=13630",
+        "https://www.youtube.com/live/FNnDxX80s8I?si=J2sWB_Ot4imqGCZ0&t=15725",
+        "https://www.youtube.com/live/FNnDxX80s8I?si=66LXbp1FejttlsmO&t=18050",
+        "https://www.youtube.com/live/FNnDxX80s8I?si=MvCDvLz_dI1y4V8o&t=20010"
+      ]
     },
     {
       "id": "1787468400-mpl-indonesia-season-18-regular-season-dewa-ae",
@@ -1745,7 +1781,11 @@
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
       "regionSlug": "cambodia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/live/FNnDxX80s8I?si=COl0swR2aLrcOhcM&t=2125",
+        "https://www.youtube.com/live/FNnDxX80s8I?si=sTPPwqgx8d_lUm7p&t=3775",
+        "https://www.youtube.com/live/FNnDxX80s8I?si=fzxCAmnpTXbe2am_&t=5735"
+      ]
     },
     {
       "id": "1787437800-adt-north-season-1-gmx-rto",
@@ -2932,39 +2972,6 @@
       "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1787047200-queen-legends-season-4-regular-season-ea-dg-a",
-      "startsAt": 1787047200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "EA",
-          "name": "Emerald Apex",
-          "pageSlug": "",
-          "logoUrl": "/teams/55px-Emerald_Apex_darkmode-656f4137.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "DG.A",
-          "name": "DG AngelZ",
-          "pageSlug": "",
-          "logoUrl": "/teams/81px-Diversity_Gaming_allmode-98c52a04.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - RS: Week 4",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/8ixdVy_CzfA?si=fXnY9p4ZwUevjC0N&t=17284",
-        "https://www.youtube.com/live/8ixdVy_CzfA?si=tmA-OboHh7yyEHKJ&t=19892",
-        "https://www.youtube.com/live/8ixdVy_CzfA?si=IFhjSAMJ4Hg95a3q&t=21918"
-      ]
     }
   ]
 }
