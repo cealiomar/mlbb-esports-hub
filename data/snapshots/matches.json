@@ -1,6 +1,35 @@
 {
-  "harvestedAt": 1787534253,
+  "harvestedAt": 1787540612,
   "data": [
+    {
+      "id": "1787551200-mlbb-academy-league-season-6-regular-season-phase-1-ar-srga",
+      "startsAt": 1787551200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AR",
+          "name": "Arif Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Arif_Esports_allmode-6b919b45.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SRGA",
+          "name": "Selangor Red Giants Academy",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
     {
       "id": "1787556600-mdl-indonesia-season-14-regular-season-gfjr-tlaid",
       "startsAt": 1787556600,
@@ -27,6 +56,64 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 3",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787558400-mlbb-academy-league-season-6-regular-season-phase-1-arc-pdrm",
+      "startsAt": 1787558400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ARC",
+          "name": "Borneo Arcanis Fusion Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Borneo_Arcanis_Fusion_Esports_darkmode-5299d876.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "PDRM",
+          "name": "Team Rey x PDRM Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/96px-Team_Rey_x_PDRM_Esports_darkmode-02511cf8.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787565600-mlbb-academy-league-season-6-regular-season-phase-1-khan-op",
+      "startsAt": 1787565600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KHAN",
+          "name": "Khan Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OP",
+          "name": "On Point Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-On_Point_Esports_darkmode-8f311048.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -60,6 +147,64 @@
       "vodUrls": []
     },
     {
+      "id": "1787572800-mlbb-academy-league-season-6-regular-season-phase-1-gmxk-oust",
+      "startsAt": 1787572800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "GMXK",
+          "name": "GamesMY Kelantan",
+          "pageSlug": "GamesMY_Kelantan",
+          "logoUrl": "/teams/87px-GamesMY_Kelantan_darkmode-c6dce47c.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OUST",
+          "name": "Outcast",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Outcast_MLBB_allmode-8b01027d.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787637600-mlbb-academy-league-season-6-regular-season-phase-1-arc-so",
+      "startsAt": 1787637600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ARC",
+          "name": "Borneo Arcanis Fusion Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Borneo_Arcanis_Fusion_Esports_darkmode-5299d876.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SO",
+          "name": "Stark Origin",
+          "pageSlug": "",
+          "logoUrl": "/teams/56px-Stark_Origin_darkmode-124a040e.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787643000-mdl-indonesia-season-14-regular-season-aex-nvjr",
       "startsAt": 1787643000,
       "status": "upcoming",
@@ -85,6 +230,64 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 3",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787644800-mlbb-academy-league-season-6-regular-season-phase-1-ar-pix",
+      "startsAt": 1787644800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AR",
+          "name": "Arif Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Arif_Esports_allmode-6b919b45.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "PIX",
+          "name": "Pixel Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/43px-Pixel_Esports_darkmode-cc4eb10e.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787652000-mlbb-academy-league-season-6-regular-season-phase-1-hgoz-pdrm",
+      "startsAt": 1787652000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "HGOZ",
+          "name": "HG x Originz",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-HG_x_ORIGINZ_darkmode-8a453529.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "PDRM",
+          "name": "Team Rey x PDRM Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/96px-Team_Rey_x_PDRM_Esports_darkmode-02511cf8.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -118,6 +321,64 @@
       "vodUrls": []
     },
     {
+      "id": "1787659200-mlbb-academy-league-season-6-regular-season-phase-1-king-srga",
+      "startsAt": 1787659200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KING",
+          "name": "DX Kingz",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SRGA",
+          "name": "Selangor Red Giants Academy",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787724000-mlbb-academy-league-season-6-regular-season-phase-1-op-pix",
+      "startsAt": 1787724000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OP",
+          "name": "On Point Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-On_Point_Esports_darkmode-8f311048.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "PIX",
+          "name": "Pixel Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/43px-Pixel_Esports_darkmode-cc4eb10e.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787729400-mdl-indonesia-season-14-regular-season-trix-kage",
       "startsAt": 1787729400,
       "status": "upcoming",
@@ -147,6 +408,64 @@
       "vodUrls": []
     },
     {
+      "id": "1787731200-mlbb-academy-league-season-6-regular-season-phase-1-oust-so",
+      "startsAt": 1787731200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OUST",
+          "name": "Outcast",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Outcast_MLBB_allmode-8b01027d.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SO",
+          "name": "Stark Origin",
+          "pageSlug": "",
+          "logoUrl": "/teams/56px-Stark_Origin_darkmode-124a040e.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787738400-mlbb-academy-league-season-6-regular-season-phase-1-king-khan",
+      "startsAt": 1787738400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KING",
+          "name": "DX Kingz",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "KHAN",
+          "name": "Khan Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787743800-mdl-indonesia-season-14-regular-season-cfg-onpw",
       "startsAt": 1787743800,
       "status": "upcoming",
@@ -172,6 +491,35 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 3",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787745600-mlbb-academy-league-season-6-regular-season-phase-1-hgoz-gmxk",
+      "startsAt": 1787745600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "HGOZ",
+          "name": "HG x Originz",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-HG_x_ORIGINZ_darkmode-8a453529.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "GMXK",
+          "name": "GamesMY Kelantan",
+          "pageSlug": "GamesMY_Kelantan",
+          "logoUrl": "/teams/87px-GamesMY_Kelantan_darkmode-c6dce47c.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -234,6 +582,35 @@
       "vodUrls": []
     },
     {
+      "id": "1787810400-mlbb-academy-league-season-6-regular-season-phase-1-gmxk-pdrm",
+      "startsAt": 1787810400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "GMXK",
+          "name": "GamesMY Kelantan",
+          "pageSlug": "GamesMY_Kelantan",
+          "logoUrl": "/teams/87px-GamesMY_Kelantan_darkmode-c6dce47c.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "PDRM",
+          "name": "Team Rey x PDRM Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/96px-Team_Rey_x_PDRM_Esports_darkmode-02511cf8.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787815800-mdl-indonesia-season-14-regular-season-rrqs-vesa",
       "startsAt": 1787815800,
       "status": "upcoming",
@@ -263,6 +640,64 @@
       "vodUrls": []
     },
     {
+      "id": "1787817600-mlbb-academy-league-season-6-regular-season-phase-1-khan-srga",
+      "startsAt": 1787817600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KHAN",
+          "name": "Khan Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SRGA",
+          "name": "Selangor Red Giants Academy",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787824800-mlbb-academy-league-season-6-regular-season-phase-1-arc-oust",
+      "startsAt": 1787824800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ARC",
+          "name": "Borneo Arcanis Fusion Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Borneo_Arcanis_Fusion_Esports_darkmode-5299d876.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OUST",
+          "name": "Outcast",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Outcast_MLBB_allmode-8b01027d.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787830200-mdl-indonesia-season-14-regular-season-sdw-duh",
       "startsAt": 1787830200,
       "status": "upcoming",
@@ -288,6 +723,35 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 3",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787832000-mlbb-academy-league-season-6-regular-season-phase-1-ar-op",
+      "startsAt": 1787832000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AR",
+          "name": "Arif Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Arif_Esports_allmode-6b919b45.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OP",
+          "name": "On Point Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-On_Point_Esports_darkmode-8f311048.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -984,470 +1448,6 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788080400-mpl-philippines-season-18-regular-season-twph-flcp",
-      "startsAt": 1788080400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TWPH",
-          "name": "Twisted Minds PH",
-          "pageSlug": "Twisted_Minds_PH",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "FLCP",
-          "name": "Team Falcons PH",
-          "pageSlug": "Team_Falcons_PH",
-          "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788084000-mpl-indonesia-season-18-regular-season-geek-rrq",
-      "startsAt": 1788084000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "GEEK",
-          "name": "Geek Fam ID",
-          "pageSlug": "Geek_Fam_ID",
-          "logoUrl": "/teams/43px-Geek_Fam_2019_allmode-1e9b1f3c.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RRQ",
-          "name": "RRQ Hoshi",
-          "pageSlug": "RRQ_Hoshi",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788089400-mpl-philippines-season-18-regular-season-onph-omg",
-      "startsAt": 1788089400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ONPH",
-          "name": "ONIC Philippines",
-          "pageSlug": "ONIC_Philippines",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "OMG",
-          "name": "Omega Esports",
-          "pageSlug": "Omega_Esports",
-          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788094800-mpl-indonesia-season-18-regular-season-tlid-ae",
-      "startsAt": 1788094800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TLID",
-          "name": "Team Liquid ID",
-          "pageSlug": "Team_Liquid_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "AE",
-          "name": "Alter Ego",
-          "pageSlug": "Alter_Ego",
-          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788508800-mpl-indonesia-season-18-regular-season-navi-dewa",
-      "startsAt": 1788508800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "NAVI",
-          "name": "Natus Vincere",
-          "pageSlug": "Natus_Vincere",
-          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "DEWA",
-          "name": "Dewa United Esports",
-          "pageSlug": "Dewa_United_Esports",
-          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788512400-mpl-malaysia-season-18-regular-season-ac-fl",
-      "startsAt": 1788512400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AC",
-          "name": "AC Esports",
-          "pageSlug": "AC_Esports",
-          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "FL",
-          "name": "Team Flash",
-          "pageSlug": "Team_Flash",
-          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788512400-mpl-philippines-season-18-regular-season-twph-rora",
-      "startsAt": 1788512400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TWPH",
-          "name": "Twisted Minds PH",
-          "pageSlug": "Twisted_Minds_PH",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RORA",
-          "name": "Aurora Gaming PH",
-          "pageSlug": "Aurora_Gaming_PH",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788519600-mpl-indonesia-season-18-regular-season-tlid-rrq",
-      "startsAt": 1788519600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TLID",
-          "name": "Team Liquid ID",
-          "pageSlug": "Team_Liquid_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RRQ",
-          "name": "RRQ Hoshi",
-          "pageSlug": "RRQ_Hoshi",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788521400-mpl-philippines-season-18-regular-season-tnc-onph",
-      "startsAt": 1788521400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TNC",
-          "name": "TNC Pro Team",
-          "pageSlug": "TNC_Pro_Team",
-          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "ONPH",
-          "name": "ONIC Philippines",
-          "pageSlug": "ONIC_Philippines",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788524100-mpl-malaysia-season-18-regular-season-rrqt-srg",
-      "startsAt": 1788524100,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RRQT",
-          "name": "RRQ Tora",
-          "pageSlug": "RRQ_Tora",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "SRG",
-          "name": "Selangor Red Giants",
-          "pageSlug": "Selangor_Red_Giants",
-          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788589800-mpl-malaysia-season-18-regular-season-fl-rrqt",
-      "startsAt": 1788589800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FL",
-          "name": "Team Flash",
-          "pageSlug": "Team_Flash",
-          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RRQT",
-          "name": "RRQ Tora",
-          "pageSlug": "RRQ_Tora",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788589800-mpl-philippines-season-18-regular-season-omg-apbr",
-      "startsAt": 1788589800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "OMG",
-          "name": "Omega Esports",
-          "pageSlug": "Omega_Esports",
-          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "APBR",
-          "name": "AP.Bren",
-          "pageSlug": "AP.Bren",
-          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788591600-mpl-indonesia-season-18-regular-season-dewa-onic",
-      "startsAt": 1788591600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DEWA",
-          "name": "Dewa United Esports",
-          "pageSlug": "Dewa_United_Esports",
-          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "ONIC",
-          "name": "ONIC",
-          "pageSlug": "ONIC",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788598800-mpl-malaysia-season-18-regular-season-rey-ig",
-      "startsAt": 1788598800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "REY",
-          "name": "Team Rey",
-          "pageSlug": "Team_Rey",
-          "logoUrl": "/teams/34px-Team_Rey_allmode-d5112b3a.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "iG",
-          "name": "Invictus Gaming",
-          "pageSlug": "Invictus_Gaming",
-          "logoUrl": "/teams/50px-Invictus_Gaming_darkmode-12a6d5dd.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788598800-mpl-philippines-season-18-regular-season-tnc-tlph",
-      "startsAt": 1788598800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TNC",
-          "name": "TNC Pro Team",
-          "pageSlug": "TNC_Pro_Team",
-          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TLPH",
-          "name": "Team Liquid PH",
-          "pageSlug": "Team_Liquid_PH",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788602400-mpl-indonesia-season-18-regular-season-evos-btr",
-      "startsAt": 1788602400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "EVOS",
-          "name": "EVOS",
-          "pageSlug": "EVOS",
-          "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "BTR",
-          "name": "Bigetron by Vitality",
-          "pageSlug": "Bigetron_by_Vitality",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     },
