@@ -4,6 +4,10 @@ import type {
   DraftLeague,
   DraftTeam,
 } from '@/lib/data/types'
+import { heroKey, type HeroCatalogItem } from './hero-images'
+
+export { heroKey } from './hero-images'
+export type { HeroCatalogItem } from './hero-images'
 
 export const DRAFT_LANES = ['exp', 'jungle', 'mid', 'gold', 'roam'] as const
 export type DraftLane = (typeof DRAFT_LANES)[number]
@@ -83,11 +87,6 @@ export interface DraftHistoryPrior {
   matchups: Record<string, PairMetric>
 }
 
-export interface HeroCatalogItem {
-  hero: DraftHero
-  imageUrl: string
-}
-
 export type RecommendationReason =
   | 'meta'
   | 'winRate'
@@ -129,12 +128,6 @@ export interface RecommendationOptions {
   limit?: number
 }
 
-const HERO_ALIASES: Record<string, string> = {
-  guin: 'guinevere',
-  lapu: 'lapulapu',
-  yz: 'yuzhong',
-}
-
 const VALID_MAPS = new Set([
   'Broken Walls',
   'Dangerous Grass',
@@ -144,11 +137,6 @@ const VALID_MAPS = new Set([
 
 function clamp(value: number, minimum = 0, maximum = 1): number {
   return Math.min(maximum, Math.max(minimum, value))
-}
-
-export function heroKey(value: string): string {
-  const key = value.toLowerCase().replace(/[^a-z0-9]+/g, '')
-  return HERO_ALIASES[key] ?? key
 }
 
 function pairKey(first: string, second: string): string {

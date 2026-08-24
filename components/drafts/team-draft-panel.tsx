@@ -4,6 +4,10 @@ import { useTranslations } from 'next-intl'
 import type { DraftHero, DraftLeague } from '@/lib/data/types'
 import type { TeamDraftProfile, TeamHeroStat } from '@/lib/drafts/analytics'
 import {
+  resolveHeroImage,
+  type HeroImageMap,
+} from '@/lib/drafts/hero-images'
+import {
   resolveDraftTeamVisual,
   type DraftTeamVisual,
 } from '@/lib/drafts/enrich'
@@ -14,12 +18,6 @@ function formatDuration(seconds: number | null): string | null {
   if (seconds === null) return null
   const minutes = Math.floor(seconds / 60)
   return `${minutes}:${String(seconds % 60).padStart(2, '0')}`
-}
-
-function imageFor(league: DraftLeague, hero: DraftHero): string | null {
-  return (
-    league.heroStats.find((stat) => stat.hero.id === hero.id)?.imageUrl ?? null
-  )
 }
 
 function formatSeriesDate(
@@ -54,12 +52,12 @@ function seriesScore(profile: TeamDraftProfile['recentSeries'][number]): [number
 function TeamHeroRanking({
   title,
   stats,
-  league,
+  heroImages,
   showWinRate,
 }: {
   title: string
   stats: TeamHeroStat[]
-  league: DraftLeague
+  heroImages: HeroImageMap
   showWinRate: boolean
 }) {
   const t = useTranslations('drafts')
@@ -72,7 +70,7 @@ function TeamHeroRanking({
             <span className="team-meta-card__rank">{index + 1}</span>
             <HeroIcon
               hero={stat.hero}
-              imageUrl={imageFor(league, stat.hero)}
+              imageUrl={resolveHeroImage(heroImages, stat.hero)}
               size={42}
             />
             <strong>{stat.hero.name}</strong>
@@ -91,16 +89,20 @@ function TeamHeroRanking({
 
 function HeroStrip({
   heroes,
-  league,
+  heroImages,
 }: {
   heroes: DraftHero[]
-  league: DraftLeague
+  heroImages: HeroImageMap
 }) {
   return (
     <ul className="draft-game__heroes">
       {heroes.map((hero, index) => (
         <li key={`${hero.id}-${index}`} title={hero.name}>
-          <HeroIcon hero={hero} imageUrl={imageFor(league, hero)} size={38} />
+          <HeroIcon
+            hero={hero}
+            imageUrl={resolveHeroImage(heroImages, hero)}
+            size={38}
+          />
           <span>{hero.name}</span>
         </li>
       ))}
@@ -113,11 +115,13 @@ export function TeamDraftPanel({
   profile,
   locale,
   teamVisuals,
+  heroImages,
 }: {
   league: DraftLeague
   profile: TeamDraftProfile
   locale: 'en' | 'ar'
   teamVisuals: DraftTeamVisual[]
+  heroImages: HeroImageMap
 }) {
   const t = useTranslations('drafts')
   const profileVisual = resolveDraftTeamVisual(
@@ -143,13 +147,13 @@ export function TeamDraftPanel({
         <TeamHeroRanking
           title={t('teamTopPicks')}
           stats={profile.topPicks}
-          league={league}
+          heroImages={heroImages}
           showWinRate
         />
         <TeamHeroRanking
           title={t('teamTopBans')}
           stats={profile.topBans}
-          league={league}
+          heroImages={heroImages}
           showWinRate={false}
         />
       </div>
@@ -272,11 +276,11 @@ export function TeamDraftPanel({
 
                   <div className="draft-game__row">
                     <b>{t('picks')}</b>
-                    <HeroStrip heroes={picks} league={league} />
+                    <HeroStrip heroes={picks} heroImages={heroImages} />
                   </div>
                   <div className="draft-game__row draft-game__row--bans">
                     <b>{t('bans')}</b>
-                    <HeroStrip heroes={bans} league={league} />
+                    <HeroStrip heroes={bans} heroImages={heroImages} />
                   </div>
                 </article>
                 ))}

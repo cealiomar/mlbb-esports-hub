@@ -17,6 +17,10 @@ import {
   enrichDraftLeagues,
   resolveDraftTeamVisual,
 } from '@/lib/drafts/enrich'
+import {
+  buildHeroImageMap,
+  type HeroCatalogItem,
+} from '@/lib/drafts/hero-images'
 
 // Fully static: rendered at build time from committed snapshots, so the
 // page paints instantly with no fetch and no loading state.
@@ -92,6 +96,12 @@ export default async function TeamPage({
     draftLeague && draftTeam
       ? teamDraftProfile(draftLeague, draftTeam.pageSlug)
       : null
+  const heroCatalog =
+    readSnapshot<HeroCatalogItem[]>('hero-catalog')?.data ?? []
+  const heroImages = buildHeroImageMap([
+    ...(draftLeague?.heroStats ?? []),
+    ...heroCatalog,
+  ])
 
   return (
     <main className="section">
@@ -138,6 +148,7 @@ export default async function TeamPage({
             profile={draftProfile}
             locale={localeKey}
             teamVisuals={teamVisuals}
+            heroImages={heroImages}
           />
         </div>
       )}

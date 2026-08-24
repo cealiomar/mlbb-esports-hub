@@ -62,17 +62,38 @@ test('hero portraits are decoded locally and never hotlinked', async ({ page }) 
   await page.goto('/en/drafts/')
   await page.waitForLoadState('networkidle')
 
-  const images = page.locator('.draft-ranking img')
-  expect(await images.count()).toBeGreaterThan(0)
-  const report = await images.evaluateAll((nodes) =>
+  const gameHeroes = page.locator('.draft-game__heroes li')
+  const images = page.locator('.draft-ranking img, .draft-game__heroes img')
+  expect(await gameHeroes.count()).toBeGreaterThan(0)
+  await expect(page.locator('.draft-game__heroes img')).toHaveCount(
+    await gameHeroes.count(),
+  )
+  await expect(
+    page.locator('.draft-game__heroes .draft-hero-fallback'),
+  ).toHaveCount(0)
+  const sourceReport = await images.evaluateAll((nodes) =>
     (nodes as HTMLImageElement[]).map((image) => ({
-      width: image.naturalWidth,
       origin: new URL(image.src).origin,
       currentOrigin: location.origin,
     })),
   )
-  expect(report.every((image) => image.width > 0)).toBe(true)
-  expect(report.every((image) => image.origin === image.currentOrigin)).toBe(true)
+  expect(
+    sourceReport.every((image) => image.origin === image.currentOrigin),
+  ).toBe(true)
+
+  const visibleImages = page.locator(
+    '.draft-ranking img, .draft-series[open] .draft-game__heroes img',
+  )
+  await expect.poll(() => visibleImages.count()).toBeGreaterThan(0)
+  await expect
+    .poll(() =>
+      visibleImages.evaluateAll((nodes) =>
+        (nodes as HTMLImageElement[]).every(
+          (image) => image.complete && image.naturalWidth > 0,
+        ),
+      ),
+    )
+    .toBe(true)
 })
 
 test('Draft Lab is clear in Arabic and contained at 320px', async ({ page }) => {

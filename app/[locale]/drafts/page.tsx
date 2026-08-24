@@ -3,10 +3,15 @@ import { DraftExplorer } from '@/components/drafts/draft-explorer'
 import { SectionHeader } from '@/components/ui/section-header'
 import { createLocalDataSource } from '@/lib/data/local'
 import { isOk } from '@/lib/data/source'
+import { readSnapshot } from '@/lib/data/snapshots'
 import {
   buildDraftTeamVisuals,
   enrichDraftLeagues,
 } from '@/lib/drafts/enrich'
+import {
+  buildHeroImageMap,
+  type HeroCatalogItem,
+} from '@/lib/drafts/hero-images'
 import { routing } from '@/i18n/routing'
 
 export const dynamic = 'force-static'
@@ -37,6 +42,12 @@ export default async function DraftsPage({
     matches,
   )
   const teamVisuals = buildDraftTeamVisuals(leagues, matches, standings)
+  const heroCatalog =
+    readSnapshot<HeroCatalogItem[]>('hero-catalog')?.data ?? []
+  const heroImages = buildHeroImageMap([
+    ...leagues.flatMap((league) => league.heroStats),
+    ...heroCatalog,
+  ])
 
   return (
     <main className="section drafts-page">
@@ -52,6 +63,7 @@ export default async function DraftsPage({
           leagues={leagues}
           locale={locale === 'ar' ? 'ar' : 'en'}
           teamVisuals={teamVisuals}
+          heroImages={heroImages}
         />
       ) : (
         <div className="draft-empty panel">

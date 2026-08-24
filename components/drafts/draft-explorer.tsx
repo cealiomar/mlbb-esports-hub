@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { getRegions } from '@/lib/content/regions'
 import type { DraftLeague } from '@/lib/data/types'
+import type { HeroImageMap } from '@/lib/drafts/hero-images'
 import {
   draftTeams,
   teamDraftProfile,
@@ -22,10 +23,12 @@ export function DraftExplorer({
   leagues,
   locale,
   teamVisuals,
+  heroImages,
 }: {
   leagues: DraftLeague[]
   locale: 'en' | 'ar'
   teamVisuals: DraftTeamVisual[]
+  heroImages: HeroImageMap
 }) {
   const t = useTranslations('drafts')
   const available = getRegions()
@@ -146,6 +149,7 @@ export function DraftExplorer({
               profile={profile}
               locale={locale}
               teamVisuals={teamVisuals}
+              heroImages={heroImages}
             />
           )}
         </section>
