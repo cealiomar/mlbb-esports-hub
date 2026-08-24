@@ -1,4 +1,11 @@
-import type { Match, Ok, Result, StandingTable, Team } from './types'
+import type {
+  DraftLeague,
+  Match,
+  Ok,
+  Result,
+  StandingTable,
+  Team,
+} from './types'
 
 export function ok<T>(value: T): Result<T> {
   return { kind: 'ok', value }
@@ -19,6 +26,7 @@ export function isOk<T>(r: Result<T>): r is Ok<T> {
 export interface DataSource {
   getMatches(): Promise<Result<Match[]>>
   getStandings(regionSlug?: string): Promise<Result<StandingTable[]>>
+  getDraftLeagues(regionSlug?: string): Promise<Result<DraftLeague[]>>
   getTeamsByRegion(regionSlug: string): Promise<Result<Team[]>>
   getTeam(pageSlug: string): Promise<Result<Team>>
   /** Unix seconds of the newest data this source can serve, or null if unknown. */

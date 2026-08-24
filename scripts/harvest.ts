@@ -13,15 +13,21 @@ import {
 import { readSnapshot, writeSnapshot } from '@/lib/data/snapshots'
 import type { StandingTable, Team } from '@/lib/data/types'
 import {
+  HERO_PUBLIC_DIR,
   LOGO_PUBLIC_DIR,
   isRemote,
+  localHeroUrl,
   localLogoName,
   localLogoUrl,
 } from '@/lib/data/liquipedia/mirror'
 import { getRegions } from '@/lib/content/regions'
 import { isOk } from '@/lib/data/source'
 import { USER_AGENT } from '@/lib/data/liquipedia/client'
-import type { Match } from '@/lib/data/types'
+import type { DraftLeague, Match } from '@/lib/data/types'
+import {
+  parseDraftSeries,
+  parseDraftSummary,
+} from '@/lib/data/liquipedia/parse-drafts'
 
 /**
  * Liquipedia answers 403 to image requests carrying an off-site Referer, so
@@ -29,8 +35,12 @@ import type { Match } from '@/lib/data/types'
  * each one down once and serve it ourselves — more reliable, and it keeps us
  * off their bandwidth.
  */
-async function mirrorRemoteLogos(urls: Iterable<string>): Promise<void> {
-  mkdirSync(LOGO_PUBLIC_DIR, { recursive: true })
+async function mirrorRemoteAssets(
+  urls: Iterable<string>,
+  publicDir: string,
+  label: string,
+): Promise<void> {
+  mkdirSync(publicDir, { recursive: true })
 
   const wanted = new Set(urls)
 
@@ -38,7 +48,7 @@ async function mirrorRemoteLogos(urls: Iterable<string>): Promise<void> {
   let cached = 0
 
   for (const url of wanted) {
-    const target = join(LOGO_PUBLIC_DIR, localLogoName(url))
+    const target = join(publicDir, localLogoName(url))
     if (existsSync(target)) {
       cached++
       continue
@@ -61,7 +71,7 @@ async function mirrorRemoteLogos(urls: Iterable<string>): Promise<void> {
     }
   }
 
-  console.log(`logos: ${fetched} fetched, ${cached} already local`)
+  console.log(`${label}: ${fetched} fetched, ${cached} already local`)
 }
 
 function localizeLogo(url: string | null): string | null {
@@ -84,7 +94,7 @@ async function mirrorLogos(matches: Match[]): Promise<Match[]> {
       .map((side) => side.logoUrl)
       .filter((url): url is string => isRemote(url)),
   )
-  await mirrorRemoteLogos(wanted)
+  await mirrorRemoteAssets(wanted, LOGO_PUBLIC_DIR, 'logos')
 
   // Rewrite to local paths, but only where the file really exists — a failed
   // download must leave the original URL rather than a dead link.
@@ -105,7 +115,7 @@ async function mirrorStandingLogos(
       .map((row) => row.team.logoUrl)
       .filter((url): url is string => isRemote(url)),
   )
-  await mirrorRemoteLogos(wanted)
+  await mirrorRemoteAssets(wanted, LOGO_PUBLIC_DIR, 'standing logos')
 
   return tables.map((table) => ({
     ...table,
@@ -114,6 +124,48 @@ async function mirrorStandingLogos(
       team: { ...row.team, logoUrl: localizeStandingLogo(row.team.logoUrl) },
     })),
   }))
+}
+
+async function mirrorDraftHeroIcons(
+  leagues: DraftLeague[],
+): Promise<DraftLeague[]> {
+  const wanted = leagues.flatMap((league) =>
+    league.heroStats
+      .map((stat) => stat.imageUrl)
+      .filter((url): url is string => isRemote(url)),
+  )
+  await mirrorRemoteAssets(wanted, HERO_PUBLIC_DIR, 'hero icons')
+
+  return leagues.map((league) => ({
+    ...league,
+    heroStats: league.heroStats.map((stat) => ({
+      ...stat,
+      imageUrl:
+        stat.imageUrl && isRemote(stat.imageUrl)
+          ? existsSync(join(HERO_PUBLIC_DIR, localLogoName(stat.imageUrl)))
+            ? localHeroUrl(stat.imageUrl)
+            : null
+          : stat.imageUrl,
+    })),
+  }))
+}
+
+function latestDraftPage(
+  matches: Match[],
+  leaguePage: string,
+  regionSlug: string,
+): string | null {
+  const candidate = matches
+    .filter(
+      (match) =>
+        match.status === 'completed' &&
+        match.regionSlug === regionSlug &&
+        (match.tournamentPageSlug === leaguePage ||
+          match.tournamentPageSlug.startsWith(`${leaguePage}/`)),
+    )
+    .sort((a, b) => b.startsAt - a.startsAt)[0]
+
+  return candidate?.tournamentPageSlug ?? null
 }
 
 async function main(): Promise<void> {
@@ -160,6 +212,10 @@ async function main(): Promise<void> {
   console.log(`wrote ${matches.length} matches`)
 
   const regions = getRegions()
+  const previousDrafts = readSnapshot<DraftLeague[]>('drafts')?.data ?? []
+  const draftByRegion = new Map(
+    previousDrafts.map((league) => [league.regionSlug, league]),
+  )
   const previousStandings =
     readSnapshot<StandingTable[]>('standings')?.data ?? []
   const refreshedRegions = new Set<string>()
@@ -192,11 +248,37 @@ async function main(): Promise<void> {
     )
     const isCurrentSeason = windowStatus ?? hasCurrentMatch
     if (!isCurrentSeason) {
+      draftByRegion.delete(region.slug)
       console.warn(
         `standings suppressed for inactive season ${region.liquipediaLeaguePage}`,
       )
       continue
     }
+
+    const draftSummary = parseDraftSummary(rendered.value, {
+      regionSlug: region.slug,
+      leagueName: region.leagueName,
+      leaguePageSlug: region.liquipediaLeaguePage,
+    })
+    const previousDraft = draftByRegion.get(region.slug)
+    const sameSeasonDraft =
+      previousDraft?.leaguePageSlug === region.liquipediaLeaguePage
+        ? previousDraft
+        : null
+    draftByRegion.set(region.slug, {
+      ...draftSummary,
+      // A transient missing table must not wipe a valid current-season
+      // snapshot. The exact season page check keeps old seasons out.
+      gamesAnalyzed:
+        draftSummary.heroStats.length > 0
+          ? draftSummary.gamesAnalyzed
+          : (sameSeasonDraft?.gamesAnalyzed ?? 0),
+      heroStats:
+        draftSummary.heroStats.length > 0
+          ? draftSummary.heroStats
+          : (sameSeasonDraft?.heroStats ?? []),
+      series: sameSeasonDraft?.series ?? [],
+    })
 
     const tables = parseStandings(rendered.value, {
       regionSlug: region.slug,
@@ -238,22 +320,114 @@ async function main(): Promise<void> {
     if (!isOk(league)) {
       // A missing league page is not fatal — seasons start and end.
       console.warn(`league harvest skipped for ${entry.page}: ${league.error}`)
-      continue
+    } else {
+      const teams = parseLeagueTeams(league.value, entry.regionSlug)
+      if (teams.length === 0) {
+        console.warn(`no teams parsed from ${entry.page}; snapshot unchanged`)
+      } else {
+        const existing = readSnapshot<Team[]>('teams')?.data ?? []
+        const merged = [
+          ...existing.filter((t) => t.regionSlug !== entry.regionSlug),
+          ...teams,
+        ]
+        writeSnapshot('teams', merged)
+        console.log(`wrote ${teams.length} teams for ${entry.regionSlug}`)
+      }
     }
-    const teams = parseLeagueTeams(league.value, entry.regionSlug)
-    if (teams.length === 0) {
-      console.warn(`no teams parsed from ${entry.page}; snapshot unchanged`)
+
+    const region = regions.find((item) => item.slug === entry.regionSlug)
+    if (!region) continue
+
+    // The league landing page exposes only a five-hero preview. Refresh the
+    // complete statistics table on the same rotating cadence as rosters so
+    // Top Pick and Top Ban are calculated from every published hero.
+    const statisticsPage = `${entry.page}/Statistics`
+    const statistics = await client.parsePage(statisticsPage, 'text')
+    if (!isOk(statistics)) {
+      console.warn(
+        `draft statistics skipped for ${statisticsPage}: ${statistics.error}`,
+      )
+    } else {
+      const summary = parseDraftSummary(statistics.value, {
+        regionSlug: region.slug,
+        leagueName: region.leagueName,
+        leaguePageSlug: region.liquipediaLeaguePage,
+      })
+      if (summary.heroStats.length === 0) {
+        console.warn(`no hero statistics parsed from ${statisticsPage}`)
+      } else {
+        const currentDraft = draftByRegion.get(region.slug) ?? summary
+        draftByRegion.set(region.slug, {
+          ...currentDraft,
+          gamesAnalyzed: summary.gamesAnalyzed,
+          heroStats: summary.heroStats,
+        })
+        console.log(
+          `parsed ${summary.heroStats.length} hero statistics for ${region.slug}`,
+        )
+      }
+    }
+
+    const draftPage = latestDraftPage(
+      matches,
+      region.liquipediaLeaguePage,
+      region.slug,
+    )
+    if (!draftPage) continue
+
+    let draftWikitext =
+      draftPage === entry.page && isOk(league) ? league.value : null
+    if (!draftWikitext) {
+      const draftResult = await client.parsePage(draftPage, 'wikitext')
+      if (!isOk(draftResult)) {
+        console.warn(`draft harvest skipped for ${draftPage}: ${draftResult.error}`)
+        continue
+      }
+      draftWikitext = draftResult.value
+    }
+
+    const series = parseDraftSeries(draftWikitext, {
+      regionSlug: region.slug,
+      leagueName: region.leagueName,
+      leaguePageSlug: draftPage,
+    })
+    if (series.length === 0) {
+      console.warn(`no game drafts parsed from ${draftPage}`)
       continue
     }
 
-    const existing = readSnapshot<Team[]>('teams')?.data ?? []
-    const merged = [
-      ...existing.filter((t) => t.regionSlug !== entry.regionSlug),
-      ...teams,
-    ]
-    writeSnapshot('teams', merged)
-    console.log(`wrote ${teams.length} teams for ${entry.regionSlug}`)
+    const currentDraft = draftByRegion.get(region.slug) ?? {
+      regionSlug: region.slug,
+      leagueName: region.leagueName,
+      leaguePageSlug: region.liquipediaLeaguePage,
+      gamesAnalyzed: 0,
+      heroStats: [],
+      series: [],
+    }
+    draftByRegion.set(region.slug, {
+      ...currentDraft,
+      series: [
+        ...currentDraft.series.filter(
+          (item) => item.tournamentPageSlug !== draftPage,
+        ),
+        ...series,
+      ],
+    })
+    console.log(
+      `parsed ${series.reduce((sum, item) => sum + item.games.length, 0)} game drafts for ${region.slug}`,
+    )
   }
+
+  const draftLeagues = await mirrorDraftHeroIcons(
+    regions
+      .map((region) => draftByRegion.get(region.slug))
+      .filter((league): league is DraftLeague => Boolean(league))
+      .filter(
+        (league) => league.heroStats.length > 0 || league.series.length > 0,
+      ),
+  )
+  writeSnapshot('drafts', draftLeagues)
+  console.log(`wrote ${draftLeagues.length} draft leagues`)
 }
 
 main().catch((error: unknown) => {

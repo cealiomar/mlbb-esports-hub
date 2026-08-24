@@ -33,4 +33,12 @@ describe('local data source', () => {
     expect(isOk(r)).toBe(true)
     if (isOk(r)) expect(r.value).toEqual([])
   })
+
+  it('returns an empty draft list when no snapshot exists', async () => {
+    const source = createLocalDataSource({ snapshotDir: '/nonexistent' })
+    const r = await source.getDraftLeagues('indonesia')
+
+    expect(isOk(r)).toBe(true)
+    if (isOk(r)) expect(r.value).toEqual([])
+  })
 })

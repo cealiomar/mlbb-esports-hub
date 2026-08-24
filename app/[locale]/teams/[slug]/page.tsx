@@ -10,6 +10,8 @@ import { routing } from '@/i18n/routing'
 import { SectionHeader } from '@/components/ui/section-header'
 import { readSnapshot } from '@/lib/data/snapshots'
 import type { Team } from '@/lib/data/types'
+import { TeamDraftPanel } from '@/components/drafts/team-draft-panel'
+import { draftTeams, teamDraftProfile } from '@/lib/drafts/analytics'
 
 // Fully static: rendered at build time from committed snapshots, so the
 // page paints instantly with no fetch and no loading state.
@@ -50,6 +52,23 @@ export default async function TeamPage({
       )
     : []
 
+  const draftResult = team.regionSlug
+    ? await source.getDraftLeagues(team.regionSlug)
+    : null
+  const draftLeague =
+    draftResult && isOk(draftResult) ? draftResult.value[0] : undefined
+  const draftTeam = draftLeague
+    ? draftTeams(draftLeague).find(
+        (candidate) =>
+          candidate.pageSlug.toLowerCase() === team.pageSlug.toLowerCase() ||
+          candidate.name.toLowerCase() === team.name.toLowerCase(),
+      )
+    : undefined
+  const draftProfile =
+    draftLeague && draftTeam
+      ? teamDraftProfile(draftLeague, draftTeam.pageSlug)
+      : null
+
   return (
     <main className="section">
       {region && (
@@ -87,6 +106,12 @@ export default async function TeamPage({
           </li>
         ))}
       </ul>
+
+      {draftLeague && draftProfile && (
+        <div className="mt-20">
+          <TeamDraftPanel league={draftLeague} profile={draftProfile} />
+        </div>
+      )}
 
       {played.length > 0 && (
         <>

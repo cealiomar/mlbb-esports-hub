@@ -3,7 +3,8 @@ name: Harvest Liquipedia
 on:
   schedule:
     # Hourly. One match ticker, every active standings page and three rotating
-    # roster pages, all spaced by the client's 30-second parse limiter.
+    # roster, statistics and exact-draft pages, all spaced by the client's
+    # 30-second parse limiter.
     - cron: '0 * * * *'
   workflow_dispatch:
 
@@ -45,7 +46,7 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           # New team crests are downloaded during harvest and must ship with
           # the snapshot. Omitting public/teams makes them break after deploy.
-          git add data/snapshots/matches.json data/snapshots/standings.json data/snapshots/teams.json public/teams
+          git add data/snapshots/matches.json data/snapshots/standings.json data/snapshots/teams.json data/snapshots/drafts.json public/teams public/heroes
           if git diff --staged --quiet; then
             echo "no data change"
           else

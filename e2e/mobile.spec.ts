@@ -5,9 +5,11 @@ test.use({ ...devices['iPhone 13'] })
 const ROUTES = [
   '/en/',
   '/en/matches/',
+  '/en/drafts/',
   '/en/regions/philippines/',
   '/ar/',
   '/ar/matches/',
+  '/ar/drafts/',
   '/ar/regions/mena/',
 ]
 
@@ -26,6 +28,7 @@ test('primary navigation is reachable on mobile', async ({ page }) => {
   await page.goto('/en/')
   await expect(page.getByRole('link', { name: /matches/i }).first()).toBeVisible()
   await expect(page.getByRole('link', { name: /standings/i }).first()).toBeVisible()
+  await expect(page.getByRole('link', { name: /drafts/i }).first()).toBeVisible()
 })
 
 test('standings are one tap away from every page', async ({ page }) => {

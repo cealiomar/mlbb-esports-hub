@@ -11,11 +11,12 @@ numbers, roadmap — see **[PROJECT.md](PROJECT.md)**.
 ## What this is
 
 A bilingual (English / Arabic) site showing **Mobile Legends: Bang Bang**
-esports fixtures, live matches, results, regional standings and team rosters. It covers only
-MLBB — there is no multi-game abstraction anywhere, and none should be added.
+esports fixtures, live matches, results, regional standings, hero draft meta
+and team rosters. It covers only MLBB — there is no multi-game abstraction
+anywhere, and none should be added.
 
 **Content priority, highest first:** live matches → regional standings → the
-schedule and who plays whom → results.
+schedule and who plays whom → results → draft scouting.
 
 Live: not deployed yet. See [DEPLOY.md](DEPLOY.md).
 
@@ -73,15 +74,16 @@ needed** — that was a false start; the failures were something else.
 Only `api.php`. (Parsing the HTML that `action=parse&prop=text` *returns* is
 fine — that is the API.)
 
-### Team crests are mirrored, never hotlinked
+### Team crests and hero portraits are mirrored, never hotlinked
 
 Liquipedia returns **403** to image requests carrying an off-site `Referer`.
 Hotlinked crests work locally and break on a real domain — which is exactly
 what happened here once.
 
-`scripts/harvest.ts` downloads each crest into `public/teams/` and rewrites
-the snapshot to a local `/teams/…` path. `e2e/mobile.spec.ts` asserts that no
-crest is remote and that every one has `naturalWidth > 0`.
+`scripts/harvest.ts` downloads each crest into `public/teams/`, each hero
+portrait into `public/heroes/`, and rewrites snapshots to local paths.
+Playwright asserts that neither surface hotlinks remote images and that every
+image has decoded pixels.
 
 Do not "simplify" this back to remote URLs.
 
@@ -143,14 +145,15 @@ app/
     layout.tsx          fonts, direction, nav, footer
     page.tsx            home
     matches/            all fixtures, tabbed
+    drafts/             league Top Picks/Bans + exact team drafts
     regions/[slug]/     one region: standings, fixtures and teams
-    teams/[slug]/       roster and recent results
+    teams/[slug]/       roster, available draft profile and recent results
 lib/
   content/regions.ts    region definitions and lookups
   content/brand.ts      the logo lockup — one place
   content/author.ts     footer credit
   data/
-    types.ts            Match, Team, Player, StandingTable, Result
+    types.ts            Match, Team, StandingTable, DraftLeague, Result
     source.ts           the DataSource interface — the seam
     local.ts            reads snapshots, falls back to content/fallback
     snapshots.ts        read/write the committed JSON
@@ -159,23 +162,27 @@ lib/
       parse-matches.ts  the match ticker → Match[]
       parse-standings.ts rendered league table → StandingTable[]
       parse-league.ts   league wikitext → Team[]
-      mirror.ts         crest filename derivation
+      parse-drafts.ts   statistics HTML + match wikitext → draft data
+      mirror.ts         local crest / hero portrait filename derivation
       queue.ts          which league pages this run should fetch
       __fixtures__/     real captured API responses; tests never hit network
   matches/select.ts     today / upcoming / live / results / by region
+  drafts/analytics.ts   league rankings + team-perspective draft analysis
 components/
+  drafts/               Draft Lab rankings, team selector and game sheets
   matches/              card, list, crest, ticker
   standings/            compact home rail + full accessible table
   regions/region-list.tsx
   ui/                   tabs, section header, reveal, freshness badge, footer
   layout/nav.tsx
 scripts/
-  harvest.ts            fixtures + standings + rosters + crest mirroring
+  harvest.ts            fixtures + standings + rosters + draft data + mirrors
 content/
   regions.json          static region definitions
   fallback/matches.json seed data so the site is never blank
 data/snapshots/         the database — committed on purpose
 public/teams/           mirrored crests — committed on purpose
+public/heroes/          mirrored hero portraits — committed on purpose
 ```
 
 `lib/data/source.ts` is the only data contract the UI knows. Swapping
@@ -264,7 +271,7 @@ npm run dev            # development server
 npm run build          # static export into out/
 npm test
 npx playwright test
-npm run harvest        # fixtures + standings + a roster batch + crest mirroring
+npm run harvest        # fixtures + standings + rotating rosters/drafts + images
 npx serve out          # preview the real export
 ```
 
@@ -280,6 +287,8 @@ skips the roster batch while still refreshing fixtures, standings and crests.
 
 - **News was removed by product request.** Do not add a news route, feed, or
   navigation item unless the owner explicitly asks for it again.
+- **No match-detail route.** Exact per-game Picks, Bans, side, duration, MVP
+  and VOD are available through Draft Lab when Liquipedia publishes them.
 - Vietnam's roster page (`Vietnam_MLBB_Championship/2026/Fall`) may 404
   between splits. The harvester warns and moves on; fixtures still map to the
   region via `matchPrefixes`.

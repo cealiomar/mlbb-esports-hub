@@ -3,6 +3,8 @@ import { createHash } from 'node:crypto'
 /** Where mirrored crests live inside the build. */
 export const LOGO_PUBLIC_DIR = 'public/teams'
 export const LOGO_URL_PREFIX = '/teams'
+export const HERO_PUBLIC_DIR = 'public/heroes'
+export const HERO_URL_PREFIX = '/heroes'
 
 /**
  * A stable local filename for a remote crest.
@@ -24,6 +26,11 @@ export function localLogoName(remoteUrl: string): string {
 /** The path the site should reference for a mirrored crest. */
 export function localLogoUrl(remoteUrl: string): string {
   return `${LOGO_URL_PREFIX}/${localLogoName(remoteUrl)}`
+}
+
+/** Hero portraits use the same collision-safe filename in their own folder. */
+export function localHeroUrl(remoteUrl: string): string {
+  return `${HERO_URL_PREFIX}/${localLogoName(remoteUrl)}`
 }
 
 /** True for URLs we still need to pull down. */

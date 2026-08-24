@@ -3,8 +3,8 @@
 Complete reference for the project: what it does, how it is built, why it is
 built that way, and everything needed to run, extend or hand it over.
 
-> **Current product override (2026-08-23):** News has been removed. Regional
-> standings are now part of the primary flow. The visual
+> **Current product override (2026-08-24):** News has been removed. Regional
+> standings and the current-season Draft Lab are now part of the primary flow. The visual
 > system now supports persisted light and dark glass themes, region flags and
 > pointer-driven 3D fixture cards. Any older news or dark-only notes below are
 > retained as historical implementation context and are no longer requirements.
@@ -30,18 +30,19 @@ added.
 2. **Live matches** — in progress right now, with running score
 3. **Regional standings** — records, points and qualification zones
 4. **Results** — completed matches with the winner marked
-5. **Teams and rosters** — per region
+5. **Draft scouting** — league Top Picks/Bans and available team game sheets
+6. **Teams and rosters** — per region
 
 ### Live data, right now
 
 | | |
 |---|---|
-| Matches tracked | 100 — 1 live, 49 upcoming, 50 completed |
-| Teams | 99 |
-| Players | 642 |
+| Matches tracked | 100 — 50 upcoming, 50 completed |
+| Teams | 100 |
+| Players | 662 |
 | Regions | 11, all with rosters |
 | Crests self-hosted | 77 images, 436 KB |
-| News items | 40 |
+| Draft coverage | 3 leagues · 181 hero rows · 89 exact game drafts |
 
 Teams per region: Indonesia 9 · Philippines 8 · Malaysia 8 · Singapore 10 ·
 Cambodia 10 · MENA 8 · LATAM 8 · Myanmar 9 · Thailand 10 · Vietnam 3 · CIS 16
@@ -55,9 +56,9 @@ Cambodia 10 · MENA 8 · LATAM 8 · Myanmar 9 · Thailand 10 · Vietnam 3 · CIS
 | `/` | Prerendered redirect to the visitor's locale |
 | `/{locale}` | Hero, live cards, standings rail, ticker, regions and schedule |
 | `/{locale}/matches` | All fixtures — Live / Today / Upcoming / Results |
+| `/{locale}/drafts` | Current league Top Picks/Bans and team draft sheets |
 | `/{locale}/regions/{slug}` | One region: full standings, fixtures and teams |
-| `/{locale}/teams/{slug}` | Roster with roles and countries, recent results |
-| `/{locale}/news` | Aggregated headlines (secondary) |
+| `/{locale}/teams/{slug}` | Roster, available draft profile and recent results |
 
 `{locale}` is `en` or `ar`. Arabic is full RTL: layout mirrors, fixture order
 reverses so the first team reads first, and the ticker travels the other way.
@@ -89,10 +90,9 @@ GitHub Actions, hourly
    ├─ npm run harvest
    │    ├─ Liquipedia:Matches ............. 100 fixtures + results, 1 call
    │    ├─ all active league pages ......... standings
-   │    ├─ 3 rotating league pages ......... rosters
-   │    └─ downloads any new team crests .. public/teams/
-   │
-   ├─ npm run harvest:news
+   │    ├─ 3 rotating league pages ......... rosters + full hero statistics
+   │    ├─ latest played stage pages ........ exact game drafts
+   │    └─ mirrors team + hero images ....... public/teams/ + public/heroes/
    │
    └─ commits data/snapshots/*.json
           │
@@ -168,26 +168,24 @@ Endpoints used:
   across all regions in one call
 - `action=parse&page=<league>&prop=text` — current regional standings
 - `action=parse&page=<league>&prop=wikitext` — participants and rosters
+- `action=parse&page=<league>/Statistics&prop=text` — complete hero table
+- `action=parse&page=<played stage>&prop=wikitext` — exact Picks/Bans per game
 - `action=query&list=allpages&apprefix=…` — checking which season pages exist
   (cheap: 1 req / 2 s)
 
-### Team crests — self-hosted, never hotlinked
+### Team crests and hero portraits — self-hosted, never hotlinked
 
 Liquipedia returns **403** to image requests carrying an off-site `Referer`.
 Hotlinked crests work in local development and break on a real domain.
 
-The harvester downloads each crest to `public/teams/` and rewrites snapshots
-to local paths. A failed download leaves the original URL rather than a dead
-link. `e2e/mobile.spec.ts` asserts no crest is remote and every one has
-`naturalWidth > 0`.
+The harvester downloads each crest to `public/teams/`, each hero portrait to
+`public/heroes/`, and rewrites snapshots to local paths. Playwright asserts
+that neither surface is remote and that every image has `naturalWidth > 0`.
 
-### News — Google News RSS (secondary)
+### News
 
-MLBB outlets either block automated access or publish no feed, so headlines
-are aggregated through Google News. Each item keeps its original publisher's
-name and links straight to their article; **no article body is ever stored**.
-Swap in a publisher's own feed in `scripts/harvest-news.ts` if a reachable one
-appears.
+Removed by product request. Do not restore a route or feed unless explicitly
+requested again.
 
 ### Rejected: scraping ph-mpl.com
 
@@ -246,11 +244,12 @@ app/
     layout.tsx              fonts, direction, nav, footer
     page.tsx                home
     matches/page.tsx
+    drafts/page.tsx
     regions/[slug]/page.tsx
     teams/[slug]/page.tsx
-    news/page.tsx
 
 components/
+  drafts/    Draft Lab rankings · team profile · hero portrait fallback
   layout/nav.tsx
   home/hero.tsx
   matches/  match-card · match-list · team-crest · ticker
@@ -271,14 +270,14 @@ lib/
       parse-matches.ts      match ticker HTML → Match[]
       parse-standings.ts    league table HTML → StandingTable[]
       parse-league.ts       league wikitext → Team[]
-      mirror.ts             crest filename derivation
+      parse-drafts.ts       hero statistics + exact game drafts
+      mirror.ts             local crest / hero filename derivation
       queue.ts              which league pages this run fetches
       __fixtures__/         real captured API responses
-    news/rss.ts             RSS/Atom → Article[]
+  drafts/analytics.ts       league rankings + team-perspective analysis
 
 scripts/
-  harvest.ts                fixtures + standings + rosters + crest mirroring
-  harvest-news.ts
+  harvest.ts                fixtures + standings + rosters + drafts + mirrors
 
 content/
   regions.json              static region definitions
@@ -286,6 +285,7 @@ content/
 
 data/snapshots/             the database — committed on purpose
 public/teams/               mirrored crests — committed on purpose
+public/heroes/              mirrored hero portraits — committed on purpose
 public/brand/               the logo lockup
 
 i18n/                       routing and request config
@@ -294,8 +294,9 @@ e2e/                        Playwright specs
 .github/workflows/          harvest.yml · deploy.yml
 ```
 
-**`data/snapshots/` and `public/teams/` are committed deliberately.** They are
-the database and the image store; without them the build has nothing to render.
+**`data/snapshots/`, `public/teams/` and `public/heroes/` are committed
+deliberately.** They are the database and the image store; without them the
+build has nothing to render.
 
 ---
 
@@ -487,10 +488,9 @@ Dependencies: `next`, `react`, `react-dom`, `next-intl`, `node-html-parser`,
 
 ## 13. Known gaps and next steps
 
-- **No match detail page** — no per-game scores, drafts or MVPs.
-- **News is parked.** `/news` works and is populated, but it is not in the
-  primary flow and no further work is planned on it.
-- **No home-page news section**, by choice.
+- **No match-detail route.** Exact Picks, Bans, side, duration, MVP and VOD are
+  available in Draft Lab for the matches where Liquipedia publishes them.
+- **News is removed**, by choice.
 - Vietnam's roster page (`Vietnam_MLBB_Championship/2026/Fall`) may 404
   between splits. The harvester warns and moves on; fixtures still map to the
   region through `matchPrefixes`.

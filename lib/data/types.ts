@@ -78,6 +78,66 @@ export interface StandingTable {
   rows: StandingRow[]
 }
 
+export interface DraftHero {
+  /** Lower-case Liquipedia hero key, e.g. "yi sun-shin". */
+  id: string
+  name: string
+  pageSlug: string
+}
+
+export interface HeroDraftStat {
+  hero: DraftHero
+  /** Mirrored hero portrait when Liquipedia publishes one. */
+  imageUrl: string | null
+  picks: number
+  pickWins: number
+  pickLosses: number
+  pickRate: number
+  bans: number
+  banRate: number
+  presence: number
+  presenceRate: number
+}
+
+export interface DraftGame {
+  number: number
+  winner: 1 | 2 | null
+  durationSeconds: number | null
+  mapName: string | null
+  vodUrl: string | null
+  team1Side: 'blue' | 'red' | null
+  team2Side: 'blue' | 'red' | null
+  team1Picks: DraftHero[]
+  team2Picks: DraftHero[]
+  team1Bans: DraftHero[]
+  team2Bans: DraftHero[]
+}
+
+export interface DraftTeam {
+  name: string
+  pageSlug: string
+}
+
+export interface DraftSeries {
+  id: string
+  regionSlug: string
+  leagueName: string
+  tournamentPageSlug: string
+  team1: DraftTeam
+  team2: DraftTeam
+  mvp: string | null
+  games: DraftGame[]
+}
+
+export interface DraftLeague {
+  regionSlug: string
+  leagueName: string
+  leaguePageSlug: string
+  gamesAnalyzed: number
+  heroStats: HeroDraftStat[]
+  series: DraftSeries[]
+}
+
 export interface Snapshot<T> {
   /** Unix seconds when this snapshot was harvested. */
   harvestedAt: number
