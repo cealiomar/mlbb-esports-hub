@@ -1,38 +1,6 @@
 {
-  "harvestedAt": 1787554690,
+  "harvestedAt": 1787558513,
   "data": [
-    {
-      "id": "1787551200-mlbb-academy-league-season-6-regular-season-phase-1-ar-srga",
-      "startsAt": 1787551200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AR",
-          "name": "Arif Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Arif_Esports_allmode-6b919b45.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "SRGA",
-          "name": "Selangor Red Giants Academy",
-          "pageSlug": "",
-          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 1",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1787556600-mdl-indonesia-season-14-regular-season-gfjr-tlaid",
       "startsAt": 1787556600,
@@ -59,7 +27,9 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 3",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -88,7 +58,10 @@
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
+      ],
       "vodUrls": []
     },
     {
@@ -1451,6 +1424,64 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788080400-mpl-philippines-season-18-regular-season-twph-flcp",
+      "startsAt": 1788080400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TWPH",
+          "name": "Twisted Minds PH",
+          "pageSlug": "Twisted_Minds_PH",
+          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "FLCP",
+          "name": "Team Falcons PH",
+          "pageSlug": "Team_Falcons_PH",
+          "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787551200-mlbb-academy-league-season-6-regular-season-phase-1-ar-srga",
+      "startsAt": 1787551200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AR",
+          "name": "Arif Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Arif_Esports_allmode-6b919b45.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "SRGA",
+          "name": "Selangor Red Giants Academy",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2945,38 +2976,6 @@
       "vodUrls": [
         "https://www.youtube.com/live/7iCoRYPT5sg?si=X1_3RDryH0Edviqd&t=11210",
         "https://www.youtube.com/live/7iCoRYPT5sg?si=mW-jO-nj5X8nQM2M&t=13545"
-      ]
-    },
-    {
-      "id": "1787126400-queen-legends-season-4-regular-season-wbg-etw",
-      "startsAt": 1787126400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "WBG",
-          "name": "Weibo Gaming",
-          "pageSlug": "Weibo_Gaming",
-          "logoUrl": "/teams/62px-Weibo_allmode-a8ba8ec3.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "ETW",
-          "name": "Earth Empress",
-          "pageSlug": "",
-          "logoUrl": "/teams/43px-Earth_Empress_allmode-a358464e.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - RS: Week 4",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/7iCoRYPT5sg?si=Q7kZdN97bfs8qLfS&t=5450",
-        "https://www.youtube.com/live/7iCoRYPT5sg?si=IFh9lykrsY4-nKiD&t=7325"
       ]
     }
   ]
