@@ -10,15 +10,22 @@ import {
   topLeagueBans,
   topLeaguePicks,
 } from '@/lib/drafts/analytics'
+import {
+  resolveDraftTeamVisual,
+  type DraftTeamVisual,
+} from '@/lib/drafts/enrich'
+import { TeamCrest } from '@/components/matches/team-crest'
 import { LeagueHeroRanking } from './league-hero-ranking'
 import { TeamDraftPanel } from './team-draft-panel'
 
 export function DraftExplorer({
   leagues,
   locale,
+  teamVisuals,
 }: {
   leagues: DraftLeague[]
   locale: 'en' | 'ar'
+  teamVisuals: DraftTeamVisual[]
 }) {
   const t = useTranslations('drafts')
   const available = getRegions()
@@ -107,26 +114,40 @@ export function DraftExplorer({
           </header>
 
           <div className="draft-team-rail" aria-label={t('chooseTeam')}>
-            {teams.map((team) => (
-              <button
-                key={team.pageSlug}
-                type="button"
-                aria-pressed={team.pageSlug === selectedTeam}
-                data-active={team.pageSlug === selectedTeam || undefined}
-                onClick={() =>
-                  setSelectedByRegion((current) => ({
-                    ...current,
-                    [active.region.slug]: team.pageSlug,
-                  }))
-                }
-              >
-                <span>{team.name.slice(0, 3).toUpperCase()}</span>
-                <strong>{team.name}</strong>
-              </button>
-            ))}
+            {teams.map((team) => {
+              const visual = resolveDraftTeamVisual(
+                teamVisuals,
+                team,
+                active.region.slug,
+              )
+              return (
+                <button
+                  key={team.pageSlug}
+                  type="button"
+                  aria-pressed={team.pageSlug === selectedTeam}
+                  data-active={team.pageSlug === selectedTeam || undefined}
+                  onClick={() =>
+                    setSelectedByRegion((current) => ({
+                      ...current,
+                      [active.region.slug]: team.pageSlug,
+                    }))
+                  }
+                >
+                  <TeamCrest team={visual} size={38} />
+                  <strong>{team.name}</strong>
+                </button>
+              )
+            })}
           </div>
 
-          {profile && <TeamDraftPanel league={active.league} profile={profile} />}
+          {profile && (
+            <TeamDraftPanel
+              league={active.league}
+              profile={profile}
+              locale={locale}
+              teamVisuals={teamVisuals}
+            />
+          )}
         </section>
       ) : (
         <div className="draft-empty panel">

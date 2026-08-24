@@ -3,6 +3,11 @@
 import { useTranslations } from 'next-intl'
 import type { DraftHero, DraftLeague } from '@/lib/data/types'
 import type { TeamDraftProfile, TeamHeroStat } from '@/lib/drafts/analytics'
+import {
+  resolveDraftTeamVisual,
+  type DraftTeamVisual,
+} from '@/lib/drafts/enrich'
+import { TeamCrest } from '@/components/matches/team-crest'
 import { HeroIcon } from './hero-icon'
 
 function formatDuration(seconds: number | null): string | null {
@@ -15,6 +20,35 @@ function imageFor(league: DraftLeague, hero: DraftHero): string | null {
   return (
     league.heroStats.find((stat) => stat.hero.id === hero.id)?.imageUrl ?? null
   )
+}
+
+function formatSeriesDate(
+  startsAt: number | null | undefined,
+  playedOn: string | null | undefined,
+  locale: 'en' | 'ar',
+): string | null {
+  const date = startsAt
+    ? new Date(startsAt * 1000)
+    : playedOn
+      ? new Date(`${playedOn}T12:00:00Z`)
+      : null
+  if (!date || Number.isNaN(date.getTime())) return null
+  return new Intl.DateTimeFormat(locale === 'ar' ? 'ar-EG' : 'en-US', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'Africa/Cairo',
+  }).format(date)
+}
+
+function seriesScore(profile: TeamDraftProfile['recentSeries'][number]): [number, number] {
+  return [
+    profile.series.team1Score ??
+      profile.series.games.filter((game) => game.winner === 1).length,
+    profile.series.team2Score ??
+      profile.series.games.filter((game) => game.winner === 2).length,
+  ]
 }
 
 function TeamHeroRanking({
@@ -77,19 +111,31 @@ function HeroStrip({
 export function TeamDraftPanel({
   league,
   profile,
+  locale,
+  teamVisuals,
 }: {
   league: DraftLeague
   profile: TeamDraftProfile
+  locale: 'en' | 'ar'
+  teamVisuals: DraftTeamVisual[]
 }) {
   const t = useTranslations('drafts')
+  const profileVisual = resolveDraftTeamVisual(
+    teamVisuals,
+    profile.team,
+    league.regionSlug,
+  )
 
   return (
     <section className="team-draft-panel" data-testid="team-draft-panel">
       <header className="team-draft-panel__header">
-        <span>
-          <small>{t('teamAnalysis')}</small>
-          <h2>{profile.team.name}</h2>
-        </span>
+        <div className="team-draft-panel__identity">
+          <TeamCrest team={profileVisual} size={52} />
+          <span>
+            <small>{t('teamAnalysis')}</small>
+            <h2>{profile.team.name}</h2>
+          </span>
+        </div>
         <strong>{t('gamesAnalyzed', { count: profile.gamesAnalyzed })}</strong>
       </header>
 
@@ -110,25 +156,91 @@ export function TeamDraftPanel({
 
       <div className="draft-series-list">
         <h3>{t('recentDrafts')}</h3>
-        {profile.recentSeries.map(({ series, opponent, games }, index) => (
-          <details
-            key={series.id}
-            className="draft-series panel"
-            open={index === 0}
-          >
-            <summary>
-              <span>
-                <small>{t('seriesAgainst')}</small>
-                <strong>{opponent.name}</strong>
-              </span>
-              <span className="draft-series__summary-meta">
-                {series.mvp && <small>{t('mvp', { player: series.mvp })}</small>}
-                <b>{t('gameCount', { count: games.length })}</b>
-              </span>
-            </summary>
+        {profile.recentSeries.map((seriesView, index) => {
+          const { series, games } = seriesView
+          const [team1Score, team2Score] = seriesScore(seriesView)
+          const winningSide =
+            series.winner ??
+            (team1Score === team2Score ? null : team1Score > team2Score ? 1 : 2)
+          const team1Visual = resolveDraftTeamVisual(
+            teamVisuals,
+            series.team1,
+            league.regionSlug,
+          )
+          const team2Visual = resolveDraftTeamVisual(
+            teamVisuals,
+            series.team2,
+            league.regionSlug,
+          )
+          const date = formatSeriesDate(series.startsAt, series.playedOn, locale)
+          const week = series.roundLabel?.match(/^Week\s+(\d+)$/i)
+          const round = series.roundLabel?.match(/^Round\s+(\d+)$/i)
+          const roundLabel = week
+            ? t('weekNumber', { number: week[1] })
+            : round
+              ? t('roundNumber', { number: round[1] })
+              : series.roundLabel
+          const stageLabel =
+            series.stageName?.toLowerCase() === 'regular season'
+              ? t('regularSeason')
+              : series.stageName
 
-            <div className="draft-series__games">
-              {games.map(({ game, side, won, picks, bans }) => (
+          return (
+            <details
+              key={series.id}
+              className="draft-series panel"
+              open={index === 0}
+            >
+              <summary>
+                <div className="draft-series__summary-main">
+                  <div className="draft-series__context">
+                    {date && (
+                      <time data-testid="draft-series-date">{date}</time>
+                    )}
+                    {roundLabel && <span>{roundLabel}</span>}
+                    {stageLabel && <span>{stageLabel}</span>}
+                  </div>
+
+                  <div className="draft-series__matchup">
+                    <div
+                      className="draft-series__team"
+                      data-winner={winningSide === 1 || undefined}
+                    >
+                      <TeamCrest team={team1Visual} size={46} />
+                      <span>
+                        <strong>{series.team1.name}</strong>
+                        {winningSide === 1 && <small>{t('winner')}</small>}
+                      </span>
+                      <b>{team1Score}</b>
+                    </div>
+                    <span className="draft-series__score-separator">:</span>
+                    <div
+                      className="draft-series__team draft-series__team--second"
+                      data-winner={winningSide === 2 || undefined}
+                    >
+                      <b>{team2Score}</b>
+                      <TeamCrest team={team2Visual} size={46} />
+                      <span>
+                        <strong>{series.team2.name}</strong>
+                        {winningSide === 2 && <small>{t('winner')}</small>}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="draft-series__summary-meta">
+                  {series.mvp && (
+                    <span className="draft-series__mvp" data-testid="draft-series-mvp">
+                      <i aria-hidden>★</i>
+                      {t('mvp', { player: series.mvp })}
+                    </span>
+                  )}
+                  <b>{t('gameCount', { count: games.length })}</b>
+                </div>
+              </summary>
+
+              <div className="draft-series__games">
+                {games.map(({ game, side, won, picks, bans }) => (
                 <article key={game.number} className="draft-game">
                   <header>
                     <strong>{t('gameNumber', { number: game.number })}</strong>
@@ -167,10 +279,11 @@ export function TeamDraftPanel({
                     <HeroStrip heroes={bans} league={league} />
                   </div>
                 </article>
-              ))}
-            </div>
-          </details>
-        ))}
+                ))}
+              </div>
+            </details>
+          )
+        })}
       </div>
     </section>
   )

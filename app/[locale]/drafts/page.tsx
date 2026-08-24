@@ -3,6 +3,10 @@ import { DraftExplorer } from '@/components/drafts/draft-explorer'
 import { SectionHeader } from '@/components/ui/section-header'
 import { createLocalDataSource } from '@/lib/data/local'
 import { isOk } from '@/lib/data/source'
+import {
+  buildDraftTeamVisuals,
+  enrichDraftLeagues,
+} from '@/lib/drafts/enrich'
 import { routing } from '@/i18n/routing'
 
 export const dynamic = 'force-static'
@@ -20,8 +24,19 @@ export default async function DraftsPage({
   const { locale } = await params
   setRequestLocale(locale)
   const t = await getTranslations('drafts')
-  const result = await createLocalDataSource().getDraftLeagues()
-  const leagues = isOk(result) ? result.value : []
+  const source = createLocalDataSource()
+  const [draftResult, matchResult, standingsResult] = await Promise.all([
+    source.getDraftLeagues(),
+    source.getMatches(),
+    source.getStandings(),
+  ])
+  const matches = isOk(matchResult) ? matchResult.value : []
+  const standings = isOk(standingsResult) ? standingsResult.value : []
+  const leagues = enrichDraftLeagues(
+    isOk(draftResult) ? draftResult.value : [],
+    matches,
+  )
+  const teamVisuals = buildDraftTeamVisuals(leagues, matches, standings)
 
   return (
     <main className="section drafts-page">
@@ -36,6 +51,7 @@ export default async function DraftsPage({
         <DraftExplorer
           leagues={leagues}
           locale={locale === 'ar' ? 'ar' : 'en'}
+          teamVisuals={teamVisuals}
         />
       ) : (
         <div className="draft-empty panel">

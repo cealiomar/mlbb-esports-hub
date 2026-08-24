@@ -123,8 +123,19 @@ export interface DraftSeries {
   regionSlug: string
   leagueName: string
   tournamentPageSlug: string
+  /** Calendar date published with the draft, formatted as YYYY-MM-DD. */
+  playedOn?: string | null
+  /** Unix seconds from the matching fixture snapshot when available. */
+  startsAt?: number | null
+  /** Source round label, e.g. "Week 2". */
+  roundLabel?: string | null
+  /** Tournament phase, e.g. "Regular Season". */
+  stageName?: string | null
   team1: DraftTeam
   team2: DraftTeam
+  team1Score?: number
+  team2Score?: number
+  winner?: 1 | 2 | null
   mvp: string | null
   games: DraftGame[]
 }

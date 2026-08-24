@@ -19,10 +19,23 @@ describe('parseDraftSeries', () => {
   it('reads the two teams and series MVP from a captured match', () => {
     expect(series).toHaveLength(1)
     expect(series[0]).toMatchObject({
+      playedOn: '2026-08-14',
+      stageName: 'Regular Season',
       team1: { name: 'EVOS', pageSlug: 'EVOS' },
       team2: { name: 'RRQ Hoshi', pageSlug: 'RRQ_Hoshi' },
+      team1Score: 2,
+      team2Score: 0,
+      winner: 1,
       mvp: 'Alberttt',
     })
+  })
+
+  it('keeps the week label from the surrounding match list', () => {
+    const grouped = parseDraftSeries(
+      `{{Matchlist|title=Week 3|M1=${wikitext}}}`,
+      context,
+    )
+    expect(grouped[0].roundLabel).toBe('Week 3')
   })
 
   it('reads picks, bans, side, winner, duration and direct VOD per game', () => {

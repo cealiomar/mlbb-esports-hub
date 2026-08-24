@@ -12,6 +12,11 @@ import { readSnapshot } from '@/lib/data/snapshots'
 import type { Team } from '@/lib/data/types'
 import { TeamDraftPanel } from '@/components/drafts/team-draft-panel'
 import { draftTeams, teamDraftProfile } from '@/lib/drafts/analytics'
+import {
+  buildDraftTeamVisuals,
+  enrichDraftLeagues,
+  resolveDraftTeamVisual,
+} from '@/lib/drafts/enrich'
 
 // Fully static: rendered at build time from committed snapshots, so the
 // page paints instantly with no fetch and no loading state.
@@ -43,9 +48,10 @@ export default async function TeamPage({
   const localeKey = locale === 'ar' ? 'ar' : 'en'
 
   const matchResult = await source.getMatches()
+  const matches = isOk(matchResult) ? matchResult.value : []
   const played = isOk(matchResult)
     ? recentResults(
-        matchResult.value.filter((m) =>
+        matches.filter((m) =>
           m.opponents.some((o) => o.pageSlug === team.pageSlug),
         ),
         6,
@@ -55,13 +61,31 @@ export default async function TeamPage({
   const draftResult = team.regionSlug
     ? await source.getDraftLeagues(team.regionSlug)
     : null
+  const standingResult = team.regionSlug
+    ? await source.getStandings(team.regionSlug)
+    : null
+  const standings =
+    standingResult && isOk(standingResult) ? standingResult.value : []
   const draftLeague =
-    draftResult && isOk(draftResult) ? draftResult.value[0] : undefined
+    draftResult && isOk(draftResult)
+      ? enrichDraftLeagues(draftResult.value, matches)[0]
+      : undefined
+  const teamVisuals = draftLeague
+    ? buildDraftTeamVisuals([draftLeague], matches, standings)
+    : []
   const draftTeam = draftLeague
     ? draftTeams(draftLeague).find(
-        (candidate) =>
-          candidate.pageSlug.toLowerCase() === team.pageSlug.toLowerCase() ||
-          candidate.name.toLowerCase() === team.name.toLowerCase(),
+        (candidate) => {
+          const visual = resolveDraftTeamVisual(
+            teamVisuals,
+            candidate,
+            draftLeague.regionSlug,
+          )
+          return (
+            visual.pageSlug.toLowerCase() === team.pageSlug.toLowerCase() ||
+            visual.name.toLowerCase() === team.name.toLowerCase()
+          )
+        },
       )
     : undefined
   const draftProfile =
@@ -109,7 +133,12 @@ export default async function TeamPage({
 
       {draftLeague && draftProfile && (
         <div className="mt-20">
-          <TeamDraftPanel league={draftLeague} profile={draftProfile} />
+          <TeamDraftPanel
+            league={draftLeague}
+            profile={draftProfile}
+            locale={localeKey}
+            teamVisuals={teamVisuals}
+          />
         </div>
       )}
 

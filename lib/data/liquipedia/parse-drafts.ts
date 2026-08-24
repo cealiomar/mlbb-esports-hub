@@ -165,6 +165,56 @@ function plainText(value: string | null): string | null {
   return text || null
 }
 
+const MONTHS: Record<string, number> = {
+  january: 1,
+  february: 2,
+  march: 3,
+  april: 4,
+  may: 5,
+  june: 6,
+  july: 7,
+  august: 8,
+  september: 9,
+  october: 10,
+  november: 11,
+  december: 12,
+}
+
+function calendarDate(value: string | null): string | null {
+  const match = value?.match(/\b([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})\b/)
+  if (!match) return null
+  const month = MONTHS[match[1].toLowerCase()]
+  if (!month) return null
+  return `${match[3]}-${String(month).padStart(2, '0')}-${String(Number(match[2])).padStart(2, '0')}`
+}
+
+function stageName(pageSlug: string): string | null {
+  const segment = pageSlug.split('/').filter(Boolean).at(-1)
+  return segment ? segment.replaceAll('_', ' ') : null
+}
+
+interface MatchCandidate {
+  body: string
+  roundLabel: string | null
+}
+
+function matchCandidates(wikitext: string): MatchCandidate[] {
+  const grouped = extractTemplates(wikitext, 'Matchlist').flatMap((body) => {
+    const params = splitParams(body)
+    const roundLabel = plainText(namedParam(params, 'title'))
+    return extractTemplates(body, 'Match').map((matchBody) => ({
+      body: matchBody,
+      roundLabel,
+    }))
+  })
+
+  if (grouped.length > 0) return grouped
+  return extractTemplates(wikitext, 'Match').map((body) => ({
+    body,
+    roundLabel: null,
+  }))
+}
+
 function readGame(body: string, number: number): DraftGame | null {
   const params = splitParams(body)
   const team1Picks = heroList(params, 't1h')
@@ -207,8 +257,8 @@ export function parseDraftSeries(
   wikitext: string,
   context: DraftContext,
 ): DraftSeries[] {
-  return extractTemplates(wikitext, 'Match')
-    .map((matchBody, index): DraftSeries | null => {
+  return matchCandidates(wikitext)
+    .map(({ body: matchBody, roundLabel }, index): DraftSeries | null => {
       const teams = extractTemplates(matchBody, 'TeamOpponent')
         .slice(0, 2)
         .map(teamFromTemplate)
@@ -220,14 +270,24 @@ export function parseDraftSeries(
       if (games.length === 0) return null
 
       const params = splitParams(matchBody)
+      const team1Score = games.filter((game) => game.winner === 1).length
+      const team2Score = games.filter((game) => game.winner === 2).length
       return {
         id: `${slug(context.leaguePageSlug)}-${slug(teams[0].name)}-${slug(teams[1].name)}-${index + 1}`,
         regionSlug: context.regionSlug,
         leagueName: context.leagueName,
         tournamentPageSlug: context.leaguePageSlug,
+        playedOn: calendarDate(namedParam(params, 'date')),
+        startsAt: null,
+        roundLabel,
+        stageName: stageName(context.leaguePageSlug),
         team1: teams[0],
         team2: teams[1],
-        mvp: namedParam(params, 'mvp'),
+        team1Score,
+        team2Score,
+        winner:
+          team1Score === team2Score ? null : team1Score > team2Score ? 1 : 2,
+        mvp: plainText(namedParam(params, 'mvp')),
         games,
       }
     })

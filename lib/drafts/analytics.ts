@@ -136,6 +136,14 @@ export function teamDraftProfile(
     gamesAnalyzed: games.length,
     topPicks: teamHeroStats(games, 'picks').slice(0, 5),
     topBans: teamHeroStats(games, 'bans').slice(0, 5),
-    recentSeries: seriesViews.reverse().slice(0, 4),
+    recentSeries: seriesViews
+      .map((series, index) => ({ series, index }))
+      .sort(
+        (a, b) =>
+          (b.series.series.startsAt ?? b.index) -
+          (a.series.series.startsAt ?? a.index),
+      )
+      .map(({ series }) => series)
+      .slice(0, 4),
   }
 }
