@@ -58,6 +58,7 @@ export interface DraftCoachHeroProfile {
   summaryBans: number
   presenceRate: number
   exactGames: number
+  exactBans: number
   exactWins: number
   laneGames: Record<DraftLane, number>
   laneRates: Record<DraftLane, number>
@@ -212,6 +213,7 @@ interface MutableHero {
   summaryWins: number
   summaryBans: number
   exactGames: number
+  exactBans: number
   exactWins: number
   laneGames: Record<DraftLane, number>
   earlyWins: number
@@ -288,6 +290,7 @@ export function buildDraftCoachModel(
       summaryWins: 0,
       summaryBans: 0,
       exactGames: 0,
+      exactBans: 0,
       exactWins: 0,
       laneGames: blankLaneRecord(),
       earlyWins: 0,
@@ -306,6 +309,7 @@ export function buildDraftCoachModel(
         summaryWins: 0,
         summaryBans: 0,
         exactGames: 0,
+        exactBans: 0,
         exactWins: 0,
         laneGames: blankLaneRecord(),
         earlyWins: 0,
@@ -372,6 +376,7 @@ export function buildDraftCoachModel(
             summaryWins: 0,
             summaryBans: 0,
             exactGames: 0,
+            exactBans: 0,
             exactWins: 0,
             laneGames: blankLaneRecord(),
             earlyWins: 0,
@@ -393,7 +398,28 @@ export function buildDraftCoachModel(
         if (lane) profile.laneGames[lane] += 3
         addMetric(teamProfile.picks, key, side.won)
       })
-      banKeys.forEach((key) => addCount(teamProfile.bans, key))
+      banKeys.forEach((key, banIndex) => {
+        let profile = catalog.get(key)
+        if (!profile) {
+          profile = {
+            hero: side.bans[banIndex],
+            imageUrl: null,
+            summaryPicks: 0,
+            summaryWins: 0,
+            summaryBans: 0,
+            exactGames: 0,
+            exactBans: 0,
+            exactWins: 0,
+            laneGames: blankLaneRecord(),
+            earlyWins: 0,
+            lateWins: 0,
+            timedWins: 0,
+          }
+          catalog.set(key, profile)
+        }
+        profile.exactBans += 1
+        addCount(teamProfile.bans, key)
+      })
 
       for (let first = 0; first < pickKeys.length; first += 1) {
         for (let second = first + 1; second < pickKeys.length; second += 1) {
@@ -449,12 +475,20 @@ export function buildDraftCoachModel(
       const flexLanes = DRAFT_LANES.filter(
         (lane) => profile.laneGames[lane] >= 3 && laneRates[lane] >= 0.16,
       )
-      const presenceRate =
+      const summaryPresenceRate =
         summaryGames > 0
           ? clamp(
               (profile.summaryPicks + profile.summaryBans) / summaryGames,
             )
           : 0
+      const exactPresenceRate =
+        allSelectedGames.length > 0
+          ? clamp(
+              (profile.exactGames + profile.exactBans) /
+                allSelectedGames.length,
+            )
+          : 0
+      const presenceRate = Math.max(summaryPresenceRate, exactPresenceRate)
 
       return {
         key,
@@ -465,6 +499,7 @@ export function buildDraftCoachModel(
         summaryBans: profile.summaryBans,
         presenceRate,
         exactGames: profile.exactGames,
+        exactBans: profile.exactBans,
         exactWins: profile.exactWins,
         laneGames: profile.laneGames,
         laneRates,
@@ -824,6 +859,7 @@ export function recommendDraftHeroes(
           enemyBan.rate * 0.08
         relevantSample =
           profile.exactGames +
+          profile.exactBans +
           reverseThreat.games +
           enemySynergy.games +
           enemyComfort.games
@@ -854,7 +890,15 @@ export function recommendDraftHeroes(
 
       // A hero absent from the selected pro sample remains selectable, but a
       // thin sample can never outrank strongly observed current-meta options.
-      if (profile.summaryPicks + profile.summaryBans === 0) rawScore *= 0.78
+      if (
+        profile.summaryPicks +
+          profile.summaryBans +
+          profile.exactGames +
+          profile.exactBans ===
+        0
+      ) {
+        rawScore *= 0.78
+      }
       if (options.kind === 'pick' && role < MIN_LANE_FIT) rawScore *= 0.45
       if (targetLane && role < MIN_LANE_FIT) rawScore *= 0.55
 
