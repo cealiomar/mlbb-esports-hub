@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787564876,
+  "harvestedAt": 1787567845,
   "data": [
     {
       "id": "1787556600-mdl-indonesia-season-14-regular-season-gfjr-tlaid",
@@ -33,38 +33,6 @@
       "vodUrls": []
     },
     {
-      "id": "1787565600-mlbb-academy-league-season-6-regular-season-phase-1-khan-op",
-      "startsAt": 1787565600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KHAN",
-          "name": "Khan Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "OP",
-          "name": "On Point Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-On_Point_Esports_darkmode-8f311048.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 1",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
-      ],
-      "vodUrls": []
-    },
-    {
       "id": "1787571000-mdl-indonesia-season-14-regular-season-btrac-vl",
       "startsAt": 1787571000,
       "status": "upcoming",
@@ -90,7 +58,9 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 3",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -119,7 +89,10 @@
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
+      ],
       "vodUrls": []
     },
     {
@@ -1453,6 +1426,64 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788089400-mpl-philippines-season-18-regular-season-onph-omg",
+      "startsAt": 1788089400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ONPH",
+          "name": "ONIC Philippines",
+          "pageSlug": "ONIC_Philippines",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OMG",
+          "name": "Omega Esports",
+          "pageSlug": "Omega_Esports",
+          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787565600-mlbb-academy-league-season-6-regular-season-phase-1-khan-op",
+      "startsAt": 1787565600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KHAN",
+          "name": "Khan Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "OP",
+          "name": "On Point Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-On_Point_Esports_darkmode-8f311048.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2938,35 +2969,6 @@
           "logoUrl": "/teams/49px-Natus_Vincere_Junior_2021_darkmode-6043baff.png",
           "score": 1,
           "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 2",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787139000-mdl-indonesia-season-14-regular-season-cfg-rrqs",
-      "startsAt": 1787139000,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "CFG",
-          "name": "Cosmic Frogs",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Cosmic_Frogs_allmode-dce3123e.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "RRQS",
-          "name": "RRQ Sena",
-          "pageSlug": "RRQ_Sena",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": 3,
-          "isWinner": true
         }
       ],
       "tournamentName": "MDL Indonesia Season 14 - Round 2",
