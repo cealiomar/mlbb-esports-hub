@@ -1,41 +1,10 @@
 {
-  "harvestedAt": 1787570925,
+  "harvestedAt": 1787575816,
   "data": [
-    {
-      "id": "1787556600-mdl-indonesia-season-14-regular-season-gfjr-tlaid",
-      "startsAt": 1787556600,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "GFJR",
-          "name": "Geek Fam ID Jr",
-          "pageSlug": "Geek_Fam_ID_Jr",
-          "logoUrl": "/teams/43px-Geek_Fam_2019_allmode-1e9b1f3c.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TLAID",
-          "name": "Team Liquid Academy ID",
-          "pageSlug": "Team_Liquid_Academy_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": 2,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 3",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1787571000-mdl-indonesia-season-14-regular-season-btrac-vl",
       "startsAt": 1787571000,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -43,7 +12,7 @@
           "name": "Bigetron Academy",
           "pageSlug": "Bigetron_Academy",
           "logoUrl": "/teams/50px-Bigetron_Academy_darkmode-c5d937cb.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -51,7 +20,7 @@
           "name": "VL Team",
           "pageSlug": "",
           "logoUrl": "/teams/54px-VL_Team_allmode-bcf1c26c.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -60,38 +29,6 @@
       "regionSlug": "indonesia",
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787572800-mlbb-academy-league-season-6-regular-season-phase-1-gmxk-oust",
-      "startsAt": 1787572800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "GMXK",
-          "name": "GamesMY Kelantan",
-          "pageSlug": "GamesMY_Kelantan",
-          "logoUrl": "/teams/87px-GamesMY_Kelantan_darkmode-c6dce47c.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "OUST",
-          "name": "Outcast",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Outcast_MLBB_allmode-8b01027d.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 1",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
       ],
       "vodUrls": []
     },
@@ -1459,6 +1396,93 @@
       "vodUrls": []
     },
     {
+      "id": "1788094800-mpl-indonesia-season-18-regular-season-tlid-ae",
+      "startsAt": 1788094800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TLID",
+          "name": "Team Liquid ID",
+          "pageSlug": "Team_Liquid_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "AE",
+          "name": "Alter Ego",
+          "pageSlug": "Alter_Ego",
+          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788156000-mlbb-academy-league-season-6-regular-season-phase-1-pix-srga",
+      "startsAt": 1788156000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "PIX",
+          "name": "Pixel Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/43px-Pixel_Esports_darkmode-cc4eb10e.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SRGA",
+          "name": "Selangor Red Giants Academy",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 2",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787571000-mlbb-academy-league-season-6-regular-season-phase-1-gmxk-oust",
+      "startsAt": 1787571000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "GMXK",
+          "name": "GamesMY Kelantan",
+          "pageSlug": "GamesMY_Kelantan",
+          "logoUrl": "/teams/87px-GamesMY_Kelantan_darkmode-c6dce47c.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "OUST",
+          "name": "Outcast",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Outcast_MLBB_allmode-8b01027d.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787565600-mlbb-academy-league-season-6-regular-season-phase-1-khan-op",
       "startsAt": 1787565600,
       "status": "completed",
@@ -1513,6 +1537,35 @@
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787556600-mdl-indonesia-season-14-regular-season-gfjr-tlaid",
+      "startsAt": 1787556600,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "GFJR",
+          "name": "Geek Fam ID Jr",
+          "pageSlug": "Geek_Fam_ID_Jr",
+          "logoUrl": "/teams/43px-Geek_Fam_2019_allmode-1e9b1f3c.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "TLAID",
+          "name": "Team Liquid Academy ID",
+          "pageSlug": "Team_Liquid_Academy_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": 3,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MDL Indonesia Season 14 - Round 3",
+      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
+      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2918,64 +2971,6 @@
         "https://www.youtube.com/watch?v=wSneUu6hm00",
         "https://www.youtube.com/watch?v=cOtKe2Akums"
       ]
-    },
-    {
-      "id": "1787225400-mdl-indonesia-season-14-regular-season-onpw-aex",
-      "startsAt": 1787225400,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "ONPW",
-          "name": "ONIC Pertiwi",
-          "pageSlug": "ONIC_Pertiwi",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "AEX",
-          "name": "Alter Ego X",
-          "pageSlug": "Alter_Ego_X",
-          "logoUrl": "/teams/50px-Alter_Ego_X_2023_allmode-5f01fe4f.png",
-          "score": 3,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 2",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787211000-mdl-indonesia-season-14-regular-season-oncp-nvjr",
-      "startsAt": 1787211000,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "ONCP",
-          "name": "ONIC Prime",
-          "pageSlug": "ONIC_Prime",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "NVJR",
-          "name": "NAVI Junior",
-          "pageSlug": "NAVI_Junior",
-          "logoUrl": "/teams/49px-Natus_Vincere_Junior_2021_darkmode-6043baff.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 2",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
