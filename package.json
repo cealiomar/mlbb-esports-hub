@@ -10,7 +10,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "harvest": "tsx scripts/harvest.ts",
-    "harvest:drafts": "tsx scripts/refresh-draft-series.ts"
+    "harvest:drafts": "tsx scripts/refresh-draft-series.ts",
+    "harvest:draft-history": "tsx scripts/refresh-draft-history.ts",
+    "sync:hero-catalog": "tsx scripts/sync-hero-catalog.ts"
   },
   "dependencies": {
     "next": "16.3.2",

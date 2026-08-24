@@ -4,7 +4,8 @@
     "regions": "Regions",
     "matches": "Matches",
     "standings": "Standings",
-    "drafts": "Drafts"
+    "drafts": "Drafts",
+    "coach": "Coach"
   },
   "home": {
     "eyebrow": "The global MLBB arena",
@@ -130,6 +131,122 @@
     "sourceNote": "Only current-season data published by the league is shown. Exact team drafts may cover fewer games than the league-wide hero table.",
     "noData": "Draft data is not available yet",
     "noDataHint": "This page will update automatically when an active league publishes its current-season statistics."
+  },
+  "draftCoach": {
+    "eyebrow": "A data-driven draft assistant",
+    "title": "Draft Coach",
+    "description": "Choose a region and game plan, then log every pick and ban. The coach recalculates the meta, counters and team tendencies after every move — and explains why.",
+    "proofTitle": "Pro Meta engine online",
+    "proofDescription": "Decisions come from real tournament drafts, not a generic AI answer.",
+    "exactGames": "exact pro games",
+    "historyGames": "previous-season games",
+    "updated": "Updated {date}, Egypt time",
+    "setupTitle": "Set the match plan",
+    "setupDescription": "Every choice changes the recommendation weights, and confidence drops automatically when the sample is thin.",
+    "region": "Region",
+    "allRegions": "All pro leagues",
+    "map": "Map",
+    "allMaps": "All map variants",
+    "ourTeam": "Our team (optional)",
+    "enemyTeam": "Opponent (optional)",
+    "noTeamProfile": "No team profile",
+    "plan": "Game plan",
+    "planIcons": {
+      "balanced": "◎",
+      "early": "⚡",
+      "scaling": "↗",
+      "counter": "⌁",
+      "comfort": "✦"
+    },
+    "plans": {
+      "balanced": {
+        "title": "Balanced",
+        "description": "Cover all five roles with stable, proven picks."
+      },
+      "early": {
+        "title": "Early pressure",
+        "description": "Favour heroes winning the shorter pro games."
+      },
+      "scaling": {
+        "title": "Late game",
+        "description": "Favour picks proven in longer games."
+      },
+      "counter": {
+        "title": "Counter draft",
+        "description": "Let enemy picks strongly reshape the answer."
+      },
+      "comfort": {
+        "title": "Team comfort",
+        "description": "Prioritise the selected team's draft identity."
+      }
+    },
+    "pickOrder": "Who has first pick?",
+    "pickOrderHint": "MPL practice flow: 3 bans, 3 picks, 2 bans, 2 picks.",
+    "firstPick": "We have first pick",
+    "secondPick": "We have second pick",
+    "mplMode": "MPL / PRO DRAFT",
+    "currentAction": "{action} · {side}",
+    "draftComplete": "Draft complete",
+    "ready": "Ready to start",
+    "progress": "Step {current} of {total}",
+    "start": "Start draft",
+    "undo": "Undo",
+    "reset": "New draft",
+    "ourDraft": "Our draft",
+    "enemyDraft": "Enemy draft",
+    "brainEyebrow": "META BRAIN",
+    "bestDecision": "Best move now",
+    "enemyPrediction": "Expected enemy move",
+    "waitingToStart": "The coach is ready",
+    "phase": "Phase {number}",
+    "allyBrief": "The ranking is recalculated for the “{plan}” plan, role coverage and the counters currently available.",
+    "enemyBrief": "These are the opponent's most likely options from the meta, team profile and response to your draft. Log the move that actually happened.",
+    "emptyTitle": "Choose a plan and press start",
+    "emptyDescription": "After the first ban, every move is reranked with reasons, confidence and sample size.",
+    "completeTitle": "Draft locked",
+    "completeDescription": "All five picks and bans are logged for both teams. Undo one move or start a new draft.",
+    "heroPoolEyebrow": "Every hero in the current pro meta",
+    "heroPool": "Hero Pool",
+    "heroPoolHint": "Filter by role and tap the hero that was actually picked or banned. Recommendations above are faster, but you control the board.",
+    "filterLane": "Filter by role",
+    "lanes": {
+      "all": "All roles",
+      "exp": "EXP",
+      "jungle": "Jungle",
+      "mid": "Mid",
+      "gold": "Gold",
+      "roam": "Roam",
+      "flex": "Flex / unknown"
+    },
+    "sides": {
+      "ally": "Our move",
+      "enemy": "Enemy move"
+    },
+    "actions": {
+      "pick": "PICK",
+      "ban": "BAN"
+    },
+    "confidence": {
+      "high": "High confidence",
+      "medium": "Medium confidence",
+      "low": "Limited confidence"
+    },
+    "reasons": {
+      "meta": "Meta priority",
+      "winRate": "Strong results",
+      "lane": "Covers the role",
+      "flex": "Flex pick",
+      "synergy": "Observed synergy",
+      "counter": "Observed counter",
+      "comfort": "Team comfort",
+      "denyComfort": "Denies comfort",
+      "early": "Early pressure fit",
+      "scaling": "Late-game fit",
+      "limitedSample": "Limited sample"
+    },
+    "methodNote": "Recommendations are probabilities, not a guarantee. The current meta carries the main weight; the previous season is only a 25% memory prior. Synergy and counters come from published pro matches, with statistical smoothing so a 1–0 sample never looks certain. Roles are inferred from the actual EXP / Jungle / Mid / Gold / Roam draft slots.",
+    "noData": "Draft data is unavailable",
+    "noDataHint": "The coach will activate automatically when the tournament snapshot is published."
   },
   "data": {
     "attribution": "Match data from Liquipedia, licensed CC-BY-SA 3.0",

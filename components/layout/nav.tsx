@@ -12,6 +12,7 @@ export function Nav({ locale }: { locale: string }) {
     { href: `/${locale}/matches`, label: t('matches'), mobileHidden: false },
     { href: `/${locale}/#standings`, label: t('standings'), mobileHidden: false },
     { href: `/${locale}/drafts`, label: t('drafts'), mobileHidden: false },
+    { href: `/${locale}/draft-coach`, label: t('coach'), mobileHidden: false },
   ]
 
   return (

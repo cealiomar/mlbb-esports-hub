@@ -4,7 +4,8 @@
     "regions": "الريجونز",
     "matches": "الماتشات",
     "standings": "الترتيب",
-    "drafts": "الدرافت"
+    "drafts": "الدرافت",
+    "coach": "المدرب"
   },
   "home": {
     "eyebrow": "ساحة MLBB العالمية",
@@ -130,6 +131,122 @@
     "sourceNote": "بنعرض بيانات السيزون الحالي المنشورة فقط. درافتات الفرق الكاملة ممكن تغطي جيمات أقل من جدول إحصائيات الدوري.",
     "noData": "بيانات الدرافت مش متاحة لسه",
     "noDataHint": "الصفحة هتتحدث تلقائي أول ما أي دوري نشط ينشر إحصائيات السيزون الحالي."
+  },
+  "draftCoach": {
+    "eyebrow": "مساعد درافت مبني على الداتا",
+    "title": "مدرب الدرافت",
+    "description": "اختار الريجون وخطة اللعب، وسجّل كل Pick وBan. المساعد يعيد تحليل الميتا والكونترات ودرافتات الفرق بعد كل قرار ويشرح لك ليه.",
+    "proofTitle": "محرك Pro Meta شغال",
+    "proofDescription": "قرارات مبنية على درافتات البطولات الفعلية، وليست إجابة AI محفوظة.",
+    "exactGames": "جيم Pro كامل",
+    "historyGames": "جيم من السيزون السابق",
+    "updated": "تحديث {date} بتوقيت مصر",
+    "setupTitle": "جهّز خطة الماتش",
+    "setupDescription": "كل اختيار هنا يغيّر أوزان الاقتراحات، ودرجة الثقة تنخفض تلقائيًا لو العينة قليلة.",
+    "region": "الريجون",
+    "allRegions": "كل دوريات الـPro",
+    "map": "الماب",
+    "allMaps": "كل أشكال الماب",
+    "ourTeam": "فريقنا (اختياري)",
+    "enemyTeam": "فريق الخصم (اختياري)",
+    "noTeamProfile": "بدون بروفايل فريق",
+    "plan": "خطة اللعب",
+    "planIcons": {
+      "balanced": "◎",
+      "early": "⚡",
+      "scaling": "↗",
+      "counter": "⌁",
+      "comfort": "✦"
+    },
+    "plans": {
+      "balanced": {
+        "title": "متوازن",
+        "description": "غطّي الخمس رولات باختيارات آمنة ومثبتة."
+      },
+      "early": {
+        "title": "ضغط بدري",
+        "description": "أولوية للهيروز اللي بتكسب الجيمات الأسرع."
+      },
+      "scaling": {
+        "title": "لعب متأخر",
+        "description": "اختيارات أثبتت نفسها في الجيمات الأطول."
+      },
+      "counter": {
+        "title": "كونتر درافت",
+        "description": "القرار يتغيّر بقوة حسب Picks الخصم."
+      },
+      "comfort": {
+        "title": "راحة الفريق",
+        "description": "يرجّح بصمة الفريق واختياراته المتكررة."
+      }
+    },
+    "pickOrder": "مين معاه First Pick؟",
+    "pickOrderHint": "تسلسل MPL تدريبي: 3 Bans، 3 Picks، 2 Bans، 2 Picks.",
+    "firstPick": "إحنا First Pick",
+    "secondPick": "إحنا Second Pick",
+    "mplMode": "MPL / PRO DRAFT",
+    "currentAction": "{action} · {side}",
+    "draftComplete": "الدرافت اكتمل",
+    "ready": "جاهز نبدأ",
+    "progress": "الخطوة {current} من {total}",
+    "start": "ابدأ الدرافت",
+    "undo": "ارجع خطوة",
+    "reset": "درافت جديد",
+    "ourDraft": "درافت فريقنا",
+    "enemyDraft": "درافت الخصم",
+    "brainEyebrow": "META BRAIN",
+    "bestDecision": "أنسب قرار دلوقتي",
+    "enemyPrediction": "المتوقع من الخصم",
+    "waitingToStart": "المساعد مستني البداية",
+    "phase": "المرحلة {number}",
+    "allyBrief": "الترتيب الحالي محسوب لخطة «{plan}» مع توازن الرولات والكونترات المتاحة.",
+    "enemyBrief": "دي أقرب اختيارات للخصم حسب الميتا وبروفايله والرد المتوقع على درافتك؛ سجّل الاختيار اللي حصل فعلًا.",
+    "emptyTitle": "اختار خطتك واضغط ابدأ",
+    "emptyDescription": "بعد أول Ban هنرتّب القرارات من جديد مع السبب والثقة والعينة.",
+    "completeTitle": "الدرافت جاهز",
+    "completeDescription": "الخمس Picks والخمس Bans اتسجلوا لكل فريق. تقدر ترجع خطوة أو تبدأ درافت جديد.",
+    "heroPoolEyebrow": "كل هيروز الميتا الحالية",
+    "heroPool": "Hero Pool",
+    "heroPoolHint": "استخدم فلتر الرول واضغط الهيرو الحقيقي اللي اتعمل له Pick أو Ban. المقترحات فوق أسرع، لكن القرار في إيدك.",
+    "filterLane": "فلتر الرول",
+    "lanes": {
+      "all": "كل الرولات",
+      "exp": "EXP",
+      "jungle": "Jungle",
+      "mid": "Mid",
+      "gold": "Gold",
+      "roam": "Roam",
+      "flex": "Flex / غير محسوم"
+    },
+    "sides": {
+      "ally": "دورنا",
+      "enemy": "دور الخصم"
+    },
+    "actions": {
+      "pick": "PICK",
+      "ban": "BAN"
+    },
+    "confidence": {
+      "high": "ثقة عالية",
+      "medium": "ثقة متوسطة",
+      "low": "ثقة محدودة"
+    },
+    "reasons": {
+      "meta": "أولوية ميتا",
+      "winRate": "نتائج قوية",
+      "lane": "يغطي الرول",
+      "flex": "Flex Pick",
+      "synergy": "Synergy مثبت",
+      "counter": "كونتر ملحوظ",
+      "comfort": "Comfort للفريق",
+      "denyComfort": "يحرم Comfort الخصم",
+      "early": "مناسب للضغط",
+      "scaling": "أقوى في اللعب المتأخر",
+      "limitedSample": "عينة محدودة"
+    },
+    "methodNote": "النتائج احتمالية وليست ضمانًا للفوز. الـMeta الحالية لها الوزن الأكبر، والسيزون السابق يدخل كذاكرة بوزن 25% فقط. الـSynergy والـCounters محسوبة من مباريات Pro المنشورة، مع تنعيم إحصائي يمنع عينة 1–0 من الظهور كأنها يقين. الرول مستنتج من خانة EXP / Jungle / Mid / Gold / Roam في الدرافتات الفعلية.",
+    "noData": "داتا الدرافت غير متاحة",
+    "noDataHint": "المساعد هيشتغل تلقائيًا أول ما Snapshot البطولات يتنشر."
   },
   "data": {
     "attribution": "بيانات الماتشات من Liquipedia برخصة CC-BY-SA 3.0",
