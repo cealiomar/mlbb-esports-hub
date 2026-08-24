@@ -3,6 +3,8 @@ import type { DraftGame, DraftHero, DraftLeague } from '@/lib/data/types'
 import {
   buildDraftCoachModel,
   heroKey,
+  nextSuggestedLane,
+  openDraftLanes,
   proDraftFlow,
   recommendDraftHeroes,
 } from './coach'
@@ -99,6 +101,52 @@ describe('draft coach model', () => {
     expect(recommendations.some((item) => item.hero.name === 'Terizla')).toBe(false)
     expect(recommendations[0].sampleSize).toBeGreaterThan(0)
     expect(recommendations[0].score).toBeGreaterThan(0)
+  })
+
+  it('keeps early picks flexible and offers one strong option per open role', () => {
+    const model = buildDraftCoachModel([league], 'indonesia')
+    const recommendations = recommendDraftHeroes(model, {
+      kind: 'pick',
+      state: {
+        allyPicks: [],
+        enemyPicks: [],
+        allyBans: [],
+        enemyBans: [],
+      },
+      plan: 'balanced',
+      targetLane: nextSuggestedLane(model, []),
+      limit: 5,
+    })
+
+    expect(nextSuggestedLane(model, [])).toBeNull()
+    expect(new Set(recommendations.map((item) => item.suggestedLane))).toEqual(
+      new Set(['exp', 'jungle', 'mid', 'gold', 'roam']),
+    )
+  })
+
+  it('locks only the final missing role instead of forcing a fixed pick order', () => {
+    const model = buildDraftCoachModel([league], 'indonesia')
+    const picks = ['Terizla', 'Fanny', 'Zhuxin', 'Claude']
+    const targetLane = nextSuggestedLane(model, picks)
+    const recommendations = recommendDraftHeroes(model, {
+      kind: 'pick',
+      state: {
+        allyPicks: picks,
+        enemyPicks: [],
+        allyBans: [],
+        enemyBans: [],
+      },
+      plan: 'balanced',
+      targetLane,
+      limit: 5,
+    })
+
+    expect(openDraftLanes(model, picks)).toEqual(['roam'])
+    expect(targetLane).toBe('roam')
+    expect(recommendations).toHaveLength(2)
+    expect(
+      recommendations.every((item) => item.suggestedLane === 'roam'),
+    ).toBe(true)
   })
 
   it('creates a complete MPL practice flow', () => {

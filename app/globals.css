@@ -2707,6 +2707,35 @@ html[data-theme='dark'] .panel {
   font-size: 0.6rem;
   line-height: 1.65;
 }
+.coach-role-readout {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.55rem;
+  margin: -0.15rem 0 0.65rem;
+}
+.coach-role-readout > strong {
+  color: var(--ink-muted);
+  font-size: 0.5rem;
+  font-weight: 900;
+}
+.coach-role-readout > span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 0.25rem;
+}
+.coach-role-readout b {
+  padding: 0.16rem 0.38rem;
+  border: 1px solid color-mix(in srgb, var(--brand) 32%, var(--line));
+  border-radius: 999px;
+  color: var(--brand-strong);
+  background: color-mix(in srgb, var(--brand) 8%, var(--surface-solid));
+  font-size: 0.48rem;
+  font-weight: 900;
+}
 .coach-recommendations { position: relative; z-index: 2; display: grid; gap: 0.42rem; }
 .coach-recommendation {
   display: grid;
@@ -2920,6 +2949,8 @@ html[data-theme='dark'] .panel {
   .coach-pick-list .coach-slot > span:not(.draft-hero-fallback) { display: none; }
   .coach-brain { padding: 0.65rem; }
   .coach-brain__brief { font-size: 0.56rem; }
+  .coach-role-readout { align-items: start; flex-direction: column; }
+  .coach-role-readout > span { justify-content: start; }
   .coach-recommendation {
     min-height: 76px;
     grid-template-columns: 18px 50px minmax(0, 1fr) 38px;

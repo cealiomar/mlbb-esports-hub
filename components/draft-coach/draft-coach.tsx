@@ -10,6 +10,7 @@ import {
   DRAFT_PLANS,
   heroKey,
   nextSuggestedLane,
+  openDraftLanes,
   proDraftFlow,
   recommendDraftHeroes,
   type DraftAction,
@@ -152,6 +153,7 @@ function RecommendationCard({
   reasonLabel,
   confidenceLabel,
   laneLabel,
+  scoreLabel,
 }: {
   recommendation: DraftRecommendation
   rank: number
@@ -159,6 +161,7 @@ function RecommendationCard({
   reasonLabel: (reason: RecommendationReason) => string
   confidenceLabel: (confidence: DraftRecommendation['confidence']) => string
   laneLabel: (lane: DraftLane | null) => string
+  scoreLabel: string
 }) {
   return (
     <button
@@ -176,7 +179,11 @@ function RecommendationCard({
       <span className="coach-recommendation__body">
         <span className="coach-recommendation__name">
           <strong>{recommendation.hero.name}</strong>
-          <small>{laneLabel(recommendation.primaryLane)}</small>
+          <small>
+            {laneLabel(
+              recommendation.suggestedLane ?? recommendation.primaryLane,
+            )}
+          </small>
         </span>
         <span className="coach-recommendation__reasons">
           {recommendation.reasons.slice(0, 3).map((reason) => (
@@ -193,7 +200,7 @@ function RecommendationCard({
       </span>
       <span className="coach-recommendation__score">
         <strong>{recommendation.score}</strong>
-        <small>/100</small>
+        <small>{scoreLabel}</small>
       </span>
     </button>
   )
@@ -219,7 +226,7 @@ export function DraftCoach({
   const [allyFirstPick, setAllyFirstPick] = useState(true)
   const [allyTeam, setAllyTeam] = useState('')
   const [enemyTeam, setEnemyTeam] = useState('')
-  const [lane, setLane] = useState<DraftLane | 'all'>('all')
+  const [poolLane, setPoolLane] = useState<DraftLane | 'all'>('all')
   const [started, setStarted] = useState(false)
   const [stepIndex, setStepIndex] = useState(0)
   const [draft, setDraft] = useState<DraftCoachState>(EMPTY_STATE)
@@ -254,13 +261,15 @@ export function DraftCoach({
   const automaticLane = currentAction?.kind === 'pick'
     ? nextSuggestedLane(model, activePerspective.allyPicks)
     : null
-  const requestedLane = lane === 'all' ? automaticLane : lane
+  const openLanes = currentAction?.kind === 'pick'
+    ? openDraftLanes(model, activePerspective.allyPicks)
+    : []
   const recommendations = currentAction
     ? recommendDraftHeroes(model, {
         kind: currentAction.kind,
         state: activePerspective,
         plan,
-        targetLane: currentAction.kind === 'pick' ? requestedLane : null,
+        targetLane: currentAction.kind === 'pick' ? automaticLane : null,
         allyTeamPageSlug:
           currentAction.side === 'ally' ? allyTeam : enemyTeam,
         enemyTeamPageSlug:
@@ -277,8 +286,8 @@ export function DraftCoach({
     ].map(heroKey),
   )
   const filteredHeroes = model.heroes.filter((hero) => {
-    if (lane === 'all') return true
-    return hero.primaryLane === lane || hero.flexLanes.includes(lane)
+    if (poolLane === 'all') return true
+    return hero.primaryLane === poolLane || hero.flexLanes.includes(poolLane)
   })
   const regions = getRegions().filter((region) =>
     leagues.some((league) => league.regionSlug === region.slug),
@@ -538,6 +547,20 @@ export function DraftCoach({
                     ? t('allyBrief', { plan: t(`plans.${plan}.title`) })
                     : t('enemyBrief')}
                 </p>
+                {currentAction.kind === 'pick' && openLanes.length > 0 && (
+                  <div className="coach-role-readout">
+                    <strong>
+                      {automaticLane ? t('requiredRole') : t('openRoles')}
+                    </strong>
+                    <span>
+                      {(automaticLane ? [automaticLane] : openLanes).map(
+                        (value) => (
+                          <b key={value}>{laneLabel(value)}</b>
+                        ),
+                      )}
+                    </span>
+                  </div>
+                )}
                 <div className="coach-recommendations">
                   {recommendations.map((recommendation, index) => (
                     <RecommendationCard
@@ -548,6 +571,7 @@ export function DraftCoach({
                       reasonLabel={reasonLabel}
                       confidenceLabel={confidenceLabel}
                       laneLabel={laneLabel}
+                      scoreLabel={t('fitScore')}
                     />
                   ))}
                 </div>
@@ -581,15 +605,19 @@ export function DraftCoach({
           <p>{t('heroPoolHint')}</p>
         </header>
         <div className="coach-lane-filter" aria-label={t('filterLane')}>
-          <button type="button" aria-pressed={lane === 'all'} onClick={() => setLane('all')}>
+          <button
+            type="button"
+            aria-pressed={poolLane === 'all'}
+            onClick={() => setPoolLane('all')}
+          >
             {t('lanes.all')}
           </button>
           {DRAFT_LANES.map((value) => (
             <button
               key={value}
               type="button"
-              aria-pressed={lane === value}
-              onClick={() => setLane(value)}
+              aria-pressed={poolLane === value}
+              onClick={() => setPoolLane(value)}
             >
               {t(`lanes.${value}`)}
             </button>

@@ -107,6 +107,7 @@ export interface DraftRecommendation {
   confidence: 'high' | 'medium' | 'low'
   sampleSize: number
   primaryLane: DraftLane | null
+  suggestedLane: DraftLane | null
   flexLanes: DraftLane[]
   presenceRate: number
   winRate: number
@@ -570,23 +571,66 @@ function selectedKeys(values: string[]): string[] {
   return values.map(heroKey)
 }
 
+const MIN_LANE_FIT = 0.16
+
 function coveredLanes(
   model: DraftCoachModel,
   picks: string[],
 ): Set<DraftLane> {
-  return new Set(
-    selectedKeys(picks)
-      .map((key) => model.heroByKey[key]?.primaryLane)
-      .filter((lane): lane is DraftLane => lane !== null && lane !== undefined),
-  )
+  const profiles = selectedKeys(picks)
+    .map((key) => model.heroByKey[key])
+    .filter((profile): profile is DraftCoachHeroProfile => Boolean(profile))
+  let bestLanes = new Set<DraftLane>()
+  let bestAssigned = -1
+  let bestRate = -1
+
+  function assign(
+    index: number,
+    lanes: Set<DraftLane>,
+    assigned: number,
+    rate: number,
+  ) {
+    if (index >= profiles.length) {
+      if (
+        assigned > bestAssigned ||
+        (assigned === bestAssigned && rate > bestRate)
+      ) {
+        bestAssigned = assigned
+        bestRate = rate
+        bestLanes = new Set(lanes)
+      }
+      return
+    }
+
+    assign(index + 1, lanes, assigned, rate)
+    for (const lane of DRAFT_LANES) {
+      const laneRate = profiles[index].laneRates[lane]
+      if (lanes.has(lane) || laneRate < MIN_LANE_FIT) continue
+      lanes.add(lane)
+      assign(index + 1, lanes, assigned + 1, rate + laneRate)
+      lanes.delete(lane)
+    }
+  }
+
+  assign(0, new Set<DraftLane>(), 0, 0)
+  return bestLanes
+}
+
+export function openDraftLanes(
+  model: DraftCoachModel,
+  picks: string[],
+): DraftLane[] {
+  const covered = coveredLanes(model, picks)
+  return DRAFT_LANES.filter((lane) => !covered.has(lane))
 }
 
 export function nextSuggestedLane(
   model: DraftCoachModel,
   picks: string[],
 ): DraftLane | null {
-  const covered = coveredLanes(model, picks)
-  return DRAFT_LANES.find((lane) => !covered.has(lane)) ?? null
+  if (picks.length < 4) return null
+  const open = openDraftLanes(model, picks)
+  return open.length === 1 ? open[0] : null
 }
 
 function laneFit(
@@ -596,10 +640,72 @@ function laneFit(
   requested: DraftLane | null,
 ): number {
   if (requested) return hero.laneRates[requested]
-  const covered = coveredLanes(model, picks)
-  const open = DRAFT_LANES.filter((lane) => !covered.has(lane))
+  const open = openDraftLanes(model, picks)
   const candidates = open.length > 0 ? open : [...DRAFT_LANES]
   return Math.max(...candidates.map((lane) => hero.laneRates[lane]), 0)
+}
+
+function bestOpenLane(
+  model: DraftCoachModel,
+  hero: DraftCoachHeroProfile,
+  picks: string[],
+): DraftLane | null {
+  const lanes = openDraftLanes(model, picks)
+  const best = [...lanes].sort(
+    (first, second) => hero.laneRates[second] - hero.laneRates[first],
+  )[0]
+  return best && hero.laneRates[best] >= MIN_LANE_FIT ? best : null
+}
+
+function diversePickRecommendations(
+  model: DraftCoachModel,
+  ranked: DraftRecommendation[],
+  picks: string[],
+  limit: number,
+): DraftRecommendation[] {
+  const open = openDraftLanes(model, picks)
+  const selected: DraftRecommendation[] = []
+  const selectedHeroes = new Set<string>()
+  const selectedLanes = new Set<DraftLane>()
+
+  while (selected.length < Math.min(limit, open.length)) {
+    let best:
+      | { recommendation: DraftRecommendation; lane: DraftLane; fit: number }
+      | undefined
+
+    for (const recommendation of ranked) {
+      if (selectedHeroes.has(heroKey(recommendation.hero.id))) continue
+      const profile = model.heroByKey[heroKey(recommendation.hero.id)]
+      if (!profile) continue
+      for (const lane of open) {
+        if (selectedLanes.has(lane)) continue
+        const laneRate = profile.laneRates[lane]
+        if (laneRate < MIN_LANE_FIT) continue
+        const fit = recommendation.score + laneRate * 10
+        if (!best || fit > best.fit) {
+          best = { recommendation, lane, fit }
+        }
+      }
+    }
+
+    if (!best) break
+    selected.push({ ...best.recommendation, suggestedLane: best.lane })
+    selectedHeroes.add(heroKey(best.recommendation.hero.id))
+    selectedLanes.add(best.lane)
+  }
+
+  for (const recommendation of ranked) {
+    if (selected.length >= limit) break
+    const key = heroKey(recommendation.hero.id)
+    if (selectedHeroes.has(key)) continue
+    const profile = model.heroByKey[key]
+    const lane = profile ? bestOpenLane(model, profile, picks) : null
+    if (!lane && open.length > 0) continue
+    selected.push({ ...recommendation, suggestedLane: lane })
+    selectedHeroes.add(key)
+  }
+
+  return selected
 }
 
 function teamBySlug(
@@ -664,7 +770,7 @@ export function recommendDraftHeroes(
   const enemyTeam = teamBySlug(model, options.enemyTeamPageSlug)
   const targetLane = options.targetLane ?? null
 
-  return model.heroes
+  const ranked = model.heroes
     .filter((profile) => !used.has(profile.key))
     .map((profile): DraftRecommendation => {
       const exactMetric = {
@@ -674,6 +780,10 @@ export function recommendDraftHeroes(
       const winRate = smoothedRate(exactMetric)
       const meta = clamp(profile.presenceRate * 0.62 + winRate * 0.38)
       const role = laneFit(profile, model, options.state.allyPicks, targetLane)
+      const suggestedLane =
+        options.kind === 'pick'
+          ? targetLane ?? bestOpenLane(model, profile, options.state.allyPicks)
+          : null
       const synergy = averageMetrics(
         allyKeys.map((ally) => model.synergy[pairKey(profile.key, ally)]),
       )
@@ -745,7 +855,8 @@ export function recommendDraftHeroes(
       // A hero absent from the selected pro sample remains selectable, but a
       // thin sample can never outrank strongly observed current-meta options.
       if (profile.summaryPicks + profile.summaryBans === 0) rawScore *= 0.78
-      if (targetLane && role < 0.16) rawScore *= 0.72
+      if (options.kind === 'pick' && role < MIN_LANE_FIT) rawScore *= 0.45
+      if (targetLane && role < MIN_LANE_FIT) rawScore *= 0.55
 
       const reasons: RecommendationReason[] = []
       if (options.kind === 'ban') {
@@ -772,6 +883,7 @@ export function recommendDraftHeroes(
         confidence: confidence(relevantSample),
         sampleSize: Math.round(relevantSample),
         primaryLane: profile.primaryLane,
+        suggestedLane,
         flexLanes: profile.flexLanes,
         presenceRate: profile.presenceRate,
         winRate,
@@ -789,7 +901,23 @@ export function recommendDraftHeroes(
         b.sampleSize - a.sampleSize ||
         a.hero.name.localeCompare(b.hero.name),
     )
-    .slice(0, options.limit ?? 5)
+
+  const limit = options.limit ?? 5
+  if (options.kind === 'ban') return ranked.slice(0, limit)
+  if (!targetLane) {
+    return diversePickRecommendations(
+      model,
+      ranked,
+      options.state.allyPicks,
+      limit,
+    )
+  }
+
+  const fitting = ranked.filter((recommendation) => {
+    const profile = model.heroByKey[heroKey(recommendation.hero.id)]
+    return profile && profile.laneRates[targetLane] >= MIN_LANE_FIT
+  })
+  return fitting.slice(0, limit)
 }
 
 /** Tournament-style 3-ban/3-pick/2-ban/2-pick practice sequence. */

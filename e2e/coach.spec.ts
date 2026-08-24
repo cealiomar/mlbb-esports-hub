@@ -23,6 +23,33 @@ test('Draft Coach recalculates after every real draft action', async ({ page }) 
   await expect(page.locator('.coach-arena__topbar')).toContainText('BAN · Enemy move')
 })
 
+test('Hero Pool filters never force every coach recommendation into one role', async ({
+  page,
+}) => {
+  await page.goto('/en/draft-coach/')
+
+  await page.getByRole('button', { name: 'Roam', exact: true }).click()
+  await expect(
+    page.getByRole('button', { name: 'Roam', exact: true }),
+  ).toHaveAttribute('aria-pressed', 'true')
+  await page.getByRole('button', { name: 'Start draft' }).click()
+
+  for (let index = 0; index < 6; index += 1) {
+    await page.locator('.coach-recommendation').first().click()
+  }
+
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Our move',
+  )
+  const recommendationRoles = await page
+    .locator('.coach-recommendation__name small')
+    .allTextContents()
+  expect(new Set(recommendationRoles).size).toBe(5)
+  await expect(page.locator('.coach-role-readout')).toContainText(
+    'Best option for every open role',
+  )
+})
+
 test('hero portraits are local and Draft Coach fits a 320px phone', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 844 })
   await page.goto('/ar/draft-coach/')

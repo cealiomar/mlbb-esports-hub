@@ -201,13 +201,16 @@
     "phase": "Phase {number}",
     "allyBrief": "The ranking is recalculated for the “{plan}” plan, role coverage and the counters currently available.",
     "enemyBrief": "These are the opponent's most likely options from the meta, team profile and response to your draft. Log the move that actually happened.",
+    "openRoles": "Best option for every open role",
+    "requiredRole": "Role needed to complete the composition",
+    "fitScore": "decision fit",
     "emptyTitle": "Choose a plan and press start",
     "emptyDescription": "After the first ban, every move is reranked with reasons, confidence and sample size.",
     "completeTitle": "Draft locked",
     "completeDescription": "All five picks and bans are logged for both teams. Undo one move or start a new draft.",
     "heroPoolEyebrow": "Every hero in the current pro meta",
     "heroPool": "Hero Pool",
-    "heroPoolHint": "Filter by role and tap the hero that was actually picked or banned. Recommendations above are faster, but you control the board.",
+    "heroPoolHint": "The role filter only narrows this list; it never changes the coach's decision. Tap the hero that was actually picked or banned.",
     "filterLane": "Filter by role",
     "lanes": {
       "all": "All roles",
@@ -244,7 +247,7 @@
       "scaling": "Late-game fit",
       "limitedSample": "Limited sample"
     },
-    "methodNote": "Recommendations are probabilities, not a guarantee. The current meta carries the main weight; the previous season is only a 25% memory prior. Synergy and counters come from published pro matches, with statistical smoothing so a 1–0 sample never looks certain. Roles are inferred from the actual EXP / Jungle / Mid / Gold / Roam draft slots.",
+    "methodNote": "Recommendations are probabilities, not a guarantee. Early picks show the strongest alternative for every open role instead of repeating one role; the final pick locks the missing role. The current meta carries the main weight and the previous season is only a 25% memory prior. Synergy and counters come from published pro matches with statistical smoothing so a 1–0 sample never looks certain.",
     "noData": "Draft data is unavailable",
     "noDataHint": "The coach will activate automatically when the tournament snapshot is published."
   },
