@@ -72,20 +72,12 @@ export interface DraftCoachModel {
   regionSlug: string
   mapName: string | null
   gamesAnalyzed: number
-  historyGamesAnalyzed: number
   heroes: DraftCoachHeroProfile[]
   heroByKey: Record<string, DraftCoachHeroProfile>
   synergy: Record<string, PairMetric>
   matchups: Record<string, PairMetric>
   teams: DraftCoachTeamProfile[]
   maps: { name: string; games: number }[]
-}
-
-export interface DraftHistoryPrior {
-  regionSlug: string
-  gamesAnalyzed: number
-  synergy: Record<string, PairMetric>
-  matchups: Record<string, PairMetric>
 }
 
 export type RecommendationReason =
@@ -127,7 +119,14 @@ export interface RecommendationOptions {
   targetLane?: DraftLane | null
   allyTeamPageSlug?: string | null
   enemyTeamPageSlug?: string | null
+  counterTargets?: string[]
   limit?: number
+}
+
+export interface RoleCounterRecommendation {
+  lane: DraftLane
+  recommendation: DraftRecommendation
+  observed: boolean
 }
 
 const VALID_MAPS = new Set([
@@ -163,19 +162,6 @@ function addMetric(
   metric.games += weight
   if (won === true) metric.wins += weight
   record[key] = metric
-}
-
-function mergeMetrics(
-  target: Record<string, PairMetric>,
-  source: Record<string, PairMetric>,
-  weight: number,
-): void {
-  for (const [key, metric] of Object.entries(source)) {
-    const current = target[key] ?? { games: 0, wins: 0 }
-    current.games += metric.games * weight
-    current.wins += metric.wins * weight
-    target[key] = current
-  }
 }
 
 function addCount(record: Record<string, number>, key: string): void {
@@ -239,6 +225,17 @@ function allExactGames(leagues: DraftLeague[]): ExactGameView[] {
   )
 }
 
+/**
+ * A league is current only after it publishes at least one complete game draft.
+ * This keeps an old season's summary table from leaking into a new-season meta
+ * while a region is still waiting for its first match.
+ */
+export function currentSeasonDraftLeagues(
+  leagues: DraftLeague[],
+): DraftLeague[] {
+  return leagues.filter((league) => allExactGames([league]).length > 0)
+}
+
 function median(values: number[]): number | null {
   if (values.length === 0) return null
   const sorted = [...values].sort((a, b) => a - b)
@@ -273,13 +270,13 @@ export function buildDraftCoachModel(
   leagues: DraftLeague[],
   regionSlug = 'all',
   mapName: string | null = null,
-  historyPriors: DraftHistoryPrior[] = [],
   heroCatalog: HeroCatalogItem[] = [],
 ): DraftCoachModel {
+  const activeLeagues = currentSeasonDraftLeagues(leagues)
   const selectedLeagues =
     regionSlug === 'all'
-      ? leagues
-      : leagues.filter((league) => league.regionSlug === regionSlug)
+      ? activeLeagues
+      : activeLeagues.filter((league) => league.regionSlug === regionSlug)
   const catalog = new Map<string, MutableHero>()
 
   for (const item of heroCatalog) {
@@ -333,7 +330,7 @@ export function buildDraftCoachModel(
 
   // Lane inference deliberately uses every current league as a lightweight
   // prior. Regional games below count three times and therefore dominate it.
-  for (const { game } of allExactGames(leagues)) {
+  for (const { game } of allExactGames(activeLeagues)) {
     for (const side of gameTeams(game)) {
       side.picks.forEach((picked, index) => {
         const profile = catalog.get(heroKey(picked.id || picked.name))
@@ -438,18 +435,6 @@ export function buildDraftCoachModel(
     })
   }
 
-  const selectedHistory =
-    regionSlug === 'all'
-      ? historyPriors
-      : historyPriors.filter((prior) => prior.regionSlug === regionSlug)
-  // The previous season is a prior, never the main signal. Its 25% weight
-  // stabilises rare counters without allowing an older patch to dominate the
-  // current-season tournament sample.
-  for (const prior of selectedHistory) {
-    mergeMetrics(synergy, prior.synergy, 0.25)
-    mergeMetrics(matchups, prior.matchups, 0.25)
-  }
-
   const summaryGames = selectedLeagues.reduce(
     (total, league) => total + league.gamesAnalyzed,
     0,
@@ -533,10 +518,6 @@ export function buildDraftCoachModel(
     regionSlug,
     mapName,
     gamesAnalyzed: allSelectedGames.length,
-    historyGamesAnalyzed: selectedHistory.reduce(
-      (total, prior) => total + prior.gamesAnalyzed,
-      0,
-    ),
     heroes,
     heroByKey,
     synergy,
@@ -548,44 +529,6 @@ export function buildDraftCoachModel(
       .map(([name, games]) => ({ name, games }))
       .sort((a, b) => b.games - a.games),
   }
-}
-
-/** Compress raw previous-season games into the only two priors the coach uses. */
-export function buildDraftHistoryPriors(
-  leagues: DraftLeague[],
-): DraftHistoryPrior[] {
-  return leagues.map((league) => {
-    const synergy: Record<string, PairMetric> = {}
-    const matchups: Record<string, PairMetric> = {}
-    const games = allExactGames([league])
-
-    for (const { game } of games) {
-      const sides = gameTeams(game)
-      sides.forEach((side, sideIndex) => {
-        const picks = side.picks.map((item) => heroKey(item.id || item.name))
-        const enemyPicks = sides[sideIndex === 0 ? 1 : 0].picks.map((item) =>
-          heroKey(item.id || item.name),
-        )
-        for (let first = 0; first < picks.length; first += 1) {
-          for (let second = first + 1; second < picks.length; second += 1) {
-            addMetric(synergy, pairKey(picks[first], picks[second]), side.won)
-          }
-        }
-        for (const picked of picks) {
-          for (const enemy of enemyPicks) {
-            addMetric(matchups, matchupKey(picked, enemy), side.won)
-          }
-        }
-      })
-    }
-
-    return {
-      regionSlug: league.regionSlug,
-      gamesAnalyzed: games.length,
-      synergy,
-      matchups,
-    }
-  })
 }
 
 function averageMetrics(metrics: (PairMetric | undefined)[]): {
@@ -793,6 +736,9 @@ export function recommendDraftHeroes(
 ): DraftRecommendation[] {
   const allyKeys = selectedKeys(options.state.allyPicks)
   const enemyKeys = selectedKeys(options.state.enemyPicks)
+  const counterKeys = selectedKeys(
+    options.counterTargets ?? options.state.enemyPicks,
+  )
   const used = new Set(
     selectedKeys([
       ...options.state.allyPicks,
@@ -823,7 +769,7 @@ export function recommendDraftHeroes(
         allyKeys.map((ally) => model.synergy[pairKey(profile.key, ally)]),
       )
       const counter = averageMetrics(
-        enemyKeys.map(
+        counterKeys.map(
           (enemy) => model.matchups[matchupKey(profile.key, enemy)],
         ),
       )
@@ -962,6 +908,36 @@ export function recommendDraftHeroes(
     return profile && profile.laneRates[targetLane] >= MIN_LANE_FIT
   })
   return fitting.slice(0, limit)
+}
+
+/** Best current-season answer to one enemy hero in every pro role. */
+export function counterPicksByRole(
+  model: DraftCoachModel,
+  options: {
+    state: DraftCoachState
+    targetHero: string
+    allyTeamPageSlug?: string | null
+    enemyTeamPageSlug?: string | null
+  },
+): RoleCounterRecommendation[] {
+  return DRAFT_LANES.flatMap((lane) => {
+    const candidates = recommendDraftHeroes(model, {
+      kind: 'pick',
+      state: options.state,
+      plan: 'counter',
+      targetLane: lane,
+      counterTargets: [options.targetHero],
+      allyTeamPageSlug: options.allyTeamPageSlug,
+      enemyTeamPageSlug: options.enemyTeamPageSlug,
+      limit: model.heroes.length,
+    })
+    const recommendation =
+      candidates.find((candidate) => candidate.matchupGames > 0) ??
+      candidates[0]
+    return recommendation
+      ? [{ lane, recommendation, observed: recommendation.matchupGames > 0 }]
+      : []
+  })
 }
 
 /** Tournament-style 3-ban/3-pick/2-ban/2-pick practice sequence. */

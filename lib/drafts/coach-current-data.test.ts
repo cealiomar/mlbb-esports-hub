@@ -3,7 +3,7 @@ import { readSnapshot } from '@/lib/data/snapshots'
 import type { DraftLeague } from '@/lib/data/types'
 import {
   buildDraftCoachModel,
-  buildDraftHistoryPriors,
+  currentSeasonDraftLeagues,
   heroKey,
   nextSuggestedLane,
   openDraftLanes,
@@ -13,19 +13,22 @@ import {
 
 function currentModel() {
   const leagues = readSnapshot<DraftLeague[]>('drafts')?.data ?? []
-  const history = readSnapshot<DraftLeague[]>('draft-history')?.data ?? []
   const heroCatalog =
     readSnapshot<HeroCatalogItem[]>('hero-catalog')?.data ?? []
-  return buildDraftCoachModel(
-    leagues,
-    'all',
-    null,
-    buildDraftHistoryPriors(history),
-    heroCatalog,
-  )
+  return buildDraftCoachModel(leagues, 'all', null, heroCatalog)
 }
 
 describe('draft coach current tournament data', () => {
+  it('excludes regions that have no complete current-season game', () => {
+    const leagues = readSnapshot<DraftLeague[]>('drafts')?.data ?? []
+    const active = currentSeasonDraftLeagues(leagues)
+    const regions = active.map((league) => league.regionSlug)
+
+    expect(regions).toContain('indonesia')
+    expect(regions).not.toContain('cambodia')
+    expect(regions).not.toContain('mena')
+  })
+
   it('does not repeat Roam after Kaja already covers it', () => {
     const model = currentModel()
     const state = {

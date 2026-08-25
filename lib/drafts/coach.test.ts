@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest'
 import type { DraftGame, DraftHero, DraftLeague } from '@/lib/data/types'
 import {
   buildDraftCoachModel,
+  counterPicksByRole,
+  currentSeasonDraftLeagues,
   heroKey,
   nextSuggestedLane,
   openDraftLanes,
@@ -74,6 +76,32 @@ const league: DraftLeague = {
 }
 
 describe('draft coach model', () => {
+  it('keeps an old summary-only league out of the current meta', () => {
+    const staleLeague: DraftLeague = {
+      ...league,
+      regionSlug: 'cambodia',
+      leagueName: 'Old Cambodia Season',
+      leaguePageSlug: 'Old/Cambodia',
+      gamesAnalyzed: 100,
+      heroStats: [
+        {
+          ...league.heroStats[0],
+          picks: 100,
+          pickWins: 100,
+          presence: 100,
+          presenceRate: 100,
+        },
+      ],
+      series: [],
+    }
+    const active = currentSeasonDraftLeagues([league, staleLeague])
+    const model = buildDraftCoachModel([league, staleLeague], 'all')
+
+    expect(active.map((item) => item.regionSlug)).toEqual(['indonesia'])
+    expect(model.gamesAnalyzed).toBe(4)
+    expect(model.heroByKey.terizla.summaryPicks).toBe(4)
+  })
+
   it('normalises source aliases and infers the five pro lanes', () => {
     expect(heroKey('Yi Sun-Shin')).toBe('yisunshin')
     expect(heroKey('Lapu')).toBe('lapulapu')
@@ -146,6 +174,34 @@ describe('draft coach model', () => {
     expect(recommendations).toHaveLength(2)
     expect(
       recommendations.every((item) => item.suggestedLane === 'roam'),
+    ).toBe(true)
+  })
+
+  it('returns one current-season counter for every role', () => {
+    const model = buildDraftCoachModel([league], 'indonesia')
+    const counters = counterPicksByRole(model, {
+      state: {
+        allyPicks: [],
+        enemyPicks: ['Hilda'],
+        allyBans: [],
+        enemyBans: [],
+      },
+      targetHero: 'Hilda',
+    })
+
+    expect(counters.map((item) => item.lane)).toEqual([
+      'exp',
+      'jungle',
+      'mid',
+      'gold',
+      'roam',
+    ])
+    expect(counters.every((item) => item.observed)).toBe(true)
+    expect(counters.every((item) => item.recommendation.matchupGames === 4)).toBe(true)
+    expect(
+      counters.every(
+        (item) => item.recommendation.suggestedLane === item.lane,
+      ),
     ).toBe(true)
   })
 

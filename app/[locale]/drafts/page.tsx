@@ -12,6 +12,7 @@ import {
   buildHeroImageMap,
   type HeroCatalogItem,
 } from '@/lib/drafts/hero-images'
+import { currentSeasonDraftLeagues } from '@/lib/drafts/coach'
 import { routing } from '@/i18n/routing'
 
 export const dynamic = 'force-static'
@@ -38,7 +39,9 @@ export default async function DraftsPage({
   const matches = isOk(matchResult) ? matchResult.value : []
   const standings = isOk(standingsResult) ? standingsResult.value : []
   const leagues = enrichDraftLeagues(
-    isOk(draftResult) ? draftResult.value : [],
+    currentSeasonDraftLeagues(
+      isOk(draftResult) ? draftResult.value : [],
+    ),
     matches,
   )
   const teamVisuals = buildDraftTeamVisuals(leagues, matches, standings)

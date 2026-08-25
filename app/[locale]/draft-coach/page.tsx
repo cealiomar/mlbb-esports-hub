@@ -6,7 +6,7 @@ import { isOk } from '@/lib/data/source'
 import { readSnapshot } from '@/lib/data/snapshots'
 import type { DraftLeague } from '@/lib/data/types'
 import {
-  buildDraftHistoryPriors,
+  currentSeasonDraftLeagues,
   type HeroCatalogItem,
 } from '@/lib/drafts/coach'
 import { routing } from '@/i18n/routing'
@@ -27,12 +27,11 @@ export default async function DraftCoachPage({
   setRequestLocale(locale)
   const t = await getTranslations('draftCoach')
   const result = await createLocalDataSource().getDraftLeagues()
-  const leagues = isOk(result) ? result.value : []
+  const leagues = currentSeasonDraftLeagues(
+    isOk(result) ? result.value : [],
+  )
   const harvestedAt =
     readSnapshot<DraftLeague[]>('drafts')?.harvestedAt ?? null
-  const historyLeagues =
-    readSnapshot<DraftLeague[]>('draft-history')?.data ?? []
-  const historyPriors = buildDraftHistoryPriors(historyLeagues)
   const heroCatalog =
     readSnapshot<HeroCatalogItem[]>('hero-catalog')?.data ?? []
 
@@ -50,7 +49,6 @@ export default async function DraftCoachPage({
           leagues={leagues}
           locale={locale === 'ar' ? 'ar' : 'en'}
           harvestedAt={harvestedAt}
-          historyPriors={historyPriors}
           heroCatalog={heroCatalog}
         />
       ) : (

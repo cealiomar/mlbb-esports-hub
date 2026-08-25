@@ -23,6 +23,43 @@ test('Draft Coach recalculates after every real draft action', async ({ page }) 
   await expect(page.locator('.coach-arena__topbar')).toContainText('BAN · Enemy move')
 })
 
+test('only active current-season regions feed the coach', async ({ page }) => {
+  await page.goto('/en/draft-coach/')
+
+  const regions = page.locator('.coach-region-rail')
+  await expect(regions.getByRole('button', { name: /Indonesia/ })).toBeVisible()
+  await expect(regions.getByRole('button', { name: /Philippines/ })).toBeVisible()
+  await expect(regions.getByRole('button', { name: /Malaysia/ })).toBeVisible()
+  await expect(regions.getByRole('button', { name: /Cambodia/ })).toHaveCount(0)
+  await expect(regions.getByRole('button', { name: /MENA/ })).toHaveCount(0)
+})
+
+test('an enemy pick opens a five-role current-season Counter Map', async ({
+  page,
+}) => {
+  await page.goto('/en/draft-coach/')
+  await page.getByRole('button', { name: 'Start draft' }).click()
+
+  for (let index = 0; index < 9; index += 1) {
+    await page.locator('.coach-recommendation').first().click()
+  }
+
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Our move',
+  )
+  const counterMap = page.locator('.coach-counter-map')
+  await expect(counterMap).toBeVisible()
+  await expect(counterMap.locator('.coach-counter-targets button')).toHaveCount(2)
+  await expect(counterMap.locator('.coach-counter-card')).toHaveCount(5)
+  await expect(counterMap.locator('.coach-counter-card > span')).toHaveText([
+    'EXP',
+    'Jungle',
+    'Mid',
+    'Gold',
+    'Roam',
+  ])
+})
+
 test('Hero Pool filters never force every coach recommendation into one role', async ({
   page,
 }) => {

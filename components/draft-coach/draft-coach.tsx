@@ -6,6 +6,7 @@ import { getRegions } from '@/lib/content/regions'
 import type { DraftLeague } from '@/lib/data/types'
 import {
   buildDraftCoachModel,
+  counterPicksByRole,
   DRAFT_LANES,
   DRAFT_PLANS,
   heroKey,
@@ -21,7 +22,6 @@ import {
   type DraftLane,
   type DraftPlan,
   type DraftRecommendation,
-  type DraftHistoryPrior,
   type HeroCatalogItem,
   type RecommendationReason,
 } from '@/lib/drafts/coach'
@@ -210,13 +210,11 @@ export function DraftCoach({
   leagues,
   locale,
   harvestedAt,
-  historyPriors,
   heroCatalog,
 }: {
   leagues: DraftLeague[]
   locale: 'ar' | 'en'
   harvestedAt: number | null
-  historyPriors: DraftHistoryPrior[]
   heroCatalog: HeroCatalogItem[]
 }) {
   const t = useTranslations('draftCoach')
@@ -230,6 +228,7 @@ export function DraftCoach({
   const [started, setStarted] = useState(false)
   const [stepIndex, setStepIndex] = useState(0)
   const [draft, setDraft] = useState<DraftCoachState>(EMPTY_STATE)
+  const [counterTarget, setCounterTarget] = useState('')
 
   const regionalModel = useMemo(
     () =>
@@ -237,10 +236,9 @@ export function DraftCoach({
         leagues,
         regionSlug,
         null,
-        historyPriors,
         heroCatalog,
       ),
-    [heroCatalog, historyPriors, leagues, regionSlug],
+    [heroCatalog, leagues, regionSlug],
   )
   const model = useMemo(
     () =>
@@ -248,10 +246,9 @@ export function DraftCoach({
         leagues,
         regionSlug,
         mapName,
-        historyPriors,
         heroCatalog,
       ),
-    [heroCatalog, historyPriors, leagues, mapName, regionSlug],
+    [heroCatalog, leagues, mapName, regionSlug],
   )
   const flow = useMemo(() => proDraftFlow(allyFirstPick), [allyFirstPick])
   const currentAction = started && stepIndex < flow.length ? flow[stepIndex] : null
@@ -277,6 +274,24 @@ export function DraftCoach({
         limit: 5,
       })
     : []
+  const counterTargetProfiles = activePerspective.enemyPicks
+    .map((value) => heroFromModel(model, value))
+    .filter((profile): profile is DraftCoachHeroProfile => Boolean(profile))
+  const counterTargetProfile =
+    counterTargetProfiles.find((profile) => profile.key === heroKey(counterTarget)) ??
+    counterTargetProfiles.at(-1) ??
+    null
+  const roleCounters =
+    currentAction?.kind === 'pick' && counterTargetProfile
+      ? counterPicksByRole(model, {
+          state: activePerspective,
+          targetHero: counterTargetProfile.key,
+          allyTeamPageSlug:
+            currentAction.side === 'ally' ? allyTeam : enemyTeam,
+          enemyTeamPageSlug:
+            currentAction.side === 'ally' ? enemyTeam : allyTeam,
+        })
+      : []
   const used = new Set(
     [
       ...draft.allyPicks,
@@ -307,6 +322,7 @@ export function DraftCoach({
     setDraft(EMPTY_STATE)
     setStepIndex(0)
     setStarted(false)
+    setCounterTarget('')
   }
 
   function selectHero(value: string) {
@@ -348,12 +364,6 @@ export function DraftCoach({
           <b>{model.gamesAnalyzed}</b>
           <small>{t('exactGames')}</small>
         </span>
-        {model.historyGamesAnalyzed > 0 && (
-          <span className="coach-proof__stats coach-proof__stats--history">
-            <b>{model.historyGamesAnalyzed}</b>
-            <small>{t('historyGames')}</small>
-          </span>
-        )}
         {updated && <time>{t('updated', { date: updated })}</time>}
       </section>
 
@@ -575,6 +585,74 @@ export function DraftCoach({
                     />
                   ))}
                 </div>
+                {counterTargetProfile && roleCounters.length > 0 && (
+                  <section
+                    className="coach-counter-map"
+                    aria-label={t('counterMapTitle', {
+                      hero: counterTargetProfile.hero.name,
+                    })}
+                  >
+                    <header>
+                      <span>
+                        <small>{t('counterMapEyebrow')}</small>
+                        <strong>
+                          {t('counterMapTitle', {
+                            hero: counterTargetProfile.hero.name,
+                          })}
+                        </strong>
+                      </span>
+                      <div
+                        className="coach-counter-targets"
+                        aria-label={t('chooseCounterTarget')}
+                      >
+                        {counterTargetProfiles.map((profile) => (
+                          <button
+                            key={profile.key}
+                            type="button"
+                            aria-pressed={profile.key === counterTargetProfile.key}
+                            onClick={() => setCounterTarget(profile.key)}
+                            title={profile.hero.name}
+                          >
+                            <HeroIcon
+                              hero={profile.hero}
+                              imageUrl={profile.imageUrl}
+                              size={32}
+                            />
+                            <span>{profile.hero.name}</span>
+                          </button>
+                        ))}
+                      </div>
+                    </header>
+                    <div className="coach-counter-grid">
+                      {roleCounters.map(({ lane, recommendation, observed }) => (
+                        <button
+                          key={lane}
+                          type="button"
+                          className="coach-counter-card"
+                          data-observed={observed || undefined}
+                          onClick={() => selectHero(recommendation.hero.id)}
+                        >
+                          <span>{laneLabel(lane)}</span>
+                          <HeroIcon
+                            hero={recommendation.hero}
+                            imageUrl={recommendation.imageUrl}
+                            size={44}
+                          />
+                          <strong>{recommendation.hero.name}</strong>
+                          <small>
+                            {observed && recommendation.matchupRate !== null
+                              ? t('observedCounter', {
+                                  games: Math.round(recommendation.matchupGames),
+                                  rate: Math.round(recommendation.matchupRate * 100),
+                                })
+                              : t('metaFallback')}
+                          </small>
+                        </button>
+                      ))}
+                    </div>
+                    <p>{t('counterMapHint')}</p>
+                  </section>
+                )}
               </>
             ) : (
               <div className="coach-brain__empty">

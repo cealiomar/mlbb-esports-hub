@@ -17,6 +17,9 @@ test('regions switch in place without creating a long page of leagues', async ({
 }) => {
   await page.goto('/en/drafts/')
 
+  const regions = page.locator('.draft-region-rail')
+  await expect(regions.getByRole('button', { name: /Cambodia/ })).toHaveCount(0)
+  await expect(regions.getByRole('button', { name: /MENA/ })).toHaveCount(0)
   await expect(page.getByTestId('draft-overview')).toHaveCount(1)
   await page.getByRole('button', { name: /Philippines/ }).click()
   await expect(page.getByTestId('draft-overview')).toContainText('MPL Philippines')

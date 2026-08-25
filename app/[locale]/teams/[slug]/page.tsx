@@ -21,6 +21,7 @@ import {
   buildHeroImageMap,
   type HeroCatalogItem,
 } from '@/lib/drafts/hero-images'
+import { currentSeasonDraftLeagues } from '@/lib/drafts/coach'
 
 // Fully static: rendered at build time from committed snapshots, so the
 // page paints instantly with no fetch and no loading state.
@@ -72,7 +73,10 @@ export default async function TeamPage({
     standingResult && isOk(standingResult) ? standingResult.value : []
   const draftLeague =
     draftResult && isOk(draftResult)
-      ? enrichDraftLeagues(draftResult.value, matches)[0]
+      ? enrichDraftLeagues(
+          currentSeasonDraftLeagues(draftResult.value),
+          matches,
+        )[0]
       : undefined
   const teamVisuals = draftLeague
     ? buildDraftTeamVisuals([draftLeague], matches, standings)
