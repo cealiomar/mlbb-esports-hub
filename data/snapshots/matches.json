@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787662019,
+  "harvestedAt": 1787665853,
   "data": [
     {
       "id": "1787657400-mdl-indonesia-season-14-regular-season-evs-oncp",
@@ -12,7 +12,7 @@
           "name": "EVOS Icon",
           "pageSlug": "EVOS_Icon",
           "logoUrl": "/teams/52px-EVOS_Icon_allmode-efec0f78.png",
-          "score": 0,
+          "score": 2,
           "isWinner": false
         },
         {
@@ -20,7 +20,7 @@
           "name": "ONIC Prime",
           "pageSlug": "ONIC_Prime",
           "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 0,
+          "score": 2,
           "isWinner": false
         }
       ],
@@ -29,38 +29,6 @@
       "regionSlug": "indonesia",
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787659200-mlbb-academy-league-season-6-regular-season-phase-1-king-srga",
-      "startsAt": 1787659200,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KING",
-          "name": "DX Kingz",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "SRGA",
-          "name": "Selangor Red Giants Academy",
-          "pageSlug": "",
-          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 1",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
       ],
       "vodUrls": []
     },
@@ -1452,6 +1420,64 @@
       ],
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788022800-queen-legends-season-4-playoffs-tbd-tbd-2",
+      "startsAt": 1788022800,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "Queen Legends S4 - Playoffs",
+      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787659200-mlbb-academy-league-season-6-regular-season-phase-1-king-srga",
+      "startsAt": 1787659200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KING",
+          "name": "DX Kingz",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "SRGA",
+          "name": "Selangor Red Giants Academy",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -2926,35 +2952,6 @@
           "logoUrl": null,
           "score": 1,
           "isWinner": false
-        }
-      ],
-      "tournamentName": "ADT North S1",
-      "tournamentPageSlug": "ADT/North/Season_1",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787353200-adt-north-season-1-gmx-b2g",
-      "startsAt": 1787353200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "GMX",
-          "name": "GMX Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/71px-GMX_Gaming_allmode-fd98123a.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "B2G",
-          "name": "Deportivo B2G",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
         }
       ],
       "tournamentName": "ADT North S1",
