@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787650522,
+  "harvestedAt": 1787653997,
   "data": [
     {
       "id": "1787637600-mdl-philippines-season-8-group-stage-mnrv-tlaph",
@@ -30,37 +30,6 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_PH",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MDL_PH"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787643000-mdl-indonesia-season-14-regular-season-aex-nvjr",
-      "startsAt": 1787643000,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "AEX",
-          "name": "Alter Ego X",
-          "pageSlug": "Alter_Ego_X",
-          "logoUrl": "/teams/50px-Alter_Ego_X_2023_allmode-5f01fe4f.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "NVJR",
-          "name": "NAVI Junior",
-          "pageSlug": "NAVI_Junior",
-          "logoUrl": "/teams/49px-Natus_Vincere_Junior_2021_darkmode-6043baff.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 3",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
       ],
       "vodUrls": []
     },
@@ -186,7 +155,9 @@
       "tournamentName": "MDL Indonesia Season 14 - Round 3",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -215,7 +186,10 @@
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
+      ],
       "vodUrls": []
     },
     {
@@ -1462,6 +1436,35 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788003000-mlbb-super-league-myanmar-season-4-regular-season-wyv-t7",
+      "startsAt": 1788003000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "WYV",
+          "name": "Wyverns Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/45px-Wyverns_Esports_darkmode-09c29f03.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "T7",
+          "name": "Team 7",
+          "pageSlug": "Team_7",
+          "logoUrl": "/teams/63px-Team_7_2024_allmode-25d48748.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Myanmar Season 4 - RS: Week 1",
+      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
+      "regionSlug": "myanmar",
       "streamUrls": [],
       "vodUrls": []
     },
