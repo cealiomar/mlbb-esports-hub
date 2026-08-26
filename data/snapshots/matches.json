@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787740533,
+  "harvestedAt": 1787748720,
   "data": [
     {
       "id": "1787729400-mdl-indonesia-season-14-regular-season-trix-kage",
@@ -61,38 +61,6 @@
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_PH",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MDL_PH"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787738400-mlbb-academy-league-season-6-regular-season-phase-1-king-khan",
-      "startsAt": 1787738400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KING",
-          "name": "DX Kingz",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "KHAN",
-          "name": "Khan Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 1",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
       ],
       "vodUrls": []
     },
@@ -160,96 +128,6 @@
       "vodUrls": []
     },
     {
-      "id": "1787745600-mlbb-academy-league-season-6-regular-season-phase-1-hgoz-gmxk",
-      "startsAt": 1787745600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "HGOZ",
-          "name": "HG x Originz",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-HG_x_ORIGINZ_darkmode-8a453529.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "GMXK",
-          "name": "GamesMY Kelantan",
-          "pageSlug": "GamesMY_Kelantan",
-          "logoUrl": "/teams/87px-GamesMY_Kelantan_darkmode-c6dce47c.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 1",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787763600-queen-legends-season-4-playoffs-wbg-etw",
-      "startsAt": 1787763600,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "WBG",
-          "name": "Weibo Gaming",
-          "pageSlug": "Weibo_Gaming",
-          "logoUrl": "/teams/62px-Weibo_allmode-a8ba8ec3.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "ETW",
-          "name": "Earth Empress",
-          "pageSlug": "",
-          "logoUrl": "/teams/43px-Earth_Empress_allmode-a358464e.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - Playoffs",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787763600-queen-legends-season-4-playoffs-eye-vac",
-      "startsAt": 1787763600,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "EYE",
-          "name": "Evil Eye Serenity",
-          "pageSlug": "",
-          "logoUrl": "/teams/68px-Evil_Eye_Serenity_2025_allmode-fddc0f58.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "VAC",
-          "name": "Vanguard Scarlet",
-          "pageSlug": "",
-          "logoUrl": "/teams/44px-Vanguard_Scarlet_allmode-36c2fd0d.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - Playoffs",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
       "id": "1787810400-mlbb-academy-league-season-6-regular-season-phase-1-gmxk-pdrm",
       "startsAt": 1787810400,
       "status": "upcoming",
@@ -274,6 +152,35 @@
       ],
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787810400-queen-legends-season-4-playoffs-wbg-etw",
+      "startsAt": 1787810400,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "WBG",
+          "name": "Weibo Gaming",
+          "pageSlug": "Weibo_Gaming",
+          "logoUrl": "/teams/62px-Weibo_allmode-a8ba8ec3.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "ETW",
+          "name": "Earth Empress",
+          "pageSlug": "",
+          "logoUrl": "/teams/43px-Earth_Empress_allmode-a358464e.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "Queen Legends S4 - Playoffs",
+      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -332,6 +239,35 @@
       ],
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787821200-queen-legends-season-4-playoffs-eye-vac",
+      "startsAt": 1787821200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "EYE",
+          "name": "Evil Eye Serenity",
+          "pageSlug": "",
+          "logoUrl": "/teams/68px-Evil_Eye_Serenity_2025_allmode-fddc0f58.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "VAC",
+          "name": "Vanguard Scarlet",
+          "pageSlug": "",
+          "logoUrl": "/teams/44px-Vanguard_Scarlet_allmode-36c2fd0d.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "Queen Legends S4 - Playoffs",
+      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -424,8 +360,8 @@
       "vodUrls": []
     },
     {
-      "id": "1787850000-queen-legends-season-4-playoffs-val-tbd",
-      "startsAt": 1787850000,
+      "id": "1787896800-queen-legends-season-4-playoffs-val-tbd",
+      "startsAt": 1787896800,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
@@ -434,35 +370,6 @@
           "name": "Valhalla Valkyries",
           "pageSlug": "",
           "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - Playoffs",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787850000-queen-legends-season-4-playoffs-gxp-tbd",
-      "startsAt": 1787850000,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "GXP",
-          "name": "Galaxy Phoenix",
-          "pageSlug": "Galaxy_Phoenix",
-          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
           "score": null,
           "isWinner": false
         },
@@ -565,6 +472,35 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787907600-queen-legends-season-4-playoffs-gxp-tbd",
+      "startsAt": 1787907600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "GXP",
+          "name": "Galaxy Phoenix",
+          "pageSlug": "Galaxy_Phoenix",
+          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "Queen Legends S4 - Playoffs",
+      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -701,7 +637,7 @@
         {
           "code": "PLD",
           "name": "Paladins",
-          "pageSlug": "",
+          "pageSlug": "Paladins",
           "logoUrl": "/teams/50px-Paladins_2025_allmode-9ded351e.png",
           "score": null,
           "isWinner": false
@@ -946,37 +882,8 @@
       "vodUrls": []
     },
     {
-      "id": "1787936400-queen-legends-season-4-playoffs-tbd-tbd",
-      "startsAt": 1787936400,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - Playoffs",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787936400-queen-legends-season-4-playoffs-tbd-tbd-2",
-      "startsAt": 1787936400,
+      "id": "1787983200-queen-legends-season-4-playoffs-tbd-tbd",
+      "startsAt": 1787983200,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
@@ -1145,6 +1052,35 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787994000-queen-legends-season-4-playoffs-tbd-tbd",
+      "startsAt": 1787994000,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "Queen Legends S4 - Playoffs",
+      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1368,7 +1304,7 @@
         {
           "code": "PLD",
           "name": "Paladins",
-          "pageSlug": "",
+          "pageSlug": "Paladins",
           "logoUrl": "/teams/50px-Paladins_2025_allmode-9ded351e.png",
           "score": null,
           "isWinner": false
@@ -1381,37 +1317,8 @@
       "vodUrls": []
     },
     {
-      "id": "1788022800-queen-legends-season-4-playoffs-tbd-tbd",
-      "startsAt": 1788022800,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "Queen Legends S4 - Playoffs",
-      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788022800-queen-legends-season-4-playoffs-tbd-tbd-2",
-      "startsAt": 1788022800,
+      "id": "1788066000-queen-legends-season-4-playoffs-tbd-tbd",
+      "startsAt": 1788066000,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
@@ -1464,6 +1371,151 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788073200-mpl-indonesia-season-18-regular-season-navi-onic",
+      "startsAt": 1788073200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "NAVI",
+          "name": "Natus Vincere",
+          "pageSlug": "Natus_Vincere",
+          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "ONIC",
+          "name": "ONIC",
+          "pageSlug": "ONIC",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788080400-mpl-malaysia-season-18-regular-season-rrqt-ac",
+      "startsAt": 1788080400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RRQT",
+          "name": "RRQ Tora",
+          "pageSlug": "RRQ_Tora",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "AC",
+          "name": "AC Esports",
+          "pageSlug": "AC_Esports",
+          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788080400-mpl-philippines-season-18-regular-season-twph-flcp",
+      "startsAt": 1788080400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TWPH",
+          "name": "Twisted Minds PH",
+          "pageSlug": "Twisted_Minds_PH",
+          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "FLCP",
+          "name": "Team Falcons PH",
+          "pageSlug": "Team_Falcons_PH",
+          "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787745600-mlbb-academy-league-season-6-regular-season-phase-1-hgoz-gmxk",
+      "startsAt": 1787745600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "HGOZ",
+          "name": "HG x Originz",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-HG_x_ORIGINZ_darkmode-8a453529.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "GMXK",
+          "name": "GamesMY Kelantan",
+          "pageSlug": "GamesMY_Kelantan",
+          "logoUrl": "/teams/87px-GamesMY_Kelantan_darkmode-c6dce47c.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787738400-mlbb-academy-league-season-6-regular-season-phase-1-king-khan",
+      "startsAt": 1787738400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KING",
+          "name": "DX Kingz",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "KHAN",
+          "name": "Khan Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 1",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2908,71 +2960,6 @@
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1787382000-mpl-cambodia-season-11-qualifier-ne-ts",
-      "startsAt": 1787382000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "NE",
-          "name": "Nova Eclipse",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "TS",
-          "name": "Torb Srouch",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL KH S11 Qual.",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/Gryp6xxuK5Y?si=ni2b8OTeNUyBh5v6&t=7085",
-        "https://www.youtube.com/live/Gryp6xxuK5Y?si=8YBbV3Ukr5V7tiW4&t=9340",
-        "https://www.youtube.com/live/Gryp6xxuK5Y?si=YEVQvx4GKu5ZyyxZ&t=11730"
-      ]
-    },
-    {
-      "id": "1787382000-mpl-indonesia-season-18-regular-season-tlid-evos",
-      "startsAt": 1787382000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TLID",
-          "name": "Team Liquid ID",
-          "pageSlug": "Team_Liquid_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "EVOS",
-          "name": "EVOS",
-          "pageSlug": "EVOS",
-          "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=Tox641iS5Xg",
-        "https://www.youtube.com/watch?v=gTgyXVoZ0tU"
-      ]
     }
   ]
 }
