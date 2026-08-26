@@ -1,88 +1,25 @@
 {
-  "harvestedAt": 1787748720,
+  "harvestedAt": 1787752489,
   "data": [
     {
-      "id": "1787729400-mdl-indonesia-season-14-regular-season-trix-kage",
-      "startsAt": 1787729400,
+      "id": "1787806800-mdl-philippines-season-8-group-stage-rorh-sxt",
+      "startsAt": 1787806800,
       "status": "upcoming",
-      "bestOf": 5,
+      "bestOf": 3,
       "opponents": [
         {
-          "code": "TRIX",
-          "name": "Ixon TRB",
-          "pageSlug": "",
-          "logoUrl": "/teams/39px-Ixon_TRB_allmode-32c3cc79.png",
+          "code": "RORH",
+          "name": "Aurora Hunters",
+          "pageSlug": "Aurora_Hunters",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2023_allmode-b1f07ed1.png",
           "score": null,
           "isWinner": false
         },
-        {
-          "code": "KAGE",
-          "name": "Kagendra",
-          "pageSlug": "Kagendra",
-          "logoUrl": "/teams/79px-Kagendra_allmode-eb24ab2c.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 3",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787731200-mdl-philippines-season-8-group-stage-sxt-duph",
-      "startsAt": 1787731200,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
         {
           "code": "SXT",
           "name": "Shinori x Totch Esports",
           "pageSlug": "",
           "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "DUPH",
-          "name": "Dewa United PH",
-          "pageSlug": "",
-          "logoUrl": "/teams/80px-Dewa_United_PH_allmode-c707bb86.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
-      "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
-      "regionSlug": "philippines",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_PH",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MDL_PH"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787738400-mdl-philippines-season-8-group-stage-fire-mmtm",
-      "startsAt": 1787738400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FIRE",
-          "name": "TEAM FUEGO",
-          "pageSlug": "",
-          "logoUrl": "/teams/32px-TEAM_FUEGO_darkmode-1f58b75a.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "MMTM",
-          "name": "Martial Mayhem TM",
-          "pageSlug": "",
-          "logoUrl": "/teams/54px-Martial_Mayhem_TM_allmode-1e07a1ea.png",
           "score": null,
           "isWinner": false
         }
@@ -90,41 +27,7 @@
       "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
       "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
       "regionSlug": "philippines",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_PH",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MDL_PH"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1787743800-mdl-indonesia-season-14-regular-season-cfg-onpw",
-      "startsAt": 1787743800,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "CFG",
-          "name": "Cosmic Frogs",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Cosmic_Frogs_allmode-dce3123e.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "ONPW",
-          "name": "ONIC Pertiwi",
-          "pageSlug": "ONIC_Pertiwi",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 3",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
-      ],
+      "streamUrls": [],
       "vodUrls": []
     },
     {
@@ -182,6 +85,35 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787814000-mdl-philippines-season-8-group-stage-mmtm-rawr",
+      "startsAt": 1787814000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "MMTM",
+          "name": "Martial Mayhem TM",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Martial_Mayhem_TM_allmode-1e07a1ea.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RAWR",
+          "name": "Panthera DE",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
+      "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
+      "regionSlug": "philippines",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -244,6 +176,35 @@
       "vodUrls": []
     },
     {
+      "id": "1787821200-mdl-philippines-season-8-group-stage-oncu-fire",
+      "startsAt": 1787821200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ONCU",
+          "name": "ONIC Uprising",
+          "pageSlug": "ONIC_Uprising",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "FIRE",
+          "name": "TEAM FUEGO",
+          "pageSlug": "",
+          "logoUrl": "/teams/32px-TEAM_FUEGO_darkmode-1f58b75a.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
+      "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787821200-queen-legends-season-4-playoffs-eye-vac",
       "startsAt": 1787821200,
       "status": "upcoming",
@@ -298,6 +259,35 @@
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787828400-mdl-philippines-season-8-group-stage-tlaph-tmrw",
+      "startsAt": 1787828400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TLAPH",
+          "name": "Team Liquid Academy PH",
+          "pageSlug": "Team_Liquid_Academy_PH",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TMRW",
+          "name": "Twisted Minds RWE",
+          "pageSlug": "Twisted_Minds_RWE",
+          "logoUrl": "/teams/91px-Twisted_Minds_RWE_darkmode-49622833.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
+      "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
+      "regionSlug": "philippines",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1491,6 +1481,35 @@
       "vodUrls": []
     },
     {
+      "id": "1787743800-mdl-indonesia-season-14-regular-season-cfg-onpw",
+      "startsAt": 1787743800,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "CFG",
+          "name": "Cosmic Frogs",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Cosmic_Frogs_allmode-dce3123e.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "ONPW",
+          "name": "ONIC Pertiwi",
+          "pageSlug": "ONIC_Pertiwi",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MDL Indonesia Season 14 - Round 3",
+      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787738400-mlbb-academy-league-season-6-regular-season-phase-1-king-khan",
       "startsAt": 1787738400,
       "status": "completed",
@@ -1520,6 +1539,35 @@
       "vodUrls": []
     },
     {
+      "id": "1787738400-mdl-philippines-season-8-group-stage-fire-mmtm",
+      "startsAt": 1787738400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FIRE",
+          "name": "TEAM FUEGO",
+          "pageSlug": "",
+          "logoUrl": "/teams/32px-TEAM_FUEGO_darkmode-1f58b75a.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "MMTM",
+          "name": "Martial Mayhem TM",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Martial_Mayhem_TM_allmode-1e07a1ea.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
+      "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787731200-mlbb-academy-league-season-6-regular-season-phase-1-oust-so",
       "startsAt": 1787731200,
       "status": "completed",
@@ -1545,6 +1593,64 @@
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787731200-mdl-philippines-season-8-group-stage-sxt-duph",
+      "startsAt": 1787731200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "SXT",
+          "name": "Shinori x Totch Esports",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "DUPH",
+          "name": "Dewa United PH",
+          "pageSlug": "",
+          "logoUrl": "/teams/80px-Dewa_United_PH_allmode-c707bb86.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
+      "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787729400-mdl-indonesia-season-14-regular-season-trix-kage",
+      "startsAt": 1787729400,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TRIX",
+          "name": "Ixon TRB",
+          "pageSlug": "",
+          "logoUrl": "/teams/39px-Ixon_TRB_allmode-32c3cc79.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "KAGE",
+          "name": "Kagendra",
+          "pageSlug": "Kagendra",
+          "logoUrl": "/teams/79px-Kagendra_allmode-eb24ab2c.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MDL Indonesia Season 14 - Round 3",
+      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
+      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2836,128 +2942,6 @@
       "tournamentName": "BetBoom Rise of Legends S10 - Playoffs",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_10/Playoffs",
       "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787389200-mpl-cambodia-season-11-qualifier-tnr-mg",
-      "startsAt": 1787389200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TNR",
-          "name": "TNR Esports",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "MG",
-          "name": "MCC GM",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL KH S11 Qual.",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Qualifier",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/Gryp6xxuK5Y?si=HshrKmbRFHRZUHl6&t=16005",
-        "https://www.youtube.com/live/Gryp6xxuK5Y?si=I6mOlWkRTqhEGWT4&t=17945"
-      ]
-    },
-    {
-      "id": "1787389200-mpl-malaysia-season-18-regular-season-ac-ig",
-      "startsAt": 1787389200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AC",
-          "name": "AC Esports",
-          "pageSlug": "AC_Esports",
-          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "iG",
-          "name": "Invictus Gaming",
-          "pageSlug": "Invictus_Gaming",
-          "logoUrl": "/teams/50px-Invictus_Gaming_darkmode-12a6d5dd.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787389200-mpl-philippines-season-18-regular-season-omg-tlph",
-      "startsAt": 1787389200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "OMG",
-          "name": "Omega Esports",
-          "pageSlug": "Omega_Esports",
-          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TLPH",
-          "name": "Team Liquid PH",
-          "pageSlug": "Team_Liquid_PH",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/erZ0_DyfYMI?si=FbNfBIZSOdhmg4Ec",
-        "https://youtu.be/rxcx73_SSsw?si=HinHcXqp5voPtSz7"
-      ]
-    },
-    {
-      "id": "1787387400-league-of-champions-tournament-season-7-playoffs-zino-fw",
-      "startsAt": 1787387400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ZINO",
-          "name": "Zino Esports",
-          "pageSlug": "Zino_Esports",
-          "logoUrl": "/teams/43px-Zino_Esports_2026_allmode-c2ef6c21.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "FW",
-          "name": "Fantastic Warriors",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "LOC S7 2026",
-      "tournamentPageSlug": "League_of_Champions_Tournament/Season_7/Playoffs",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     }
