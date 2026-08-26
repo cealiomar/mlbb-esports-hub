@@ -10,6 +10,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "harvest": "tsx scripts/harvest.ts",
+    "harvest:meta": "tsx scripts/refresh-patch-meta.ts",
     "harvest:drafts": "tsx scripts/refresh-draft-series.ts",
     "harvest:draft-history": "tsx scripts/refresh-draft-history.ts",
     "sync:hero-catalog": "tsx scripts/sync-hero-catalog.ts"

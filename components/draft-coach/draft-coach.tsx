@@ -6,6 +6,7 @@ import { getRegions } from '@/lib/content/regions'
 import type { DraftLeague } from '@/lib/data/types'
 import {
   buildDraftCoachModel,
+  compareCompletedDrafts,
   counterPicksByRole,
   DRAFT_LANES,
   DRAFT_PLANS,
@@ -378,6 +379,8 @@ export function DraftCoach({
             currentAction.side === 'ally' ? enemyTeam : allyTeam,
         })
       : []
+  const draftComparison =
+    stepIndex >= flow.length ? compareCompletedDrafts(model, draft) : null
   const used = new Set(
     [
       ...draft.allyPicks,
@@ -386,10 +389,26 @@ export function DraftCoach({
       ...draft.enemyBans,
     ].map(heroKey),
   )
-  const filteredHeroes = model.heroes.filter((hero) => {
-    if (poolLane === 'all') return true
-    return hero.primaryLane === poolLane || hero.flexLanes.includes(poolLane)
-  })
+  const filteredHeroes = model.heroes
+    .filter((hero) => {
+      if (poolLane === 'all') return true
+      return hero.primaryLane === poolLane || hero.flexLanes.includes(poolLane)
+    })
+    .sort((first, second) => {
+      const metric = (profile: DraftCoachHeroProfile) =>
+        currentAction?.kind === 'pick'
+          ? profile.pickRate
+          : currentAction?.kind === 'ban'
+            ? currentAction.phase === 1
+              ? profile.earlyBanRate
+              : profile.banRate
+            : profile.presenceRate
+      return (
+        metric(second) - metric(first) ||
+        second.exactGames - first.exactGames ||
+        first.hero.name.localeCompare(second.hero.name)
+      )
+    })
   const regions = getRegions().filter((region) =>
     leagues.some((league) => league.regionSlug === region.slug),
   )
@@ -694,7 +713,9 @@ export function DraftCoach({
                     ? currentAction.side === 'ally'
                       ? t('bestDecision')
                       : t('enemyPrediction')
-                    : t('waitingToStart')}
+                    : draftComparison
+                      ? t('comparisonTitle')
+                      : t('waitingToStart')}
                 </h2>
               </span>
               {currentAction && (
@@ -896,6 +917,71 @@ export function DraftCoach({
                   </section>
                 )}
               </>
+            ) : draftComparison ? (
+              <section className="coach-draft-result" aria-label={t('comparisonTitle')}>
+                <header>
+                  <small>{t('comparisonEyebrow')}</small>
+                  <strong>{t('comparisonTitle')}</strong>
+                  <p>{t('comparisonDescription')}</p>
+                </header>
+                <div className="coach-draft-result__scores">
+                  <span>
+                    <small>{t('ourDraft')}</small>
+                    <b>{Math.round(draftComparison.allyWinProbability * 100)}%</b>
+                  </span>
+                  <em>{t('winEstimate')}</em>
+                  <span>
+                    <small>{t('enemyDraft')}</small>
+                    <b>{Math.round(draftComparison.enemyWinProbability * 100)}%</b>
+                  </span>
+                </div>
+                <div className="coach-draft-result__bar" aria-hidden>
+                  <span
+                    style={{
+                      width: `${Math.round(
+                        draftComparison.allyWinProbability * 100,
+                      )}%`,
+                    }}
+                  />
+                </div>
+                <div className="coach-draft-result__metrics">
+                  {[
+                    [
+                      'proFormMetric',
+                      draftComparison.allyProForm,
+                      draftComparison.enemyProForm,
+                    ],
+                    [
+                      'synergyMetric',
+                      draftComparison.allySynergy,
+                      draftComparison.enemySynergy,
+                    ],
+                    [
+                      'compositionMetric',
+                      draftComparison.allyCompositionFit,
+                      draftComparison.enemyCompositionFit,
+                    ],
+                    [
+                      'matchupMetric',
+                      draftComparison.allyMatchupEdge,
+                      draftComparison.enemyMatchupEdge,
+                    ],
+                  ].map(([label, allyValue, enemyValue]) => (
+                    <span key={String(label)}>
+                      <b>{Math.round(Number(allyValue) * 100)}%</b>
+                      <small>{t(String(label))}</small>
+                      <b>{Math.round(Number(enemyValue) * 100)}%</b>
+                    </span>
+                  ))}
+                </div>
+                <p>
+                  {t('comparisonEvidence', {
+                    games: draftComparison.gamesAnalyzed,
+                    confidence: confidenceLabel(draftComparison.confidence),
+                  })}
+                </p>
+                <small>{t('comparisonDisclaimer')}</small>
+              </section>
             ) : (
               <div className="coach-brain__empty">
                 <span aria-hidden>⌁</span>
@@ -947,6 +1033,28 @@ export function DraftCoach({
         </div>
         <div className="coach-hero-grid">
           {filteredHeroes.map((profile) => {
+            const poolMetric =
+              currentAction?.kind === 'pick'
+                ? profile.pickRate
+                : currentAction?.kind === 'ban'
+                  ? currentAction.phase === 1
+                    ? profile.earlyBanRate
+                    : profile.banRate
+                  : profile.presenceRate
+            const poolEvidence =
+              currentAction?.kind === 'pick'
+                ? poolMetric > 0
+                  ? t('poolPickRate', {
+                      rate: Math.round(poolMetric * 100),
+                    })
+                  : t('noProPick')
+                : currentAction?.kind === 'ban'
+                  ? t('poolBanRate', {
+                      rate: Math.round(poolMetric * 100),
+                    })
+                  : poolMetric > 0
+                    ? `${Math.round(poolMetric * 100)}%`
+                    : profile.patchMetaTier ?? '—'
             const filteredLane =
               poolLane !== 'all' &&
               openLanes.includes(poolLane) &&
@@ -980,11 +1088,7 @@ export function DraftCoach({
                   <strong>{profile.hero.name}</strong>
                   <small>{laneLabel(profile.primaryLane)}</small>
                 </span>
-                <b>
-                  {profile.presenceRate > 0
-                    ? `${Math.round(profile.presenceRate * 100)}%`
-                    : profile.patchMetaTier ?? '—'}
-                </b>
+                <b>{poolEvidence}</b>
               </button>
             )
           })}

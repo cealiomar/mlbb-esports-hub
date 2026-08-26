@@ -3,6 +3,7 @@ import { readSnapshot } from '@/lib/data/snapshots'
 import type { DraftLeague } from '@/lib/data/types'
 import {
   buildDraftCoachModel,
+  compareCompletedDrafts,
   currentSeasonDraftLeagues,
   DRAFT_PLANS,
   heroKey,
@@ -35,7 +36,7 @@ describe('draft coach current tournament data', () => {
       heroCatalog.map((item) => heroKey(item.hero.id || item.hero.name)),
     )
 
-    expect(PATCH_META_VERSION).toBe('2.1.95')
+    expect(PATCH_META_VERSION).toMatch(/^\d+\.\d+\.\d+$/)
     expect(heroCatalog).toHaveLength(133)
     expect(Object.keys(CURRENT_PATCH_META)).toHaveLength(133)
     expect(
@@ -278,7 +279,7 @@ describe('draft coach current tournament data', () => {
     }
   })
 
-  it('surfaces current-patch meta picks that have not appeared in pro yet', () => {
+  it('keeps patch-only heroes in the pool but never auto-recommends them', () => {
     const model = currentModel()
     const midRecommendations = recommendDraftHeroes(model, {
       kind: 'pick',
@@ -298,9 +299,98 @@ describe('draft coach current tournament data', () => {
       (item) => heroKey(item.hero.name) === 'change',
     )
 
-    expect(change).toBeDefined()
-    expect(change?.suggestedLane).toBe('mid')
-    expect(change?.patchMetaTier).toBe(CURRENT_PATCH_META.change.tier)
+    expect(change).toBeUndefined()
+    expect(suggestedLaneForHero(model, "Chang'e", [], [])).toBe('mid')
+  })
+
+  it('only recommends bans for roles the opponent still needs in phase two', () => {
+    const model = currentModel()
+    const state: DraftCoachState = {
+      allyPicks: ['Melissa', 'Uranus', 'Rafaela'],
+      allyPickLanes: ['gold', 'exp', 'mid'],
+      enemyPicks: ['Novaria', 'Barats', 'Mathilda'],
+      enemyPickLanes: ['mid', 'exp', 'roam'],
+      allyBans: ['Freya', 'Atlas', 'Marcel'],
+      enemyBans: ['Paquito', 'Hirara', 'Fanny'],
+    }
+    const bans = recommendDraftHeroes(model, {
+      kind: 'ban',
+      state,
+      plan: 'balanced',
+      phase: 2,
+      limit: 10,
+    })
+
+    expect(openDraftLanes(model, state.enemyPicks, state.enemyPickLanes)).toEqual([
+      'jungle',
+      'gold',
+    ])
+    expect(bans.length).toBeGreaterThan(0)
+    expect(
+      bans.every(
+        (recommendation) =>
+          recommendation.suggestedLane === 'jungle' ||
+          recommendation.suggestedLane === 'gold',
+      ),
+    ).toBe(true)
+    expect(bans.map((item) => item.hero.name)).not.toContain('Eudora')
+  })
+
+  it('puts Harley first when Jungle is missing in the reported scenario', () => {
+    const model = currentModel()
+    const recommendations = recommendDraftHeroes(model, {
+      kind: 'pick',
+      state: {
+        allyPicks: ['Melissa', 'Uranus', 'Rafaela', 'Gloo'],
+        allyPickLanes: ['gold', 'exp', 'mid', 'roam'],
+        enemyPicks: ['Novaria', 'Barats', 'Mathilda', 'Suyou', 'Brody'],
+        enemyPickLanes: ['mid', 'exp', 'roam', 'jungle', 'gold'],
+        allyBans: ['Freya', 'Atlas', 'Marcel', 'Belerick'],
+        enemyBans: ['Paquito', 'Hirara', 'Fanny', 'Nolan'],
+      },
+      plan: 'balanced',
+      targetLane: 'jungle',
+      limit: 5,
+    })
+
+    expect(recommendations[0].hero.name).toBe('Harley')
+    expect(recommendations[0].suggestedLane).toBe('jungle')
+    expect(recommendations[0].pickRate).toBeGreaterThan(
+      recommendations[1].pickRate,
+    )
+    expect(recommendations[0].reasons).toContain('composition')
+  })
+
+  it('compares two completed drafts conservatively and symmetrically', () => {
+    const model = currentModel()
+    const state: DraftCoachState = {
+      allyPicks: ['Uranus', 'Harley', 'Novaria', 'Brody', 'Mathilda'],
+      allyPickLanes: ['exp', 'jungle', 'mid', 'gold', 'roam'],
+      enemyPicks: ['Barats', 'Suyou', 'Eudora', 'Melissa', 'Gloo'],
+      enemyPickLanes: ['exp', 'jungle', 'mid', 'gold', 'roam'],
+      allyBans: [],
+      enemyBans: [],
+    }
+    const comparison = compareCompletedDrafts(model, state)
+    const reversed = compareCompletedDrafts(model, {
+      ...state,
+      allyPicks: state.enemyPicks,
+      allyPickLanes: state.enemyPickLanes,
+      enemyPicks: state.allyPicks,
+      enemyPickLanes: state.allyPickLanes,
+    })
+
+    expect(comparison).not.toBeNull()
+    expect(reversed).not.toBeNull()
+    expect(comparison!.allyWinProbability).toBeGreaterThanOrEqual(0.28)
+    expect(comparison!.allyWinProbability).toBeLessThanOrEqual(0.72)
+    expect(
+      comparison!.allyWinProbability + comparison!.enemyWinProbability,
+    ).toBeCloseTo(1)
+    expect(comparison!.allyWinProbability).toBeCloseTo(
+      reversed!.enemyWinProbability,
+    )
+    expect(comparison!.gamesAnalyzed).toBeGreaterThan(0)
   })
 
   it('ranks heroes repeatedly removed in the first three bans first', () => {

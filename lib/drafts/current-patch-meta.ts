@@ -1,4 +1,5 @@
 import type { DraftLane } from './coach'
+import patchMetaSnapshot from '../../data/snapshots/patch-meta.json'
 
 export type PatchMetaTier = 'SS' | 'S' | 'A' | 'B' | 'C' | 'D'
 
@@ -6,16 +7,18 @@ export interface PatchHeroMeta {
   lanes: DraftLane[]
   tier: PatchMetaTier
   score: number
+  roles?: string[]
+  specialties?: string[]
 }
 
 // Current-patch ranked fallback. Exact current-season pro drafts remain the
 // primary signal; this fills lane knowledge and keeps unplayed meta options
 // selectable instead of treating them as role-less heroes.
-export const PATCH_META_SOURCE = 'https://mlbb.io/en/hero-tier'
-export const PATCH_META_UPDATED_AT = '2026-08-24T23:03:57.000Z'
-export const PATCH_META_VERSION = '2.1.95'
+const FALLBACK_PATCH_META_SOURCE = 'https://mlbb.io/en/hero-tier'
+const FALLBACK_PATCH_META_UPDATED_AT = '2026-08-24T23:03:57.000Z'
+const FALLBACK_PATCH_META_VERSION = '2.1.95'
 
-export const CURRENT_PATCH_META: Record<string, PatchHeroMeta> = {
+const FALLBACK_CURRENT_PATCH_META: Record<string, PatchHeroMeta> = {
   miya: { lanes: ['gold'], tier: 'SS', score: 0.929 },
   hanabi: { lanes: ['gold'], tier: 'SS', score: 0.894 },
   sun: { lanes: ['exp', 'jungle'], tier: 'SS', score: 0.889 },
@@ -150,3 +153,47 @@ export const CURRENT_PATCH_META: Record<string, PatchHeroMeta> = {
   valentina: { lanes: ['mid'], tier: 'D', score: 0.165 },
   kalea: { lanes: ['roam'], tier: 'D', score: 0.162 },
 }
+
+interface PatchMetaSnapshotData {
+  source?: string
+  updatedAt?: string
+  version?: string
+  heroes?: Record<string, PatchHeroMeta>
+}
+
+const liveData = (patchMetaSnapshot as { data?: PatchMetaSnapshotData }).data
+const hasValidLiveData =
+  Boolean(liveData?.updatedAt && !Number.isNaN(Date.parse(liveData.updatedAt))) &&
+  Object.keys(liveData?.heroes ?? {}).length >= 120
+
+const liveHeroes = hasValidLiveData ? liveData?.heroes ?? {} : {}
+
+// The live source owns ranking/tier data. Curated fallback lanes are retained
+// as extra flex-role knowledge because the source currently publishes only a
+// single primary lane per hero.
+export const CURRENT_PATCH_META: Record<string, PatchHeroMeta> = hasValidLiveData
+  ? Object.fromEntries(
+      Object.entries(liveHeroes).map(([key, item]) => [
+        key,
+        {
+          ...item,
+          lanes: [
+            ...new Set([
+              ...item.lanes,
+              ...(FALLBACK_CURRENT_PATCH_META[key]?.lanes ?? []),
+            ]),
+          ],
+        },
+      ]),
+    )
+  : FALLBACK_CURRENT_PATCH_META
+
+export const PATCH_META_SOURCE = hasValidLiveData
+  ? liveData?.source ?? FALLBACK_PATCH_META_SOURCE
+  : FALLBACK_PATCH_META_SOURCE
+export const PATCH_META_UPDATED_AT = hasValidLiveData
+  ? liveData?.updatedAt ?? FALLBACK_PATCH_META_UPDATED_AT
+  : FALLBACK_PATCH_META_UPDATED_AT
+export const PATCH_META_VERSION = hasValidLiveData
+  ? liveData?.version ?? FALLBACK_PATCH_META_VERSION
+  : FALLBACK_PATCH_META_VERSION

@@ -164,6 +164,64 @@ test('a manual Mage pick locks Mid in recommendations and Counter Map', async ({
   await expect(midCounter).toContainText('Role already filled')
 })
 
+test('phase-two bans target enemy open roles and the final Jungle follows pro priority', async ({
+  page,
+}) => {
+  await page.goto('/en/draft-coach/')
+  await page.getByRole('button', { name: 'Start draft' }).click()
+
+  const select = async (hero: string) => {
+    await page.getByTitle(new RegExp(`^${hero} ·`)).click()
+  }
+
+  for (const hero of [
+    'Freya',
+    'Atlas',
+    'Marcel',
+    'Paquito',
+    'Fanny',
+    'Hirara',
+    'Melissa',
+    'Novaria',
+    'Barats',
+    'Uranus',
+    'Rafaela',
+    'Mathilda',
+    'Chou',
+  ]) {
+    await select(hero)
+  }
+
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'BAN · Our move',
+  )
+  expect(
+    new Set(
+      await page.locator('.coach-recommendation__name small').allTextContents(),
+    ),
+  ).toEqual(new Set(['Jungle', 'Gold']))
+  await expect(page.locator('.coach-recommendations')).not.toContainText('Eudora')
+
+  await select('Nolan')
+  await select('Kaja')
+  await select('Ixia')
+  await select('Suyou')
+  await select('Brody')
+  await select('Gloo')
+
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Our move',
+  )
+  await expect(page.locator('.coach-role-readout')).toContainText('Jungle')
+  await expect(page.locator('.coach-recommendation').first()).toContainText(
+    'Harley',
+  )
+  await expect(page.locator('.coach-recommendation').first()).toContainText(
+    'Frequent pro pick',
+  )
+  await expect(page.getByTitle(/^Harley ·/).locator('b')).toHaveText('Pick 17%')
+})
+
 test('a complete practice draft records five unique roles per team', async ({
   page,
 }) => {
@@ -186,6 +244,18 @@ test('a complete practice draft records five unique roles per team', async ({
       new Set(['EXP', 'Jungle', 'Mid', 'Gold', 'Roam']),
     )
   }
+  const comparison = page.locator('.coach-draft-result')
+  await expect(comparison).toBeVisible()
+  await expect(comparison).toContainText('Draft comparison')
+  await expect(comparison).toContainText('Estimated draft edge')
+  await expect(page.locator('.coach-brain > header h2')).toHaveText(
+    'Draft comparison',
+  )
+  await expect(comparison.locator('.coach-draft-result__scores b')).toHaveCount(2)
+  expect(await comparison.locator('.coach-draft-result__scores b').allTextContents()).toEqual([
+    expect.stringMatching(/^\d+%$/),
+    expect.stringMatching(/^\d+%$/),
+  ])
 })
 
 test('Hero Pool filters never force every coach recommendation into one role', async ({

@@ -48,6 +48,11 @@ export interface PairMetric {
   wins: number
 }
 
+export interface DraftCompositionSample {
+  picks: string[]
+  won: boolean | null
+}
+
 export interface DraftCoachTeamProfile {
   team: DraftTeam
   games: number
@@ -91,6 +96,7 @@ export interface DraftCoachModel {
   heroByKey: Record<string, DraftCoachHeroProfile>
   synergy: Record<string, PairMetric>
   matchups: Record<string, PairMetric>
+  compositions: DraftCompositionSample[]
   teams: DraftCoachTeamProfile[]
   maps: { name: string; games: number }[]
 }
@@ -103,8 +109,10 @@ export type RecommendationReason =
   | 'antiScaling'
   | 'winRate'
   | 'lane'
+  | 'targetOpenRole'
   | 'flex'
   | 'synergy'
+  | 'composition'
   | 'counter'
   | 'comfort'
   | 'denyComfort'
@@ -162,6 +170,21 @@ export interface DraftDuoRecommendation {
   games: number
   winRate: number
   score: number
+}
+
+export interface DraftComparison {
+  allyWinProbability: number
+  enemyWinProbability: number
+  allyProForm: number
+  enemyProForm: number
+  allySynergy: number
+  enemySynergy: number
+  allyCompositionFit: number
+  enemyCompositionFit: number
+  allyMatchupEdge: number
+  enemyMatchupEdge: number
+  gamesAnalyzed: number
+  confidence: 'high' | 'medium' | 'low'
 }
 
 const VALID_MAPS = new Set([
@@ -400,6 +423,9 @@ export function buildDraftCoachModel(
   const allSelectedGames = allExactGames(selectedLeagues).filter(({ game }) =>
     mapName ? validMapName(game.mapName) === mapName : true,
   )
+  const allCurrentGames = allExactGames(activeLeagues).filter(({ game }) =>
+    mapName ? validMapName(game.mapName) === mapName : true,
+  )
   const durationMedian = median(
     allSelectedGames
       .map(({ game }) => game.durationSeconds)
@@ -407,6 +433,7 @@ export function buildDraftCoachModel(
   )
   const synergy: Record<string, PairMetric> = {}
   const matchups: Record<string, PairMetric> = {}
+  const compositions: DraftCompositionSample[] = []
   const teams = new Map<string, DraftCoachTeamProfile>()
 
   for (const { game, team1, team2 } of allSelectedGames) {
@@ -484,6 +511,18 @@ export function buildDraftCoachModel(
         if (banIndex < 3) profile.exactEarlyBans += 1
         addCount(teamProfile.bans, key)
       })
+
+    })
+  }
+
+  // Composition and matchup knowledge is shared across every active current-
+  // season pro league. A regional filter still controls hero priority, team
+  // comfort and win rates, while proven global combinations stay available.
+  for (const { game } of allCurrentGames) {
+    const sides = gameTeams(game)
+    sides.forEach((side, sideIndex) => {
+      const pickKeys = side.picks.map((item) => heroKey(item.id || item.name))
+      compositions.push({ picks: pickKeys, won: side.won })
 
       for (let first = 0; first < pickKeys.length; first += 1) {
         for (let second = first + 1; second < pickKeys.length; second += 1) {
@@ -629,6 +668,7 @@ export function buildDraftCoachModel(
     heroByKey,
     synergy,
     matchups,
+    compositions,
     teams: [...teams.values()].sort((a, b) =>
       a.team.name.localeCompare(b.team.name),
     ),
@@ -763,6 +803,50 @@ function bestOpenLane(
   return best && hero.laneRates[best] >= MIN_LANE_FIT ? best : null
 }
 
+function bestLaneFrom(
+  hero: DraftCoachHeroProfile,
+  lanes: DraftLane[],
+): DraftLane | null {
+  const best = [...lanes].sort(
+    (first, second) => hero.laneRates[second] - hero.laneRates[first],
+  )[0]
+  return best && hero.laneRates[best] >= MIN_LANE_FIT ? best : null
+}
+
+function compositionAffinity(
+  model: DraftCoachModel,
+  candidateKey: string,
+  allyKeys: string[],
+): { rate: number; games: number; coverage: number; bestOverlap: number } {
+  const selected = [...new Set(allyKeys)]
+  if (selected.length === 0) {
+    return { rate: 0.5, games: 0, coverage: 0, bestOverlap: 0 }
+  }
+
+  let games = 0
+  let wins = 0
+  let overlapTotal = 0
+  let bestOverlap = 0
+
+  for (const composition of model.compositions) {
+    if (!composition.picks.includes(candidateKey)) continue
+    const overlap = selected.filter((key) => composition.picks.includes(key)).length
+    if (overlap === 0) continue
+    games += 1
+    overlapTotal += overlap
+    bestOverlap = Math.max(bestOverlap, overlap)
+    if (composition.won === true) wins += 1
+  }
+
+  return {
+    rate: smoothedRate(games > 0 ? { games, wins } : undefined),
+    games,
+    coverage:
+      games > 0 ? clamp(overlapTotal / (games * selected.length)) : 0,
+    bestOverlap,
+  }
+}
+
 /** Lock a manual or recommended hero into its strongest still-open role. */
 export function suggestedLaneForHero(
   model: DraftCoachModel,
@@ -894,9 +978,33 @@ export function recommendDraftHeroes(
   const enemyTeam = teamBySlug(model, options.enemyTeamPageSlug)
   const targetLane = options.targetLane ?? null
   const allyPickLanes = options.state.allyPickLanes ?? []
+  const enemyPickLanes = options.state.enemyPickLanes ?? []
+  const banTargetOpenLanes = openDraftLanes(
+    model,
+    options.state.enemyPicks,
+    enemyPickLanes,
+  )
 
   const ranked = model.heroes
-    .filter((profile) => !used.has(profile.key))
+    .filter((profile) => {
+      if (used.has(profile.key)) return false
+      if (options.kind === 'pick') {
+        // The Patch catalog still supplies roles and manual Hero Pool entries,
+        // but an automatic Pick must have appeared in this season's pro data.
+        return profile.exactGames > 0 || profile.summaryPicks > 0
+      }
+      const hasCurrentProEvidence =
+        profile.exactGames +
+          profile.summaryPicks +
+          profile.exactBans +
+          profile.summaryBans >
+        0
+      if (!hasCurrentProEvidence) return false
+      // Once the opponent has locked roles, do not waste a Phase 2 ban on a
+      // role they can no longer draft. Flex heroes remain eligible when they
+      // genuinely fit one of the opponent's open roles.
+      return Boolean(bestLaneFrom(profile, banTargetOpenLanes))
+    })
     .map((profile): DraftRecommendation => {
       const exactMetric = {
         games: profile.exactGames,
@@ -909,6 +1017,7 @@ export function recommendDraftHeroes(
           profile.exactGames +
           profile.exactBans >
         0
+      const proPickPriority = clamp(profile.pickRate / 0.3)
       const proMeta =
         options.kind === 'ban'
           ? clamp(
@@ -916,7 +1025,7 @@ export function recommendDraftHeroes(
                 profile.presenceRate * 0.22 +
                 winRate * 0.2,
             )
-          : clamp(profile.pickRate * 0.62 + winRate * 0.38)
+          : clamp(proPickPriority * 0.78 + winRate * 0.22)
       const meta = hasCurrentProEvidence
         ? clamp(proMeta * 0.92 + profile.patchMetaScore * 0.08)
         : clamp(profile.patchMetaScore * 0.7)
@@ -936,10 +1045,19 @@ export function recommendDraftHeroes(
               options.state.allyPicks,
               allyPickLanes,
             )
-          : null
+          : bestLaneFrom(profile, banTargetOpenLanes)
       const synergy = averageMetrics(
         allyKeys.map((ally) => model.synergy[pairKey(profile.key, ally)]),
       )
+      const composition = compositionAffinity(model, profile.key, allyKeys)
+      const synergyScore =
+        composition.games > 0
+          ? clamp(
+              synergy.rate * 0.42 +
+                composition.rate * 0.38 +
+                composition.coverage * 0.2,
+            )
+          : synergy.rate
       const counter = averageMetrics(
         counterKeys.map(
           (enemy) => model.matchups[matchupKey(profile.key, enemy)],
@@ -1005,33 +1123,35 @@ export function recommendDraftHeroes(
           DraftPlan,
           { meta: number; role: number; synergy: number; counter: number; pace: number; comfort: number }
         > = {
-          balanced: { meta: 0.29, role: 0.28, synergy: 0.17, counter: 0.16, pace: 0.03, comfort: 0.07 },
-          early: { meta: 0.24, role: 0.22, synergy: 0.14, counter: 0.13, pace: 0.2, comfort: 0.07 },
-          scaling: { meta: 0.24, role: 0.22, synergy: 0.14, counter: 0.13, pace: 0.2, comfort: 0.07 },
-          counter: { meta: 0.18, role: 0.2, synergy: 0.14, counter: 0.41, pace: 0.02, comfort: 0.05 },
-          comfort: { meta: 0.19, role: 0.2, synergy: 0.13, counter: 0.11, pace: 0.02, comfort: 0.35 },
+          balanced: { meta: 0.36, role: 0.2, synergy: 0.2, counter: 0.14, pace: 0.03, comfort: 0.07 },
+          early: { meta: 0.3, role: 0.18, synergy: 0.17, counter: 0.12, pace: 0.18, comfort: 0.05 },
+          scaling: { meta: 0.3, role: 0.18, synergy: 0.17, counter: 0.12, pace: 0.18, comfort: 0.05 },
+          counter: { meta: 0.23, role: 0.17, synergy: 0.16, counter: 0.39, pace: 0.01, comfort: 0.04 },
+          comfort: { meta: 0.24, role: 0.16, synergy: 0.16, counter: 0.1, pace: 0.02, comfort: 0.32 },
         }
         const weight = weights[options.plan]
         rawScore =
           meta * weight.meta +
           role * weight.role +
-          synergy.rate * weight.synergy +
+          synergyScore * weight.synergy +
           counter.rate * weight.counter +
           pace * weight.pace +
           comfort.rate * weight.comfort
         relevantSample =
-          profile.exactGames + synergy.games + counter.games + comfort.games
+          profile.exactGames +
+          synergy.games +
+          composition.games +
+          counter.games +
+          comfort.games
         teamRate = comfort.games > 0 ? comfort.rate : null
       }
 
-      // Patch data can surface a newly relevant hero before the first pro
-      // appearance, while keeping exact current-season evidence dominant.
-      if (!hasCurrentProEvidence) rawScore *= 0.86
       if (options.kind === 'pick' && role < MIN_LANE_FIT) rawScore *= 0.45
       if (targetLane && role < MIN_LANE_FIT) rawScore *= 0.55
 
       const reasons: RecommendationReason[] = []
       if (options.kind === 'ban') {
+        addReason(reasons, 'targetOpenRole', Boolean(suggestedLane))
         addReason(
           reasons,
           'firstBanPriority',
@@ -1051,10 +1171,17 @@ export function recommendDraftHeroes(
         addReason(reasons, 'counter', reverseThreat.games >= 3 && reverseThreat.rate >= 0.54)
         addReason(reasons, 'synergy', enemySynergy.games >= 3 && enemySynergy.rate >= 0.54)
       } else {
-        addReason(reasons, 'counter', counter.games >= 3 && counter.rate >= 0.54)
-        addReason(reasons, 'synergy', synergy.games >= 3 && synergy.rate >= 0.54)
-        addReason(reasons, 'comfort', comfort.games >= 2)
         addReason(reasons, 'lane', role >= 0.52)
+        addReason(reasons, 'meta', profile.exactGames >= 3 || profile.pickRate >= 0.08)
+        addReason(
+          reasons,
+          'composition',
+          composition.games >= 2 &&
+            composition.bestOverlap >= Math.min(2, allyKeys.length),
+        )
+        addReason(reasons, 'synergy', synergy.games >= 3 && synergy.rate >= 0.54)
+        addReason(reasons, 'counter', counter.games >= 3 && counter.rate >= 0.54)
+        addReason(reasons, 'comfort', comfort.games >= 2)
         addReason(reasons, 'flex', profile.flexLanes.length >= 2)
         addReason(reasons, 'early', options.plan === 'early' && profile.earlyScore >= 0.58)
         addReason(reasons, 'scaling', options.plan === 'scaling' && profile.scalingScore >= 0.58)
@@ -1064,7 +1191,7 @@ export function recommendDraftHeroes(
         'meta',
         options.kind === 'ban'
           ? profile.banRate >= 0.24
-          : profile.pickRate >= 0.24,
+          : profile.pickRate >= 0.08,
       )
       addReason(
         reasons,
@@ -1221,6 +1348,125 @@ export function recommendDraftDuos(
         a.first.hero.name.localeCompare(b.first.hero.name),
     )
     .slice(0, options.limit ?? 3)
+}
+
+function teamProForm(model: DraftCoachModel, picks: string[]): number {
+  const rates = selectedKeys(picks).flatMap((key) => {
+    const profile = model.heroByKey[key]
+    return profile?.exactGames
+      ? [smoothedRate({ games: profile.exactGames, wins: profile.exactWins })]
+      : []
+  })
+  return rates.length > 0
+    ? rates.reduce((total, rate) => total + rate, 0) / rates.length
+    : 0.5
+}
+
+function teamSynergyRate(model: DraftCoachModel, picks: string[]): number {
+  const keys = selectedKeys(picks)
+  const metrics: PairMetric[] = []
+  for (let first = 0; first < keys.length; first += 1) {
+    for (let second = first + 1; second < keys.length; second += 1) {
+      const metric = model.synergy[pairKey(keys[first], keys[second])]
+      if (metric) metrics.push(metric)
+    }
+  }
+  return averageMetrics(metrics).rate
+}
+
+function nearestCompositionRate(
+  model: DraftCoachModel,
+  picks: string[],
+): { rate: number; games: number } {
+  const keys = selectedKeys(picks)
+  let games = 0
+  let wins = 0
+
+  for (const composition of model.compositions) {
+    const overlap = keys.filter((key) => composition.picks.includes(key)).length
+    if (overlap < 2) continue
+    // A four-hero historical overlap is much stronger evidence than a pair,
+    // without pretending that the exact five has already been played.
+    const weight = overlap * overlap
+    games += weight
+    if (composition.won === true) wins += weight
+  }
+
+  return {
+    rate: smoothedRate(games > 0 ? { games, wins } : undefined, 12),
+    games,
+  }
+}
+
+function matchupRate(
+  model: DraftCoachModel,
+  picks: string[],
+  opponents: string[],
+): { rate: number; games: number } {
+  const metrics = selectedKeys(picks).flatMap((hero) =>
+    selectedKeys(opponents).map(
+      (opponent) => model.matchups[matchupKey(hero, opponent)],
+    ),
+  )
+  return averageMetrics(metrics)
+}
+
+/**
+ * Conservative post-draft comparison from current-season pro evidence.
+ * This is an estimate, not a guarantee: execution, player comfort and the
+ * in-game economy remain outside a static draft model.
+ */
+export function compareCompletedDrafts(
+  model: DraftCoachModel,
+  state: DraftCoachState,
+): DraftComparison | null {
+  if (state.allyPicks.length !== 5 || state.enemyPicks.length !== 5) return null
+
+  const allyProForm = teamProForm(model, state.allyPicks)
+  const enemyProForm = teamProForm(model, state.enemyPicks)
+  const allySynergy = teamSynergyRate(model, state.allyPicks)
+  const enemySynergy = teamSynergyRate(model, state.enemyPicks)
+  const allyComposition = nearestCompositionRate(model, state.allyPicks)
+  const enemyComposition = nearestCompositionRate(model, state.enemyPicks)
+  const allyMatchup = matchupRate(model, state.allyPicks, state.enemyPicks)
+  const enemyMatchup = matchupRate(model, state.enemyPicks, state.allyPicks)
+
+  const allyScore =
+    allyProForm * 0.26 +
+    allySynergy * 0.28 +
+    allyComposition.rate * 0.24 +
+    allyMatchup.rate * 0.22
+  const enemyScore =
+    enemyProForm * 0.26 +
+    enemySynergy * 0.28 +
+    enemyComposition.rate * 0.24 +
+    enemyMatchup.rate * 0.22
+  const probability = clamp(
+    1 / (1 + Math.exp(-(allyScore - enemyScore) * 5)),
+    0.28,
+    0.72,
+  )
+  const evidenceGames = Math.round(model.compositions.length / 2)
+  const comparisonSample =
+    allyComposition.games +
+    enemyComposition.games +
+    allyMatchup.games +
+    enemyMatchup.games
+
+  return {
+    allyWinProbability: probability,
+    enemyWinProbability: 1 - probability,
+    allyProForm,
+    enemyProForm,
+    allySynergy,
+    enemySynergy,
+    allyCompositionFit: allyComposition.rate,
+    enemyCompositionFit: enemyComposition.rate,
+    allyMatchupEdge: allyMatchup.rate,
+    enemyMatchupEdge: enemyMatchup.rate,
+    gamesAnalyzed: evidenceGames,
+    confidence: confidence(comparisonSample),
+  }
 }
 
 /** Tournament-style 3-ban/3-pick/2-ban/2-pick practice sequence. */

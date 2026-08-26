@@ -38,7 +38,9 @@ jobs:
       - name: Harvest
         env:
           RUN_INDEX: ${{ github.run_number }}
-        run: npm run harvest
+        run: |
+          npm run harvest:meta
+          npm run harvest
 
       - name: Commit snapshots
         run: |
@@ -46,7 +48,7 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           # New team crests are downloaded during harvest and must ship with
           # the snapshot. Omitting public/teams makes them break after deploy.
-          git add data/snapshots/matches.json data/snapshots/standings.json data/snapshots/teams.json data/snapshots/drafts.json public/teams public/heroes
+          git add data/snapshots/matches.json data/snapshots/standings.json data/snapshots/teams.json data/snapshots/drafts.json data/snapshots/patch-meta.json public/teams public/heroes
           if git diff --staged --quiet; then
             echo "no data change"
           else
