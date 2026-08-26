@@ -2648,6 +2648,13 @@ html[data-theme='dark'] .panel {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.coach-slot__lane {
+  display: block;
+  margin-top: 0.14rem;
+  color: var(--brand-strong);
+  font-size: 0.46rem;
+  font-weight: 900;
+}
 
 .coach-brain {
   padding: 0.9rem;
@@ -2734,6 +2741,72 @@ html[data-theme='dark'] .panel {
   background: color-mix(in srgb, var(--brand) 8%, var(--surface-solid));
   font-size: 0.48rem;
   font-weight: 900;
+}
+.coach-priority-picks,
+.coach-duos {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 0.45rem;
+  margin: 0 0 0.7rem;
+  padding: 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--brand) 34%, var(--line));
+  border-radius: 15px;
+  background: color-mix(in srgb, var(--brand) 6%, var(--surface-solid));
+}
+.coach-priority-picks > header,
+.coach-duos > header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.55rem;
+}
+.coach-priority-picks > header strong,
+.coach-duos > header strong { font-size: 0.57rem; font-weight: 950; }
+.coach-priority-picks > header small,
+.coach-duos > header small { color: var(--ink-muted); font-size: 0.45rem; }
+.coach-priority-picks > div,
+.coach-duos > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem;
+}
+.coach-priority-picks > div > span {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 38px minmax(0, 1fr);
+  align-items: center;
+  gap: 0 0.35rem;
+  padding: 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: color-mix(in srgb, var(--surface-raised) 72%, transparent);
+}
+.coach-priority-picks > div > span .draft-hero-image,
+.coach-priority-picks > div > span .draft-hero-fallback { grid-row: 1 / span 2; }
+.coach-priority-picks b,
+.coach-duos b { overflow: hidden; font-size: 0.52rem; font-weight: 950; text-overflow: ellipsis; white-space: nowrap; }
+.coach-priority-picks small,
+.coach-duos small { color: var(--brand-strong); font-size: 0.43rem; font-weight: 850; }
+.coach-duos > div > button {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.24rem;
+  padding: 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--surface-raised) 72%, transparent);
+}
+.coach-duos button > span { display: grid; min-width: 0; justify-items: center; gap: 0.14rem; }
+.coach-duos button > i { color: var(--brand-strong); font-size: 0.66rem; font-style: normal; font-weight: 950; }
+.coach-duos button > em {
+  grid-column: 1 / -1;
+  color: var(--ink-muted);
+  font-size: 0.4rem;
+  font-style: normal;
 }
 .coach-recommendations { position: relative; z-index: 2; display: grid; gap: 0.42rem; }
 .coach-recommendation {
@@ -2852,6 +2925,14 @@ html[data-theme='dark'] .panel {
   transition: transform 0.22s ease, border-color 0.22s ease;
 }
 .coach-counter-card[data-observed] { border-color: color-mix(in srgb, #31b96a 42%, var(--line)); }
+.coach-counter-card:disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.82);
+  opacity: 0.42;
+}
+.coach-counter-card:disabled > span::after {
+  content: ' · ✓';
+}
 .coach-counter-card > span { color: var(--brand-strong); font-size: 0.48rem; font-weight: 950; }
 .coach-counter-card strong {
   max-width: 100%;
@@ -2950,6 +3031,7 @@ html[data-theme='dark'] .panel {
   .coach-plan-grid button:hover,
   .coach-recommendation:hover,
   .coach-counter-card:hover,
+  .coach-duos button:hover,
   .coach-hero-grid button:not(:disabled):hover {
     transform: translateY(-2px);
     border-color: color-mix(in srgb, var(--brand) 54%, var(--line));
@@ -3029,6 +3111,19 @@ html[data-theme='dark'] .panel {
   .coach-brain__brief { font-size: 0.56rem; }
   .coach-role-readout { align-items: start; flex-direction: column; }
   .coach-role-readout > span { justify-content: start; }
+  .coach-priority-picks > header,
+  .coach-duos > header { align-items: start; flex-direction: column; gap: 0.12rem; }
+  .coach-priority-picks > div,
+  .coach-duos > div {
+    grid-auto-columns: minmax(190px, 78%);
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+  }
+  .coach-priority-picks > div > span,
+  .coach-duos > div > button { scroll-snap-align: start; }
   .coach-counter-map > header { align-items: start; flex-direction: column; }
   .coach-counter-targets { justify-content: start; }
   .coach-counter-grid {

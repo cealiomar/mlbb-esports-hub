@@ -32,6 +32,61 @@ test('only active current-season regions feed the coach', async ({ page }) => {
   await expect(regions.getByRole('button', { name: /Malaysia/ })).toBeVisible()
   await expect(regions.getByRole('button', { name: /Cambodia/ })).toHaveCount(0)
   await expect(regions.getByRole('button', { name: /MENA/ })).toHaveCount(0)
+
+  await regions.getByRole('button', { name: /Philippines/ }).click()
+  await expect(page.getByRole('combobox', { name: 'Map' }).locator('option')).toHaveText([
+    'All map variants',
+    /.+ · \d+/,
+    /.+ · \d+/,
+    /.+ · \d+/,
+    /.+ · \d+/,
+  ])
+})
+
+test('first-pick priorities are visible and never repeated in our ban list', async ({
+  page,
+}) => {
+  await page.goto('/en/draft-coach/')
+  await page.getByRole('button', { name: 'Start draft' }).click()
+
+  const priorities = await page.locator('.coach-priority-picks b').allTextContents()
+  const bans = await page
+    .locator('.coach-recommendation__name strong')
+    .allTextContents()
+
+  expect(priorities).toHaveLength(3)
+  expect(bans).toHaveLength(5)
+  expect(bans.some((hero) => priorities.includes(hero))).toBe(false)
+  await expect(page.locator('.coach-recommendation').first()).toContainText(
+    'early-ban rate',
+  )
+})
+
+test('second pick can lock an observed two-hero package in one action', async ({
+  page,
+}) => {
+  await page.goto('/en/draft-coach/')
+  await page.getByRole('button', { name: 'We have second pick' }).click()
+  await page.getByRole('button', { name: 'Start draft' }).click()
+
+  for (let index = 0; index < 7; index += 1) {
+    await page.locator('.coach-recommendation').first().click()
+  }
+
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Our move',
+  )
+  await expect(page.locator('.coach-duos button')).toHaveCount(3)
+  await page.locator('.coach-duos button').first().click()
+  await expect(page.locator('.coach-team--ally .coach-pick-list [data-filled]')).toHaveCount(2)
+  expect(
+    new Set(
+      await page.locator('.coach-team--ally .coach-slot__lane').allTextContents(),
+    ).size,
+  ).toBe(2)
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Enemy move',
+  )
 })
 
 test('an enemy pick opens a five-role current-season Counter Map', async ({
@@ -51,6 +106,8 @@ test('an enemy pick opens a five-role current-season Counter Map', async ({
   await expect(counterMap).toBeVisible()
   await expect(counterMap.locator('.coach-counter-targets button')).toHaveCount(2)
   await expect(counterMap.locator('.coach-counter-card')).toHaveCount(5)
+  await expect(counterMap.locator('.coach-counter-card:enabled')).toHaveCount(4)
+  await expect(counterMap.locator('.coach-counter-card:disabled')).toHaveCount(1)
   await expect(counterMap.locator('.coach-counter-card > span')).toHaveText([
     'EXP',
     'Jungle',
@@ -58,6 +115,77 @@ test('an enemy pick opens a five-role current-season Counter Map', async ({
     'Gold',
     'Roam',
   ])
+
+  const filledRole = (
+    await page.locator('.coach-team--ally .coach-slot__lane').first().textContent()
+  )?.trim()
+  expect(filledRole).toBeTruthy()
+  await expect(
+    counterMap.locator('.coach-counter-card:disabled > span'),
+  ).toHaveText(filledRole ?? '')
+  const recommendationRoles = await page
+    .locator('.coach-recommendation__name small')
+    .allTextContents()
+  expect(recommendationRoles).not.toContain(filledRole)
+})
+
+test('a manual Mage pick locks Mid in recommendations and Counter Map', async ({
+  page,
+}) => {
+  await page.goto('/en/draft-coach/')
+  await page.getByRole('button', { name: 'Start draft' }).click()
+
+  for (const hero of ['Aamon', 'Akai', 'Aldous', 'Alice', 'Alpha', 'Alucard']) {
+    await page.getByTitle(new RegExp(`^${hero} ·`)).click()
+  }
+
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Our move',
+  )
+  await page.getByRole('button', { name: 'Mid', exact: true }).click()
+  await page.getByTitle(/^Chang'e ·/).click()
+  await expect(page.locator('.coach-team--ally .coach-slot__lane')).toHaveText(
+    'Mid',
+  )
+
+  await page.locator('.coach-recommendation').first().click()
+  await page.locator('.coach-recommendation').first().click()
+
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Our move',
+  )
+  expect(
+    await page.locator('.coach-recommendation__name small').allTextContents(),
+  ).not.toContain('Mid')
+  const midCounter = page
+    .locator('.coach-counter-card')
+    .filter({ has: page.locator('span', { hasText: /^Mid$/ }) })
+  await expect(midCounter).toBeDisabled()
+  await expect(midCounter).toContainText('Role already filled')
+})
+
+test('a complete practice draft records five unique roles per team', async ({
+  page,
+}) => {
+  await page.goto('/en/draft-coach/')
+  await page.getByRole('button', { name: 'Start draft' }).click()
+
+  for (let index = 0; index < 20; index += 1) {
+    await expect(page.locator('.coach-recommendation').first()).toBeEnabled()
+    await page.locator('.coach-recommendation').first().click()
+  }
+
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'Draft complete',
+  )
+  for (const side of ['ally', 'enemy']) {
+    const team = page.locator(`.coach-team--${side}`)
+    await expect(team.locator('.coach-pick-list [data-filled]')).toHaveCount(5)
+    await expect(team.locator('.coach-ban-row [data-filled]')).toHaveCount(5)
+    expect(new Set(await team.locator('.coach-slot__lane').allTextContents())).toEqual(
+      new Set(['EXP', 'Jungle', 'Mid', 'Gold', 'Roam']),
+    )
+  }
 })
 
 test('Hero Pool filters never force every coach recommendation into one role', async ({

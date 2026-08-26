@@ -137,7 +137,7 @@
     "title": "Draft Coach",
     "description": "Choose a region and game plan, then log every pick and ban. The coach recalculates the meta, counters and team tendencies after every move — and explains why.",
     "proofTitle": "Pro Meta engine online",
-    "proofDescription": "Decisions use complete current-season games only; leagues that have not started never enter the meta.",
+    "proofDescription": "Current-season pro data leads every decision; Patch 2.1.95 only fills roles and newly relevant picks. Leagues that have not started never enter the model.",
     "exactGames": "exact pro games",
     "updated": "Updated {date}, Egypt time",
     "setupTitle": "Set the match plan",
@@ -164,11 +164,11 @@
       },
       "early": {
         "title": "Early pressure",
-        "description": "Favour heroes winning the shorter pro games."
+        "description": "Pick early pressure; bans target the strongest late-game answers."
       },
       "scaling": {
         "title": "Late game",
-        "description": "Favour picks proven in longer games."
+        "description": "Pick for late game; bans remove the opponent's early pressure."
       },
       "counter": {
         "title": "Counter draft",
@@ -202,18 +202,26 @@
     "enemyBrief": "These are the opponent's most likely options from the meta, team profile and response to your draft. Log the move that actually happened.",
     "openRoles": "Best option for every open role",
     "requiredRole": "Role needed to complete the composition",
+    "priorityPickTitle": "Save these for first pick",
+    "priorityPickHint": "These are your plan's strongest available picks, so the coach removed them from your ban list.",
+    "duoTitle": "Best duo for consecutive picks",
+    "duoHint": "Pairs actually played together this season, with a bonus for packages containing a Mid pick.",
+    "duoProof": "{games} games together · {rate}% estimate",
+    "earlyBanRate": "{rate}% early-ban rate",
+    "pickRate": "{rate}% pick rate",
     "counterMapEyebrow": "COUNTER MAP",
     "counterMapTitle": "Best answer to {hero} in every role",
     "chooseCounterTarget": "Choose the enemy pick to answer",
     "observedCounter": "{games} matchups · {rate}% estimate",
     "metaFallback": "Meta fallback · no direct matchup",
-    "counterMapHint": "Answers use current-season matchups only. When a role has no direct sample, the strongest meta fallback is shown and clearly marked.",
+    "roleComplete": "Role already filled",
+    "counterMapHint": "All five roles stay visible for comparison, but a filled role is locked and cannot add a duplicate. Direct counters use current-season matchups only.",
     "fitScore": "decision fit",
     "emptyTitle": "Choose a plan and press start",
     "emptyDescription": "After the first ban, every move is reranked with reasons, confidence and sample size.",
     "completeTitle": "Draft locked",
     "completeDescription": "All five picks and bans are logged for both teams. Undo one move or start a new draft.",
-    "heroPoolEyebrow": "Every hero in the current pro meta",
+    "heroPoolEyebrow": "Every hero in Patch 2.1.95",
     "heroPool": "Hero Pool",
     "heroPoolHint": "The role filter only narrows this list; it never changes the coach's decision. Tap the hero that was actually picked or banned.",
     "filterLane": "Filter by role",
@@ -241,6 +249,10 @@
     },
     "reasons": {
       "meta": "Meta priority",
+      "patchMeta": "Strong in current patch",
+      "firstBanPriority": "Early-ban priority",
+      "antiEarly": "Stops early pressure",
+      "antiScaling": "Stops late scaling",
       "winRate": "Strong results",
       "lane": "Covers the role",
       "flex": "Flex pick",
@@ -252,7 +264,7 @@
       "scaling": "Late-game fit",
       "limitedSample": "Limited sample"
     },
-    "methodNote": "Recommendations are probabilities, not a guarantee. Meta, synergy and counters use complete current-season games only, with no previous-season influence. Leagues that have not started or published complete drafts are excluded automatically. Statistical smoothing keeps a 1–0 sample from looking certain.",
+    "methodNote": "Recommendations are probabilities, not a guarantee. Synergy, counters and pro priority use complete current-season games only, with no previous-season influence. The current Patch 2.1.95 tier list only supplies hero roles and surfaces new picks before their first pro appearance; current pro evidence remains dominant. Leagues that have not started are excluded automatically.",
     "noData": "Draft data is unavailable",
     "noDataHint": "The coach will activate automatically when the tournament snapshot is published."
   },

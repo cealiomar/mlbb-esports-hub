@@ -10,16 +10,21 @@ import {
   DRAFT_LANES,
   DRAFT_PLANS,
   heroKey,
+  MIN_LANE_FIT,
   nextSuggestedLane,
   openDraftLanes,
   proDraftFlow,
+  recommendDraftDuos,
   recommendDraftHeroes,
+  suggestedLaneForHero,
   type DraftAction,
   type DraftActionSide,
+  type DraftActionKind,
   type DraftCoachHeroProfile,
   type DraftCoachModel,
   type DraftCoachState,
   type DraftLane,
+  type DraftDuoRecommendation,
   type DraftPlan,
   type DraftRecommendation,
   type HeroCatalogItem,
@@ -32,13 +37,21 @@ const EMPTY_STATE: DraftCoachState = {
   enemyPicks: [],
   allyBans: [],
   enemyBans: [],
+  allyPickLanes: [],
+  enemyPickLanes: [],
 }
 
-function stateField(action: DraftAction): keyof DraftCoachState {
+type DraftValueField = 'allyPicks' | 'enemyPicks' | 'allyBans' | 'enemyBans'
+
+function stateField(action: DraftAction): DraftValueField {
   if (action.side === 'ally') {
     return action.kind === 'pick' ? 'allyPicks' : 'allyBans'
   }
   return action.kind === 'pick' ? 'enemyPicks' : 'enemyBans'
+}
+
+function pickLaneField(side: DraftActionSide): 'allyPickLanes' | 'enemyPickLanes' {
+  return side === 'ally' ? 'allyPickLanes' : 'enemyPickLanes'
 }
 
 function perspectiveState(
@@ -51,6 +64,8 @@ function perspectiveState(
     enemyPicks: state.allyPicks,
     allyBans: state.enemyBans,
     enemyBans: state.allyBans,
+    allyPickLanes: state.enemyPickLanes ?? [],
+    enemyPickLanes: state.allyPickLanes ?? [],
   }
 }
 
@@ -66,11 +81,15 @@ function DraftSlot({
   value,
   index,
   kind,
+  lane,
+  laneLabel,
 }: {
   model: DraftCoachModel
   value?: string
   index: number
   kind: 'pick' | 'ban'
+  lane?: DraftLane
+  laneLabel: (lane: DraftLane | null) => string
 }) {
   const profile = value ? heroFromModel(model, value) : null
   return (
@@ -82,7 +101,12 @@ function DraftSlot({
             imageUrl={profile.imageUrl}
             size={kind === 'pick' ? 54 : 36}
           />
-          <span>{profile.hero.name}</span>
+          <span>
+            {profile.hero.name}
+            {kind === 'pick' && lane && (
+              <small className="coach-slot__lane">{laneLabel(lane)}</small>
+            )}
+          </span>
         </>
       ) : (
         <>
@@ -98,16 +122,20 @@ function TeamBoard({
   model,
   side,
   picks,
+  pickLanes,
   bans,
   currentAction,
   label,
+  laneLabel,
 }: {
   model: DraftCoachModel
   side: DraftActionSide
   picks: string[]
+  pickLanes: DraftLane[]
   bans: string[]
   currentAction: DraftAction | null
   label: string
+  laneLabel: (lane: DraftLane | null) => string
 }) {
   const active = currentAction?.side === side
   return (
@@ -128,6 +156,7 @@ function TeamBoard({
             value={bans[index]}
             index={index}
             kind="ban"
+            laneLabel={laneLabel}
           />
         ))}
       </ol>
@@ -139,6 +168,8 @@ function TeamBoard({
             value={picks[index]}
             index={index}
             kind="pick"
+            lane={pickLanes[index]}
+            laneLabel={laneLabel}
           />
         ))}
       </ol>
@@ -154,6 +185,8 @@ function RecommendationCard({
   confidenceLabel,
   laneLabel,
   scoreLabel,
+  kind,
+  evidenceLabel,
 }: {
   recommendation: DraftRecommendation
   rank: number
@@ -162,6 +195,8 @@ function RecommendationCard({
   confidenceLabel: (confidence: DraftRecommendation['confidence']) => string
   laneLabel: (lane: DraftLane | null) => string
   scoreLabel: string
+  kind: DraftActionKind
+  evidenceLabel: string
 }) {
   return (
     <button
@@ -191,7 +226,14 @@ function RecommendationCard({
           ))}
         </span>
         <span className="coach-recommendation__proof">
-          <small>{Math.round(recommendation.presenceRate * 100)}% meta</small>
+          <small>{evidenceLabel}</small>
+          {kind === 'pick' && recommendation.pickRate === 0 && (
+            <small>
+              {recommendation.patchMetaTier
+                ? `Patch ${recommendation.patchMetaTier}`
+                : 'New pick'}
+            </small>
+          )}
           <small>{recommendation.sampleSize} games</small>
           <small data-confidence={recommendation.confidence}>
             {confidenceLabel(recommendation.confidence)}
@@ -256,22 +298,66 @@ export function DraftCoach({
     ? perspectiveState(draft, currentAction.side)
     : draft
   const automaticLane = currentAction?.kind === 'pick'
-    ? nextSuggestedLane(model, activePerspective.allyPicks)
+    ? nextSuggestedLane(
+        model,
+        activePerspective.allyPicks,
+        activePerspective.allyPickLanes,
+      )
     : null
   const openLanes = currentAction?.kind === 'pick'
-    ? openDraftLanes(model, activePerspective.allyPicks)
+    ? openDraftLanes(
+        model,
+        activePerspective.allyPicks,
+        activePerspective.allyPickLanes,
+      )
     : []
+  const activeAllyTeam =
+    currentAction?.side === 'ally' ? allyTeam : enemyTeam
+  const activeEnemyTeam =
+    currentAction?.side === 'ally' ? enemyTeam : allyTeam
+  const priorityPicks =
+    currentAction?.kind === 'ban' &&
+    currentAction.side === 'ally' &&
+    allyFirstPick
+      ? recommendDraftHeroes(model, {
+          kind: 'pick',
+          state: activePerspective,
+          plan,
+          allyTeamPageSlug: activeAllyTeam,
+          enemyTeamPageSlug: activeEnemyTeam,
+          limit: 3,
+        })
+      : []
   const recommendations = currentAction
     ? recommendDraftHeroes(model, {
         kind: currentAction.kind,
         state: activePerspective,
         plan,
         targetLane: currentAction.kind === 'pick' ? automaticLane : null,
-        allyTeamPageSlug:
-          currentAction.side === 'ally' ? allyTeam : enemyTeam,
-        enemyTeamPageSlug:
-          currentAction.side === 'ally' ? enemyTeam : allyTeam,
+        allyTeamPageSlug: activeAllyTeam,
+        enemyTeamPageSlug: activeEnemyTeam,
+        excludeHeroes:
+          currentAction.kind === 'ban' && currentAction.side === 'ally'
+            ? priorityPicks.map((item) => item.hero.id)
+            : [],
+        phase: currentAction?.phase,
         limit: 5,
+      })
+    : []
+  const nextAction = flow[stepIndex + 1] ?? null
+  const canLockDuo =
+    currentAction?.side === 'ally' &&
+    currentAction.kind === 'pick' &&
+    nextAction?.side === 'ally' &&
+    nextAction.kind === 'pick'
+  const duoRecommendations = canLockDuo
+    ? recommendDraftDuos(model, {
+        state: activePerspective,
+        plan,
+        allyTeamPageSlug: allyTeam,
+        enemyTeamPageSlug: enemyTeam,
+        phase: currentAction.phase,
+        limit: 3,
       })
     : []
   const counterTargetProfiles = activePerspective.enemyPicks
@@ -325,10 +411,31 @@ export function DraftCoach({
     setCounterTarget('')
   }
 
-  function selectHero(value: string) {
+  function selectHero(value: string, lane?: DraftLane | null) {
     if (!currentAction || used.has(heroKey(value))) return
     const field = stateField(currentAction)
-    setDraft((current) => ({ ...current, [field]: [...current[field], value] }))
+    if (currentAction.kind === 'pick') {
+      const selectedLane =
+        lane ??
+        suggestedLaneForHero(
+          model,
+          value,
+          activePerspective.allyPicks,
+          activePerspective.allyPickLanes,
+        )
+      if (!selectedLane || !openLanes.includes(selectedLane)) return
+      const laneField = pickLaneField(currentAction.side)
+      setDraft((current) => ({
+        ...current,
+        [field]: [...current[field], value],
+        [laneField]: [...(current[laneField] ?? []), selectedLane],
+      }))
+    } else {
+      setDraft((current) => ({
+        ...current,
+        [field]: [...current[field], value],
+      }))
+    }
     setStepIndex((current) => current + 1)
   }
 
@@ -336,8 +443,51 @@ export function DraftCoach({
     if (stepIndex === 0) return
     const previous = flow[stepIndex - 1]
     const field = stateField(previous)
-    setDraft((current) => ({ ...current, [field]: current[field].slice(0, -1) }))
+    setDraft((current) => {
+      if (previous.kind !== 'pick') {
+        return { ...current, [field]: current[field].slice(0, -1) }
+      }
+      const laneField = pickLaneField(previous.side)
+      return {
+        ...current,
+        [field]: current[field].slice(0, -1),
+        [laneField]: (current[laneField] ?? []).slice(0, -1),
+      }
+    })
     setStepIndex((current) => current - 1)
+  }
+
+  function selectDuo(duo: DraftDuoRecommendation) {
+    if (!canLockDuo || !currentAction) return
+    const firstLane = duo.first.suggestedLane
+    const secondLane = duo.second.suggestedLane
+    if (
+      !firstLane ||
+      !secondLane ||
+      firstLane === secondLane ||
+      !openLanes.includes(firstLane) ||
+      !openLanes.includes(secondLane) ||
+      used.has(heroKey(duo.first.hero.id)) ||
+      used.has(heroKey(duo.second.hero.id))
+    ) {
+      return
+    }
+    const field = stateField(currentAction)
+    const laneField = pickLaneField(currentAction.side)
+    setDraft((current) => ({
+      ...current,
+      [field]: [
+        ...current[field],
+        duo.first.hero.id,
+        duo.second.hero.id,
+      ],
+      [laneField]: [
+        ...(current[laneField] ?? []),
+        firstLane,
+        secondLane,
+      ],
+    }))
+    setStepIndex((current) => current + 2)
   }
 
   function laneLabel(value: DraftLane | null): string {
@@ -527,9 +677,11 @@ export function DraftCoach({
             model={model}
             side="ally"
             picks={draft.allyPicks}
+            pickLanes={draft.allyPickLanes ?? []}
             bans={draft.allyBans}
             currentAction={currentAction}
             label={t('ourDraft')}
+            laneLabel={laneLabel}
           />
 
           <section className="coach-brain panel">
@@ -571,17 +723,98 @@ export function DraftCoach({
                     </span>
                   </div>
                 )}
+                {priorityPicks.length > 0 && (
+                  <section className="coach-priority-picks">
+                    <header>
+                      <strong>{t('priorityPickTitle')}</strong>
+                      <small>{t('priorityPickHint')}</small>
+                    </header>
+                    <div>
+                      {priorityPicks.map((recommendation) => (
+                        <span key={recommendation.hero.id}>
+                          <HeroIcon
+                            hero={recommendation.hero}
+                            imageUrl={recommendation.imageUrl}
+                            size={38}
+                          />
+                          <b>{recommendation.hero.name}</b>
+                          <small>{laneLabel(recommendation.suggestedLane)}</small>
+                        </span>
+                      ))}
+                    </div>
+                  </section>
+                )}
+                {duoRecommendations.length > 0 && (
+                  <section className="coach-duos">
+                    <header>
+                      <strong>{t('duoTitle')}</strong>
+                      <small>{t('duoHint')}</small>
+                    </header>
+                    <div>
+                      {duoRecommendations.map((duo) => (
+                        <button
+                          key={`${duo.first.hero.id}-${duo.second.hero.id}`}
+                          type="button"
+                          onClick={() => selectDuo(duo)}
+                        >
+                          <span>
+                            <HeroIcon
+                              hero={duo.first.hero}
+                              imageUrl={duo.first.imageUrl}
+                              size={38}
+                            />
+                            <b>{duo.first.hero.name}</b>
+                            <small>{laneLabel(duo.first.suggestedLane)}</small>
+                          </span>
+                          <i aria-hidden>+</i>
+                          <span>
+                            <HeroIcon
+                              hero={duo.second.hero}
+                              imageUrl={duo.second.imageUrl}
+                              size={38}
+                            />
+                            <b>{duo.second.hero.name}</b>
+                            <small>{laneLabel(duo.second.suggestedLane)}</small>
+                          </span>
+                          <em>
+                            {t('duoProof', {
+                              games: Math.round(duo.games),
+                              rate: Math.round(duo.winRate * 100),
+                            })}
+                          </em>
+                        </button>
+                      ))}
+                    </div>
+                  </section>
+                )}
                 <div className="coach-recommendations">
                   {recommendations.map((recommendation, index) => (
                     <RecommendationCard
                       key={recommendation.hero.id}
                       recommendation={recommendation}
                       rank={index + 1}
-                      onSelect={() => selectHero(recommendation.hero.id)}
+                      onSelect={() =>
+                        selectHero(
+                          recommendation.hero.id,
+                          recommendation.suggestedLane,
+                        )
+                      }
                       reasonLabel={reasonLabel}
                       confidenceLabel={confidenceLabel}
                       laneLabel={laneLabel}
                       scoreLabel={t('fitScore')}
+                      kind={currentAction.kind}
+                      evidenceLabel={
+                        currentAction.kind === 'ban'
+                          ? t('earlyBanRate', {
+                              rate: Math.round(
+                                recommendation.earlyBanRate * 100,
+                              ),
+                            })
+                          : t('pickRate', {
+                              rate: Math.round(recommendation.pickRate * 100),
+                            })
+                      }
                     />
                   ))}
                 </div>
@@ -624,31 +857,40 @@ export function DraftCoach({
                       </div>
                     </header>
                     <div className="coach-counter-grid">
-                      {roleCounters.map(({ lane, recommendation, observed }) => (
-                        <button
-                          key={lane}
-                          type="button"
-                          className="coach-counter-card"
-                          data-observed={observed || undefined}
-                          onClick={() => selectHero(recommendation.hero.id)}
-                        >
-                          <span>{laneLabel(lane)}</span>
-                          <HeroIcon
-                            hero={recommendation.hero}
-                            imageUrl={recommendation.imageUrl}
-                            size={44}
-                          />
-                          <strong>{recommendation.hero.name}</strong>
-                          <small>
-                            {observed && recommendation.matchupRate !== null
-                              ? t('observedCounter', {
-                                  games: Math.round(recommendation.matchupGames),
-                                  rate: Math.round(recommendation.matchupRate * 100),
-                                })
-                              : t('metaFallback')}
-                          </small>
-                        </button>
-                      ))}
+                      {roleCounters.map(({ lane, recommendation, observed }) => {
+                        const roleAvailable = openLanes.includes(lane)
+                        return (
+                          <button
+                            key={lane}
+                            type="button"
+                            className="coach-counter-card"
+                            data-observed={observed || undefined}
+                            data-available={roleAvailable || undefined}
+                            disabled={!roleAvailable}
+                            onClick={() =>
+                              selectHero(recommendation.hero.id, lane)
+                            }
+                          >
+                            <span>{laneLabel(lane)}</span>
+                            <HeroIcon
+                              hero={recommendation.hero}
+                              imageUrl={recommendation.imageUrl}
+                              size={44}
+                            />
+                            <strong>{recommendation.hero.name}</strong>
+                            <small>
+                              {!roleAvailable
+                                ? t('roleComplete')
+                                : observed && recommendation.matchupRate !== null
+                                  ? t('observedCounter', {
+                                      games: Math.round(recommendation.matchupGames),
+                                      rate: Math.round(recommendation.matchupRate * 100),
+                                    })
+                                  : t('metaFallback')}
+                            </small>
+                          </button>
+                        )
+                      })}
                     </div>
                     <p>{t('counterMapHint')}</p>
                   </section>
@@ -667,9 +909,11 @@ export function DraftCoach({
             model={model}
             side="enemy"
             picks={draft.enemyPicks}
+            pickLanes={draft.enemyPickLanes ?? []}
             bans={draft.enemyBans}
             currentAction={currentAction}
             label={t('enemyDraft')}
+            laneLabel={laneLabel}
           />
         </div>
       </section>
@@ -703,14 +947,32 @@ export function DraftCoach({
         </div>
         <div className="coach-hero-grid">
           {filteredHeroes.map((profile) => {
-            const disabled = used.has(profile.key) || !currentAction
+            const filteredLane =
+              poolLane !== 'all' &&
+              openLanes.includes(poolLane) &&
+              profile.laneRates[poolLane] >= MIN_LANE_FIT
+                ? poolLane
+                : null
+            const manualLane = currentAction?.kind === 'pick'
+              ? filteredLane ??
+                suggestedLaneForHero(
+                  model,
+                  profile.key,
+                  activePerspective.allyPicks,
+                  activePerspective.allyPickLanes,
+                )
+              : null
+            const disabled =
+              used.has(profile.key) ||
+              !currentAction ||
+              (currentAction.kind === 'pick' && !manualLane)
             return (
               <button
                 key={profile.key}
                 type="button"
                 disabled={disabled}
                 data-used={used.has(profile.key) || undefined}
-                onClick={() => selectHero(profile.key)}
+                onClick={() => selectHero(profile.key, manualLane)}
                 title={`${profile.hero.name} · ${laneLabel(profile.primaryLane)}`}
               >
                 <HeroIcon hero={profile.hero} imageUrl={profile.imageUrl} size={52} />
@@ -718,7 +980,11 @@ export function DraftCoach({
                   <strong>{profile.hero.name}</strong>
                   <small>{laneLabel(profile.primaryLane)}</small>
                 </span>
-                <b>{Math.round(profile.presenceRate * 100)}%</b>
+                <b>
+                  {profile.presenceRate > 0
+                    ? `${Math.round(profile.presenceRate * 100)}%`
+                    : profile.patchMetaTier ?? '—'}
+                </b>
               </button>
             )
           })}

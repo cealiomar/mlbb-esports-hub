@@ -5,6 +5,10 @@ import type {
   DraftTeam,
 } from '@/lib/data/types'
 import { heroKey, type HeroCatalogItem } from './hero-images'
+import {
+  CURRENT_PATCH_META,
+  type PatchMetaTier,
+} from './current-patch-meta'
 
 export { heroKey } from './hero-images'
 export type { HeroCatalogItem } from './hero-images'
@@ -35,6 +39,8 @@ export interface DraftCoachState {
   enemyPicks: string[]
   allyBans: string[]
   enemyBans: string[]
+  allyPickLanes?: DraftLane[]
+  enemyPickLanes?: DraftLane[]
 }
 
 export interface PairMetric {
@@ -57,13 +63,22 @@ export interface DraftCoachHeroProfile {
   summaryWins: number
   summaryBans: number
   presenceRate: number
+  pickRate: number
+  banRate: number
   exactGames: number
   exactBans: number
+  exactFirstBans: number
+  exactEarlyBans: number
   exactWins: number
+  firstBanRate: number
+  earlyBanRate: number
   laneGames: Record<DraftLane, number>
   laneRates: Record<DraftLane, number>
   primaryLane: DraftLane | null
   flexLanes: DraftLane[]
+  patchLanes: DraftLane[]
+  patchMetaTier: PatchMetaTier | null
+  patchMetaScore: number
   earlyScore: number
   scalingScore: number
 }
@@ -82,6 +97,10 @@ export interface DraftCoachModel {
 
 export type RecommendationReason =
   | 'meta'
+  | 'patchMeta'
+  | 'firstBanPriority'
+  | 'antiEarly'
+  | 'antiScaling'
   | 'winRate'
   | 'lane'
   | 'flex'
@@ -102,7 +121,13 @@ export interface DraftRecommendation {
   primaryLane: DraftLane | null
   suggestedLane: DraftLane | null
   flexLanes: DraftLane[]
+  patchMetaTier: PatchMetaTier | null
+  patchMetaScore: number
   presenceRate: number
+  pickRate: number
+  banRate: number
+  firstBanRate: number
+  earlyBanRate: number
   winRate: number
   matchupRate: number | null
   matchupGames: number
@@ -120,6 +145,8 @@ export interface RecommendationOptions {
   allyTeamPageSlug?: string | null
   enemyTeamPageSlug?: string | null
   counterTargets?: string[]
+  excludeHeroes?: string[]
+  phase?: 1 | 2
   limit?: number
 }
 
@@ -127,6 +154,14 @@ export interface RoleCounterRecommendation {
   lane: DraftLane
   recommendation: DraftRecommendation
   observed: boolean
+}
+
+export interface DraftDuoRecommendation {
+  first: DraftRecommendation
+  second: DraftRecommendation
+  games: number
+  winRate: number
+  score: number
 }
 
 const VALID_MAPS = new Set([
@@ -200,12 +235,17 @@ interface MutableHero {
   summaryBans: number
   exactGames: number
   exactBans: number
+  exactFirstBans: number
+  exactEarlyBans: number
   exactWins: number
   laneGames: Record<DraftLane, number>
+  earlyGames: number
+  lateGames: number
   earlyWins: number
   lateWins: number
-  timedWins: number
 }
+
+const PATCH_LANE_PRIOR = 0.75
 
 interface ExactGameView {
   game: DraftGame
@@ -288,11 +328,14 @@ export function buildDraftCoachModel(
       summaryBans: 0,
       exactGames: 0,
       exactBans: 0,
+      exactFirstBans: 0,
+      exactEarlyBans: 0,
       exactWins: 0,
       laneGames: blankLaneRecord(),
+      earlyGames: 0,
+      lateGames: 0,
       earlyWins: 0,
       lateWins: 0,
-      timedWins: 0,
     })
   }
 
@@ -307,11 +350,14 @@ export function buildDraftCoachModel(
         summaryBans: 0,
         exactGames: 0,
         exactBans: 0,
+        exactFirstBans: 0,
+        exactEarlyBans: 0,
         exactWins: 0,
         laneGames: blankLaneRecord(),
+        earlyGames: 0,
+        lateGames: 0,
         earlyWins: 0,
         lateWins: 0,
-        timedWins: 0,
       }
       if (!current.imageUrl && stat.imageUrl) current.imageUrl = stat.imageUrl
       catalog.set(key, current)
@@ -325,6 +371,17 @@ export function buildDraftCoachModel(
       current.summaryPicks += stat.picks
       current.summaryWins += stat.pickWins
       current.summaryBans += stat.bans
+    }
+  }
+
+  // The current patch supplies role knowledge for heroes that have not yet
+  // appeared in an active pro league. A single exact regional observation is
+  // weighted four times as strongly, so pro drafts always override this prior.
+  for (const [key, profile] of catalog) {
+    const patchMeta = CURRENT_PATCH_META[key]
+    if (!patchMeta) continue
+    for (const lane of patchMeta.lanes) {
+      profile.laneGames[lane] += PATCH_LANE_PRIOR
     }
   }
 
@@ -374,23 +431,28 @@ export function buildDraftCoachModel(
             summaryBans: 0,
             exactGames: 0,
             exactBans: 0,
+            exactFirstBans: 0,
+            exactEarlyBans: 0,
             exactWins: 0,
             laneGames: blankLaneRecord(),
+            earlyGames: 0,
+            lateGames: 0,
             earlyWins: 0,
             lateWins: 0,
-            timedWins: 0,
           }
           catalog.set(key, profile)
         }
         profile.exactGames += 1
-        if (side.won === true) {
-          profile.exactWins += 1
-          if (durationMedian && game.durationSeconds) {
-            profile.timedWins += 1
-            if (game.durationSeconds <= durationMedian) profile.earlyWins += 1
-            if (game.durationSeconds > durationMedian) profile.lateWins += 1
+        if (durationMedian && game.durationSeconds) {
+          if (game.durationSeconds <= durationMedian) {
+            profile.earlyGames += 1
+            if (side.won === true) profile.earlyWins += 1
+          } else {
+            profile.lateGames += 1
+            if (side.won === true) profile.lateWins += 1
           }
         }
+        if (side.won === true) profile.exactWins += 1
         const lane = DRAFT_LANES[laneIndex]
         if (lane) profile.laneGames[lane] += 3
         addMetric(teamProfile.picks, key, side.won)
@@ -406,15 +468,20 @@ export function buildDraftCoachModel(
             summaryBans: 0,
             exactGames: 0,
             exactBans: 0,
+            exactFirstBans: 0,
+            exactEarlyBans: 0,
             exactWins: 0,
             laneGames: blankLaneRecord(),
+            earlyGames: 0,
+            lateGames: 0,
             earlyWins: 0,
             lateWins: 0,
-            timedWins: 0,
           }
           catalog.set(key, profile)
         }
         profile.exactBans += 1
+        if (banIndex === 0) profile.exactFirstBans += 1
+        if (banIndex < 3) profile.exactEarlyBans += 1
         addCount(teamProfile.bans, key)
       })
 
@@ -441,6 +508,7 @@ export function buildDraftCoachModel(
   )
   const heroes = [...catalog.entries()]
     .map(([key, profile]): DraftCoachHeroProfile => {
+      const patchMeta = CURRENT_PATCH_META[key] ?? null
       const totalLanes = DRAFT_LANES.reduce(
         (total, lane) => total + profile.laneGames[lane],
         0,
@@ -457,9 +525,14 @@ export function buildDraftCoachModel(
               (a, b) => profile.laneGames[b] - profile.laneGames[a],
             )[0]
           : null
-      const flexLanes = DRAFT_LANES.filter(
-        (lane) => profile.laneGames[lane] >= 3 && laneRates[lane] >= 0.16,
-      )
+      const flexLanes = DRAFT_LANES.filter((lane) => {
+        const observedFlex =
+          profile.laneGames[lane] >= 3 && laneRates[lane] >= 0.16
+        const patchFlex =
+          Boolean(patchMeta?.lanes.includes(lane)) &&
+          (patchMeta?.lanes.length ?? 0) > 1
+        return observedFlex || patchFlex
+      })
       const summaryPresenceRate =
         summaryGames > 0
           ? clamp(
@@ -473,7 +546,35 @@ export function buildDraftCoachModel(
                 allSelectedGames.length,
             )
           : 0
+      const summaryPickRate =
+        summaryGames > 0 ? clamp(profile.summaryPicks / summaryGames) : 0
+      const summaryBanRate =
+        summaryGames > 0 ? clamp(profile.summaryBans / summaryGames) : 0
+      const exactPickRate =
+        allSelectedGames.length > 0
+          ? clamp(profile.exactGames / allSelectedGames.length)
+          : 0
+      const exactBanRate =
+        allSelectedGames.length > 0
+          ? clamp(profile.exactBans / allSelectedGames.length)
+          : 0
       const presenceRate = Math.max(summaryPresenceRate, exactPresenceRate)
+      const pickRate = Math.max(summaryPickRate, exactPickRate)
+      const banRate = Math.max(summaryBanRate, exactBanRate)
+      const firstBanRate =
+        allSelectedGames.length > 0
+          ? profile.exactFirstBans / allSelectedGames.length
+          : 0
+      const earlyBanRate =
+        allSelectedGames.length > 0
+          ? profile.exactEarlyBans / allSelectedGames.length
+          : 0
+      const timedGames = profile.earlyGames + profile.lateGames
+      const earlyShare = (profile.earlyGames + 2) / (timedGames + 4)
+      const lateShare = (profile.lateGames + 2) / (timedGames + 4)
+      const earlyWinRate =
+        (profile.earlyWins + 2) / (profile.earlyGames + 4)
+      const lateWinRate = (profile.lateWins + 2) / (profile.lateGames + 4)
 
       return {
         key,
@@ -483,27 +584,33 @@ export function buildDraftCoachModel(
         summaryWins: profile.summaryWins,
         summaryBans: profile.summaryBans,
         presenceRate,
+        pickRate,
+        banRate,
         exactGames: profile.exactGames,
         exactBans: profile.exactBans,
+        exactFirstBans: profile.exactFirstBans,
+        exactEarlyBans: profile.exactEarlyBans,
         exactWins: profile.exactWins,
+        firstBanRate,
+        earlyBanRate,
         laneGames: profile.laneGames,
         laneRates,
         primaryLane,
         flexLanes,
+        patchLanes: patchMeta?.lanes ?? [],
+        patchMetaTier: patchMeta?.tier ?? null,
+        patchMetaScore: patchMeta?.score ?? 0,
         earlyScore:
-          profile.timedWins > 0
-            ? profile.earlyWins / profile.timedWins
-            : 0.5,
+          timedGames > 0 ? clamp(earlyShare * 0.55 + earlyWinRate * 0.45) : 0.5,
         scalingScore:
-          profile.timedWins > 0
-            ? profile.lateWins / profile.timedWins
-            : 0.5,
+          timedGames > 0 ? clamp(lateShare * 0.55 + lateWinRate * 0.45) : 0.5,
       }
     })
     .sort(
       (a, b) =>
         b.presenceRate - a.presenceRate ||
         b.summaryPicks - a.summaryPicks ||
+        b.patchMetaScore - a.patchMetaScore ||
         a.hero.name.localeCompare(b.hero.name),
     )
 
@@ -549,16 +656,33 @@ function selectedKeys(values: string[]): string[] {
   return values.map(heroKey)
 }
 
-const MIN_LANE_FIT = 0.16
+export const MIN_LANE_FIT = 0.16
 
 function coveredLanes(
   model: DraftCoachModel,
   picks: string[],
+  assignedLanes: DraftLane[] = [],
 ): Set<DraftLane> {
-  const profiles = selectedKeys(picks)
-    .map((key) => model.heroByKey[key])
-    .filter((profile): profile is DraftCoachHeroProfile => Boolean(profile))
-  let bestLanes = new Set<DraftLane>()
+  const profiles = selectedKeys(picks).flatMap((key, index) => {
+    const profile = model.heroByKey[key]
+    return profile ? [{ profile, assignedLane: assignedLanes[index] }] : []
+  })
+  const lockedLanes = new Set<DraftLane>()
+  const unlockedProfiles: DraftCoachHeroProfile[] = []
+
+  for (const { profile, assignedLane } of profiles) {
+    if (
+      assignedLane &&
+      !lockedLanes.has(assignedLane) &&
+      profile.laneRates[assignedLane] >= MIN_LANE_FIT
+    ) {
+      lockedLanes.add(assignedLane)
+    } else {
+      unlockedProfiles.push(profile)
+    }
+  }
+
+  let bestLanes = new Set<DraftLane>(lockedLanes)
   let bestAssigned = -1
   let bestRate = -1
 
@@ -568,7 +692,7 @@ function coveredLanes(
     assigned: number,
     rate: number,
   ) {
-    if (index >= profiles.length) {
+    if (index >= unlockedProfiles.length) {
       if (
         assigned > bestAssigned ||
         (assigned === bestAssigned && rate > bestRate)
@@ -582,7 +706,7 @@ function coveredLanes(
 
     assign(index + 1, lanes, assigned, rate)
     for (const lane of DRAFT_LANES) {
-      const laneRate = profiles[index].laneRates[lane]
+      const laneRate = unlockedProfiles[index].laneRates[lane]
       if (lanes.has(lane) || laneRate < MIN_LANE_FIT) continue
       lanes.add(lane)
       assign(index + 1, lanes, assigned + 1, rate + laneRate)
@@ -590,24 +714,26 @@ function coveredLanes(
     }
   }
 
-  assign(0, new Set<DraftLane>(), 0, 0)
+  assign(0, new Set<DraftLane>(lockedLanes), 0, 0)
   return bestLanes
 }
 
 export function openDraftLanes(
   model: DraftCoachModel,
   picks: string[],
+  assignedLanes: DraftLane[] = [],
 ): DraftLane[] {
-  const covered = coveredLanes(model, picks)
+  const covered = coveredLanes(model, picks, assignedLanes)
   return DRAFT_LANES.filter((lane) => !covered.has(lane))
 }
 
 export function nextSuggestedLane(
   model: DraftCoachModel,
   picks: string[],
+  assignedLanes: DraftLane[] = [],
 ): DraftLane | null {
   if (picks.length < 4) return null
-  const open = openDraftLanes(model, picks)
+  const open = openDraftLanes(model, picks, assignedLanes)
   return open.length === 1 ? open[0] : null
 }
 
@@ -615,10 +741,11 @@ function laneFit(
   hero: DraftCoachHeroProfile,
   model: DraftCoachModel,
   picks: string[],
+  assignedLanes: DraftLane[],
   requested: DraftLane | null,
 ): number {
   if (requested) return hero.laneRates[requested]
-  const open = openDraftLanes(model, picks)
+  const open = openDraftLanes(model, picks, assignedLanes)
   const candidates = open.length > 0 ? open : [...DRAFT_LANES]
   return Math.max(...candidates.map((lane) => hero.laneRates[lane]), 0)
 }
@@ -627,21 +754,34 @@ function bestOpenLane(
   model: DraftCoachModel,
   hero: DraftCoachHeroProfile,
   picks: string[],
+  assignedLanes: DraftLane[] = [],
 ): DraftLane | null {
-  const lanes = openDraftLanes(model, picks)
+  const lanes = openDraftLanes(model, picks, assignedLanes)
   const best = [...lanes].sort(
     (first, second) => hero.laneRates[second] - hero.laneRates[first],
   )[0]
   return best && hero.laneRates[best] >= MIN_LANE_FIT ? best : null
 }
 
+/** Lock a manual or recommended hero into its strongest still-open role. */
+export function suggestedLaneForHero(
+  model: DraftCoachModel,
+  heroValue: string,
+  picks: string[],
+  assignedLanes: DraftLane[] = [],
+): DraftLane | null {
+  const profile = model.heroByKey[heroKey(heroValue)]
+  return profile ? bestOpenLane(model, profile, picks, assignedLanes) : null
+}
+
 function diversePickRecommendations(
   model: DraftCoachModel,
   ranked: DraftRecommendation[],
   picks: string[],
+  assignedLanes: DraftLane[],
   limit: number,
 ): DraftRecommendation[] {
-  const open = openDraftLanes(model, picks)
+  const open = openDraftLanes(model, picks, assignedLanes)
   const selected: DraftRecommendation[] = []
   const selectedHeroes = new Set<string>()
   const selectedLanes = new Set<DraftLane>()
@@ -677,7 +817,9 @@ function diversePickRecommendations(
     const key = heroKey(recommendation.hero.id)
     if (selectedHeroes.has(key)) continue
     const profile = model.heroByKey[key]
-    const lane = profile ? bestOpenLane(model, profile, picks) : null
+    const lane = profile
+      ? bestOpenLane(model, profile, picks, assignedLanes)
+      : null
     if (!lane && open.length > 0) continue
     selected.push({ ...recommendation, suggestedLane: lane })
     selectedHeroes.add(key)
@@ -745,11 +887,13 @@ export function recommendDraftHeroes(
       ...options.state.enemyPicks,
       ...options.state.allyBans,
       ...options.state.enemyBans,
+      ...(options.excludeHeroes ?? []),
     ]),
   )
   const allyTeam = teamBySlug(model, options.allyTeamPageSlug)
   const enemyTeam = teamBySlug(model, options.enemyTeamPageSlug)
   const targetLane = options.targetLane ?? null
+  const allyPickLanes = options.state.allyPickLanes ?? []
 
   const ranked = model.heroes
     .filter((profile) => !used.has(profile.key))
@@ -759,11 +903,39 @@ export function recommendDraftHeroes(
         wins: profile.exactWins,
       }
       const winRate = smoothedRate(exactMetric)
-      const meta = clamp(profile.presenceRate * 0.62 + winRate * 0.38)
-      const role = laneFit(profile, model, options.state.allyPicks, targetLane)
+      const hasCurrentProEvidence =
+        profile.summaryPicks +
+          profile.summaryBans +
+          profile.exactGames +
+          profile.exactBans >
+        0
+      const proMeta =
+        options.kind === 'ban'
+          ? clamp(
+              profile.banRate * 0.58 +
+                profile.presenceRate * 0.22 +
+                winRate * 0.2,
+            )
+          : clamp(profile.pickRate * 0.62 + winRate * 0.38)
+      const meta = hasCurrentProEvidence
+        ? clamp(proMeta * 0.92 + profile.patchMetaScore * 0.08)
+        : clamp(profile.patchMetaScore * 0.7)
+      const role = laneFit(
+        profile,
+        model,
+        options.state.allyPicks,
+        allyPickLanes,
+        targetLane,
+      )
       const suggestedLane =
         options.kind === 'pick'
-          ? targetLane ?? bestOpenLane(model, profile, options.state.allyPicks)
+          ? targetLane ??
+            bestOpenLane(
+              model,
+              profile,
+              options.state.allyPicks,
+              allyPickLanes,
+            )
           : null
       const synergy = averageMetrics(
         allyKeys.map((ally) => model.synergy[pairKey(profile.key, ally)]),
@@ -790,6 +962,15 @@ export function recommendDraftHeroes(
           : options.plan === 'scaling'
             ? profile.scalingScore
             : 0.5
+      const banPace =
+        options.plan === 'scaling'
+          ? profile.earlyScore
+          : options.plan === 'early'
+            ? profile.scalingScore
+            : 0.5
+      const firstBanPriority = clamp(
+        profile.earlyBanRate * 0.72 + profile.firstBanRate * 0.28,
+      )
 
       let rawScore: number
       let relevantSample: number
@@ -797,12 +978,21 @@ export function recommendDraftHeroes(
 
       if (options.kind === 'ban') {
         const threat = reverseThreat.games > 0 ? reverseThreat.rate : meta
-        rawScore =
-          meta * 0.28 +
-          threat * 0.25 +
-          enemySynergy.rate * 0.14 +
-          enemyComfort.rate * 0.25 +
-          enemyBan.rate * 0.08
+        rawScore = options.phase === 2
+          ? meta * 0.16 +
+            firstBanPriority * 0.08 +
+            threat * 0.27 +
+            enemySynergy.rate * 0.15 +
+            enemyComfort.rate * 0.14 +
+            enemyBan.rate * 0.04 +
+            banPace * 0.16
+          : meta * 0.2 +
+            firstBanPriority * 0.23 +
+            threat * 0.15 +
+            enemySynergy.rate * 0.09 +
+            enemyComfort.rate * 0.11 +
+            enemyBan.rate * 0.04 +
+            banPace * 0.18
         relevantSample =
           profile.exactGames +
           profile.exactBans +
@@ -834,22 +1024,29 @@ export function recommendDraftHeroes(
         teamRate = comfort.games > 0 ? comfort.rate : null
       }
 
-      // A hero absent from the selected pro sample remains selectable, but a
-      // thin sample can never outrank strongly observed current-meta options.
-      if (
-        profile.summaryPicks +
-          profile.summaryBans +
-          profile.exactGames +
-          profile.exactBans ===
-        0
-      ) {
-        rawScore *= 0.78
-      }
+      // Patch data can surface a newly relevant hero before the first pro
+      // appearance, while keeping exact current-season evidence dominant.
+      if (!hasCurrentProEvidence) rawScore *= 0.86
       if (options.kind === 'pick' && role < MIN_LANE_FIT) rawScore *= 0.45
       if (targetLane && role < MIN_LANE_FIT) rawScore *= 0.55
 
       const reasons: RecommendationReason[] = []
       if (options.kind === 'ban') {
+        addReason(
+          reasons,
+          'firstBanPriority',
+          profile.exactEarlyBans >= 2 && profile.earlyBanRate >= 0.08,
+        )
+        addReason(
+          reasons,
+          'antiEarly',
+          options.plan === 'scaling' && profile.earlyScore >= 0.54,
+        )
+        addReason(
+          reasons,
+          'antiScaling',
+          options.plan === 'early' && profile.scalingScore >= 0.54,
+        )
         addReason(reasons, 'denyComfort', enemyComfort.games >= 2)
         addReason(reasons, 'counter', reverseThreat.games >= 3 && reverseThreat.rate >= 0.54)
         addReason(reasons, 'synergy', enemySynergy.games >= 3 && enemySynergy.rate >= 0.54)
@@ -862,7 +1059,19 @@ export function recommendDraftHeroes(
         addReason(reasons, 'early', options.plan === 'early' && profile.earlyScore >= 0.58)
         addReason(reasons, 'scaling', options.plan === 'scaling' && profile.scalingScore >= 0.58)
       }
-      addReason(reasons, 'meta', profile.presenceRate >= 0.38)
+      addReason(
+        reasons,
+        'meta',
+        options.kind === 'ban'
+          ? profile.banRate >= 0.24
+          : profile.pickRate >= 0.24,
+      )
+      addReason(
+        reasons,
+        'patchMeta',
+        profile.patchMetaScore >= 0.59 &&
+          (!hasCurrentProEvidence || profile.patchMetaTier === 'SS'),
+      )
       addReason(reasons, 'winRate', profile.exactGames >= 4 && winRate >= 0.54)
       addReason(reasons, 'limitedSample', relevantSample < 5)
 
@@ -875,7 +1084,13 @@ export function recommendDraftHeroes(
         primaryLane: profile.primaryLane,
         suggestedLane,
         flexLanes: profile.flexLanes,
+        patchMetaTier: profile.patchMetaTier,
+        patchMetaScore: profile.patchMetaScore,
         presenceRate: profile.presenceRate,
+        pickRate: profile.pickRate,
+        banRate: profile.banRate,
+        firstBanRate: profile.firstBanRate,
+        earlyBanRate: profile.earlyBanRate,
         winRate,
         matchupRate: counter.games > 0 ? counter.rate : null,
         matchupGames: counter.games,
@@ -899,6 +1114,7 @@ export function recommendDraftHeroes(
       model,
       ranked,
       options.state.allyPicks,
+      allyPickLanes,
       limit,
     )
   }
@@ -938,6 +1154,73 @@ export function counterPicksByRole(
       ? [{ lane, recommendation, observed: recommendation.matchupGames > 0 }]
       : []
   })
+}
+
+/**
+ * Rank observed two-pick packages for consecutive draft turns. Both heroes
+ * must occupy different still-open roles, and the pair must have appeared
+ * together in a complete current-season pro game.
+ */
+export function recommendDraftDuos(
+  model: DraftCoachModel,
+  options: Omit<RecommendationOptions, 'kind' | 'targetLane' | 'limit'> & {
+    limit?: number
+  },
+): DraftDuoRecommendation[] {
+  const candidates = recommendDraftHeroes(model, {
+    ...options,
+    kind: 'pick',
+    targetLane: null,
+    limit: model.heroes.length,
+  }).slice(0, 36)
+  const duos: DraftDuoRecommendation[] = []
+
+  for (let firstIndex = 0; firstIndex < candidates.length; firstIndex += 1) {
+    const first = candidates[firstIndex]
+    if (!first.suggestedLane) continue
+    for (
+      let secondIndex = firstIndex + 1;
+      secondIndex < candidates.length;
+      secondIndex += 1
+    ) {
+      const second = candidates[secondIndex]
+      if (
+        !second.suggestedLane ||
+        first.suggestedLane === second.suggestedLane
+      ) {
+        continue
+      }
+      const metric =
+        model.synergy[
+          pairKey(heroKey(first.hero.id), heroKey(second.hero.id))
+        ]
+      if (!metric || metric.games === 0) continue
+      const winRate = smoothedRate(metric)
+      const includesMid =
+        first.suggestedLane === 'mid' || second.suggestedLane === 'mid'
+      const score =
+        (first.score + second.score) * 0.38 +
+        winRate * 22 +
+        Math.min(metric.games, 10) * 0.8 +
+        (includesMid ? 4 : 0)
+      duos.push({
+        first,
+        second,
+        games: metric.games,
+        winRate,
+        score: Math.round(score),
+      })
+    }
+  }
+
+  return duos
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        b.games - a.games ||
+        a.first.hero.name.localeCompare(b.first.hero.name),
+    )
+    .slice(0, options.limit ?? 3)
 }
 
 /** Tournament-style 3-ban/3-pick/2-ban/2-pick practice sequence. */

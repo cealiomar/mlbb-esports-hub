@@ -61,6 +61,22 @@ describe('parseDraftSeries', () => {
   it('ignores unplayed map placeholders', () => {
     expect(series[0].games.some((game) => game.number === 3)).toBe(false)
   })
+
+  it('extracts a map after a piped team link in Philippines comments', () => {
+    const philippines = parseDraftSeries(
+      `{{Match
+        |opponent1={{TeamOpponent|Aurora PH}}
+        |opponent2={{TeamOpponent|ONIC Philippines}}
+        |map1={{Map
+          |winner=2 |comment=[[Aurora Gaming PH|'''RORA''']] picked <b>Flying Cloud</b>
+          |t1h1=alice |t2h1=barats |t1b1=selena |t2b1=freya
+        }}
+      }}`,
+      { ...context, regionSlug: 'philippines' },
+    )
+
+    expect(philippines[0].games[0].mapName).toBe('Flying Cloud')
+  })
 })
 
 describe('parseDraftSummary', () => {

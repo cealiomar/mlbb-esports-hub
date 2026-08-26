@@ -58,6 +58,7 @@ function extractTemplates(source: string, name: string): string[] {
 function splitParams(body: string): string[] {
   const parts: string[] = []
   let depth = 0
+  let linkDepth = 0
   let current = ''
 
   for (let index = 0; index < body.length; index += 1) {
@@ -69,7 +70,15 @@ function splitParams(body: string): string[] {
       depth -= 1
       current += '}}'
       index += 1
-    } else if (body[index] === '|' && depth === 0) {
+    } else if (body.startsWith('[[', index)) {
+      linkDepth += 1
+      current += '[['
+      index += 1
+    } else if (body.startsWith(']]', index)) {
+      linkDepth = Math.max(0, linkDepth - 1)
+      current += ']]'
+      index += 1
+    } else if (body[index] === '|' && depth === 0 && linkDepth === 0) {
       parts.push(current)
       current = ''
     } else {
@@ -165,6 +174,15 @@ function plainText(value: string | null): string | null {
   return text || null
 }
 
+function draftMapName(value: string | null): string | null {
+  const text = plainText(value)
+  if (!text) return null
+  const match = text.match(
+    /\b(Broken Walls|Dangerous Grass|Expanding Rivers|Flying Cloud)\b/i,
+  )
+  return match ? titleCase(match[1].toLowerCase()) : null
+}
+
 const MONTHS: Record<string, number> = {
   january: 1,
   february: 2,
@@ -235,7 +253,7 @@ function readGame(body: string, number: number): DraftGame | null {
     number,
     winner: winner(namedParam(params, 'winner')),
     durationSeconds: durationSeconds(namedParam(params, 'length')),
-    mapName: plainText(namedParam(params, 'comment')),
+    mapName: draftMapName(namedParam(params, 'comment')),
     vodUrl: namedParam(params, 'vod'),
     team1Side: side(namedParam(params, 'team1side')),
     team2Side: side(namedParam(params, 'team2side')),
