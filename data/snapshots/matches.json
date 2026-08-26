@@ -1,38 +1,6 @@
 {
-  "harvestedAt": 1787730369,
+  "harvestedAt": 1787733770,
   "data": [
-    {
-      "id": "1787724000-mdl-philippines-season-8-group-stage-rawr-flca",
-      "startsAt": 1787724000,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RAWR",
-          "name": "Panthera DE",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "FLCA",
-          "name": "Team Falcons Academy",
-          "pageSlug": "Team_Falcons_Academy",
-          "logoUrl": "/teams/50px-Team_Falcons_Academy_darkmode-c2e712f7.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
-      "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
-      "regionSlug": "philippines",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_PH",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MDL_PH"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1787729400-mdl-indonesia-season-14-regular-season-trix-kage",
       "startsAt": 1787729400,
@@ -97,9 +65,9 @@
       "vodUrls": []
     },
     {
-      "id": "1787731200-mdl-philippines-season-8-group-stage-sxt-oncu",
+      "id": "1787731200-mdl-philippines-season-8-group-stage-sxt-duph",
       "startsAt": 1787731200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -107,15 +75,15 @@
           "name": "Shinori x Totch Esports",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
-          "code": "ONCU",
-          "name": "ONIC Uprising",
-          "pageSlug": "ONIC_Uprising",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
+          "code": "DUPH",
+          "name": "Dewa United PH",
+          "pageSlug": "",
+          "logoUrl": "/teams/80px-Dewa_United_PH_allmode-c707bb86.png",
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -154,7 +122,10 @@
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
+      ],
       "vodUrls": []
     },
     {
@@ -183,7 +154,10 @@
       "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
       "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_PH",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MDL_PH"
+      ],
       "vodUrls": []
     },
     {
@@ -1463,6 +1437,35 @@
       "vodUrls": []
     },
     {
+      "id": "1788022800-queen-legends-season-4-playoffs-tbd-tbd-2",
+      "startsAt": 1788022800,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "Queen Legends S4 - Playoffs",
+      "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1787724000-mlbb-academy-league-season-6-regular-season-phase-1-op-pix",
       "startsAt": 1787724000,
       "status": "completed",
@@ -1488,6 +1491,35 @@
       "tournamentName": "MAL S6 RS - Week 1",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1787724000-mdl-philippines-season-8-group-stage-rawr-flca",
+      "startsAt": 1787724000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RAWR",
+          "name": "Panthera DE",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "FLCA",
+          "name": "Team Falcons Academy",
+          "pageSlug": "Team_Falcons_Academy",
+          "logoUrl": "/teams/50px-Team_Falcons_Academy_darkmode-c2e712f7.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
+      "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
+      "regionSlug": "philippines",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2043,7 +2075,11 @@
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=tdMJVGtc7rA",
+        "https://www.youtube.com/watch?v=kUU7aM3-wzA",
+        "https://www.youtube.com/watch?v=A72J_etmePc"
+      ]
     },
     {
       "id": "1787483700-mpl-cambodia-season-11-qualifier-ne-tnr",
@@ -2196,7 +2232,10 @@
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=53yYi80fv7Y",
+        "https://www.youtube.com/watch?v=9fSQHNG8Cdo"
+      ]
     },
     {
       "id": "1787473800-league-of-champions-tournament-season-7-playoffs-df-fw",
@@ -2932,39 +2971,6 @@
       "regionSlug": "malaysia",
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1787378400-mpl-philippines-season-18-regular-season-apbr-twph",
-      "startsAt": 1787378400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "APBR",
-          "name": "AP.Bren",
-          "pageSlug": "AP.Bren",
-          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "TWPH",
-          "name": "Twisted Minds PH",
-          "pageSlug": "Twisted_Minds_PH",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 1",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/WFXBT92Wb7Y?si=hAPghS7-0_JemmRo",
-        "https://youtu.be/mQfqG9neOeI?si=8X3GG4RZqg5uVte7",
-        "https://youtu.be/x_eSCrsOUHM?si=O1WN7wXGYTChwtut"
-      ]
     }
   ]
 }
