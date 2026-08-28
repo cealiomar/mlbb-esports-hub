@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787880192,
+  "harvestedAt": 1787925425,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -424,6 +424,47 @@
           "gameLosses": 4,
           "gameDiff": -4,
           "points": 0,
+          "zone": "eliminated"
+        }
+      ]
+    },
+    {
+      "id": "myanmar-regular-season-23",
+      "regionSlug": "myanmar",
+      "leagueName": "MSL Myanmar",
+      "leaguePageSlug": "MLBB_Super_League/Myanmar/Season_4",
+      "stageName": "Regular Season",
+      "rows": [
+        {
+          "position": 1,
+          "team": {
+            "code": "MS",
+            "name": "Mythic SEAL",
+            "pageSlug": "Mythic_SEAL",
+            "logoUrl": "/teams/50px-Mythic_Seal_allmode-c6d031ba.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 1,
+          "gameDiff": 1,
+          "points": null,
+          "zone": "advance"
+        },
+        {
+          "position": 10,
+          "team": {
+            "code": "AE",
+            "name": "AI Esports",
+            "pageSlug": "AI_Esports",
+            "logoUrl": "/teams/50px-J_27DAI_2026_allmode-5eb1b722.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 1,
+          "gameLosses": 2,
+          "gameDiff": -1,
+          "points": null,
           "zone": "eliminated"
         }
       ]
