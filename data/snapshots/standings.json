@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787925425,
+  "harvestedAt": 1787959885,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -438,6 +438,22 @@
         {
           "position": 1,
           "team": {
+            "code": "FE",
+            "name": "Falcon Esports",
+            "pageSlug": "Falcon_Esports",
+            "logoUrl": "/teams/48px-Falcon_Esports_Myanmar_allmode-7ced0a37.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 1,
+          "gameDiff": 1,
+          "points": null,
+          "zone": "advance"
+        },
+        {
+          "position": 1,
+          "team": {
             "code": "MS",
             "name": "Mythic SEAL",
             "pageSlug": "Mythic_SEAL",
@@ -452,12 +468,60 @@
           "zone": "advance"
         },
         {
-          "position": 10,
+          "position": 1,
+          "team": {
+            "code": "T7",
+            "name": "Team 7",
+            "pageSlug": "Team_7",
+            "logoUrl": "/teams/63px-Team_7_2024_allmode-25d48748.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 1,
+          "gameDiff": 1,
+          "points": null,
+          "zone": "playoff"
+        },
+        {
+          "position": 8,
           "team": {
             "code": "AE",
             "name": "AI Esports",
             "pageSlug": "AI_Esports",
             "logoUrl": "/teams/50px-J_27DAI_2026_allmode-5eb1b722.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 1,
+          "gameLosses": 2,
+          "gameDiff": -1,
+          "points": null,
+          "zone": "neutral"
+        },
+        {
+          "position": 8,
+          "team": {
+            "code": "PAL",
+            "name": "Paladins",
+            "pageSlug": "Paladins",
+            "logoUrl": "/teams/50px-Paladins_2025_allmode-9ded351e.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 1,
+          "gameLosses": 2,
+          "gameDiff": -1,
+          "points": null,
+          "zone": "eliminated"
+        },
+        {
+          "position": 8,
+          "team": {
+            "code": "TS",
+            "name": "Team Secret",
+            "pageSlug": "Team_Secret",
+            "logoUrl": "/teams/100px-Team_Secret_darkmode-d119a2cd.png"
           },
           "matchWins": 0,
           "matchLosses": 1,
