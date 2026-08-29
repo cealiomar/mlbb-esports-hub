@@ -1,25 +1,25 @@
 {
-  "harvestedAt": 1787959553,
+  "harvestedAt": 1787982907,
   "data": [
     {
-      "id": "1787983200-queen-legends-season-4-playoffs-wbg-eye",
+      "id": "1787983200-queen-legends-season-4-playoffs-val-gxp",
       "startsAt": 1787983200,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "WBG",
-          "name": "Weibo Gaming",
-          "pageSlug": "Weibo_Gaming",
-          "logoUrl": "/teams/62px-Weibo_allmode-a8ba8ec3.png",
+          "code": "Val",
+          "name": "Valhalla Valkyries",
+          "pageSlug": "",
+          "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "EYE",
-          "name": "Evil Eye Serenity",
-          "pageSlug": "",
-          "logoUrl": "/teams/68px-Evil_Eye_Serenity_2025_allmode-fddc0f58.png",
+          "code": "GXP",
+          "name": "Galaxy Phoenix",
+          "pageSlug": "Galaxy_Phoenix",
+          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
           "score": null,
           "isWinner": false
         }
@@ -27,7 +27,10 @@
       "tournamentName": "Queen Legends S4 - Playoffs",
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/Queen_Legends",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/Queen_Legends"
+      ],
       "vodUrls": []
     },
     {
@@ -56,7 +59,10 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
       "vodUrls": []
     },
     {
@@ -85,7 +91,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
@@ -114,7 +123,10 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -205,24 +217,24 @@
       "vodUrls": []
     },
     {
-      "id": "1787994000-queen-legends-season-4-playoffs-val-gxp",
+      "id": "1787994000-queen-legends-season-4-playoffs-wbg-eye",
       "startsAt": 1787994000,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "Val",
-          "name": "Valhalla Valkyries",
-          "pageSlug": "",
-          "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
+          "code": "WBG",
+          "name": "Weibo Gaming",
+          "pageSlug": "Weibo_Gaming",
+          "logoUrl": "/teams/62px-Weibo_allmode-a8ba8ec3.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "GXP",
-          "name": "Galaxy Phoenix",
-          "pageSlug": "Galaxy_Phoenix",
-          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
+          "code": "EYE",
+          "name": "Evil Eye Serenity",
+          "pageSlug": "",
+          "logoUrl": "/teams/68px-Evil_Eye_Serenity_2025_allmode-fddc0f58.png",
           "score": null,
           "isWinner": false
         }
@@ -1622,7 +1634,9 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://www.youtube.com/watch?v=9pR5wEn9QYk"
+      ],
       "vodUrls": []
     },
     {
@@ -1742,7 +1756,12 @@
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/live/EWaPtqfU9Wg?si=Wt-RGhXocQTEpnKz&t=18926",
+        "https://www.youtube.com/live/EWaPtqfU9Wg?si=61y5ZoxiGmWV-fn7&t=22052",
+        "https://www.youtube.com/live/EWaPtqfU9Wg?si=jQBHxM5xbLtyhjYh&t=24048",
+        "https://www.youtube.com/live/EWaPtqfU9Wg?si=AKgB-BoWX-I1MnEf&t=27019"
+      ]
     },
     {
       "id": "1787907600-mpl-malaysia-season-18-regular-season-btrm-rey",
@@ -1800,7 +1819,10 @@
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=-hxvLwDW3N8",
+        "https://www.youtube.com/watch?v=rVeE2M2X1rU"
+      ]
     },
     {
       "id": "1787905800-mlbb-super-league-myanmar-season-4-regular-season-ai-myth",
@@ -1890,7 +1912,13 @@
       "tournamentPageSlug": "Queen_Legends/Season_4/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/live/EWaPtqfU9Wg?si=OlY4pyYIChT2O11a&t=2694",
+        "https://www.youtube.com/live/EWaPtqfU9Wg?si=LxZ4GqhSmmaKcW-E&t=4856",
+        "https://www.youtube.com/live/EWaPtqfU9Wg?si=iQ4qhowTRaR1mAcE&t=7217",
+        "https://www.youtube.com/live/EWaPtqfU9Wg?si=pptoi9eq_0jaf0j0&t=9679",
+        "https://www.youtube.com/live/EWaPtqfU9Wg?si=kSaJcqJX9YycbtfG&t=13737"
+      ]
     },
     {
       "id": "1787832000-mlbb-academy-league-season-6-regular-season-phase-1-ar-op",
