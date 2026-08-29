@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1787983236,
+  "harvestedAt": 1788006635,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -438,6 +438,22 @@
         {
           "position": 1,
           "team": {
+            "code": "YG",
+            "name": "Yangon Galacticos",
+            "pageSlug": "Yangon_Galacticos",
+            "logoUrl": "/teams/55px-Yangon_Galacticos_2021_allmode-fe9968df.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 0,
+          "gameDiff": 2,
+          "points": null,
+          "zone": "advance"
+        },
+        {
+          "position": 2,
+          "team": {
             "code": "FE",
             "name": "Falcon Esports",
             "pageSlug": "Falcon_Esports",
@@ -452,7 +468,7 @@
           "zone": "advance"
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "code": "MS",
             "name": "Mythic SEAL",
@@ -465,10 +481,10 @@
           "gameLosses": 1,
           "gameDiff": 1,
           "points": null,
-          "zone": "advance"
+          "zone": "playoff"
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "code": "T7",
             "name": "Team 7",
@@ -484,7 +500,7 @@
           "zone": "playoff"
         },
         {
-          "position": 8,
+          "position": 7,
           "team": {
             "code": "AE",
             "name": "AI Esports",
@@ -500,7 +516,7 @@
           "zone": "neutral"
         },
         {
-          "position": 8,
+          "position": 7,
           "team": {
             "code": "PAL",
             "name": "Paladins",
@@ -513,10 +529,10 @@
           "gameLosses": 2,
           "gameDiff": -1,
           "points": null,
-          "zone": "eliminated"
+          "zone": "neutral"
         },
         {
-          "position": 8,
+          "position": 7,
           "team": {
             "code": "TS",
             "name": "Team Secret",
@@ -528,6 +544,22 @@
           "gameWins": 1,
           "gameLosses": 2,
           "gameDiff": -1,
+          "points": null,
+          "zone": "eliminated"
+        },
+        {
+          "position": 10,
+          "team": {
+            "code": "DF",
+            "name": "D Family",
+            "pageSlug": "index.php?title=D_Family&action=edit&redlink=1",
+            "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 0,
+          "gameLosses": 2,
+          "gameDiff": -2,
           "points": null,
           "zone": "eliminated"
         }
