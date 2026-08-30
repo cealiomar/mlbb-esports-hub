@@ -1,102 +1,6 @@
 {
-  "harvestedAt": 1788122974,
+  "harvestedAt": 1788131675,
   "data": [
-    {
-      "id": "1788089400-mpl-philippines-season-18-regular-season-onph-omg",
-      "startsAt": 1788089400,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ONPH",
-          "name": "ONIC Philippines",
-          "pageSlug": "ONIC_Philippines",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "OMG",
-          "name": "Omega Esports",
-          "pageSlug": "Omega_Esports",
-          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1788102000-mlbb-continental-championships-season-8-regular-season-yndx-ch",
-      "startsAt": 1788102000,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "CH",
-          "name": "CyberHero",
-          "pageSlug": "CyberHero",
-          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 1",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/twitch/MLBB_CIS",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EECA_Esports"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1788109200-mlbb-continental-championships-season-8-regular-season-omnx-ts",
-      "startsAt": 1788109200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "OMNX",
-          "name": "Omnix",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TS",
-          "name": "Team Spirit",
-          "pageSlug": "Team_Spirit",
-          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 1",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/twitch/MLBB_CIS",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EECA_Esports"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1788156000-mlbb-academy-league-season-6-regular-season-phase-1-pix-srga",
       "startsAt": 1788156000,
@@ -1461,6 +1365,151 @@
       "vodUrls": []
     },
     {
+      "id": "1788768000-mlbb-academy-league-season-6-regular-season-phase-1-tbd-tbd",
+      "startsAt": 1788768000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 3",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788775200-mlbb-academy-league-season-6-regular-season-phase-1-tbd-tbd",
+      "startsAt": 1788775200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 3",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788780600-mdl-indonesia-season-14-regular-season-tbd-tbd",
+      "startsAt": 1788780600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MDL Indonesia Season 14 - Round 5",
+      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788109200-mlbb-continental-championships-season-8-regular-season-omnx-ts",
+      "startsAt": 1788109200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OMNX",
+          "name": "Omnix",
+          "pageSlug": "",
+          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "TS",
+          "name": "Team Spirit",
+          "pageSlug": "Team_Spirit",
+          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 1",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788102000-mlbb-continental-championships-season-8-regular-season-yndx-ch",
+      "startsAt": 1788102000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "CH",
+          "name": "CyberHero",
+          "pageSlug": "CyberHero",
+          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 1",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1788094800-mlbb-continental-championships-season-8-regular-season-lvl-rune",
       "startsAt": 1788094800,
       "status": "completed",
@@ -1544,6 +1593,35 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 1",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788089400-mpl-philippines-season-18-regular-season-onph-omg",
+      "startsAt": 1788089400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ONPH",
+          "name": "ONIC Philippines",
+          "pageSlug": "ONIC_Philippines",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "OMG",
+          "name": "Omega Esports",
+          "pageSlug": "Omega_Esports",
+          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2885,93 +2963,6 @@
           "logoUrl": "/teams/50px-On_Point_Esports_darkmode-8f311048.png",
           "score": 0,
           "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 1",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787830200-mdl-indonesia-season-14-regular-season-sdw-duh",
-      "startsAt": 1787830200,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "SDW",
-          "name": "Shadow Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/41px-Shadow_Esports_allmode-d42d07b0.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "DUH",
-          "name": "Dewa United Heka",
-          "pageSlug": "Dewa_United_Heka",
-          "logoUrl": "/teams/79px-Dewa_United_Heka_allmode-10ab0560.png",
-          "score": 3,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 3",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787828400-mdl-philippines-season-8-group-stage-tlaph-tmrw",
-      "startsAt": 1787828400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TLAPH",
-          "name": "Team Liquid Academy PH",
-          "pageSlug": "Team_Liquid_Academy_PH",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TMRW",
-          "name": "Twisted Minds RWE",
-          "pageSlug": "Twisted_Minds_RWE",
-          "logoUrl": "/teams/91px-Twisted_Minds_RWE_darkmode-49622833.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MDL Philippines Season 8 - Regular Season GS: Week 1",
-      "tournamentPageSlug": "MDL/Philippines/Season_8/Group_Stage",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1787824800-mlbb-academy-league-season-6-regular-season-phase-1-arc-oust",
-      "startsAt": 1787824800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ARC",
-          "name": "Borneo Arcanis Fusion Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Borneo_Arcanis_Fusion_Esports_darkmode-5299d876.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "OUST",
-          "name": "Outcast",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Outcast_MLBB_allmode-8b01027d.png",
-          "score": 2,
-          "isWinner": true
         }
       ],
       "tournamentName": "MAL S6 RS - Week 1",
