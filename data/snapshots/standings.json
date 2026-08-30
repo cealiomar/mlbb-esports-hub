@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1788077009,
+  "harvestedAt": 1788097799,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -438,6 +438,22 @@
         {
           "position": 1,
           "team": {
+            "code": "TB",
+            "name": "TEC BG",
+            "pageSlug": "TEC_BG",
+            "logoUrl": "/teams/100px-TEC_x_BG_2026_allmode-9e28ed92.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 0,
+          "gameWins": 4,
+          "gameLosses": 1,
+          "gameDiff": 3,
+          "points": null,
+          "zone": "advance"
+        },
+        {
+          "position": 2,
+          "team": {
             "code": "T7",
             "name": "Team 7",
             "pageSlug": "Team_7",
@@ -452,23 +468,7 @@
           "zone": "advance"
         },
         {
-          "position": 2,
-          "team": {
-            "code": "TB",
-            "name": "TEC BG",
-            "pageSlug": "TEC_BG",
-            "logoUrl": "/teams/100px-TEC_x_BG_2026_allmode-9e28ed92.png"
-          },
-          "matchWins": 1,
-          "matchLosses": 0,
-          "gameWins": 2,
-          "gameLosses": 0,
-          "gameDiff": 2,
-          "points": null,
-          "zone": "advance"
-        },
-        {
-          "position": 2,
+          "position": 3,
           "team": {
             "code": "YG",
             "name": "Yangon Galacticos",
@@ -518,6 +518,22 @@
         {
           "position": 6,
           "team": {
+            "code": "DF",
+            "name": "D Family",
+            "pageSlug": "index.php?title=D_Family&action=edit&redlink=1",
+            "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 2,
+          "gameLosses": 3,
+          "gameDiff": -1,
+          "points": null,
+          "zone": "neutral"
+        },
+        {
+          "position": 7,
+          "team": {
             "code": "AE",
             "name": "AI Esports",
             "pageSlug": "AI_Esports",
@@ -532,7 +548,7 @@
           "zone": "neutral"
         },
         {
-          "position": 6,
+          "position": 8,
           "team": {
             "code": "TS",
             "name": "Team Secret",
@@ -540,15 +556,15 @@
             "logoUrl": "/teams/100px-Team_Secret_darkmode-d119a2cd.png"
           },
           "matchWins": 0,
-          "matchLosses": 1,
-          "gameWins": 1,
-          "gameLosses": 2,
-          "gameDiff": -1,
+          "matchLosses": 2,
+          "gameWins": 2,
+          "gameLosses": 4,
+          "gameDiff": -2,
           "points": null,
           "zone": "neutral"
         },
         {
-          "position": 6,
+          "position": 8,
           "team": {
             "code": "WE",
             "name": "Wyverns Esports",
@@ -556,25 +572,9 @@
             "logoUrl": "/teams/45px-Wyverns_Esports_darkmode-09c29f03.png"
           },
           "matchWins": 0,
-          "matchLosses": 1,
-          "gameWins": 1,
-          "gameLosses": 2,
-          "gameDiff": -1,
-          "points": null,
-          "zone": "neutral"
-        },
-        {
-          "position": 9,
-          "team": {
-            "code": "DF",
-            "name": "D Family",
-            "pageSlug": "index.php?title=D_Family&action=edit&redlink=1",
-            "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png"
-          },
-          "matchWins": 0,
-          "matchLosses": 1,
-          "gameWins": 0,
-          "gameLosses": 2,
+          "matchLosses": 2,
+          "gameWins": 2,
+          "gameLosses": 4,
           "gameDiff": -2,
           "points": null,
           "zone": "eliminated"
