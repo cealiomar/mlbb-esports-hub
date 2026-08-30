@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1788097799,
+  "harvestedAt": 1788112956,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -438,6 +438,22 @@
         {
           "position": 1,
           "team": {
+            "code": "YG",
+            "name": "Yangon Galacticos",
+            "pageSlug": "Yangon_Galacticos",
+            "logoUrl": "/teams/55px-Yangon_Galacticos_2021_allmode-fe9968df.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 0,
+          "gameWins": 4,
+          "gameLosses": 0,
+          "gameDiff": 4,
+          "points": null,
+          "zone": "advance"
+        },
+        {
+          "position": 2,
+          "team": {
             "code": "TB",
             "name": "TEC BG",
             "pageSlug": "TEC_BG",
@@ -452,7 +468,7 @@
           "zone": "advance"
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "code": "T7",
             "name": "Team 7",
@@ -464,38 +480,6 @@
           "gameWins": 4,
           "gameLosses": 2,
           "gameDiff": 2,
-          "points": null,
-          "zone": "advance"
-        },
-        {
-          "position": 3,
-          "team": {
-            "code": "YG",
-            "name": "Yangon Galacticos",
-            "pageSlug": "Yangon_Galacticos",
-            "logoUrl": "/teams/55px-Yangon_Galacticos_2021_allmode-fe9968df.png"
-          },
-          "matchWins": 1,
-          "matchLosses": 0,
-          "gameWins": 2,
-          "gameLosses": 0,
-          "gameDiff": 2,
-          "points": null,
-          "zone": "playoff"
-        },
-        {
-          "position": 4,
-          "team": {
-            "code": "FE",
-            "name": "Falcon Esports",
-            "pageSlug": "Falcon_Esports",
-            "logoUrl": "/teams/48px-Falcon_Esports_Myanmar_allmode-7ced0a37.png"
-          },
-          "matchWins": 1,
-          "matchLosses": 0,
-          "gameWins": 2,
-          "gameLosses": 1,
-          "gameDiff": 1,
           "points": null,
           "zone": "playoff"
         },
@@ -513,15 +497,31 @@
           "gameLosses": 1,
           "gameDiff": 1,
           "points": null,
-          "zone": "neutral"
+          "zone": "playoff"
         },
         {
-          "position": 6,
+          "position": 5,
           "team": {
             "code": "DF",
             "name": "D Family",
             "pageSlug": "index.php?title=D_Family&action=edit&redlink=1",
             "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 2,
+          "gameLosses": 3,
+          "gameDiff": -1,
+          "points": null,
+          "zone": "neutral"
+        },
+        {
+          "position": 5,
+          "team": {
+            "code": "FE",
+            "name": "Falcon Esports",
+            "pageSlug": "Falcon_Esports",
+            "logoUrl": "/teams/48px-Falcon_Esports_Myanmar_allmode-7ced0a37.png"
           },
           "matchWins": 1,
           "matchLosses": 1,
