@@ -30,13 +30,24 @@ test('upcoming matches are the clear default view', async ({ page }) => {
   await expect(page.getByRole('tabpanel').locator('article').first()).toBeVisible()
 })
 
-test('match times are explicitly Cairo time and replay states are honest', async ({
+test('every fixture opens a fast, self-contained detail page', async ({ page }) => {
+  await page.goto('/en/matches/')
+  const details = page.getByRole('link', { name: 'Details' }).first()
+  await expect(details).toBeVisible()
+  await details.click()
+  await expect(page).toHaveURL(/\/en\/matches\/[^/]+\/$/)
+  await expect(page.getByRole('heading', { name: 'Match details' })).toBeVisible()
+  await expect(page.locator('.match-details-info')).toBeVisible()
+  await expect(page.locator('.match-time').first()).toContainText('Your time')
+})
+
+test('match times use the visitor timezone and replay states are honest', async ({
   page,
 }) => {
   await page.goto('/en/matches/')
 
-  await expect(page.locator('main')).toContainText('Egypt time (Cairo)')
-  await expect(page.locator('.match-time').first()).toContainText('Egypt time')
+  await expect(page.locator('main')).toContainText('local timezone')
+  await expect(page.locator('.match-time').first()).toContainText('Your time')
 
   await page.getByRole('tab', { name: /Results/ }).click()
   const replay = page.locator('.rewatch-link').first()

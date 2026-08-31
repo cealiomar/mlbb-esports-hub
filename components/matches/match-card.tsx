@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { useFormatter, useLocale, useTranslations } from 'next-intl'
 import type { Match, MatchOpponent } from '@/lib/data/types'
 import { getRegionBySlug } from '@/lib/content/regions'
@@ -183,6 +184,12 @@ export function MatchCard({
               {t('replayUnavailable')}
             </span>
           )}
+          <Link
+            href={`/${locale}/matches/${encodeURIComponent(match.id)}/`}
+            className="watch-link"
+          >
+            {t('details')}
+          </Link>
         </div>
       </article>
     </TiltCard>

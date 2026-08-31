@@ -691,6 +691,21 @@ html[data-theme='dark'] .panel {
 .match-card--compact .score-display { font-size: 1.55rem; }
 .match-card--compact::after { opacity: 0.7; }
 
+.match-details-layout { display: grid; max-width: 980px; grid-template-columns: minmax(0, 0.9fr) minmax(300px, 1.1fr); gap: 1rem; margin: 0 auto; }
+.match-details-info { display: flex; min-height: 320px; flex-direction: column; padding: 1.2rem; }
+.match-details-info__topline { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding-bottom: 0.9rem; border-bottom: 1px solid var(--line); color: var(--brand-strong); font-size: 0.72rem; font-weight: 900; }
+.match-details-status { padding: 0.28rem 0.56rem; border-radius: 999px; background: color-mix(in srgb, var(--surface-raised) 78%, transparent); color: var(--ink-muted); }
+.match-details-status--live { color: var(--brand-hot); background: color-mix(in srgb, var(--brand-hot) 12%, transparent); }
+.match-details-status--completed { color: #29985f; background: rgb(49 186 106 / 0.12); }
+.match-details-teams { display: grid; gap: 0.62rem; margin: 1rem 0; }
+.match-details-teams > div { display: grid; min-width: 0; grid-template-columns: 46px minmax(0, 1fr) auto; align-items: center; gap: 0.65rem; padding: 0.58rem; border: 1px solid var(--line); border-radius: 13px; background: color-mix(in srgb, var(--surface-raised) 58%, transparent); }
+.match-details-teams strong, .match-details-teams small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.match-details-teams strong { color: var(--ink); font-size: 0.8rem; font-weight: 950; }
+.match-details-teams small { margin-top: 0.15rem; color: var(--ink-muted); font-size: 0.6rem; font-weight: 800; }
+.match-details-teams a { color: var(--brand-strong); font-size: 0.62rem; font-weight: 900; }
+.match-details-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: auto; }
+.match-details-note { margin-top: 1rem; color: var(--ink-muted); font-size: 0.62rem; line-height: 1.65; }
+
 .replay-play {
   width: 0;
   height: 0;
@@ -3237,6 +3252,7 @@ html[data-theme='dark'] .panel {
 }
 
 @media (max-width: 760px) {
+  .match-details-layout { grid-template-columns: 1fr; }
   .draft-ranking-grid,
   .team-meta-grid { grid-template-columns: 1fr; }
   .draft-team-lab__intro { align-items: start; flex-direction: column; gap: 0.45rem; }
