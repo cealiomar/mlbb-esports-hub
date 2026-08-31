@@ -164,7 +164,7 @@ test('a manual Mage pick locks Mid in recommendations and Counter Map', async ({
   await expect(midCounter).toContainText('Role already filled')
 })
 
-test('phase-two bans target enemy open roles and the final Jungle follows pro priority', async ({
+test('phase-two bans target enemy open roles and picks rotate 1–2–1', async ({
   page,
 }) => {
   await page.goto('/en/draft-coach/')
@@ -202,24 +202,29 @@ test('phase-two bans target enemy open roles and the final Jungle follows pro pr
   ).toEqual(new Set(['Jungle', 'Gold']))
   await expect(page.locator('.coach-recommendations')).not.toContainText('Eudora')
 
+  // Complete the remaining phase-two bans. The Red side then picks once,
+  // Blue picks twice, and Red makes the final pick.
   await select('Nolan')
   await select('Kaja')
   await select('Ixia')
-  await select('Suyou')
-  await select('Brody')
-  await select('Gloo')
 
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Enemy move',
+  )
+  await select('Suyou')
   await expect(page.locator('.coach-arena__topbar')).toContainText(
     'PICK · Our move',
   )
-  await expect(page.locator('.coach-role-readout')).toContainText('Jungle')
-  await expect(page.locator('.coach-recommendation').first()).toContainText(
-    'Harley',
+  await select('Brody')
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Our move',
   )
-  await expect(page.locator('.coach-recommendation').first()).toContainText(
-    'Frequent pro pick',
+  await select('Gloo')
+  await expect(page.locator('.coach-arena__topbar')).toContainText(
+    'PICK · Enemy move',
   )
-  await expect(page.getByTitle(/^Harley ·/).locator('b')).toHaveText('Pick 17%')
+  await page.locator('.coach-recommendation').first().click()
+  await expect(page.locator('.coach-arena__topbar')).toContainText('Draft complete')
 })
 
 test('a complete practice draft records five unique roles per team', async ({

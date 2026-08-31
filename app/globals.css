@@ -2208,6 +2208,13 @@ html[data-theme='dark'] .panel {
 .draft-game__result--loss { color: #d64d55; background: rgb(232 93 93 / 0.12); }
 .draft-game__side--blue { color: #347fe4; background: rgb(52 127 228 / 0.12); }
 .draft-game__side--red { color: #db4f59; background: rgb(219 79 89 / 0.12); }
+.draft-game__sides { display: flex; flex-wrap: wrap; gap: 0.55rem; margin: -0.25rem 0 0.85rem; }
+.draft-game__team-side { display: inline-flex; min-width: min(100%, 180px); align-items: center; gap: 0.38rem; padding: 0.32rem 0.48rem; border: 1px solid var(--line); border-radius: 10px; background: color-mix(in srgb, var(--surface-raised) 72%, transparent); }
+.draft-game__team-side .team-crest-image, .draft-game__team-side .team-crest-fallback { flex: none; border-radius: 8px; }
+.draft-game__team-side small { font-size: 0.55rem; font-weight: 900; white-space: nowrap; }
+.draft-game__team-side strong { overflow: hidden; font-size: 0.66rem; font-weight: 900; text-overflow: ellipsis; white-space: nowrap; }
+.draft-game__team-side--blue small { color: #347fe4; }
+.draft-game__team-side--red small { color: #db4f59; }
 .draft-game__row { display: grid; grid-template-columns: 50px minmax(0, 1fr); align-items: start; gap: 0.8rem; }
 .draft-game__row + .draft-game__row { margin-top: 0.8rem; }
 .draft-game__row > b { padding-top: 0.55rem; color: #279860; font-size: 0.62rem; font-weight: 950; text-transform: uppercase; }
@@ -3293,6 +3300,8 @@ html[data-theme='dark'] .panel {
   .draft-series__mvp { font-size: 0.55rem; }
   .draft-game { padding: 0.8rem 0.7rem; }
   .draft-game__row { grid-template-columns: 42px minmax(0, 1fr); gap: 0.5rem; }
+  .draft-game__sides { display: grid; grid-template-columns: 1fr; gap: 0.35rem; }
+  .draft-game__team-side { min-width: 0; }
   .draft-game__heroes li { min-width: 0; }
   .draft-game__heroes li > span { display: none; }
 }
@@ -3369,7 +3378,7 @@ html[data-theme='dark'] .panel {
   animation: rise 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: var(--reveal-delay, 0ms);
 }
-.reveal-on-scroll { opacity: 0; }
+.reveal-on-scroll { opacity: 1; }
 .reveal-on-scroll[data-in-view='true'] {
   animation: rise 0.72s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: var(--reveal-delay, 0ms);

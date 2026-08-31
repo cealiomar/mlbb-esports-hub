@@ -1490,9 +1490,12 @@ export function proDraftFlow(allyFirstPick: boolean): DraftAction[] {
     { side: blue, kind: 'ban', phase: 2 },
     { side: red, kind: 'ban', phase: 2 },
     { side: blue, kind: 'ban', phase: 2 },
-    { side: red, kind: 'pick', phase: 2 },
+    // Phase two follows the official 1–2–1 sequence: the side that opens
+    // this phase locks one hero, the other side locks two, then the opener
+    // makes the final pick.
     { side: red, kind: 'pick', phase: 2 },
     { side: blue, kind: 'pick', phase: 2 },
     { side: blue, kind: 'pick', phase: 2 },
+    { side: red, kind: 'pick', phase: 2 },
   ]
 }

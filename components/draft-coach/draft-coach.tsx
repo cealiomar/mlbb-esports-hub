@@ -11,7 +11,6 @@ import {
   DRAFT_LANES,
   DRAFT_PLANS,
   heroKey,
-  MIN_LANE_FIT,
   nextSuggestedLane,
   openDraftLanes,
   proDraftFlow,
@@ -430,19 +429,27 @@ export function DraftCoach({
     setCounterTarget('')
   }
 
-  function selectHero(value: string, lane?: DraftLane | null) {
+  function selectHero(
+    value: string,
+    lane?: DraftLane | null,
+    allowAnyRole = false,
+  ) {
     if (!currentAction || used.has(heroKey(value))) return
     const field = stateField(currentAction)
     if (currentAction.kind === 'pick') {
-      const selectedLane =
-        lane ??
-        suggestedLaneForHero(
-          model,
-          value,
-          activePerspective.allyPicks,
-          activePerspective.allyPickLanes,
-        )
-      if (!selectedLane || !openLanes.includes(selectedLane)) return
+      const profile = heroFromModel(model, value)
+      const recommendedLane = suggestedLaneForHero(
+        model,
+        value,
+        activePerspective.allyPicks,
+        activePerspective.allyPickLanes,
+      )
+      // Recommendation cards always obey composition coverage. The hero pool
+      // intentionally permits free-form practice, including off-role tests.
+      const selectedLane = allowAnyRole
+        ? lane ?? profile?.primaryLane ?? recommendedLane ?? openLanes[0] ?? 'exp'
+        : lane ?? recommendedLane
+      if (!selectedLane || (!allowAnyRole && !openLanes.includes(selectedLane))) return
       const laneField = pickLaneField(currentAction.side)
       setDraft((current) => ({
         ...current,
@@ -514,6 +521,9 @@ export function DraftCoach({
   }
 
   function reasonLabel(reason: RecommendationReason): string {
+    if (reason === 'lane' && currentAction?.side === 'enemy') {
+      return t('reasons.enemyLane')
+    }
     return t(`reasons.${reason}`)
   }
 
@@ -733,7 +743,11 @@ export function DraftCoach({
                 {currentAction.kind === 'pick' && openLanes.length > 0 && (
                   <div className="coach-role-readout">
                     <strong>
-                      {automaticLane ? t('requiredRole') : t('openRoles')}
+                      {automaticLane
+                        ? currentAction.side === 'ally'
+                          ? t('requiredRole')
+                          : t('enemyRequiredRole')
+                        : t('openRoles')}
                     </strong>
                     <span>
                       {(automaticLane ? [automaticLane] : openLanes).map(
@@ -1055,14 +1069,10 @@ export function DraftCoach({
                   : poolMetric > 0
                     ? `${Math.round(poolMetric * 100)}%`
                     : profile.patchMetaTier ?? '—'
-            const filteredLane =
-              poolLane !== 'all' &&
-              openLanes.includes(poolLane) &&
-              profile.laneRates[poolLane] >= MIN_LANE_FIT
-                ? poolLane
-                : null
+            const filteredLane = poolLane !== 'all' ? poolLane : null
             const manualLane = currentAction?.kind === 'pick'
               ? filteredLane ??
+                profile.primaryLane ??
                 suggestedLaneForHero(
                   model,
                   profile.key,
@@ -1072,15 +1082,14 @@ export function DraftCoach({
               : null
             const disabled =
               used.has(profile.key) ||
-              !currentAction ||
-              (currentAction.kind === 'pick' && !manualLane)
+              !currentAction
             return (
               <button
                 key={profile.key}
                 type="button"
                 disabled={disabled}
                 data-used={used.has(profile.key) || undefined}
-                onClick={() => selectHero(profile.key, manualLane)}
+                onClick={() => selectHero(profile.key, manualLane, true)}
                 title={`${profile.hero.name} · ${laneLabel(profile.primaryLane)}`}
               >
                 <HeroIcon hero={profile.hero} imageUrl={profile.imageUrl} size={52} />

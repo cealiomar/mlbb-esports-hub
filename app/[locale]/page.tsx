@@ -12,6 +12,7 @@ import { FreshnessBadge } from '@/components/ui/freshness-badge'
 import { SectionHeader } from '@/components/ui/section-header'
 import { Reveal } from '@/components/ui/reveal'
 import { Tabs } from '@/components/ui/tabs'
+import { SiteIntro } from '@/components/ui/site-intro'
 import { routing } from '@/i18n/routing'
 import { getRegions } from '@/lib/content/regions'
 import { BUILD_UNIX_TIME } from '@/lib/time/build'
@@ -77,6 +78,7 @@ export default async function HomePage({
 
   return (
     <main>
+      <SiteIntro />
       <Hero
         liveCount={live.length}
         matchCount={all.length}

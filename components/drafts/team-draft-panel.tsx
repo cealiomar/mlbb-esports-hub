@@ -36,7 +36,7 @@ function formatSeriesDate(
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-    timeZone: 'Africa/Cairo',
+    timeZone: locale === 'ar' ? 'Asia/Riyadh' : 'UTC',
   }).format(date)
 }
 
@@ -244,7 +244,15 @@ export function TeamDraftPanel({
               </summary>
 
               <div className="draft-series__games">
-                {games.map(({ game, side, won, picks, bans }) => (
+                {games.map(({ game, side, won, picks, bans }) => {
+                  const blueIsTeam1 = game.team1Side === 'blue'
+                  const redIsTeam1 = game.team1Side === 'red'
+                  const blueTeam = blueIsTeam1 ? series.team1 : series.team2
+                  const redTeam = redIsTeam1 ? series.team1 : series.team2
+                  const blueVisual = blueIsTeam1 ? team1Visual : team2Visual
+                  const redVisual = redIsTeam1 ? team1Visual : team2Visual
+
+                  return (
                 <article key={game.number} className="draft-game">
                   <header>
                     <strong>{t('gameNumber', { number: game.number })}</strong>
@@ -274,16 +282,32 @@ export function TeamDraftPanel({
                     )}
                   </header>
 
+                  {game.team1Side && game.team2Side && (
+                    <div className="draft-game__sides" aria-label={t('sidesLabel')}>
+                      <span className="draft-game__team-side draft-game__team-side--blue">
+                        <TeamCrest team={blueVisual} size={26} />
+                        <small>{t('blueSide')}</small>
+                        <strong>{blueTeam.name}</strong>
+                      </span>
+                      <span className="draft-game__team-side draft-game__team-side--red">
+                        <TeamCrest team={redVisual} size={26} />
+                        <small>{t('redSide')}</small>
+                        <strong>{redTeam.name}</strong>
+                      </span>
+                    </div>
+                  )}
+
                   <div className="draft-game__row">
-                    <b>{t('picks')}</b>
+                    <b>{t('teamPicks', { team: profile.team.name })}</b>
                     <HeroStrip heroes={picks} heroImages={heroImages} />
                   </div>
                   <div className="draft-game__row draft-game__row--bans">
-                    <b>{t('bans')}</b>
+                    <b>{t('teamBans', { team: profile.team.name })}</b>
                     <HeroStrip heroes={bans} heroImages={heroImages} />
                   </div>
                 </article>
-                ))}
+                  )
+                })}
               </div>
             </details>
           )

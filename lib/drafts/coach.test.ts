@@ -211,5 +211,18 @@ describe('draft coach model', () => {
     expect(flow.filter((step) => step.kind === 'ban')).toHaveLength(10)
     expect(flow.filter((step) => step.kind === 'pick')).toHaveLength(10)
     expect(flow[6]).toMatchObject({ side: 'ally', kind: 'pick' })
+    expect(flow.slice(-4)).toEqual([
+      { side: 'enemy', kind: 'pick', phase: 2 },
+      { side: 'ally', kind: 'pick', phase: 2 },
+      { side: 'ally', kind: 'pick', phase: 2 },
+      { side: 'enemy', kind: 'pick', phase: 2 },
+    ])
+
+    expect(proDraftFlow(false).slice(-4)).toEqual([
+      { side: 'ally', kind: 'pick', phase: 2 },
+      { side: 'enemy', kind: 'pick', phase: 2 },
+      { side: 'enemy', kind: 'pick', phase: 2 },
+      { side: 'ally', kind: 'pick', phase: 2 },
+    ])
   })
 })

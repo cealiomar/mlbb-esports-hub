@@ -1,8 +1,10 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import { useFormatter, useLocale, useTranslations } from 'next-intl'
 import type { Match, MatchOpponent } from '@/lib/data/types'
 import { getRegionBySlug } from '@/lib/content/regions'
 import { replayUrl } from '@/lib/matches/replay'
-import { EGYPT_TIME_ZONE } from '@/lib/time/egypt'
 import { TiltCard } from '@/components/ui/tilt-card'
 import { TeamCrest } from './team-crest'
 
@@ -67,6 +69,20 @@ export function MatchCard({
   const startsAt = new Date(match.startsAt * 1000)
   const region = match.regionSlug ? getRegionBySlug(match.regionSlug) : undefined
   const localeKey = locale === 'ar' ? 'ar' : 'en'
+  // The initial zone is stable during SSR. After hydration we prefer the
+  // visitor's device zone, so every fixture uses the time they actually see.
+  const fallbackTimeZone = locale === 'ar' ? 'Asia/Riyadh' : 'UTC'
+  const [timeZone, setTimeZone] = useState(fallbackTimeZone)
+  useEffect(() => {
+    const detected = Intl.DateTimeFormat().resolvedOptions().timeZone
+    if (detected) setTimeZone(detected)
+  }, [])
+  const timeZoneLabel = new Intl.DateTimeFormat(locale === 'ar' ? 'ar-SA' : 'en-GB', {
+    timeZone,
+    timeZoneName: 'short',
+  })
+    .formatToParts(startsAt)
+    .find((part) => part.type === 'timeZoneName')?.value ?? timeZone
   const stream = match.status === 'completed' ? undefined : match.streamUrls[0]
   const replay = replayUrl(match)
   const replayUnavailable = match.status === 'completed' && !replay
@@ -104,18 +120,18 @@ export function MatchCard({
                 {format.dateTime(startsAt, {
                   hour: '2-digit',
                   minute: '2-digit',
-                  timeZone: EGYPT_TIME_ZONE,
+                  timeZone,
                 })}
               </span>
               <span className="block whitespace-nowrap">
                 {format.dateTime(startsAt, {
                   month: 'short',
                   day: 'numeric',
-                  timeZone: EGYPT_TIME_ZONE,
+                  timeZone,
                 })}
               </span>
               <span className="mt-0.5 block whitespace-nowrap text-[8px] tracking-wide text-[var(--brand-strong)]">
-                {t('egyptTimeShort')}
+                {t('localTimeWithZone', { zone: timeZoneLabel })}
               </span>
             </time>
           )}
