@@ -4,7 +4,7 @@ import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { createLocalDataSource } from '@/lib/data/local'
 import { isOk } from '@/lib/data/source'
 import { getRegionBySlug } from '@/lib/content/regions'
-import { recentResults } from '@/lib/matches/select'
+import { recentResults, upcomingMatches } from '@/lib/matches/select'
 import { MatchList } from '@/components/matches/match-list'
 import { routing } from '@/i18n/routing'
 import { SectionHeader } from '@/components/ui/section-header'
@@ -62,6 +62,14 @@ export default async function TeamPage({
         6,
       )
     : []
+  const upcoming = isOk(matchResult)
+    ? upcomingMatches(
+        matches.filter((m) =>
+          m.opponents.some((o) => o.pageSlug === team.pageSlug),
+        ),
+        Math.floor(Date.now() / 1000),
+      ).slice(0, 3)
+    : []
 
   const draftResult = team.regionSlug
     ? await source.getDraftLeagues(team.regionSlug)
@@ -71,6 +79,9 @@ export default async function TeamPage({
     : null
   const standings =
     standingResult && isOk(standingResult) ? standingResult.value : []
+  const standing = standings
+    .flatMap((table) => table.rows)
+    .find((row) => row.team.pageSlug === team.pageSlug)
   const draftLeague =
     draftResult && isOk(draftResult)
       ? enrichDraftLeagues(
@@ -122,6 +133,18 @@ export default async function TeamPage({
         <SectionHeader as="h1" title={team.name} />
       </div>
 
+      {standing && (
+        <section className="team-standing panel mb-10 p-5">
+          <span>{t('standing')}</span>
+          <strong>
+            {t('standingValue', {
+              position: standing.position,
+              points: standing.points ?? 0,
+            })}
+          </strong>
+        </section>
+      )}
+
       <SectionHeader title={t('roster')} />
       <ul className="panel divide-y divide-[var(--line)] p-2">
         {team.roster.map((player, index) => (
@@ -144,6 +167,15 @@ export default async function TeamPage({
           </li>
         ))}
       </ul>
+
+      {upcoming.length > 0 && (
+        <>
+          <div className="mt-16">
+            <SectionHeader title={t('upcomingMatches')} />
+          </div>
+          <MatchList matches={upcoming} density="compact" />
+        </>
+      )}
 
       {draftLeague && draftProfile && (
         <div className="mt-20">

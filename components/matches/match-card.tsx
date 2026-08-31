@@ -13,14 +13,16 @@ function Side({
   side,
   showScore,
   compact,
+  locale,
 }: {
   side: MatchOpponent
   showScore: boolean
   compact: boolean
+  locale: string
 }) {
   const dimmed = showScore && !side.isWinner
 
-  return (
+  const content = (
     <div className="match-side depth-layer flex min-w-0 flex-1 flex-col items-center text-center">
       <span className={`crest-stage ${compact ? 'crest-stage--compact' : ''}`}>
         <TeamCrest team={side} size={compact ? 42 : 54} />
@@ -39,6 +41,16 @@ function Side({
       </div>
     </div>
   )
+
+  return side.pageSlug ? (
+    <Link
+      href={`/${locale}/teams/${encodeURIComponent(side.pageSlug)}/`}
+      className="contents"
+      aria-label={`${side.name} team profile`}
+    >
+      {content}
+    </Link>
+  ) : content
 }
 
 function Score({ match }: { match: Match }) {
@@ -139,7 +151,7 @@ export function MatchCard({
         </div>
 
         <div className={`my-auto grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 ${compact ? 'py-3' : 'py-6'}`}>
-          <Side side={match.opponents[0]} showScore={scored} compact={compact} />
+          <Side side={match.opponents[0]} showScore={scored} compact={compact} locale={locale} />
 
           {scored ? (
             <Score match={match} />
@@ -149,7 +161,7 @@ export function MatchCard({
             </span>
           )}
 
-          <Side side={match.opponents[1]} showScore={scored} compact={compact} />
+          <Side side={match.opponents[1]} showScore={scored} compact={compact} locale={locale} />
         </div>
 
         <div className="depth-layer mt-auto flex min-h-8 items-center justify-between gap-2 border-t border-[var(--line)] pt-3">

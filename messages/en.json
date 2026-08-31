@@ -3,6 +3,7 @@
     "home": "Home",
     "regions": "Regions",
     "matches": "Matches",
+    "meta": "Meta",
     "standings": "Standings",
     "drafts": "Drafts",
     "coach": "Coach"
@@ -93,7 +94,33 @@
   "team": {
     "roster": "Roster",
     "recentResults": "Recent Results",
+    "upcomingMatches": "Next matches",
+    "standing": "League position",
+    "standingValue": "#{position} · {points} pts",
     "role": "Role"
+  },
+  "meta": {
+    "eyebrow": "CURRENT PRO META",
+    "title": "Meta Snapshot",
+    "description": "See today’s pro priorities, then find a role-by-role answer to any hero.",
+    "topPicks": "Top picks",
+    "topBans": "Top bans",
+    "pickRate": "{rate}% pick rate",
+    "banRate": "{rate}% ban rate",
+    "counterEyebrow": "COUNTER FINDER",
+    "counterTitle": "Choose a hero, see the answers",
+    "counterDescription": "Counter recommendations use current-season pro draft evidence whenever it exists.",
+    "chooseHero": "Enemy hero",
+    "observed": "Observed · {rate}%",
+    "metaFallback": "Current-meta fallback",
+    "buildNote": "Verified item builds are not in the tournament feed yet, so this page intentionally does not invent them. They will be added only with a maintained, patch-specific source.",
+    "lanes": {
+      "exp": "EXP",
+      "jungle": "Jungle",
+      "mid": "Mid",
+      "gold": "Gold",
+      "roam": "Roam"
+    }
   },
   "drafts": {
     "eyebrow": "The current-season meta",
