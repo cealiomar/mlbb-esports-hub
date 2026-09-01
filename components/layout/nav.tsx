@@ -10,7 +10,6 @@ export function Nav({ locale }: { locale: string }) {
   const links = [
     { href: `/${locale}`, label: t('home'), mobileHidden: true },
     { href: `/${locale}/matches`, label: t('matches'), mobileHidden: false },
-    { href: `/${locale}/meta`, label: t('meta'), mobileHidden: false },
     { href: `/${locale}/#standings`, label: t('standings'), mobileHidden: false },
     { href: `/${locale}/drafts`, label: t('drafts'), mobileHidden: false },
     { href: `/${locale}/draft-coach`, label: t('coach'), mobileHidden: false },
