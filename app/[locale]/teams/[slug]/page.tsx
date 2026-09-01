@@ -1,4 +1,3 @@
-import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { createLocalDataSource } from '@/lib/data/local'
@@ -9,7 +8,7 @@ import { MatchList } from '@/components/matches/match-list'
 import { routing } from '@/i18n/routing'
 import { SectionHeader } from '@/components/ui/section-header'
 import { readSnapshot } from '@/lib/data/snapshots'
-import type { Team } from '@/lib/data/types'
+import type { Match, Team } from '@/lib/data/types'
 import { TeamDraftPanel } from '@/components/drafts/team-draft-panel'
 import { draftTeams, teamDraftProfile } from '@/lib/drafts/analytics'
 import {
@@ -30,8 +29,17 @@ export const revalidate = 3600
 
 export function generateStaticParams() {
   const teams = readSnapshot<Team[]>('teams')?.data ?? []
+  const matches = readSnapshot<Match[]>('matches')?.data ?? []
+  const slugs = new Set([
+    ...teams.map((team) => team.pageSlug),
+    ...matches.flatMap((match) =>
+      match.opponents.map((opponent) => opponent.pageSlug),
+    ),
+  ])
   return routing.locales.flatMap((locale) =>
-    teams.map((team) => ({ locale, slug: team.pageSlug })),
+    [...slugs]
+      .filter(Boolean)
+      .map((slug) => ({ locale, slug })),
   )
 }
 
@@ -45,15 +53,37 @@ export default async function TeamPage({
   const t = await getTranslations('team')
 
   const source = createLocalDataSource()
+  const matchResult = await source.getMatches()
+  const matches = isOk(matchResult) ? matchResult.value : []
   const result = await source.getTeam(slug)
-  if (!isOk(result)) notFound()
-  const team = result.value
+  const linkedOpponent = matches
+    .flatMap((match) =>
+      match.opponents.map((opponent) => ({ opponent, regionSlug: match.regionSlug })),
+    )
+    .find(({ opponent }) => opponent.pageSlug.toLowerCase() === slug.toLowerCase())
+  const team: Team = isOk(result)
+    ? result.value
+    : linkedOpponent
+      ? {
+          pageSlug: linkedOpponent.opponent.pageSlug,
+          name: linkedOpponent.opponent.name,
+          code: linkedOpponent.opponent.code,
+          logoUrl: linkedOpponent.opponent.logoUrl,
+          regionSlug: linkedOpponent.regionSlug,
+          roster: [],
+        }
+      : {
+          pageSlug: slug,
+          name: slug.replaceAll('_', ' '),
+          code: 'TBD',
+          logoUrl: null,
+          regionSlug: null,
+          roster: [],
+        }
 
   const region = team.regionSlug ? getRegionBySlug(team.regionSlug) : undefined
   const localeKey = locale === 'ar' ? 'ar' : 'en'
 
-  const matchResult = await source.getMatches()
-  const matches = isOk(matchResult) ? matchResult.value : []
   const played = isOk(matchResult)
     ? recentResults(
         matches.filter((m) =>
@@ -146,27 +176,33 @@ export default async function TeamPage({
       )}
 
       <SectionHeader title={t('roster')} />
-      <ul className="panel divide-y divide-[var(--line)] p-2">
-        {team.roster.map((player, index) => (
-          <li
-            key={player.handle}
-            className="reveal flex min-h-[44px] flex-wrap items-center gap-x-4 gap-y-1 px-4 py-3"
-            style={{ '--reveal-delay': `${index * 40}ms` } as React.CSSProperties}
-          >
-            <span className="font-semibold">{player.handle}</span>
-            {player.country && (
-              <span className="text-[var(--step--1)] tracking-widest text-[var(--ink-muted)] uppercase">
-                {player.country}
-              </span>
-            )}
-            {player.role && (
-              <span className="ms-auto text-[var(--step--1)] font-semibold tracking-wide text-[var(--brand)] uppercase">
-                {player.role}
-              </span>
-            )}
-          </li>
-        ))}
-      </ul>
+      {team.roster.length > 0 ? (
+        <ul className="panel divide-y divide-[var(--line)] p-2">
+          {team.roster.map((player, index) => (
+            <li
+              key={player.handle}
+              className="reveal flex min-h-[44px] flex-wrap items-center gap-x-4 gap-y-1 px-4 py-3"
+              style={{ '--reveal-delay': `${index * 40}ms` } as React.CSSProperties}
+            >
+              <span className="font-semibold">{player.handle}</span>
+              {player.country && (
+                <span className="text-[var(--step--1)] tracking-widest text-[var(--ink-muted)] uppercase">
+                  {player.country}
+                </span>
+              )}
+              {player.role && (
+                <span className="ms-auto text-[var(--step--1)] font-semibold tracking-wide text-[var(--brand)] uppercase">
+                  {player.role}
+                </span>
+              )}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="panel team-empty-state p-5 text-[var(--ink-muted)]">
+          {t('rosterPending')}
+        </p>
+      )}
 
       {upcoming.length > 0 && (
         <>
