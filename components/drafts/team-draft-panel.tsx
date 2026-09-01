@@ -1,7 +1,8 @@
 'use client'
 
+import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import type { DraftHero, DraftLeague } from '@/lib/data/types'
+import type { DraftGame, DraftHero, DraftLeague } from '@/lib/data/types'
 import type { TeamDraftProfile, TeamHeroStat } from '@/lib/drafts/analytics'
 import {
   resolveHeroImage,
@@ -107,6 +108,92 @@ function HeroStrip({
         </li>
       ))}
     </ul>
+  )
+}
+
+function DraftGameView({
+  game,
+  series,
+  profileTeam,
+  team1Visual,
+  team2Visual,
+  heroImages,
+}: {
+  game: DraftGame
+  series: TeamDraftProfile['recentSeries'][number]['series']
+  profileTeam: TeamDraftProfile['team']
+  team1Visual: DraftTeamVisual
+  team2Visual: DraftTeamVisual
+  heroImages: HeroImageMap
+}) {
+  const t = useTranslations('drafts')
+  const profileIsTeam1 = series.team1.pageSlug === profileTeam.pageSlug
+  const [viewingTeam1, setViewingTeam1] = useState(profileIsTeam1)
+  const team = viewingTeam1 ? series.team1 : series.team2
+  const visual = viewingTeam1 ? team1Visual : team2Visual
+  const picks = viewingTeam1 ? game.team1Picks : game.team2Picks
+  const bans = viewingTeam1 ? game.team1Bans : game.team2Bans
+  const side = viewingTeam1 ? game.team1Side : game.team2Side
+  const won = game.winner === null ? null : viewingTeam1 ? game.winner === 1 : game.winner === 2
+  const otherTeam = viewingTeam1 ? series.team2 : series.team1
+  const viewingProfile = viewingTeam1 === profileIsTeam1
+
+  return (
+    <article key={game.number} className="draft-game">
+      <header>
+        <strong>{t('gameNumber', { number: game.number })}</strong>
+        {won !== null && (
+          <span className={`draft-game__result ${won ? 'draft-game__result--win' : 'draft-game__result--loss'}`}>
+            {won ? t('win') : t('loss')}
+          </span>
+        )}
+        {side && (
+          <span className={`draft-game__side draft-game__side--${side}`}>
+            {side === 'blue' ? t('blueSide') : t('redSide')}
+          </span>
+        )}
+        {formatDuration(game.durationSeconds) && <small>{formatDuration(game.durationSeconds)}</small>}
+        {game.vodUrl && (
+          <a href={game.vodUrl} target="_blank" rel="noopener noreferrer" className="watch-link rewatch-link">
+            <span className="replay-play" aria-hidden />
+            {t('watchGame')}
+          </a>
+        )}
+      </header>
+
+      <div className="draft-game__sides" aria-label={t('sidesLabel')}>
+        {([true, false] as const).map((isTeam1) => {
+          const optionTeam = isTeam1 ? series.team1 : series.team2
+          const optionVisual = isTeam1 ? team1Visual : team2Visual
+          const optionSide = isTeam1 ? game.team1Side : game.team2Side
+          return (
+            <button
+              key={optionTeam.pageSlug}
+              type="button"
+              className={`draft-game__team-side draft-game__team-side--${optionSide ?? 'neutral'}`}
+              data-active={viewingTeam1 === isTeam1 || undefined}
+              onClick={() => setViewingTeam1(isTeam1)}
+            >
+              <TeamCrest team={optionVisual} size={26} />
+              {optionSide && <small>{optionSide === 'blue' ? t('blueSide') : t('redSide')}</small>}
+              <strong>{optionTeam.name}</strong>
+            </button>
+          )
+        })}
+      </div>
+
+      <p className="draft-game__viewing">
+        {viewingProfile ? t('viewingTeamDraft', { team: team.name }) : t('viewingOpponentDraft', { team: team.name, opponent: otherTeam.name })}
+      </p>
+      <div className="draft-game__row">
+        <b>{t('teamPicks', { team: team.name })}</b>
+        <HeroStrip heroes={picks} heroImages={heroImages} />
+      </div>
+      <div className="draft-game__row draft-game__row--bans">
+        <b>{t('teamBans', { team: team.name })}</b>
+        <HeroStrip heroes={bans} heroImages={heroImages} />
+      </div>
+    </article>
   )
 }
 
@@ -244,70 +331,17 @@ export function TeamDraftPanel({
               </summary>
 
               <div className="draft-series__games">
-                {games.map(({ game, side, won, picks, bans }) => {
-                  const blueIsTeam1 = game.team1Side === 'blue'
-                  const redIsTeam1 = game.team1Side === 'red'
-                  const blueTeam = blueIsTeam1 ? series.team1 : series.team2
-                  const redTeam = redIsTeam1 ? series.team1 : series.team2
-                  const blueVisual = blueIsTeam1 ? team1Visual : team2Visual
-                  const redVisual = redIsTeam1 ? team1Visual : team2Visual
-
-                  return (
-                <article key={game.number} className="draft-game">
-                  <header>
-                    <strong>{t('gameNumber', { number: game.number })}</strong>
-                    <span
-                      className={`draft-game__result ${won ? 'draft-game__result--win' : 'draft-game__result--loss'}`}
-                    >
-                      {won ? t('win') : t('loss')}
-                    </span>
-                    {side && (
-                      <span className={`draft-game__side draft-game__side--${side}`}>
-                        {side === 'blue' ? t('blueSide') : t('redSide')}
-                      </span>
-                    )}
-                    {formatDuration(game.durationSeconds) && (
-                      <small>{formatDuration(game.durationSeconds)}</small>
-                    )}
-                    {game.vodUrl && (
-                      <a
-                        href={game.vodUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="watch-link rewatch-link"
-                      >
-                        <span className="replay-play" aria-hidden />
-                        {t('watchGame')}
-                      </a>
-                    )}
-                  </header>
-
-                  {game.team1Side && game.team2Side && (
-                    <div className="draft-game__sides" aria-label={t('sidesLabel')}>
-                      <span className="draft-game__team-side draft-game__team-side--blue">
-                        <TeamCrest team={blueVisual} size={26} />
-                        <small>{t('blueSide')}</small>
-                        <strong>{blueTeam.name}</strong>
-                      </span>
-                      <span className="draft-game__team-side draft-game__team-side--red">
-                        <TeamCrest team={redVisual} size={26} />
-                        <small>{t('redSide')}</small>
-                        <strong>{redTeam.name}</strong>
-                      </span>
-                    </div>
-                  )}
-
-                  <div className="draft-game__row">
-                    <b>{t('teamPicks', { team: profile.team.name })}</b>
-                    <HeroStrip heroes={picks} heroImages={heroImages} />
-                  </div>
-                  <div className="draft-game__row draft-game__row--bans">
-                    <b>{t('teamBans', { team: profile.team.name })}</b>
-                    <HeroStrip heroes={bans} heroImages={heroImages} />
-                  </div>
-                </article>
-                  )
-                })}
+                {games.map(({ game }) => (
+                  <DraftGameView
+                    key={game.number}
+                    game={game}
+                    series={series}
+                    profileTeam={profile.team}
+                    team1Visual={team1Visual}
+                    team2Visual={team2Visual}
+                    heroImages={heroImages}
+                  />
+                ))}
               </div>
             </details>
           )
