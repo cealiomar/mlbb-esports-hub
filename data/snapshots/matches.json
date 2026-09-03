@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1788405278,
+  "harvestedAt": 1788424578,
   "data": [
     {
       "id": "1788415200-mlbb-academy-league-season-6-regular-season-phase-1-hgoz-so",
       "startsAt": 1788415200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "HG x Originz",
           "pageSlug": "",
           "logoUrl": "/teams/100px-HG_x_ORIGINZ_darkmode-8a453529.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -20,18 +20,21 @@
           "name": "Stark Origin",
           "pageSlug": "",
           "logoUrl": "/teams/56px-Stark_Origin_darkmode-124a040e.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
       "tournamentName": "MAL S6 RS - Week 2",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
+      ],
       "vodUrls": []
     },
     {
-      "id": "1788422400-esn-national-championship-league-season-1-regular-season-mglz-taka",
+      "id": "1788422400-esn-national-championship-league-season-1-regular-season-mglz-ak",
       "startsAt": 1788422400,
       "status": "upcoming",
       "bestOf": 3,
@@ -45,7 +48,7 @@
           "isWinner": false
         },
         {
-          "code": "TAKA",
+          "code": "AK",
           "name": "The Akatsuki",
           "pageSlug": "",
           "logoUrl": null,
@@ -56,7 +59,9 @@
       "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
       "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/eSports_Network"
+      ],
       "vodUrls": []
     },
     {
@@ -85,7 +90,10 @@
       "tournamentName": "MAL S6 RS - Week 2",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
+      ],
       "vodUrls": []
     },
     {
@@ -114,7 +122,9 @@
       "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
       "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/eSports_Network"
+      ],
       "vodUrls": []
     },
     {
@@ -408,13 +418,13 @@
       "vodUrls": []
     },
     {
-      "id": "1788523200-esn-national-championship-league-season-1-regular-season-taka-mio",
+      "id": "1788523200-esn-national-championship-league-season-1-regular-season-ak-mio",
       "startsAt": 1788523200,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TAKA",
+          "code": "AK",
           "name": "The Akatsuki",
           "pageSlug": "",
           "logoUrl": null,
@@ -611,13 +621,13 @@
       "vodUrls": []
     },
     {
-      "id": "1788595200-esn-national-championship-league-season-1-regular-season-taka-ltgn",
+      "id": "1788595200-esn-national-championship-league-season-1-regular-season-ak-ltgn",
       "startsAt": 1788595200,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TAKA",
+          "code": "AK",
           "name": "The Akatsuki",
           "pageSlug": "",
           "logoUrl": null,
@@ -1075,13 +1085,13 @@
       "vodUrls": []
     },
     {
-      "id": "1788674400-esn-national-championship-league-season-1-regular-season-taka-tuc",
+      "id": "1788674400-esn-national-championship-league-season-1-regular-season-ak-tuc",
       "startsAt": 1788674400,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TAKA",
+          "code": "AK",
           "name": "The Akatsuki",
           "pageSlug": "",
           "logoUrl": null,
