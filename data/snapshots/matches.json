@@ -1,93 +1,6 @@
 {
-  "harvestedAt": 1788500461,
+  "harvestedAt": 1788518986,
   "data": [
-    {
-      "id": "1788508800-esn-national-championship-league-season-1-regular-season-mglz-lstr",
-      "startsAt": 1788508800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "MGLZ",
-          "name": "The MongolZ",
-          "pageSlug": "The_MongolZ",
-          "logoUrl": "/teams/39px-The_MongolZ_2024_03_allmode-644d7f27.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "LSTR",
-          "name": "Laestrygonians",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
-      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788508800-mpl-indonesia-season-18-regular-season-navi-dewa",
-      "startsAt": 1788508800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "NAVI",
-          "name": "Natus Vincere",
-          "pageSlug": "Natus_Vincere",
-          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "DEWA",
-          "name": "Dewa United Esports",
-          "pageSlug": "Dewa_United_Esports",
-          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788510600-mlbb-super-league-myanmar-season-4-regular-season-df-t7",
-      "startsAt": 1788510600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DF",
-          "name": "D Family",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "T7",
-          "name": "Team 7",
-          "pageSlug": "Team_7",
-          "logoUrl": "/teams/63px-Team_7_2024_allmode-25d48748.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Myanmar Season 4 - RS: Week 2",
-      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
-      "regionSlug": "myanmar",
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1788512400-mpl-malaysia-season-18-regular-season-ac-fl",
       "startsAt": 1788512400,
@@ -114,50 +27,24 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788512400-mpl-philippines-season-18-regular-season-twph-rora",
-      "startsAt": 1788512400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TWPH",
-          "name": "Twisted Minds PH",
-          "pageSlug": "Twisted_Minds_PH",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RORA",
-          "name": "Aurora Gaming PH",
-          "pageSlug": "Aurora_Gaming_PH",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": null,
-          "isWinner": false
-        }
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
       ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
       "vodUrls": []
     },
     {
-      "id": "1788516000-esn-national-championship-league-season-1-regular-season-eche-stl",
+      "id": "1788516000-esn-national-championship-league-season-1-regular-season-ecln-stl",
       "startsAt": 1788516000,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "ECHE",
+          "code": "ECLN",
           "name": "Echelon",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -165,14 +52,16 @@
           "name": "Stallions (Mongolian Team)",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
       "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
       "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/eSports_Network"
+      ],
       "vodUrls": []
     },
     {
@@ -201,7 +90,10 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 2",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MSL_Myanmar",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MLBB_Esports_Myanmar"
+      ],
       "vodUrls": []
     },
     {
@@ -230,7 +122,10 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -259,7 +154,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
@@ -288,7 +186,9 @@
       "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
       "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/eSports_Network"
+      ],
       "vodUrls": []
     },
     {
@@ -317,7 +217,10 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
       "vodUrls": []
     },
     {
@@ -611,7 +514,7 @@
       "vodUrls": []
     },
     {
-      "id": "1788602400-esn-national-championship-league-season-1-regular-season-arc-eche",
+      "id": "1788602400-esn-national-championship-league-season-1-regular-season-arc-ecln",
       "startsAt": 1788602400,
       "status": "upcoming",
       "bestOf": 3,
@@ -625,7 +528,7 @@
           "isWinner": false
         },
         {
-          "code": "ECHE",
+          "code": "ECLN",
           "name": "Echelon",
           "pageSlug": "",
           "logoUrl": null,
@@ -1249,7 +1152,7 @@
       "vodUrls": []
     },
     {
-      "id": "1788688800-esn-national-championship-league-season-1-regular-season-lstr-eche",
+      "id": "1788688800-esn-national-championship-league-season-1-regular-season-lstr-ecln",
       "startsAt": 1788688800,
       "status": "upcoming",
       "bestOf": 3,
@@ -1263,7 +1166,7 @@
           "isWinner": false
         },
         {
-          "code": "ECHE",
+          "code": "ECLN",
           "name": "Echelon",
           "pageSlug": "",
           "logoUrl": null,
@@ -1448,6 +1351,238 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788696000-esn-national-championship-league-season-1-regular-season-mio-stl",
+      "startsAt": 1788696000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "MIO",
+          "name": "Team Mio",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "STL",
+          "name": "Stallions (Mongolian Team)",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
+      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788697800-mlbb-super-league-myanmar-season-4-regular-season-tec-bg-myth",
+      "startsAt": 1788697800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TEC BG",
+          "name": "TEC BG",
+          "pageSlug": "TEC_BG",
+          "logoUrl": "/teams/100px-TEC_x_BG_2026_allmode-9e28ed92.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "MYTH",
+          "name": "Mythic SEAL",
+          "pageSlug": "Mythic_SEAL",
+          "logoUrl": "/teams/50px-Mythic_Seal_allmode-c6d031ba.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Myanmar Season 4 - RS: Week 2",
+      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
+      "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788699600-mlbb-continental-championships-season-8-regular-season-rkz-rune",
+      "startsAt": 1788699600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RKZ",
+          "name": "RAKUZAN",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RUNE",
+          "name": "Rune Eaters",
+          "pageSlug": "",
+          "logoUrl": "/teams/39px-Rune_Eaters_Esports_darkmode-9c1ea13a.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 2",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788699600-mpl-indonesia-season-18-regular-season-btr-ae",
+      "startsAt": 1788699600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BTR",
+          "name": "Bigetron by Vitality",
+          "pageSlug": "Bigetron_by_Vitality",
+          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "AE",
+          "name": "Alter Ego",
+          "pageSlug": "Alter_Ego",
+          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788512400-mpl-philippines-season-18-regular-season-twph-rora",
+      "startsAt": 1788512400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TWPH",
+          "name": "Twisted Minds PH",
+          "pageSlug": "Twisted_Minds_PH",
+          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "RORA",
+          "name": "Aurora Gaming PH",
+          "pageSlug": "Aurora_Gaming_PH",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788510600-mlbb-super-league-myanmar-season-4-regular-season-df-t7",
+      "startsAt": 1788510600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DF",
+          "name": "D Family",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "T7",
+          "name": "Team 7",
+          "pageSlug": "Team_7",
+          "logoUrl": "/teams/63px-Team_7_2024_allmode-25d48748.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MSL Myanmar Season 4 - RS: Week 2",
+      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
+      "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788508800-esn-national-championship-league-season-1-regular-season-mglz-lstr",
+      "startsAt": 1788508800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "MGLZ",
+          "name": "The MongolZ",
+          "pageSlug": "The_MongolZ",
+          "logoUrl": "/teams/39px-The_MongolZ_2024_03_allmode-644d7f27.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "LSTR",
+          "name": "Laestrygonians",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
+      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788508800-mpl-indonesia-season-18-regular-season-navi-dewa",
+      "startsAt": 1788508800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "NAVI",
+          "name": "Natus Vincere",
+          "pageSlug": "Natus_Vincere",
+          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "DEWA",
+          "name": "Dewa United Esports",
+          "pageSlug": "Dewa_United_Esports",
+          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2810,126 +2945,6 @@
       "tournamentName": "MCC Season 8 - Week 1",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788015600-mlbb-continental-championships-season-8-regular-season-ts-aure",
-      "startsAt": 1788015600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TS",
-          "name": "Team Spirit",
-          "pageSlug": "Team_Spirit",
-          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "AURE",
-          "name": "Aurevia Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 1",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788008400-mlbb-continental-championships-season-8-regular-season-rune-yndx",
-      "startsAt": 1788008400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RUNE",
-          "name": "Rune Eaters",
-          "pageSlug": "",
-          "logoUrl": "/teams/39px-Rune_Eaters_Esports_darkmode-9c1ea13a.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 1",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788008400-mpl-indonesia-season-18-regular-season-rrq-btr",
-      "startsAt": 1788008400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RRQ",
-          "name": "RRQ Hoshi",
-          "pageSlug": "RRQ_Hoshi",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "BTR",
-          "name": "Bigetron by Vitality",
-          "pageSlug": "Bigetron_by_Vitality",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 3",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=vVqFJdIxziY",
-        "https://www.youtube.com/watch?v=FsbArVaUDPA",
-        "https://www.youtube.com/watch?v=YJj97Z7OgEw"
-      ]
-    },
-    {
-      "id": "1788006600-mlbb-super-league-myanmar-season-4-regular-season-tec-bg-pld",
-      "startsAt": 1788006600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TEC BG",
-          "name": "TEC BG",
-          "pageSlug": "TEC_BG",
-          "logoUrl": "/teams/100px-TEC_x_BG_2026_allmode-9e28ed92.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "PLD",
-          "name": "Paladins",
-          "pageSlug": "Paladins",
-          "logoUrl": "/teams/50px-Paladins_2025_allmode-9ded351e.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Myanmar Season 4 - RS: Week 1",
-      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
-      "regionSlug": "myanmar",
       "streamUrls": [],
       "vodUrls": []
     }
