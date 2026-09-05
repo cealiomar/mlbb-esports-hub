@@ -14,19 +14,22 @@ export function BrandMark({
   className = '',
   priority = false,
   showHandle = true,
+  showAvatar = true,
 }: {
   /** Avatar diameter in pixels; the handle scales with it. */
   size?: number
   className?: string
   priority?: boolean
   showHandle?: boolean
+  showAvatar?: boolean
 }) {
   return (
     // The marker sits on the wrapper because that is what carries the
     // layout class, and therefore the intro animation.
     <span data-brand-mark className={`brand-mark ${className}`}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      {showAvatar && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
         src={withBasePath(BRAND_LOGO.avatarSrc)}
         alt={BRAND_LOGO.alt}
         width={size}
@@ -34,8 +37,9 @@ export function BrandMark({
         loading={priority ? 'eager' : 'lazy'}
         fetchPriority={priority ? 'high' : undefined}
         className="brand-mark__avatar"
-        style={{ width: size, height: size }}
-      />
+          style={{ width: size, height: size }}
+        />
+      )}
       {showHandle && (
         <span
           className="brand-mark__handle"

@@ -10,9 +10,13 @@ export function SiteIntro() {
 
       <div className="site-intro__core">
         <span className="site-intro__signal">GLOBAL MATCH SIGNAL</span>
-        <BrandMark size={56}
+        {/* The opening is the portrait alone — the handle carries the brand
+            everywhere else, and repeating it here only crowds the moment. */}
+        <BrandMark
+          size={132}
           priority
-          className="site-intro__logo max-w-[76vw]"
+          showHandle={false}
+          className="site-intro__logo"
         />
         <span className="site-intro__track">
           <span className="site-intro__progress" />

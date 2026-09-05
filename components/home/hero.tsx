@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl'
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
-import { BrandMark } from '@/components/ui/brand-mark'
 
 export function Hero({
   liveCount,
@@ -35,13 +34,6 @@ export function Hero({
         >
           <span className="hero-kicker__dot" />
           {t('eyebrow')}
-        </div>
-
-        <div
-          className="hero-logo-stage reveal mt-7"
-          style={{ '--reveal-delay': '80ms' } as React.CSSProperties}
-        >
-          <BrandMark size={72} priority className="hero-logo" />
         </div>
 
         <h1
