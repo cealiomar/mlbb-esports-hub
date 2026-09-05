@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1788565573,
+  "harvestedAt": 1788595645,
   "data": [
     {
       "id": "1788588000-esn-national-championship-league-season-1-regular-season-uch-stl",
@@ -27,7 +27,9 @@
       "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
       "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/eSports_Network"
+      ],
       "vodUrls": []
     },
     {
@@ -56,13 +58,16 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
       "vodUrls": []
     },
     {
       "id": "1788589800-mpl-philippines-season-18-regular-season-omg-apbr",
       "startsAt": 1788589800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -70,7 +75,7 @@
           "name": "Omega Esports",
           "pageSlug": "Omega_Esports",
           "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -78,14 +83,17 @@
           "name": "AP.Bren",
           "pageSlug": "AP.Bren",
           "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
       "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
@@ -114,7 +122,10 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -143,7 +154,9 @@
       "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
       "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/eSports_Network"
+      ],
       "vodUrls": []
     },
     {
@@ -172,7 +185,10 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 2",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MSL_Myanmar",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MLBB_Esports_Myanmar"
+      ],
       "vodUrls": []
     },
     {
@@ -201,7 +217,10 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
       "vodUrls": []
     },
     {
@@ -230,7 +249,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 3",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
@@ -1594,7 +1616,10 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=J3PGeyjQ4Z4",
+        "https://www.youtube.com/watch?v=AmEdvsIrBUc"
+      ]
     },
     {
       "id": "1788517800-mlbb-super-league-myanmar-season-4-regular-season-ai-wyv",
@@ -1797,7 +1822,10 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=TrHBtu85EqQ",
+        "https://www.youtube.com/watch?v=c1B8YwyHf8U"
+      ]
     },
     {
       "id": "1788436800-esn-national-championship-league-season-1-regular-season-lstr-mio",
