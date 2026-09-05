@@ -483,3 +483,32 @@ describe('draft coach current tournament data', () => {
     ).toBe(true)
   })
 })
+
+describe('phase-two ban spread', () => {
+  it('covers more than one open enemy role instead of stacking a single lane', () => {
+    const model = currentModel()
+
+    const recommendations = recommendDraftHeroes(model, {
+      kind: 'ban',
+      state: {
+        allyPicks: [],
+        allyPickLanes: [],
+        enemyPicks: [],
+        enemyPickLanes: [],
+        allyBans: [],
+        enemyBans: [],
+      },
+      plan: 'balanced',
+      phase: 2,
+      limit: 5,
+    })
+
+    const lanes = recommendations
+      .map((item) => item.suggestedLane)
+      .filter((lane): lane is Exclude<typeof lane, null> => lane !== null)
+
+    expect(lanes.length).toBeGreaterThan(1)
+    // Five bans in one lane leaves every other threat free to be drafted.
+    expect(new Set(lanes).size).toBeGreaterThan(1)
+  })
+})

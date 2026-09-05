@@ -858,6 +858,45 @@ export function suggestedLaneForHero(
   return profile ? bestOpenLane(model, profile, picks, assignedLanes) : null
 }
 
+/**
+ * Spread bans across every role the opponent can still draft before doubling
+ * up on any one of them.
+ *
+ * Ranking bans purely by score hands back five heroes from whichever role the
+ * current meta favours, leaving the opponent's other open roles untouched —
+ * which is exactly the lane they will then draft. Covering each threat first,
+ * then reinforcing the most dangerous, is what a coach actually does.
+ */
+function diverseBanRecommendations(
+  ranked: DraftRecommendation[],
+  openLanes: DraftLane[],
+  limit: number,
+): DraftRecommendation[] {
+  if (openLanes.length <= 1) return ranked.slice(0, limit)
+
+  const selected: DraftRecommendation[] = []
+  const takenLanes = new Set<DraftLane>()
+
+  // One pass per open lane: the best remaining ban that threatens it.
+  for (const recommendation of ranked) {
+    if (selected.length >= Math.min(limit, openLanes.length)) break
+    const lane = recommendation.suggestedLane
+    if (!lane || takenLanes.has(lane)) continue
+    selected.push(recommendation)
+    takenLanes.add(lane)
+  }
+
+  // Then fill any remaining slots with the strongest bans left, whatever
+  // their lane.
+  for (const recommendation of ranked) {
+    if (selected.length >= limit) break
+    if (selected.includes(recommendation)) continue
+    selected.push(recommendation)
+  }
+
+  return selected
+}
+
 function diversePickRecommendations(
   model: DraftCoachModel,
   ranked: DraftRecommendation[],
@@ -1235,7 +1274,9 @@ export function recommendDraftHeroes(
     )
 
   const limit = options.limit ?? 5
-  if (options.kind === 'ban') return ranked.slice(0, limit)
+  if (options.kind === 'ban') {
+    return diverseBanRecommendations(ranked, banTargetOpenLanes, limit)
+  }
   if (!targetLane) {
     return diversePickRecommendations(
       model,

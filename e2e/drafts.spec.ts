@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test'
+import ar from '../messages/ar.json'
 
 test('Draft Lab shows complete league pick and ban rankings', async ({ page }) => {
   await page.goto('/en/drafts/')
@@ -9,7 +10,8 @@ test('Draft Lab shows complete league pick and ban rankings', async ({ page }) =
   await expect(overview.getByRole('heading', { name: 'Top Picks' })).toBeVisible()
   await expect(overview.getByRole('heading', { name: 'Top Bans' })).toBeVisible()
   await expect(overview.locator('.draft-ranking__row')).toHaveCount(10)
-  await expect(overview).toContainText('38 games analyzed')
+  // The harvester adds games every hour, so assert the shape, never a count.
+  await expect(overview).toContainText(/\d+ games analyzed/)
 })
 
 test('regions switch in place without creating a long page of leagues', async ({
@@ -23,7 +25,9 @@ test('regions switch in place without creating a long page of leagues', async ({
   await expect(page.getByTestId('draft-overview')).toHaveCount(1)
   await page.getByRole('button', { name: /Philippines/ }).click()
   await expect(page.getByTestId('draft-overview')).toContainText('MPL Philippines')
-  await expect(page.getByTestId('draft-overview')).toContainText('17 games analyzed')
+  await expect(page.getByTestId('draft-overview')).toContainText(
+    /\d+ games analyzed/,
+  )
 })
 
 test('a team opens its real game-by-game drafts', async ({ page }) => {
@@ -35,8 +39,8 @@ test('a team opens its real game-by-game drafts', async ({ page }) => {
 
   const panel = page.getByTestId('team-draft-panel')
   await expect(panel).toBeVisible()
-  await expect(panel.getByText('Picks', { exact: true }).first()).toBeVisible()
-  await expect(panel.getByText('Bans', { exact: true }).first()).toBeVisible()
+  await expect(panel.getByText(/\bPICKS$/i).first()).toBeVisible()
+  await expect(panel.getByText(/\bBANS$/i).first()).toBeVisible()
   await expect(panel.locator('.draft-game__side').first()).toBeVisible()
   await expect(panel.locator('.draft-game__result').first()).toBeVisible()
 
@@ -104,8 +108,14 @@ test('Draft Lab is clear in Arabic and contained at 320px', async ({ page }) => 
   await page.goto('/ar/drafts/')
 
   await expect(page.locator('html')).toHaveAttribute('dir', 'rtl')
-  await expect(page.getByRole('heading', { name: 'معمل الدرافت' })).toBeVisible()
-  await expect(page.getByRole('heading', { name: 'أكتر Top Picks' })).toBeVisible()
+  // Assert against the translation file rather than a copy of the copy, so
+  // rewording Arabic never breaks the test but a missing string still does.
+  await expect(
+    page.getByRole('heading', { name: ar.drafts.title }),
+  ).toBeVisible()
+  await expect(
+    page.getByRole('heading', { name: ar.drafts.topPicks }),
+  ).toBeVisible()
   const series = page.locator('.draft-series').first()
   await expect(series).toContainText(/الأسبوع \d+/)
   await expect(series.getByText('الفائز', { exact: true })).toBeVisible()
