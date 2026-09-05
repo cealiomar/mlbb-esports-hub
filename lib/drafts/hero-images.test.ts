@@ -55,3 +55,32 @@ describe('draft hero images', () => {
     expect(missingFiles.map((hero) => hero.name)).toEqual([])
   })
 })
+
+describe('hero shorthand resolution', () => {
+  it('resolves prefixes Liquipedia uses in draft tables', () => {
+    expect(heroKey('Leo')).toBe('leomord')
+    expect(heroKey('Esme')).toBe('esmeralda')
+    expect(heroKey('Mino')).toBe('minotaur')
+    expect(heroKey('Guin')).toBe('guinevere')
+  })
+
+  it('resolves initials that no prefix rule would catch', () => {
+    expect(heroKey('Yss')).toBe('yisunshin')
+    expect(heroKey('YZ')).toBe('yuzhong')
+  })
+
+  it('never rewrites a hero whose name is a prefix of another', () => {
+    // "Vale" starts "Valentina" but is its own hero; it must stay itself.
+    expect(heroKey('Vale')).toBe('vale')
+    expect(heroKey('Valentina')).toBe('valentina')
+  })
+
+  it('leaves a genuinely unknown name untouched', () => {
+    expect(heroKey('Notahero')).toBe('notahero')
+  })
+
+  it('is unaffected by punctuation and case', () => {
+    expect(heroKey('Yi Sun-shin')).toBe('yisunshin')
+    expect(heroKey('lapu-lapu')).toBe('lapulapu')
+  })
+})
