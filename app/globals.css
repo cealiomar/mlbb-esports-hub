@@ -1,18 +1,22 @@
 @import 'tailwindcss';
 
+/* Text contrast is deliberately held around 12-14:1 rather than pushed to
+   the maximum. Near-white on near-black measures 18:1 and reads as glare —
+   the glyphs bloom and vibrate, worst of all for astigmatic readers — while
+   muted text still clears the 4.5:1 accessibility floor. */
 :root {
   color-scheme: light;
-  --ground: #f3f6fc;
-  --ground-deep: #e8eef8;
+  --ground: #eef1f7;
+  --ground-deep: #e4e9f3;
   --surface: rgb(255 255 255 / 0.62);
   --surface-solid: #ffffff;
   --surface-raised: rgb(255 255 255 / 0.82);
-  --ink: #111827;
-  --ink-muted: #667085;
+  --ink: #232b3b;
+  --ink-muted: #5c6478;
   --line: rgb(32 47 78 / 0.12);
   --line-strong: rgb(32 47 78 / 0.2);
   --brand: #f5a623;
-  --brand-strong: #b84e09;
+  --brand-strong: #a8480a;
   --brand-hot: #e85d17;
   --brand-ink: #241100;
   --glass-shadow: 0 22px 70px -34px rgb(47 65 103 / 0.36);
@@ -24,18 +28,18 @@
 
 html[data-theme='dark'] {
   color-scheme: dark;
-  --ground: #080b13;
-  --ground-deep: #05070c;
-  --surface: rgb(18 24 38 / 0.66);
-  --surface-solid: #121826;
-  --surface-raised: rgb(27 34 51 / 0.8);
-  --ink: #f7f8fb;
-  --ink-muted: #9ba5b7;
+  --ground: #0e1220;
+  --ground-deep: #090d17;
+  --surface: rgb(24 31 48 / 0.66);
+  --surface-solid: #171e30;
+  --surface-raised: rgb(33 41 60 / 0.8);
+  --ink: #dde3ef;
+  --ink-muted: #98a3b6;
   --line: rgb(224 232 255 / 0.11);
   --line-strong: rgb(224 232 255 / 0.2);
-  --brand: #f8b338;
-  --brand-strong: #ffc45c;
-  --brand-hot: #ff7137;
+  --brand: #f2ad3c;
+  --brand-strong: #f7c163;
+  --brand-hot: #ff7a45;
   --brand-ink: #160d00;
   --glass-shadow: 0 26px 80px -35px rgb(0 0 0 / 0.86);
 }
@@ -3602,4 +3606,34 @@ html[data-theme='dark'] .panel {
   .mobile-nav {
     display: none;
   }
+}
+
+/* The signature lockup is dark artwork; on the dark theme it needs a light
+   plate behind it to stay legible, and a gentle lift on hover. */
+.credit-mark {
+  padding: 10px 14px;
+  background: color-mix(in srgb, #ffffff 92%, transparent);
+  border: 1px solid var(--line);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .credit-mark:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px -18px color-mix(in srgb, var(--brand) 60%, transparent);
+  }
+}
+
+/* The site mark is dark ink on transparency, so it needs a light plate to
+   read on the dark theme. Kept subtle on light, where it already sits well. */
+.brand-mark {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 6px 10px;
+}
+
+html[data-theme='dark'] .brand-mark {
+  background: color-mix(in srgb, #ffffff 94%, transparent);
+  box-shadow: 0 6px 22px -14px rgb(0 0 0 / 0.9);
 }

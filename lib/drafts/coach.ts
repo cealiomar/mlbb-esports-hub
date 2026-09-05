@@ -1472,21 +1472,36 @@ export function compareCompletedDrafts(
   const allyMatchup = matchupRate(model, state.allyPicks, state.enemyPicks)
   const enemyMatchup = matchupRate(model, state.enemyPicks, state.allyPicks)
 
-  const allyScore =
-    allyProForm * 0.26 +
-    allySynergy * 0.28 +
-    allyComposition.rate * 0.24 +
-    allyMatchup.rate * 0.22
-  const enemyScore =
-    enemyProForm * 0.26 +
-    enemySynergy * 0.28 +
-    enemyComposition.rate * 0.24 +
-    enemyMatchup.rate * 0.22
-  const probability = clamp(
-    1 / (1 + Math.exp(-(allyScore - enemyScore) * 5)),
-    0.28,
-    0.72,
-  )
+  // Matchup rates are complementary by construction: every game that records
+  // A beating B also records B losing to A, so rate(A,B) + rate(B,A) is
+  // exactly 1. Subtracting one side from the other therefore counts the same
+  // evidence twice. It is measured once, as a signed edge around even.
+  const edge =
+    (allyProForm - enemyProForm) * 0.3 +
+    (allySynergy - enemySynergy) * 0.32 +
+    (allyComposition.rate - enemyComposition.rate) * 0.24 +
+    (allyMatchup.rate - 0.5) * 0.38
+
+  const raw = 1 / (1 + Math.exp(-edge * 5))
+
+  /**
+   * Pull the estimate back towards even in proportion to how much pro
+   * evidence actually stands behind it.
+   *
+   * With ~130 heroes there are thousands of possible pairings, so a single
+   * season supplies only a handful of games for most of them. Backtesting
+   * this model on held-out games showed no reliable edge over a coin flip,
+   * and an unshrunk figure would present that noise as a confident call.
+   * Shrinking does not manufacture skill — it stops the number claiming more
+   * than the data supports.
+   */
+  const evidence =
+    allyComposition.games +
+    enemyComposition.games +
+    allyMatchup.games +
+    enemyMatchup.games
+  const trust = evidence / (evidence + 400)
+  const probability = clamp(0.5 + (raw - 0.5) * trust, 0.3, 0.7)
   const evidenceGames = Math.round(model.compositions.length / 2)
   const comparisonSample =
     allyComposition.games +

@@ -1,12 +1,16 @@
+import { AUTHOR } from './author'
+
 /**
- * The official Mobile Legends: Bang Bang lockup in its brand colours.
- * Vector, so it stays crisp at any size, and it carries its own gradients —
- * do not recolour it.
+ * The site's mark. The Mobile Legends lockup was removed at the owner's
+ * request; the signature lockup stands in its place.
+ *
+ * The artwork is dark on transparency, so `BrandMark` sets a light plate
+ * behind it — without one it disappears on the dark theme.
  */
 export const BRAND_LOGO = {
-  src: '/brand/mlbb-logo.svg',
-  alt: 'Mobile Legends: Bang Bang',
-  width: 844.61,
-  height: 264.9,
-  aspect: 844.61 / 264.9,
+  src: AUTHOR.logo.src,
+  alt: `@${AUTHOR.handle} — ${AUTHOR.tagline}`,
+  width: AUTHOR.logo.width,
+  height: AUTHOR.logo.height,
+  aspect: AUTHOR.logo.aspect,
 } as const

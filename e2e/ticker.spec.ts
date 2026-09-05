@@ -49,10 +49,13 @@ test('the ticker pauses when hovered', async ({ page }) => {
 test('the footer credits the developer with working links', async ({ page }) => {
   await page.goto('/en/')
 
-  const insta = page.getByRole('link', { name: 'cealiomar', exact: true })
+  // The same handle is also the site mark in the header, so scope to the footer.
+  const insta = page
+    .locator('footer')
+    .getByRole('link', { name: '@madebyceali' })
   await expect(insta).toHaveAttribute(
     'href',
-    'https://www.instagram.com/cealiomar.design/',
+    'https://instagram.com/madebyceali',
   )
   await expect(insta).toHaveAttribute('target', '_blank')
 

@@ -3,8 +3,11 @@ import { withBasePath } from '@/lib/assets'
 
 /**
  * The brand lockup. Rendered as a plain <img> because the asset is a local
- * SVG that already carries its own gradients — there is nothing for the
- * image optimiser to do, and rasterising it would only cost sharpness.
+ * SVG that already carries its own colour — there is nothing for the image
+ * optimiser to do, and rasterising it would only cost sharpness.
+ *
+ * The artwork is dark ink on transparency, so it sits on a light plate;
+ * without one it vanishes against the dark theme.
  */
 export function BrandMark({
   width,
@@ -25,7 +28,7 @@ export function BrandMark({
       loading={priority ? 'eager' : 'lazy'}
       fetchPriority={priority ? 'high' : undefined}
       data-brand-mark
-      className={className}
+      className={`brand-mark ${className}`}
       style={{ width, height: 'auto' }}
     />
   )

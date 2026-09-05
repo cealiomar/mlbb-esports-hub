@@ -70,7 +70,7 @@ export function Attribution() {
             rel="noreferrer noopener"
             className="font-bold tracking-wide text-[var(--brand)] underline decoration-[color-mix(in_srgb,var(--brand)_45%,transparent)] underline-offset-4 transition-colors hover:text-[var(--brand-hot)]"
           >
-            {AUTHOR.name}
+            @{AUTHOR.handle}
           </a>
         </p>
 
