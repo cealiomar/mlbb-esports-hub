@@ -3518,3 +3518,88 @@ html[data-theme='dark'] .panel {
   .marquee-track { animation: none; }
   .site-intro { display: none; }
 }
+
+/* ---- Mobile bottom navigation ------------------------------------------ */
+
+:root {
+  /* Declared once so the bar and the space reserved for it cannot drift.
+     The border counts: a 56px row inside a 1px top border is 57px tall. */
+  --mobile-nav-row: 56px;
+  --mobile-nav-height: calc(var(--mobile-nav-row) + 1px);
+}
+
+.mobile-nav {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 60;
+  display: flex;
+  align-items: stretch;
+  border-top: 1px solid var(--line);
+  background: color-mix(in srgb, var(--ground) 92%, transparent);
+  backdrop-filter: blur(18px);
+  /* Clear the iPhone home indicator. */
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.mobile-nav__item {
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: var(--mobile-nav-row);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 6px 2px;
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav__item[data-active='true'] {
+  color: var(--brand-strong, var(--brand));
+}
+
+.mobile-nav__item[data-active='true'] .mobile-nav__icon {
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--brand) 55%, transparent));
+}
+
+.mobile-nav__icon {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+
+.mobile-nav__label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Keep the fixed bar from covering the end of the page. */
+@media (max-width: 639px) {
+  body {
+    padding-bottom: calc(
+      var(--mobile-nav-height) + env(safe-area-inset-bottom, 0px)
+    );
+  }
+}
+
+/* This rule is authored after Tailwind's utilities, so `sm:hidden` on the
+   element cannot win on source order — the bar has to hide itself. */
+@media (min-width: 640px) {
+  .mobile-nav {
+    display: none;
+  }
+}
