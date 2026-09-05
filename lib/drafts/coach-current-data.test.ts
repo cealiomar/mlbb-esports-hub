@@ -125,7 +125,9 @@ describe('draft coach current tournament data', () => {
       state: emptyState,
       plan: 'balanced',
       targetLane: 'roam',
-      limit: 5,
+      // Eligibility must survive a truncated source table. Her exact rank is
+      // allowed to change as real results arrive; do not pin a hero to Top 5.
+      limit: model.heroes.length,
     })
 
     expect(mathilda.exactGames).toBeGreaterThanOrEqual(15)
