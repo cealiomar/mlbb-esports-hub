@@ -10,8 +10,7 @@ export function SiteIntro() {
 
       <div className="site-intro__core">
         <span className="site-intro__signal">GLOBAL MATCH SIGNAL</span>
-        <BrandMark
-          width={420}
+        <BrandMark size={56}
           priority
           className="site-intro__logo max-w-[76vw]"
         />

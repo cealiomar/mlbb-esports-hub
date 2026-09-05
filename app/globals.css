@@ -3625,15 +3625,35 @@ html[data-theme='dark'] .panel {
   }
 }
 
-/* The site mark is dark ink on transparency, so it needs a light plate to
-   read on the dark theme. Kept subtle on light, where it already sits well. */
+/* The mark carries no plate: the avatar is already a self-contained circle
+   and the handle is live text, so it sits directly on either theme. */
 .brand-mark {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  min-width: 0;
 }
 
-html[data-theme='dark'] .brand-mark {
-  background: color-mix(in srgb, #ffffff 94%, transparent);
-  box-shadow: 0 6px 22px -14px rgb(0 0 0 / 0.9);
+.brand-mark__avatar {
+  flex: none;
+  border-radius: 50%;
+  /* A hairline ring keeps the light portrait from bleeding into a light
+     background without adding a heavy plate. */
+  box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--brand) 55%, transparent);
+}
+
+.brand-mark__handle {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  white-space: nowrap;
+  background: linear-gradient(
+    100deg,
+    var(--brand-strong) 0%,
+    var(--brand) 45%,
+    var(--brand-hot) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

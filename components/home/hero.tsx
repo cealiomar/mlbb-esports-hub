@@ -41,7 +41,7 @@ export function Hero({
           className="hero-logo-stage reveal mt-7"
           style={{ '--reveal-delay': '80ms' } as React.CSSProperties}
         >
-          <BrandMark width={430} priority className="hero-logo max-w-[72vw]" />
+          <BrandMark size={72} priority className="hero-logo" />
         </div>
 
         <h1

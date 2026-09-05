@@ -145,6 +145,28 @@ export interface DraftRecommendation {
   reasons: RecommendationReason[]
 }
 
+export interface PlanWeights {
+  meta: number
+  role: number
+  synergy: number
+  counter: number
+  pace: number
+  comfort: number
+}
+
+/**
+ * How each plan trades off the signals behind a pick. Exported so the draft
+ * arena in scripts/lab can score alternatives against real results rather
+ * than anyone tuning them by feel.
+ */
+export const PLAN_WEIGHTS: Record<DraftPlan, PlanWeights> = {
+  balanced: { meta: 0.36, role: 0.2, synergy: 0.2, counter: 0.14, pace: 0.03, comfort: 0.07 },
+  early: { meta: 0.3, role: 0.18, synergy: 0.17, counter: 0.12, pace: 0.18, comfort: 0.05 },
+  scaling: { meta: 0.3, role: 0.18, synergy: 0.17, counter: 0.12, pace: 0.18, comfort: 0.05 },
+  counter: { meta: 0.23, role: 0.17, synergy: 0.16, counter: 0.39, pace: 0.01, comfort: 0.04 },
+  comfort: { meta: 0.24, role: 0.16, synergy: 0.16, counter: 0.1, pace: 0.02, comfort: 0.32 },
+}
+
 export interface RecommendationOptions {
   kind: DraftActionKind
   state: DraftCoachState
@@ -156,6 +178,8 @@ export interface RecommendationOptions {
   excludeHeroes?: string[]
   phase?: 1 | 2
   limit?: number
+  /** Overrides the plan preset. Used by the tuning harness. */
+  weights?: PlanWeights
 }
 
 export interface RoleCounterRecommendation {
@@ -1158,17 +1182,7 @@ export function recommendDraftHeroes(
           enemyComfort.games
         teamRate = enemyComfort.games > 0 ? enemyComfort.rate : null
       } else {
-        const weights: Record<
-          DraftPlan,
-          { meta: number; role: number; synergy: number; counter: number; pace: number; comfort: number }
-        > = {
-          balanced: { meta: 0.36, role: 0.2, synergy: 0.2, counter: 0.14, pace: 0.03, comfort: 0.07 },
-          early: { meta: 0.3, role: 0.18, synergy: 0.17, counter: 0.12, pace: 0.18, comfort: 0.05 },
-          scaling: { meta: 0.3, role: 0.18, synergy: 0.17, counter: 0.12, pace: 0.18, comfort: 0.05 },
-          counter: { meta: 0.23, role: 0.17, synergy: 0.16, counter: 0.39, pace: 0.01, comfort: 0.04 },
-          comfort: { meta: 0.24, role: 0.16, synergy: 0.16, counter: 0.1, pace: 0.02, comfort: 0.32 },
-        }
-        const weight = weights[options.plan]
+        const weight = options.weights ?? PLAN_WEIGHTS[options.plan]
         rawScore =
           meta * weight.meta +
           role * weight.role +

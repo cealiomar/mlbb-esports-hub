@@ -26,11 +26,7 @@ export function Nav({ locale }: { locale: string }) {
           >
             {/* The phone bar carries only the logo, language and theme, so the
                 lockup no longer has to shrink to make room for five links. */}
-            <BrandMark
-              width={126}
-              priority
-              className="w-[104px] min-[420px]:w-[118px] sm:w-[126px]"
-            />
+            <BrandMark size={34} priority />
           </Link>
 
           {/* Destinations sit in the top bar from the small breakpoint up, and
