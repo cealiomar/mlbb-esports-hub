@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useId, useMemo, useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import type { Match } from '@/lib/data/types'
 import type { RegionDefinition } from '@/lib/content/regions'
@@ -32,6 +32,7 @@ export function MatchExplorer({
   const t = useTranslations('matches')
   const locale = useLocale()
   const localeKey = locale === 'ar' ? 'ar' : 'en'
+  const browserId = useId()
   const preferredGroup = groups.find((group) => group.id === 'upcoming') ?? groups[0]
   const [active, setActive] = useState(preferredGroup?.id ?? 'upcoming')
   const [region, setRegion] = useState('all')
@@ -39,7 +40,9 @@ export function MatchExplorer({
 
   const buckets = useMemo(() => {
     const matches = activeGroup?.matches ?? []
+    const availableRegions = new Set(groups.flatMap((group) => group.matches.map((match) => match.regionSlug)))
     const ordered: RegionBucket[] = regions
+      .filter((definition) => availableRegions.has(definition.slug))
       .map((definition) => ({
         key: definition.slug,
         slug: definition.slug,
@@ -47,10 +50,9 @@ export function MatchExplorer({
         label: definition.name[localeKey],
         matches: matches.filter((match) => match.regionSlug === definition.slug),
       }))
-      .filter((bucket) => bucket.matches.length > 0)
 
     const international = matches.filter((match) => !match.regionSlug)
-    if (international.length > 0) {
+    if (availableRegions.has(null)) {
       ordered.push({
         key: INTERNATIONAL,
         slug: null,
@@ -60,29 +62,20 @@ export function MatchExplorer({
       })
     }
     return ordered
-  }, [activeGroup, localeKey, regions, t])
+  }, [activeGroup, groups, localeKey, regions, t])
 
   const visibleBuckets = region === 'all'
-    ? buckets
-    : buckets.filter((bucket) => bucket.key === region)
+    ? buckets.filter((bucket) => bucket.matches.length > 0)
+    : buckets.filter((bucket) => bucket.key === region && bucket.matches.length > 0)
 
   function chooseView(id: MatchExplorerGroup['id']) {
     setActive(id)
-    setRegion('all')
   }
 
   return (
     <div className="simple-match-browser">
-      <section className="match-step panel" aria-labelledby="match-view-step">
-        <div className="match-step__heading">
-          <span aria-hidden>1</span>
-          <div>
-            <h2 id="match-view-step">{t('chooseView')}</h2>
-            <p>{t('chooseViewHint')}</p>
-          </div>
-        </div>
-
-        <div className="simple-match-tabs" role="tablist">
+      <section className="match-controls panel" aria-label={t('chooseView')}>
+        <div className="simple-match-tabs" role="tablist" aria-label={t('chooseView')}>
           {groups.map((group) => {
             const selected = group.id === active
             const icon = group.id === 'live' ? '●' : group.id === 'upcoming' ? '◷' : '✓'
@@ -91,8 +84,23 @@ export function MatchExplorer({
                 key={group.id}
                 type="button"
                 role="tab"
+                id={`${browserId}-${group.id}`}
+                aria-controls={`${browserId}-panel`}
                 aria-selected={selected}
+                tabIndex={selected ? 0 : -1}
                 onClick={() => chooseView(group.id)}
+                onKeyDown={(event) => {
+                  const index = groups.indexOf(group)
+                  const nextKey = localeKey === 'ar' ? 'ArrowLeft' : 'ArrowRight'
+                  const previousKey = localeKey === 'ar' ? 'ArrowRight' : 'ArrowLeft'
+                  const next = event.key === 'Home' ? 0 : event.key === 'End' ? groups.length - 1
+                    : event.key === nextKey ? (index + 1) % groups.length
+                      : event.key === previousKey ? (index - 1 + groups.length) % groups.length : null
+                  if (next === null) return
+                  event.preventDefault()
+                  chooseView(groups[next].id)
+                  document.getElementById(`${browserId}-${groups[next].id}`)?.focus()
+                }}
                 className={group.id === 'live' ? 'is-live' : undefined}
               >
                 <span className="simple-match-tabs__icon" aria-hidden>{icon}</span>
@@ -102,17 +110,7 @@ export function MatchExplorer({
             )
           })}
         </div>
-      </section>
-
-      <section className="match-step panel" aria-labelledby="region-step">
-        <div className="match-step__heading">
-          <span aria-hidden>2</span>
-          <div>
-            <h2 id="region-step">{t('chooseRegion')}</h2>
-            <p>{t('chooseRegionHint')}</p>
-          </div>
-        </div>
-
+        <p className="match-controls__label">{t('chooseRegion')}</p>
         <div className="region-choice" role="group" aria-label={t('chooseRegion')}>
           <button
             type="button"
@@ -127,6 +125,7 @@ export function MatchExplorer({
               key={bucket.key}
               type="button"
               aria-pressed={region === bucket.key}
+              data-region={bucket.key}
               onClick={() => setRegion(bucket.key)}
             >
               <span aria-hidden>{bucket.flag}</span>
@@ -137,7 +136,7 @@ export function MatchExplorer({
         </div>
       </section>
 
-      <div className="region-match-results" role="tabpanel">
+      <div className="region-match-results" role="tabpanel" id={`${browserId}-panel`} aria-labelledby={`${browserId}-${active}`} tabIndex={0}>
         {visibleBuckets.length > 0 ? (
           visibleBuckets.map((bucket) => {
             const preview = region === 'all' ? bucket.matches.slice(0, 4) : bucket.matches

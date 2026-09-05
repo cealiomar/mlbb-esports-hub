@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
+    "test:coach-evidence": "node --import tsx scripts/evaluate-coach.ts",
     "test:watch": "vitest",
     "harvest": "tsx scripts/harvest.ts",
     "harvest:meta": "tsx scripts/refresh-patch-meta.ts",

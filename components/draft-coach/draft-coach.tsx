@@ -198,7 +198,9 @@ function RecommendationCard({
   kind: DraftActionKind
   evidenceLabel: string
 }) {
+  const t = useTranslations('draftCoach')
   return (
+    <article className="coach-recommendation-shell">
     <button
       type="button"
       className="coach-recommendation"
@@ -234,7 +236,7 @@ function RecommendationCard({
                 : 'New pick'}
             </small>
           )}
-          <small>{recommendation.sampleSize} games</small>
+          <small>{t('sampleGames', { count: recommendation.sampleSize })}</small>
           <small data-confidence={recommendation.confidence}>
             {confidenceLabel(recommendation.confidence)}
           </small>
@@ -245,6 +247,18 @@ function RecommendationCard({
         <small>{scoreLabel}</small>
       </span>
     </button>
+    <details className="coach-evidence">
+      <summary>{t('whyRecommendation')}</summary>
+      <div>
+        <strong>{t('resultEvidence', { games: recommendation.resultGames, wins: recommendation.wins, losses: recommendation.losses })}</strong>
+        <p>{recommendation.observedWinRate === null
+          ? t('noResolvedResults')
+          : t('observedWinRate', { rate: Math.round(recommendation.observedWinRate * 100) })}</p>
+        <p>{t(kind === 'ban' ? 'banContextEvidence' : 'contextEvidence', { synergy: recommendation.synergyGames, matchups: recommendation.matchupGames })}</p>
+        <small>{t('evidenceCaveat')}</small>
+      </div>
+    </details>
+    </article>
   )
 }
 
@@ -284,19 +298,19 @@ export function DraftCoach({
   )
   const model = useMemo(
     () =>
-      buildDraftCoachModel(
+      mapName === null ? regionalModel : buildDraftCoachModel(
         leagues,
         regionSlug,
         mapName,
         heroCatalog,
       ),
-    [heroCatalog, leagues, mapName, regionSlug],
+    [heroCatalog, leagues, mapName, regionSlug, regionalModel],
   )
   const flow = useMemo(() => proDraftFlow(allyFirstPick), [allyFirstPick])
   const currentAction = started && stepIndex < flow.length ? flow[stepIndex] : null
-  const activePerspective = currentAction
+  const activePerspective = useMemo(() => currentAction
     ? perspectiveState(draft, currentAction.side)
-    : draft
+    : draft, [currentAction, draft])
   const automaticLane = currentAction?.kind === 'pick'
     ? nextSuggestedLane(
         model,
@@ -315,8 +329,9 @@ export function DraftCoach({
     currentAction?.side === 'ally' ? allyTeam : enemyTeam
   const activeEnemyTeam =
     currentAction?.side === 'ally' ? enemyTeam : allyTeam
-  const priorityPicks =
+  const priorityPicks = useMemo(() =>
     currentAction?.kind === 'ban' &&
+    currentAction.phase === 1 &&
     currentAction.side === 'ally' &&
     allyFirstPick
       ? recommendDraftHeroes(model, {
@@ -327,8 +342,8 @@ export function DraftCoach({
           enemyTeamPageSlug: activeEnemyTeam,
           limit: 3,
         })
-      : []
-  const recommendations = currentAction
+      : [], [currentAction, allyFirstPick, model, activePerspective, plan, activeAllyTeam, activeEnemyTeam])
+  const recommendations = useMemo(() => currentAction
     ? recommendDraftHeroes(model, {
         kind: currentAction.kind,
         state: activePerspective,
@@ -343,14 +358,14 @@ export function DraftCoach({
         phase: currentAction?.phase,
         limit: 5,
       })
-    : []
+    : [], [currentAction, model, activePerspective, plan, automaticLane, activeAllyTeam, activeEnemyTeam, priorityPicks])
   const nextAction = flow[stepIndex + 1] ?? null
   const canLockDuo =
     currentAction?.side === 'ally' &&
     currentAction.kind === 'pick' &&
     nextAction?.side === 'ally' &&
     nextAction.kind === 'pick'
-  const duoRecommendations = canLockDuo
+  const duoRecommendations = useMemo(() => canLockDuo
     ? recommendDraftDuos(model, {
         state: activePerspective,
         plan,
@@ -359,7 +374,7 @@ export function DraftCoach({
         phase: currentAction.phase,
         limit: 3,
       })
-    : []
+    : [], [canLockDuo, model, activePerspective, plan, allyTeam, enemyTeam, currentAction])
   const counterTargetProfiles = activePerspective.enemyPicks
     .map((value) => heroFromModel(model, value))
     .filter((profile): profile is DraftCoachHeroProfile => Boolean(profile))
@@ -367,7 +382,7 @@ export function DraftCoach({
     counterTargetProfiles.find((profile) => profile.key === heroKey(counterTarget)) ??
     counterTargetProfiles.at(-1) ??
     null
-  const roleCounters =
+  const roleCounters = useMemo(() =>
     currentAction?.kind === 'pick' && counterTargetProfile
       ? counterPicksByRole(model, {
           state: activePerspective,
@@ -377,9 +392,10 @@ export function DraftCoach({
           enemyTeamPageSlug:
             currentAction.side === 'ally' ? enemyTeam : allyTeam,
         })
-      : []
-  const draftComparison =
-    stepIndex >= flow.length ? compareCompletedDrafts(model, draft) : null
+      : [], [currentAction, counterTargetProfile, model, activePerspective, allyTeam, enemyTeam])
+  const draftComparison = useMemo(() =>
+    stepIndex >= flow.length ? compareCompletedDrafts(model, draft) : null,
+    [stepIndex, flow.length, model, draft])
   const used = new Set(
     [
       ...draft.allyPicks,

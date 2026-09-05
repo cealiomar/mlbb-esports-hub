@@ -5,6 +5,7 @@ export function SectionHeader({
   eyebrow,
   eyebrowColor,
   description,
+  compact = false,
 }: {
   title: string
   as?: 'h1' | 'h2'
@@ -12,10 +13,11 @@ export function SectionHeader({
   eyebrow?: string
   eyebrowColor?: string
   description?: string
+  compact?: boolean
 }) {
   const Tag = as
   return (
-    <header className="mb-10 flex flex-col items-center gap-2 text-center">
+    <header className={`${compact ? 'section-header--compact mb-5' : 'mb-10'} flex flex-col items-center gap-2 text-center`}>
       {eyebrow && (
         <p
           className="text-[var(--step--1)] font-semibold tracking-[0.2em] uppercase"

@@ -68,6 +68,7 @@ export default async function MatchesPage({
     <main className="section matches-page">
       <SectionHeader
         as="h1"
+        compact
         title={tn('matches')}
         description={t('pageDescription')}
         meta={<FreshnessBadge harvestedAt={await source.getFreshness()} />}

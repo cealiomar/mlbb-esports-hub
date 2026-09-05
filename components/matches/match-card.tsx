@@ -86,10 +86,15 @@ export function MatchCard({
   // visitor's device zone, so every fixture uses the time they actually see.
   const fallbackTimeZone = locale === 'ar' ? 'Asia/Riyadh' : 'UTC'
   const [timeZone, setTimeZone] = useState(fallbackTimeZone)
+  const [awaitingStatus, setAwaitingStatus] = useState(false)
   useEffect(() => {
     const detected = Intl.DateTimeFormat().resolvedOptions().timeZone
     if (detected) setTimeZone(detected)
-  }, [])
+    const updateStatus = () => setAwaitingStatus(match.status === 'upcoming' && match.startsAt * 1000 <= Date.now())
+    updateStatus()
+    const timer = setInterval(updateStatus, 60_000)
+    return () => clearInterval(timer)
+  }, [match.startsAt, match.status])
   const timeZoneLabel = new Intl.DateTimeFormat(locale === 'ar' ? 'ar-SA' : 'en-GB', {
     timeZone,
     timeZoneName: 'short',
@@ -116,6 +121,9 @@ export function MatchCard({
             <p className="line-clamp-2 text-[11px] leading-snug font-semibold text-[var(--ink-muted)]">
               {match.tournamentName}
             </p>
+            {awaitingStatus && (
+              <span className="match-awaiting">{t('awaitingStatus')}</span>
+            )}
           </div>
 
           {match.status === 'live' ? (

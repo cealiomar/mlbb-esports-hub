@@ -28,6 +28,7 @@
     "liveDescription": "{count, plural, one {One match is underway. Jump straight into the action.} other {# matches are underway. Jump straight into the action.}}"
   },
   "matches": {
+    "awaitingStatus": "Awaiting status update",
     "upcoming": "Upcoming matches",
     "completed": "Results",
     "today": "Today",
@@ -171,6 +172,14 @@
     "noDataHint": "This page will update automatically when an active league publishes its current-season statistics."
   },
   "draftCoach": {
+    "whyRecommendation": "Why this recommendation?",
+    "banContextEvidence": "Current-season pro context: {synergy} games alongside enemy picks · {matchups} games against your picks",
+    "sampleGames": "{count} recorded games",
+    "resultEvidence": "Selected region / map: {games} completed games · {wins} wins · {losses} losses",
+    "observedWinRate": "Observed win rate: {rate}% (not a prediction)",
+    "noResolvedResults": "No confirmed results for this hero in the selected sample.",
+    "contextEvidence": "Current-season pro context: {synergy} games with your picks · {matchups} games against the opposing picks",
+    "evidenceCaveat": "Each game counts once per measure. Context uses all active leagues for the selected map and is not added to the hero's sample. Association is not proof of a counter; ranking smooths small samples and also considers open roles.",
     "eyebrow": "A data-driven draft assistant",
     "title": "Draft Coach",
     "description": "Choose a region and game plan, then log every pick and ban. The coach recalculates the meta, counters and team tendencies after every move — and explains why.",
@@ -272,7 +281,7 @@
     "compositionMetric": "Pro composition fit",
     "matchupMetric": "Matchup edge",
     "comparisonEvidence": "Based on {games} current-season games · {confidence}",
-    "comparisonDisclaimer": "This evaluates the draft, not the final result. Player execution, comfort, in-game economy and decisions are not included.",
+    "comparisonDisclaimer": "This is a draft comparison, not a calibrated win probability or a guarantee. Player skill, economy and in-game decisions are not included.",
     "heroPoolEyebrow": "Every hero in the live patch",
     "heroPool": "Hero Pool",
     "heroPoolHint": "The role filter only narrows the list. You may manually record any available hero for free-form practice; automatic recommendations still protect role coverage.",
@@ -295,9 +304,9 @@
       "ban": "BAN"
     },
     "confidence": {
-      "high": "High confidence",
-      "medium": "Medium confidence",
-      "low": "Limited confidence"
+      "high": "Broader sample",
+      "medium": "Moderate sample",
+      "low": "Limited sample"
     },
     "reasons": {
       "meta": "Frequent pro pick",
@@ -319,7 +328,7 @@
       "scaling": "Late-game fit",
       "limitedSample": "Limited sample"
     },
-    "methodNote": "Recommendations are probabilities, not a guarantee. Automatic Picks only include heroes played in the current pro season. Priority and results follow the selected region, while synergy, compositions and counters learn from every active pro league. Live patch roles and tiers refresh hourly, and leagues that have not started are excluded automatically.",
+    "methodNote": "Decision fit is a ranking score, not a win probability. Automatic picks require current-season pro appearances. Results follow the selected region and map; combinations and matchups use active pro leagues. Unknown outcomes never count as losses. Game duration is only a pace proxy, and observed associations do not prove counters. Data refresh is scheduled, not real-time.",
     "noData": "Draft data is unavailable",
     "noDataHint": "The coach will activate automatically when the tournament snapshot is published."
   },

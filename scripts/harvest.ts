@@ -211,6 +211,10 @@ async function main(): Promise<void> {
   writeSnapshot('matches', matches)
   console.log(`wrote ${matches.length} matches`)
 
+  // Fast runs publish the ticker without waiting for dozens of rate-limited
+  // roster/statistics requests. Full runs continue below on their own cadence.
+  if (process.env.MATCHES_ONLY === 'true') return
+
   const regions = getRegions()
   const previousDrafts = readSnapshot<DraftLeague[]>('drafts')?.data ?? []
   const draftByRegion = new Map(

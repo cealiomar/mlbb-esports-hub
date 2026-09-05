@@ -5,7 +5,7 @@ import {
   liveMatches,
   recentResults,
   byRegion,
-  LIVE_ASSUMED_WINDOW_SECONDS,
+  PENDING_WINDOW_SECONDS,
 } from './select'
 import type { Match } from '@/lib/data/types'
 
@@ -63,12 +63,13 @@ describe('match selection', () => {
     expect(result.map((match) => match.id)).toEqual(['same'])
   })
 
-  it('upcoming excludes anything already started', () => {
+  it('keeps recently scheduled but unconfirmed fixtures visible without inventing live status', () => {
     const result = upcomingMatches(
       [make({ id: 'past', startsAt: NOW - HOUR }), make({ id: 'future', startsAt: NOW + HOUR })],
       NOW,
     )
-    expect(result.map((m) => m.id)).toEqual(['future'])
+    expect(result.map((m) => m.id)).toEqual(['past', 'future'])
+    expect(result.every((match) => match.status === 'upcoming')).toBe(true)
   })
 
   it('upcoming excludes live matches', () => {
@@ -87,13 +88,12 @@ describe('match selection', () => {
     expect(result.map((m) => m.id)).toEqual(['live'])
   })
 
-  it('treats a recently started upcoming match as live while scores catch up', () => {
+  it('never promotes a fixture to live solely because its scheduled time passed', () => {
     const result = liveMatches(
       [make({ id: 'started', status: 'upcoming', startsAt: NOW - 10 * 60 })],
       NOW,
     )
-    expect(result.map((m) => m.id)).toEqual(['started'])
-    expect(result[0].status).toBe('live')
+    expect(result).toHaveLength(0)
   })
 
   it('does not treat future or stale upcoming matches as live', () => {
@@ -102,12 +102,16 @@ describe('match selection', () => {
         make({ id: 'future', startsAt: NOW + HOUR }),
         make({
           id: 'stale',
-          startsAt: NOW - LIVE_ASSUMED_WINDOW_SECONDS - 1,
+          startsAt: NOW - PENDING_WINDOW_SECONDS - 1,
         }),
       ],
       NOW,
     )
     expect(result).toHaveLength(0)
+  })
+
+  it('does not keep unconfirmed fixtures from previous days in the upcoming list', () => {
+    expect(upcomingMatches([make({ startsAt: NOW - PENDING_WINDOW_SECONDS - 1 })], NOW)).toHaveLength(0)
   })
 
   it('recent results returns completed matches newest first', () => {

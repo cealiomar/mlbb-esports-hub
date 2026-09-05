@@ -1510,6 +1510,28 @@ html[data-theme='dark'] .panel {
   gap: 0.85rem;
 }
 
+/* Data-first pages: controls and the first fixture share the first viewport. */
+.matches-page.section, .draft-coach-page.section { padding-top: 1.75rem; }
+.section-header--compact .display { font-size: clamp(1.7rem, 3.5vw, 2.8rem); line-height: 1.2; }
+.section-header--compact p { margin-top: 0; }
+.match-controls { padding: 0.8rem; min-width: 0; overflow: hidden; }
+.match-controls__label { position: relative; z-index: 2; font-size: 0.75rem; font-weight: 600; color: var(--ink-muted); margin-block: 0.8rem 0.4rem; }
+.match-controls .simple-match-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem; }
+.match-controls .simple-match-tabs button { min-height: 52px; padding: 0.55rem; gap: 0.45rem; grid-template-columns: minmax(0, 1fr) auto; }
+.match-controls .simple-match-tabs button:first-child:nth-last-child(2),
+.match-controls .simple-match-tabs button:first-child:nth-last-child(2) ~ button { grid-column: auto; }
+.match-controls .simple-match-tabs:has(> button:first-child:nth-last-child(2)) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.match-controls .simple-match-tabs__icon { display: none; }
+.match-controls .region-choice { flex-wrap: nowrap; overflow-x: auto; padding-block: 0.2rem 0.45rem; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.match-controls .region-choice button { flex: none; }
+.simple-match-browser .region-match-results { padding-top: 0.5rem; }
+.simple-match-browser .reveal { animation: none; }
+@media (max-width: 600px) {
+  .match-controls .simple-match-tabs button { grid-template-columns: 1fr; justify-items: center; gap: 0.2rem; }
+  .match-controls .simple-match-tabs button > span:nth-child(2) { font-size: 0.74rem; white-space: normal; text-align: center; line-height: 1.35; }
+  .match-controls .simple-match-tabs button strong { min-width: 22px; height: 22px; }
+}
+
 .match-step {
   padding: clamp(1rem, 2.5vw, 1.4rem);
   overflow: hidden;
@@ -2842,6 +2864,19 @@ html[data-theme='dark'] .panel {
   font-style: normal;
 }
 .coach-recommendations { position: relative; z-index: 2; display: grid; gap: 0.42rem; }
+.coach-recommendation-shell { min-width: 0; }
+.coach-recommendation-shell > .coach-recommendation { width: 100%; }
+.coach-evidence { font-size: 12px; color: var(--ink-muted); }
+.coach-evidence summary { cursor: pointer; padding: 0.55rem 0.8rem; min-height: 44px; align-content: center; color: var(--brand-strong); }
+.coach-evidence summary:focus-visible { outline: 2px solid var(--brand); outline-offset: -2px; border-radius: 8px; }
+.coach-evidence > div { display: grid; gap: 0.4rem; padding: 0 0.8rem 0.8rem; line-height: 1.7; }
+.coach-evidence strong { color: var(--ink); font-size: 12px; }
+.coach-evidence small { font-size: 11px; }
+.coach-recommendation-shell .coach-recommendation__name strong { font-size: 14px; }
+.coach-recommendation-shell .coach-recommendation__name small,
+.coach-recommendation-shell .coach-recommendation__proof small { font-size: 11px; }
+.coach-recommendation-shell .coach-recommendation__reasons small { font-size: 10px; }
+.match-awaiting { display: block; font-size: 10px; color: var(--brand-strong); margin-top: 4px; }
 .coach-recommendation {
   display: grid;
   min-width: 0;
@@ -3246,8 +3281,7 @@ html[data-theme='dark'] .panel {
   }
   .coach-recommendation .draft-hero-image,
   .coach-recommendation .draft-hero-fallback { width: 50px !important; height: 50px !important; }
-  .coach-recommendation__reasons small:nth-child(n + 3),
-  .coach-recommendation__proof small:nth-child(2) { display: none; }
+  .coach-recommendation__reasons small:nth-child(n + 3) { display: none; }
   .coach-recommendation__name { align-items: start; flex-direction: column; gap: 0; }
   .coach-recommendation__name strong { max-width: 100%; }
   .coach-hero-grid { max-height: 520px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.35rem; }

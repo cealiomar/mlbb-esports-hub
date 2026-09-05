@@ -39,6 +39,7 @@ export default async function DraftCoachPage({
     <main className="section draft-coach-page">
       <SectionHeader
         as="h1"
+        compact
         eyebrow={t('eyebrow')}
         title={t('title')}
         description={t('description')}

@@ -85,7 +85,8 @@ test('matches and results are grouped into simple region sections', async ({
   await expect(panel.locator('article').first()).toBeVisible()
 
   await page.getByRole('tab', { name: /Results/ }).click()
-  expect(await panel.locator('.region-match-group').count()).toBeGreaterThan(1)
+  await expect(panel.locator('.region-match-group')).toHaveCount(1)
+  await expect(regionButtons.nth(1)).toHaveAttribute('aria-pressed', 'true')
 })
 
 test('the complex search and filter controls are gone', async ({ page }) => {

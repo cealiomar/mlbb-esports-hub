@@ -2,11 +2,17 @@ name: Harvest Liquipedia
 
 on:
   schedule:
-    # Hourly. One match ticker, every active standings page and three rotating
-    # roster, statistics and exact-draft pages, all spaced by the client's
-    # 30-second parse limiter.
-    - cron: '0 * * * *'
+    # Avoid the busy start of the hour. The two fast runs fetch only the
+    # ticker; the hourly full run keeps standings, rosters and drafts current.
+    - cron: '17 * * * *'
+    - cron: '37,57 * * * *'
   workflow_dispatch:
+    inputs:
+      mode:
+        description: Refresh scope
+        type: choice
+        options: [full, matches]
+        default: full
 
 concurrency:
   # Share the Pages lock with deploy.yml so a scheduled refresh never races
@@ -27,6 +33,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -37,10 +46,22 @@ jobs:
 
       - name: Harvest
         env:
-          RUN_INDEX: ${{ github.run_number }}
-        run: |
-          npm run harvest:meta
-          npm run harvest
+          MATCHES_ONLY: ${{ github.event.schedule == '37,57 * * * *' || inputs.mode == 'matches' }}
+        # Rotate by wall-clock hour, not run number: adding two ticker-only
+        # runs must not make the full harvest revisit the same three regions.
+        run: RUN_INDEX=$(($(date +%s) / 3600)) npm run harvest
+
+      - name: Refresh patch catalog independently
+        if: github.event.schedule != '37,57 * * * *' && inputs.mode != 'matches'
+        continue-on-error: true
+        run: npm run harvest:meta
+
+      - name: Validate before publishing
+        run: npm test -- lib/data lib/matches
+
+      - name: Evaluate held-out draft results
+        if: github.event.schedule != '37,57 * * * *' && inputs.mode != 'matches'
+        run: npm run test:coach-evidence
 
       - name: Commit snapshots
         run: |
@@ -53,7 +74,8 @@ jobs:
             echo "no data change"
           else
             git commit -m "chore: refresh Liquipedia snapshots"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
 
       # A push made with GITHUB_TOKEN deliberately does not start another
@@ -67,6 +89,12 @@ jobs:
           else
             echo "path=/${{ github.event.repository.name }}" >> "$GITHUB_OUTPUT"
           fi
+
+      - uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: next-${{ runner.os }}-${{ hashFiles('package-lock.json') }}-${{ github.run_id }}
+          restore-keys: next-${{ runner.os }}-${{ hashFiles('package-lock.json') }}-
 
       - name: Build refreshed site
         env:

@@ -1,7 +1,7 @@
 import type { Match } from '@/lib/data/types'
 import { egyptDayKey } from '@/lib/time/egypt'
 
-export const LIVE_ASSUMED_WINDOW_SECONDS = 5 * 60 * 60
+export const PENDING_WINDOW_SECONDS = 24 * 60 * 60
 
 export function todayMatches(all: Match[], now: number): Match[] {
   const today = egyptDayKey(now)
@@ -12,20 +12,15 @@ export function todayMatches(all: Match[], now: number): Match[] {
 
 export function upcomingMatches(all: Match[], now: number): Match[] {
   return all
-    .filter((m) => m.status === 'upcoming' && m.startsAt > now)
+    .filter((m) => m.status === 'upcoming' && m.startsAt >= now - PENDING_WINDOW_SECONDS)
     .sort((a, b) => a.startsAt - b.startsAt)
 }
 
 export function liveMatches(all: Match[], now: number): Match[] {
+  // Time passing is not evidence of a live broadcast. Keep unconfirmed
+  // fixtures in the schedule rather than inventing LIVE from a start time.
   return all
-    .filter(
-      (m) =>
-        m.status === 'live' ||
-        (m.status === 'upcoming' &&
-          m.startsAt <= now &&
-          m.startsAt >= now - LIVE_ASSUMED_WINDOW_SECONDS),
-    )
-    .map((m) => (m.status === 'live' ? m : { ...m, status: 'live' as const }))
+    .filter((m) => m.status === 'live' && m.startsAt <= now)
     .sort((a, b) => a.startsAt - b.startsAt)
 }
 

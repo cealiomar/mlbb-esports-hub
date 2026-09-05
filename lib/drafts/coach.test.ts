@@ -76,6 +76,56 @@ const league: DraftLeague = {
 }
 
 describe('draft coach model', () => {
+  it('counts resolved results only and never treats an unknown winner as a loss', () => {
+    const pending = { ...game(1), winner: null }
+    const model = buildDraftCoachModel([{ ...league, series: [{ ...league.series[0], games: [...league.series[0].games, pending] }] }])
+    const profile = model.heroByKey.fanny
+    expect(profile.exactGames).toBe(5)
+    expect(profile.exactResultGames).toBe(4)
+    expect(profile.exactWins).toBe(3)
+    expect(model.synergy['fanny::terizla']).toEqual({ games: 4, wins: 3 })
+    expect(model.compositions).toHaveLength(8)
+  })
+
+  it('counts a game once even when multiple allies and opponents appear in it', () => {
+    const model = buildDraftCoachModel([league])
+    const recommendation = recommendDraftHeroes(model, {
+      kind: 'pick', plan: 'balanced', targetLane: 'gold',
+      state: { allyPicks: ['Fanny', 'Zhuxin'], allyPickLanes: ['jungle', 'mid'], enemyPicks: ['Hilda', 'Nolan'], allyBans: [], enemyBans: [] },
+    }).find((item) => item.hero.name === 'Claude')!
+    expect(recommendation.synergyGames).toBe(4)
+    expect(recommendation.matchupGames).toBe(4)
+    expect(recommendation.sampleSize).toBe(4)
+    expect(recommendation.resultGames).toBe(4)
+    expect(recommendation.wins).toBe(3)
+    expect(recommendation.losses).toBe(1)
+    expect(recommendation.observedWinRate).toBe(0.75)
+    expect(recommendation.confidence).toBe('low')
+  })
+
+  it('does not use season-wide pick rates for a map with no games', () => {
+    const model = buildDraftCoachModel([league], 'indonesia', 'Flying Cloud')
+    expect(model.gamesAnalyzed).toBe(0)
+    expect(model.heroByKey.fanny.pickRate).toBe(0)
+    expect(model.heroByKey.fanny.summaryPicks).toBe(0)
+    expect(recommendDraftHeroes(model, {
+      kind: 'pick', plan: 'balanced',
+      state: { allyPicks: [], enemyPicks: [], allyBans: [], enemyBans: [] },
+    })).toEqual([])
+  })
+
+  it('shows no win percentage when every result is unknown', () => {
+    const model = buildDraftCoachModel([{ ...league, series: [{ ...league.series[0], games: [{ ...game(1), winner: null }] }] }])
+    const recommendation = recommendDraftHeroes(model, {
+      kind: 'pick', plan: 'balanced', targetLane: 'jungle',
+      state: { allyPicks: [], enemyPicks: [], allyBans: [], enemyBans: [] },
+    })[0]
+    expect(recommendation.observedWinRate).toBeNull()
+    expect(recommendation.resultGames).toBe(0)
+    expect(recommendation.winRate).toBe(0.5)
+    expect(model.compositions).toEqual([])
+  })
+
   it('keeps an old summary-only league out of the current meta', () => {
     const staleLeague: DraftLeague = {
       ...league,
