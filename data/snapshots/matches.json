@@ -1,42 +1,10 @@
 {
-  "harvestedAt": 1788776744,
+  "harvestedAt": 1788786026,
   "data": [
-    {
-      "id": "1788775200-mlbb-academy-league-season-6-regular-season-phase-1-khan-so",
-      "startsAt": 1788775200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KHAN",
-          "name": "Khan Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "SO",
-          "name": "Stark Origin",
-          "pageSlug": "",
-          "logoUrl": "/teams/56px-Stark_Origin_darkmode-124a040e.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 3",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1788780600-mdl-indonesia-season-14-regular-season-kage-cfg",
       "startsAt": 1788780600,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -44,7 +12,7 @@
           "name": "Kagendra",
           "pageSlug": "Kagendra",
           "logoUrl": "/teams/79px-Kagendra_allmode-eb24ab2c.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -52,7 +20,7 @@
           "name": "Cosmic Frogs",
           "pageSlug": "",
           "logoUrl": "/teams/50px-Cosmic_Frogs_allmode-dce3123e.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -61,38 +29,6 @@
       "regionSlug": "indonesia",
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1788782400-mlbb-academy-league-season-6-regular-season-phase-1-king-gmxk",
-      "startsAt": 1788782400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KING",
-          "name": "DX Kingz",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "GMXK",
-          "name": "GamesMY Kelantan",
-          "pageSlug": "GamesMY_Kelantan",
-          "logoUrl": "/teams/87px-GamesMY_Kelantan_darkmode-c6dce47c.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 3",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
       ],
       "vodUrls": []
     },
@@ -532,22 +468,22 @@
       "vodUrls": []
     },
     {
-      "id": "1789036200-mlbb-china-masters-season-3-regular-season-tbd-tbd",
+      "id": "1789036200-mlbb-china-masters-season-3-regular-season-osg-qtg",
       "startsAt": 1789036200,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "OSG",
+          "name": "OSG",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/40px-Oriental_Starlight_School_darkmode-1e513e12.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "QTG",
+          "name": "QTG",
           "pageSlug": "",
           "logoUrl": null,
           "score": null,
@@ -561,24 +497,24 @@
       "vodUrls": []
     },
     {
-      "id": "1789041600-mlbb-china-masters-season-3-regular-season-tbd-tbd",
+      "id": "1789041600-mlbb-china-masters-season-3-regular-season-ae-tk",
       "startsAt": 1789041600,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "AE",
+          "name": "Alter Ego CN",
+          "pageSlug": "Alter_Ego_CN",
+          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "TK",
+          "name": "The Keeper Gaming",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/73px-The_Keeper_Gaming_allmode-5353a51d.png",
           "score": null,
           "isWinner": false
         }
@@ -735,24 +671,24 @@
       "vodUrls": []
     },
     {
-      "id": "1789117200-mlbb-china-masters-season-3-regular-season-tbd-tbd",
+      "id": "1789117200-mlbb-china-masters-season-3-regular-season-gzg-tk",
       "startsAt": 1789117200,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "GZG",
+          "name": "Guangzhou Gaming",
+          "pageSlug": "Guangzhou_Gaming",
+          "logoUrl": "/teams/52px-Guangzhou_Gaming_allmode-525b6a90.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "TK",
+          "name": "The Keeper Gaming",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/73px-The_Keeper_Gaming_allmode-5353a51d.png",
           "score": null,
           "isWinner": false
         }
@@ -880,22 +816,22 @@
       "vodUrls": []
     },
     {
-      "id": "1789122600-mlbb-china-masters-season-3-regular-season-tbd-tbd",
+      "id": "1789122600-mlbb-china-masters-season-3-regular-season-kbg-qtg",
       "startsAt": 1789122600,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "KBG",
+          "name": "KeepBest Gaming",
+          "pageSlug": "KeepBest_Gaming",
+          "logoUrl": "/teams/95px-KeepBest_Gaming_allmode-758251c6.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "QTG",
+          "name": "QTG",
           "pageSlug": "",
           "logoUrl": null,
           "score": null,
@@ -996,24 +932,24 @@
       "vodUrls": []
     },
     {
-      "id": "1789128000-mlbb-china-masters-season-3-regular-season-tbd-tbd",
+      "id": "1789128000-mlbb-china-masters-season-3-regular-season-ae-osg",
       "startsAt": 1789128000,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "AE",
+          "name": "Alter Ego CN",
+          "pageSlug": "Alter_Ego_CN",
+          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "OSG",
+          "name": "OSG",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/40px-Oriental_Starlight_School_darkmode-1e513e12.png",
           "score": null,
           "isWinner": false
         }
@@ -1455,6 +1391,122 @@
       ],
       "tournamentName": "CN Masters Season 3 - RS: Week 1",
       "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789203600-mpl-malaysia-season-18-regular-season-vms-rey",
+      "startsAt": 1789203600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "VMS",
+          "name": "Team Vamos",
+          "pageSlug": "Team_Vamos",
+          "logoUrl": "/teams/43px-Team_Vamos_darkmode-af6ed226.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "REY",
+          "name": "Team Rey",
+          "pageSlug": "Team_Rey",
+          "logoUrl": "/teams/34px-Team_Rey_allmode-d5112b3a.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 5",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789203600-mpl-philippines-season-18-regular-season-flcp-apbr",
+      "startsAt": 1789203600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FLCP",
+          "name": "Team Falcons PH",
+          "pageSlug": "Team_Falcons_PH",
+          "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "APBR",
+          "name": "AP.Bren",
+          "pageSlug": "AP.Bren",
+          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788782400-mlbb-academy-league-season-6-regular-season-phase-1-king-gmxk",
+      "startsAt": 1788782400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KING",
+          "name": "DX Kingz",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "GMXK",
+          "name": "GamesMY Kelantan",
+          "pageSlug": "GamesMY_Kelantan",
+          "logoUrl": "/teams/87px-GamesMY_Kelantan_darkmode-c6dce47c.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 3",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788775200-mlbb-academy-league-season-6-regular-season-phase-1-khan-so",
+      "startsAt": 1788775200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KHAN",
+          "name": "Khan Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "SO",
+          "name": "Stark Origin",
+          "pageSlug": "",
+          "logoUrl": "/teams/56px-Stark_Origin_darkmode-124a040e.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 3",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -2882,64 +2934,6 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 2",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788524100-mpl-malaysia-season-18-regular-season-rrqt-srg",
-      "startsAt": 1788524100,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RRQT",
-          "name": "RRQ Tora",
-          "pageSlug": "RRQ_Tora",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "SRG",
-          "name": "Selangor Red Giants",
-          "pageSlug": "Selangor_Red_Giants",
-          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788523200-esn-national-championship-league-season-1-regular-season-ak-mio",
-      "startsAt": 1788523200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AK",
-          "name": "The Akatsuki",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "MIO",
-          "name": "Team Mio",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
-      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     }
