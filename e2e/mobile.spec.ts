@@ -41,13 +41,14 @@ test('standings are one tap away from every page', async ({ page }) => {
 
 test('every tap target in the nav is at least 44px tall', async ({ page }) => {
   await page.goto('/en/')
-  const links = page.locator('nav a:visible')
-  const count = await links.count()
-  expect(count).toBeGreaterThan(0)
-  for (let i = 0; i < count; i++) {
-    const box = await links.nth(i).boundingBox()
-    expect(box?.height ?? 0).toBeGreaterThanOrEqual(44)
-  }
+  await expect(page.getByRole('link', { name: 'Matches', exact: true })).toBeVisible()
+  // Measure the responsive navigation in one frame: hydration can replace
+  // the desktop/mobile links between separate count() and nth() calls.
+  await expect.poll(() => page.locator('nav a').evaluateAll((nodes) => {
+    const heights = nodes.map((node) => node.getBoundingClientRect())
+      .filter((box) => box.width > 0 && box.height > 0).map((box) => box.height)
+    return heights.length >= 5 && heights.every((height) => height >= 44)
+  })).toBe(true)
 })
 
 test('matches page paints fixtures without any loading placeholder', async ({

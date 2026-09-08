@@ -360,7 +360,9 @@ describe('draft coach current tournament data', () => {
     expect(recommendations[0].pickRate).toBeGreaterThan(
       recommendations[1].pickRate,
     )
-    expect(recommendations[0].reasons).toContain('composition')
+    // Recorded overlap is evidence, but it must not be described as a strong
+    // composition when its outcomes no longer support that explanation.
+    expect(recommendations[0].synergyGames).toBeGreaterThan(0)
   })
 
   it('compares two completed drafts conservatively and symmetrically', () => {

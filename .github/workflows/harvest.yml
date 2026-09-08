@@ -57,11 +57,19 @@ jobs:
         run: npm run harvest:meta
 
       - name: Validate before publishing
-        run: npm test -- lib/data lib/matches
+        run: npm test -- lib/data lib/matches lib/drafts
 
       - name: Evaluate held-out draft results
         if: github.event.schedule != '37,57 * * * *' && inputs.mode != 'matches'
-        run: npm run test:coach-evidence
+        run: npm run test:coach-evidence -- --output test-results/coach-evidence.json
+
+      - name: Retain coach evaluation evidence
+        if: github.event.schedule != '37,57 * * * *' && inputs.mode != 'matches'
+        uses: actions/upload-artifact@v4
+        with:
+          name: coach-evaluation-${{ github.run_id }}
+          path: test-results/coach-evidence.json
+          retention-days: 14
 
       - name: Commit snapshots
         run: |

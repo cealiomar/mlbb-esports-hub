@@ -268,12 +268,11 @@ test('Hero Pool filters never force every coach recommendation into one role', a
 }) => {
   await page.goto('/en/draft-coach/')
 
+  await page.getByRole('button', { name: 'Start draft' }).click()
   await page.getByRole('button', { name: 'Roam', exact: true }).click()
   await expect(
     page.getByRole('button', { name: 'Roam', exact: true }),
   ).toHaveAttribute('aria-pressed', 'true')
-  await page.getByRole('button', { name: 'Start draft' }).click()
-
   for (let index = 0; index < 6; index += 1) {
     await page.locator('.coach-recommendation').first().click()
   }
@@ -298,6 +297,7 @@ test('hero portraits are local and Draft Coach fits a 320px phone', async ({ pag
   await expect(page.locator('html')).toHaveAttribute('dir', 'rtl')
   await expect(page.getByRole('heading', { name: 'مدرب الدرافت' })).toBeVisible()
   await expect(page.getByRole('link', { name: 'المدرب' }).first()).toBeVisible()
+  await page.locator('.coach-start').click()
 
   const overflow = await page.evaluate(
     () => document.documentElement.scrollWidth - document.documentElement.clientWidth,

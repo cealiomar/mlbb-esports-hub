@@ -53,6 +53,14 @@ export interface DraftCompositionSample {
   picks: string[]
   opponents: string[]
   won: boolean | null
+  team?: DraftTeam
+  opponent?: DraftTeam
+  sourcePage?: string
+  playedOn?: string | null
+  seriesId?: string
+  gameNumber?: number
+  durationSeconds?: number | null
+  vodUrl?: string | null
 }
 
 export interface DraftCoachTeamProfile {
@@ -122,6 +130,7 @@ export type RecommendationReason =
   | 'early'
   | 'scaling'
   | 'limitedSample'
+  | 'planCore'
 
 export interface DraftRecommendation {
   hero: DraftHero
@@ -187,6 +196,8 @@ export interface RecommendationOptions {
   limit?: number
   /** Overrides the plan preset. Used by the tuning harness. */
   weights?: PlanWeights
+  /** A user-selected, observed composition core; never bypasses role legality. */
+  preferredHeroes?: string[]
 }
 
 export interface RoleCounterRecommendation {
@@ -308,6 +319,9 @@ interface ExactGameView {
   game: DraftGame
   team1: DraftTeam
   team2: DraftTeam
+  sourcePage: string
+  playedOn: string | null
+  seriesId: string
 }
 
 function allExactGames(leagues: DraftLeague[]): ExactGameView[] {
@@ -317,6 +331,9 @@ function allExactGames(leagues: DraftLeague[]): ExactGameView[] {
         game,
         team1: series.team1,
         team2: series.team2,
+        sourcePage: series.tournamentPageSlug,
+        playedOn: series.playedOn ?? null,
+        seriesId: series.id,
       })),
     ),
   )
@@ -558,7 +575,7 @@ export function buildDraftCoachModel(
   // Composition and matchup knowledge is shared across every active current-
   // season pro league. A regional filter still controls hero priority, team
   // comfort and win rates, while proven global combinations stay available.
-  for (const [gameId, { game }] of allCurrentGames.entries()) {
+  for (const [gameId, { game, team1, team2, sourcePage, playedOn, seriesId }] of allCurrentGames.entries()) {
     const sides = gameTeams(game)
     sides.forEach((side, sideIndex) => {
       const pickKeys = side.picks.map((item) => heroKey(item.id || item.name))
@@ -569,6 +586,12 @@ export function buildDraftCoachModel(
         picks: pickKeys,
         opponents: sides[sideIndex === 0 ? 1 : 0].picks.map((hero) => heroKey(hero.id || hero.name)),
         won: side.won,
+        team: sideIndex === 0 ? team1 : team2,
+        opponent: sideIndex === 0 ? team2 : team1,
+        sourcePage, playedOn, seriesId,
+        gameNumber: game.number,
+        durationSeconds: game.durationSeconds,
+        vodUrl: game.vodUrl,
       })
 
       for (let first = 0; first < pickKeys.length; first += 1) {
@@ -1144,9 +1167,9 @@ export function recommendDraftHeroes(
                 winRate * 0.2,
             )
           : clamp(proPickPriority * 0.78 + winRate * 0.22)
-      const meta = hasCurrentProEvidence
-        ? clamp(proMeta * 0.92 + profile.patchMetaScore * 0.08)
-        : clamp(profile.patchMetaScore * 0.7)
+      // Ranked tier lists are not professional tournament evidence. The
+      // catalog still provides role priors and portraits, never ranking points.
+      const meta = hasCurrentProEvidence ? proMeta : 0
       const role = laneFit(
         profile,
         model,
@@ -1237,7 +1260,12 @@ export function recommendDraftHeroes(
       if (options.kind === 'pick' && role < MIN_LANE_FIT) rawScore *= 0.45
       if (targetLane && role < MIN_LANE_FIT) rawScore *= 0.55
 
+      const planCore = options.kind === 'pick' &&
+        (options.preferredHeroes ?? []).some((hero) => heroKey(hero) === profile.key)
+      if (planCore) rawScore += 0.04
+
       const reasons: RecommendationReason[] = []
+      addReason(reasons, 'planCore', planCore)
       if (options.kind === 'ban') {
         addReason(reasons, 'targetOpenRole', Boolean(suggestedLane))
         addReason(
@@ -1264,7 +1292,7 @@ export function recommendDraftHeroes(
         addReason(
           reasons,
           'composition',
-          composition.games >= 2 &&
+          composition.games >= 3 && composition.rate >= 0.53 &&
             composition.bestOverlap >= Math.min(2, allyKeys.length),
         )
         addReason(reasons, 'synergy', synergy.games >= 3 && synergy.rate >= 0.54)
@@ -1280,12 +1308,6 @@ export function recommendDraftHeroes(
         options.kind === 'ban'
           ? profile.banRate >= 0.24
           : profile.pickRate >= 0.08,
-      )
-      addReason(
-        reasons,
-        'patchMeta',
-        profile.patchMetaScore >= 0.59 &&
-          (!hasCurrentProEvidence || profile.patchMetaTier === 'SS'),
       )
       addReason(reasons, 'winRate', profile.exactGames >= 4 && winRate >= 0.54)
       addReason(reasons, 'limitedSample', relevantSample < 5)

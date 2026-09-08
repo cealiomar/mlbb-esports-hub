@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { getRegions } from '@/lib/content/regions'
 import type { DraftLeague } from '@/lib/data/types'
@@ -31,6 +31,9 @@ import {
   type RecommendationReason,
 } from '@/lib/drafts/coach'
 import { HeroIcon } from '@/components/drafts/hero-icon'
+import { FreshnessBadge } from '@/components/ui/freshness-badge'
+import { observedRateInterval, scopeDraftEvidence, type EvidenceWindow } from '@/lib/drafts/evidence'
+import { findDraftBlueprints, type DraftBlueprint } from '@/lib/drafts/playbook'
 
 const EMPTY_STATE: DraftCoachState = {
   allyPicks: [],
@@ -199,6 +202,7 @@ function RecommendationCard({
   evidenceLabel: string
 }) {
   const t = useTranslations('draftCoach')
+  const interval = observedRateInterval(recommendation.wins, recommendation.resultGames)
   return (
     <article className="coach-recommendation-shell">
     <button
@@ -254,6 +258,7 @@ function RecommendationCard({
         <p>{recommendation.observedWinRate === null
           ? t('noResolvedResults')
           : t('observedWinRate', { rate: Math.round(recommendation.observedWinRate * 100) })}</p>
+        {interval && <p>{t('observedInterval', { low: Math.round(interval[0] * 100), high: Math.round(interval[1] * 100) })}</p>}
         <p>{t(kind === 'ban' ? 'banContextEvidence' : 'contextEvidence', { synergy: recommendation.synergyGames, matchups: recommendation.matchupGames })}</p>
         <small>{t('evidenceCaveat')}</small>
       </div>
@@ -285,26 +290,36 @@ export function DraftCoach({
   const [stepIndex, setStepIndex] = useState(0)
   const [draft, setDraft] = useState<DraftCoachState>(EMPTY_STATE)
   const [counterTarget, setCounterTarget] = useState('')
+  const [evidenceWindow, setEvidenceWindow] = useState<EvidenceWindow>(14)
+  const [settingsOpen, setSettingsOpen] = useState(true)
+  const [preferredCore, setPreferredCore] = useState<DraftBlueprint['heroes']>([])
+  const arenaRef = useRef<HTMLElement>(null)
+  const evidence = useMemo(() => scopeDraftEvidence(leagues, {
+    now: harvestedAt ?? 0,
+    window: evidenceWindow,
+    regionSlug,
+    seasonPages: Object.fromEntries(getRegions().map((region) => [region.slug, region.liquipediaLeaguePage])),
+  }), [leagues, harvestedAt, evidenceWindow, regionSlug])
 
   const regionalModel = useMemo(
     () =>
       buildDraftCoachModel(
-        leagues,
+        evidence.leagues,
         regionSlug,
         null,
         heroCatalog,
       ),
-    [heroCatalog, leagues, regionSlug],
+    [heroCatalog, evidence.leagues, regionSlug],
   )
   const model = useMemo(
     () =>
       mapName === null ? regionalModel : buildDraftCoachModel(
-        leagues,
+        evidence.leagues,
         regionSlug,
         mapName,
         heroCatalog,
       ),
-    [heroCatalog, leagues, mapName, regionSlug, regionalModel],
+    [heroCatalog, evidence.leagues, mapName, regionSlug, regionalModel],
   )
   const flow = useMemo(() => proDraftFlow(allyFirstPick), [allyFirstPick])
   const currentAction = started && stepIndex < flow.length ? flow[stepIndex] : null
@@ -329,6 +344,9 @@ export function DraftCoach({
     currentAction?.side === 'ally' ? allyTeam : enemyTeam
   const activeEnemyTeam =
     currentAction?.side === 'ally' ? enemyTeam : allyTeam
+  const coreBlocked = preferredCore.some(({ key }) => [...draft.allyBans, ...draft.enemyBans, ...draft.enemyPicks].map(heroKey).includes(key))
+  const preferredHeroes = useMemo(() => coreBlocked ? [] : preferredCore.map((hero) => hero.key), [coreBlocked, preferredCore])
+  const blueprints = useMemo(() => findDraftBlueprints(model, draft, plan), [model, draft, plan])
   const priorityPicks = useMemo(() =>
     currentAction?.kind === 'ban' &&
     currentAction.phase === 1 &&
@@ -340,9 +358,10 @@ export function DraftCoach({
           plan,
           allyTeamPageSlug: activeAllyTeam,
           enemyTeamPageSlug: activeEnemyTeam,
+          preferredHeroes,
           limit: 3,
         })
-      : [], [currentAction, allyFirstPick, model, activePerspective, plan, activeAllyTeam, activeEnemyTeam])
+      : [], [currentAction, allyFirstPick, model, activePerspective, plan, activeAllyTeam, activeEnemyTeam, preferredHeroes])
   const recommendations = useMemo(() => currentAction
     ? recommendDraftHeroes(model, {
         kind: currentAction.kind,
@@ -353,12 +372,13 @@ export function DraftCoach({
         enemyTeamPageSlug: activeEnemyTeam,
         excludeHeroes:
           currentAction.kind === 'ban' && currentAction.side === 'ally'
-            ? priorityPicks.map((item) => item.hero.id)
+            ? [...priorityPicks.map((item) => item.hero.id), ...preferredHeroes]
             : [],
         phase: currentAction?.phase,
+        preferredHeroes: currentAction.side === 'ally' ? preferredHeroes : [],
         limit: 5,
       })
-    : [], [currentAction, model, activePerspective, plan, automaticLane, activeAllyTeam, activeEnemyTeam, priorityPicks])
+    : [], [currentAction, model, activePerspective, plan, automaticLane, activeAllyTeam, activeEnemyTeam, priorityPicks, preferredHeroes])
   const nextAction = flow[stepIndex + 1] ?? null
   const canLockDuo =
     currentAction?.side === 'ally' &&
@@ -382,17 +402,20 @@ export function DraftCoach({
     counterTargetProfiles.find((profile) => profile.key === heroKey(counterTarget)) ??
     counterTargetProfiles.at(-1) ??
     null
-  const roleCounters = useMemo(() =>
-    currentAction?.kind === 'pick' && counterTargetProfile
+  const roleCounters = useMemo(() => {
+    const keys = activePerspective.enemyPicks.map(heroKey).filter((key) => Boolean(model.heroByKey[key]))
+    const targetKey = keys.includes(heroKey(counterTarget)) ? heroKey(counterTarget) : keys.at(-1)
+    return currentAction?.kind === 'pick' && targetKey
       ? counterPicksByRole(model, {
           state: activePerspective,
-          targetHero: counterTargetProfile.key,
+          targetHero: targetKey,
           allyTeamPageSlug:
             currentAction.side === 'ally' ? allyTeam : enemyTeam,
           enemyTeamPageSlug:
             currentAction.side === 'ally' ? enemyTeam : allyTeam,
         })
-      : [], [currentAction, counterTargetProfile, model, activePerspective, allyTeam, enemyTeam])
+      : []
+  }, [currentAction, counterTarget, model, activePerspective, allyTeam, enemyTeam])
   const draftComparison = useMemo(() =>
     stepIndex >= flow.length ? compareCompletedDrafts(model, draft) : null,
     [stepIndex, flow.length, model, draft])
@@ -428,21 +451,30 @@ export function DraftCoach({
     leagues.some((league) => league.regionSlug === region.slug),
   )
   const progress = Math.round((stepIndex / flow.length) * 100)
-  const updated = harvestedAt
-    ? new Intl.DateTimeFormat(locale === 'ar' ? 'ar-EG' : 'en-GB', {
-        day: 'numeric',
-        month: 'short',
-        hour: '2-digit',
-        minute: '2-digit',
-        timeZone: 'Africa/Cairo',
-      }).format(harvestedAt * 1_000)
-    : null
+  const regionLabel = regions.find((region) => region.slug === regionSlug)?.name[locale] ?? t('allRegions')
+  const dateLabel = (value: number | null) => value === null ? '—' : new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(value * 1000)
+  const windowLabel = evidenceWindow === 'season' ? t('seasonWindow') : t('daysWindow', { days: evidenceWindow })
+
+  function focusArena() {
+    requestAnimationFrame(() => {
+      arenaRef.current?.scrollIntoView({ block: 'start', behavior: 'instant' })
+      arenaRef.current?.focus({ preventScroll: true })
+    })
+  }
+
+  function startDraft() {
+    setStarted(true)
+    setSettingsOpen(false)
+    focusArena()
+  }
 
   function resetDraft() {
     setDraft(EMPTY_STATE)
     setStepIndex(0)
     setStarted(false)
     setCounterTarget('')
+    setSettingsOpen(true)
+    setPreferredCore([])
   }
 
   function selectHero(
@@ -548,9 +580,9 @@ export function DraftCoach({
   }
 
   return (
-    <div className="draft-coach">
+    <div className="draft-coach" data-started={started || undefined}>
       <section className="coach-proof panel">
-        <span className="coach-proof__live" aria-hidden />
+        <span className="coach-proof__mark" aria-hidden>✓</span>
         <span>
           <strong>{t('proofTitle')}</strong>
           <small>{t('proofDescription')}</small>
@@ -559,18 +591,20 @@ export function DraftCoach({
           <b>{model.gamesAnalyzed}</b>
           <small>{t('exactGames')}</small>
         </span>
-        {updated && <time>{t('updated', { date: updated })}</time>}
+        <FreshnessBadge harvestedAt={harvestedAt} />
       </section>
 
-      <section className="coach-setup panel">
+      <section className="coach-setup panel" data-collapsed={!settingsOpen || undefined}>
         <header>
-          <span>01</span>
           <div>
             <h2>{t('setupTitle')}</h2>
-            <p>{t('setupDescription')}</p>
+            <p>{started ? `${regionLabel} · ${windowLabel} · ${t(`plans.${plan}.title`)}` : t('quickSetupHint')}</p>
           </div>
+          {!started && <button type="button" className="coach-start" onClick={startDraft}>{t('start')}</button>}
+          {started && <button type="button" className="coach-settings-toggle" aria-expanded={settingsOpen} aria-controls="coach-settings" onClick={() => setSettingsOpen(!settingsOpen)}>{t(settingsOpen ? 'closeSettings' : 'editSettings')}</button>}
         </header>
 
+        <div id="coach-settings" hidden={!settingsOpen}>
         <div className="coach-region-rail" aria-label={t('region')}>
           <button
             type="button"
@@ -580,6 +614,7 @@ export function DraftCoach({
               setMapName(null)
               setAllyTeam('')
               setEnemyTeam('')
+              setPreferredCore([])
             }}
           >
             <span aria-hidden>🌍</span>
@@ -595,6 +630,7 @@ export function DraftCoach({
                 setMapName(null)
                 setAllyTeam('')
                 setEnemyTeam('')
+                setPreferredCore([])
               }}
             >
               <span aria-hidden>{region.flag}</span>
@@ -603,12 +639,29 @@ export function DraftCoach({
           ))}
         </div>
 
-        <div className="coach-setup-grid">
+        <div className="coach-setup-grid coach-essentials">
+          <label>
+            <span>{t('evidenceWindow')}</span>
+            <select value={evidenceWindow} onChange={(event) => {
+              setEvidenceWindow(event.target.value === 'season' ? 'season' : Number(event.target.value) as 14 | 28)
+              setMapName(null); setPreferredCore([]); setAllyTeam(''); setEnemyTeam('')
+            }}>
+              <option value="14">{t('daysWindow', { days: 14 })}</option>
+              <option value="28">{t('daysWindow', { days: 28 })}</option>
+              <option value="season">{t('seasonWindow')}</option>
+            </select>
+          </label>
+          <label>
+            <span>{t('plan')}</span>
+            <select value={plan} onChange={(event) => setPlan(event.target.value as DraftPlan)}>
+              {DRAFT_PLANS.map((value) => <option value={value} key={value}>{t(`plans.${value}.title`)}</option>)}
+            </select>
+          </label>
           <label>
             <span>{t('map')}</span>
             <select
               value={mapName ?? ''}
-              onChange={(event) => setMapName(event.target.value || null)}
+              onChange={(event) => { setMapName(event.target.value || null); setPreferredCore([]) }}
             >
               <option value="">{t('allMaps')}</option>
               {regionalModel.maps.map((map) => (
@@ -618,6 +671,10 @@ export function DraftCoach({
               ))}
             </select>
           </label>
+        </div>
+        <details className="coach-advanced">
+          <summary>{t('teamProfiles')}</summary>
+          <div className="coach-setup-grid">
           <label>
             <span>{t('ourTeam')}</span>
             <select value={allyTeam} onChange={(event) => setAllyTeam(event.target.value)}>
@@ -640,22 +697,9 @@ export function DraftCoach({
               ))}
             </select>
           </label>
-        </div>
-
-        <div className="coach-plan-grid" aria-label={t('plan')}>
-          {DRAFT_PLANS.map((value) => (
-            <button
-              key={value}
-              type="button"
-              aria-pressed={plan === value}
-              onClick={() => setPlan(value)}
-            >
-              <span aria-hidden>{t(`planIcons.${value}`)}</span>
-              <strong>{t(`plans.${value}.title`)}</strong>
-              <small>{t(`plans.${value}.description`)}</small>
-            </button>
-          ))}
-        </div>
+          </div>
+        </details>
+        <p className="coach-plan-hint">{plan === 'comfort' && !allyTeam ? t('comfortNeedsTeam') : t(`plans.${plan}.description`)}</p>
 
         <div className="coach-first-pick">
           <span>
@@ -681,10 +725,19 @@ export function DraftCoach({
             </button>
           </div>
         </div>
+        {started && <button className="coach-settings-toggle" type="button" onClick={() => { setSettingsOpen(false); focusArena() }}>{t('returnToDraft')}</button>}
+        </div>
       </section>
 
-      <section className="coach-arena">
-        <div className="coach-arena__topbar panel">
+      <details className="coach-data-scope">
+        <summary>{t('dataScope', { games: model.gamesAnalyzed, from: dateLabel(evidence.from), to: dateLabel(evidence.to) })}</summary>
+        <p>{t('scopeHint')}</p>
+        <p>{t('excludedEvidence', { missing: evidence.audit.undated, invalid: evidence.audit.invalid + evidence.audit.conflict, duplicate: evidence.audit.duplicate, outside: evidence.audit.outsideWindow + evidence.audit.wrongSeason })}</p>
+        {evidence.leagues.map((league) => <a key={league.leaguePageSlug} href={`https://liquipedia.net/mobilelegends/${league.leaguePageSlug}`} target="_blank" rel="noreferrer">{league.leagueName} · {league.leaguePageSlug.split('/').at(-1)?.replaceAll('_', ' ')}</a>)}
+      </details>
+
+      <section className="coach-arena" ref={arenaRef} tabIndex={-1} aria-label={t('draftWorkspace')}>
+        <div className="coach-arena__topbar panel" hidden={!started}>
           <span>
             <small>{t('mplMode')}</small>
             <strong>
@@ -702,22 +755,15 @@ export function DraftCoach({
             <i style={{ width: `${progress}%` }} />
           </span>
           <span className="coach-arena__actions">
-            {!started ? (
-              <button type="button" className="coach-start" onClick={() => setStarted(true)}>
-                {t('start')}
-              </button>
-            ) : (
-              <>
+              <a href="#coach-hero-pool" className="coach-manual-link">{t('manualHero')}</a>
                 <button type="button" onClick={undo} disabled={stepIndex === 0}>
                   {t('undo')}
                 </button>
                 <button type="button" onClick={resetDraft}>{t('reset')}</button>
-              </>
-            )}
           </span>
         </div>
 
-        <div className="coach-board">
+        <div className="coach-board" hidden={!started}>
           <TeamBoard
             model={model}
             side="ally"
@@ -839,6 +885,7 @@ export function DraftCoach({
                   </section>
                 )}
                 <div className="coach-recommendations">
+                  {recommendations.length === 0 && <p className="coach-no-evidence" role="status">{t('noRecommendations')}</p>}
                   {recommendations.map((recommendation, index) => (
                     <RecommendationCard
                       key={recommendation.hero.id}
@@ -954,6 +1001,9 @@ export function DraftCoach({
                   <strong>{t('comparisonTitle')}</strong>
                   <p>{t('comparisonDescription')}</p>
                 </header>
+                <details className="coach-experimental-estimate">
+                <summary>{t('experimentalEstimate')}</summary>
+                <p>{t('experimentalEstimateHint')}</p>
                 <div className="coach-draft-result__scores">
                   <span>
                     <small>{t('ourDraft')}</small>
@@ -974,6 +1024,7 @@ export function DraftCoach({
                     }}
                   />
                 </div>
+                </details>
                 <div className="coach-draft-result__metrics">
                   {[
                     [
@@ -1034,7 +1085,38 @@ export function DraftCoach({
         </div>
       </section>
 
-      <section className="coach-pool panel">
+      <details className="coach-playbook panel">
+        <summary><span>{t('playbookTitle')}</span><small>{t('playbookSubtitle')}</small></summary>
+        <p>{t('playbookHint')}</p>
+        {preferredCore.length > 0 && <div className="coach-core-selection" role="status">
+          <strong>{t(coreBlocked ? 'coreBlocked' : 'selectedCore')}</strong>
+          <span>{preferredCore.map((hero) => model.heroByKey[hero.key]?.hero.name ?? hero.key).join(' + ')}</span>
+          <button type="button" onClick={() => setPreferredCore([])}>{t('clearCore')}</button>
+        </div>}
+        <div className="coach-blueprint-grid">
+          {blueprints.map((blueprint) => <article className="coach-blueprint" key={blueprint.id}>
+            <div className="coach-blueprint__heroes">
+              {blueprint.heroes.map(({ key, lane }) => <span key={key}>
+                <HeroIcon hero={model.heroByKey[key].hero} imageUrl={model.heroByKey[key].imageUrl} size={46} />
+                <strong>{model.heroByKey[key].hero.name}</strong><small>{laneLabel(lane)}</small>
+              </span>)}
+            </div>
+            <strong>{t('coreRecord', { games: blueprint.games, wins: blueprint.wins, losses: blueprint.games - blueprint.wins })}</strong>
+            <p>{t('coreRate', { rate: Math.round(blueprint.winRate * 100), teams: blueprint.teams })}</p>
+            {blueprint.medianMinutes !== null && <small>{t('coreDuration', { minutes: blueprint.medianMinutes })}</small>}
+            <button type="button" aria-pressed={preferredCore.map((hero) => hero.key).join() === blueprint.heroes.map((hero) => hero.key).join()} onClick={() => setPreferredCore(blueprint.heroes)}>{t('useCore')}</button>
+            <details><summary>{t('viewEvidence')}</summary>
+              {blueprint.examples.map((example) => <a key={example.gameId} href={`https://liquipedia.net/mobilelegends/${example.sourcePage}`} target="_blank" rel="noreferrer">
+                <strong>{example.team?.name} — {example.opponent?.name}</strong>
+                <small>{example.playedOn ?? '—'} · {t('exampleGame', { game: example.gameNumber ?? 1 })} · {t(example.won ? 'exampleWin' : 'exampleLoss')}</small>
+              </a>)}
+            </details>
+          </article>)}
+        </div>
+        {blueprints.length === 0 && <p>{t('noBlueprints')}</p>}
+      </details>
+
+      <section className="coach-pool panel" id="coach-hero-pool" hidden={!started}>
         <header>
           <span>
             <small>02 · {t('heroPoolEyebrow')}</small>
