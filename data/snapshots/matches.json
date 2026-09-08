@@ -1,37 +1,6 @@
 {
-  "harvestedAt": 1788869820,
+  "harvestedAt": 1788886181,
   "data": [
-    {
-      "id": "1788867000-mdl-indonesia-season-14-regular-season-nvjr-rrqs",
-      "startsAt": 1788867000,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "NVJR",
-          "name": "NAVI Junior",
-          "pageSlug": "NAVI_Junior",
-          "logoUrl": "/teams/49px-Natus_Vincere_Junior_2021_darkmode-6043baff.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "RRQS",
-          "name": "RRQ Sena",
-          "pageSlug": "RRQ_Sena",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Round 5",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1788933600-mlbb-academy-league-season-6-regular-season-phase-1-ar-hgoz",
       "startsAt": 1788933600,
@@ -1450,6 +1419,64 @@
       "tournamentName": "CN Masters Season 3 - RS: Week 1",
       "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789209000-mlbb-super-league-myanmar-season-4-regular-season-fcon-wyv",
+      "startsAt": 1789209000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FCON",
+          "name": "Falcon Esports",
+          "pageSlug": "Falcon_Esports",
+          "logoUrl": "/teams/48px-Falcon_Esports_Myanmar_allmode-7ced0a37.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "WYV",
+          "name": "Wyverns Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/45px-Wyverns_Esports_darkmode-09c29f03.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Myanmar Season 4 - RS: Week 3",
+      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
+      "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788867000-mdl-indonesia-season-14-regular-season-nvjr-rrqs",
+      "startsAt": 1788867000,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "NVJR",
+          "name": "NAVI Junior",
+          "pageSlug": "NAVI_Junior",
+          "logoUrl": "/teams/49px-Natus_Vincere_Junior_2021_darkmode-6043baff.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "RRQS",
+          "name": "RRQ Sena",
+          "pageSlug": "RRQ_Sena",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MDL Indonesia Season 14 - Round 5",
+      "tournamentPageSlug": "MDL/Indonesia/Season_14/Regular_Season",
+      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2899,35 +2926,6 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 2",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788595200-esn-national-championship-league-season-1-regular-season-ak-lstr",
-      "startsAt": 1788595200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AK",
-          "name": "The Akatsuki",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "LSTR",
-          "name": "Laestrygonians",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "ESN National Championship League Season 1 - RS: Week 1",
-      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     }
