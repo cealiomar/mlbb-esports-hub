@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1788913699,
+  "harvestedAt": 1788953992,
   "data": [
     {
       "regionSlug": "indonesia",
@@ -9638,7 +9638,7 @@
       "regionSlug": "philippines",
       "leagueName": "MPL Philippines",
       "leaguePageSlug": "MPL/Philippines/Season_18",
-      "gamesAnalyzed": 49,
+      "gamesAnalyzed": 50,
       "heroStats": [
         {
           "hero": {
@@ -9647,13 +9647,13 @@
             "pageSlug": "Hirara"
           },
           "imageUrl": "/heroes/50px-ML_icon_Hirara-985cf162.png",
-          "picks": 47,
-          "pickWins": 18,
+          "picks": 48,
+          "pickWins": 19,
           "pickLosses": 29,
-          "pickRate": 95.92,
+          "pickRate": 96,
           "bans": 2,
-          "banRate": 4.08,
-          "presence": 49,
+          "banRate": 4,
+          "presence": 50,
           "presenceRate": 100
         },
         {
@@ -9663,14 +9663,14 @@
             "pageSlug": "Belerick"
           },
           "imageUrl": "/heroes/50px-ML_icon_Belerick-054d429f.png",
-          "picks": 31,
+          "picks": 32,
           "pickWins": 20,
-          "pickLosses": 11,
-          "pickRate": 63.27,
+          "pickLosses": 12,
+          "pickRate": 64,
           "bans": 10,
-          "banRate": 20.41,
-          "presence": 41,
-          "presenceRate": 83.67
+          "banRate": 20,
+          "presence": 42,
+          "presenceRate": 84
         },
         {
           "hero": {
@@ -9682,11 +9682,11 @@
           "picks": 24,
           "pickWins": 17,
           "pickLosses": 7,
-          "pickRate": 48.98,
-          "bans": 20,
-          "banRate": 40.82,
-          "presence": 44,
-          "presenceRate": 89.8
+          "pickRate": 48,
+          "bans": 21,
+          "banRate": 42,
+          "presence": 45,
+          "presenceRate": 90
         },
         {
           "hero": {
@@ -9695,30 +9695,30 @@
             "pageSlug": "Claude"
           },
           "imageUrl": "/heroes/50px-ML_icon_Claude_2024-bb50109e.png",
-          "picks": 20,
+          "picks": 21,
           "pickWins": 13,
-          "pickLosses": 7,
-          "pickRate": 40.82,
+          "pickLosses": 8,
+          "pickRate": 42,
           "bans": 5,
-          "banRate": 10.2,
-          "presence": 25,
-          "presenceRate": 51.02
+          "banRate": 10,
+          "presence": 26,
+          "presenceRate": 52
         },
         {
           "hero": {
-            "id": "barats",
-            "name": "Barats",
-            "pageSlug": "Barats"
+            "id": "mathilda",
+            "name": "Mathilda",
+            "pageSlug": "Mathilda"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Barats-752f0024.png",
-          "picks": 18,
-          "pickWins": 10,
-          "pickLosses": 8,
-          "pickRate": 36.73,
-          "bans": 22,
-          "banRate": 44.9,
-          "presence": 40,
-          "presenceRate": 81.63
+          "imageUrl": "/heroes/50px-ML_icon_Mathilda-8be8f12b.png",
+          "picks": 19,
+          "pickWins": 7,
+          "pickLosses": 12,
+          "pickRate": 38,
+          "bans": 17,
+          "banRate": 34,
+          "presence": 36,
+          "presenceRate": 72
         }
       ],
       "series": [

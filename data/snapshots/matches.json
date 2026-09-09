@@ -1,38 +1,6 @@
 {
-  "harvestedAt": 1788948293,
+  "harvestedAt": 1788953453,
   "data": [
-    {
-      "id": "1788948000-mlbb-academy-league-season-6-regular-season-phase-1-khan-oust",
-      "startsAt": 1788948000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KHAN",
-          "name": "Khan Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "OUST",
-          "name": "Outcast",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Outcast_MLBB_allmode-8b01027d.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 3",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1788955200-mlbb-academy-league-season-6-regular-season-phase-1-srga-so",
       "startsAt": 1788955200,
@@ -59,7 +27,10 @@
       "tournamentName": "MAL S6 RS - Week 3",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
+      ],
       "vodUrls": []
     },
     {
@@ -1451,6 +1422,64 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 3",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789213800-mtc-turkiye-championship-season-8-regular-season-ida-fut",
+      "startsAt": 1789213800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "IDA",
+          "name": "IDA Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/95px-IDA_Esports_2025_allmode-31209f50.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "FUT",
+          "name": "FUT Esports",
+          "pageSlug": "FUT_Esports",
+          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 1",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1788948000-mlbb-academy-league-season-6-regular-season-phase-1-khan-oust",
+      "startsAt": 1788948000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KHAN",
+          "name": "Khan Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/47px-Khan_esports_allmode-42383653.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "OUST",
+          "name": "Outcast",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Outcast_MLBB_allmode-8b01027d.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 3",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2899,35 +2928,6 @@
         "https://www.youtube.com/watch?v=IIGwx5qlkXQ",
         "https://www.youtube.com/watch?v=rq0o4E1CY2E"
       ]
-    },
-    {
-      "id": "1788598800-mpl-malaysia-season-18-regular-season-rey-ig",
-      "startsAt": 1788598800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "REY",
-          "name": "Team Rey",
-          "pageSlug": "Team_Rey",
-          "logoUrl": "/teams/34px-Team_Rey_allmode-d5112b3a.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "iG",
-          "name": "Invictus Gaming",
-          "pageSlug": "Invictus_Gaming",
-          "logoUrl": "/teams/50px-Invictus_Gaming_darkmode-12a6d5dd.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
