@@ -71,10 +71,37 @@ You get `https://<user>.github.io/<repo>/`.
 > If you later name the repo `<user>.github.io`, the workflow detects it and
 > drops the base path automatically.
 
-## Option 4 — Vercel
+## Option 4 — Vercel (free `*.vercel.app` name, no domain needed)
 
-Import the repo at <https://vercel.com/new>. It detects Next.js and needs no
-settings. You get `https://<project>.vercel.app`.
+The Hobby plan is free and covers personal, non-commercial projects — this site
+qualifies: it is a free tool for players, and the PayPal link is an optional
+donation, not a sale.
+
+1. Sign in at <https://vercel.com> with GitHub.
+2. **Add New → Project → Import** `mlbb-esports-hub`. Vercel detects Next.js
+   and the static export on its own; leave every setting at its default and
+   **do not** set `BASE_PATH` — the site belongs at the root of its own name.
+3. **Deploy.**
+
+The project name becomes the address, so name it before deploying:
+`https://<project-name>.vercel.app` (for example `mlbb-live`). If that
+name is taken Vercel appends a suffix; it can be renamed later under
+**Settings → General**, or given an extra free `*.vercel.app` alias under
+**Settings → Domains**.
+
+**Updates are automatic.** The hourly harvester commits fresh data to `main`,
+and every push to `main` is a new production deployment — roughly 24 a day,
+with nothing to do by hand.
+
+**Caching.** `vercel.json` gives hashed build assets a one-year immutable cache
+and mirrored images a one-day cache. HTML is left on Vercel's default, which
+revalidates every request, so each hourly refresh is visible immediately.
+(`public/_headers` is for Cloudflare and Netlify; Vercel ignores it.)
+
+**One build is enough.** Once the Vercel address works, the GitHub Pages
+deploy is a duplicate. Either keep it as a backup, or disable
+**Deploy to GitHub Pages** under the repo's **Actions** tab. Leave
+**Harvest Liquipedia** enabled — it is what keeps both sites current.
 
 ---
 
