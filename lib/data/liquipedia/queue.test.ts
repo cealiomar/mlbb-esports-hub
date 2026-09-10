@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { queueEntriesForRun, LEAGUES_PER_RUN } from './queue'
+import { queueEntriesForRun, LEAGUES_PER_RUN, staleDraftRegions } from './queue'
 import { getRegions } from '@/lib/content/regions'
 
 describe('harvest queue', () => {
@@ -49,5 +49,91 @@ describe('harvest queue', () => {
   it('caps the batch when fewer regions exist than the batch size', () => {
     const two = getRegions().slice(0, 2)
     expect(queueEntriesForRun(two, 0)).toHaveLength(2)
+  })
+})
+
+describe('draft freshness priority', () => {
+  const regions = getRegions()
+  const [first, second, third] = regions
+  const completed = (regionSlug: string, page: string, startsAt: number) => ({
+    status: 'completed' as const,
+    regionSlug,
+    startsAt,
+    tournamentPageSlug: `${page}/Regular_Season`,
+  })
+
+  it('flags a region whose newest finished game is newer than its drafts', () => {
+    const stale = staleDraftRegions(
+      regions,
+      [completed(first.slug, first.liquipediaLeaguePage, 2_000)],
+      [{ regionSlug: first.slug, series: [{ startsAt: 1_000 } as never] }],
+    )
+    expect(stale).toEqual([first.slug])
+  })
+
+  it('leaves a region alone once its drafts cover the latest game', () => {
+    const stale = staleDraftRegions(
+      regions,
+      [completed(first.slug, first.liquipediaLeaguePage, 2_000)],
+      [{ regionSlug: first.slug, series: [{ startsAt: 2_000 } as never] }],
+    )
+    expect(stale).toEqual([])
+  })
+
+  it('treats a region with games but no drafts at all as stale', () => {
+    expect(
+      staleDraftRegions(
+        regions,
+        [completed(second.slug, second.liquipediaLeaguePage, 5_000)],
+        [],
+      ),
+    ).toEqual([second.slug])
+  })
+
+  it('ignores games from other competitions in the same region', () => {
+    expect(
+      staleDraftRegions(
+        regions,
+        [completed(first.slug, 'Some_Other_Cup/2026', 9_000)],
+        [],
+      ),
+    ).toEqual([])
+  })
+
+  it('orders stale regions newest game first', () => {
+    const stale = staleDraftRegions(
+      regions,
+      [
+        completed(first.slug, first.liquipediaLeaguePage, 1_000),
+        completed(second.slug, second.liquipediaLeaguePage, 3_000),
+      ],
+      [],
+    )
+    expect(stale).toEqual([second.slug, first.slug])
+  })
+
+  it('puts priority regions at the front of the batch', () => {
+    const entries = queueEntriesForRun(regions, 0, 3, [third.slug])
+    expect(entries[0].regionSlug).toBe(third.slug)
+    expect(entries).toHaveLength(3)
+  })
+
+  it('always leaves at least one slot for the rotation', () => {
+    const everything = regions.map((r) => r.slug).reverse()
+    const entries = queueEntriesForRun(regions, 0, 3, everything)
+    const rotationHead = queueEntriesForRun(regions, 0, 3)[0].regionSlug
+    expect(entries.map((e) => e.regionSlug)).toContain(rotationHead)
+  })
+
+  it('never repeats a region when priority and rotation overlap', () => {
+    const entries = queueEntriesForRun(regions, 0, 3, [first.slug])
+    const slugs = entries.map((e) => e.regionSlug)
+    expect(new Set(slugs).size).toBe(slugs.length)
+  })
+
+  it('behaves exactly as before with no priority', () => {
+    expect(queueEntriesForRun(regions, 5, 3, [])).toEqual(
+      queueEntriesForRun(regions, 5, 3),
+    )
   })
 })

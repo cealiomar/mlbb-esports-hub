@@ -3,7 +3,10 @@ import { join } from 'node:path'
 import { setTimeout as delay } from 'node:timers/promises'
 import { createLiquipediaClient } from '@/lib/data/liquipedia/client'
 import { parseMatches } from '@/lib/data/liquipedia/parse-matches'
-import { queueEntriesForRun } from '@/lib/data/liquipedia/queue'
+import {
+  queueEntriesForRun,
+  staleDraftRegions,
+} from '@/lib/data/liquipedia/queue'
 import { parseLeagueTeams } from '@/lib/data/liquipedia/parse-league'
 import {
   isTournamentWindowActive,
@@ -319,7 +322,18 @@ async function main(): Promise<void> {
   }
 
   // Then a batch of rotating league pages. The client enforces the 30s gap.
-  for (const entry of queueEntriesForRun(regions, runIndex, batchSize)) {
+  // Leagues that have finished games their stored drafts do not cover go to
+  // the front of the batch, so new picks and bans surface on the next run.
+  const draftPriority = staleDraftRegions(regions, matches, previousDrafts)
+  if (draftPriority.length > 0) {
+    console.log(`draft refresh prioritised for: ${draftPriority.join(', ')}`)
+  }
+  for (const entry of queueEntriesForRun(
+    regions,
+    runIndex,
+    batchSize,
+    draftPriority,
+  )) {
     const league = await client.parsePage(entry.page, 'wikitext')
     if (!isOk(league)) {
       // A missing league page is not fatal — seasons start and end.
