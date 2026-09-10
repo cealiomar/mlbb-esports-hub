@@ -152,8 +152,8 @@ and re-upload `out/`.
 ## Checks before you ship
 
 ```bash
-npm test              # 73 unit tests, no network
-npx playwright test   # 23 end-to-end tests against the real static export
+npm test              # unit tests, no network
+npx playwright test   # end-to-end tests against the real static export
 npm run build         # every route must print ○ or ●, never ƒ
 ```
 

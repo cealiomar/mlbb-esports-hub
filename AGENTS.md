@@ -18,7 +18,8 @@ anywhere, and none should be added.
 **Content priority, highest first:** live matches → regional standings → the
 schedule and who plays whom → results → draft scouting.
 
-Live: not deployed yet. See [DEPLOY.md](DEPLOY.md).
+Live on GitHub Pages: <https://cealiomar.github.io/mlbb-esports-hub/>. `vercel.json`
+is ready for a free `*.vercel.app` deployment — see [DEPLOY.md](DEPLOY.md).
 
 ## Stack
 
@@ -233,14 +234,34 @@ lives inside each group (`gap` + a trailing `pe-10`), never as a `gap` on the
 track — a gap on the track leaves one extra gap in the middle and the loop
 stutters by half of it. It did, by 20px. `e2e/ticker.spec.ts` measures this.
 
-### Logo
+### Site mark
 
-`public/brand/mlbb-logo.svg` is the official lockup with its gradient stops
-retargeted to the orange-gold variant; the untouched champagne original sits
-beside it. Referenced once, from `lib/content/brand.ts`.
+The Mobile Legends lockup was removed at the owner's request. The mark is the
+owner's avatar (`public/brand/avatar.webp`, a 320px circle) beside the handle
+`@madebyceali` set as live text in the brand gradient. The avatar appears in
+the header and alone in the opening; the hero carries no mark. Everything is
+configured in `lib/content/author.ts` and `lib/content/brand.ts`.
 
-Use is authorised — the project owner works at MOONTON Games. No
-unaffiliated-fan-project disclaimer is needed.
+The opening plays once per browser session (`components/ui/site-intro.tsx`);
+it covered the page for two seconds on every return to Home.
+
+### Readability floor
+
+No text renders below 11px. Component rules were raised to `0.6875rem`, and a
+base-layer rule floors `<small>`, which otherwise shrinks relative to its
+parent. `e2e/usability.spec.ts` fails if any visible text on the main pages
+renders below 11px.
+
+### Team links
+
+Every surface that shows a team links to its page through one list:
+`teamPageSlugs()` in `lib/data/team-pages.ts` builds the team route *and* is the
+set links are checked against, so a link cannot point at a page that was not
+built. `resolveTeamPage()` in `lib/data/team-slug.ts` matches spellings that
+differ only in case or separators (`burmese_ghouls` → `Burmese_Ghouls`) and
+reads the title out of Liquipedia's edit links; two pages that spell alike are
+never guessed between. Teams with no Liquipedia page have no page here and are
+shown unlinked.
 
 ---
 

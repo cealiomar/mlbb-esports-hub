@@ -74,7 +74,7 @@ export function Hero({
           {stats.map((stat) => (
             <div key={stat.label} className="hero-stat px-2 py-4 sm:px-6 sm:py-5">
               <dd className="text-xl font-black tabular-nums sm:text-3xl">{stat.value}</dd>
-              <dt className="mt-1 text-[10px] font-semibold tracking-wide text-[var(--ink-muted)] uppercase sm:text-xs">
+              <dt className="mt-1 text-[11px] font-semibold tracking-wide text-[var(--ink-muted)] uppercase sm:text-xs">
                 {stat.label}
               </dt>
             </div>

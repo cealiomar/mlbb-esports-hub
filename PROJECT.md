@@ -3,6 +3,12 @@
 Complete reference for the project: what it does, how it is built, why it is
 built that way, and everything needed to run, extend or hand it over.
 
+> **Update (2026-09-11):** the site mark is now the owner's avatar and handle;
+> the Mobile Legends lockup is gone. Every team is linked to its page through
+> `lib/data/team-pages.ts`. Leagues with finished games their drafts do not
+> cover are harvested first, so new drafts appear on the next hourly run
+> instead of waiting up to four hours for their turn. See AGENTS.md.
+>
 > **Current product override (2026-08-24):** News has been removed. Regional
 > standings and the current-season Draft Lab are now part of the primary flow. The visual
 > system now supports persisted light and dark glass themes, region flags and

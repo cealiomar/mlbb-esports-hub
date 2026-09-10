@@ -35,7 +35,7 @@ function Side({
         >
           {side.code}
         </p>
-        <p className="mt-1 truncate text-[10px] leading-tight text-[var(--ink-muted)] sm:text-[11px]">
+        <p className="mt-1 truncate text-[11px] leading-tight text-[var(--ink-muted)] sm:text-[11px]">
           {side.name}
         </p>
       </div>
@@ -113,7 +113,7 @@ export function MatchCard({
         <div className="depth-layer flex items-start justify-between gap-3">
           <div className="min-w-0">
             {region && (
-              <span className="mb-1.5 flex items-center gap-1.5 text-[10px] font-bold tracking-[0.12em] text-[var(--brand-strong)] uppercase">
+              <span className="mb-1.5 flex items-center gap-1.5 text-[11px] font-bold tracking-[0.12em] text-[var(--brand-strong)] uppercase">
                 <span className="text-sm leading-none" aria-hidden>{region.flag}</span>
                 {region.name[localeKey]}
               </span>
@@ -127,7 +127,7 @@ export function MatchCard({
           </div>
 
           {match.status === 'live' ? (
-            <span className="live-pill shrink-0 px-2.5 py-1 text-[10px]">
+            <span className="live-pill shrink-0 px-2.5 py-1 text-[11px]">
               <span className="live-dot size-1.5 rounded-full bg-[var(--brand-hot)]" />
               {t('live')}
             </span>
@@ -135,7 +135,7 @@ export function MatchCard({
             <time
               dateTime={startsAt.toISOString()}
               aria-label={t('matchTime')}
-              className="match-time shrink-0 rounded-xl px-2.5 py-1.5 text-center text-[10px] font-bold text-[var(--ink-muted)] tabular-nums"
+              className="match-time shrink-0 rounded-xl px-2.5 py-1.5 text-center text-[11px] font-bold text-[var(--ink-muted)] tabular-nums"
             >
               <span className="block text-[var(--ink)]">
                 {format.dateTime(startsAt, {
@@ -151,7 +151,7 @@ export function MatchCard({
                   timeZone,
                 })}
               </span>
-              <span className="mt-0.5 block whitespace-nowrap text-[8px] tracking-wide text-[var(--brand-strong)]">
+              <span className="mt-0.5 block whitespace-nowrap text-[11px] tracking-wide text-[var(--brand-strong)]">
                 {t('localTimeWithZone', { zone: timeZoneLabel })}
               </span>
             </time>
@@ -173,7 +173,7 @@ export function MatchCard({
         </div>
 
         <div className="depth-layer mt-auto flex min-h-8 items-center justify-between gap-2 border-t border-[var(--line)] pt-3">
-          <span className="text-[10px] font-semibold tracking-wide text-[var(--ink-muted)] uppercase">
+          <span className="text-[11px] font-semibold tracking-wide text-[var(--ink-muted)] uppercase">
             {match.bestOf !== null ? t('bestOf', { count: match.bestOf }) : 'MLBB'}
           </span>
           {stream && (

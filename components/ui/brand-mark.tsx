@@ -43,6 +43,10 @@ export function BrandMark({
       {showHandle && (
         <span
           className="brand-mark__handle"
+          // The handle is Latin text. Without its own direction the "@",
+          // a neutral character, follows the page and lands at the end in
+          // Arabic — "madebyceali@".
+          dir="ltr"
           style={{ fontSize: Math.round(size * 0.5) }}
         >
           @{BRAND_LOGO.handle}

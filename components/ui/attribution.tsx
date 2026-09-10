@@ -68,9 +68,9 @@ export function Attribution() {
             href={AUTHOR.instagram}
             target="_blank"
             rel="noreferrer noopener"
-            className="font-bold tracking-wide text-[var(--brand)] underline decoration-[color-mix(in_srgb,var(--brand)_45%,transparent)] underline-offset-4 transition-colors hover:text-[var(--brand-hot)]"
+            className="inline-flex min-h-[44px] items-center font-bold tracking-wide text-[var(--brand)] underline decoration-[color-mix(in_srgb,var(--brand)_45%,transparent)] underline-offset-4 transition-colors hover:text-[var(--brand-hot)]"
           >
-            @{AUTHOR.handle}
+            <bdi dir="ltr">@{AUTHOR.handle}</bdi>
           </a>
         </p>
 
@@ -106,7 +106,7 @@ export function Attribution() {
           href="https://liquipedia.net/mobilelegends"
           target="_blank"
           rel="noreferrer noopener"
-          className="text-[var(--step--1)] text-[var(--ink-muted)] underline underline-offset-4 transition-colors hover:text-[var(--ink)]"
+          className="inline-flex min-h-[44px] items-center text-[var(--step--1)] text-[var(--ink-muted)] underline underline-offset-4 transition-colors hover:text-[var(--ink)]"
         >
           {t('attribution')}
         </a>

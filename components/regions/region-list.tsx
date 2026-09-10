@@ -124,7 +124,7 @@ export function RegionList({
                   <span className="mt-1 block truncate text-xs text-[var(--ink-muted)]">
                     {region.leagueName}
                   </span>
-                  <span className="mt-3 flex items-center gap-1.5 text-[10px] font-bold tracking-[0.12em] text-[var(--brand-strong)] uppercase">
+                  <span className="mt-3 flex items-center gap-1.5 text-[11px] font-bold tracking-[0.12em] text-[var(--brand-strong)] uppercase">
                     {live ? (
                       <>
                         <span className="live-dot size-1.5 rounded-full bg-[var(--brand-hot)]" />

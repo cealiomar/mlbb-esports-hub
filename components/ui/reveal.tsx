@@ -28,7 +28,10 @@ export function Reveal({
         node.dataset.inView = 'true'
         observer.disconnect()
       },
-      { rootMargin: '0px 0px -12% 0px' },
+      // A small inset only. At -12% anything in the lowest eighth of the
+      // screen stayed invisible until scrolled, and on a phone — where the
+      // bottom bar already covers that band — the page looked as if it ended.
+      { rootMargin: '0px 0px -2% 0px' },
     )
 
     observer.observe(node)
