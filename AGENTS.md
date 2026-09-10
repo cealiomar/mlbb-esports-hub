@@ -263,6 +263,10 @@ reads the title out of Liquipedia's edit links; two pages that spell alike are
 never guessed between. Teams with no Liquipedia page have no page here and are
 shown unlinked.
 
+Build every team URL with `teamPath()`. Next's `<Link>` strips the trailing
+slash from a last segment containing a dot (`AP.Bren`), which redirects on
+GitHub Pages and can miss the page on Vercel; `teamPath()` encodes the dot.
+
 ---
 
 ## Testing

@@ -12,6 +12,19 @@ export function isTeamPageSlug(
   return !slug.includes('index.php') && !slug.includes('redlink') && !slug.includes('?')
 }
 
+/**
+ * The URL of a team page. Every team link goes through this.
+ *
+ * Dots are percent-encoded. Next's <Link> treats a last path segment that
+ * contains a dot — `AP.Bren` — as a file and strips the trailing slash, which
+ * costs a redirect on GitHub Pages and misses the page on hosts that only add
+ * slashes to extensionless paths. `%2E` is the same character to the server,
+ * but not to that check.
+ */
+export function teamPath(locale: string, slug: string): string {
+  return `/${locale}/teams/${encodeURIComponent(slug).replace(/\./g, '%2E')}/`
+}
+
 export function teamKey(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, '')
 }

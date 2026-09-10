@@ -75,3 +75,15 @@ test('the opening plays once per session', async ({ page }) => {
   await page.reload()
   await expect(page.getByTestId('site-intro')).toBeHidden()
 })
+
+test('every team link keeps its trailing slash, even with a dot in the name', async ({ page }) => {
+  for (const path of ['/en/', '/en/matches/', '/en/drafts/']) {
+    await page.goto(path)
+    const hrefs = await page
+      .locator('a[href*="/teams/"]')
+      .evaluateAll((links) => links.map((link) => link.getAttribute('href') ?? ''))
+    expect(hrefs.length).toBeGreaterThan(0)
+    // Without the slash a static host redirects, or misses the page outright.
+    expect(hrefs.filter((href) => !href.endsWith('/'))).toEqual([])
+  }
+})

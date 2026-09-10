@@ -18,6 +18,7 @@ import { StandingsTable } from '@/components/standings/standings-table'
 import { routing } from '@/i18n/routing'
 import { BUILD_UNIX_TIME } from '@/lib/time/build'
 import { teamPageSlugs } from '@/lib/data/team-pages'
+import { teamPath } from '@/lib/data/team-slug'
 
 // Fully static: rendered at build time from committed snapshots, so the
 // page paints instantly with no fetch and no loading state.
@@ -158,7 +159,7 @@ export default async function RegionPage({
               }
             >
               <Link
-                href={`/${locale}/teams/${team.pageSlug}`}
+                href={teamPath(locale, team.pageSlug)}
                 className="panel team-link flex min-h-[76px] items-center justify-between gap-3 p-4"
               >
                 <span className="flex min-w-0 items-center gap-3">

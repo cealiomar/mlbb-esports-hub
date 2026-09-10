@@ -15,7 +15,7 @@ import {
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { TeamCrest } from '@/components/matches/team-crest'
-import { resolveTeamPage, teamPageIndex } from '@/lib/data/team-slug'
+import { resolveTeamPage, teamPageIndex, teamPath } from '@/lib/data/team-slug'
 import { HeroIcon } from './hero-icon'
 
 function formatDuration(seconds: number | null): string | null {
@@ -226,7 +226,7 @@ function TeamProfileLink({
   if (!target || here) return <>{children}</>
   return (
     <Link
-      href={`/${locale}/teams/${encodeURIComponent(target)}/`}
+      href={teamPath(locale, target)}
       className="contents"
       aria-label={label}
     >

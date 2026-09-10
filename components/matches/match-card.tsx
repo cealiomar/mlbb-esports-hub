@@ -8,6 +8,7 @@ import { getRegionBySlug } from '@/lib/content/regions'
 import { replayUrl } from '@/lib/matches/replay'
 import { TiltCard } from '@/components/ui/tilt-card'
 import { TeamCrest } from './team-crest'
+import { teamPath } from '@/lib/data/team-slug'
 
 function Side({
   side,
@@ -44,7 +45,7 @@ function Side({
 
   return side.pageSlug ? (
     <Link
-      href={`/${locale}/teams/${encodeURIComponent(side.pageSlug)}/`}
+      href={teamPath(locale, side.pageSlug)}
       className="contents"
       aria-label={`${side.name} team profile`}
     >

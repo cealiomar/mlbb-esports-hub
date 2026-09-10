@@ -10,6 +10,7 @@ import { TeamCrest } from '@/components/matches/team-crest'
 import { FreshnessBadge } from '@/components/ui/freshness-badge'
 import { SectionHeader } from '@/components/ui/section-header'
 import { replayUrl } from '@/lib/matches/replay'
+import { teamPath } from '@/lib/data/team-slug'
 
 export const dynamic = 'force-static'
 export const revalidate = 3600
@@ -81,7 +82,7 @@ export default async function MatchDetailsPage({
                     `contents` keeps the row's layout exactly as it was. */}
                 {team.pageSlug ? (
                   <Link
-                    href={`/${locale}/teams/${encodeURIComponent(team.pageSlug)}/`}
+                    href={teamPath(locale, team.pageSlug)}
                     className="contents"
                     aria-label={team.name}
                   >
@@ -101,7 +102,7 @@ export default async function MatchDetailsPage({
                   </>
                 )}
                 {team.pageSlug ? (
-                  <Link href={`/${locale}/teams/${encodeURIComponent(team.pageSlug)}/`}>
+                  <Link href={teamPath(locale, team.pageSlug)}>
                     {t('teamPage')}
                   </Link>
                 ) : null}

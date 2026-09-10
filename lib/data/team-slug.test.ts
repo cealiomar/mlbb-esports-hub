@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isTeamPageSlug, resolveTeamPage, teamPageIndex } from './team-slug'
+import { isTeamPageSlug, resolveTeamPage, teamPageIndex, teamPath } from './team-slug'
 
 describe('isTeamPageSlug', () => {
   it('accepts ordinary Liquipedia page titles', () => {
@@ -48,5 +48,20 @@ describe('resolveTeamPage', () => {
   it('refuses to guess between two pages that spell alike', () => {
     const ambiguous = teamPageIndex(['Team_X', 'Team-X'])
     expect(resolveTeamPage(ambiguous, 'team x')).toBeNull()
+  })
+})
+
+describe('teamPath', () => {
+  it('encodes a dot so the trailing slash survives', () => {
+    // Next strips the slash from a last segment that looks like a file.
+    expect(teamPath('en', 'AP.Bren')).toBe('/en/teams/AP%2EBren/')
+  })
+
+  it('always ends with a slash', () => {
+    expect(teamPath('ar', 'Team_Liquid_ID')).toBe('/ar/teams/Team_Liquid_ID/')
+  })
+
+  it('encodes spaces and other reserved characters', () => {
+    expect(teamPath('en', 'Team Rey')).toBe('/en/teams/Team%20Rey/')
   })
 })

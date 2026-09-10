@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useMemo } from 'react'
 import { useTranslations } from 'next-intl'
 import { TeamCrest } from '@/components/matches/team-crest'
-import { resolveTeamPage, teamPageIndex } from '@/lib/data/team-slug'
+import { resolveTeamPage, teamPageIndex, teamPath } from '@/lib/data/team-slug'
 import type { StandingRow, StandingTable } from '@/lib/data/types'
 
 function record(wins: number | null, losses: number | null): string {
@@ -35,7 +35,7 @@ function TeamName({
 
   return target ? (
     <Link
-      href={`/${locale}/teams/${encodeURIComponent(target)}/`}
+      href={teamPath(locale, target)}
       aria-label={row.team.name}
     >
       {content}
