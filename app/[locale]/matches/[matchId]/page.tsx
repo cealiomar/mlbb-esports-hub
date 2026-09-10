@@ -77,11 +77,29 @@ export default async function MatchDetailsPage({
           <div className="match-details-teams">
             {match.opponents.map((team) => (
               <div key={`${team.code}-${team.pageSlug}`}>
-                <TeamCrest team={team} size={46} />
-                <span>
-                  <strong>{team.name}</strong>
-                  <small>{team.code}</small>
-                </span>
+                {/* Crest and name open the team, as they do everywhere else.
+                    `contents` keeps the row's layout exactly as it was. */}
+                {team.pageSlug ? (
+                  <Link
+                    href={`/${locale}/teams/${encodeURIComponent(team.pageSlug)}/`}
+                    className="contents"
+                    aria-label={team.name}
+                  >
+                    <TeamCrest team={team} size={46} />
+                    <span>
+                      <strong>{team.name}</strong>
+                      <small>{team.code}</small>
+                    </span>
+                  </Link>
+                ) : (
+                  <>
+                    <TeamCrest team={team} size={46} />
+                    <span>
+                      <strong>{team.name}</strong>
+                      <small>{team.code}</small>
+                    </span>
+                  </>
+                )}
                 {team.pageSlug ? (
                   <Link href={`/${locale}/teams/${encodeURIComponent(team.pageSlug)}/`}>
                     {t('teamPage')}

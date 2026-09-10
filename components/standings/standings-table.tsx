@@ -1,8 +1,10 @@
 'use client'
 
 import Link from 'next/link'
+import { useMemo } from 'react'
 import { useTranslations } from 'next-intl'
 import { TeamCrest } from '@/components/matches/team-crest'
+import { resolveTeamPage, teamPageIndex } from '@/lib/data/team-slug'
 import type { StandingRow, StandingTable } from '@/lib/data/types'
 
 function record(wins: number | null, losses: number | null): string {
@@ -17,11 +19,12 @@ function difference(value: number | null): string {
 function TeamName({
   row,
   locale,
-  linkable,
+  target,
 }: {
   row: StandingRow
   locale: 'en' | 'ar'
-  linkable: boolean
+  /** The built team page this row opens, or null. */
+  target: string | null
 }) {
   const content = (
     <span className="standing-team" dir="ltr">
@@ -30,8 +33,13 @@ function TeamName({
     </span>
   )
 
-  return linkable && row.team.pageSlug ? (
-    <Link href={`/${locale}/teams/${row.team.pageSlug}`}>{content}</Link>
+  return target ? (
+    <Link
+      href={`/${locale}/teams/${encodeURIComponent(target)}/`}
+      aria-label={row.team.name}
+    >
+      {content}
+    </Link>
   ) : content
 }
 
@@ -52,7 +60,7 @@ export function StandingsTable({
 }) {
   const t = useTranslations('standings')
   const rows = limit ? table.rows.slice(0, limit) : table.rows
-  const linkableTeams = new Set(teamPageSlugs)
+  const pageIndex = useMemo(() => teamPageIndex(teamPageSlugs), [teamPageSlugs])
 
   return (
     <div className={`standings-table-wrap ${compact ? 'is-compact' : 'panel'}`}>
@@ -94,9 +102,7 @@ export function StandingsTable({
                 <TeamName
                   row={row}
                   locale={locale}
-                  linkable={Boolean(
-                    row.team.pageSlug && linkableTeams.has(row.team.pageSlug),
-                  )}
+                  target={resolveTeamPage(pageIndex, row.team.pageSlug, row.team.name)}
                 />
               </td>
               <td className="standing-record tabular-nums">

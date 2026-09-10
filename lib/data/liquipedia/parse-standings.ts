@@ -4,6 +4,7 @@ import type {
   StandingTable,
   StandingZone,
 } from '@/lib/data/types'
+import { isTeamPageSlug } from '../team-slug'
 
 const WIKI_ORIGIN = 'https://liquipedia.net'
 const PAGE_PREFIX = '/mobilelegends/'
@@ -55,7 +56,9 @@ export function isTournamentWindowActive(
 
 function pageSlugFromHref(href: string | undefined): string {
   if (!href || !href.startsWith(PAGE_PREFIX)) return ''
-  return decodeURIComponent(href.slice(PAGE_PREFIX.length).split('#')[0])
+  const slug = decodeURIComponent(href.slice(PAGE_PREFIX.length).split('#')[0])
+  // A team without a page is linked to its edit form, not to a title.
+  return isTeamPageSlug(slug) ? slug : ''
 }
 
 function absoluteUrl(src: string | undefined): string | null {

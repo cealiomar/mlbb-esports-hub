@@ -21,6 +21,7 @@ import {
   type HeroCatalogItem,
 } from '@/lib/drafts/hero-images'
 import { currentSeasonDraftLeagues } from '@/lib/drafts/coach'
+import { teamPageSlugs } from '@/lib/data/team-pages'
 
 // Fully static: rendered at build time from committed snapshots, so the
 // page paints instantly with no fetch and no loading state.
@@ -28,18 +29,10 @@ export const dynamic = 'force-static'
 export const revalidate = 3600
 
 export function generateStaticParams() {
-  const teams = readSnapshot<Team[]>('teams')?.data ?? []
-  const matches = readSnapshot<Match[]>('matches')?.data ?? []
-  const slugs = new Set([
-    ...teams.map((team) => team.pageSlug),
-    ...matches.flatMap((match) =>
-      match.opponents.map((opponent) => opponent.pageSlug),
-    ),
-  ])
+  // The same list every team link is checked against.
+  const slugs = teamPageSlugs()
   return routing.locales.flatMap((locale) =>
-    [...slugs]
-      .filter(Boolean)
-      .map((slug) => ({ locale, slug })),
+    slugs.map((slug) => ({ locale, slug })),
   )
 }
 
@@ -216,6 +209,7 @@ export default async function TeamPage({
       {draftLeague && draftProfile && (
         <div className="mt-20">
           <TeamDraftPanel
+            teamPageSlugs={teamPageSlugs()}
             league={draftLeague}
             profile={draftProfile}
             locale={localeKey}

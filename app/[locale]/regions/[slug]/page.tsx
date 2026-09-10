@@ -17,6 +17,7 @@ import { Reveal } from '@/components/ui/reveal'
 import { StandingsTable } from '@/components/standings/standings-table'
 import { routing } from '@/i18n/routing'
 import { BUILD_UNIX_TIME } from '@/lib/time/build'
+import { teamPageSlugs } from '@/lib/data/team-pages'
 
 // Fully static: rendered at build time from committed snapshots, so the
 // page paints instantly with no fetch and no loading state.
@@ -116,7 +117,7 @@ export default async function RegionPage({
             <StandingsTable
               table={standings[0]}
               locale={localeKey}
-              teamPageSlugs={currentTeams.map((team) => team.pageSlug)}
+              teamPageSlugs={teamPageSlugs()}
             />
           ) : (
             <Tabs
@@ -128,7 +129,7 @@ export default async function RegionPage({
                   <StandingsTable
                     table={table}
                     locale={localeKey}
-                    teamPageSlugs={currentTeams.map((team) => team.pageSlug)}
+                    teamPageSlugs={teamPageSlugs()}
                   />
                 ),
               }))}

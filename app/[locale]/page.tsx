@@ -16,6 +16,7 @@ import { SiteIntro } from '@/components/ui/site-intro'
 import { routing } from '@/i18n/routing'
 import { getRegions } from '@/lib/content/regions'
 import { BUILD_UNIX_TIME } from '@/lib/time/build'
+import { teamPageSlugs } from '@/lib/data/team-pages'
 
 // Fully static: rendered at build time from committed snapshots, so the
 // page paints instantly with no fetch and no loading state.
@@ -100,6 +101,7 @@ export default async function HomePage({
             />
           </Reveal>
           <StandingsOverview
+            teamPageSlugs={teamPageSlugs()}
             tables={standings}
             locale={locale === 'ar' ? 'ar' : 'en'}
           />

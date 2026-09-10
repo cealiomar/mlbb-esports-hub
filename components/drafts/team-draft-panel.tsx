@@ -12,7 +12,10 @@ import {
   resolveDraftTeamVisual,
   type DraftTeamVisual,
 } from '@/lib/drafts/enrich'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { TeamCrest } from '@/components/matches/team-crest'
+import { resolveTeamPage, teamPageIndex } from '@/lib/data/team-slug'
 import { HeroIcon } from './hero-icon'
 
 function formatDuration(seconds: number | null): string | null {
@@ -197,20 +200,59 @@ function DraftGameView({
   )
 }
 
+/**
+ * Opens a team's own page — unless it has none, or it is the page already
+ * open. Uses `display: contents` like the fixture cards, so wrapping never
+ * changes the surrounding layout.
+ */
+function TeamProfileLink({
+  slug,
+  pages,
+  locale,
+  label,
+  children,
+}: {
+  slug: string
+  pages: Map<string, string>
+  locale: 'en' | 'ar'
+  label: string
+  children: React.ReactNode
+}) {
+  const pathname = usePathname() ?? ''
+  const target = resolveTeamPage(pages, slug, label)
+  const here = target
+    ? decodeURIComponent(pathname).replace(/\/$/, '').endsWith(`/teams/${target}`)
+    : false
+  if (!target || here) return <>{children}</>
+  return (
+    <Link
+      href={`/${locale}/teams/${encodeURIComponent(target)}/`}
+      className="contents"
+      aria-label={label}
+    >
+      {children}
+    </Link>
+  )
+}
+
 export function TeamDraftPanel({
   league,
   profile,
   locale,
   teamVisuals,
   heroImages,
+  teamPageSlugs = [],
 }: {
   league: DraftLeague
   profile: TeamDraftProfile
   locale: 'en' | 'ar'
   teamVisuals: DraftTeamVisual[]
   heroImages: HeroImageMap
+  /** Teams with a built page; only these are linked. */
+  teamPageSlugs?: string[]
 }) {
   const t = useTranslations('drafts')
+  const pages = teamPageIndex(teamPageSlugs)
   const profileVisual = resolveDraftTeamVisual(
     teamVisuals,
     profile.team,
@@ -221,11 +263,13 @@ export function TeamDraftPanel({
     <section className="team-draft-panel" data-testid="team-draft-panel">
       <header className="team-draft-panel__header">
         <div className="team-draft-panel__identity">
-          <TeamCrest team={profileVisual} size={52} />
-          <span>
-            <small>{t('teamAnalysis')}</small>
-            <h2>{profile.team.name}</h2>
-          </span>
+          <TeamProfileLink slug={profileVisual.pageSlug} pages={pages} locale={locale} label={profile.team.name}>
+            <TeamCrest team={profileVisual} size={52} />
+            <span>
+              <small>{t('teamAnalysis')}</small>
+              <h2>{profile.team.name}</h2>
+            </span>
+          </TeamProfileLink>
         </div>
         <strong>{t('gamesAnalyzed', { count: profile.gamesAnalyzed })}</strong>
       </header>
@@ -297,11 +341,13 @@ export function TeamDraftPanel({
                       className="draft-series__team"
                       data-winner={winningSide === 1 || undefined}
                     >
-                      <TeamCrest team={team1Visual} size={46} />
-                      <span>
-                        <strong>{series.team1.name}</strong>
-                        {winningSide === 1 && <small>{t('winner')}</small>}
-                      </span>
+                      <TeamProfileLink slug={team1Visual.pageSlug} pages={pages} locale={locale} label={series.team1.name}>
+                        <TeamCrest team={team1Visual} size={46} />
+                        <span>
+                          <strong>{series.team1.name}</strong>
+                          {winningSide === 1 && <small>{t('winner')}</small>}
+                        </span>
+                      </TeamProfileLink>
                       <b>{team1Score}</b>
                     </div>
                     <span className="draft-series__score-separator">:</span>
@@ -310,11 +356,13 @@ export function TeamDraftPanel({
                       data-winner={winningSide === 2 || undefined}
                     >
                       <b>{team2Score}</b>
-                      <TeamCrest team={team2Visual} size={46} />
-                      <span>
-                        <strong>{series.team2.name}</strong>
-                        {winningSide === 2 && <small>{t('winner')}</small>}
-                      </span>
+                      <TeamProfileLink slug={team2Visual.pageSlug} pages={pages} locale={locale} label={series.team2.name}>
+                        <TeamCrest team={team2Visual} size={46} />
+                        <span>
+                          <strong>{series.team2.name}</strong>
+                          {winningSide === 2 && <small>{t('winner')}</small>}
+                        </span>
+                      </TeamProfileLink>
                     </div>
                   </div>
                 </div>

@@ -14,6 +14,7 @@ import {
 } from '@/lib/drafts/hero-images'
 import { currentSeasonDraftLeagues } from '@/lib/drafts/coach'
 import { routing } from '@/i18n/routing'
+import { teamPageSlugs } from '@/lib/data/team-pages'
 
 export const dynamic = 'force-static'
 export const revalidate = 3600
@@ -67,6 +68,7 @@ export default async function DraftsPage({
           locale={locale === 'ar' ? 'ar' : 'en'}
           teamVisuals={teamVisuals}
           heroImages={heroImages}
+          teamPageSlugs={teamPageSlugs()}
         />
       ) : (
         <div className="draft-empty panel">

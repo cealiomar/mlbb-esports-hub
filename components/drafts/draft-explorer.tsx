@@ -24,11 +24,13 @@ export function DraftExplorer({
   locale,
   teamVisuals,
   heroImages,
+  teamPageSlugs = [],
 }: {
   leagues: DraftLeague[]
   locale: 'en' | 'ar'
   teamVisuals: DraftTeamVisual[]
   heroImages: HeroImageMap
+  teamPageSlugs?: string[]
 }) {
   const t = useTranslations('drafts')
   const available = getRegions()
@@ -83,7 +85,7 @@ export function DraftExplorer({
         <header className="draft-league-overview__header">
           <span>
             <small>{active.region.name[locale]}</small>
-            <h1>{active.league.leagueName}</h1>
+            <h2>{active.league.leagueName}</h2>
           </span>
           <strong>{t('gamesAnalyzed', { count: active.league.gamesAnalyzed })}</strong>
         </header>
@@ -150,6 +152,7 @@ export function DraftExplorer({
               locale={locale}
               teamVisuals={teamVisuals}
               heroImages={heroImages}
+              teamPageSlugs={teamPageSlugs}
             />
           )}
         </section>

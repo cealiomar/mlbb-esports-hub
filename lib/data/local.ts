@@ -11,6 +11,8 @@ import type {
   Team,
 } from './types'
 import { normalizeMatch } from './normalize-matches'
+import { teamPageSlugs } from './team-pages'
+import { resolveTeamPage, teamPageIndex } from './team-slug'
 
 export interface LocalOptions {
   snapshotDir?: string
@@ -26,6 +28,17 @@ function resolve<T>(
 
 export function createLocalDataSource(options: LocalOptions = {}): DataSource {
   const dir = options.snapshotDir ?? DEFAULT_SNAPSHOT_DIR
+
+  // Fixtures, standings and rosters spell the same team differently —
+  // `Mythic_SEAL`, `Mythic_Seal`, or a redlink with no slug at all. Resolve
+  // every team to the one page that is built, once, here, so every surface
+  // that shows a team links to the same place and every team page finds all
+  // of its fixtures.
+  let pageIndex: Map<string, string> | undefined
+  const canonicalSlug = (slug: string, name: string): string => {
+    pageIndex ??= teamPageIndex(teamPageSlugs(dir))
+    return resolveTeamPage(pageIndex, slug, name) ?? ''
+  }
   const matchFallback = fallbackMatches as unknown as Snapshot<Match[]>
 
   function matches(): Snapshot<Match[]> {
@@ -39,12 +52,32 @@ export function createLocalDataSource(options: LocalOptions = {}): DataSource {
 
   return {
     async getMatches(): Promise<Result<Match[]>> {
-      return ok(matches().data.map(normalizeMatch))
+      return ok(
+        matches().data.map(normalizeMatch).map((match) => ({
+          ...match,
+          opponents: match.opponents.map((opponent) => ({
+            ...opponent,
+            pageSlug:
+              opponent.code === 'TBD'
+                ? ''
+                : canonicalSlug(opponent.pageSlug, opponent.name),
+          })) as Match['opponents'],
+        })),
+      )
     },
 
     async getStandings(regionSlug?: string): Promise<Result<StandingTable[]>> {
       const snap = resolve<StandingTable[]>('standings', dir, null)
-      const all = snap?.data ?? []
+      const all = (snap?.data ?? []).map((table) => ({
+        ...table,
+        rows: table.rows.map((row) => ({
+          ...row,
+          team: {
+            ...row.team,
+            pageSlug: canonicalSlug(row.team.pageSlug, row.team.name),
+          },
+        })),
+      }))
       return ok(
         regionSlug
           ? all.filter((table) => table.regionSlug === regionSlug)

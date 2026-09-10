@@ -10,9 +10,12 @@ import { StandingsTable } from './standings-table'
 export function StandingsOverview({
   tables,
   locale,
+  teamPageSlugs = [],
 }: {
   tables: StandingTable[]
   locale: 'en' | 'ar'
+  /** Teams with a built page; only these are linked. */
+  teamPageSlugs?: string[]
 }) {
   const t = useTranslations('standings')
   const railRef = useRef<HTMLUListElement>(null)
@@ -136,6 +139,7 @@ export function StandingsOverview({
                   compact
                   limit={4}
                   showStage={false}
+                  teamPageSlugs={teamPageSlugs}
                 />
               ) : (
                 <div className="standings-empty standings-empty--preview">
