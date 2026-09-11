@@ -2,7 +2,7 @@
 export const AUTHOR = {
   handle: 'madebyceali',
   tagline: 'Product & UI design',
-  instagram: 'https://instagram.com/madebyceali',
+  instagram: 'https://www.instagram.com/cealiomar.design/',
   email: 'cealiomar@gmail.com',
   paypal: 'https://www.paypal.com/paypalme/cealiomar?locale.x=en_US',
   /**

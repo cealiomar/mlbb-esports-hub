@@ -55,7 +55,7 @@ test('the footer credits the developer with working links', async ({ page }) => 
     .getByRole('link', { name: '@madebyceali' })
   await expect(insta).toHaveAttribute(
     'href',
-    'https://instagram.com/madebyceali',
+    'https://www.instagram.com/cealiomar.design/',
   )
   await expect(insta).toHaveAttribute('target', '_blank')
 
