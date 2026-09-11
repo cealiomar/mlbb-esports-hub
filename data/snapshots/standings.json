@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1789107034,
+  "harvestedAt": 1789144742,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -593,6 +593,216 @@
           "gameLosses": 4,
           "gameDiff": -3,
           "points": null,
+          "zone": "eliminated"
+        }
+      ]
+    },
+    {
+      "id": "thailand-regular-season-19",
+      "regionSlug": "thailand",
+      "leagueName": "MSL Thailand",
+      "leaguePageSlug": "MLBB_Super_League/Thailand/Season_2",
+      "stageName": "Regular Season",
+      "rows": [
+        {
+          "position": 1,
+          "team": {
+            "code": "BT",
+            "name": "Bacon Time",
+            "pageSlug": "Bacon_Time",
+            "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 0,
+          "gameDiff": 2,
+          "points": 1,
+          "zone": "advance"
+        },
+        {
+          "position": 1,
+          "team": {
+            "code": "TEN",
+            "name": "Tenacity",
+            "pageSlug": "",
+            "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 0,
+          "gameDiff": 2,
+          "points": 1,
+          "zone": "advance"
+        },
+        {
+          "position": 3,
+          "team": {
+            "code": "FS",
+            "name": "FULL SENSE",
+            "pageSlug": "FULL_SENSE",
+            "logoUrl": "/teams/59px-FULL_SENSE_2025_allmode-9db84f90.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 1,
+          "gameDiff": 1,
+          "points": 1,
+          "zone": "playoff"
+        },
+        {
+          "position": 8,
+          "team": {
+            "code": "HE",
+            "name": "Hydra Esports",
+            "pageSlug": "",
+            "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 1,
+          "gameLosses": 2,
+          "gameDiff": -1,
+          "points": 0,
+          "zone": "eliminated"
+        },
+        {
+          "position": 9,
+          "team": {
+            "code": "BUE",
+            "name": "Buriram United Esports",
+            "pageSlug": "Buriram_United_Esports",
+            "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 0,
+          "gameLosses": 2,
+          "gameDiff": -2,
+          "points": 0,
+          "zone": "eliminated"
+        },
+        {
+          "position": 9,
+          "team": {
+            "code": "SOL",
+            "name": "SOLYX",
+            "pageSlug": "",
+            "logoUrl": "/teams/100px-Solyx_allmode-ff12a1c2.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 0,
+          "gameLosses": 2,
+          "gameDiff": -2,
+          "points": 0,
+          "zone": "eliminated"
+        }
+      ]
+    },
+    {
+      "id": "vietnam-group-stage-10",
+      "regionSlug": "vietnam",
+      "leagueName": "Vietnam MLBB Championship",
+      "leaguePageSlug": "Vietnam_MLBB_Championship/2026/Fall",
+      "stageName": "Group Stage",
+      "rows": [
+        {
+          "position": 1,
+          "team": {
+            "code": "SP",
+            "name": "Saigon Phantom",
+            "pageSlug": "Saigon_Phantom",
+            "logoUrl": "/teams/55px-Saigon_Phantom_2020_allmode-24809f21.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 0,
+          "gameDiff": 2,
+          "points": 1,
+          "zone": "advance"
+        },
+        {
+          "position": 1,
+          "team": {
+            "code": "WVT",
+            "name": "Winx (Vietnamese team)",
+            "pageSlug": "",
+            "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 0,
+          "gameDiff": 2,
+          "points": 1,
+          "zone": "advance"
+        },
+        {
+          "position": 3,
+          "team": {
+            "code": "TRA",
+            "name": "Tranquillizer",
+            "pageSlug": "",
+            "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 0,
+          "gameWins": 2,
+          "gameLosses": 1,
+          "gameDiff": 1,
+          "points": 1,
+          "zone": "advance"
+        },
+        {
+          "position": 4,
+          "team": {
+            "code": "SR",
+            "name": "Sweet Revenge",
+            "pageSlug": "",
+            "logoUrl": "/teams/67px-Sweet_Revenge_full_darkmode-c32274c4.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 1,
+          "gameLosses": 2,
+          "gameDiff": -1,
+          "points": 0,
+          "zone": "advance"
+        },
+        {
+          "position": 5,
+          "team": {
+            "code": "ANT",
+            "name": "ANTGAMER",
+            "pageSlug": "",
+            "logoUrl": "/teams/69px-ANTGAMER_allmode-d0948a63.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 0,
+          "gameLosses": 2,
+          "gameDiff": -2,
+          "points": 0,
+          "zone": "eliminated"
+        },
+        {
+          "position": 5,
+          "team": {
+            "code": "NT",
+            "name": "Noob Team",
+            "pageSlug": "",
+            "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 0,
+          "gameLosses": 2,
+          "gameDiff": -2,
+          "points": 0,
           "zone": "eliminated"
         }
       ]
