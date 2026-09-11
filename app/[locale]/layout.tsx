@@ -33,8 +33,8 @@ const arabic = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'MLBB Esports Hub',
-    template: '%s · MLBB Esports Hub',
+    default: 'MPL News',
+    template: '%s · MPL News',
   },
   description:
     'Live Mobile Legends: Bang Bang fixtures, schedules, results and teams across every competitive region.',

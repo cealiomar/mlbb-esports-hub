@@ -84,8 +84,8 @@ donation, not a sale.
 3. **Deploy.**
 
 The project name becomes the address, so name it before deploying:
-`https://<project-name>.vercel.app`. This project uses **`mplhub`**, giving
-`https://mplhub.vercel.app` (`mpl-hub` is already taken by an unrelated site). If a
+`https://<project-name>.vercel.app`. This project uses **`mplnews`**, giving
+`https://mplnews.vercel.app`. ("Hub" was dropped from the name on purpose.) If a
 name is taken Vercel appends a suffix; it can be renamed later under
 **Settings → General**, or given an extra free `*.vercel.app` alias under
 **Settings → Domains**.
