@@ -1,37 +1,6 @@
 {
-  "harvestedAt": 1789144412,
+  "harvestedAt": 1789152256,
   "data": [
-    {
-      "id": "1789142400-mpl-mena-season-10-regular-season-flcm-twis",
-      "startsAt": 1789142400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FLCM",
-          "name": "Team Falcons",
-          "pageSlug": "Team_Falcons",
-          "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TWIS",
-          "name": "Twisted Minds",
-          "pageSlug": "Twisted_Minds",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL MENA Season 10 - Week 1",
-      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
-      "regionSlug": "mena",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1789149600-mpl-mena-season-10-regular-season-xo-wod",
       "startsAt": 1789149600,
@@ -89,7 +58,11 @@
       "tournamentName": "MCT AMER 2026 - Round 1",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
@@ -118,7 +91,9 @@
       "tournamentName": "MPL MENA Season 10 - Week 1",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
+      ],
       "vodUrls": []
     },
     {
@@ -478,7 +453,7 @@
         {
           "code": "MIO",
           "name": "Team Mio",
-          "pageSlug": "",
+          "pageSlug": "Team_Mio",
           "logoUrl": null,
           "score": null,
           "isWinner": false
@@ -1456,6 +1431,64 @@
       "vodUrls": []
     },
     {
+      "id": "1789290000-mpl-philippines-season-18-regular-season-tnc-omg",
+      "startsAt": 1789290000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TNC",
+          "name": "TNC Pro Team",
+          "pageSlug": "TNC_Pro_Team",
+          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OMG",
+          "name": "Omega Esports",
+          "pageSlug": "Omega_Esports",
+          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789142400-mpl-mena-season-10-regular-season-flcm-twis",
+      "startsAt": 1789142400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FLCM",
+          "name": "Team Falcons",
+          "pageSlug": "Team_Falcons",
+          "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "TWIS",
+          "name": "Twisted Minds",
+          "pageSlug": "Twisted_Minds",
+          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL MENA Season 10 - Week 1",
+      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
+      "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1789135200-mlbb-super-league-thailand-season-2-regular-season-slx-ten",
       "startsAt": 1789135200,
       "status": "completed",
@@ -1482,7 +1515,10 @@
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/pmc6kiLKdLw?t=16309",
+        "https://youtu.be/pmc6kiLKdLw?t=18031"
+      ]
     },
     {
       "id": "1789131600-vietnam-mlbb-championship-2026-fall-group-stage-wx-ant",
@@ -1627,7 +1663,11 @@
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/pmc6kiLKdLw?t=7578",
+        "https://youtu.be/pmc6kiLKdLw?t=9928",
+        "https://youtu.be/pmc6kiLKdLw?t=12268"
+      ]
     },
     {
       "id": "1789126200-mpl-philippines-season-18-regular-season-rora-apbr",
@@ -1833,7 +1873,10 @@
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/pmc6kiLKdLw?t=2233",
+        "https://youtu.be/pmc6kiLKdLw?t=3958"
+      ]
     },
     {
       "id": "1789119000-mlbb-super-league-myanmar-season-4-regular-season-tec-bg-df",
@@ -1993,7 +2036,7 @@
         {
           "code": "MIO",
           "name": "Team Mio",
-          "pageSlug": "",
+          "pageSlug": "Team_Mio",
           "logoUrl": null,
           "score": 2,
           "isWinner": true
@@ -2873,35 +2916,6 @@
           "name": "Team Yandex",
           "pageSlug": "",
           "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 2",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1788706800-mlbb-continental-championships-season-8-regular-season-lvl-arv",
-      "startsAt": 1788706800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "LVL",
-          "name": "Level UP",
-          "pageSlug": "",
-          "logoUrl": "/teams/42px-Level_Up_Esports_2021_allmode-7de16a3a.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "ARV",
-          "name": "Aurevia Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
           "score": 2,
           "isWinner": true
         }
