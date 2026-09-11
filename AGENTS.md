@@ -18,8 +18,9 @@ anywhere, and none should be added.
 **Content priority, highest first:** live matches → regional standings → the
 schedule and who plays whom → results → draft scouting.
 
-Live on GitHub Pages: <https://cealiomar.github.io/mlbb-esports-hub/>. `vercel.json`
-is ready for a free `*.vercel.app` deployment — see [DEPLOY.md](DEPLOY.md).
+Live at <https://mplnews.vercel.app/> (Vercel project `mplnews`, redeployed on every
+push to `main`) and on GitHub Pages at <https://cealiomar.github.io/mlbb-esports-hub/>.
+See [DEPLOY.md](DEPLOY.md).
 
 ## Stack
 
