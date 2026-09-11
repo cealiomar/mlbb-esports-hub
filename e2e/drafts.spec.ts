@@ -126,3 +126,40 @@ test('Draft Lab is clear in Arabic and contained at 320px', async ({ page }) => 
     ),
   ).toBeLessThanOrEqual(1)
 })
+
+test('each game shows both drafts side by side, on desktop and phone', async ({
+  page,
+}) => {
+  for (const width of [1280, 375]) {
+    await page.setViewportSize({ width, height: 900 })
+    await page.goto('/en/drafts/')
+    await page.locator('.draft-team-rail button').nth(1).click()
+
+    const series = page.getByTestId('team-draft-panel').locator('.draft-series').first()
+    if (!(await series.evaluate((node) => (node as HTMLDetailsElement).open))) {
+      await series.locator('summary').click()
+    }
+    const game = series.locator('.draft-game').first()
+    const teams = game.locator('.draft-versus__team')
+    await expect(teams).toHaveCount(2)
+    // No toggle: both teams' picks are on screen at once.
+    for (const index of [0, 1]) {
+      await expect(teams.nth(index).locator('.draft-versus__picks li').first()).toBeVisible()
+    }
+
+    const [a, b] = await teams.evaluateAll((nodes) =>
+      nodes.map((node) => {
+        const box = node.getBoundingClientRect()
+        return { top: box.top, left: box.left, right: box.right }
+      }),
+    )
+    // Facing each other: same row, no overlap.
+    expect(Math.abs(a.top - b.top)).toBeLessThan(2)
+    expect(a.right <= b.left + 1 || b.right <= a.left + 1).toBe(true)
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+      ),
+    ).toBeLessThanOrEqual(1)
+  }
+})
