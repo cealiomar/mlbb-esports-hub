@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1789082542,
+  "harvestedAt": 1789089943,
   "data": [
     {
       "id": "1789111800-mlbb-super-league-myanmar-season-4-regular-season-ts-pld",
@@ -669,6 +669,35 @@
       "vodUrls": []
     },
     {
+      "id": "1789156800-mct-2026-americas-split-2-swiss-stage-infi-tec",
+      "startsAt": 1789156800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "INFI",
+          "name": "Infinity",
+          "pageSlug": "Infinity",
+          "logoUrl": "/teams/63px-Infinity_2021_darkmode-c807e562.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TEC",
+          "name": "Titan Esports Club",
+          "pageSlug": "Titan_Esports_Club",
+          "logoUrl": "/teams/50px-Titan_Esports_Club_2025_allmode-dd31b871.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 1",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1789156800-mpl-mena-season-10-regular-season-xp-gk",
       "startsAt": 1789156800,
       "status": "upcoming",
@@ -694,6 +723,35 @@
       "tournamentName": "MPL MENA Season 10 - Week 1",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789164000-mct-2026-americas-split-2-swiss-stage-lyon-b2g",
+      "startsAt": 1789164000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "LYON",
+          "name": "LYON",
+          "pageSlug": "LYON",
+          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "B2G",
+          "name": "Deportivo B2G",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-Deportivo_B2G_allmode-05f09465.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 1",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1390,64 +1448,6 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 1",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789215300-mpl-malaysia-season-18-regular-season-srg-rrqt",
-      "startsAt": 1789215300,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "SRG",
-          "name": "Selangor Red Giants",
-          "pageSlug": "Selangor_Red_Giants",
-          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RRQT",
-          "name": "RRQ Tora",
-          "pageSlug": "RRQ_Tora",
-          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 5",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789218000-mlbb-continental-championships-season-8-regular-season-ch-rkz",
-      "startsAt": 1789218000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "CH",
-          "name": "CyberHero",
-          "pageSlug": "CyberHero",
-          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RKZ",
-          "name": "RAKUZAN",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 3",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
