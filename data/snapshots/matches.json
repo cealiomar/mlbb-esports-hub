@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1789241844,
+  "harvestedAt": 1789249123,
   "data": [
     {
       "id": "1789243200-mct-2026-americas-split-2-swiss-stage-a7-e7",
@@ -91,7 +91,11 @@
       "tournamentName": "MCT AMER 2026 - Round 1",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
