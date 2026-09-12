@@ -1,99 +1,6 @@
 {
-  "harvestedAt": 1789233922,
+  "harvestedAt": 1789241844,
   "data": [
-    {
-      "id": "1789228800-mpl-mena-season-10-regular-season-flcm-tec",
-      "startsAt": 1789228800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FLCM",
-          "name": "Team Falcons",
-          "pageSlug": "Team_Falcons",
-          "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TEC",
-          "name": "Titan Esports Club AR",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Titan_Esports_Club_AR_allmode-fe800b70.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL MENA Season 10 - Week 1",
-      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
-      "regionSlug": "mena",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1789233600-mtc-turkiye-championship-season-8-regular-season-fut-bw",
-      "startsAt": 1789233600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FUT",
-          "name": "FUT Esports",
-          "pageSlug": "FUT_Esports",
-          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "BW",
-          "name": "Bushido Wildcats",
-          "pageSlug": "Bushido_Wildcats",
-          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 1",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Turkiye"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1789236000-mpl-mena-season-10-regular-season-twis-xp",
-      "startsAt": 1789236000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TWIS",
-          "name": "Twisted Minds",
-          "pageSlug": "Twisted_Minds",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "XP",
-          "name": "XProjekt Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL MENA Season 10 - Week 1",
-      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
-      "regionSlug": "mena",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1789243200-mct-2026-americas-split-2-swiss-stage-a7-e7",
       "startsAt": 1789243200,
@@ -120,7 +27,11 @@
       "tournamentName": "MCT AMER 2026 - Round 1",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
@@ -149,7 +60,9 @@
       "tournamentName": "MPL MENA Season 10 - Week 1",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
+      ],
       "vodUrls": []
     },
     {
@@ -1454,6 +1367,209 @@
       "tournamentName": "MAL S6 RS - Week 4",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789466400-mlbb-academy-league-season-6-regular-season-phase-1-king-arc",
+      "startsAt": 1789466400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KING",
+          "name": "DX Kingz",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "ARC",
+          "name": "Borneo Arcanis Fusion Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Borneo_Arcanis_Fusion_Esports_darkmode-5299d876.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 4",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789473600-mlbb-academy-league-season-6-regular-season-phase-1-srga-oust",
+      "startsAt": 1789473600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "SRGA",
+          "name": "Selangor Red Giants Academy",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OUST",
+          "name": "Outcast",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Outcast_MLBB_allmode-8b01027d.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 4",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_1",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789635600-mlbb-china-masters-season-3-regular-season-tk-kbg",
+      "startsAt": 1789635600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TK",
+          "name": "The Keeper Gaming",
+          "pageSlug": "",
+          "logoUrl": "/teams/73px-The_Keeper_Gaming_allmode-5353a51d.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "KBG",
+          "name": "KeepBest Gaming",
+          "pageSlug": "KeepBest_Gaming",
+          "logoUrl": "/teams/95px-KeepBest_Gaming_allmode-758251c6.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "CN Masters Season 3 - RS: Week 2",
+      "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789236000-mpl-mena-season-10-regular-season-twis-xp",
+      "startsAt": 1789236000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TWIS",
+          "name": "Twisted Minds",
+          "pageSlug": "Twisted_Minds",
+          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "XP",
+          "name": "XProjekt Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL MENA Season 10 - Week 1",
+      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
+      "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789233600-mtc-turkiye-championship-season-8-regular-season-fut-bw",
+      "startsAt": 1789233600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FUT",
+          "name": "FUT Esports",
+          "pageSlug": "FUT_Esports",
+          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "BW",
+          "name": "Bushido Wildcats",
+          "pageSlug": "Bushido_Wildcats",
+          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 1",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789232400-mlbb-continental-championships-season-8-regular-season-yndx-arv",
+      "startsAt": 1789232400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "ARV",
+          "name": "Aurevia Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 3",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789228800-mpl-mena-season-10-regular-season-flcm-tec",
+      "startsAt": 1789228800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FLCM",
+          "name": "Team Falcons",
+          "pageSlug": "Team_Falcons",
+          "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "TEC",
+          "name": "Titan Esports Club AR",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Titan_Esports_Club_AR_allmode-fe800b70.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL MENA Season 10 - Week 1",
+      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
+      "regionSlug": "mena",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2813,129 +2929,6 @@
       "regionSlug": "vietnam",
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1789122600-mlbb-china-masters-season-3-regular-season-kbg-qtg",
-      "startsAt": 1789122600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KBG",
-          "name": "KeepBest Gaming",
-          "pageSlug": "KeepBest_Gaming",
-          "logoUrl": "/teams/95px-KeepBest_Gaming_allmode-758251c6.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "QTG",
-          "name": "QTG",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "CN Masters Season 3 - RS: Week 1",
-      "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789120800-esn-national-championship-league-season-1-regular-season-lstr-stl",
-      "startsAt": 1789120800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "LSTR",
-          "name": "Laestrygonians",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "STL",
-          "name": "Stallions (Mongolian Team)",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "ESN National Championship League Season 1 - RS: Week 2",
-      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789120800-mpl-indonesia-season-18-regular-season-geek-onic",
-      "startsAt": 1789120800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "GEEK",
-          "name": "Geek Fam ID",
-          "pageSlug": "Geek_Fam_ID",
-          "logoUrl": "/teams/43px-Geek_Fam_2019_allmode-1e9b1f3c.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "ONIC",
-          "name": "ONIC",
-          "pageSlug": "ONIC",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 5",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=a7a2ljVeA8s",
-        "https://www.youtube.com/watch?v=wrmInd3tM9g",
-        "https://www.youtube.com/watch?v=Yrupdr_Nlao"
-      ]
-    },
-    {
-      "id": "1789120800-mlbb-super-league-thailand-season-2-regular-season-bru-bac",
-      "startsAt": 1789120800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BRU",
-          "name": "Buriram United Esports",
-          "pageSlug": "Buriram_United_Esports",
-          "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "BAC",
-          "name": "Bacon Time",
-          "pageSlug": "Bacon_Time",
-          "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 1",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/pmc6kiLKdLw?t=2233",
-        "https://youtu.be/pmc6kiLKdLw?t=3958"
-      ]
     }
   ]
 }
