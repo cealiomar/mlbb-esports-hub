@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1789503936,
+  "harvestedAt": 1789513767,
   "data": [
     {
       "id": "1789635600-mlbb-china-masters-season-3-regular-season-tk-kbg",
@@ -698,6 +698,35 @@
       "vodUrls": []
     },
     {
+      "id": "1789761600-mct-2026-americas-split-2-swiss-stage-octa-tec",
+      "startsAt": 1789761600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OCTA",
+          "name": "Octa Gaming",
+          "pageSlug": "",
+          "logoUrl": "/teams/42px-Octa_Gaming_2026_darkmode-fe113849.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TEC",
+          "name": "Titan Esports Club",
+          "pageSlug": "Titan_Esports_Club",
+          "logoUrl": "/teams/50px-Titan_Esports_Club_2025_allmode-dd31b871.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 2",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1789761600-mpl-mena-season-10-regular-season-twis-xo",
       "startsAt": 1789761600,
       "status": "upcoming",
@@ -723,6 +752,35 @@
       "tournamentName": "MPL MENA Season 10 - Week 2",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789768800-mct-2026-americas-split-2-swiss-stage-lyon-stmn",
+      "startsAt": 1789768800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "LYON",
+          "name": "LYON",
+          "pageSlug": "LYON",
+          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "STMN",
+          "name": "STMN Esports",
+          "pageSlug": "STMN_Esports",
+          "logoUrl": "/teams/40px-STMN_Esports_allmode-dca9930e.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 2",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1394,64 +1452,6 @@
       "vodUrls": []
     },
     {
-      "id": "1789820100-mpl-malaysia-season-18-regular-season-ac-srg",
-      "startsAt": 1789820100,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AC",
-          "name": "AC Esports",
-          "pageSlug": "AC_Esports",
-          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "SRG",
-          "name": "Selangor Red Giants",
-          "pageSlug": "Selangor_Red_Giants",
-          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 6",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789822800-mlbb-continental-championships-season-8-regular-season-lvl-yndx",
-      "startsAt": 1789822800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "LVL",
-          "name": "Level UP",
-          "pageSlug": "",
-          "logoUrl": "/teams/42px-Level_Up_Esports_2021_allmode-7de16a3a.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 4",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
       "id": "1789473600-mlbb-academy-league-season-6-regular-season-phase-1-srga-oust",
       "startsAt": 1789473600,
       "status": "completed",
@@ -2067,7 +2067,9 @@
       "tournamentName": "MCC Season 8 - Week 3",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://www.youtube.com/watch?v=qu4udJtUGaA&t=9434s"
+      ],
       "vodUrls": []
     },
     {
@@ -2300,7 +2302,11 @@
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=qu4udJtUGaA&t=2182s",
+        "https://www.youtube.com/watch?v=qu4udJtUGaA&t=4618s",
+        "https://www.youtube.com/watch?v=qu4udJtUGaA&t=6542s"
+      ]
     },
     {
       "id": "1789295400-mlbb-china-masters-season-3-regular-season-dfyg-qtg",
