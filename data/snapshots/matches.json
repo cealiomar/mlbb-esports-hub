@@ -1,40 +1,6 @@
 {
-  "harvestedAt": 1789648117,
+  "harvestedAt": 1789665267,
   "data": [
-    {
-      "id": "1789646400-mlbb-china-masters-season-3-regular-season-dfyg-osg",
-      "startsAt": 1789646400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DFYG",
-          "name": "DianFengYaoGuai",
-          "pageSlug": "DianFengYaoGuai",
-          "logoUrl": "/teams/49px-DFYG_allmode-9665ae4d.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "OSG",
-          "name": "OSG",
-          "pageSlug": "",
-          "logoUrl": "/teams/40px-Oriental_Starlight_School_darkmode-1e513e12.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CN Masters Season 3 - RS: Week 2",
-      "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EA_Esports",
-        "https://liquipedia.net/mobilelegends/Special:Stream/bilibili/MLBB_Global_Esports",
-        "https://liquipedia.net/mobilelegends/Special:Stream/douyu/MLBB_China",
-        "https://liquipedia.net/mobilelegends/Special:Stream/huya/MLBB_China"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1789711200-mpl-cambodia-season-11-regular-season-pro-gxl",
       "startsAt": 1789711200,
@@ -1452,6 +1418,64 @@
       ],
       "tournamentName": "MCC Season 8 - Week 4",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789822800-mpl-indonesia-season-18-regular-season-btr-tlid",
+      "startsAt": 1789822800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BTR",
+          "name": "Bigetron by Vitality",
+          "pageSlug": "Bigetron_by_Vitality",
+          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TLID",
+          "name": "Team Liquid ID",
+          "pageSlug": "Team_Liquid_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 6",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789646400-mlbb-china-masters-season-3-regular-season-dfyg-osg",
+      "startsAt": 1789646400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DFYG",
+          "name": "DianFengYaoGuai",
+          "pageSlug": "DianFengYaoGuai",
+          "logoUrl": "/teams/49px-DFYG_allmode-9665ae4d.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "OSG",
+          "name": "OSG",
+          "pageSlug": "",
+          "logoUrl": "/teams/40px-Oriental_Starlight_School_darkmode-1e513e12.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "CN Masters Season 3 - RS: Week 2",
+      "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -2922,39 +2946,6 @@
       "vodUrls": [
         "https://youtu.be/tPC6NS0hvh0?t=10501",
         "https://youtu.be/tPC6NS0hvh0?t=12650"
-      ]
-    },
-    {
-      "id": "1789243200-mct-2026-americas-split-2-swiss-stage-a7-e7",
-      "startsAt": 1789243200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "A7",
-          "name": "Alpha7 Esports",
-          "pageSlug": "Alpha7_Esports",
-          "logoUrl": "/teams/73px-A7_eSports_darkmode-11af375c.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "E7",
-          "name": "Entity7",
-          "pageSlug": "Entity7",
-          "logoUrl": "/teams/33px-Entity7_2025_darkmode-1881d4b0.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Round 1",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/tPC6NS0hvh0?t=2961",
-        "https://youtu.be/tPC6NS0hvh0?t=5311",
-        "https://youtu.be/tPC6NS0hvh0?t=7401"
       ]
     }
   ]
