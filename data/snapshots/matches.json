@@ -1,64 +1,6 @@
 {
-  "harvestedAt": 1789628199,
+  "harvestedAt": 1789648117,
   "data": [
-    {
-      "id": "1789635600-mlbb-china-masters-season-3-regular-season-tk-kbg",
-      "startsAt": 1789635600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TK",
-          "name": "The Keeper Gaming",
-          "pageSlug": "",
-          "logoUrl": "/teams/73px-The_Keeper_Gaming_allmode-5353a51d.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "KBG",
-          "name": "KeepBest Gaming",
-          "pageSlug": "KeepBest_Gaming",
-          "logoUrl": "/teams/95px-KeepBest_Gaming_allmode-758251c6.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CN Masters Season 3 - RS: Week 2",
-      "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789641000-mlbb-china-masters-season-3-regular-season-qtg-ae",
-      "startsAt": 1789641000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "QTG",
-          "name": "QTG",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "AE",
-          "name": "Alter Ego CN",
-          "pageSlug": "Alter_Ego_CN",
-          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CN Masters Season 3 - RS: Week 2",
-      "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1789646400-mlbb-china-masters-season-3-regular-season-dfyg-osg",
       "startsAt": 1789646400,
@@ -85,7 +27,12 @@
       "tournamentName": "CN Masters Season 3 - RS: Week 2",
       "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EA_Esports",
+        "https://liquipedia.net/mobilelegends/Special:Stream/bilibili/MLBB_Global_Esports",
+        "https://liquipedia.net/mobilelegends/Special:Stream/douyu/MLBB_China",
+        "https://liquipedia.net/mobilelegends/Special:Stream/huya/MLBB_China"
+      ],
       "vodUrls": []
     },
     {
@@ -968,7 +915,7 @@
           "code": "QTG",
           "name": "QTG",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/52px-QTG_full_darkmode-a357a8ce.png",
           "score": null,
           "isWinner": false
         },
@@ -1448,6 +1395,122 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 2",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789820100-mpl-malaysia-season-18-regular-season-ac-srg",
+      "startsAt": 1789820100,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AC",
+          "name": "AC Esports",
+          "pageSlug": "AC_Esports",
+          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SRG",
+          "name": "Selangor Red Giants",
+          "pageSlug": "Selangor_Red_Giants",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Malaysia Season 18 - RS: Week 6",
+      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
+      "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789822800-mlbb-continental-championships-season-8-regular-season-lvl-yndx",
+      "startsAt": 1789822800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "LVL",
+          "name": "Level UP",
+          "pageSlug": "",
+          "logoUrl": "/teams/42px-Level_Up_Esports_2021_allmode-7de16a3a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 4",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789641000-mlbb-china-masters-season-3-regular-season-qtg-ae",
+      "startsAt": 1789641000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "QTG",
+          "name": "QTG",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-QTG_full_darkmode-a357a8ce.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "AE",
+          "name": "Alter Ego CN",
+          "pageSlug": "Alter_Ego_CN",
+          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "CN Masters Season 3 - RS: Week 2",
+      "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789635600-mlbb-china-masters-season-3-regular-season-tk-kbg",
+      "startsAt": 1789635600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TK",
+          "name": "The Keeper Gaming",
+          "pageSlug": "",
+          "logoUrl": "/teams/73px-The_Keeper_Gaming_allmode-5353a51d.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "KBG",
+          "name": "KeepBest Gaming",
+          "pageSlug": "KeepBest_Gaming",
+          "logoUrl": "/teams/95px-KeepBest_Gaming_allmode-758251c6.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "CN Masters Season 3 - RS: Week 2",
+      "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2337,7 +2400,7 @@
           "code": "QTG",
           "name": "QTG",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/52px-QTG_full_darkmode-a357a8ce.png",
           "score": 1,
           "isWinner": false
         }
@@ -2893,64 +2956,6 @@
         "https://youtu.be/tPC6NS0hvh0?t=5311",
         "https://youtu.be/tPC6NS0hvh0?t=7401"
       ]
-    },
-    {
-      "id": "1789243200-mpl-mena-season-10-regular-season-xo-gk",
-      "startsAt": 1789243200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "XO",
-          "name": "Axe Okami",
-          "pageSlug": "Axe_Okami",
-          "logoUrl": "/teams/100px-Axe_Okami_darkmode-ac573673.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "GK",
-          "name": "Geekay Esports",
-          "pageSlug": "Geekay_Esports",
-          "logoUrl": "/teams/67px-Geekay_Esports_2024_allmode-55a1a185.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL MENA Season 10 - Week 1",
-      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
-      "regionSlug": "mena",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789236000-mpl-mena-season-10-regular-season-twis-xp",
-      "startsAt": 1789236000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TWIS",
-          "name": "Twisted Minds",
-          "pageSlug": "Twisted_Minds",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "XP",
-          "name": "XProjekt Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL MENA Season 10 - Week 1",
-      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
-      "regionSlug": "mena",
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
