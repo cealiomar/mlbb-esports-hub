@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1789756654,
+  "harvestedAt": 1789766081,
   "data": [
     {
       "id": "1789754400-mpl-mena-season-10-regular-season-flcm-xp",
       "startsAt": 1789754400,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "Team Falcons",
           "pageSlug": "Team_Falcons",
           "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -20,7 +20,7 @@
           "name": "XProjekt Esports",
           "pageSlug": "",
           "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -58,7 +58,11 @@
       "tournamentName": "MCT AMER 2026 - Round 2",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
@@ -87,7 +91,9 @@
       "tournamentName": "MPL MENA Season 10 - Week 2",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
+      ],
       "vodUrls": []
     },
     {
@@ -116,7 +122,11 @@
       "tournamentName": "MCT AMER 2026 - Round 2",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
