@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1789694767,
+  "harvestedAt": 1789713350,
   "data": [
     {
       "id": "1789711200-mpl-cambodia-season-11-regular-season-pro-gxl",
       "startsAt": 1789711200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "PRO Esports",
           "pageSlug": "PRO_Esports",
           "logoUrl": "/teams/78px-PRO_Esports_v3_allmode-dacc9aa3.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -20,14 +20,17 @@
           "name": "Galaxy Legends",
           "pageSlug": "Galaxy_Legends",
           "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
       "tournamentName": "MPL Cambodia Season 11 - RS: Week 1",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
       "regionSlug": "cambodia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ],
       "vodUrls": []
     },
     {
@@ -56,7 +59,10 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 6",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -85,7 +91,41 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 4",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MSL_Myanmar",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MLBB_Esports_Myanmar"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1789718400-esn-national-championship-league-season-1-playoffs-mglz-mio",
+      "startsAt": 1789718400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "MGLZ",
+          "name": "The MongolZ",
+          "pageSlug": "The_MongolZ",
+          "logoUrl": "/teams/39px-The_MongolZ_2024_03_allmode-644d7f27.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "MIO",
+          "name": "Team Mio",
+          "pageSlug": "",
+          "logoUrl": "/teams/40px-Team_Mio_allmode-6dab2a41.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "ESN National Championship League Season 1 - Playoffs",
+      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/eSports_Network"
+      ],
       "vodUrls": []
     },
     {
@@ -230,6 +270,35 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 4",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789725600-esn-national-championship-league-season-1-playoffs-ecln-ak",
+      "startsAt": 1789725600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ECLN",
+          "name": "Echelon",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "AK",
+          "name": "The Akatsuki",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "ESN National Championship League Season 1 - Playoffs",
+      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -404,6 +473,35 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 4",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789732800-esn-national-championship-league-season-1-playoffs-tbd-tbd",
+      "startsAt": 1789732800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "ESN National Championship League Season 1 - Playoffs",
+      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1361,93 +1459,6 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 2",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789820100-mpl-malaysia-season-18-regular-season-ac-srg",
-      "startsAt": 1789820100,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AC",
-          "name": "AC Esports",
-          "pageSlug": "AC_Esports",
-          "logoUrl": "/teams/50px-AC_Esports_allmode-82d52895.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "SRG",
-          "name": "Selangor Red Giants",
-          "pageSlug": "Selangor_Red_Giants",
-          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 6",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789822800-mlbb-continental-championships-season-8-regular-season-lvl-yndx",
-      "startsAt": 1789822800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "LVL",
-          "name": "Level UP",
-          "pageSlug": "",
-          "logoUrl": "/teams/42px-Level_Up_Esports_2021_allmode-7de16a3a.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 4",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789822800-mpl-indonesia-season-18-regular-season-btr-tlid",
-      "startsAt": 1789822800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BTR",
-          "name": "Bigetron by Vitality",
-          "pageSlug": "Bigetron_by_Vitality",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TLID",
-          "name": "Team Liquid ID",
-          "pageSlug": "Team_Liquid_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 6",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": []
     },
