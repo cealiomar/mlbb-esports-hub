@@ -1,68 +1,10 @@
 {
-  "harvestedAt": 1789871517,
+  "harvestedAt": 1789890882,
   "data": [
-    {
-      "id": "1789882200-mct-2026-east-asia-split-2-south-korea-playoffs-zrg-whe",
-      "startsAt": 1789882200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ZRG",
-          "name": "Zero Gravity",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Zero_Gravity__28Korean_team_29_darkmode-d5cdfbdd.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "WHE",
-          "name": "WH Esports",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT EA Ulaanbaatar '26 KR Qual - Playoffs",
-      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/South_Korea/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789884000-mpl-cambodia-season-11-regular-season-sys-flkh",
-      "startsAt": 1789884000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "SYS",
-          "name": "See You Soon",
-          "pageSlug": "See_You_Soon",
-          "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "FLKH",
-          "name": "Team Flash KH",
-          "pageSlug": "Team_Flash_KH",
-          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - RS: Week 1",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1789885800-mpl-malaysia-season-18-regular-season-btrm-ig",
       "startsAt": 1789885800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -70,7 +12,7 @@
           "name": "Bigetron MY by VIT",
           "pageSlug": "Bigetron_MY_by_VIT",
           "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -78,20 +20,54 @@
           "name": "Invictus Gaming",
           "pageSlug": "Invictus_Gaming",
           "logoUrl": "/teams/50px-Invictus_Gaming_darkmode-12a6d5dd.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 6",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1789887600-mct-2026-east-asia-split-2-south-korea-playoffs-prsx-zrg",
+      "startsAt": 1789887600,
+      "status": "live",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "PRSX",
+          "name": "Prestige Nexus",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "ZRG",
+          "name": "Zero Gravity",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Zero_Gravity__28Korean_team_29_darkmode-d5cdfbdd.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT EA Ulaanbaatar '26 KR Qual - Playoffs",
+      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/South_Korea/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EA_Esports"
+      ],
       "vodUrls": []
     },
     {
       "id": "1789887600-mpl-indonesia-season-18-regular-season-ae-dewa",
       "startsAt": 1789887600,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -99,7 +75,7 @@
           "name": "Alter Ego",
           "pageSlug": "Alter_Ego",
           "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -107,14 +83,49 @@
           "name": "Dewa United Esports",
           "pageSlug": "Dewa_United_Esports",
           "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 6",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1789888500-mpl-cambodia-season-11-regular-season-sys-flkh",
+      "startsAt": 1789888500,
+      "status": "live",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "SYS",
+          "name": "See You Soon",
+          "pageSlug": "See_You_Soon",
+          "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "FLKH",
+          "name": "Team Flash KH",
+          "pageSlug": "Team_Flash_KH",
+          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - RS: Week 1",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
+      "regionSlug": "cambodia",
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ],
       "vodUrls": []
     },
     {
@@ -143,7 +154,10 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 4",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MSL_Myanmar",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MLBB_Esports_Myanmar"
+      ],
       "vodUrls": []
     },
     {
@@ -172,7 +186,9 @@
       "tournamentName": "ESN National Championship League Season 1 - Playoffs",
       "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/eSports_Network"
+      ],
       "vodUrls": []
     },
     {
@@ -201,65 +217,10 @@
       "tournamentName": "VMC Fall 2026 - Week 2",
       "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
       "regionSlug": "vietnam",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789893000-mct-2026-east-asia-split-2-south-korea-playoffs-prsx-tbd",
-      "startsAt": 1789893000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "PRSX",
-          "name": "Prestige Nexus",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/VMC_Esports_Official",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MLBB_Esports_VN"
       ],
-      "tournamentName": "MCT EA Ulaanbaatar '26 KR Qual - Playoffs",
-      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/South_Korea/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789893000-mpl-cambodia-season-11-regular-season-pro-tnr",
-      "startsAt": 1789893000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "PRO",
-          "name": "PRO Esports",
-          "pageSlug": "PRO_Esports",
-          "logoUrl": "/teams/78px-PRO_Esports_v3_allmode-dacc9aa3.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TNR",
-          "name": "TNR Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-TNR_Esports_allmode-012f8490.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - RS: Week 1",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
       "vodUrls": []
     },
     {
@@ -288,7 +249,75 @@
       "tournamentName": "CN Masters Season 3 - RS: Week 2",
       "tournamentPageSlug": "MLBB_China_Masters/Season_3/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EA_Esports",
+        "https://liquipedia.net/mobilelegends/Special:Stream/bilibili/MLBB_Global_Esports",
+        "https://liquipedia.net/mobilelegends/Special:Stream/douyu/MLBB_China",
+        "https://liquipedia.net/mobilelegends/Special:Stream/huya/MLBB_China"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1789894800-mct-2026-east-asia-split-2-south-korea-playoffs-vern-tbd",
+      "startsAt": 1789894800,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "VERN",
+          "name": "Vertice Nuovo",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT EA Ulaanbaatar '26 KR Qual - Playoffs",
+      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/South_Korea/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EA_Esports"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1789894800-mpl-cambodia-season-11-regular-season-pro-tnr",
+      "startsAt": 1789894800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "PRO",
+          "name": "PRO Esports",
+          "pageSlug": "PRO_Esports",
+          "logoUrl": "/teams/78px-PRO_Esports_v3_allmode-dacc9aa3.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TNR",
+          "name": "TNR Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-TNR_Esports_allmode-012f8490.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - RS: Week 1",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
+      "regionSlug": "cambodia",
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ],
       "vodUrls": []
     },
     {
@@ -317,7 +346,10 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 6",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
       "vodUrls": []
     },
     {
@@ -346,7 +378,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 5",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
@@ -375,7 +410,10 @@
       "tournamentName": "MSL Myanmar Season 4 - RS: Week 4",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
       "regionSlug": "myanmar",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MSL_Myanmar",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MLBB_Esports_Myanmar"
+      ],
       "vodUrls": []
     },
     {
@@ -553,8 +591,8 @@
       "vodUrls": []
     },
     {
-      "id": "1789902000-mpl-cambodia-season-11-regular-season-vgr-rvz",
-      "startsAt": 1789902000,
+      "id": "1789903800-mpl-cambodia-season-11-regular-season-vgr-rvz",
+      "startsAt": 1789903800,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
@@ -578,35 +616,6 @@
       "tournamentName": "MPL Cambodia Season 11 - RS: Week 1",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
       "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789903800-mct-2026-east-asia-split-2-south-korea-playoffs-vern-tbd",
-      "startsAt": 1789903800,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "VERN",
-          "name": "Vertice Nuovo",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT EA Ulaanbaatar '26 KR Qual - Playoffs",
-      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/South_Korea/Playoffs",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1447,6 +1456,64 @@
       ],
       "tournamentName": "MAL S6 RS - Week 5",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790150400-mlbb-academy-league-season-6-regular-season-phase-2-king-hgoz",
+      "startsAt": 1790150400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KING",
+          "name": "DX Kingz",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "HGOZ",
+          "name": "HG x Originz",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-HG_x_ORIGINZ_darkmode-8a453529.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 5",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1789880400-mct-2026-east-asia-split-2-south-korea-playoffs-zrg-whe",
+      "startsAt": 1789880400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ZRG",
+          "name": "Zero Gravity",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Zero_Gravity__28Korean_team_29_darkmode-d5cdfbdd.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "WHE",
+          "name": "WH Esports",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT EA Ulaanbaatar '26 KR Qual - Playoffs",
+      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/South_Korea/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -2885,35 +2952,6 @@
       "tournamentName": "MPL MENA Season 10 - Week 2",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789740000-mlbb-super-league-thailand-season-2-regular-season-bac-slx",
-      "startsAt": 1789740000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BAC",
-          "name": "Bacon Time",
-          "pageSlug": "Bacon_Time",
-          "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "SLX",
-          "name": "SOLYX",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Solyx_allmode-ff12a1c2.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 2",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
       "streamUrls": [],
       "vodUrls": []
     }
