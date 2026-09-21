@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1789947823,
+  "harvestedAt": 1789957771,
   "data": [
     {
       "id": "1789927200-mpl-mena-season-10-regular-season-flcm-gs",
@@ -124,7 +124,11 @@
       "tournamentName": "MCT AMER 2026 - Round 2",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
@@ -1749,7 +1753,11 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=9UqTkx7w4WY",
+        "https://www.youtube.com/watch?v=nexF0lxXJVk",
+        "https://www.youtube.com/watch?v=UCCZ-F2bidU"
+      ]
     },
     {
       "id": "1789905600-mlbb-china-masters-season-3-regular-season-ae-gzg",
