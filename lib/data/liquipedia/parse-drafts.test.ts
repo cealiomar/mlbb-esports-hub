@@ -77,9 +77,50 @@ describe('parseDraftSeries', () => {
 
     expect(philippines[0].games[0].mapName).toBe('Flying Cloud')
   })
+
+  it('treats Liquipedia placeholder heroes as unknown instead of inventing a hero', () => {
+    const placeholder = parseDraftSeries(
+      `{{Match
+        |opponent1={{TeamOpponent|Aurora PH}}
+        |opponent2={{TeamOpponent|ONIC Philippines}}
+        |map1={{Map
+          |winner=1
+          |t1h1=alice |t1h2=default |t1h3=Default |t2h1=barats |t2h2=none
+          |t1b1=selena |t2b1=default
+        }}
+      }}`,
+      { ...context, regionSlug: 'philippines' },
+    )
+    const game = placeholder[0].games[0]
+    const names = [
+      ...game.team1Picks,
+      ...game.team2Picks,
+      ...game.team1Bans,
+      ...game.team2Bans,
+    ].map((hero) => hero.name)
+
+    expect(names).toEqual(['Alice', 'Barats', 'Selena'])
+  })
 })
 
 describe('parseDraftSummary', () => {
+  it('skips placeholder and missing-page hero rows', () => {
+    const row = (title: string) => `
+        <tr class="character-stats-row">
+          <td>1</td><td><a href="/mobilelegends/x" title="${title}">x</a></td>
+          <td>1</td><td>1</td><td>0</td><td>100%</td><td>5%</td>
+          <td>1</td><td>1</td><td>0</td><td>100%</td>
+          <td>0</td><td>0</td><td>0</td><td>0%</td>
+          <td>0</td><td>0%</td><td>1</td><td>5%</td><td>Show</td>
+        </tr>`
+    const summary = parseDraftSummary(
+      `<table>${row('Default')}${row('Default (page does not exist)')}${row('Hirara')}</table>`,
+      context,
+    )
+
+    expect(summary.heroStats.map((stat) => stat.hero.name)).toEqual(['Hirara'])
+  })
+
   it('reads Liquipedia hero pick, ban and presence columns', () => {
     const html = `
       <table>

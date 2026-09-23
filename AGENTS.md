@@ -100,8 +100,14 @@ relabel last season as current.
 
 ### Page titles drift, and the listing is alphabetical
 
-Season pages move (`MPL/MENA/Season_9` today, `Season_10` when it exists). To
-check what exists:
+Season pages move. On 2026-09-23 MENA was still configured as `Season_9` and
+Cambodia as `Season_10` while `Season_10` / `Season_11` had been running for
+days, so both regions showed no standings. The harvester now prints a
+`::warning title=Newer season available::` in the Actions log when a
+configured season has ended and a higher-numbered page exists
+(`lib/data/liquipedia/season-drift.ts`). It only warns — update
+`content/regions.json` by hand once the new season has started. To check
+what exists:
 
 ```bash
 curl -sS --compressed -A 'MLBBHub/1.0 (contact: you@example.com)' \
@@ -114,6 +120,24 @@ curl -sS --compressed -A 'MLBBHub/1.0 (contact: you@example.com)' \
 alphabetically**, so `Season 10` lands between `Season 1` and `Season 2` and
 the last entry is *not* the newest season. This has caused a wrong reading
 twice.
+
+### Liquipedia placeholder heroes
+
+Slots with no recorded hero come back as `Default` (in stats tables as
+`Default (page does not exist)`). They are unknown, not a hero:
+`isPlaceholderHero` in `parse-drafts.ts` drops them, which leaves the game
+incomplete and keeps it out of coach evidence. Before this, one `Default`
+made the pre-publish validation fail and **every full harvest from
+2026-09-11 to 2026-09-23 committed nothing** — only fixtures (the fast
+runs) stayed current. Validation tests that run in the harvest must assert
+rules, never this week's meta (a pinned "Freya > 90%" did the same).
+
+### Freshness is per dataset
+
+Fixtures refresh every ~20 minutes; standings, rosters and drafts only on the
+full hourly run. `getFreshness('standings' | 'drafts' | …)` returns each
+snapshot's own time, and each section shows its own `FreshnessBadge`. Never
+label a table with the fixtures' timestamp.
 
 ### Roster wikitext structure
 

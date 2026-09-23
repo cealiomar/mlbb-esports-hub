@@ -4,6 +4,7 @@ import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { getRegions, getRegionBySlug } from '@/lib/content/regions'
 import { createLocalDataSource } from '@/lib/data/local'
 import { isOk } from '@/lib/data/source'
+import { currentSeasonTeams } from '@/lib/data/current-teams'
 import {
   byRegion,
   liveMatches,
@@ -12,6 +13,7 @@ import {
 } from '@/lib/matches/select'
 import { MatchList } from '@/components/matches/match-list'
 import { SectionHeader } from '@/components/ui/section-header'
+import { FreshnessBadge } from '@/components/ui/freshness-badge'
 import { Tabs } from '@/components/ui/tabs'
 import { Reveal } from '@/components/ui/reveal'
 import { StandingsTable } from '@/components/standings/standings-table'
@@ -61,7 +63,9 @@ export default async function RegionPage({
       match.tournamentPageSlug.startsWith(`${region.liquipediaLeaguePage}/`),
   )
   const currentTeams =
-    standings.length > 0 || hasCurrentSeasonMatches ? teams : []
+    standings.length > 0 || hasCurrentSeasonMatches
+      ? currentSeasonTeams(teams, region.liquipediaLeaguePage, all, standings)
+      : []
 
   const localeKey = locale === 'ar' ? 'ar' : 'en'
   const live = liveMatches(all, now)
@@ -105,6 +109,7 @@ export default async function RegionPage({
             <SectionHeader
               title={ts('title')}
               description={ts('description')}
+              meta={<FreshnessBadge harvestedAt={await source.getFreshness('standings')} />}
             />
           </Reveal>
 

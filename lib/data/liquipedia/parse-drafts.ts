@@ -123,6 +123,22 @@ function titleCase(value: string): string {
     .join('')
 }
 
+/**
+ * Liquipedia fills slots it has no record for with `Default` (a red link, so
+ * the stats table titles it "Default (page does not exist)"). Those are
+ * unknown heroes, not a hero called Default: dropping them leaves the game
+ * incomplete, which keeps it out of coach evidence instead of inventing data.
+ */
+const PLACEHOLDER_HEROES = new Set(['default', 'none', 'unknown', 'tbd', '-', '?'])
+
+export function isPlaceholderHero(value: string): boolean {
+  const id = value
+    .replace(/\s*\(page does not exist\)\s*$/i, '')
+    .trim()
+    .toLowerCase()
+  return PLACEHOLDER_HEROES.has(id)
+}
+
 function hero(value: string | null): DraftHero | null {
   if (!value) return null
   const id = value
@@ -131,7 +147,7 @@ function hero(value: string | null): DraftHero | null {
     .replace(/\s+/g, ' ')
     .trim()
     .toLowerCase()
-  if (!id) return null
+  if (!id || isPlaceholderHero(id)) return null
 
   return {
     id,
@@ -342,7 +358,7 @@ function readHeroStat(row: HTMLElement): HeroDraftStat | null {
   if (cells.length < 19) return null
   const heroLink = cells[1].querySelector('a[title]')
   const name = heroLink?.getAttribute('title')?.trim() ?? ''
-  if (!name) return null
+  if (!name || isPlaceholderHero(name)) return null
 
   return {
     hero: {

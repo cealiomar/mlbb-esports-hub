@@ -10,7 +10,7 @@ export const MAX_PARSE_ATTEMPTS = 3
 const RETRYABLE_STATUS_CODES = new Set([429, 500, 502, 503, 504])
 
 export const USER_AGENT =
-  'MLBBHub/1.0 (https://github.com/mlbb-hub/mlbb-hub; cealiomar.work@gmail.com)'
+  'MLBBHub/1.0 (https://github.com/cealiomar/mlbb-esports-hub; cealiomar.work@gmail.com)'
 
 export interface ClientDeps {
   fetch: typeof fetch

@@ -25,7 +25,8 @@ import {
 } from '@/lib/data/liquipedia/mirror'
 import { getRegions } from '@/lib/content/regions'
 import { isOk } from '@/lib/data/source'
-import { USER_AGENT } from '@/lib/data/liquipedia/client'
+import { API_BASE, USER_AGENT } from '@/lib/data/liquipedia/client'
+import { newerSeasonPage } from '@/lib/data/liquipedia/season-drift'
 import type { DraftLeague, Match } from '@/lib/data/types'
 import {
   parseDraftSeries,
@@ -75,6 +76,44 @@ async function mirrorRemoteAssets(
   }
 
   console.log(`${label}: ${fetched} fetched, ${cached} already local`)
+}
+
+/**
+ * When a configured season has ended, check (with the cheap `list=allpages`,
+ * not `parse`) whether Liquipedia already has a newer season page, and say so
+ * as a GitHub Actions warning. The config stays human-controlled: a new page
+ * can exist before its league starts, and the season window check decides.
+ */
+async function warnIfNewerSeason(configuredPage: string): Promise<void> {
+  const prefix = configuredPage.replace(/Season_\d+$/, '').replaceAll('_', ' ')
+  if (prefix === configuredPage.replaceAll('_', ' ')) return
+  try {
+    await delay(2_000)
+    const url = new URL(API_BASE)
+    url.search = new URLSearchParams({
+      action: 'query',
+      list: 'allpages',
+      apprefix: prefix,
+      aplimit: '500',
+      format: 'json',
+    }).toString()
+    const response = await fetch(url, {
+      headers: { 'User-Agent': USER_AGENT, 'Accept-Encoding': 'gzip' },
+    })
+    if (!response.ok) return
+    const body = (await response.json()) as {
+      query?: { allpages?: { title: string }[] }
+    }
+    const titles = body.query?.allpages?.map((page) => page.title) ?? []
+    const newer = newerSeasonPage(configuredPage, titles)
+    if (newer) {
+      console.warn(
+        `::warning title=Newer season available::${configuredPage} has ended and Liquipedia has ${newer}. Update liquipediaLeaguePage in content/regions.json once it starts.`,
+      )
+    }
+  } catch {
+    // Advisory only: a failed check must never fail the harvest.
+  }
 }
 
 function localizeLogo(url: string | null): string | null {
@@ -227,6 +266,10 @@ async function main(): Promise<void> {
     readSnapshot<StandingTable[]>('standings')?.data ?? []
   const refreshedRegions = new Set<string>()
   const refreshedTables: StandingTable[] = []
+  // Regions whose configured season has provably ended this run. The roster
+  // and statistics batch below must skip them too, or it re-adds last
+  // season's teams and hero stats right after the standings guard removed them.
+  const endedSeasonRegions = new Set<string>()
 
   // Standings change with every completed series, so refresh every active
   // regional league each hour. The client spaces every parse call by 30s.
@@ -255,10 +298,12 @@ async function main(): Promise<void> {
     )
     const isCurrentSeason = windowStatus ?? hasCurrentMatch
     if (!isCurrentSeason) {
+      endedSeasonRegions.add(region.slug)
       draftByRegion.delete(region.slug)
       console.warn(
         `standings suppressed for inactive season ${region.liquipediaLeaguePage}`,
       )
+      await warnIfNewerSeason(region.liquipediaLeaguePage)
       continue
     }
 
@@ -334,12 +379,18 @@ async function main(): Promise<void> {
     batchSize,
     draftPriority,
   )) {
+    if (endedSeasonRegions.has(entry.regionSlug)) {
+      console.warn(`roster and draft refresh skipped for ended season ${entry.page}`)
+      continue
+    }
     const league = await client.parsePage(entry.page, 'wikitext')
     if (!isOk(league)) {
       // A missing league page is not fatal — seasons start and end.
       console.warn(`league harvest skipped for ${entry.page}: ${league.error}`)
     } else {
-      const teams = parseLeagueTeams(league.value, entry.regionSlug)
+      const teams = parseLeagueTeams(league.value, entry.regionSlug).map(
+        (team) => ({ ...team, leaguePageSlug: entry.page }),
+      )
       if (teams.length === 0) {
         console.warn(`no teams parsed from ${entry.page}; snapshot unchanged`)
       } else {

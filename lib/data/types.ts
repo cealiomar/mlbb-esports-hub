@@ -46,6 +46,8 @@ export interface Team {
   logoUrl: string | null
   regionSlug: string | null
   roster: Player[]
+  /** Season page the roster was harvested from; absent in older snapshots. */
+  leaguePageSlug?: string
 }
 
 export type StandingZone = 'advance' | 'playoff' | 'eliminated' | 'neutral'

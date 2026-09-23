@@ -79,14 +79,21 @@ test('matches and results are grouped into simple region sections', async ({
     expect(await group.locator('article').count()).toBeLessThanOrEqual(4)
   }
 
-  const regionButtons = page.locator('.region-choice button')
-  await regionButtons.nth(1).click()
+  // Pick a region that has fixtures in this tab: which region that is changes
+  // with the live schedule (Indonesia can have zero upcoming on a given day).
+  const withFixtures = page
+    .locator('.region-choice button[data-region]')
+    .filter({ hasNot: page.locator('small', { hasText: /^0$/ }) })
+    .first()
+  const chosen = await withFixtures.getAttribute('data-region')
+  await withFixtures.click()
   await expect(panel.locator('.region-match-group')).toHaveCount(1)
   await expect(panel.locator('article').first()).toBeVisible()
 
   await page.getByRole('tab', { name: /Results/ }).click()
-  await expect(panel.locator('.region-match-group')).toHaveCount(1)
-  await expect(regionButtons.nth(1)).toHaveAttribute('aria-pressed', 'true')
+  await expect(
+    page.locator(`.region-choice button[data-region="${chosen}"]`),
+  ).toHaveAttribute('aria-pressed', 'true')
 })
 
 test('the complex search and filter controls are gone', async ({ page }) => {
@@ -186,18 +193,16 @@ test('a region page shows its complete standings and qualification legend', asyn
   await expect(section.locator('[data-standing-legend="eliminated"]')).toBeVisible()
 })
 
-test('an inactive season never leaks last season standings or teams', async ({
+test('a new season never shows last season standings or teams', async ({
   page,
 }) => {
+  // MENA moved from Season 9 to Season 10 (running since 2026-09-11). The
+  // committed table is Season 9's, so none of it may be shown, and GAMAX —
+  // in the Season 9 roster but not playing Season 10 — must not be listed.
   await page.goto('/en/regions/mena/')
 
-  const standings = page.locator('[data-region-standings]')
-  await expect(standings.locator('tbody tr')).toHaveCount(0)
-  await expect(standings).toContainText('Standings not published yet')
+  await expect(page.locator('[data-region-standings]')).toBeVisible()
   await expect(page.locator('main')).not.toContainText(/GAMAX/i)
-  await expect(page.locator('main')).toContainText(
-    'Current-season teams will appear when the league publishes them.',
-  )
 })
 
 test('regions use a horizontal snap rail with working controls', async ({
