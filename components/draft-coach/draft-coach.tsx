@@ -190,6 +190,7 @@ function RecommendationCard({
   scoreLabel,
   kind,
   evidenceLabel,
+  side,
 }: {
   recommendation: DraftRecommendation
   rank: number
@@ -200,11 +201,18 @@ function RecommendationCard({
   scoreLabel: string
   kind: DraftActionKind
   evidenceLabel: string
+  side: DraftActionSide
 }) {
   const t = useTranslations('draftCoach')
   const interval = observedRateInterval(recommendation.wins, recommendation.resultGames)
+  const forecast = side === 'enemy'
+  const lane = laneLabel(recommendation.suggestedLane ?? recommendation.primaryLane)
   return (
-    <article className="coach-recommendation-shell">
+    <article className="coach-recommendation-shell" data-side={side}>
+    {/* An opponent turn shows what *they* are likely to do. Without an
+        explicit marker it read as a second Gold/Mid suggestion for our own
+        already-filled role, so every forecast card says whose move it is. */}
+    {forecast && <span className="coach-forecast-tag">{t('forecastTag')}</span>}
     <button
       type="button"
       className="coach-recommendation"
@@ -220,11 +228,7 @@ function RecommendationCard({
       <span className="coach-recommendation__body">
         <span className="coach-recommendation__name">
           <strong>{recommendation.hero.name}</strong>
-          <small>
-            {laneLabel(
-              recommendation.suggestedLane ?? recommendation.primaryLane,
-            )}
-          </small>
+          <small>{forecast ? t('enemyLane', { role: lane }) : lane}</small>
         </span>
         <span className="coach-recommendation__reasons">
           {recommendation.reasons.slice(0, 3).map((reason) => (
@@ -236,8 +240,8 @@ function RecommendationCard({
           {kind === 'pick' && recommendation.pickRate === 0 && (
             <small>
               {recommendation.patchMetaTier
-                ? `Patch ${recommendation.patchMetaTier}`
-                : 'New pick'}
+                ? t('patchTier', { tier: recommendation.patchMetaTier })
+                : t('newPick')}
             </small>
           )}
           <small>{t('sampleGames', { count: recommendation.sampleSize })}</small>
@@ -900,7 +904,7 @@ export function DraftCoach({
                       reasonLabel={reasonLabel}
                       confidenceLabel={confidenceLabel}
                       laneLabel={laneLabel}
-                      scoreLabel={t('fitScore')}
+                      scoreLabel={t(currentAction.side === 'enemy' ? 'enemyFitScore' : 'fitScore')}
                       kind={currentAction.kind}
                       evidenceLabel={
                         currentAction.kind === 'ban'
@@ -913,6 +917,7 @@ export function DraftCoach({
                               rate: Math.round(recommendation.pickRate * 100),
                             })
                       }
+                      side={currentAction.side}
                     />
                   ))}
                 </div>

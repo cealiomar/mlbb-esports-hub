@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useFormatter, useLocale, useTranslations } from 'next-intl'
 import type { Match, MatchOpponent } from '@/lib/data/types'
@@ -9,6 +8,7 @@ import { replayUrl } from '@/lib/matches/replay'
 import { TiltCard } from '@/components/ui/tilt-card'
 import { TeamCrest } from './team-crest'
 import { teamPath } from '@/lib/data/team-slug'
+import { useMinuteClock, useVisitorTimeZone } from '@/lib/time/use-clock'
 
 function Side({
   side,
@@ -86,16 +86,12 @@ export function MatchCard({
   // The initial zone is stable during SSR. After hydration we prefer the
   // visitor's device zone, so every fixture uses the time they actually see.
   const fallbackTimeZone = locale === 'ar' ? 'Asia/Riyadh' : 'UTC'
-  const [timeZone, setTimeZone] = useState(fallbackTimeZone)
-  const [awaitingStatus, setAwaitingStatus] = useState(false)
-  useEffect(() => {
-    const detected = Intl.DateTimeFormat().resolvedOptions().timeZone
-    if (detected) setTimeZone(detected)
-    const updateStatus = () => setAwaitingStatus(match.status === 'upcoming' && match.startsAt * 1000 <= Date.now())
-    updateStatus()
-    const timer = setInterval(updateStatus, 60_000)
-    return () => clearInterval(timer)
-  }, [match.startsAt, match.status])
+  const timeZone = useVisitorTimeZone(fallbackTimeZone)
+  const now = useMinuteClock()
+  // A fixture past its start time that the last harvest still called
+  // upcoming: say the status is pending rather than implying it has not begun.
+  const awaitingStatus =
+    now !== null && match.status === 'upcoming' && match.startsAt <= now
   const timeZoneLabel = new Intl.DateTimeFormat(locale === 'ar' ? 'ar-SA' : 'en-GB', {
     timeZone,
     timeZoneName: 'short',

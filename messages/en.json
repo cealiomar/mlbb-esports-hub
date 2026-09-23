@@ -361,7 +361,12 @@
     },
     "methodNote": "Decision fit is a heuristic ranking, not a calibrated win probability. Picks, results and combinations use the selected competition and date window. Unknown dates/results are excluded. Ranked tier lists do not affect recommendation scores. Source pick slots describe roles, not historical pick order. Game duration is only a pace proxy. The source does not identify each game's patch; data refresh is scheduled. This beta still needs prospective coach validation before claims of competitive advantage.",
     "noData": "Draft data is unavailable",
-    "noDataHint": "The coach will activate automatically when the tournament snapshot is published."
+    "noDataHint": "The coach will activate automatically when the tournament snapshot is published.",
+    "forecastTag": "Opponent forecast — not your pick",
+    "enemyLane": "Their {role}",
+    "enemyFitScore": "opponent fit",
+    "newPick": "No pro picks yet",
+    "patchTier": "Patch tier {tier} (ranked, not pro)"
   },
   "data": {
     "attribution": "Match data from Liquipedia, licensed CC-BY-SA 3.0",

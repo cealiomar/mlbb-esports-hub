@@ -7,6 +7,8 @@ import type {
   Team,
 } from './types'
 
+export type SnapshotDataset = 'matches' | 'standings' | 'drafts' | 'teams'
+
 export function ok<T>(value: T): Result<T> {
   return { kind: 'ok', value }
 }
@@ -29,6 +31,11 @@ export interface DataSource {
   getDraftLeagues(regionSlug?: string): Promise<Result<DraftLeague[]>>
   getTeamsByRegion(regionSlug: string): Promise<Result<Team[]>>
   getTeam(pageSlug: string): Promise<Result<Team>>
-  /** Unix seconds of the newest data this source can serve, or null if unknown. */
-  getFreshness(): Promise<number | null>
+  /**
+   * Unix seconds when one dataset was last harvested, or null if unknown.
+   * Datasets refresh on different schedules — fixtures every 20 minutes,
+   * standings/rosters/drafts only on the full hourly run — so a page must
+   * label each table with its own age, never borrow the fixtures' time.
+   */
+  getFreshness(dataset?: SnapshotDataset): Promise<number | null>
 }

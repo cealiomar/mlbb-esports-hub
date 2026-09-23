@@ -1,7 +1,7 @@
 import fallbackMatches from '@/content/fallback/matches.json'
 import { readSnapshot, DEFAULT_SNAPSHOT_DIR } from './snapshots'
 import { err, ok } from './source'
-import type { DataSource } from './source'
+import type { DataSource, SnapshotDataset } from './source'
 import type {
   DraftLeague,
   Match,
@@ -108,8 +108,11 @@ export function createLocalDataSource(options: LocalOptions = {}): DataSource {
       return ok(found)
     },
 
-    async getFreshness(): Promise<number | null> {
-      return matches().harvestedAt || null
+    async getFreshness(
+      dataset: SnapshotDataset = 'matches',
+    ): Promise<number | null> {
+      if (dataset === 'matches') return matches().harvestedAt || null
+      return readSnapshot<unknown>(dataset, dir)?.harvestedAt || null
     },
   }
 }

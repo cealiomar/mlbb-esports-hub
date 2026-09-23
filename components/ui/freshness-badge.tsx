@@ -1,33 +1,7 @@
 'use client'
 
-import { useSyncExternalStore } from 'react'
 import { useFormatter, useTranslations } from 'next-intl'
-
-// One clock for all badges. No data requests, no frozen build-time "2 minutes
-// ago", and a deterministic server snapshot for hydration.
-let currentMinute = Math.floor(Date.now() / 60_000) * 60
-const listeners = new Set<() => void>()
-let timer: ReturnType<typeof setInterval> | undefined
-function tick() {
-  currentMinute = Math.floor(Date.now() / 60_000) * 60
-  listeners.forEach((listener) => listener())
-}
-function subscribe(listener: () => void) {
-  listeners.add(listener)
-  if (!timer) {
-    tick()
-    timer = setInterval(tick, 60_000)
-    window.addEventListener('focus', tick)
-  }
-  return () => {
-    listeners.delete(listener)
-    if (listeners.size === 0) {
-      clearInterval(timer)
-      timer = undefined
-      window.removeEventListener('focus', tick)
-    }
-  }
-}
+import { useMinuteClock } from '@/lib/time/use-clock'
 
 /**
  * The harvester runs hourly and the site still has to build and deploy after
@@ -40,7 +14,7 @@ const STALE_AFTER_SECONDS = 3 * 3600
 export function FreshnessBadge({ harvestedAt }: { harvestedAt: number | null }) {
   const t = useTranslations('data')
   const format = useFormatter()
-  const now = useSyncExternalStore(subscribe, () => currentMinute, () => null)
+  const now = useMinuteClock()
   if (harvestedAt === null) return null
 
   const ageSeconds = now === null ? 0 : Math.max(0, now - harvestedAt)

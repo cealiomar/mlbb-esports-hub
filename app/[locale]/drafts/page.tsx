@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { DraftExplorer } from '@/components/drafts/draft-explorer'
 import { SectionHeader } from '@/components/ui/section-header'
+import { FreshnessBadge } from '@/components/ui/freshness-badge'
 import { createLocalDataSource } from '@/lib/data/local'
 import { isOk } from '@/lib/data/source'
 import { readSnapshot } from '@/lib/data/snapshots'
@@ -60,6 +61,7 @@ export default async function DraftsPage({
         eyebrow={t('eyebrow')}
         title={t('title')}
         description={t('description')}
+        meta={<FreshnessBadge harvestedAt={await source.getFreshness('drafts')} />}
       />
 
       {leagues.length > 0 ? (

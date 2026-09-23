@@ -321,3 +321,34 @@ test('hero portraits are local and Draft Coach fits a 320px phone', async ({ pag
     ),
   ).toBe(true)
 })
+
+test('opponent-turn cards are marked as a forecast, never as our own pick', async ({ page }) => {
+  await page.goto('/en/draft-coach/')
+  await page.getByRole('button', { name: 'Start draft' }).click()
+
+  // Our turn: plain recommendations, no forecast marking.
+  await expect(page.locator('.coach-recommendation')).toHaveCount(5)
+  await expect(page.locator('.coach-forecast-tag')).toHaveCount(0)
+  await expect(page.locator('.coach-recommendation-shell[data-side="ally"]')).toHaveCount(5)
+
+  await page.locator('.coach-recommendation').first().click()
+  await expect(page.locator('.coach-arena__topbar')).toContainText('BAN · Enemy move')
+
+  // Their turn: every card says it is the opponent's option.
+  const enemyCards = page.locator('.coach-recommendation-shell[data-side="enemy"]')
+  await expect(enemyCards).toHaveCount(5)
+  await expect(page.locator('.coach-forecast-tag')).toHaveCount(5)
+  await expect(page.locator('.coach-forecast-tag').first()).toHaveText(
+    'Opponent forecast — not your pick',
+  )
+})
+
+test('Arabic opponent forecast is labelled in Arabic', async ({ page }) => {
+  await page.goto('/ar/draft-coach/')
+  await page.locator('.coach-start').click()
+  await page.locator('.coach-recommendation').first().click()
+  await expect(page.locator('.coach-forecast-tag').first()).toHaveText(
+    'توقّع لخيار الخصم — ليس اختيارك',
+  )
+  await expect(page.locator('html')).toHaveAttribute('dir', 'rtl')
+})

@@ -5,10 +5,11 @@ import { isOk } from '@/lib/data/source'
 import { getRegionBySlug } from '@/lib/content/regions'
 import { recentResults, upcomingMatches } from '@/lib/matches/select'
 import { MatchList } from '@/components/matches/match-list'
+import { BUILD_UNIX_TIME } from '@/lib/time/build'
 import { routing } from '@/i18n/routing'
 import { SectionHeader } from '@/components/ui/section-header'
 import { readSnapshot } from '@/lib/data/snapshots'
-import type { Match, Team } from '@/lib/data/types'
+import type { Team } from '@/lib/data/types'
 import { TeamDraftPanel } from '@/components/drafts/team-draft-panel'
 import { draftTeams, teamDraftProfile } from '@/lib/drafts/analytics'
 import {
@@ -90,7 +91,7 @@ export default async function TeamPage({
         matches.filter((m) =>
           m.opponents.some((o) => o.pageSlug === team.pageSlug),
         ),
-        Math.floor(Date.now() / 1000),
+        BUILD_UNIX_TIME,
       ).slice(0, 3)
     : []
 

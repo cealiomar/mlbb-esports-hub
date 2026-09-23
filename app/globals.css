@@ -3794,3 +3794,23 @@ html[data-intro-seen] .site-intro {
     font-size: max(0.83em, 0.6875rem);
   }
 }
+
+/* Opponent forecast cards: a different edge colour and an explicit tag so a
+   predicted enemy move can never be mistaken for our own next pick. */
+.coach-recommendation-shell[data-side='enemy'] > .coach-recommendation,
+.coach-recommendation-shell[data-side='enemy'] > .coach-recommendation[data-rank='1'] {
+  border-color: color-mix(in srgb, #db4f59 45%, var(--line));
+  border-style: dashed;
+  background: color-mix(in srgb, #db4f59 6%, var(--surface-raised));
+}
+.coach-forecast-tag {
+  display: inline-block;
+  margin-block-end: 0.3rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  color: #b73c46;
+  background: rgb(219 79 89 / 0.12);
+  font-size: 11px;
+  font-weight: 800;
+}
+html[data-theme='dark'] .coach-forecast-tag { color: #f08a92; }
