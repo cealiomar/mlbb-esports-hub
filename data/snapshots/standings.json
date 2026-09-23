@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1789166657,
+  "harvestedAt": 1790156635,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -429,6 +429,296 @@
       ]
     },
     {
+      "id": "cambodia-regular-season-20",
+      "regionSlug": "cambodia",
+      "leagueName": "MPL Cambodia",
+      "leaguePageSlug": "MPL/Cambodia/Season_11",
+      "stageName": "Regular Season",
+      "rows": [
+        {
+          "position": 1,
+          "team": {
+            "code": "TFK",
+            "name": "Team Flash KH",
+            "pageSlug": "Team_Flash_KH",
+            "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 0,
+          "gameWins": 4,
+          "gameLosses": 0,
+          "gameDiff": 4,
+          "points": null,
+          "zone": "advance"
+        },
+        {
+          "position": 2,
+          "team": {
+            "code": "PE",
+            "name": "PRO Esports",
+            "pageSlug": "PRO_Esports",
+            "logoUrl": "/teams/78px-PRO_Esports_v3_allmode-dacc9aa3.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 0,
+          "gameWins": 4,
+          "gameLosses": 1,
+          "gameDiff": 3,
+          "points": null,
+          "zone": "advance"
+        },
+        {
+          "position": 3,
+          "team": {
+            "code": "VA",
+            "name": "Vigor Apex",
+            "pageSlug": "",
+            "logoUrl": "/teams/50px-Vigor_Apex_allmode-8df99e65.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 0,
+          "gameWins": 4,
+          "gameLosses": 2,
+          "gameDiff": 2,
+          "points": null,
+          "zone": "playoff"
+        },
+        {
+          "position": 4,
+          "team": {
+            "code": "GL",
+            "name": "Galaxy Legends",
+            "pageSlug": "Galaxy_Legends",
+            "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 3,
+          "gameLosses": 2,
+          "gameDiff": 1,
+          "points": null,
+          "zone": "playoff"
+        },
+        {
+          "position": 4,
+          "team": {
+            "code": "TR",
+            "name": "Team RVZ",
+            "pageSlug": "",
+            "logoUrl": "/teams/76px-Team_RVZ_darkmode-038e820d.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 3,
+          "gameLosses": 2,
+          "gameDiff": 1,
+          "points": null,
+          "zone": "playoff"
+        },
+        {
+          "position": 6,
+          "team": {
+            "code": "TE",
+            "name": "TNR Esports",
+            "pageSlug": "",
+            "logoUrl": "/teams/52px-TNR_Esports_allmode-012f8490.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 2,
+          "gameLosses": 2,
+          "gameDiff": 0,
+          "points": null,
+          "zone": "playoff"
+        },
+        {
+          "position": 7,
+          "team": {
+            "code": "VAL",
+            "name": "Valhalla",
+            "pageSlug": "",
+            "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 1,
+          "gameLosses": 2,
+          "gameDiff": -1,
+          "points": null,
+          "zone": "eliminated"
+        },
+        {
+          "position": 8,
+          "team": {
+            "code": "EEE",
+            "name": "Evil Eye Esports",
+            "pageSlug": "",
+            "logoUrl": "/teams/69px-Evil_Eye_Esports_allmode-9c400004.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 1,
+          "gameWins": 0,
+          "gameLosses": 2,
+          "gameDiff": -2,
+          "points": null,
+          "zone": "eliminated"
+        },
+        {
+          "position": 9,
+          "team": {
+            "code": "GP",
+            "name": "Galaxy Phoenix",
+            "pageSlug": "Galaxy_Phoenix",
+            "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 2,
+          "gameWins": 0,
+          "gameLosses": 4,
+          "gameDiff": -4,
+          "points": null,
+          "zone": "eliminated"
+        },
+        {
+          "position": 9,
+          "team": {
+            "code": "SYS",
+            "name": "See You Soon",
+            "pageSlug": "See_You_Soon",
+            "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 2,
+          "gameWins": 0,
+          "gameLosses": 4,
+          "gameDiff": -4,
+          "points": null,
+          "zone": "eliminated"
+        }
+      ]
+    },
+    {
+      "id": "mena-regular-season-16",
+      "regionSlug": "mena",
+      "leagueName": "MPL MENA",
+      "leaguePageSlug": "MPL/MENA/Season_10",
+      "stageName": "Regular Season",
+      "rows": [
+        {
+          "position": 1,
+          "team": {
+            "code": "TF",
+            "name": "Team Falcons",
+            "pageSlug": "Team_Falcons",
+            "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 1,
+          "gameWins": 5,
+          "gameLosses": 2,
+          "gameDiff": 3,
+          "points": 7,
+          "zone": "advance"
+        },
+        {
+          "position": 2,
+          "team": {
+            "code": "GE",
+            "name": "Geekay Esports",
+            "pageSlug": "Geekay_Esports",
+            "logoUrl": "/teams/67px-Geekay_Esports_2024_allmode-55a1a185.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 0,
+          "gameWins": 4,
+          "gameLosses": 0,
+          "gameDiff": 4,
+          "points": 6,
+          "zone": "advance"
+        },
+        {
+          "position": 3,
+          "team": {
+            "code": "TEC",
+            "name": "Titan Esports Club AR",
+            "pageSlug": "",
+            "logoUrl": "/teams/50px-Titan_Esports_Club_AR_allmode-fe800b70.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 0,
+          "gameWins": 4,
+          "gameLosses": 1,
+          "gameDiff": 3,
+          "points": 5,
+          "zone": "playoff"
+        },
+        {
+          "position": 4,
+          "team": {
+            "code": "WOD",
+            "name": "Will of D",
+            "pageSlug": "",
+            "logoUrl": "/teams/60px-Will_Of_D_2026_darkmode-a688fb5e.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 2,
+          "gameLosses": 2,
+          "gameDiff": 0,
+          "points": 3,
+          "zone": "playoff"
+        },
+        {
+          "position": 5,
+          "team": {
+            "code": "TM",
+            "name": "Twisted Minds",
+            "pageSlug": "Twisted_Minds",
+            "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 2,
+          "gameLosses": 3,
+          "gameDiff": -1,
+          "points": 2,
+          "zone": "playoff"
+        },
+        {
+          "position": 6,
+          "team": {
+            "code": "XE",
+            "name": "XProjekt Esports",
+            "pageSlug": "",
+            "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 2,
+          "gameWins": 1,
+          "gameLosses": 4,
+          "gameDiff": -3,
+          "points": 1,
+          "zone": "playoff"
+        },
+        {
+          "position": 8,
+          "team": {
+            "code": "AO",
+            "name": "Axe Okami",
+            "pageSlug": "Axe_Okami",
+            "logoUrl": "/teams/100px-Axe_Okami_darkmode-ac573673.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 3,
+          "gameWins": 0,
+          "gameLosses": 6,
+          "gameDiff": -6,
+          "points": 0,
+          "zone": "eliminated"
+        }
+      ]
+    },
+    {
       "id": "myanmar-regular-season-24",
       "regionSlug": "myanmar",
       "leagueName": "MSL Myanmar",
@@ -607,6 +897,38 @@
         {
           "position": 1,
           "team": {
+            "code": "LE",
+            "name": "Leon Esports",
+            "pageSlug": "Leon_Esports",
+            "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 0,
+          "gameWins": 4,
+          "gameLosses": 1,
+          "gameDiff": 3,
+          "points": 2,
+          "zone": "advance"
+        },
+        {
+          "position": 1,
+          "team": {
+            "code": "TEN",
+            "name": "Tenacity",
+            "pageSlug": "",
+            "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 0,
+          "gameWins": 4,
+          "gameLosses": 1,
+          "gameDiff": 3,
+          "points": 2,
+          "zone": "advance"
+        },
+        {
+          "position": 3,
+          "team": {
             "code": "BT",
             "name": "Bacon Time",
             "pageSlug": "Bacon_Time",
@@ -618,26 +940,58 @@
           "gameLosses": 0,
           "gameDiff": 2,
           "points": 1,
-          "zone": "advance"
+          "zone": "playoff"
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
-            "code": "TEN",
-            "name": "Tenacity",
-            "pageSlug": "",
-            "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png"
+            "code": "KOG",
+            "name": "King of Gamers Club",
+            "pageSlug": "King_of_Gamers_Club",
+            "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png"
           },
           "matchWins": 1,
-          "matchLosses": 0,
-          "gameWins": 2,
-          "gameLosses": 0,
-          "gameDiff": 2,
+          "matchLosses": 1,
+          "gameWins": 3,
+          "gameLosses": 2,
+          "gameDiff": 1,
           "points": 1,
-          "zone": "advance"
+          "zone": "playoff"
         },
         {
-          "position": 3,
+          "position": 5,
+          "team": {
+            "code": "VTE",
+            "name": "Valee Thai Esports",
+            "pageSlug": "",
+            "logoUrl": "/teams/52px-Valee_Thai_Esports_allmode-e71a3ed4.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 2,
+          "gameLosses": 2,
+          "gameDiff": 0,
+          "points": 1,
+          "zone": "playoff"
+        },
+        {
+          "position": 6,
+          "team": {
+            "code": "EAR",
+            "name": "EArena",
+            "pageSlug": "EArena",
+            "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 1,
+          "gameWins": 2,
+          "gameLosses": 2,
+          "gameDiff": 0,
+          "points": 1,
+          "zone": "playoff"
+        },
+        {
+          "position": 7,
           "team": {
             "code": "FS",
             "name": "FULL SENSE",
@@ -645,31 +999,15 @@
             "logoUrl": "/teams/59px-FULL_SENSE_2025_allmode-9db84f90.png"
           },
           "matchWins": 1,
-          "matchLosses": 0,
-          "gameWins": 2,
-          "gameLosses": 1,
-          "gameDiff": 1,
-          "points": 1,
-          "zone": "playoff"
-        },
-        {
-          "position": 8,
-          "team": {
-            "code": "HE",
-            "name": "Hydra Esports",
-            "pageSlug": "",
-            "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png"
-          },
-          "matchWins": 0,
           "matchLosses": 1,
-          "gameWins": 1,
-          "gameLosses": 2,
+          "gameWins": 2,
+          "gameLosses": 3,
           "gameDiff": -1,
-          "points": 0,
+          "points": 1,
           "zone": "eliminated"
         },
         {
-          "position": 9,
+          "position": 8,
           "team": {
             "code": "BUE",
             "name": "Buriram United Esports",
@@ -687,16 +1025,32 @@
         {
           "position": 9,
           "team": {
+            "code": "HE",
+            "name": "Hydra Esports",
+            "pageSlug": "",
+            "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png"
+          },
+          "matchWins": 0,
+          "matchLosses": 2,
+          "gameWins": 1,
+          "gameLosses": 4,
+          "gameDiff": -3,
+          "points": 0,
+          "zone": "eliminated"
+        },
+        {
+          "position": 9,
+          "team": {
             "code": "SOL",
             "name": "SOLYX",
             "pageSlug": "",
             "logoUrl": "/teams/100px-Solyx_allmode-ff12a1c2.png"
           },
           "matchWins": 0,
-          "matchLosses": 1,
-          "gameWins": 0,
-          "gameLosses": 2,
-          "gameDiff": -2,
+          "matchLosses": 2,
+          "gameWins": 1,
+          "gameLosses": 4,
+          "gameDiff": -3,
           "points": 0,
           "zone": "eliminated"
         }
@@ -717,28 +1071,28 @@
             "pageSlug": "Saigon_Phantom",
             "logoUrl": "/teams/55px-Saigon_Phantom_2020_allmode-24809f21.png"
           },
-          "matchWins": 1,
+          "matchWins": 3,
           "matchLosses": 0,
-          "gameWins": 2,
+          "gameWins": 6,
           "gameLosses": 0,
-          "gameDiff": 2,
-          "points": 1,
+          "gameDiff": 6,
+          "points": 3,
           "zone": "advance"
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
-            "code": "WVT",
-            "name": "Winx (Vietnamese team)",
+            "code": "NT",
+            "name": "Noob Team",
             "pageSlug": "",
             "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
           },
-          "matchWins": 1,
-          "matchLosses": 0,
-          "gameWins": 2,
-          "gameLosses": 0,
+          "matchWins": 2,
+          "matchLosses": 1,
+          "gameWins": 4,
+          "gameLosses": 2,
           "gameDiff": 2,
-          "points": 1,
+          "points": 2,
           "zone": "advance"
         },
         {
@@ -749,32 +1103,48 @@
             "pageSlug": "",
             "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
           },
-          "matchWins": 1,
-          "matchLosses": 0,
-          "gameWins": 2,
-          "gameLosses": 1,
+          "matchWins": 2,
+          "matchLosses": 1,
+          "gameWins": 4,
+          "gameLosses": 3,
           "gameDiff": 1,
-          "points": 1,
+          "points": 2,
           "zone": "advance"
         },
         {
           "position": 4,
+          "team": {
+            "code": "WVT",
+            "name": "Winx (Vietnamese team)",
+            "pageSlug": "",
+            "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 1,
+          "gameWins": 4,
+          "gameLosses": 3,
+          "gameDiff": 1,
+          "points": 2,
+          "zone": "advance"
+        },
+        {
+          "position": 5,
           "team": {
             "code": "SR",
             "name": "Sweet Revenge",
             "pageSlug": "",
             "logoUrl": "/teams/67px-Sweet_Revenge_full_darkmode-c32274c4.png"
           },
-          "matchWins": 0,
-          "matchLosses": 1,
-          "gameWins": 1,
-          "gameLosses": 2,
-          "gameDiff": -1,
-          "points": 0,
-          "zone": "advance"
+          "matchWins": 1,
+          "matchLosses": 3,
+          "gameWins": 4,
+          "gameLosses": 6,
+          "gameDiff": -2,
+          "points": 1,
+          "zone": "eliminated"
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "code": "ANT",
             "name": "ANTGAMER",
@@ -782,26 +1152,10 @@
             "logoUrl": "/teams/69px-ANTGAMER_allmode-d0948a63.png"
           },
           "matchWins": 0,
-          "matchLosses": 1,
+          "matchLosses": 4,
           "gameWins": 0,
-          "gameLosses": 2,
-          "gameDiff": -2,
-          "points": 0,
-          "zone": "eliminated"
-        },
-        {
-          "position": 5,
-          "team": {
-            "code": "NT",
-            "name": "Noob Team",
-            "pageSlug": "",
-            "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
-          },
-          "matchWins": 0,
-          "matchLosses": 1,
-          "gameWins": 0,
-          "gameLosses": 2,
-          "gameDiff": -2,
+          "gameLosses": 8,
+          "gameDiff": -8,
           "points": 0,
           "zone": "eliminated"
         }
