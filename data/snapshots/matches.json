@@ -1,70 +1,6 @@
 {
-  "harvestedAt": 1790162640,
+  "harvestedAt": 1790163957,
   "data": [
-    {
-      "id": "1790150400-mlbb-academy-league-season-6-regular-season-phase-2-king-hgoz",
-      "startsAt": 1790150400,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KING",
-          "name": "DX Kingz",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "HGOZ",
-          "name": "HG x Originz",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-HG_x_ORIGINZ_darkmode-8a453529.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 5",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790157600-mlbb-academy-league-season-6-regular-season-phase-2-so-pix",
-      "startsAt": 1790157600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "SO",
-          "name": "Stark Origin",
-          "pageSlug": "",
-          "logoUrl": "/teams/56px-Stark_Origin_darkmode-124a040e.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "PIX",
-          "name": "Pixel Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/43px-Pixel_Esports_darkmode-cc4eb10e.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 5",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1790164800-mlbb-academy-league-season-6-regular-season-phase-2-oust-srga",
       "startsAt": 1790164800,
@@ -91,7 +27,10 @@
       "tournamentName": "MAL S6 RS - Week 5",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MAL_MY",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MAL_Malaysia_FB"
+      ],
       "vodUrls": []
     },
     {
@@ -1454,6 +1393,122 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790503200-mtc-turkiye-championship-season-8-regular-season-dia-bw",
+      "startsAt": 1790503200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DIA",
+          "name": "DIA Ozarox",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-DIA_Esports_darkmode-ce3313a9.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "BW",
+          "name": "Bushido Wildcats",
+          "pageSlug": "Bushido_Wildcats",
+          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 3",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790503200-vietnam-mlbb-championship-2026-fall-group-stage-sgp-sre",
+      "startsAt": 1790503200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "SGP",
+          "name": "Saigon Phantom",
+          "pageSlug": "Saigon_Phantom",
+          "logoUrl": "/teams/55px-Saigon_Phantom_2020_allmode-24809f21.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SRE",
+          "name": "Sweet Revenge",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Sweet_Revenge_full_darkmode-c32274c4.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "VMC Fall 2026 - Week 3",
+      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
+      "regionSlug": "vietnam",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790157600-mlbb-academy-league-season-6-regular-season-phase-2-so-pix",
+      "startsAt": 1790157600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "SO",
+          "name": "Stark Origin",
+          "pageSlug": "",
+          "logoUrl": "/teams/56px-Stark_Origin_darkmode-124a040e.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "PIX",
+          "name": "Pixel Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/43px-Pixel_Esports_darkmode-cc4eb10e.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 5",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790150400-mlbb-academy-league-season-6-regular-season-phase-2-king-hgoz",
+      "startsAt": 1790150400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KING",
+          "name": "DX Kingz",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-DX_Kingz_allmode-7b622731.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "HGOZ",
+          "name": "HG x Originz",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-HG_x_ORIGINZ_darkmode-8a453529.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 5",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2878,64 +2933,6 @@
         "https://www.youtube.com/watch?v=UbwjOpgXkLM",
         "https://www.youtube.com/watch?v=RfLDNYxVPbU"
       ]
-    },
-    {
-      "id": "1789885800-mpl-malaysia-season-18-regular-season-btrm-ig",
-      "startsAt": 1789885800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BTRM",
-          "name": "Bigetron MY by VIT",
-          "pageSlug": "Bigetron_MY_by_VIT",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "iG",
-          "name": "Invictus Gaming",
-          "pageSlug": "Invictus_Gaming",
-          "logoUrl": "/teams/50px-Invictus_Gaming_darkmode-12a6d5dd.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 6",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789880400-mct-2026-east-asia-split-2-south-korea-playoffs-zrg-whe",
-      "startsAt": 1789880400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ZRG",
-          "name": "Zero Gravity",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Zero_Gravity__28Korean_team_29_darkmode-d5cdfbdd.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "WHE",
-          "name": "WH Esports",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT EA Ulaanbaatar '26 KR Qual - Playoffs",
-      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/South_Korea/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
