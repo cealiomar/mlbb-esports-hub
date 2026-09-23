@@ -175,6 +175,27 @@ function slug(value: string): string {
     .replace(/^-|-$/g, '')
 }
 
+/**
+ * League tables embed one row set per week (`data-toggle-area-content="1"`,
+ * `"2"`, …). The wrapper's `data-toggle-area` names the set Liquipedia shows
+ * by default — the "Current" week. Area 1 is week one, not the current table:
+ * reading it published week-one standings for every region.
+ */
+function currentToggleArea(
+  table: HTMLElement,
+  rows: HTMLElement[],
+): string | null {
+  for (let node = table.parentNode; node; node = node.parentNode) {
+    const area = node.getAttribute?.('data-toggle-area')
+    if (area) return area
+  }
+  // No wrapper: fall back to the highest area present, i.e. the latest week.
+  const areas = rows
+    .map((row) => Number(row.getAttribute('data-toggle-area-content')))
+    .filter((value) => Number.isFinite(value) && value > 0)
+  return areas.length > 0 ? String(Math.max(...areas)) : null
+}
+
 export function parseStandings(
   html: string,
   context: StandingsContext,
@@ -199,9 +220,13 @@ export function parseStandings(
         .querySelectorAll('th')
         .map((cell) => normaliseHeader(cell.text))
       const allRows = table.querySelectorAll('tr')
-      const currentRows = allRows.filter(
-        (row) => row.getAttribute('data-toggle-area-content') === '1',
-      )
+      const area = currentToggleArea(table, allRows)
+      const currentRows =
+        area === null
+          ? []
+          : allRows.filter(
+              (row) => row.getAttribute('data-toggle-area-content') === area,
+            )
       const rows = (currentRows.length > 0 ? currentRows : allRows)
         .map((row) => readRow(row, headers))
         .filter((row): row is StandingRow => row !== null)

@@ -91,6 +91,38 @@ describe('parseStandings', () => {
   })
 })
 
+describe('parseStandings with weekly snapshots', () => {
+  // Real MPL Indonesia Season 18 response captured 2026-09-23 (week 7). The
+  // table embeds one row set per week; the wrapper's data-toggle-area names
+  // the one Liquipedia shows by default ("Current"). Reading area 1 published
+  // week-one standings for every region for weeks.
+  const html = readFileSync(
+    join(__dirname, '__fixtures__', 'standings-id-s18-week7.html'),
+    'utf8',
+  )
+  const [table] = parseStandings(html, {
+    regionSlug: 'indonesia',
+    leagueName: 'MPL Indonesia',
+    leaguePageSlug: 'MPL/Indonesia/Season_18',
+  })
+
+  it('reads the current week, not week one', () => {
+    expect(table.rows).toHaveLength(9)
+    expect(table.rows[0]).toMatchObject({
+      position: 1,
+      team: { name: 'Team Liquid ID' },
+      matchWins: 9,
+      matchLosses: 2,
+      gameWins: 19,
+      gameLosses: 7,
+    })
+  })
+
+  it('lists every team exactly once', () => {
+    expect(new Set(table.rows.map((row) => row.team.name)).size).toBe(9)
+  })
+})
+
 describe('tournament freshness', () => {
   const windowHtml = readFileSync(
     join(__dirname, '__fixtures__', 'tournament-window-mena.html'),
