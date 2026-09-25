@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1790289635,
+  "harvestedAt": 1790344931,
   "data": [
     {
       "regionSlug": "indonesia",
@@ -13976,7 +13976,7 @@
       "regionSlug": "philippines",
       "leagueName": "MPL Philippines",
       "leaguePageSlug": "MPL/Philippines/Season_18",
-      "gamesAnalyzed": 84,
+      "gamesAnalyzed": 88,
       "heroStats": [
         {
           "hero": {
@@ -13985,14 +13985,14 @@
             "pageSlug": "Hirara"
           },
           "imageUrl": "/heroes/50px-ML_icon_Hirara-985cf162.png",
-          "picks": 78,
-          "pickWins": 31,
-          "pickLosses": 47,
-          "pickRate": 92.86,
-          "bans": 5,
-          "banRate": 5.95,
-          "presence": 83,
-          "presenceRate": 98.81
+          "picks": 80,
+          "pickWins": 32,
+          "pickLosses": 48,
+          "pickRate": 90.91,
+          "bans": 7,
+          "banRate": 7.95,
+          "presence": 87,
+          "presenceRate": 98.86
         },
         {
           "hero": {
@@ -14001,14 +14001,14 @@
             "pageSlug": "Belerick"
           },
           "imageUrl": "/heroes/50px-ML_icon_Belerick-054d429f.png",
-          "picks": 45,
-          "pickWins": 24,
+          "picks": 46,
+          "pickWins": 25,
           "pickLosses": 21,
-          "pickRate": 53.57,
-          "bans": 19,
-          "banRate": 22.62,
-          "presence": 64,
-          "presenceRate": 76.19
+          "pickRate": 52.27,
+          "bans": 20,
+          "banRate": 22.73,
+          "presence": 66,
+          "presenceRate": 75
         },
         {
           "hero": {
@@ -14020,11 +14020,11 @@
           "picks": 41,
           "pickWins": 28,
           "pickLosses": 13,
-          "pickRate": 48.81,
-          "bans": 36,
-          "banRate": 42.86,
-          "presence": 77,
-          "presenceRate": 91.67
+          "pickRate": 46.59,
+          "bans": 40,
+          "banRate": 45.45,
+          "presence": 81,
+          "presenceRate": 92.05
         },
         {
           "hero": {
@@ -14033,14 +14033,14 @@
             "pageSlug": "Eudora"
           },
           "imageUrl": "/heroes/50px-ML_icon_Eudora_2026-0b7d4820.png",
-          "picks": 38,
-          "pickWins": 22,
+          "picks": 40,
+          "pickWins": 24,
           "pickLosses": 16,
-          "pickRate": 45.24,
+          "pickRate": 45.45,
           "bans": 15,
-          "banRate": 17.86,
-          "presence": 53,
-          "presenceRate": 63.1
+          "banRate": 17.05,
+          "presence": 55,
+          "presenceRate": 62.5
         },
         {
           "hero": {
@@ -14052,11 +14052,11 @@
           "picks": 29,
           "pickWins": 14,
           "pickLosses": 15,
-          "pickRate": 34.52,
-          "bans": 37,
-          "banRate": 44.05,
-          "presence": 66,
-          "presenceRate": 78.57
+          "pickRate": 32.95,
+          "bans": 40,
+          "banRate": 45.45,
+          "presence": 69,
+          "presenceRate": 78.41
         }
       ],
       "series": [
@@ -28223,7 +28223,7 @@
       "regionSlug": "cambodia",
       "leagueName": "MPL Cambodia",
       "leaguePageSlug": "MPL/Cambodia/Season_11",
-      "gamesAnalyzed": 21,
+      "gamesAnalyzed": 27,
       "heroStats": [
         {
           "hero": {
@@ -28232,14 +28232,14 @@
             "pageSlug": "Belerick"
           },
           "imageUrl": "/heroes/50px-ML_icon_Belerick-054d429f.png",
-          "picks": 17,
-          "pickWins": 9,
-          "pickLosses": 8,
-          "pickRate": 80.95,
-          "bans": 2,
-          "banRate": 9.52,
-          "presence": 19,
-          "presenceRate": 90.48
+          "picks": 21,
+          "pickWins": 10,
+          "pickLosses": 11,
+          "pickRate": 77.78,
+          "bans": 3,
+          "banRate": 11.11,
+          "presence": 24,
+          "presenceRate": 88.89
         },
         {
           "hero": {
@@ -28248,14 +28248,14 @@
             "pageSlug": "Paquito"
           },
           "imageUrl": "/heroes/50px-ML_icon_Paquito_2026-b614e3b7.png",
-          "picks": 16,
-          "pickWins": 9,
-          "pickLosses": 7,
-          "pickRate": 76.19,
-          "bans": 4,
-          "banRate": 19.05,
-          "presence": 20,
-          "presenceRate": 95.24
+          "picks": 18,
+          "pickWins": 10,
+          "pickLosses": 8,
+          "pickRate": 66.67,
+          "bans": 6,
+          "banRate": 22.22,
+          "presence": 24,
+          "presenceRate": 88.89
         },
         {
           "hero": {
@@ -28264,30 +28264,14 @@
             "pageSlug": "Hirara"
           },
           "imageUrl": "/heroes/50px-ML_icon_Hirara-985cf162.png",
-          "picks": 12,
-          "pickWins": 7,
-          "pickLosses": 5,
-          "pickRate": 57.14,
-          "bans": 9,
-          "banRate": 42.86,
-          "presence": 21,
+          "picks": 14,
+          "pickWins": 8,
+          "pickLosses": 6,
+          "pickRate": 51.85,
+          "bans": 13,
+          "banRate": 48.15,
+          "presence": 27,
           "presenceRate": 100
-        },
-        {
-          "hero": {
-            "id": "selena",
-            "name": "Selena",
-            "pageSlug": "Selena"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Selena-081cfe2a.png",
-          "picks": 10,
-          "pickWins": 5,
-          "pickLosses": 5,
-          "pickRate": 47.62,
-          "bans": 7,
-          "banRate": 33.33,
-          "presence": 17,
-          "presenceRate": 80.95
         },
         {
           "hero": {
@@ -28296,14 +28280,30 @@
             "pageSlug": "Eudora"
           },
           "imageUrl": "/heroes/50px-ML_icon_Eudora_2026-0b7d4820.png",
-          "picks": 10,
-          "pickWins": 4,
-          "pickLosses": 6,
-          "pickRate": 47.62,
+          "picks": 14,
+          "pickWins": 6,
+          "pickLosses": 8,
+          "pickRate": 51.85,
           "bans": 2,
-          "banRate": 9.52,
-          "presence": 12,
-          "presenceRate": 57.14
+          "banRate": 7.41,
+          "presence": 16,
+          "presenceRate": 59.26
+        },
+        {
+          "hero": {
+            "id": "selena",
+            "name": "Selena",
+            "pageSlug": "Selena"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Selena-081cfe2a.png",
+          "picks": 11,
+          "pickWins": 5,
+          "pickLosses": 6,
+          "pickRate": 40.74,
+          "bans": 12,
+          "banRate": 44.44,
+          "presence": 23,
+          "presenceRate": 85.19
         }
       ],
       "series": []
