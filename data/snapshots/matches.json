@@ -1,96 +1,6 @@
 {
-  "harvestedAt": 1790313557,
+  "harvestedAt": 1790332272,
   "data": [
-    {
-      "id": "1790316000-mpl-cambodia-season-11-regular-season-vgr-gxp",
-      "startsAt": 1790316000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "VGR",
-          "name": "Vigor Apex",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Vigor_Apex_allmode-8df99e65.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "GXP",
-          "name": "Galaxy Phoenix",
-          "pageSlug": "Galaxy_Phoenix",
-          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
-      "regionSlug": "cambodia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790325000-mpl-cambodia-season-11-regular-season-rvz-val",
-      "startsAt": 1790325000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RVZ",
-          "name": "Team RVZ",
-          "pageSlug": "",
-          "logoUrl": "/teams/76px-Team_RVZ_darkmode-038e820d.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "Val",
-          "name": "Valhalla",
-          "pageSlug": "",
-          "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790326800-mpl-philippines-season-18-regular-season-twph-apbr",
-      "startsAt": 1790326800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TWPH",
-          "name": "Twisted Minds PH",
-          "pageSlug": "Twisted_Minds_PH",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "APBR",
-          "name": "AP.Bren",
-          "pageSlug": "AP.Bren",
-          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 6",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1790326800-vietnam-mlbb-championship-2026-fall-group-stage-sgp-ant",
       "startsAt": 1790326800,
@@ -117,7 +27,10 @@
       "tournamentName": "VMC Fall 2026 - Week 3",
       "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
       "regionSlug": "vietnam",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/VMC_Esports_Official",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MLBB_Esports_VN"
+      ],
       "vodUrls": []
     },
     {
@@ -146,7 +59,10 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
+      ],
       "vodUrls": []
     },
     {
@@ -175,7 +91,10 @@
       "tournamentName": "MPL Cambodia Season 11 - RS: Week 2",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
       "regionSlug": "cambodia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ],
       "vodUrls": []
     },
     {
@@ -204,7 +123,10 @@
       "tournamentName": "VMC Fall 2026 - Week 3",
       "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
       "regionSlug": "vietnam",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/VMC_Esports_Official",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MLBB_Esports_VN"
+      ],
       "vodUrls": []
     },
     {
@@ -233,7 +155,10 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 6",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
@@ -1451,6 +1376,180 @@
       "tournamentName": "MTC Season 8 - Week 3",
       "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790503200-vietnam-mlbb-championship-2026-fall-group-stage-sgp-sre",
+      "startsAt": 1790503200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "SGP",
+          "name": "Saigon Phantom",
+          "pageSlug": "Saigon_Phantom",
+          "logoUrl": "/teams/55px-Saigon_Phantom_2020_allmode-24809f21.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SRE",
+          "name": "Sweet Revenge",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Sweet_Revenge_full_darkmode-c32274c4.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "VMC Fall 2026 - Week 3",
+      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
+      "regionSlug": "vietnam",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790506800-mlbb-continental-championships-season-8-regular-season-rune-arv",
+      "startsAt": 1790506800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RUNE",
+          "name": "Rune Eaters",
+          "pageSlug": "",
+          "logoUrl": "/teams/39px-Rune_Eaters_Esports_darkmode-9c1ea13a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "ARV",
+          "name": "Aurevia Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 5",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790506800-mpl-cambodia-season-11-regular-season-gxp-gxl",
+      "startsAt": 1790506800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "GXP",
+          "name": "Galaxy Phoenix",
+          "pageSlug": "Galaxy_Phoenix",
+          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "GXL",
+          "name": "Galaxy Legends",
+          "pageSlug": "Galaxy_Legends",
+          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
+      "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790326800-mpl-philippines-season-18-regular-season-twph-apbr",
+      "startsAt": 1790326800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TWPH",
+          "name": "Twisted Minds PH",
+          "pageSlug": "Twisted_Minds_PH",
+          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "APBR",
+          "name": "AP.Bren",
+          "pageSlug": "AP.Bren",
+          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 6",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790325000-mpl-cambodia-season-11-regular-season-rvz-val",
+      "startsAt": 1790325000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RVZ",
+          "name": "Team RVZ",
+          "pageSlug": "",
+          "logoUrl": "/teams/76px-Team_RVZ_darkmode-038e820d.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "Val",
+          "name": "Valhalla",
+          "pageSlug": "",
+          "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
+      "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790316000-mpl-cambodia-season-11-regular-season-vgr-gxp",
+      "startsAt": 1790316000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "VGR",
+          "name": "Vigor Apex",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Vigor_Apex_allmode-8df99e65.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "GXP",
+          "name": "Galaxy Phoenix",
+          "pageSlug": "Galaxy_Phoenix",
+          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - RS: Week 2",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
+      "regionSlug": "cambodia",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2843,97 +2942,6 @@
         "https://www.youtube.com/live/ZrZsoK6rQqU?si=uCcfO0QDQYKafIiR&t=14421",
         "https://www.youtube.com/live/ZrZsoK6rQqU?si=-lNVHCXQdKuJTD0_&t=16746"
       ]
-    },
-    {
-      "id": "1789894800-mpl-malaysia-season-18-regular-season-srg-rey",
-      "startsAt": 1789894800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "SRG",
-          "name": "Selangor Red Giants",
-          "pageSlug": "Selangor_Red_Giants",
-          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "REY",
-          "name": "Team Rey",
-          "pageSlug": "Team_Rey",
-          "logoUrl": "/teams/34px-Team_Rey_allmode-d5112b3a.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 6",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1789894800-mpl-philippines-season-18-regular-season-apbr-onph",
-      "startsAt": 1789894800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "APBR",
-          "name": "AP.Bren",
-          "pageSlug": "AP.Bren",
-          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "ONPH",
-          "name": "ONIC Philippines",
-          "pageSlug": "ONIC_Philippines",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 5",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=TrJvAonMf9A",
-        "https://www.youtube.com/watch?v=JOKpJy7FlEA",
-        "https://www.youtube.com/watch?v=DS9HFB2sltU"
-      ]
-    },
-    {
-      "id": "1789891200-esn-national-championship-league-season-1-playoffs-mglz-ak",
-      "startsAt": 1789891200,
-      "status": "completed",
-      "bestOf": 7,
-      "opponents": [
-        {
-          "code": "MGLZ",
-          "name": "The MongolZ",
-          "pageSlug": "The_MongolZ",
-          "logoUrl": "/teams/39px-The_MongolZ_2024_03_allmode-644d7f27.png",
-          "score": 4,
-          "isWinner": true
-        },
-        {
-          "code": "AK",
-          "name": "The Akatsuki",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "ESN National Championship League Season 1 - Playoffs",
-      "tournamentPageSlug": "ESN/National_Championship_League/Season_1/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
