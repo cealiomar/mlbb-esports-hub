@@ -1,50 +1,18 @@
 {
-  "harvestedAt": 1790344422,
+  "harvestedAt": 1790361689,
   "data": [
     {
-      "id": "1790344800-mlbb-super-league-thailand-season-2-regular-season-leon-vlth",
-      "startsAt": 1790344800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "LEON",
-          "name": "Leon Esports",
-          "pageSlug": "Leon_Esports",
-          "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "VLTH",
-          "name": "Valee Thai Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-Valee_Thai_Esports_allmode-e71a3ed4.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790352000-mpl-mena-season-10-regular-season-flcm-gk",
+      "id": "1790352000-mpl-mena-season-10-regular-season-wod-gk",
       "startsAt": 1790352000,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "FLCM",
-          "name": "Team Falcons",
-          "pageSlug": "Team_Falcons",
-          "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png",
-          "score": null,
+          "code": "WOD",
+          "name": "Will of D",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Will_Of_D_2026_darkmode-a688fb5e.png",
+          "score": 1,
           "isWinner": false
         },
         {
@@ -52,27 +20,29 @@
           "name": "Geekay Esports",
           "pageSlug": "Geekay_Esports",
           "logoUrl": "/teams/67px-Geekay_Esports_2024_allmode-55a1a185.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
       "tournamentName": "MPL MENA Season 10 - Week 3",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
+      ],
       "vodUrls": []
     },
     {
-      "id": "1790359200-mpl-mena-season-10-regular-season-xp-gs",
+      "id": "1790359200-mpl-mena-season-10-regular-season-twis-gs",
       "startsAt": 1790359200,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "XP",
-          "name": "XProjekt Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
+          "code": "TWIS",
+          "name": "Twisted Minds",
+          "pageSlug": "Twisted_Minds",
+          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
           "score": null,
           "isWinner": false
         },
@@ -88,7 +58,9 @@
       "tournamentName": "MPL MENA Season 10 - Week 3",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
+      ],
       "vodUrls": []
     },
     {
@@ -117,28 +89,32 @@
       "tournamentName": "MCT AMER 2026 - Round 3",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
-      "id": "1790366400-mpl-mena-season-10-regular-season-twis-wod",
+      "id": "1790366400-mpl-mena-season-10-regular-season-xp-tec",
       "startsAt": 1790366400,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TWIS",
-          "name": "Twisted Minds",
-          "pageSlug": "Twisted_Minds",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
+          "code": "XP",
+          "name": "XProjekt Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "WOD",
-          "name": "Will of D",
+          "code": "TEC",
+          "name": "Titan Esports Club AR",
           "pageSlug": "",
-          "logoUrl": "/teams/60px-Will_Of_D_2026_darkmode-a688fb5e.png",
+          "logoUrl": "/teams/50px-Titan_Esports_Club_AR_allmode-fe800b70.png",
           "score": null,
           "isWinner": false
         }
@@ -146,7 +122,9 @@
       "tournamentName": "MPL MENA Season 10 - Week 3",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
+      ],
       "vodUrls": []
     },
     {
@@ -1445,6 +1423,64 @@
           "pageSlug": "",
           "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png",
           "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790517600-vietnam-mlbb-championship-2026-fall-group-stage-wx-nb",
+      "startsAt": 1790517600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "WX",
+          "name": "Winx (Vietnamese team)",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "NB",
+          "name": "Noob Team",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "VMC Fall 2026 - Week 3",
+      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
+      "regionSlug": "vietnam",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790344800-mlbb-super-league-thailand-season-2-regular-season-leon-vlth",
+      "startsAt": 1790344800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "LEON",
+          "name": "Leon Esports",
+          "pageSlug": "Leon_Esports",
+          "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "VLTH",
+          "name": "Valee Thai Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-Valee_Thai_Esports_allmode-e71a3ed4.png",
+          "score": 1,
           "isWinner": false
         }
       ],
@@ -2904,38 +2940,6 @@
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1789898400-mpl-indonesia-season-18-regular-season-btr-onic",
-      "startsAt": 1789898400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BTR",
-          "name": "Bigetron by Vitality",
-          "pageSlug": "Bigetron_by_Vitality",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "ONIC",
-          "name": "ONIC",
-          "pageSlug": "ONIC",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 6",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=2bvmtR9gTrk",
-        "https://www.youtube.com/watch?v=czudi30UdmM"
-      ]
     }
   ]
 }
