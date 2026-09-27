@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1790473044,
+  "harvestedAt": 1790520541,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -164,6 +164,22 @@
         {
           "position": 1,
           "team": {
+            "code": "TFP",
+            "name": "Team Falcons PH",
+            "pageSlug": "Team_Falcons_PH",
+            "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png"
+          },
+          "matchWins": 9,
+          "matchLosses": 1,
+          "gameWins": 19,
+          "gameLosses": 6,
+          "gameDiff": 13,
+          "points": 9,
+          "zone": "advance"
+        },
+        {
+          "position": 2,
+          "team": {
             "code": "TLP",
             "name": "Team Liquid PH",
             "pageSlug": "Team_Liquid_PH",
@@ -174,22 +190,6 @@
           "gameWins": 17,
           "gameLosses": 5,
           "gameDiff": 12,
-          "points": 8,
-          "zone": "advance"
-        },
-        {
-          "position": 2,
-          "team": {
-            "code": "TFP",
-            "name": "Team Falcons PH",
-            "pageSlug": "Team_Falcons_PH",
-            "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png"
-          },
-          "matchWins": 8,
-          "matchLosses": 1,
-          "gameWins": 17,
-          "gameLosses": 6,
-          "gameDiff": 11,
           "points": 8,
           "zone": "advance"
         },
@@ -218,15 +218,31 @@
             "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png"
           },
           "matchWins": 6,
-          "matchLosses": 4,
+          "matchLosses": 5,
           "gameWins": 14,
-          "gameLosses": 8,
-          "gameDiff": 6,
+          "gameLosses": 10,
+          "gameDiff": 4,
           "points": 6,
           "zone": "playoff"
         },
         {
           "position": 5,
+          "team": {
+            "code": "OE",
+            "name": "Omega Esports",
+            "pageSlug": "Omega_Esports",
+            "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png"
+          },
+          "matchWins": 5,
+          "matchLosses": 6,
+          "gameWins": 11,
+          "gameLosses": 16,
+          "gameDiff": -5,
+          "points": 5,
+          "zone": "playoff"
+        },
+        {
+          "position": 6,
           "team": {
             "code": "TPT",
             "name": "TNC Pro Team",
@@ -234,26 +250,10 @@
             "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png"
           },
           "matchWins": 4,
-          "matchLosses": 6,
+          "matchLosses": 7,
           "gameWins": 11,
-          "gameLosses": 14,
-          "gameDiff": -3,
-          "points": 4,
-          "zone": "playoff"
-        },
-        {
-          "position": 6,
-          "team": {
-            "code": "OE",
-            "name": "Omega Esports",
-            "pageSlug": "Omega_Esports",
-            "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png"
-          },
-          "matchWins": 4,
-          "matchLosses": 6,
-          "gameWins": 9,
           "gameLosses": 16,
-          "gameDiff": -7,
+          "gameDiff": -5,
           "points": 4,
           "zone": "playoff"
         },
@@ -491,16 +491,32 @@
             "pageSlug": "PRO_Esports",
             "logoUrl": "/teams/78px-PRO_Esports_v3_allmode-dacc9aa3.png"
           },
-          "matchWins": 2,
+          "matchWins": 3,
           "matchLosses": 1,
-          "gameWins": 4,
-          "gameLosses": 3,
-          "gameDiff": 1,
+          "gameWins": 6,
+          "gameLosses": 4,
+          "gameDiff": 2,
           "points": null,
           "zone": "playoff"
         },
         {
           "position": 5,
+          "team": {
+            "code": "GL",
+            "name": "Galaxy Legends",
+            "pageSlug": "Galaxy_Legends",
+            "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 2,
+          "gameWins": 6,
+          "gameLosses": 4,
+          "gameDiff": 2,
+          "points": null,
+          "zone": "playoff"
+        },
+        {
+          "position": 6,
           "team": {
             "code": "TE",
             "name": "TNR Esports",
@@ -516,23 +532,23 @@
           "zone": "playoff"
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
-            "code": "GL",
-            "name": "Galaxy Legends",
-            "pageSlug": "Galaxy_Legends",
-            "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png"
+            "code": "EEE",
+            "name": "Evil Eye Esports",
+            "pageSlug": "",
+            "logoUrl": "/teams/69px-Evil_Eye_Esports_allmode-9c400004.png"
           },
           "matchWins": 1,
           "matchLosses": 2,
-          "gameWins": 4,
+          "gameWins": 2,
           "gameLosses": 4,
-          "gameDiff": 0,
+          "gameDiff": -2,
           "points": null,
-          "zone": "playoff"
+          "zone": "eliminated"
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "code": "VAL",
             "name": "Valhalla",
@@ -540,26 +556,10 @@
             "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png"
           },
           "matchWins": 1,
-          "matchLosses": 2,
-          "gameWins": 3,
-          "gameLosses": 4,
-          "gameDiff": -1,
-          "points": null,
-          "zone": "eliminated"
-        },
-        {
-          "position": 8,
-          "team": {
-            "code": "EEE",
-            "name": "Evil Eye Esports",
-            "pageSlug": "",
-            "logoUrl": "/teams/69px-Evil_Eye_Esports_allmode-9c400004.png"
-          },
-          "matchWins": 0,
-          "matchLosses": 2,
-          "gameWins": 0,
-          "gameLosses": 4,
-          "gameDiff": -4,
+          "matchLosses": 3,
+          "gameWins": 4,
+          "gameLosses": 6,
+          "gameDiff": -2,
           "points": null,
           "zone": "eliminated"
         },
@@ -572,10 +572,10 @@
             "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png"
           },
           "matchWins": 0,
-          "matchLosses": 3,
+          "matchLosses": 4,
           "gameWins": 1,
-          "gameLosses": 6,
-          "gameDiff": -5,
+          "gameLosses": 8,
+          "gameDiff": -7,
           "points": null,
           "zone": "eliminated"
         },
@@ -588,10 +588,10 @@
             "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png"
           },
           "matchWins": 0,
-          "matchLosses": 3,
+          "matchLosses": 4,
           "gameWins": 0,
-          "gameLosses": 6,
-          "gameDiff": -6,
+          "gameLosses": 8,
+          "gameDiff": -8,
           "points": null,
           "zone": "eliminated"
         }
@@ -1087,12 +1087,12 @@
             "pageSlug": "Saigon_Phantom",
             "logoUrl": "/teams/55px-Saigon_Phantom_2020_allmode-24809f21.png"
           },
-          "matchWins": 9,
+          "matchWins": 10,
           "matchLosses": 0,
-          "gameWins": 18,
+          "gameWins": 20,
           "gameLosses": 0,
-          "gameDiff": 18,
-          "points": 9,
+          "gameDiff": 20,
+          "points": 10,
           "zone": "advance"
         },
         {
@@ -1103,16 +1103,48 @@
             "pageSlug": "",
             "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
           },
-          "matchWins": 5,
-          "matchLosses": 3,
-          "gameWins": 10,
-          "gameLosses": 7,
-          "gameDiff": 3,
-          "points": 5,
+          "matchWins": 6,
+          "matchLosses": 4,
+          "gameWins": 13,
+          "gameLosses": 9,
+          "gameDiff": 4,
+          "points": 6,
           "zone": "advance"
         },
         {
           "position": 3,
+          "team": {
+            "code": "TRA",
+            "name": "Tranquillizer",
+            "pageSlug": "",
+            "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
+          },
+          "matchWins": 5,
+          "matchLosses": 5,
+          "gameWins": 11,
+          "gameLosses": 12,
+          "gameDiff": -1,
+          "points": 5,
+          "zone": "advance"
+        },
+        {
+          "position": 4,
+          "team": {
+            "code": "WVT",
+            "name": "Winx (Vietnamese team)",
+            "pageSlug": "",
+            "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
+          },
+          "matchWins": 5,
+          "matchLosses": 5,
+          "gameWins": 11,
+          "gameLosses": 12,
+          "gameDiff": -1,
+          "points": 5,
+          "zone": "advance"
+        },
+        {
+          "position": 5,
           "team": {
             "code": "SR",
             "name": "Sweet Revenge",
@@ -1120,41 +1152,9 @@
             "logoUrl": "/teams/67px-Sweet_Revenge_full_darkmode-c32274c4.png"
           },
           "matchWins": 4,
-          "matchLosses": 5,
+          "matchLosses": 6,
           "gameWins": 10,
-          "gameLosses": 10,
-          "gameDiff": 0,
-          "points": 4,
-          "zone": "advance"
-        },
-        {
-          "position": 4,
-          "team": {
-            "code": "TRA",
-            "name": "Tranquillizer",
-            "pageSlug": "",
-            "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
-          },
-          "matchWins": 4,
-          "matchLosses": 4,
-          "gameWins": 9,
-          "gameLosses": 10,
-          "gameDiff": -1,
-          "points": 4,
-          "zone": "advance"
-        },
-        {
-          "position": 5,
-          "team": {
-            "code": "WVT",
-            "name": "Winx (Vietnamese team)",
-            "pageSlug": "",
-            "logoUrl": "/teams/48px-Mobile_Legends_2025_allmode-d413cf23.png"
-          },
-          "matchWins": 4,
-          "matchLosses": 5,
-          "gameWins": 9,
-          "gameLosses": 11,
+          "gameLosses": 12,
           "gameDiff": -2,
           "points": 4,
           "zone": "eliminated"
@@ -1168,10 +1168,10 @@
             "logoUrl": "/teams/69px-ANTGAMER_allmode-d0948a63.png"
           },
           "matchWins": 0,
-          "matchLosses": 9,
+          "matchLosses": 10,
           "gameWins": 0,
-          "gameLosses": 18,
-          "gameDiff": -18,
+          "gameLosses": 20,
+          "gameDiff": -20,
           "points": 0,
           "zone": "eliminated"
         }
