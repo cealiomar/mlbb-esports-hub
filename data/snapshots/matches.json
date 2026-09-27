@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1790520209,
+  "harvestedAt": 1790535639,
   "data": [
     {
       "id": "1790516400-mtc-turkiye-championship-season-8-regular-season-ida-pcf",
       "startsAt": 1790516400,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "IDA Esports",
           "pageSlug": "",
           "logoUrl": "/teams/95px-IDA_Esports_2025_allmode-31209f50.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -20,7 +20,7 @@
           "name": "PCIFIC Esports",
           "pageSlug": "",
           "logoUrl": "/teams/74px-PCIFIC_Esports_2025_allmode-f8103617.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -33,41 +33,9 @@
       "vodUrls": []
     },
     {
-      "id": "1790521200-mlbb-continental-championships-season-8-regular-season-yndx-omnx",
-      "startsAt": 1790521200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "OMNX",
-          "name": "Omnix",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 5",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/twitch/MLBB_CIS",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EECA_Esports"
-      ],
-      "vodUrls": []
-    },
-    {
       "id": "1790523000-mtc-turkiye-championship-season-8-regular-season-bw-fut",
       "startsAt": 1790523000,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -75,7 +43,7 @@
           "name": "Bushido Wildcats",
           "pageSlug": "Bushido_Wildcats",
           "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -83,7 +51,7 @@
           "name": "FUT Esports",
           "pageSlug": "FUT_Esports",
           "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -127,35 +95,6 @@
       "vodUrls": []
     },
     {
-      "id": "1790528400-mlbb-continental-championships-season-8-regular-season-rkz-ts",
-      "startsAt": 1790528400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RKZ",
-          "name": "RAKUZAN",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TS",
-          "name": "Team Spirit",
-          "pageSlug": "Team_Spirit",
-          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 5",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
       "id": "1790529600-mtc-turkiye-championship-season-8-regular-season-dp-aur",
       "startsAt": 1790529600,
       "status": "upcoming",
@@ -181,7 +120,9 @@
       "tournamentName": "MTC Season 8 - Week 3",
       "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Turkiye"
+      ],
       "vodUrls": []
     },
     {
@@ -210,7 +151,9 @@
       "tournamentName": "MPL MENA Season 10 - Week 3",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
+      ],
       "vodUrls": []
     },
     {
@@ -1456,6 +1399,93 @@
       ],
       "tournamentName": "MTC Season 8 - Week 4",
       "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791036000-mlbb-super-league-thailand-season-2-regular-season-bru-vlth",
+      "startsAt": 1791036000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BRU",
+          "name": "Buriram United Esports",
+          "pageSlug": "Buriram_United_Esports",
+          "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "VLTH",
+          "name": "Valee Thai Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-Valee_Thai_Esports_allmode-e71a3ed4.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791039600-mlbb-continental-championships-season-8-regular-season-ts-ch",
+      "startsAt": 1791039600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TS",
+          "name": "Team Spirit",
+          "pageSlug": "Team_Spirit",
+          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "CH",
+          "name": "CyberHero",
+          "pageSlug": "CyberHero",
+          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 6",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790521200-mlbb-continental-championships-season-8-regular-season-yndx-omnx",
+      "startsAt": 1790521200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "OMNX",
+          "name": "Omnix",
+          "pageSlug": "",
+          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 5",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -2902,35 +2932,6 @@
       "tournamentName": "VMC Fall 2026 - Week 3",
       "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
       "regionSlug": "vietnam",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790330400-mlbb-super-league-thailand-season-2-regular-season-bac-fs",
-      "startsAt": 1790330400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BAC",
-          "name": "Bacon Time",
-          "pageSlug": "Bacon_Time",
-          "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "FS",
-          "name": "FULL SENSE",
-          "pageSlug": "FULL_SENSE",
-          "logoUrl": "/teams/59px-FULL_SENSE_2025_allmode-9db84f90.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
       "streamUrls": [],
       "vodUrls": []
     }
