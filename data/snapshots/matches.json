@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1790548326,
+  "harvestedAt": 1790556878,
   "data": [
     {
       "id": "1790524800-mpl-mena-season-10-regular-season-twis-gk",
@@ -66,7 +66,7 @@
     {
       "id": "1790539200-mct-2026-americas-split-2-swiss-stage-tec-drbr",
       "startsAt": 1790539200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -74,7 +74,7 @@
           "name": "Titan Esports Club",
           "pageSlug": "Titan_Esports_Club",
           "logoUrl": "/teams/50px-Titan_Esports_Club_2025_allmode-dd31b871.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -82,7 +82,7 @@
           "name": "Dragon Empire BR",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -122,7 +122,11 @@
       "tournamentName": "MCT AMER 2026 - Round 3",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
@@ -2725,7 +2729,10 @@
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/E7IecXj8qkA?t=14513",
+        "https://youtu.be/E7IecXj8qkA?t=17134"
+      ]
     },
     {
       "id": "1790373600-mct-2026-americas-split-2-swiss-stage-e7-9z",
@@ -2754,7 +2761,11 @@
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/E7IecXj8qkA?t=7294",
+        "https://youtu.be/E7IecXj8qkA?t=9705",
+        "https://youtu.be/E7IecXj8qkA?t=11727"
+      ]
     },
     {
       "id": "1790366400-mct-2026-americas-split-2-swiss-stage-dmx-infi",
@@ -2783,7 +2794,10 @@
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/E7IecXj8qkA?t=3340",
+        "https://youtu.be/E7IecXj8qkA?t=4563"
+      ]
     },
     {
       "id": "1790366400-mpl-mena-season-10-regular-season-wod-twis",
