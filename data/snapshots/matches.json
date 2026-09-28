@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1790557706,
+  "harvestedAt": 1790578871,
   "data": [
     {
       "id": "1790524800-mpl-mena-season-10-regular-season-twis-gk",
@@ -60,72 +60,6 @@
       "regionSlug": "mena",
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790539200-mct-2026-americas-split-2-swiss-stage-tec-drbr",
-      "startsAt": 1790539200,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TEC",
-          "name": "Titan Esports Club",
-          "pageSlug": "Titan_Esports_Club",
-          "logoUrl": "/teams/50px-Titan_Esports_Club_2025_allmode-dd31b871.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "DRBR",
-          "name": "Dragon Empire BR",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Round 3",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790553600-mct-2026-americas-split-2-swiss-stage-vnd-rto",
-      "startsAt": 1790553600,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "VND",
-          "name": "Vendetta",
-          "pageSlug": "",
-          "logoUrl": "/teams/51px-Vendetta_2026_allmode-c2385521.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RTO",
-          "name": "Retaliation",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Round 3",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
       ],
       "vodUrls": []
     },
@@ -1459,6 +1393,122 @@
       ],
       "tournamentName": "MTC Season 8 - Week 4",
       "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791097200-mpl-indonesia-season-18-regular-season-ae-tlid",
+      "startsAt": 1791097200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AE",
+          "name": "Alter Ego",
+          "pageSlug": "Alter_Ego",
+          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TLID",
+          "name": "Team Liquid ID",
+          "pageSlug": "Team_Liquid_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 7",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791104400-mpl-philippines-season-18-regular-season-tlph-apbr",
+      "startsAt": 1791104400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TLPH",
+          "name": "Team Liquid PH",
+          "pageSlug": "Team_Liquid_PH",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "APBR",
+          "name": "AP.Bren",
+          "pageSlug": "AP.Bren",
+          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 7",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790553600-mct-2026-americas-split-2-swiss-stage-vnd-rto",
+      "startsAt": 1790553600,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "VND",
+          "name": "Vendetta",
+          "pageSlug": "",
+          "logoUrl": "/teams/51px-Vendetta_2026_allmode-c2385521.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "RTO",
+          "name": "Retaliation",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 3",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790539200-mct-2026-americas-split-2-swiss-stage-tec-drbr",
+      "startsAt": 1790539200,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TEC",
+          "name": "Titan Esports Club",
+          "pageSlug": "Titan_Esports_Club",
+          "logoUrl": "/teams/50px-Titan_Esports_Club_2025_allmode-dd31b871.png",
+          "score": 2,
+          "isWinner": false
+        },
+        {
+          "code": "DRBR",
+          "name": "Dragon Empire BR",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 3,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 3",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -2883,64 +2933,6 @@
       "tournamentName": "MPL MENA Season 10 - Week 3",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790344800-mlbb-super-league-thailand-season-2-regular-season-leon-vlth",
-      "startsAt": 1790344800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "LEON",
-          "name": "Leon Esports",
-          "pageSlug": "Leon_Esports",
-          "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "VLTH",
-          "name": "Valee Thai Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-Valee_Thai_Esports_allmode-e71a3ed4.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790341200-vietnam-mlbb-championship-2026-fall-group-stage-ant-nb",
-      "startsAt": 1790341200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ANT",
-          "name": "ANTGAMER",
-          "pageSlug": "",
-          "logoUrl": "/teams/69px-ANTGAMER_allmode-d0948a63.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "NB",
-          "name": "Noob Team",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "VMC Fall 2026 - Week 3",
-      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
-      "regionSlug": "vietnam",
       "streamUrls": [],
       "vodUrls": []
     }
