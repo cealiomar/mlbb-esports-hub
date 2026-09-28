@@ -1,68 +1,6 @@
 {
-  "harvestedAt": 1790580794,
+  "harvestedAt": 1790609687,
   "data": [
-    {
-      "id": "1790524800-mpl-mena-season-10-regular-season-twis-gk",
-      "startsAt": 1790524800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TWIS",
-          "name": "Twisted Minds",
-          "pageSlug": "Twisted_Minds",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "GK",
-          "name": "Geekay Esports",
-          "pageSlug": "Geekay_Esports",
-          "logoUrl": "/teams/67px-Geekay_Esports_2024_allmode-55a1a185.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL MENA Season 10 - Week 3",
-      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
-      "regionSlug": "mena",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790532000-mpl-mena-season-10-regular-season-wod-xp",
-      "startsAt": 1790532000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "WOD",
-          "name": "Will of D",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Will_Of_D_2026_darkmode-a688fb5e.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "XP",
-          "name": "XProjekt Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL MENA Season 10 - Week 3",
-      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
-      "regionSlug": "mena",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1790640000-asian-games-2026-group-stage-mya-uzb",
       "startsAt": 1790640000,
@@ -847,6 +785,35 @@
       "vodUrls": []
     },
     {
+      "id": "1790956800-mpl-mena-season-10-regular-season-xo-xp",
+      "startsAt": 1790956800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "XO",
+          "name": "Axe Okami",
+          "pageSlug": "Axe_Okami",
+          "logoUrl": "/teams/100px-Axe_Okami_darkmode-ac573673.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "XP",
+          "name": "XProjekt Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL MENA Season 10 - Week 4",
+      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
+      "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1790960400-mlbb-continental-championships-season-8-regular-season-rkz-ch",
       "startsAt": 1790960400,
       "status": "upcoming",
@@ -872,6 +839,64 @@
       "tournamentName": "MCC Season 8 - Week 6",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790964000-mpl-mena-season-10-regular-season-twis-tec",
+      "startsAt": 1790964000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TWIS",
+          "name": "Twisted Minds",
+          "pageSlug": "Twisted_Minds",
+          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TEC",
+          "name": "Titan Esports Club AR",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Titan_Esports_Club_AR_allmode-fe800b70.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL MENA Season 10 - Week 4",
+      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
+      "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790971200-mpl-mena-season-10-regular-season-gk-gs",
+      "startsAt": 1790971200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "GK",
+          "name": "Geekay Esports",
+          "pageSlug": "Geekay_Esports",
+          "logoUrl": "/teams/67px-Geekay_Esports_2024_allmode-55a1a185.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "GS",
+          "name": "GS Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/21px-GS_Team_darkmode-b2852177.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL MENA Season 10 - Week 4",
+      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
+      "regionSlug": "mena",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1340,6 +1365,35 @@
       "vodUrls": []
     },
     {
+      "id": "1791043200-mpl-mena-season-10-regular-season-gs-tec",
+      "startsAt": 1791043200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "GS",
+          "name": "GS Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/21px-GS_Team_darkmode-b2852177.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TEC",
+          "name": "Titan Esports Club AR",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Titan_Esports_Club_AR_allmode-fe800b70.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL MENA Season 10 - Week 4",
+      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
+      "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1791046800-mlbb-continental-championships-season-8-regular-season-arv-yndx",
       "startsAt": 1791046800,
       "status": "upcoming",
@@ -1394,64 +1448,6 @@
       "tournamentName": "MTC Season 8 - Week 4",
       "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791097200-mpl-indonesia-season-18-regular-season-ae-tlid",
-      "startsAt": 1791097200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AE",
-          "name": "Alter Ego",
-          "pageSlug": "Alter_Ego",
-          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TLID",
-          "name": "Team Liquid ID",
-          "pageSlug": "Team_Liquid_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 7",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791104400-mpl-philippines-season-18-regular-season-tlph-apbr",
-      "startsAt": 1791104400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TLPH",
-          "name": "Team Liquid PH",
-          "pageSlug": "Team_Liquid_PH",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "APBR",
-          "name": "AP.Bren",
-          "pageSlug": "AP.Bren",
-          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 7",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
       "streamUrls": [],
       "vodUrls": []
     },
