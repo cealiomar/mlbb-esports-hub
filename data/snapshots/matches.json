@@ -1,49 +1,18 @@
 {
-  "harvestedAt": 1790666908,
+  "harvestedAt": 1790671100,
   "data": [
     {
-      "id": "1790661600-asian-games-2026-group-stage-phi-jor",
-      "startsAt": 1790661600,
+      "id": "1790668500-asian-games-2026-group-stage-jor-kaz",
+      "startsAt": 1790668500,
       "status": "live",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "PHI",
-          "name": "Team Philippines",
-          "pageSlug": "Team_Philippines",
-          "logoUrl": "/teams/67px-Flag_of_Philippines_4_by_3-7ee26721.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
           "code": "JOR",
           "name": "Team Jordan",
           "pageSlug": "",
           "logoUrl": "/teams/67px-Flag_of_Jordan_4_by_3-6d789992.png",
           "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "2026 Asian Games - Group C",
-      "tournamentPageSlug": "Asian_Games/2026/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790668500-asian-games-2026-group-stage-jor-kaz",
-      "startsAt": 1790668500,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "JOR",
-          "name": "Team Jordan",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Jordan_4_by_3-6d789992.png",
-          "score": null,
           "isWinner": false
         },
         {
@@ -51,7 +20,7 @@
           "name": "Team Kazakhstan",
           "pageSlug": "",
           "logoUrl": "/teams/67px-Flag_of_Kazakhstan_4_by_3-6fe3bd6a.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -89,7 +58,9 @@
       "tournamentName": "2026 Asian Games - Group C",
       "tournamentPageSlug": "Asian_Games/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
+      ],
       "vodUrls": []
     },
     {
@@ -1451,6 +1422,64 @@
       ],
       "tournamentName": "MTC Season 8 - Week 4",
       "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791111600-mlbb-continental-championships-season-8-regular-season-omnx-ch",
+      "startsAt": 1791111600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OMNX",
+          "name": "Omnix",
+          "pageSlug": "",
+          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "CH",
+          "name": "CyberHero",
+          "pageSlug": "CyberHero",
+          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 6",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790661600-asian-games-2026-group-stage-phi-jor",
+      "startsAt": 1790661600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "PHI",
+          "name": "Team Philippines",
+          "pageSlug": "Team_Philippines",
+          "logoUrl": "/teams/67px-Flag_of_Philippines_4_by_3-7ee26721.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "JOR",
+          "name": "Team Jordan",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_Jordan_4_by_3-6d789992.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "2026 Asian Games - Group C",
+      "tournamentPageSlug": "Asian_Games/2026/Group_Stage",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -2893,35 +2922,6 @@
         "https://www.youtube.com/live/9z8IhtFmQnE?si=oduw7bhwJ5GqE6LH&t=13226",
         "https://www.youtube.com/live/9z8IhtFmQnE?si=6cp74VFNMiuG26x1&t=15378"
       ]
-    },
-    {
-      "id": "1790404200-mpl-philippines-season-18-regular-season-tnc-twph",
-      "startsAt": 1790404200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TNC",
-          "name": "TNC Pro Team",
-          "pageSlug": "TNC_Pro_Team",
-          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "TWPH",
-          "name": "Twisted Minds PH",
-          "pageSlug": "Twisted_Minds_PH",
-          "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 6",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
