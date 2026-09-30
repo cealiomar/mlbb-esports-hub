@@ -1,70 +1,6 @@
 {
-  "harvestedAt": 1790784227,
+  "harvestedAt": 1790796391,
   "data": [
-    {
-      "id": "1790769600-mlbb-super-league-thailand-season-2-regular-season-ea-ten",
-      "startsAt": 1790769600,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "eA",
-          "name": "EArena",
-          "pageSlug": "EArena",
-          "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TEN",
-          "name": "Tenacity",
-          "pageSlug": "",
-          "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790776800-mlbb-super-league-thailand-season-2-regular-season-bru-kog",
-      "startsAt": 1790776800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BRU",
-          "name": "Buriram United Esports",
-          "pageSlug": "Buriram_United_Esports",
-          "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "KOG",
-          "name": "King of Gamers Club",
-          "pageSlug": "King_of_Gamers_Club",
-          "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1790830800-asian-games-2026-playoffs-mya-idn",
       "startsAt": 1790830800,
@@ -1452,6 +1388,122 @@
         }
       ],
       "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791118800-mlbb-continental-championships-season-8-regular-season-arv-lvl",
+      "startsAt": 1791118800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ARV",
+          "name": "Aurevia Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "LVL",
+          "name": "Level UP",
+          "pageSlug": "",
+          "logoUrl": "/teams/42px-Level_Up_Esports_2021_allmode-7de16a3a.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 6",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791118800-mpl-indonesia-season-18-regular-season-onic-navi",
+      "startsAt": 1791118800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ONIC",
+          "name": "ONIC",
+          "pageSlug": "ONIC",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "NAVI",
+          "name": "Natus Vincere",
+          "pageSlug": "Natus_Vincere",
+          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 7",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790776800-mlbb-super-league-thailand-season-2-regular-season-bru-kog",
+      "startsAt": 1790776800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BRU",
+          "name": "Buriram United Esports",
+          "pageSlug": "Buriram_United_Esports",
+          "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "KOG",
+          "name": "King of Gamers Club",
+          "pageSlug": "King_of_Gamers_Club",
+          "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790769600-mlbb-super-league-thailand-season-2-regular-season-ea-ten",
+      "startsAt": 1790769600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "eA",
+          "name": "EArena",
+          "pageSlug": "EArena",
+          "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "TEN",
+          "name": "Tenacity",
+          "pageSlug": "",
+          "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
       "streamUrls": [],
@@ -2917,64 +2969,6 @@
       "tournamentName": "MTC Season 8 - Week 3",
       "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790427600-mlbb-continental-championships-season-8-regular-season-omnx-arv",
-      "startsAt": 1790427600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "OMNX",
-          "name": "Omnix",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "ARV",
-          "name": "Aurevia Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 5",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790427600-vietnam-mlbb-championship-2026-fall-group-stage-sgp-wx",
-      "startsAt": 1790427600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "SGP",
-          "name": "Saigon Phantom",
-          "pageSlug": "Saigon_Phantom",
-          "logoUrl": "/teams/55px-Saigon_Phantom_2020_allmode-24809f21.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "WX",
-          "name": "Winx (Vietnamese team)",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "VMC Fall 2026 - Week 3",
-      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
-      "regionSlug": "vietnam",
       "streamUrls": [],
       "vodUrls": []
     }

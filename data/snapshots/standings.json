@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1790776563,
+  "harvestedAt": 1790796723,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -934,16 +934,32 @@
             "pageSlug": "King_of_Gamers_Club",
             "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png"
           },
-          "matchWins": 3,
+          "matchWins": 4,
           "matchLosses": 1,
-          "gameWins": 7,
+          "gameWins": 9,
           "gameLosses": 2,
-          "gameDiff": 5,
-          "points": 3,
+          "gameDiff": 7,
+          "points": 4,
           "zone": "advance"
         },
         {
           "position": 3,
+          "team": {
+            "code": "TEN",
+            "name": "Tenacity",
+            "pageSlug": "",
+            "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png"
+          },
+          "matchWins": 4,
+          "matchLosses": 1,
+          "gameWins": 9,
+          "gameLosses": 4,
+          "gameDiff": 5,
+          "points": 4,
+          "zone": "playoff"
+        },
+        {
+          "position": 4,
           "team": {
             "code": "BT",
             "name": "Bacon Time",
@@ -954,22 +970,6 @@
           "matchLosses": 1,
           "gameWins": 6,
           "gameLosses": 3,
-          "gameDiff": 3,
-          "points": 3,
-          "zone": "playoff"
-        },
-        {
-          "position": 3,
-          "team": {
-            "code": "TEN",
-            "name": "Tenacity",
-            "pageSlug": "",
-            "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png"
-          },
-          "matchWins": 3,
-          "matchLosses": 1,
-          "gameWins": 7,
-          "gameLosses": 4,
           "gameDiff": 3,
           "points": 3,
           "zone": "playoff"
@@ -1009,22 +1009,6 @@
         {
           "position": 7,
           "team": {
-            "code": "BUE",
-            "name": "Buriram United Esports",
-            "pageSlug": "Buriram_United_Esports",
-            "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png"
-          },
-          "matchWins": 1,
-          "matchLosses": 2,
-          "gameWins": 2,
-          "gameLosses": 4,
-          "gameDiff": -2,
-          "points": 1,
-          "zone": "eliminated"
-        },
-        {
-          "position": 8,
-          "team": {
             "code": "SOL",
             "name": "SOLYX",
             "pageSlug": "",
@@ -1039,12 +1023,12 @@
           "zone": "eliminated"
         },
         {
-          "position": 9,
+          "position": 8,
           "team": {
-            "code": "EAR",
-            "name": "EArena",
-            "pageSlug": "EArena",
-            "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png"
+            "code": "BUE",
+            "name": "Buriram United Esports",
+            "pageSlug": "Buriram_United_Esports",
+            "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png"
           },
           "matchWins": 1,
           "matchLosses": 3,
@@ -1055,7 +1039,7 @@
           "zone": "eliminated"
         },
         {
-          "position": 9,
+          "position": 8,
           "team": {
             "code": "HE",
             "name": "Hydra Esports",
@@ -1067,6 +1051,22 @@
           "gameWins": 3,
           "gameLosses": 7,
           "gameDiff": -4,
+          "points": 1,
+          "zone": "eliminated"
+        },
+        {
+          "position": 10,
+          "team": {
+            "code": "EAR",
+            "name": "EArena",
+            "pageSlug": "EArena",
+            "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png"
+          },
+          "matchWins": 1,
+          "matchLosses": 4,
+          "gameWins": 2,
+          "gameLosses": 8,
+          "gameDiff": -6,
           "points": 1,
           "zone": "eliminated"
         }
