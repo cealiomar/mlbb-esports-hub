@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1790723477,
+  "harvestedAt": 1790728335,
   "data": [
     {
       "id": "1790726400-asian-games-2026-playoffs-mya-cam",
       "startsAt": 1790726400,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "Team Myanmar",
           "pageSlug": "Team_Myanmar",
           "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -20,14 +20,16 @@
           "name": "Team Cambodia",
           "pageSlug": "Team_Cambodia",
           "logoUrl": "/teams/67px-Flag_of_Cambodia_4_by_3-b3f52261.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
       "tournamentName": "2026 Asian Games",
       "tournamentPageSlug": "Asian_Games/2026/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
+      ],
       "vodUrls": []
     },
     {
@@ -56,7 +58,9 @@
       "tournamentName": "2026 Asian Games",
       "tournamentPageSlug": "Asian_Games/2026/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
+      ],
       "vodUrls": []
     },
     {
@@ -2784,7 +2788,11 @@
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=P99eGC9MAe0",
+        "https://www.youtube.com/watch?v=2yG--ua4GCk",
+        "https://www.youtube.com/watch?v=WIHZ55JU6aY"
+      ]
     },
     {
       "id": "1790420400-mlbb-continental-championships-season-8-regular-season-lvl-rkz",
@@ -2933,7 +2941,10 @@
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=mX9QFSmypCQ",
+        "https://www.youtube.com/watch?v=VVustk2XwKM"
+      ]
     }
   ]
 }
