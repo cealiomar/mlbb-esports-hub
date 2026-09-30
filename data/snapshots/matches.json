@@ -1,25 +1,25 @@
 {
-  "harvestedAt": 1790750914,
+  "harvestedAt": 1790758708,
   "data": [
     {
-      "id": "1790747100-asian-games-2026-playoffs-mgl-hkg",
-      "startsAt": 1790747100,
+      "id": "1790755200-asian-games-2026-playoffs-mya-mas",
+      "startsAt": 1790755200,
       "status": "live",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "MGL",
-          "name": "Mongolia",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Mongolia_4_by_3-f389cfa4.png",
+          "code": "MYA",
+          "name": "Team Myanmar",
+          "pageSlug": "Team_Myanmar",
+          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
           "score": 1,
           "isWinner": false
         },
         {
-          "code": "HKG",
-          "name": "Hong Kong",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Hong_Kong_4_by_3-76565b58.png",
+          "code": "MAS",
+          "name": "Team Malaysia",
+          "pageSlug": "Team_Malaysia",
+          "logoUrl": "/teams/67px-Flag_of_Malaysia_4_by_3-ee1c1457.png",
           "score": 0,
           "isWinner": false
         }
@@ -33,38 +33,7 @@
       "vodUrls": []
     },
     {
-      "id": "1790755200-asian-games-2026-playoffs-mya-mas",
-      "startsAt": 1790755200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "MYA",
-          "name": "Team Myanmar",
-          "pageSlug": "Team_Myanmar",
-          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "MAS",
-          "name": "Team Malaysia",
-          "pageSlug": "Team_Malaysia",
-          "logoUrl": "/teams/67px-Flag_of_Malaysia_4_by_3-ee1c1457.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "2026 Asian Games",
-      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790760900-asian-games-2026-playoffs-idn-tbd",
+      "id": "1790760900-asian-games-2026-playoffs-idn-mgl",
       "startsAt": 1790760900,
       "status": "upcoming",
       "bestOf": 3,
@@ -78,10 +47,10 @@
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "MGL",
+          "name": "Mongolia",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/67px-Flag_of_Mongolia_4_by_3-f389cfa4.png",
           "score": null,
           "isWinner": false
         }
@@ -89,7 +58,9 @@
       "tournamentName": "2026 Asian Games",
       "tournamentPageSlug": "Asian_Games/2026/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
+      ],
       "vodUrls": []
     },
     {
@@ -118,7 +89,10 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
+      ],
       "vodUrls": []
     },
     {
@@ -1451,6 +1425,64 @@
       ],
       "tournamentName": "MTC Season 8 - Week 4",
       "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791111600-mlbb-continental-championships-season-8-regular-season-omnx-ch",
+      "startsAt": 1791111600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OMNX",
+          "name": "Omnix",
+          "pageSlug": "",
+          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "CH",
+          "name": "CyberHero",
+          "pageSlug": "CyberHero",
+          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 6",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790747100-asian-games-2026-playoffs-mgl-hkg",
+      "startsAt": 1790747100,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "MGL",
+          "name": "Mongolia",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_Mongolia_4_by_3-f389cfa4.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "HKG",
+          "name": "Hong Kong",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_Hong_Kong_4_by_3-76565b58.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "2026 Asian Games",
+      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -2930,39 +2962,6 @@
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1790420400-mpl-cambodia-season-11-regular-season-tnr-gxl",
-      "startsAt": 1790420400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TNR",
-          "name": "TNR Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-TNR_Esports_allmode-012f8490.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "GXL",
-          "name": "Galaxy Legends",
-          "pageSlug": "Galaxy_Legends",
-          "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/9z8IhtFmQnE?si=m0dmsNPOthHGHTvy&t=20820",
-        "https://www.youtube.com/live/9z8IhtFmQnE?si=pjZY1bayFvR_W_ZC&t=23193",
-        "https://www.youtube.com/live/9z8IhtFmQnE?si=XFTx4zkxOXv1RG7l&t=25345"
-      ]
     }
   ]
 }
