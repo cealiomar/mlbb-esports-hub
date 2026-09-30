@@ -1,37 +1,6 @@
 {
-  "harvestedAt": 1790728335,
+  "harvestedAt": 1790734816,
   "data": [
-    {
-      "id": "1790726400-asian-games-2026-playoffs-mya-cam",
-      "startsAt": 1790726400,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "MYA",
-          "name": "Team Myanmar",
-          "pageSlug": "Team_Myanmar",
-          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "CAM",
-          "name": "Team Cambodia",
-          "pageSlug": "Team_Cambodia",
-          "logoUrl": "/teams/67px-Flag_of_Cambodia_4_by_3-b3f52261.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "2026 Asian Games",
-      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1790733300-asian-games-2026-playoffs-mas-jor",
       "startsAt": 1790733300,
@@ -122,16 +91,16 @@
       "vodUrls": []
     },
     {
-      "id": "1790755200-asian-games-2026-playoffs-tbd-tbd",
+      "id": "1790755200-asian-games-2026-playoffs-mya-tbd",
       "startsAt": 1790755200,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "MYA",
+          "name": "Team Myanmar",
+          "pageSlug": "Team_Myanmar",
+          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
           "score": null,
           "isWinner": false
         },
@@ -1456,6 +1425,64 @@
       "vodUrls": []
     },
     {
+      "id": "1791108000-mpl-indonesia-season-18-regular-season-rrq-evos",
+      "startsAt": 1791108000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RRQ",
+          "name": "RRQ Hoshi",
+          "pageSlug": "RRQ_Hoshi",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "EVOS",
+          "name": "EVOS",
+          "pageSlug": "EVOS",
+          "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 7",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790726400-asian-games-2026-playoffs-mya-cam",
+      "startsAt": 1790726400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "MYA",
+          "name": "Team Myanmar",
+          "pageSlug": "Team_Myanmar",
+          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "CAM",
+          "name": "Team Cambodia",
+          "pageSlug": "Team_Cambodia",
+          "logoUrl": "/teams/67px-Flag_of_Cambodia_4_by_3-b3f52261.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "2026 Asian Games",
+      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1790675400-asian-games-2026-group-stage-phi-kaz",
       "startsAt": 1790675400,
       "status": "completed",
@@ -2382,7 +2409,10 @@
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/wGo26hwPW_w?t=16970",
+        "https://youtu.be/wGo26hwPW_w?t=19020"
+      ]
     },
     {
       "id": "1790460000-mct-2026-americas-split-2-swiss-stage-stmn-u2",
@@ -2411,7 +2441,12 @@
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/wGo26hwPW_w?t=7796",
+        "https://youtu.be/wGo26hwPW_w?t=9997",
+        "https://youtu.be/wGo26hwPW_w?t=12389",
+        "https://youtu.be/wGo26hwPW_w?t=14188"
+      ]
     },
     {
       "id": "1790452800-mct-2026-americas-split-2-swiss-stage-a7-octa",
@@ -2440,7 +2475,10 @@
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/wGo26hwPW_w?t=3266",
+        "https://youtu.be/wGo26hwPW_w?t=5067"
+      ]
     },
     {
       "id": "1790452800-mpl-mena-season-10-regular-season-xp-tec",
@@ -2913,38 +2951,6 @@
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1790413200-mpl-philippines-season-18-regular-season-apbr-rora",
-      "startsAt": 1790413200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "APBR",
-          "name": "AP.Bren",
-          "pageSlug": "AP.Bren",
-          "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "RORA",
-          "name": "Aurora Gaming PH",
-          "pageSlug": "Aurora_Gaming_PH",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 6",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=mX9QFSmypCQ",
-        "https://www.youtube.com/watch?v=VVustk2XwKM"
-      ]
     }
   ]
 }
