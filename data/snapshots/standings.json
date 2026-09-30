@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1790751246,
+  "harvestedAt": 1790776563,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -993,6 +993,22 @@
         {
           "position": 6,
           "team": {
+            "code": "FS",
+            "name": "FULL SENSE",
+            "pageSlug": "FULL_SENSE",
+            "logoUrl": "/teams/59px-FULL_SENSE_2025_allmode-9db84f90.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 4,
+          "gameWins": 6,
+          "gameLosses": 10,
+          "gameDiff": -4,
+          "points": 2,
+          "zone": "playoff"
+        },
+        {
+          "position": 7,
+          "team": {
             "code": "BUE",
             "name": "Buriram United Esports",
             "pageSlug": "Buriram_United_Esports",
@@ -1004,10 +1020,10 @@
           "gameLosses": 4,
           "gameDiff": -2,
           "points": 1,
-          "zone": "playoff"
+          "zone": "eliminated"
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "code": "SOL",
             "name": "SOLYX",
@@ -1015,15 +1031,15 @@
             "logoUrl": "/teams/100px-Solyx_allmode-ff12a1c2.png"
           },
           "matchWins": 1,
-          "matchLosses": 3,
-          "gameWins": 3,
-          "gameLosses": 6,
-          "gameDiff": -3,
+          "matchLosses": 4,
+          "gameWins": 4,
+          "gameLosses": 8,
+          "gameDiff": -4,
           "points": 1,
           "zone": "eliminated"
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "code": "EAR",
             "name": "EArena",
@@ -1039,7 +1055,7 @@
           "zone": "eliminated"
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "code": "HE",
             "name": "Hydra Esports",
@@ -1051,22 +1067,6 @@
           "gameWins": 3,
           "gameLosses": 7,
           "gameDiff": -4,
-          "points": 1,
-          "zone": "eliminated"
-        },
-        {
-          "position": 10,
-          "team": {
-            "code": "FS",
-            "name": "FULL SENSE",
-            "pageSlug": "FULL_SENSE",
-            "logoUrl": "/teams/59px-FULL_SENSE_2025_allmode-9db84f90.png"
-          },
-          "matchWins": 1,
-          "matchLosses": 4,
-          "gameWins": 4,
-          "gameLosses": 9,
-          "gameDiff": -5,
           "points": 1,
           "zone": "eliminated"
         }
