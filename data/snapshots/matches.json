@@ -1,26 +1,26 @@
 {
-  "harvestedAt": 1790734816,
+  "harvestedAt": 1790750914,
   "data": [
     {
-      "id": "1790733300-asian-games-2026-playoffs-mas-jor",
-      "startsAt": 1790733300,
-      "status": "upcoming",
+      "id": "1790747100-asian-games-2026-playoffs-mgl-hkg",
+      "startsAt": 1790747100,
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "MAS",
-          "name": "Team Malaysia",
-          "pageSlug": "Team_Malaysia",
-          "logoUrl": "/teams/67px-Flag_of_Malaysia_4_by_3-ee1c1457.png",
-          "score": null,
+          "code": "MGL",
+          "name": "Mongolia",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_Mongolia_4_by_3-f389cfa4.png",
+          "score": 1,
           "isWinner": false
         },
         {
-          "code": "JOR",
-          "name": "Team Jordan",
+          "code": "HKG",
+          "name": "Hong Kong",
           "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Jordan_4_by_3-6d789992.png",
-          "score": null,
+          "logoUrl": "/teams/67px-Flag_of_Hong_Kong_4_by_3-76565b58.png",
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -33,65 +33,7 @@
       "vodUrls": []
     },
     {
-      "id": "1790740200-asian-games-2026-playoffs-phi-idn",
-      "startsAt": 1790740200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "PHI",
-          "name": "Team Philippines",
-          "pageSlug": "Team_Philippines",
-          "logoUrl": "/teams/67px-Flag_of_Philippines_4_by_3-7ee26721.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "IDN",
-          "name": "Team Indonesia",
-          "pageSlug": "Team_Indonesia",
-          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "2026 Asian Games",
-      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790747100-asian-games-2026-playoffs-mgl-hkg",
-      "startsAt": 1790747100,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "MGL",
-          "name": "Mongolia",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Mongolia_4_by_3-f389cfa4.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "HKG",
-          "name": "Hong Kong",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Hong_Kong_4_by_3-76565b58.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "2026 Asian Games",
-      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790755200-asian-games-2026-playoffs-mya-tbd",
+      "id": "1790755200-asian-games-2026-playoffs-mya-mas",
       "startsAt": 1790755200,
       "status": "upcoming",
       "bestOf": 3,
@@ -105,10 +47,10 @@
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "MAS",
+          "name": "Team Malaysia",
+          "pageSlug": "Team_Malaysia",
+          "logoUrl": "/teams/67px-Flag_of_Malaysia_4_by_3-ee1c1457.png",
           "score": null,
           "isWinner": false
         }
@@ -116,20 +58,22 @@
       "tournamentName": "2026 Asian Games",
       "tournamentPageSlug": "Asian_Games/2026/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
+      ],
       "vodUrls": []
     },
     {
-      "id": "1790760900-asian-games-2026-playoffs-tbd-tbd",
+      "id": "1790760900-asian-games-2026-playoffs-idn-tbd",
       "startsAt": 1790760900,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "IDN",
+          "name": "Team Indonesia",
+          "pageSlug": "Team_Indonesia",
+          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
           "score": null,
           "isWinner": false
         },
@@ -1454,6 +1398,122 @@
       "vodUrls": []
     },
     {
+      "id": "1791108000-mlbb-super-league-thailand-season-2-regular-season-bac-hd",
+      "startsAt": 1791108000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BAC",
+          "name": "Bacon Time",
+          "pageSlug": "Bacon_Time",
+          "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "HD",
+          "name": "Hydra Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791108000-mtc-turkiye-championship-season-8-regular-season-dia-ida",
+      "startsAt": 1791108000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DIA",
+          "name": "DIA Ozarox",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-DIA_Esports_darkmode-ce3313a9.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "IDA",
+          "name": "IDA Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/95px-IDA_Esports_2025_allmode-31209f50.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 4",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790740200-asian-games-2026-playoffs-phi-idn",
+      "startsAt": 1790740200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "PHI",
+          "name": "Team Philippines",
+          "pageSlug": "Team_Philippines",
+          "logoUrl": "/teams/67px-Flag_of_Philippines_4_by_3-7ee26721.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "IDN",
+          "name": "Team Indonesia",
+          "pageSlug": "Team_Indonesia",
+          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "2026 Asian Games",
+      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790733300-asian-games-2026-playoffs-mas-jor",
+      "startsAt": 1790733300,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "MAS",
+          "name": "Team Malaysia",
+          "pageSlug": "Team_Malaysia",
+          "logoUrl": "/teams/67px-Flag_of_Malaysia_4_by_3-ee1c1457.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "JOR",
+          "name": "Team Jordan",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_Jordan_4_by_3-6d789992.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "2026 Asian Games",
+      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1790726400-asian-games-2026-playoffs-mya-cam",
       "startsAt": 1790726400,
       "status": "completed",
@@ -1819,7 +1879,11 @@
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/tWI-_CaNCWE?t=15626",
+        "https://youtu.be/tWI-_CaNCWE?t=17130",
+        "https://youtu.be/tWI-_CaNCWE?t=18704"
+      ]
     },
     {
       "id": "1790539200-mct-2026-americas-split-2-swiss-stage-tec-drbr",
@@ -1848,7 +1912,13 @@
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/tWI-_CaNCWE?t=3033",
+        "https://youtu.be/tWI-_CaNCWE?t=6208",
+        "https://youtu.be/tWI-_CaNCWE?t=8323",
+        "https://youtu.be/tWI-_CaNCWE?t=10119",
+        "https://youtu.be/tWI-_CaNCWE?t=12182"
+      ]
     },
     {
       "id": "1790529600-mtc-turkiye-championship-season-8-regular-season-dp-aur",
@@ -2893,64 +2963,6 @@
         "https://www.youtube.com/live/9z8IhtFmQnE?si=pjZY1bayFvR_W_ZC&t=23193",
         "https://www.youtube.com/live/9z8IhtFmQnE?si=XFTx4zkxOXv1RG7l&t=25345"
       ]
-    },
-    {
-      "id": "1790420400-vietnam-mlbb-championship-2026-fall-group-stage-wx-sre",
-      "startsAt": 1790420400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "WX",
-          "name": "Winx (Vietnamese team)",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "SRE",
-          "name": "Sweet Revenge",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Sweet_Revenge_full_darkmode-c32274c4.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "VMC Fall 2026 - Week 3",
-      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
-      "regionSlug": "vietnam",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790416800-mtc-turkiye-championship-season-8-regular-season-fut-bgt",
-      "startsAt": 1790416800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FUT",
-          "name": "FUT Esports",
-          "pageSlug": "FUT_Esports",
-          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "BGT",
-          "name": "Boostgate Esports",
-          "pageSlug": "Boostgate_Esports",
-          "logoUrl": "/teams/39px-Boostgate_Esports_allmode-8bcbcf5b.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 3",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
