@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1790861539,
+  "harvestedAt": 1790883696,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -929,31 +929,31 @@
         {
           "position": 2,
           "team": {
-            "code": "KOG",
-            "name": "King of Gamers Club",
-            "pageSlug": "King_of_Gamers_Club",
-            "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png"
-          },
-          "matchWins": 4,
-          "matchLosses": 1,
-          "gameWins": 9,
-          "gameLosses": 2,
-          "gameDiff": 7,
-          "points": 4,
-          "zone": "advance"
-        },
-        {
-          "position": 3,
-          "team": {
             "code": "TEN",
             "name": "Tenacity",
             "pageSlug": "",
             "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png"
           },
+          "matchWins": 5,
+          "matchLosses": 1,
+          "gameWins": 11,
+          "gameLosses": 4,
+          "gameDiff": 7,
+          "points": 5,
+          "zone": "advance"
+        },
+        {
+          "position": 3,
+          "team": {
+            "code": "BT",
+            "name": "Bacon Time",
+            "pageSlug": "Bacon_Time",
+            "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png"
+          },
           "matchWins": 4,
           "matchLosses": 1,
-          "gameWins": 9,
-          "gameLosses": 4,
+          "gameWins": 8,
+          "gameLosses": 3,
           "gameDiff": 5,
           "points": 4,
           "zone": "playoff"
@@ -961,17 +961,17 @@
         {
           "position": 4,
           "team": {
-            "code": "BT",
-            "name": "Bacon Time",
-            "pageSlug": "Bacon_Time",
-            "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png"
+            "code": "KOG",
+            "name": "King of Gamers Club",
+            "pageSlug": "King_of_Gamers_Club",
+            "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png"
           },
-          "matchWins": 3,
-          "matchLosses": 1,
-          "gameWins": 6,
-          "gameLosses": 3,
-          "gameDiff": 3,
-          "points": 3,
+          "matchWins": 4,
+          "matchLosses": 2,
+          "gameWins": 9,
+          "gameLosses": 4,
+          "gameDiff": 5,
+          "points": 4,
           "zone": "playoff"
         },
         {
@@ -993,6 +993,22 @@
         {
           "position": 6,
           "team": {
+            "code": "EAR",
+            "name": "EArena",
+            "pageSlug": "EArena",
+            "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png"
+          },
+          "matchWins": 2,
+          "matchLosses": 4,
+          "gameWins": 4,
+          "gameLosses": 8,
+          "gameDiff": -4,
+          "points": 2,
+          "zone": "playoff"
+        },
+        {
+          "position": 7,
+          "team": {
             "code": "FS",
             "name": "FULL SENSE",
             "pageSlug": "FULL_SENSE",
@@ -1004,10 +1020,10 @@
           "gameLosses": 10,
           "gameDiff": -4,
           "points": 2,
-          "zone": "playoff"
+          "zone": "eliminated"
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "code": "SOL",
             "name": "SOLYX",
@@ -1023,7 +1039,7 @@
           "zone": "eliminated"
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "code": "BUE",
             "name": "Buriram United Esports",
@@ -1031,15 +1047,15 @@
             "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png"
           },
           "matchWins": 1,
-          "matchLosses": 3,
+          "matchLosses": 4,
           "gameWins": 2,
-          "gameLosses": 6,
-          "gameDiff": -4,
+          "gameLosses": 8,
+          "gameDiff": -6,
           "points": 1,
           "zone": "eliminated"
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "code": "HE",
             "name": "Hydra Esports",
@@ -1047,25 +1063,9 @@
             "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png"
           },
           "matchWins": 1,
-          "matchLosses": 3,
-          "gameWins": 3,
-          "gameLosses": 7,
-          "gameDiff": -4,
-          "points": 1,
-          "zone": "eliminated"
-        },
-        {
-          "position": 10,
-          "team": {
-            "code": "EAR",
-            "name": "EArena",
-            "pageSlug": "EArena",
-            "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png"
-          },
-          "matchWins": 1,
           "matchLosses": 4,
-          "gameWins": 2,
-          "gameLosses": 8,
+          "gameWins": 3,
+          "gameLosses": 9,
           "gameDiff": -6,
           "points": 1,
           "zone": "eliminated"
