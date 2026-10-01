@@ -1,41 +1,10 @@
 {
-  "harvestedAt": 1790836949,
+  "harvestedAt": 1790861207,
   "data": [
-    {
-      "id": "1790830800-asian-games-2026-playoffs-mya-idn",
-      "startsAt": 1790830800,
-      "status": "live",
-      "bestOf": 7,
-      "opponents": [
-        {
-          "code": "MYA",
-          "name": "Team Myanmar",
-          "pageSlug": "Team_Myanmar",
-          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
-          "score": 2,
-          "isWinner": false
-        },
-        {
-          "code": "IDN",
-          "name": "Team Indonesia",
-          "pageSlug": "Team_Indonesia",
-          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "2026 Asian Games",
-      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1790848800-mlbb-super-league-thailand-season-2-regular-season-ea-hd",
       "startsAt": 1790848800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -43,7 +12,7 @@
           "name": "EArena",
           "pageSlug": "EArena",
           "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -51,14 +20,17 @@
           "name": "Hydra Esports",
           "pageSlug": "",
           "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
       "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
+      ],
       "vodUrls": []
     },
     {
@@ -87,7 +59,10 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
+      ],
       "vodUrls": []
     },
     {
@@ -116,7 +91,10 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
+      ],
       "vodUrls": []
     },
     {
@@ -497,6 +475,35 @@
       "vodUrls": []
     },
     {
+      "id": "1790971200-mct-2026-americas-split-2-swiss-stage-e7-octa",
+      "startsAt": 1790971200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "E7",
+          "name": "Entity7",
+          "pageSlug": "Entity7",
+          "logoUrl": "/teams/33px-Entity7_2025_darkmode-1881d4b0.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OCTA",
+          "name": "Octa Gaming",
+          "pageSlug": "",
+          "logoUrl": "/teams/42px-Octa_Gaming_2026_darkmode-fe113849.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 4",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1790971200-mpl-mena-season-10-regular-season-gk-gs",
       "startsAt": 1790971200,
       "status": "upcoming",
@@ -522,6 +529,64 @@
       "tournamentName": "MPL MENA Season 10 - Week 4",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790980200-mct-2026-americas-split-2-swiss-stage-a7-drbr",
+      "startsAt": 1790980200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "A7",
+          "name": "Alpha7 Esports",
+          "pageSlug": "Alpha7_Esports",
+          "logoUrl": "/teams/73px-A7_eSports_darkmode-11af375c.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "DRBR",
+          "name": "Dragon Empire BR",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 4",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790989200-mct-2026-americas-split-2-swiss-stage-b2g-stmn",
+      "startsAt": 1790989200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "B2G",
+          "name": "Deportivo B2G",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-Deportivo_B2G_allmode-05f09465.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "STMN",
+          "name": "STMN Esports",
+          "pageSlug": "STMN_Esports",
+          "logoUrl": "/teams/40px-STMN_Esports_allmode-dca9930e.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 4",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1106,6 +1171,35 @@
       "vodUrls": []
     },
     {
+      "id": "1791057600-mct-2026-americas-split-2-swiss-stage-dmx-infi",
+      "startsAt": 1791057600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "DMX",
+          "name": "DreamMax e-Sports",
+          "pageSlug": "DreamMax_e-Sports",
+          "logoUrl": "/teams/54px-DreamMax_e-Sports_allmode-84401a53.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "INFI",
+          "name": "Infinity",
+          "pageSlug": "Infinity",
+          "logoUrl": "/teams/63px-Infinity_2021_darkmode-c807e562.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 4",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1791057600-mpl-mena-season-10-regular-season-wod-xp",
       "startsAt": 1791057600,
       "status": "upcoming",
@@ -1131,6 +1225,64 @@
       "tournamentName": "MPL MENA Season 10 - Week 4",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791066600-mct-2026-americas-split-2-swiss-stage-lyon-tuna",
+      "startsAt": 1791066600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "LYON",
+          "name": "LYON",
+          "pageSlug": "LYON",
+          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TUNA",
+          "name": "Nopa Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/51px-Nopa_Esports_allmode-0e617867.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 4",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791075600-mct-2026-americas-split-2-swiss-stage-nh-rto",
+      "startsAt": 1791075600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "NH",
+          "name": "The Night Horde",
+          "pageSlug": "The_Night_Horde",
+          "logoUrl": "/teams/52px-The_Night_Horde_darkmode-f2658762.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RTO",
+          "name": "Retaliation",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 4",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1309,149 +1461,38 @@
       "vodUrls": []
     },
     {
-      "id": "1791113400-mpl-philippines-season-18-regular-season-flcp-omg",
-      "startsAt": 1791113400,
-      "status": "upcoming",
-      "bestOf": 3,
+      "id": "1790830800-asian-games-2026-playoffs-mya-idn",
+      "startsAt": 1790830800,
+      "status": "completed",
+      "bestOf": 7,
       "opponents": [
         {
-          "code": "FLCP",
-          "name": "Team Falcons PH",
-          "pageSlug": "Team_Falcons_PH",
-          "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png",
-          "score": null,
-          "isWinner": false
+          "code": "MYA",
+          "name": "Team Myanmar",
+          "pageSlug": "Team_Myanmar",
+          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
+          "score": 4,
+          "isWinner": true
         },
         {
-          "code": "OMG",
-          "name": "Omega Esports",
-          "pageSlug": "Omega_Esports",
-          "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png",
-          "score": null,
+          "code": "IDN",
+          "name": "Team Indonesia",
+          "pageSlug": "Team_Indonesia",
+          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
+          "score": 0,
           "isWinner": false
         }
       ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 7",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791114600-mtc-turkiye-championship-season-8-regular-season-bgt-pcf",
-      "startsAt": 1791114600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BGT",
-          "name": "Boostgate Esports",
-          "pageSlug": "Boostgate_Esports",
-          "logoUrl": "/teams/39px-Boostgate_Esports_allmode-8bcbcf5b.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "PCF",
-          "name": "PCIFIC Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/74px-PCIFIC_Esports_2025_allmode-f8103617.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 4",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "tournamentName": "2026 Asian Games",
+      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791115200-mlbb-super-league-thailand-season-2-regular-season-ea-leon",
-      "startsAt": 1791115200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "eA",
-          "name": "EArena",
-          "pageSlug": "EArena",
-          "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "LEON",
-          "name": "Leon Esports",
-          "pageSlug": "Leon_Esports",
-          "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791118800-mlbb-continental-championships-season-8-regular-season-arv-lvl",
-      "startsAt": 1791118800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ARV",
-          "name": "Aurevia Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "LVL",
-          "name": "Level UP",
-          "pageSlug": "",
-          "logoUrl": "/teams/42px-Level_Up_Esports_2021_allmode-7de16a3a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 6",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791118800-mpl-indonesia-season-18-regular-season-onic-navi",
-      "startsAt": 1791118800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ONIC",
-          "name": "ONIC",
-          "pageSlug": "ONIC",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "NAVI",
-          "name": "Natus Vincere",
-          "pageSlug": "Natus_Vincere",
-          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 7",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/live/odmibPXAaBg?t=2801",
+        "https://www.youtube.com/live/odmibPXAaBg?t=4698",
+        "https://www.youtube.com/live/odmibPXAaBg?t=6826",
+        "https://www.youtube.com/live/odmibPXAaBg?t=8585"
+      ]
     },
     {
       "id": "1790776800-mlbb-super-league-thailand-season-2-regular-season-bru-kog",
@@ -2941,35 +2982,6 @@
       ],
       "tournamentName": "MCC Season 8 - Week 5",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790430000-mtc-turkiye-championship-season-8-regular-season-pcf-dia",
-      "startsAt": 1790430000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "PCF",
-          "name": "PCIFIC Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/74px-PCIFIC_Esports_2025_allmode-f8103617.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "DIA",
-          "name": "DIA Ozarox",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-DIA_Esports_darkmode-ce3313a9.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 3",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
