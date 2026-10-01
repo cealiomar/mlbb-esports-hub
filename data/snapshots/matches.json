@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1790815698,
+  "harvestedAt": 1790836949,
   "data": [
     {
       "id": "1790830800-asian-games-2026-playoffs-mya-idn",
       "startsAt": 1790830800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 7,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "Team Myanmar",
           "pageSlug": "Team_Myanmar",
           "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
-          "score": null,
+          "score": 2,
           "isWinner": false
         },
         {
@@ -20,14 +20,16 @@
           "name": "Team Indonesia",
           "pageSlug": "Team_Indonesia",
           "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
       "tournamentName": "2026 Asian Games",
       "tournamentPageSlug": "Asian_Games/2026/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_eSports"
+      ],
       "vodUrls": []
     },
     {
