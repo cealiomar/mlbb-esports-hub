@@ -1,227 +1,6 @@
 {
-  "harvestedAt": 1790945121,
+  "harvestedAt": 1790956649,
   "data": [
-    {
-      "id": "1790935200-mlbb-super-league-thailand-season-2-regular-season-leon-fs",
-      "startsAt": 1790935200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "LEON",
-          "name": "Leon Esports",
-          "pageSlug": "Leon_Esports",
-          "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "FS",
-          "name": "FULL SENSE",
-          "pageSlug": "FULL_SENSE",
-          "logoUrl": "/teams/59px-FULL_SENSE_2025_allmode-9db84f90.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790938800-mpl-indonesia-season-18-regular-season-dewa-tlid",
-      "startsAt": 1790938800,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DEWA",
-          "name": "Dewa United Esports",
-          "pageSlug": "Dewa_United_Esports",
-          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "TLID",
-          "name": "Team Liquid ID",
-          "pageSlug": "Team_Liquid_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 7",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790940600-mpl-philippines-season-18-regular-season-rora-tnc",
-      "startsAt": 1790940600,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RORA",
-          "name": "Aurora Gaming PH",
-          "pageSlug": "Aurora_Gaming_PH",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TNC",
-          "name": "TNC Pro Team",
-          "pageSlug": "TNC_Pro_Team",
-          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - RS: Week 7",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
-      "regionSlug": "philippines",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790942400-mlbb-super-league-thailand-season-2-regular-season-kog-hd",
-      "startsAt": 1790942400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KOG",
-          "name": "King of Gamers Club",
-          "pageSlug": "King_of_Gamers_Club",
-          "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "HD",
-          "name": "Hydra Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790946000-mlbb-continental-championships-season-8-regular-season-yndx-rune",
-      "startsAt": 1790946000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RUNE",
-          "name": "Rune Eaters",
-          "pageSlug": "",
-          "logoUrl": "/teams/39px-Rune_Eaters_Esports_darkmode-9c1ea13a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 6",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/twitch/MLBB_CIS",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EECA_Esports"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790949600-mlbb-super-league-thailand-season-2-regular-season-vlth-slx",
-      "startsAt": 1790949600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "VLTH",
-          "name": "Valee Thai Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-Valee_Thai_Esports_allmode-e71a3ed4.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "SLX",
-          "name": "SOLYX",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Solyx_allmode-ff12a1c2.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_TH",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Thailand"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790953200-mlbb-continental-championships-season-8-regular-season-arv-ts",
-      "startsAt": 1790953200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ARV",
-          "name": "Aurevia Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TS",
-          "name": "Team Spirit",
-          "pageSlug": "Team_Spirit",
-          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 6",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1790956800-mpl-mena-season-10-regular-season-xo-xp",
       "startsAt": 1790956800,
@@ -248,7 +27,9 @@
       "tournamentName": "MPL MENA Season 10 - Week 4",
       "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
       "regionSlug": "mena",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Arabia"
+      ],
       "vodUrls": []
     },
     {
@@ -277,7 +58,10 @@
       "tournamentName": "MCC Season 8 - Week 6",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/twitch/MLBB_CIS",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EECA_Esports"
+      ],
       "vodUrls": []
     },
     {
@@ -1470,6 +1254,354 @@
       "vodUrls": []
     },
     {
+      "id": "1791122400-mlbb-super-league-thailand-season-2-regular-season-bru-slx",
+      "startsAt": 1791122400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BRU",
+          "name": "Buriram United Esports",
+          "pageSlug": "Buriram_United_Esports",
+          "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SLX",
+          "name": "SOLYX",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Solyx_allmode-ff12a1c2.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791126000-mlbb-continental-championships-season-8-regular-season-rune-rkz",
+      "startsAt": 1791126000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RUNE",
+          "name": "Rune Eaters",
+          "pageSlug": "",
+          "logoUrl": "/teams/39px-Rune_Eaters_Esports_darkmode-9c1ea13a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RKZ",
+          "name": "RAKUZAN",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 6",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791127800-mtc-turkiye-championship-season-8-regular-season-ida-aur",
+      "startsAt": 1791127800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "IDA",
+          "name": "IDA Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/95px-IDA_Esports_2025_allmode-31209f50.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "AUR",
+          "name": "Aurora Gaming",
+          "pageSlug": "Aurora_Gaming",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 4",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791133200-mlbb-continental-championships-season-8-regular-season-yndx-ts",
+      "startsAt": 1791133200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TS",
+          "name": "Team Spirit",
+          "pageSlug": "Team_Spirit",
+          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 6",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791134400-mtc-turkiye-championship-season-8-regular-season-bw-bgt",
+      "startsAt": 1791134400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BW",
+          "name": "Bushido Wildcats",
+          "pageSlug": "Bushido_Wildcats",
+          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "BGT",
+          "name": "Boostgate Esports",
+          "pageSlug": "Boostgate_Esports",
+          "logoUrl": "/teams/39px-Boostgate_Esports_allmode-8bcbcf5b.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 4",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791266400-mlbb-academy-league-season-6-regular-season-phase-2-vlad-arc",
+      "startsAt": 1791266400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "VLAD",
+          "name": "VLAD Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/45px-VLAD_Esports_2026_allmode-aa0558d8.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "ARC",
+          "name": "Borneo Arcanis Fusion Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Borneo_Arcanis_Fusion_Esports_darkmode-5299d876.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 6",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791273600-mlbb-academy-league-season-6-regular-season-phase-2-pix-srga",
+      "startsAt": 1791273600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "PIX",
+          "name": "Pixel Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/43px-Pixel_Esports_darkmode-cc4eb10e.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "SRGA",
+          "name": "Selangor Red Giants Academy",
+          "pageSlug": "",
+          "logoUrl": "/teams/54px-Selangor_Red_Giants_2024_allmode-8084d0ea.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL S6 RS - Week 6",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790953200-mlbb-continental-championships-season-8-regular-season-arv-ts",
+      "startsAt": 1790953200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ARV",
+          "name": "Aurevia Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "TS",
+          "name": "Team Spirit",
+          "pageSlug": "Team_Spirit",
+          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 6",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790949600-mlbb-super-league-thailand-season-2-regular-season-vlth-slx",
+      "startsAt": 1790949600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "VLTH",
+          "name": "Valee Thai Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-Valee_Thai_Esports_allmode-e71a3ed4.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "SLX",
+          "name": "SOLYX",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Solyx_allmode-ff12a1c2.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790946000-mlbb-continental-championships-season-8-regular-season-yndx-rune",
+      "startsAt": 1790946000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "RUNE",
+          "name": "Rune Eaters",
+          "pageSlug": "",
+          "logoUrl": "/teams/39px-Rune_Eaters_Esports_darkmode-9c1ea13a.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 6",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790942400-mlbb-super-league-thailand-season-2-regular-season-kog-hd",
+      "startsAt": 1790942400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KOG",
+          "name": "King of Gamers Club",
+          "pageSlug": "King_of_Gamers_Club",
+          "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "HD",
+          "name": "Hydra Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790940600-mpl-philippines-season-18-regular-season-rora-tnc",
+      "startsAt": 1790940600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RORA",
+          "name": "Aurora Gaming PH",
+          "pageSlug": "Aurora_Gaming_PH",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "TNC",
+          "name": "TNC Pro Team",
+          "pageSlug": "TNC_Pro_Team",
+          "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - RS: Week 7",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1790938800-mlbb-continental-championships-season-8-regular-season-omnx-lvl",
       "startsAt": 1790938800,
       "status": "completed",
@@ -1495,6 +1627,68 @@
       "tournamentName": "MCC Season 8 - Week 6",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1790938800-mpl-indonesia-season-18-regular-season-dewa-tlid",
+      "startsAt": 1790938800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DEWA",
+          "name": "Dewa United Esports",
+          "pageSlug": "Dewa_United_Esports",
+          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "TLID",
+          "name": "Team Liquid ID",
+          "pageSlug": "Team_Liquid_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 7",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=O9ExcrV029Q",
+        "https://www.youtube.com/watch?v=4cDA2FHYS1I",
+        "https://www.youtube.com/watch?v=MCgSHkwhVps"
+      ]
+    },
+    {
+      "id": "1790935200-mlbb-super-league-thailand-season-2-regular-season-leon-fs",
+      "startsAt": 1790935200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "LEON",
+          "name": "Leon Esports",
+          "pageSlug": "Leon_Esports",
+          "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "FS",
+          "name": "FULL SENSE",
+          "pageSlug": "FULL_SENSE",
+          "logoUrl": "/teams/59px-FULL_SENSE_2025_allmode-9db84f90.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 4",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2781,227 +2975,6 @@
       "streamUrls": [
         "https://www.youtube.com/watch?v=SAXs83iCClw"
       ],
-      "vodUrls": []
-    },
-    {
-      "id": "1790497800-mpl-cambodia-season-11-regular-season-sys-eye",
-      "startsAt": 1790497800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "SYS",
-          "name": "See You Soon",
-          "pageSlug": "See_You_Soon",
-          "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "EYE",
-          "name": "Evil Eye Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/69px-Evil_Eye_Esports_allmode-9c400004.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/KbtrLHGDreE?si=rupQbWt3xj_sruNY&t=12379",
-        "https://www.youtube.com/live/KbtrLHGDreE?si=rXffjIN-aRmKRd28&t=14730"
-      ]
-    },
-    {
-      "id": "1790496000-vietnam-mlbb-championship-2026-fall-group-stage-nb-tql",
-      "startsAt": 1790496000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "NB",
-          "name": "Noob Team",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "TQL",
-          "name": "Tranquillizer",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "VMC Fall 2026 - Week 3",
-      "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Group_Stage",
-      "regionSlug": "vietnam",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1790488800-mpl-cambodia-season-11-regular-season-pro-val",
-      "startsAt": 1790488800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "PRO",
-          "name": "PRO Esports",
-          "pageSlug": "PRO_Esports",
-          "logoUrl": "/teams/78px-PRO_Esports_v3_allmode-dacc9aa3.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "Val",
-          "name": "Valhalla",
-          "pageSlug": "",
-          "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - RS: Week 2",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/KbtrLHGDreE?si=juPTKPA085E9Yirm&t=3213",
-        "https://www.youtube.com/live/KbtrLHGDreE?si=1YrKcnTdvzogyhtr&t=5402",
-        "https://www.youtube.com/live/KbtrLHGDreE?si=dirW8kOduYZIfXE4&t=8047"
-      ]
-    },
-    {
-      "id": "1790467200-mct-2026-americas-split-2-swiss-stage-b2g-nh",
-      "startsAt": 1790467200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "B2G",
-          "name": "Deportivo B2G",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-Deportivo_B2G_allmode-05f09465.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "NH",
-          "name": "The Night Horde",
-          "pageSlug": "The_Night_Horde",
-          "logoUrl": "/teams/52px-The_Night_Horde_darkmode-f2658762.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Round 3",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/wGo26hwPW_w?t=16970",
-        "https://youtu.be/wGo26hwPW_w?t=19020"
-      ]
-    },
-    {
-      "id": "1790460000-mct-2026-americas-split-2-swiss-stage-stmn-u2",
-      "startsAt": 1790460000,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "STMN",
-          "name": "STMN Esports",
-          "pageSlug": "STMN_Esports",
-          "logoUrl": "/teams/40px-STMN_Esports_allmode-dca9930e.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "U2",
-          "name": "U2 Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/47px-U2_darkmode-8b6a6ed5.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Round 3",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/wGo26hwPW_w?t=7796",
-        "https://youtu.be/wGo26hwPW_w?t=9997",
-        "https://youtu.be/wGo26hwPW_w?t=12389",
-        "https://youtu.be/wGo26hwPW_w?t=14188"
-      ]
-    },
-    {
-      "id": "1790452800-mct-2026-americas-split-2-swiss-stage-a7-octa",
-      "startsAt": 1790452800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "A7",
-          "name": "Alpha7 Esports",
-          "pageSlug": "Alpha7_Esports",
-          "logoUrl": "/teams/73px-A7_eSports_darkmode-11af375c.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "OCTA",
-          "name": "Octa Gaming",
-          "pageSlug": "",
-          "logoUrl": "/teams/42px-Octa_Gaming_2026_darkmode-fe113849.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Round 3",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/wGo26hwPW_w?t=3266",
-        "https://youtu.be/wGo26hwPW_w?t=5067"
-      ]
-    },
-    {
-      "id": "1790452800-mpl-mena-season-10-regular-season-xp-tec",
-      "startsAt": 1790452800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "XP",
-          "name": "XProjekt Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TEC",
-          "name": "Titan Esports Club AR",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Titan_Esports_Club_AR_allmode-fe800b70.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL MENA Season 10 - Week 3",
-      "tournamentPageSlug": "MPL/MENA/Season_10/Regular_Season",
-      "regionSlug": "mena",
-      "streamUrls": [],
       "vodUrls": []
     }
   ]
