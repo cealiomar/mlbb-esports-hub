@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1790920362,
+  "harvestedAt": 1790945453,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -59,6 +59,22 @@
         {
           "position": 4,
           "team": {
+            "code": "BBV",
+            "name": "Bigetron by Vitality",
+            "pageSlug": "Bigetron_by_Vitality",
+            "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png"
+          },
+          "matchWins": 6,
+          "matchLosses": 5,
+          "gameWins": 13,
+          "gameLosses": 14,
+          "gameDiff": -1,
+          "points": null,
+          "zone": "playoff"
+        },
+        {
+          "position": 5,
+          "team": {
             "code": "EVO",
             "name": "EVOS",
             "pageSlug": "EVOS",
@@ -69,22 +85,6 @@
           "gameWins": 11,
           "gameLosses": 12,
           "gameDiff": -1,
-          "points": null,
-          "zone": "playoff"
-        },
-        {
-          "position": 5,
-          "team": {
-            "code": "BBV",
-            "name": "Bigetron by Vitality",
-            "pageSlug": "Bigetron_by_Vitality",
-            "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png"
-          },
-          "matchWins": 5,
-          "matchLosses": 5,
-          "gameWins": 11,
-          "gameLosses": 13,
-          "gameDiff": -2,
           "points": null,
           "zone": "playoff"
         },
@@ -145,10 +145,10 @@
             "logoUrl": "/teams/43px-Geek_Fam_2019_allmode-1e9b1f3c.png"
           },
           "matchWins": 2,
-          "matchLosses": 9,
-          "gameWins": 7,
-          "gameLosses": 19,
-          "gameDiff": -12,
+          "matchLosses": 10,
+          "gameWins": 8,
+          "gameLosses": 21,
+          "gameDiff": -13,
           "points": null,
           "zone": "eliminated"
         }
@@ -201,12 +201,12 @@
             "pageSlug": "ONIC_Philippines",
             "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png"
           },
-          "matchWins": 7,
+          "matchWins": 8,
           "matchLosses": 3,
-          "gameWins": 16,
+          "gameWins": 18,
           "gameLosses": 9,
-          "gameDiff": 7,
-          "points": 7,
+          "gameDiff": 9,
+          "points": 8,
           "zone": "playoff"
         },
         {
@@ -282,10 +282,10 @@
             "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png"
           },
           "matchWins": 0,
-          "matchLosses": 10,
+          "matchLosses": 11,
           "gameWins": 2,
-          "gameLosses": 20,
-          "gameDiff": -18,
+          "gameLosses": 22,
+          "gameDiff": -20,
           "points": 0,
           "zone": "eliminated"
         }
