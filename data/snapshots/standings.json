@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1790982429,
+  "harvestedAt": 1790993336,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -607,6 +607,22 @@
         {
           "position": 1,
           "team": {
+            "code": "TEC",
+            "name": "Titan Esports Club AR",
+            "pageSlug": "",
+            "logoUrl": "/teams/50px-Titan_Esports_Club_AR_allmode-fe800b70.png"
+          },
+          "matchWins": 6,
+          "matchLosses": 0,
+          "gameWins": 12,
+          "gameLosses": 1,
+          "gameDiff": 11,
+          "points": 17,
+          "zone": "advance"
+        },
+        {
+          "position": 2,
+          "team": {
             "code": "TF",
             "name": "Team Falcons",
             "pageSlug": "Team_Falcons",
@@ -621,22 +637,6 @@
           "zone": "advance"
         },
         {
-          "position": 2,
-          "team": {
-            "code": "TEC",
-            "name": "Titan Esports Club AR",
-            "pageSlug": "",
-            "logoUrl": "/teams/50px-Titan_Esports_Club_AR_allmode-fe800b70.png"
-          },
-          "matchWins": 5,
-          "matchLosses": 0,
-          "gameWins": 10,
-          "gameLosses": 1,
-          "gameDiff": 9,
-          "points": 14,
-          "zone": "advance"
-        },
-        {
           "position": 3,
           "team": {
             "code": "GE",
@@ -644,16 +644,16 @@
             "pageSlug": "Geekay_Esports",
             "logoUrl": "/teams/67px-Geekay_Esports_2024_allmode-55a1a185.png"
           },
-          "matchWins": 4,
+          "matchWins": 5,
           "matchLosses": 1,
-          "gameWins": 8,
+          "gameWins": 10,
           "gameLosses": 3,
-          "gameDiff": 5,
-          "points": 11,
+          "gameDiff": 7,
+          "points": 14,
           "zone": "playoff"
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "code": "TM",
             "name": "Twisted Minds",
@@ -661,10 +661,10 @@
             "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png"
           },
           "matchWins": 4,
-          "matchLosses": 1,
+          "matchLosses": 2,
           "gameWins": 8,
-          "gameLosses": 3,
-          "gameDiff": 5,
+          "gameLosses": 5,
+          "gameDiff": 3,
           "points": 11,
           "zone": "playoff"
         },
@@ -676,12 +676,12 @@
             "pageSlug": "",
             "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png"
           },
-          "matchWins": 1,
+          "matchWins": 2,
           "matchLosses": 4,
-          "gameWins": 4,
+          "gameWins": 6,
           "gameLosses": 8,
-          "gameDiff": -4,
-          "points": 5,
+          "gameDiff": -2,
+          "points": 8,
           "zone": "playoff"
         },
         {
@@ -693,10 +693,10 @@
             "logoUrl": "/teams/21px-GS_Team_darkmode-b2852177.png"
           },
           "matchWins": 1,
-          "matchLosses": 4,
+          "matchLosses": 5,
           "gameWins": 3,
-          "gameLosses": 8,
-          "gameDiff": -5,
+          "gameLosses": 10,
+          "gameDiff": -7,
           "points": 4,
           "zone": "playoff"
         },
@@ -725,10 +725,10 @@
             "logoUrl": "/teams/100px-Axe_Okami_darkmode-ac573673.png"
           },
           "matchWins": 1,
-          "matchLosses": 5,
+          "matchLosses": 6,
           "gameWins": 2,
-          "gameLosses": 11,
-          "gameDiff": -9,
+          "gameLosses": 13,
+          "gameDiff": -11,
           "points": 2,
           "zone": "eliminated"
         }
