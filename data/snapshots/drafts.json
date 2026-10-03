@@ -1,11 +1,11 @@
 {
-  "harvestedAt": 1791034661,
+  "harvestedAt": 1791050985,
   "data": [
     {
       "regionSlug": "indonesia",
       "leagueName": "MPL Indonesia",
       "leaguePageSlug": "MPL/Indonesia/Season_18",
-      "gamesAnalyzed": 115,
+      "gamesAnalyzed": 121,
       "heroStats": [
         {
           "hero": {
@@ -14,14 +14,14 @@
             "pageSlug": "Hirara"
           },
           "imageUrl": "/heroes/50px-ML_icon_Hirara-985cf162.png",
-          "picks": 74,
+          "picks": 75,
           "pickWins": 40,
-          "pickLosses": 34,
-          "pickRate": 64.35,
-          "bans": 35,
-          "banRate": 30.43,
-          "presence": 109,
-          "presenceRate": 94.78
+          "pickLosses": 35,
+          "pickRate": 61.98,
+          "bans": 40,
+          "banRate": 33.06,
+          "presence": 115,
+          "presenceRate": 95.04
         },
         {
           "hero": {
@@ -33,11 +33,11 @@
           "picks": 64,
           "pickWins": 31,
           "pickLosses": 33,
-          "pickRate": 55.65,
+          "pickRate": 52.89,
           "bans": 19,
-          "banRate": 16.52,
+          "banRate": 15.7,
           "presence": 83,
-          "presenceRate": 72.17
+          "presenceRate": 68.6
         },
         {
           "hero": {
@@ -46,14 +46,14 @@
             "pageSlug": "Paquito"
           },
           "imageUrl": "/heroes/50px-ML_icon_Paquito_2026-b614e3b7.png",
-          "picks": 60,
-          "pickWins": 30,
-          "pickLosses": 30,
-          "pickRate": 52.17,
-          "bans": 49,
-          "banRate": 42.61,
-          "presence": 109,
-          "presenceRate": 94.78
+          "picks": 63,
+          "pickWins": 31,
+          "pickLosses": 32,
+          "pickRate": 52.07,
+          "bans": 52,
+          "banRate": 42.98,
+          "presence": 115,
+          "presenceRate": 95.04
         },
         {
           "hero": {
@@ -62,14 +62,14 @@
             "pageSlug": "Claude"
           },
           "imageUrl": "/heroes/50px-ML_icon_Claude_2024-bb50109e.png",
-          "picks": 50,
-          "pickWins": 26,
-          "pickLosses": 24,
-          "pickRate": 43.48,
+          "picks": 52,
+          "pickWins": 27,
+          "pickLosses": 25,
+          "pickRate": 42.98,
           "bans": 10,
-          "banRate": 8.7,
-          "presence": 60,
-          "presenceRate": 52.17
+          "banRate": 8.26,
+          "presence": 62,
+          "presenceRate": 51.24
         },
         {
           "hero": {
@@ -81,11 +81,11 @@
           "picks": 45,
           "pickWins": 22,
           "pickLosses": 23,
-          "pickRate": 39.13,
-          "bans": 41,
-          "banRate": 35.65,
-          "presence": 86,
-          "presenceRate": 74.78
+          "pickRate": 37.19,
+          "bans": 43,
+          "banRate": 35.54,
+          "presence": 88,
+          "presenceRate": 72.73
         },
         {
           "hero": {
@@ -94,14 +94,14 @@
             "pageSlug": "Eudora"
           },
           "imageUrl": "/heroes/50px-ML_icon_Eudora_2026-0b7d4820.png",
-          "picks": 42,
-          "pickWins": 25,
+          "picks": 43,
+          "pickWins": 26,
           "pickLosses": 17,
-          "pickRate": 36.52,
-          "bans": 19,
-          "banRate": 16.52,
-          "presence": 61,
-          "presenceRate": 53.04
+          "pickRate": 35.54,
+          "bans": 20,
+          "banRate": 16.53,
+          "presence": 63,
+          "presenceRate": 52.07
         },
         {
           "hero": {
@@ -110,14 +110,14 @@
             "pageSlug": "Selena"
           },
           "imageUrl": "/heroes/50px-ML_icon_Selena-081cfe2a.png",
-          "picks": 39,
+          "picks": 41,
           "pickWins": 17,
-          "pickLosses": 22,
-          "pickRate": 33.91,
+          "pickLosses": 24,
+          "pickRate": 33.88,
           "bans": 41,
-          "banRate": 35.65,
-          "presence": 80,
-          "presenceRate": 69.57
+          "banRate": 33.88,
+          "presence": 82,
+          "presenceRate": 67.77
         },
         {
           "hero": {
@@ -129,11 +129,27 @@
           "picks": 36,
           "pickWins": 16,
           "pickLosses": 20,
-          "pickRate": 31.3,
+          "pickRate": 29.75,
           "bans": 38,
-          "banRate": 33.04,
+          "banRate": 31.4,
           "presence": 74,
-          "presenceRate": 64.35
+          "presenceRate": 61.16
+        },
+        {
+          "hero": {
+            "id": "minotaur",
+            "name": "Minotaur",
+            "pageSlug": "Minotaur"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Minotaur_2021-6103a590.png",
+          "picks": 35,
+          "pickWins": 17,
+          "pickLosses": 18,
+          "pickRate": 28.93,
+          "bans": 20,
+          "banRate": 16.53,
+          "presence": 55,
+          "presenceRate": 45.45
         },
         {
           "hero": {
@@ -145,27 +161,11 @@
           "picks": 34,
           "pickWins": 18,
           "pickLosses": 16,
-          "pickRate": 29.57,
+          "pickRate": 28.1,
           "bans": 53,
-          "banRate": 46.09,
+          "banRate": 43.8,
           "presence": 87,
-          "presenceRate": 75.65
-        },
-        {
-          "hero": {
-            "id": "minotaur",
-            "name": "Minotaur",
-            "pageSlug": "Minotaur"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Minotaur_2021-6103a590.png",
-          "picks": 31,
-          "pickWins": 15,
-          "pickLosses": 16,
-          "pickRate": 26.96,
-          "bans": 19,
-          "banRate": 16.52,
-          "presence": 50,
-          "presenceRate": 43.48
+          "presenceRate": 71.9
         },
         {
           "hero": {
@@ -174,14 +174,46 @@
             "pageSlug": "Rafaela"
           },
           "imageUrl": "/heroes/50px-ML_icon_Rafaela-2d800e48.png",
-          "picks": 30,
+          "picks": 32,
+          "pickWins": 19,
+          "pickLosses": 13,
+          "pickRate": 26.45,
+          "bans": 36,
+          "banRate": 29.75,
+          "presence": 68,
+          "presenceRate": 56.2
+        },
+        {
+          "hero": {
+            "id": "obsidia",
+            "name": "Obsidia",
+            "pageSlug": "Obsidia"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Obsidia-27070f67.png",
+          "picks": 29,
           "pickWins": 18,
-          "pickLosses": 12,
-          "pickRate": 26.09,
-          "bans": 34,
-          "banRate": 29.57,
-          "presence": 64,
-          "presenceRate": 55.65
+          "pickLosses": 11,
+          "pickRate": 23.97,
+          "bans": 13,
+          "banRate": 10.74,
+          "presence": 42,
+          "presenceRate": 34.71
+        },
+        {
+          "hero": {
+            "id": "moskov",
+            "name": "Moskov",
+            "pageSlug": "Moskov"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Moskov_2023-b28075b5.png",
+          "picks": 29,
+          "pickWins": 16,
+          "pickLosses": 13,
+          "pickRate": 23.97,
+          "bans": 13,
+          "banRate": 10.74,
+          "presence": 42,
+          "presenceRate": 34.71
         },
         {
           "hero": {
@@ -193,43 +225,11 @@
           "picks": 28,
           "pickWins": 18,
           "pickLosses": 10,
-          "pickRate": 24.35,
-          "bans": 18,
-          "banRate": 15.65,
-          "presence": 46,
-          "presenceRate": 40
-        },
-        {
-          "hero": {
-            "id": "obsidia",
-            "name": "Obsidia",
-            "pageSlug": "Obsidia"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Obsidia-27070f67.png",
-          "picks": 28,
-          "pickWins": 17,
-          "pickLosses": 11,
-          "pickRate": 24.35,
-          "bans": 13,
-          "banRate": 11.3,
-          "presence": 41,
-          "presenceRate": 35.65
-        },
-        {
-          "hero": {
-            "id": "moskov",
-            "name": "Moskov",
-            "pageSlug": "Moskov"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Moskov_2023-b28075b5.png",
-          "picks": 28,
-          "pickWins": 16,
-          "pickLosses": 12,
-          "pickRate": 24.35,
-          "bans": 13,
-          "banRate": 11.3,
-          "presence": 41,
-          "presenceRate": 35.65
+          "pickRate": 23.14,
+          "bans": 24,
+          "banRate": 19.83,
+          "presence": 52,
+          "presenceRate": 42.98
         },
         {
           "hero": {
@@ -241,11 +241,11 @@
           "picks": 28,
           "pickWins": 8,
           "pickLosses": 20,
-          "pickRate": 24.35,
+          "pickRate": 23.14,
           "bans": 12,
-          "banRate": 10.43,
+          "banRate": 9.92,
           "presence": 40,
-          "presenceRate": 34.78
+          "presenceRate": 33.06
         },
         {
           "hero": {
@@ -254,46 +254,14 @@
             "pageSlug": "Gloo"
           },
           "imageUrl": "/heroes/50px-ML_icon_Gloo_2025-452c9bbc.png",
-          "picks": 26,
-          "pickWins": 15,
+          "picks": 27,
+          "pickWins": 16,
           "pickLosses": 11,
-          "pickRate": 22.61,
-          "bans": 26,
-          "banRate": 22.61,
-          "presence": 52,
-          "presenceRate": 45.22
-        },
-        {
-          "hero": {
-            "id": "miya",
-            "name": "Miya",
-            "pageSlug": "Miya"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Miya_2023-b3f14d5c.png",
-          "picks": 24,
-          "pickWins": 15,
-          "pickLosses": 9,
-          "pickRate": 20.87,
-          "bans": 15,
-          "banRate": 13.04,
-          "presence": 39,
-          "presenceRate": 33.91
-        },
-        {
-          "hero": {
-            "id": "atlas",
-            "name": "Atlas",
-            "pageSlug": "Atlas"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Atlas-d5d7914c.png",
-          "picks": 24,
-          "pickWins": 14,
-          "pickLosses": 10,
-          "pickRate": 20.87,
-          "bans": 85,
-          "banRate": 73.91,
-          "presence": 109,
-          "presenceRate": 94.78
+          "pickRate": 22.31,
+          "bans": 29,
+          "banRate": 23.97,
+          "presence": 56,
+          "presenceRate": 46.28
         },
         {
           "hero": {
@@ -302,14 +270,62 @@
             "pageSlug": "Nolan"
           },
           "imageUrl": "/heroes/50px-ML_icon_Nolan-99de7d3a.png",
-          "picks": 24,
+          "picks": 26,
+          "pickWins": 15,
+          "pickLosses": 11,
+          "pickRate": 21.49,
+          "bans": 24,
+          "banRate": 19.83,
+          "presence": 50,
+          "presenceRate": 41.32
+        },
+        {
+          "hero": {
+            "id": "miya",
+            "name": "Miya",
+            "pageSlug": "Miya"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Miya_2023-b3f14d5c.png",
+          "picks": 25,
+          "pickWins": 16,
+          "pickLosses": 9,
+          "pickRate": 20.66,
+          "bans": 15,
+          "banRate": 12.4,
+          "presence": 40,
+          "presenceRate": 33.06
+        },
+        {
+          "hero": {
+            "id": "atlas",
+            "name": "Atlas",
+            "pageSlug": "Atlas"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Atlas-d5d7914c.png",
+          "picks": 25,
           "pickWins": 14,
-          "pickLosses": 10,
-          "pickRate": 20.87,
-          "bans": 22,
-          "banRate": 19.13,
-          "presence": 46,
-          "presenceRate": 40
+          "pickLosses": 11,
+          "pickRate": 20.66,
+          "bans": 88,
+          "banRate": 72.73,
+          "presence": 113,
+          "presenceRate": 93.39
+        },
+        {
+          "hero": {
+            "id": "valentina",
+            "name": "Valentina",
+            "pageSlug": "Valentina"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Valentina-55f05891.png",
+          "picks": 24,
+          "pickWins": 10,
+          "pickLosses": 14,
+          "pickRate": 19.83,
+          "bans": 13,
+          "banRate": 10.74,
+          "presence": 37,
+          "presenceRate": 30.58
         },
         {
           "hero": {
@@ -321,27 +337,43 @@
           "picks": 23,
           "pickWins": 10,
           "pickLosses": 13,
-          "pickRate": 20,
+          "pickRate": 19.01,
           "bans": 21,
-          "banRate": 18.26,
+          "banRate": 17.36,
           "presence": 44,
-          "presenceRate": 38.26
+          "presenceRate": 36.36
         },
         {
           "hero": {
-            "id": "valentina",
-            "name": "Valentina",
-            "pageSlug": "Valentina"
+            "id": "esmeralda",
+            "name": "Esmeralda",
+            "pageSlug": "Esmeralda"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Valentina-55f05891.png",
-          "picks": 22,
-          "pickWins": 8,
-          "pickLosses": 14,
-          "pickRate": 19.13,
-          "bans": 12,
-          "banRate": 10.43,
-          "presence": 34,
-          "presenceRate": 29.57
+          "imageUrl": "/heroes/50px-ML_icon_Esmeralda-7ec14fa0.png",
+          "picks": 20,
+          "pickWins": 10,
+          "pickLosses": 10,
+          "pickRate": 16.53,
+          "bans": 26,
+          "banRate": 21.49,
+          "presence": 46,
+          "presenceRate": 38.02
+        },
+        {
+          "hero": {
+            "id": "zhuxin",
+            "name": "Zhuxin",
+            "pageSlug": "Zhuxin"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Zhuxin-bbdc3f09.png",
+          "picks": 20,
+          "pickWins": 10,
+          "pickLosses": 10,
+          "pickRate": 16.53,
+          "bans": 22,
+          "banRate": 18.18,
+          "presence": 42,
+          "presenceRate": 34.71
         },
         {
           "hero": {
@@ -353,43 +385,11 @@
           "picks": 19,
           "pickWins": 10,
           "pickLosses": 9,
-          "pickRate": 16.52,
+          "pickRate": 15.7,
           "bans": 38,
-          "banRate": 33.04,
+          "banRate": 31.4,
           "presence": 57,
-          "presenceRate": 49.57
-        },
-        {
-          "hero": {
-            "id": "zhuxin",
-            "name": "Zhuxin",
-            "pageSlug": "Zhuxin"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Zhuxin-bbdc3f09.png",
-          "picks": 18,
-          "pickWins": 9,
-          "pickLosses": 9,
-          "pickRate": 15.65,
-          "bans": 19,
-          "banRate": 16.52,
-          "presence": 37,
-          "presenceRate": 32.17
-        },
-        {
-          "hero": {
-            "id": "esmeralda",
-            "name": "Esmeralda",
-            "pageSlug": "Esmeralda"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Esmeralda-7ec14fa0.png",
-          "picks": 18,
-          "pickWins": 8,
-          "pickLosses": 10,
-          "pickRate": 15.65,
-          "bans": 26,
-          "banRate": 22.61,
-          "presence": 44,
-          "presenceRate": 38.26
+          "presenceRate": 47.11
         },
         {
           "hero": {
@@ -401,11 +401,11 @@
           "picks": 18,
           "pickWins": 6,
           "pickLosses": 12,
-          "pickRate": 15.65,
-          "bans": 10,
-          "banRate": 8.7,
-          "presence": 28,
-          "presenceRate": 24.35
+          "pickRate": 14.88,
+          "bans": 12,
+          "banRate": 9.92,
+          "presence": 30,
+          "presenceRate": 24.79
         },
         {
           "hero": {
@@ -417,11 +417,11 @@
           "picks": 17,
           "pickWins": 10,
           "pickLosses": 7,
-          "pickRate": 14.78,
-          "bans": 42,
-          "banRate": 36.52,
-          "presence": 59,
-          "presenceRate": 51.3
+          "pickRate": 14.05,
+          "bans": 44,
+          "banRate": 36.36,
+          "presence": 61,
+          "presenceRate": 50.41
         },
         {
           "hero": {
@@ -433,11 +433,11 @@
           "picks": 17,
           "pickWins": 8,
           "pickLosses": 9,
-          "pickRate": 14.78,
+          "pickRate": 14.05,
           "bans": 6,
-          "banRate": 5.22,
+          "banRate": 4.96,
           "presence": 23,
-          "presenceRate": 20
+          "presenceRate": 19.01
         },
         {
           "hero": {
@@ -449,11 +449,11 @@
           "picks": 16,
           "pickWins": 8,
           "pickLosses": 8,
-          "pickRate": 13.91,
-          "bans": 5,
-          "banRate": 4.35,
-          "presence": 21,
-          "presenceRate": 18.26
+          "pickRate": 13.22,
+          "bans": 9,
+          "banRate": 7.44,
+          "presence": 25,
+          "presenceRate": 20.66
         },
         {
           "hero": {
@@ -462,14 +462,14 @@
             "pageSlug": "Fanny"
           },
           "imageUrl": "/heroes/50px-ML_icon_Fanny-9034e324.png",
-          "picks": 14,
+          "picks": 15,
           "pickWins": 8,
-          "pickLosses": 6,
-          "pickRate": 12.17,
-          "bans": 67,
-          "banRate": 58.26,
-          "presence": 81,
-          "presenceRate": 70.43
+          "pickLosses": 7,
+          "pickRate": 12.4,
+          "bans": 70,
+          "banRate": 57.85,
+          "presence": 85,
+          "presenceRate": 70.25
         },
         {
           "hero": {
@@ -481,11 +481,27 @@
           "picks": 14,
           "pickWins": 7,
           "pickLosses": 7,
-          "pickRate": 12.17,
-          "bans": 72,
-          "banRate": 62.61,
-          "presence": 86,
-          "presenceRate": 74.78
+          "pickRate": 11.57,
+          "bans": 73,
+          "banRate": 60.33,
+          "presence": 87,
+          "presenceRate": 71.9
+        },
+        {
+          "hero": {
+            "id": "yi sun-shin",
+            "name": "Yi Sun-shin",
+            "pageSlug": "Yi_Sun-shin"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Yi_Sun-Shin-699a02b8.png",
+          "picks": 14,
+          "pickWins": 5,
+          "pickLosses": 9,
+          "pickRate": 11.57,
+          "bans": 11,
+          "banRate": 9.09,
+          "presence": 25,
+          "presenceRate": 20.66
         },
         {
           "hero": {
@@ -497,11 +513,27 @@
           "picks": 13,
           "pickWins": 7,
           "pickLosses": 6,
-          "pickRate": 11.3,
+          "pickRate": 10.74,
           "bans": 2,
-          "banRate": 1.74,
+          "banRate": 1.65,
           "presence": 15,
-          "presenceRate": 13.04
+          "presenceRate": 12.4
+        },
+        {
+          "hero": {
+            "id": "freya",
+            "name": "Freya",
+            "pageSlug": "Freya"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Freya_2025-ec0aece3.png",
+          "picks": 13,
+          "pickWins": 5,
+          "pickLosses": 8,
+          "pickRate": 10.74,
+          "bans": 107,
+          "banRate": 88.43,
+          "presence": 120,
+          "presenceRate": 99.17
         },
         {
           "hero": {
@@ -513,27 +545,43 @@
           "picks": 13,
           "pickWins": 5,
           "pickLosses": 8,
-          "pickRate": 11.3,
+          "pickRate": 10.74,
           "bans": 1,
-          "banRate": 0.87,
+          "banRate": 0.83,
           "presence": 14,
-          "presenceRate": 12.17
+          "presenceRate": 11.57
         },
         {
           "hero": {
-            "id": "yi sun-shin",
-            "name": "Yi Sun-shin",
-            "pageSlug": "Yi_Sun-shin"
+            "id": "aulus",
+            "name": "Aulus",
+            "pageSlug": "Aulus"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Yi_Sun-Shin-699a02b8.png",
-          "picks": 13,
-          "pickWins": 5,
-          "pickLosses": 8,
-          "pickRate": 11.3,
-          "bans": 11,
-          "banRate": 9.57,
-          "presence": 24,
-          "presenceRate": 20.87
+          "imageUrl": "/heroes/50px-ML_icon_Aulus_2026-ab5e8f5e.png",
+          "picks": 12,
+          "pickWins": 11,
+          "pickLosses": 1,
+          "pickRate": 9.92,
+          "bans": 8,
+          "banRate": 6.61,
+          "presence": 20,
+          "presenceRate": 16.53
+        },
+        {
+          "hero": {
+            "id": "badang",
+            "name": "Badang",
+            "pageSlug": "Badang"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Badang_2026-c3d2f452.png",
+          "picks": 12,
+          "pickWins": 7,
+          "pickLosses": 5,
+          "pickRate": 9.92,
+          "bans": 5,
+          "banRate": 4.13,
+          "presence": 17,
+          "presenceRate": 14.05
         },
         {
           "hero": {
@@ -545,43 +593,43 @@
           "picks": 12,
           "pickWins": 6,
           "pickLosses": 6,
-          "pickRate": 10.43,
+          "pickRate": 9.92,
           "bans": 7,
-          "banRate": 6.09,
+          "banRate": 5.79,
           "presence": 19,
-          "presenceRate": 16.52
+          "presenceRate": 15.7
         },
         {
           "hero": {
-            "id": "badang",
-            "name": "Badang",
-            "pageSlug": "Badang"
+            "id": "chou",
+            "name": "Chou",
+            "pageSlug": "Chou"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Badang_2026-c3d2f452.png",
+          "imageUrl": "/heroes/50px-ML_icon_Chou-bab846a0.png",
           "picks": 10,
-          "pickWins": 5,
-          "pickLosses": 5,
-          "pickRate": 8.7,
-          "bans": 3,
-          "banRate": 2.61,
-          "presence": 13,
-          "presenceRate": 11.3
+          "pickWins": 4,
+          "pickLosses": 6,
+          "pickRate": 8.26,
+          "bans": 5,
+          "banRate": 4.13,
+          "presence": 15,
+          "presenceRate": 12.4
         },
         {
           "hero": {
-            "id": "freya",
-            "name": "Freya",
-            "pageSlug": "Freya"
+            "id": "kimmy",
+            "name": "Kimmy",
+            "pageSlug": "Kimmy"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Freya_2025-ec0aece3.png",
+          "imageUrl": "/heroes/50px-ML_icon_Kimmy_2025-56c9afe2.png",
           "picks": 10,
-          "pickWins": 5,
-          "pickLosses": 5,
-          "pickRate": 8.7,
-          "bans": 105,
-          "banRate": 91.3,
-          "presence": 115,
-          "presenceRate": 100
+          "pickWins": 3,
+          "pickLosses": 7,
+          "pickRate": 8.26,
+          "bans": 6,
+          "banRate": 4.96,
+          "presence": 16,
+          "presenceRate": 13.22
         },
         {
           "hero": {
@@ -593,11 +641,11 @@
           "picks": 9,
           "pickWins": 7,
           "pickLosses": 2,
-          "pickRate": 7.83,
+          "pickRate": 7.44,
           "bans": 5,
-          "banRate": 4.35,
+          "banRate": 4.13,
           "presence": 14,
-          "presenceRate": 12.17
+          "presenceRate": 11.57
         },
         {
           "hero": {
@@ -609,27 +657,27 @@
           "picks": 9,
           "pickWins": 4,
           "pickLosses": 5,
-          "pickRate": 7.83,
+          "pickRate": 7.44,
           "bans": 6,
-          "banRate": 5.22,
+          "banRate": 4.96,
           "presence": 15,
-          "presenceRate": 13.04
+          "presenceRate": 12.4
         },
         {
           "hero": {
-            "id": "kimmy",
-            "name": "Kimmy",
-            "pageSlug": "Kimmy"
+            "id": "cici",
+            "name": "Cici",
+            "pageSlug": "Cici"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Kimmy_2025-56c9afe2.png",
+          "imageUrl": "/heroes/50px-ML_icon_Cici-8010612b.png",
           "picks": 9,
-          "pickWins": 3,
-          "pickLosses": 6,
-          "pickRate": 7.83,
-          "bans": 6,
-          "banRate": 5.22,
-          "presence": 15,
-          "presenceRate": 13.04
+          "pickWins": 2,
+          "pickLosses": 7,
+          "pickRate": 7.44,
+          "bans": 4,
+          "banRate": 3.31,
+          "presence": 13,
+          "presenceRate": 10.74
         },
         {
           "hero": {
@@ -641,43 +689,11 @@
           "picks": 8,
           "pickWins": 7,
           "pickLosses": 1,
-          "pickRate": 6.96,
+          "pickRate": 6.61,
           "bans": 5,
-          "banRate": 4.35,
+          "banRate": 4.13,
           "presence": 13,
-          "presenceRate": 11.3
-        },
-        {
-          "hero": {
-            "id": "chou",
-            "name": "Chou",
-            "pageSlug": "Chou"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Chou-bab846a0.png",
-          "picks": 8,
-          "pickWins": 3,
-          "pickLosses": 5,
-          "pickRate": 6.96,
-          "bans": 5,
-          "banRate": 4.35,
-          "presence": 13,
-          "presenceRate": 11.3
-        },
-        {
-          "hero": {
-            "id": "aulus",
-            "name": "Aulus",
-            "pageSlug": "Aulus"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Aulus_2026-ab5e8f5e.png",
-          "picks": 7,
-          "pickWins": 6,
-          "pickLosses": 1,
-          "pickRate": 6.09,
-          "bans": 7,
-          "banRate": 6.09,
-          "presence": 14,
-          "presenceRate": 12.17
+          "presenceRate": 10.74
         },
         {
           "hero": {
@@ -686,14 +702,30 @@
             "pageSlug": "Arlott"
           },
           "imageUrl": "/heroes/50px-ML_icon_Arlott-b10d863b.png",
-          "picks": 7,
+          "picks": 8,
           "pickWins": 4,
-          "pickLosses": 3,
-          "pickRate": 6.09,
-          "bans": 16,
-          "banRate": 13.91,
-          "presence": 23,
-          "presenceRate": 20
+          "pickLosses": 4,
+          "pickRate": 6.61,
+          "bans": 17,
+          "banRate": 14.05,
+          "presence": 25,
+          "presenceRate": 20.66
+        },
+        {
+          "hero": {
+            "id": "lukas",
+            "name": "Lukas",
+            "pageSlug": "Lukas"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Lukas-2c7b0ae8.png",
+          "picks": 7,
+          "pickWins": 6,
+          "pickLosses": 1,
+          "pickRate": 5.79,
+          "bans": 8,
+          "banRate": 6.61,
+          "presence": 15,
+          "presenceRate": 12.4
         },
         {
           "hero": {
@@ -705,11 +737,11 @@
           "picks": 7,
           "pickWins": 3,
           "pickLosses": 4,
-          "pickRate": 6.09,
+          "pickRate": 5.79,
           "bans": 0,
           "banRate": 0,
           "presence": 7,
-          "presenceRate": 6.09
+          "presenceRate": 5.79
         },
         {
           "hero": {
@@ -721,43 +753,27 @@
           "picks": 7,
           "pickWins": 1,
           "pickLosses": 6,
-          "pickRate": 6.09,
+          "pickRate": 5.79,
           "bans": 22,
-          "banRate": 19.13,
+          "banRate": 18.18,
           "presence": 29,
-          "presenceRate": 25.22
+          "presenceRate": 23.97
         },
         {
           "hero": {
-            "id": "cici",
-            "name": "Cici",
-            "pageSlug": "Cici"
+            "id": "dyrroth",
+            "name": "Dyrroth",
+            "pageSlug": "Dyrroth"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Cici-8010612b.png",
-          "picks": 7,
-          "pickWins": 1,
-          "pickLosses": 6,
-          "pickRate": 6.09,
-          "bans": 2,
-          "banRate": 1.74,
-          "presence": 9,
-          "presenceRate": 7.83
-        },
-        {
-          "hero": {
-            "id": "lukas",
-            "name": "Lukas",
-            "pageSlug": "Lukas"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Lukas-2c7b0ae8.png",
+          "imageUrl": "/heroes/50px-ML_icon_Dyrroth_2025-c4d9b3d9.png",
           "picks": 6,
-          "pickWins": 5,
-          "pickLosses": 1,
-          "pickRate": 5.22,
-          "bans": 6,
-          "banRate": 5.22,
-          "presence": 12,
-          "presenceRate": 10.43
+          "pickWins": 3,
+          "pickLosses": 3,
+          "pickRate": 4.96,
+          "bans": 1,
+          "banRate": 0.83,
+          "presence": 7,
+          "presenceRate": 5.79
         },
         {
           "hero": {
@@ -769,27 +785,43 @@
           "picks": 6,
           "pickWins": 2,
           "pickLosses": 4,
-          "pickRate": 5.22,
+          "pickRate": 4.96,
           "bans": 0,
           "banRate": 0,
           "presence": 6,
-          "presenceRate": 5.22
+          "presenceRate": 4.96
         },
         {
           "hero": {
-            "id": "dyrroth",
-            "name": "Dyrroth",
-            "pageSlug": "Dyrroth"
+            "id": "phoveus",
+            "name": "Phoveus",
+            "pageSlug": "Phoveus"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Dyrroth_2025-c4d9b3d9.png",
-          "picks": 5,
-          "pickWins": 3,
-          "pickLosses": 2,
-          "pickRate": 4.35,
-          "bans": 1,
-          "banRate": 0.87,
-          "presence": 6,
-          "presenceRate": 5.22
+          "imageUrl": "/heroes/50px-ML_icon_Phoveus_2024-2065f412.png",
+          "picks": 6,
+          "pickWins": 2,
+          "pickLosses": 4,
+          "pickRate": 4.96,
+          "bans": 7,
+          "banRate": 5.79,
+          "presence": 13,
+          "presenceRate": 10.74
+        },
+        {
+          "hero": {
+            "id": "masha",
+            "name": "Masha",
+            "pageSlug": "Masha"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Masha_2026-c753c0f9.png",
+          "picks": 6,
+          "pickWins": 1,
+          "pickLosses": 5,
+          "pickRate": 4.96,
+          "bans": 15,
+          "banRate": 12.4,
+          "presence": 21,
+          "presenceRate": 17.36
         },
         {
           "hero": {
@@ -801,11 +833,11 @@
           "picks": 5,
           "pickWins": 1,
           "pickLosses": 4,
-          "pickRate": 4.35,
+          "pickRate": 4.13,
           "bans": 1,
-          "banRate": 0.87,
+          "banRate": 0.83,
           "presence": 6,
-          "presenceRate": 5.22
+          "presenceRate": 4.96
         },
         {
           "hero": {
@@ -817,27 +849,43 @@
           "picks": 4,
           "pickWins": 2,
           "pickLosses": 2,
-          "pickRate": 3.48,
+          "pickRate": 3.31,
           "bans": 3,
-          "banRate": 2.61,
+          "banRate": 2.48,
           "presence": 7,
-          "presenceRate": 6.09
+          "presenceRate": 5.79
         },
         {
           "hero": {
-            "id": "masha",
-            "name": "Masha",
-            "pageSlug": "Masha"
+            "id": "hayabusa",
+            "name": "Hayabusa",
+            "pageSlug": "Hayabusa"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Masha_2026-c753c0f9.png",
+          "imageUrl": "/heroes/50px-ML_icon_Hayabusa_2021-e2139e94.png",
           "picks": 4,
-          "pickWins": 1,
-          "pickLosses": 3,
-          "pickRate": 3.48,
-          "bans": 11,
-          "banRate": 9.57,
-          "presence": 15,
-          "presenceRate": 13.04
+          "pickWins": 2,
+          "pickLosses": 2,
+          "pickRate": 3.31,
+          "bans": 2,
+          "banRate": 1.65,
+          "presence": 6,
+          "presenceRate": 4.96
+        },
+        {
+          "hero": {
+            "id": "lunox",
+            "name": "Lunox",
+            "pageSlug": "Lunox"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Lunox-b7f68d5a.png",
+          "picks": 4,
+          "pickWins": 0,
+          "pickLosses": 4,
+          "pickRate": 3.31,
+          "bans": 1,
+          "banRate": 0.83,
+          "presence": 5,
+          "presenceRate": 4.13
         },
         {
           "hero": {
@@ -849,11 +897,11 @@
           "picks": 3,
           "pickWins": 3,
           "pickLosses": 0,
-          "pickRate": 2.61,
+          "pickRate": 2.48,
           "bans": 0,
           "banRate": 0,
           "presence": 3,
-          "presenceRate": 2.61
+          "presenceRate": 2.48
         },
         {
           "hero": {
@@ -865,11 +913,11 @@
           "picks": 3,
           "pickWins": 2,
           "pickLosses": 1,
-          "pickRate": 2.61,
-          "bans": 2,
-          "banRate": 1.74,
-          "presence": 5,
-          "presenceRate": 4.35
+          "pickRate": 2.48,
+          "bans": 3,
+          "banRate": 2.48,
+          "presence": 6,
+          "presenceRate": 4.96
         },
         {
           "hero": {
@@ -881,11 +929,11 @@
           "picks": 3,
           "pickWins": 2,
           "pickLosses": 1,
-          "pickRate": 2.61,
+          "pickRate": 2.48,
           "bans": 6,
-          "banRate": 5.22,
+          "banRate": 4.96,
           "presence": 9,
-          "presenceRate": 7.83
+          "presenceRate": 7.44
         },
         {
           "hero": {
@@ -897,11 +945,27 @@
           "picks": 3,
           "pickWins": 2,
           "pickLosses": 1,
-          "pickRate": 2.61,
+          "pickRate": 2.48,
           "bans": 0,
           "banRate": 0,
           "presence": 3,
-          "presenceRate": 2.61
+          "presenceRate": 2.48
+        },
+        {
+          "hero": {
+            "id": "yve",
+            "name": "Yve",
+            "pageSlug": "Yve"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Yve_2024-7242073a.png",
+          "picks": 3,
+          "pickWins": 2,
+          "pickLosses": 1,
+          "pickRate": 2.48,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 3,
+          "presenceRate": 2.48
         },
         {
           "hero": {
@@ -913,27 +977,11 @@
           "picks": 3,
           "pickWins": 1,
           "pickLosses": 2,
-          "pickRate": 2.61,
+          "pickRate": 2.48,
           "bans": 2,
-          "banRate": 1.74,
+          "banRate": 1.65,
           "presence": 5,
-          "presenceRate": 4.35
-        },
-        {
-          "hero": {
-            "id": "hayabusa",
-            "name": "Hayabusa",
-            "pageSlug": "Hayabusa"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Hayabusa_2021-e2139e94.png",
-          "picks": 3,
-          "pickWins": 1,
-          "pickLosses": 2,
-          "pickRate": 2.61,
-          "bans": 1,
-          "banRate": 0.87,
-          "presence": 4,
-          "presenceRate": 3.48
+          "presenceRate": 4.13
         },
         {
           "hero": {
@@ -945,11 +993,11 @@
           "picks": 3,
           "pickWins": 1,
           "pickLosses": 2,
-          "pickRate": 2.61,
+          "pickRate": 2.48,
           "bans": 10,
-          "banRate": 8.7,
+          "banRate": 8.26,
           "presence": 13,
-          "presenceRate": 11.3
+          "presenceRate": 10.74
         },
         {
           "hero": {
@@ -961,43 +1009,11 @@
           "picks": 3,
           "pickWins": 0,
           "pickLosses": 3,
-          "pickRate": 2.61,
+          "pickRate": 2.48,
           "bans": 3,
-          "banRate": 2.61,
+          "banRate": 2.48,
           "presence": 6,
-          "presenceRate": 5.22
-        },
-        {
-          "hero": {
-            "id": "lunox",
-            "name": "Lunox",
-            "pageSlug": "Lunox"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Lunox-b7f68d5a.png",
-          "picks": 3,
-          "pickWins": 0,
-          "pickLosses": 3,
-          "pickRate": 2.61,
-          "bans": 1,
-          "banRate": 0.87,
-          "presence": 4,
-          "presenceRate": 3.48
-        },
-        {
-          "hero": {
-            "id": "phoveus",
-            "name": "Phoveus",
-            "pageSlug": "Phoveus"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Phoveus_2024-2065f412.png",
-          "picks": 3,
-          "pickWins": 0,
-          "pickLosses": 3,
-          "pickRate": 2.61,
-          "bans": 7,
-          "banRate": 6.09,
-          "presence": 10,
-          "presenceRate": 8.7
+          "presenceRate": 4.96
         },
         {
           "hero": {
@@ -1009,11 +1025,11 @@
           "picks": 2,
           "pickWins": 2,
           "pickLosses": 0,
-          "pickRate": 1.74,
+          "pickRate": 1.65,
           "bans": 1,
-          "banRate": 0.87,
+          "banRate": 0.83,
           "presence": 3,
-          "presenceRate": 2.61
+          "presenceRate": 2.48
         },
         {
           "hero": {
@@ -1025,11 +1041,11 @@
           "picks": 2,
           "pickWins": 1,
           "pickLosses": 1,
-          "pickRate": 1.74,
+          "pickRate": 1.65,
           "bans": 1,
-          "banRate": 0.87,
+          "banRate": 0.83,
           "presence": 3,
-          "presenceRate": 2.61
+          "presenceRate": 2.48
         },
         {
           "hero": {
@@ -1041,11 +1057,11 @@
           "picks": 2,
           "pickWins": 1,
           "pickLosses": 1,
-          "pickRate": 1.74,
+          "pickRate": 1.65,
           "bans": 0,
           "banRate": 0,
           "presence": 2,
-          "presenceRate": 1.74
+          "presenceRate": 1.65
         },
         {
           "hero": {
@@ -1057,11 +1073,27 @@
           "picks": 2,
           "pickWins": 1,
           "pickLosses": 1,
-          "pickRate": 1.74,
+          "pickRate": 1.65,
           "bans": 3,
-          "banRate": 2.61,
+          "banRate": 2.48,
           "presence": 5,
-          "presenceRate": 4.35
+          "presenceRate": 4.13
+        },
+        {
+          "hero": {
+            "id": "khaleed",
+            "name": "Khaleed",
+            "pageSlug": "Khaleed"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Khaleed-99abcebb.png",
+          "picks": 2,
+          "pickWins": 1,
+          "pickLosses": 1,
+          "pickRate": 1.65,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 2,
+          "presenceRate": 1.65
         },
         {
           "hero": {
@@ -1073,11 +1105,11 @@
           "picks": 2,
           "pickWins": 1,
           "pickLosses": 1,
-          "pickRate": 1.74,
+          "pickRate": 1.65,
           "bans": 5,
-          "banRate": 4.35,
+          "banRate": 4.13,
           "presence": 7,
-          "presenceRate": 6.09
+          "presenceRate": 5.79
         },
         {
           "hero": {
@@ -1089,11 +1121,11 @@
           "picks": 2,
           "pickWins": 0,
           "pickLosses": 2,
-          "pickRate": 1.74,
+          "pickRate": 1.65,
           "bans": 0,
           "banRate": 0,
           "presence": 2,
-          "presenceRate": 1.74
+          "presenceRate": 1.65
         },
         {
           "hero": {
@@ -1105,11 +1137,11 @@
           "picks": 2,
           "pickWins": 0,
           "pickLosses": 2,
-          "pickRate": 1.74,
+          "pickRate": 1.65,
           "bans": 0,
           "banRate": 0,
           "presence": 2,
-          "presenceRate": 1.74
+          "presenceRate": 1.65
         },
         {
           "hero": {
@@ -1121,11 +1153,11 @@
           "picks": 2,
           "pickWins": 0,
           "pickLosses": 2,
-          "pickRate": 1.74,
+          "pickRate": 1.65,
           "bans": 0,
           "banRate": 0,
           "presence": 2,
-          "presenceRate": 1.74
+          "presenceRate": 1.65
         },
         {
           "hero": {
@@ -1137,11 +1169,11 @@
           "picks": 1,
           "pickWins": 1,
           "pickLosses": 0,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1153,11 +1185,11 @@
           "picks": 1,
           "pickWins": 1,
           "pickLosses": 0,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1169,27 +1201,11 @@
           "picks": 1,
           "pickWins": 1,
           "pickLosses": 0,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
-        },
-        {
-          "hero": {
-            "id": "yve",
-            "name": "Yve",
-            "pageSlug": "Yve"
-          },
-          "imageUrl": "/heroes/50px-ML_icon_Yve_2024-7242073a.png",
-          "picks": 1,
-          "pickWins": 1,
-          "pickLosses": 0,
-          "pickRate": 0.87,
-          "bans": 0,
-          "banRate": 0,
-          "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1201,11 +1217,11 @@
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1217,27 +1233,27 @@
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
-            "id": "khaleed",
-            "name": "Khaleed",
-            "pageSlug": "Khaleed"
+            "id": "harith",
+            "name": "Harith",
+            "pageSlug": "Harith"
           },
-          "imageUrl": "/heroes/50px-ML_icon_Khaleed-99abcebb.png",
+          "imageUrl": "/heroes/50px-ML_icon_Harith-f33d69f2.png",
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1249,11 +1265,27 @@
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
+        },
+        {
+          "hero": {
+            "id": "leomord",
+            "name": "Leomord",
+            "pageSlug": "Leomord"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Leomord_2022-5280f966.png",
+          "picks": 1,
+          "pickWins": 0,
+          "pickLosses": 1,
+          "pickRate": 0.83,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 1,
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1265,11 +1297,11 @@
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1281,11 +1313,11 @@
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 1,
-          "banRate": 0.87,
+          "banRate": 0.83,
           "presence": 2,
-          "presenceRate": 1.74
+          "presenceRate": 1.65
         },
         {
           "hero": {
@@ -1297,11 +1329,11 @@
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1313,11 +1345,11 @@
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1329,11 +1361,11 @@
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1345,11 +1377,11 @@
           "picks": 1,
           "pickWins": 0,
           "pickLosses": 1,
-          "pickRate": 0.87,
+          "pickRate": 0.83,
           "bans": 0,
           "banRate": 0,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1363,9 +1395,9 @@
           "pickLosses": 0,
           "pickRate": 0,
           "bans": 1,
-          "banRate": 0.87,
+          "banRate": 0.83,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         },
         {
           "hero": {
@@ -1379,9 +1411,9 @@
           "pickLosses": 0,
           "pickRate": 0,
           "bans": 1,
-          "banRate": 0.87,
+          "banRate": 0.83,
           "presence": 1,
-          "presenceRate": 0.87
+          "presenceRate": 0.83
         }
       ],
       "series": [
@@ -37192,6 +37224,1174 @@
           "banRate": 52.33,
           "presence": 81,
           "presenceRate": 94.19
+        },
+        {
+          "hero": {
+            "id": "barats",
+            "name": "Barats",
+            "pageSlug": "Barats"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Barats-752f0024.png",
+          "picks": 31,
+          "pickWins": 12,
+          "pickLosses": 19,
+          "pickRate": 36.05,
+          "bans": 22,
+          "banRate": 25.58,
+          "presence": 53,
+          "presenceRate": 61.63
+        },
+        {
+          "hero": {
+            "id": "gloo",
+            "name": "Gloo",
+            "pageSlug": "Gloo"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Gloo_2025-452c9bbc.png",
+          "picks": 30,
+          "pickWins": 18,
+          "pickLosses": 12,
+          "pickRate": 34.88,
+          "bans": 26,
+          "banRate": 30.23,
+          "presence": 56,
+          "presenceRate": 65.12
+        },
+        {
+          "hero": {
+            "id": "rafaela",
+            "name": "Rafaela",
+            "pageSlug": "Rafaela"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Rafaela-2d800e48.png",
+          "picks": 25,
+          "pickWins": 13,
+          "pickLosses": 12,
+          "pickRate": 29.07,
+          "bans": 23,
+          "banRate": 26.74,
+          "presence": 48,
+          "presenceRate": 55.81
+        },
+        {
+          "hero": {
+            "id": "zhuxin",
+            "name": "Zhuxin",
+            "pageSlug": "Zhuxin"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Zhuxin-bbdc3f09.png",
+          "picks": 25,
+          "pickWins": 10,
+          "pickLosses": 15,
+          "pickRate": 29.07,
+          "bans": 16,
+          "banRate": 18.6,
+          "presence": 41,
+          "presenceRate": 47.67
+        },
+        {
+          "hero": {
+            "id": "minotaur",
+            "name": "Minotaur",
+            "pageSlug": "Minotaur"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Minotaur_2021-6103a590.png",
+          "picks": 23,
+          "pickWins": 14,
+          "pickLosses": 9,
+          "pickRate": 26.74,
+          "bans": 16,
+          "banRate": 18.6,
+          "presence": 39,
+          "presenceRate": 45.35
+        },
+        {
+          "hero": {
+            "id": "gatotkaca",
+            "name": "Gatotkaca",
+            "pageSlug": "Gatotkaca"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Gatotkaca-af13d087.png",
+          "picks": 23,
+          "pickWins": 12,
+          "pickLosses": 11,
+          "pickRate": 26.74,
+          "bans": 8,
+          "banRate": 9.3,
+          "presence": 31,
+          "presenceRate": 36.05
+        },
+        {
+          "hero": {
+            "id": "obsidia",
+            "name": "Obsidia",
+            "pageSlug": "Obsidia"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Obsidia-27070f67.png",
+          "picks": 22,
+          "pickWins": 11,
+          "pickLosses": 11,
+          "pickRate": 25.58,
+          "bans": 11,
+          "banRate": 12.79,
+          "presence": 33,
+          "presenceRate": 38.37
+        },
+        {
+          "hero": {
+            "id": "selena",
+            "name": "Selena",
+            "pageSlug": "Selena"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Selena-081cfe2a.png",
+          "picks": 22,
+          "pickWins": 11,
+          "pickLosses": 11,
+          "pickRate": 25.58,
+          "bans": 17,
+          "banRate": 19.77,
+          "presence": 39,
+          "presenceRate": 45.35
+        },
+        {
+          "hero": {
+            "id": "miya",
+            "name": "Miya",
+            "pageSlug": "Miya"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Miya_2023-b3f14d5c.png",
+          "picks": 22,
+          "pickWins": 10,
+          "pickLosses": 12,
+          "pickRate": 25.58,
+          "bans": 7,
+          "banRate": 8.14,
+          "presence": 29,
+          "presenceRate": 33.72
+        },
+        {
+          "hero": {
+            "id": "carmilla",
+            "name": "Carmilla",
+            "pageSlug": "Carmilla"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Carmilla-969ebc38.png",
+          "picks": 22,
+          "pickWins": 7,
+          "pickLosses": 15,
+          "pickRate": 25.58,
+          "bans": 16,
+          "banRate": 18.6,
+          "presence": 38,
+          "presenceRate": 44.19
+        },
+        {
+          "hero": {
+            "id": "brody",
+            "name": "Brody",
+            "pageSlug": "Brody"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Brody_2026-b3e1ec3d.png",
+          "picks": 21,
+          "pickWins": 17,
+          "pickLosses": 4,
+          "pickRate": 24.42,
+          "bans": 27,
+          "banRate": 31.4,
+          "presence": 48,
+          "presenceRate": 55.81
+        },
+        {
+          "hero": {
+            "id": "melissa",
+            "name": "Melissa",
+            "pageSlug": "Melissa"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Melissa-9cacc484.png",
+          "picks": 21,
+          "pickWins": 13,
+          "pickLosses": 8,
+          "pickRate": 24.42,
+          "bans": 44,
+          "banRate": 51.16,
+          "presence": 65,
+          "presenceRate": 75.58
+        },
+        {
+          "hero": {
+            "id": "nolan",
+            "name": "Nolan",
+            "pageSlug": "Nolan"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Nolan-99de7d3a.png",
+          "picks": 17,
+          "pickWins": 8,
+          "pickLosses": 9,
+          "pickRate": 19.77,
+          "bans": 4,
+          "banRate": 4.65,
+          "presence": 21,
+          "presenceRate": 24.42
+        },
+        {
+          "hero": {
+            "id": "yi sun-shin",
+            "name": "Yi Sun-shin",
+            "pageSlug": "Yi_Sun-shin"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Yi_Sun-Shin-699a02b8.png",
+          "picks": 17,
+          "pickWins": 8,
+          "pickLosses": 9,
+          "pickRate": 19.77,
+          "bans": 13,
+          "banRate": 15.12,
+          "presence": 30,
+          "presenceRate": 34.88
+        },
+        {
+          "hero": {
+            "id": "moskov",
+            "name": "Moskov",
+            "pageSlug": "Moskov"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Moskov_2023-b28075b5.png",
+          "picks": 17,
+          "pickWins": 5,
+          "pickLosses": 12,
+          "pickRate": 19.77,
+          "bans": 17,
+          "banRate": 19.77,
+          "presence": 34,
+          "presenceRate": 39.53
+        },
+        {
+          "hero": {
+            "id": "dyrroth",
+            "name": "Dyrroth",
+            "pageSlug": "Dyrroth"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Dyrroth_2025-c4d9b3d9.png",
+          "picks": 16,
+          "pickWins": 11,
+          "pickLosses": 5,
+          "pickRate": 18.6,
+          "bans": 7,
+          "banRate": 8.14,
+          "presence": 23,
+          "presenceRate": 26.74
+        },
+        {
+          "hero": {
+            "id": "novaria",
+            "name": "Novaria",
+            "pageSlug": "Novaria"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Novaria-a8c81441.png",
+          "picks": 14,
+          "pickWins": 7,
+          "pickLosses": 7,
+          "pickRate": 16.28,
+          "bans": 7,
+          "banRate": 8.14,
+          "presence": 21,
+          "presenceRate": 24.42
+        },
+        {
+          "hero": {
+            "id": "esmeralda",
+            "name": "Esmeralda",
+            "pageSlug": "Esmeralda"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Esmeralda-7ec14fa0.png",
+          "picks": 14,
+          "pickWins": 5,
+          "pickLosses": 9,
+          "pickRate": 16.28,
+          "bans": 13,
+          "banRate": 15.12,
+          "presence": 27,
+          "presenceRate": 31.4
+        },
+        {
+          "hero": {
+            "id": "clint",
+            "name": "Clint",
+            "pageSlug": "Clint"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Clint_2026-8697a8be.png",
+          "picks": 13,
+          "pickWins": 6,
+          "pickLosses": 7,
+          "pickRate": 15.12,
+          "bans": 3,
+          "banRate": 3.49,
+          "presence": 16,
+          "presenceRate": 18.6
+        },
+        {
+          "hero": {
+            "id": "granger",
+            "name": "Granger",
+            "pageSlug": "Granger"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Granger_2024-b392a484.png",
+          "picks": 12,
+          "pickWins": 6,
+          "pickLosses": 6,
+          "pickRate": 13.95,
+          "bans": 3,
+          "banRate": 3.49,
+          "presence": 15,
+          "presenceRate": 17.44
+        },
+        {
+          "hero": {
+            "id": "alice",
+            "name": "Alice",
+            "pageSlug": "Alice"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Alice_2025-03c59ce5.png",
+          "picks": 11,
+          "pickWins": 8,
+          "pickLosses": 3,
+          "pickRate": 12.79,
+          "bans": 7,
+          "banRate": 8.14,
+          "presence": 18,
+          "presenceRate": 20.93
+        },
+        {
+          "hero": {
+            "id": "claude",
+            "name": "Claude",
+            "pageSlug": "Claude"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Claude_2024-bb50109e.png",
+          "picks": 11,
+          "pickWins": 5,
+          "pickLosses": 6,
+          "pickRate": 12.79,
+          "bans": 3,
+          "banRate": 3.49,
+          "presence": 14,
+          "presenceRate": 16.28
+        },
+        {
+          "hero": {
+            "id": "ruby",
+            "name": "Ruby",
+            "pageSlug": "Ruby"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Ruby-d071c7f0.png",
+          "picks": 11,
+          "pickWins": 5,
+          "pickLosses": 6,
+          "pickRate": 12.79,
+          "bans": 5,
+          "banRate": 5.81,
+          "presence": 16,
+          "presenceRate": 18.6
+        },
+        {
+          "hero": {
+            "id": "chou",
+            "name": "Chou",
+            "pageSlug": "Chou"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Chou-bab846a0.png",
+          "picks": 11,
+          "pickWins": 3,
+          "pickLosses": 8,
+          "pickRate": 12.79,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 12,
+          "presenceRate": 13.95
+        },
+        {
+          "hero": {
+            "id": "sora",
+            "name": "Sora",
+            "pageSlug": "Sora"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Sora-b2b95206.png",
+          "picks": 10,
+          "pickWins": 4,
+          "pickLosses": 6,
+          "pickRate": 11.63,
+          "bans": 3,
+          "banRate": 3.49,
+          "presence": 13,
+          "presenceRate": 15.12
+        },
+        {
+          "hero": {
+            "id": "fanny",
+            "name": "Fanny",
+            "pageSlug": "Fanny"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Fanny-9034e324.png",
+          "picks": 8,
+          "pickWins": 5,
+          "pickLosses": 3,
+          "pickRate": 9.3,
+          "bans": 29,
+          "banRate": 33.72,
+          "presence": 37,
+          "presenceRate": 43.02
+        },
+        {
+          "hero": {
+            "id": "freya",
+            "name": "Freya",
+            "pageSlug": "Freya"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Freya_2025-ec0aece3.png",
+          "picks": 8,
+          "pickWins": 4,
+          "pickLosses": 4,
+          "pickRate": 9.3,
+          "bans": 77,
+          "banRate": 89.53,
+          "presence": 85,
+          "presenceRate": 98.84
+        },
+        {
+          "hero": {
+            "id": "mathilda",
+            "name": "Mathilda",
+            "pageSlug": "Mathilda"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Mathilda-8be8f12b.png",
+          "picks": 7,
+          "pickWins": 5,
+          "pickLosses": 2,
+          "pickRate": 8.14,
+          "bans": 13,
+          "banRate": 15.12,
+          "presence": 20,
+          "presenceRate": 23.26
+        },
+        {
+          "hero": {
+            "id": "lylia",
+            "name": "Lylia",
+            "pageSlug": "Lylia"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Lylia-d5c4b08b.png",
+          "picks": 7,
+          "pickWins": 4,
+          "pickLosses": 3,
+          "pickRate": 8.14,
+          "bans": 11,
+          "banRate": 12.79,
+          "presence": 18,
+          "presenceRate": 20.93
+        },
+        {
+          "hero": {
+            "id": "hylos",
+            "name": "Hylos",
+            "pageSlug": "Hylos"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Hylos-a54a75af.png",
+          "picks": 7,
+          "pickWins": 3,
+          "pickLosses": 4,
+          "pickRate": 8.14,
+          "bans": 3,
+          "banRate": 3.49,
+          "presence": 10,
+          "presenceRate": 11.63
+        },
+        {
+          "hero": {
+            "id": "kaja",
+            "name": "Kaja",
+            "pageSlug": "Kaja"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Kaja_2026-336feb6a.png",
+          "picks": 7,
+          "pickWins": 3,
+          "pickLosses": 4,
+          "pickRate": 8.14,
+          "bans": 11,
+          "banRate": 12.79,
+          "presence": 18,
+          "presenceRate": 20.93
+        },
+        {
+          "hero": {
+            "id": "atlas",
+            "name": "Atlas",
+            "pageSlug": "Atlas"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Atlas-d5d7914c.png",
+          "picks": 7,
+          "pickWins": 2,
+          "pickLosses": 5,
+          "pickRate": 8.14,
+          "bans": 78,
+          "banRate": 90.7,
+          "presence": 85,
+          "presenceRate": 98.84
+        },
+        {
+          "hero": {
+            "id": "suyou",
+            "name": "Suyou",
+            "pageSlug": "Suyou"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Suyou-56282d81.png",
+          "picks": 7,
+          "pickWins": 2,
+          "pickLosses": 5,
+          "pickRate": 8.14,
+          "bans": 8,
+          "banRate": 9.3,
+          "presence": 15,
+          "presenceRate": 17.44
+        },
+        {
+          "hero": {
+            "id": "vexana",
+            "name": "Vexana",
+            "pageSlug": "Vexana"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Vexana_2022-f53a2444.png",
+          "picks": 7,
+          "pickWins": 1,
+          "pickLosses": 6,
+          "pickRate": 8.14,
+          "bans": 2,
+          "banRate": 2.33,
+          "presence": 9,
+          "presenceRate": 10.47
+        },
+        {
+          "hero": {
+            "id": "kimmy",
+            "name": "Kimmy",
+            "pageSlug": "Kimmy"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Kimmy_2025-56c9afe2.png",
+          "picks": 6,
+          "pickWins": 3,
+          "pickLosses": 3,
+          "pickRate": 6.98,
+          "bans": 2,
+          "banRate": 2.33,
+          "presence": 8,
+          "presenceRate": 9.3
+        },
+        {
+          "hero": {
+            "id": "marcel",
+            "name": "Marcel",
+            "pageSlug": "Marcel"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Marcel-9735fd25.png",
+          "picks": 6,
+          "pickWins": 3,
+          "pickLosses": 3,
+          "pickRate": 6.98,
+          "bans": 77,
+          "banRate": 89.53,
+          "presence": 83,
+          "presenceRate": 96.51
+        },
+        {
+          "hero": {
+            "id": "valentina",
+            "name": "Valentina",
+            "pageSlug": "Valentina"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Valentina-55f05891.png",
+          "picks": 6,
+          "pickWins": 3,
+          "pickLosses": 3,
+          "pickRate": 6.98,
+          "bans": 19,
+          "banRate": 22.09,
+          "presence": 25,
+          "presenceRate": 29.07
+        },
+        {
+          "hero": {
+            "id": "zetian",
+            "name": "Zetian",
+            "pageSlug": "Zetian"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Wu_Zetian-5041f45b.png",
+          "picks": 5,
+          "pickWins": 3,
+          "pickLosses": 2,
+          "pickRate": 5.81,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 6,
+          "presenceRate": 6.98
+        },
+        {
+          "hero": {
+            "id": "bruno",
+            "name": "Bruno",
+            "pageSlug": "Bruno"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Bruno_2026-7c65cd19.png",
+          "picks": 5,
+          "pickWins": 2,
+          "pickLosses": 3,
+          "pickRate": 5.81,
+          "bans": 3,
+          "banRate": 3.49,
+          "presence": 8,
+          "presenceRate": 9.3
+        },
+        {
+          "hero": {
+            "id": "guinevere",
+            "name": "Guinevere",
+            "pageSlug": "Guinevere"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Guinevere-49de0451.png",
+          "picks": 4,
+          "pickWins": 3,
+          "pickLosses": 1,
+          "pickRate": 4.65,
+          "bans": 3,
+          "banRate": 3.49,
+          "presence": 7,
+          "presenceRate": 8.14
+        },
+        {
+          "hero": {
+            "id": "harley",
+            "name": "Harley",
+            "pageSlug": "Harley"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Harley-ab0a7046.png",
+          "picks": 4,
+          "pickWins": 3,
+          "pickLosses": 1,
+          "pickRate": 4.65,
+          "bans": 9,
+          "banRate": 10.47,
+          "presence": 13,
+          "presenceRate": 15.12
+        },
+        {
+          "hero": {
+            "id": "phoveus",
+            "name": "Phoveus",
+            "pageSlug": "Phoveus"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Phoveus_2024-2065f412.png",
+          "picks": 4,
+          "pickWins": 3,
+          "pickLosses": 1,
+          "pickRate": 4.65,
+          "bans": 4,
+          "banRate": 4.65,
+          "presence": 8,
+          "presenceRate": 9.3
+        },
+        {
+          "hero": {
+            "id": "aurora",
+            "name": "Aurora",
+            "pageSlug": "Aurora"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Aurora_2024-c889cade.png",
+          "picks": 4,
+          "pickWins": 2,
+          "pickLosses": 2,
+          "pickRate": 4.65,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 4,
+          "presenceRate": 4.65
+        },
+        {
+          "hero": {
+            "id": "cici",
+            "name": "Cici",
+            "pageSlug": "Cici"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Cici-8010612b.png",
+          "picks": 4,
+          "pickWins": 0,
+          "pickLosses": 4,
+          "pickRate": 4.65,
+          "bans": 5,
+          "banRate": 5.81,
+          "presence": 9,
+          "presenceRate": 10.47
+        },
+        {
+          "hero": {
+            "id": "gord",
+            "name": "Gord",
+            "pageSlug": "Gord"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Gord_2025-c0b89c73.png",
+          "picks": 3,
+          "pickWins": 2,
+          "pickLosses": 1,
+          "pickRate": 3.49,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 3,
+          "presenceRate": 3.49
+        },
+        {
+          "hero": {
+            "id": "kalea",
+            "name": "Kalea",
+            "pageSlug": "Kalea"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Kalea-7b5a428d.png",
+          "picks": 3,
+          "pickWins": 2,
+          "pickLosses": 1,
+          "pickRate": 3.49,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 4,
+          "presenceRate": 4.65
+        },
+        {
+          "hero": {
+            "id": "angela",
+            "name": "Angela",
+            "pageSlug": "Angela"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Angela_2024_v2-b48bb0a1.png",
+          "picks": 3,
+          "pickWins": 1,
+          "pickLosses": 2,
+          "pickRate": 3.49,
+          "bans": 2,
+          "banRate": 2.33,
+          "presence": 5,
+          "presenceRate": 5.81
+        },
+        {
+          "hero": {
+            "id": "cecilion",
+            "name": "Cecilion",
+            "pageSlug": "Cecilion"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Cecilion-5dc29f62.png",
+          "picks": 3,
+          "pickWins": 1,
+          "pickLosses": 2,
+          "pickRate": 3.49,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 4,
+          "presenceRate": 4.65
+        },
+        {
+          "hero": {
+            "id": "harith",
+            "name": "Harith",
+            "pageSlug": "Harith"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Harith-f33d69f2.png",
+          "picks": 3,
+          "pickWins": 1,
+          "pickLosses": 2,
+          "pickRate": 3.49,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 4,
+          "presenceRate": 4.65
+        },
+        {
+          "hero": {
+            "id": "leomord",
+            "name": "Leomord",
+            "pageSlug": "Leomord"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Leomord_2022-5280f966.png",
+          "picks": 3,
+          "pickWins": 1,
+          "pickLosses": 2,
+          "pickRate": 3.49,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 4,
+          "presenceRate": 4.65
+        },
+        {
+          "hero": {
+            "id": "hanabi",
+            "name": "Hanabi",
+            "pageSlug": "Hanabi"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Hanabi_2022-c8b51c29.png",
+          "picks": 3,
+          "pickWins": 0,
+          "pickLosses": 3,
+          "pickRate": 3.49,
+          "bans": 2,
+          "banRate": 2.33,
+          "presence": 5,
+          "presenceRate": 5.81
+        },
+        {
+          "hero": {
+            "id": "arlott",
+            "name": "Arlott",
+            "pageSlug": "Arlott"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Arlott-b10d863b.png",
+          "picks": 2,
+          "pickWins": 2,
+          "pickLosses": 0,
+          "pickRate": 2.33,
+          "bans": 2,
+          "banRate": 2.33,
+          "presence": 4,
+          "presenceRate": 4.65
+        },
+        {
+          "hero": {
+            "id": "khaleed",
+            "name": "Khaleed",
+            "pageSlug": "Khaleed"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Khaleed-99abcebb.png",
+          "picks": 2,
+          "pickWins": 1,
+          "pickLosses": 1,
+          "pickRate": 2.33,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 2,
+          "presenceRate": 2.33
+        },
+        {
+          "hero": {
+            "id": "aulus",
+            "name": "Aulus",
+            "pageSlug": "Aulus"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Aulus_2026-ab5e8f5e.png",
+          "picks": 2,
+          "pickWins": 0,
+          "pickLosses": 2,
+          "pickRate": 2.33,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 2,
+          "presenceRate": 2.33
+        },
+        {
+          "hero": {
+            "id": "beatrix",
+            "name": "Beatrix",
+            "pageSlug": "Beatrix"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Beatrix-89519347.png",
+          "picks": 2,
+          "pickWins": 0,
+          "pickLosses": 2,
+          "pickRate": 2.33,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 2,
+          "presenceRate": 2.33
+        },
+        {
+          "hero": {
+            "id": "chip",
+            "name": "Chip",
+            "pageSlug": "Chip"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Chip-5008aaff.png",
+          "picks": 1,
+          "pickWins": 1,
+          "pickLosses": 0,
+          "pickRate": 1.16,
+          "bans": 12,
+          "banRate": 13.95,
+          "presence": 13,
+          "presenceRate": 15.12
+        },
+        {
+          "hero": {
+            "id": "ixia",
+            "name": "Ixia",
+            "pageSlug": "Ixia"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Ixia-61291147.png",
+          "picks": 1,
+          "pickWins": 1,
+          "pickLosses": 0,
+          "pickRate": 1.16,
+          "bans": 2,
+          "banRate": 2.33,
+          "presence": 3,
+          "presenceRate": 3.49
+        },
+        {
+          "hero": {
+            "id": "jawhead",
+            "name": "Jawhead",
+            "pageSlug": "Jawhead"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Jawhead-0409dfa3.png",
+          "picks": 1,
+          "pickWins": 1,
+          "pickLosses": 0,
+          "pickRate": 1.16,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 1,
+          "presenceRate": 1.16
+        },
+        {
+          "hero": {
+            "id": "masha",
+            "name": "Masha",
+            "pageSlug": "Masha"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Masha_2026-c753c0f9.png",
+          "picks": 1,
+          "pickWins": 1,
+          "pickLosses": 0,
+          "pickRate": 1.16,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 2,
+          "presenceRate": 2.33
+        },
+        {
+          "hero": {
+            "id": "yu zhong",
+            "name": "Yu Zhong",
+            "pageSlug": "Yu_Zhong"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Yu_Zhong_2024-7687f393.png",
+          "picks": 1,
+          "pickWins": 1,
+          "pickLosses": 0,
+          "pickRate": 1.16,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 1,
+          "presenceRate": 1.16
+        },
+        {
+          "hero": {
+            "id": "yve",
+            "name": "Yve",
+            "pageSlug": "Yve"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Yve_2024-7242073a.png",
+          "picks": 1,
+          "pickWins": 1,
+          "pickLosses": 0,
+          "pickRate": 1.16,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 1,
+          "presenceRate": 1.16
+        },
+        {
+          "hero": {
+            "id": "balmond",
+            "name": "Balmond",
+            "pageSlug": "Balmond"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Balmond_2025-d9f06a31.png",
+          "picks": 1,
+          "pickWins": 0,
+          "pickLosses": 1,
+          "pickRate": 1.16,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 1,
+          "presenceRate": 1.16
+        },
+        {
+          "hero": {
+            "id": "edith",
+            "name": "Edith",
+            "pageSlug": "Edith"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Edith-35148155.png",
+          "picks": 1,
+          "pickWins": 0,
+          "pickLosses": 1,
+          "pickRate": 1.16,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 1,
+          "presenceRate": 1.16
+        },
+        {
+          "hero": {
+            "id": "kagura",
+            "name": "Kagura",
+            "pageSlug": "Kagura"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Kagura_2021-3dfa4e9c.png",
+          "picks": 1,
+          "pickWins": 0,
+          "pickLosses": 1,
+          "pickRate": 1.16,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 2,
+          "presenceRate": 2.33
+        },
+        {
+          "hero": {
+            "id": "karrie",
+            "name": "Karrie",
+            "pageSlug": "Karrie"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Karrie-d19e4db3.png",
+          "picks": 1,
+          "pickWins": 0,
+          "pickLosses": 1,
+          "pickRate": 1.16,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 1,
+          "presenceRate": 1.16
+        },
+        {
+          "hero": {
+            "id": "lukas",
+            "name": "Lukas",
+            "pageSlug": "Lukas"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Lukas-2c7b0ae8.png",
+          "picks": 1,
+          "pickWins": 0,
+          "pickLosses": 1,
+          "pickRate": 1.16,
+          "bans": 2,
+          "banRate": 2.33,
+          "presence": 3,
+          "presenceRate": 3.49
+        },
+        {
+          "hero": {
+            "id": "odette",
+            "name": "Odette",
+            "pageSlug": "Odette"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Odette_2021-4dbc5b6c.png",
+          "picks": 1,
+          "pickWins": 0,
+          "pickLosses": 1,
+          "pickRate": 1.16,
+          "bans": 2,
+          "banRate": 2.33,
+          "presence": 3,
+          "presenceRate": 3.49
+        },
+        {
+          "hero": {
+            "id": "pharsa",
+            "name": "Pharsa",
+            "pageSlug": "Pharsa"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Pharsa-445a7696.png",
+          "picks": 1,
+          "pickWins": 0,
+          "pickLosses": 1,
+          "pickRate": 1.16,
+          "bans": 0,
+          "banRate": 0,
+          "presence": 1,
+          "presenceRate": 1.16
+        },
+        {
+          "hero": {
+            "id": "tigreal",
+            "name": "Tigreal",
+            "pageSlug": "Tigreal"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Tigreal-38c7df7d.png",
+          "picks": 1,
+          "pickWins": 0,
+          "pickLosses": 1,
+          "pickRate": 1.16,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 2,
+          "presenceRate": 2.33
+        },
+        {
+          "hero": {
+            "id": "badang",
+            "name": "Badang",
+            "pageSlug": "Badang"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Badang_2026-c3d2f452.png",
+          "picks": 0,
+          "pickWins": 0,
+          "pickLosses": 0,
+          "pickRate": 0,
+          "bans": 2,
+          "banRate": 2.33,
+          "presence": 2,
+          "presenceRate": 2.33
+        },
+        {
+          "hero": {
+            "id": "franco",
+            "name": "Franco",
+            "pageSlug": "Franco"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Franco-265cfabd.png",
+          "picks": 0,
+          "pickWins": 0,
+          "pickLosses": 0,
+          "pickRate": 0,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 1,
+          "presenceRate": 1.16
+        },
+        {
+          "hero": {
+            "id": "hayabusa",
+            "name": "Hayabusa",
+            "pageSlug": "Hayabusa"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Hayabusa_2021-e2139e94.png",
+          "picks": 0,
+          "pickWins": 0,
+          "pickLosses": 0,
+          "pickRate": 0,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 1,
+          "presenceRate": 1.16
+        },
+        {
+          "hero": {
+            "id": "khufra",
+            "name": "Khufra",
+            "pageSlug": "Khufra"
+          },
+          "imageUrl": "/heroes/50px-ML_icon_Khufra-e19e2696.png",
+          "picks": 0,
+          "pickWins": 0,
+          "pickLosses": 0,
+          "pickRate": 0,
+          "bans": 1,
+          "banRate": 1.16,
+          "presence": 1,
+          "presenceRate": 1.16
         }
       ],
       "series": [
