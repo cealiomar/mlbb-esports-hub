@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1791015546,
+  "harvestedAt": 1791034483,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -10,6 +10,22 @@
       "rows": [
         {
           "position": 1,
+          "team": {
+            "code": "NV",
+            "name": "Natus Vincere",
+            "pageSlug": "Natus_Vincere",
+            "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png"
+          },
+          "matchWins": 9,
+          "matchLosses": 2,
+          "gameWins": 18,
+          "gameLosses": 7,
+          "gameDiff": 11,
+          "points": null,
+          "zone": "advance"
+        },
+        {
+          "position": 2,
           "team": {
             "code": "TLI",
             "name": "Team Liquid ID",
@@ -25,7 +41,7 @@
           "zone": "advance"
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "code": "AE",
             "name": "Alter Ego",
@@ -33,26 +49,10 @@
             "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png"
           },
           "matchWins": 8,
-          "matchLosses": 3,
-          "gameWins": 17,
-          "gameLosses": 7,
-          "gameDiff": 10,
-          "points": null,
-          "zone": "advance"
-        },
-        {
-          "position": 3,
-          "team": {
-            "code": "NV",
-            "name": "Natus Vincere",
-            "pageSlug": "Natus_Vincere",
-            "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png"
-          },
-          "matchWins": 8,
-          "matchLosses": 2,
-          "gameWins": 16,
-          "gameLosses": 6,
-          "gameDiff": 10,
+          "matchLosses": 4,
+          "gameWins": 18,
+          "gameLosses": 9,
+          "gameDiff": 9,
           "points": null,
           "zone": "playoff"
         },
@@ -64,11 +64,11 @@
             "pageSlug": "Bigetron_by_Vitality",
             "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png"
           },
-          "matchWins": 6,
+          "matchWins": 7,
           "matchLosses": 5,
-          "gameWins": 13,
-          "gameLosses": 14,
-          "gameDiff": -1,
+          "gameWins": 15,
+          "gameLosses": 15,
+          "gameDiff": 0,
           "points": null,
           "zone": "playoff"
         },
@@ -129,10 +129,10 @@
             "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png"
           },
           "matchWins": 2,
-          "matchLosses": 8,
-          "gameWins": 7,
-          "gameLosses": 17,
-          "gameDiff": -10,
+          "matchLosses": 9,
+          "gameWins": 8,
+          "gameLosses": 19,
+          "gameDiff": -11,
           "points": null,
           "zone": "eliminated"
         },
@@ -169,12 +169,12 @@
             "pageSlug": "Team_Falcons_PH",
             "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png"
           },
-          "matchWins": 9,
+          "matchWins": 10,
           "matchLosses": 1,
-          "gameWins": 19,
-          "gameLosses": 6,
-          "gameDiff": 13,
-          "points": 9,
+          "gameWins": 21,
+          "gameLosses": 7,
+          "gameDiff": 14,
+          "points": 10,
           "zone": "advance"
         },
         {
@@ -266,10 +266,10 @@
             "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png"
           },
           "matchWins": 3,
-          "matchLosses": 8,
-          "gameWins": 9,
-          "gameLosses": 17,
-          "gameDiff": -8,
+          "matchLosses": 9,
+          "gameWins": 10,
+          "gameLosses": 19,
+          "gameDiff": -9,
           "points": 3,
           "zone": "eliminated"
         },
@@ -934,12 +934,12 @@
             "pageSlug": "",
             "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png"
           },
-          "matchWins": 5,
+          "matchWins": 6,
           "matchLosses": 1,
-          "gameWins": 11,
+          "gameWins": 13,
           "gameLosses": 4,
-          "gameDiff": 7,
-          "points": 5,
+          "gameDiff": 9,
+          "points": 6,
           "zone": "advance"
         },
         {
@@ -966,12 +966,12 @@
             "pageSlug": "Bacon_Time",
             "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png"
           },
-          "matchWins": 4,
+          "matchWins": 5,
           "matchLosses": 1,
-          "gameWins": 8,
-          "gameLosses": 3,
-          "gameDiff": 5,
-          "points": 4,
+          "gameWins": 10,
+          "gameLosses": 4,
+          "gameDiff": 6,
+          "points": 5,
           "zone": "playoff"
         },
         {
@@ -999,10 +999,10 @@
             "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png"
           },
           "matchWins": 2,
-          "matchLosses": 4,
-          "gameWins": 4,
-          "gameLosses": 8,
-          "gameDiff": -4,
+          "matchLosses": 5,
+          "gameWins": 5,
+          "gameLosses": 10,
+          "gameDiff": -5,
           "points": 2,
           "zone": "playoff"
         },
@@ -1015,10 +1015,10 @@
             "logoUrl": "/teams/59px-FULL_SENSE_2025_allmode-9db84f90.png"
           },
           "matchWins": 2,
-          "matchLosses": 5,
+          "matchLosses": 6,
           "gameWins": 6,
-          "gameLosses": 12,
-          "gameDiff": -6,
+          "gameLosses": 14,
+          "gameDiff": -8,
           "points": 2,
           "zone": "eliminated"
         },
