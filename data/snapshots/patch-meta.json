@@ -1,8 +1,8 @@
 {
-  "harvestedAt": 1791120329,
+  "harvestedAt": 1791135699,
   "data": {
     "source": "https://mlbb.io/en/hero-tier",
-    "updatedAt": "2026-10-04T01:04:15.000Z",
+    "updatedAt": "2026-10-04T21:03:52.000Z",
     "version": "2.1.95",
     "heroes": {
       "aulus": {
@@ -11,7 +11,7 @@
           "exp"
         ],
         "tier": "SS",
-        "score": 0.988192,
+        "score": 0.991144,
         "roles": [
           "Fighter"
         ],
@@ -25,7 +25,7 @@
           "roam"
         ],
         "tier": "SS",
-        "score": 0.7359220000000001,
+        "score": 0.733231,
         "roles": [
           "Support",
           "Tank"
@@ -35,12 +35,26 @@
           "Damage"
         ]
       },
+      "eudora": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "SS",
+        "score": 0.82384,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Control",
+          "Burst"
+        ]
+      },
       "rafaela": {
         "lanes": [
           "roam"
         ],
         "tier": "SS",
-        "score": 0.9417559999999999,
+        "score": 0.944502,
         "roles": [
           "Support"
         ],
@@ -55,7 +69,7 @@
           "jungle"
         ],
         "tier": "SS",
-        "score": 0.9144869999999999,
+        "score": 0.91524,
         "roles": [
           "Fighter"
         ],
@@ -64,26 +78,12 @@
           "Damage"
         ]
       },
-      "eudora": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "SS",
-        "score": 0.8193980000000001,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Control",
-          "Burst"
-        ]
-      },
       "marcel": {
         "lanes": [
           "roam"
         ],
         "tier": "S",
-        "score": 0.739418,
+        "score": 0.7442300000000001,
         "roles": [
           "Support"
         ],
@@ -97,7 +97,7 @@
           "exp"
         ],
         "tier": "S",
-        "score": 0.94069,
+        "score": 0.939217,
         "roles": [
           "Fighter",
           "Tank"
@@ -112,7 +112,7 @@
           "jungle"
         ],
         "tier": "S",
-        "score": 0.837784,
+        "score": 0.838364,
         "roles": [
           "Assassin"
         ],
@@ -126,7 +126,7 @@
           "gold"
         ],
         "tier": "S",
-        "score": 0.97448,
+        "score": 0.9808600000000001,
         "roles": [
           "Marksman"
         ],
@@ -140,7 +140,7 @@
           "roam"
         ],
         "tier": "S",
-        "score": 0.9653780000000001,
+        "score": 0.9676889999999999,
         "roles": [
           "Tank",
           "Support"
@@ -155,7 +155,7 @@
           "exp"
         ],
         "tier": "S",
-        "score": 0.7472920000000001,
+        "score": 0.7459969999999999,
         "roles": [
           "Tank"
         ],
@@ -169,7 +169,7 @@
           "roam"
         ],
         "tier": "S",
-        "score": 0.718804,
+        "score": 0.7226480000000001,
         "roles": [
           "Support"
         ],
@@ -178,12 +178,26 @@
           "Guard"
         ]
       },
+      "atlas": {
+        "lanes": [
+          "roam"
+        ],
+        "tier": "S",
+        "score": 0.7612150000000001,
+        "roles": [
+          "Tank"
+        ],
+        "specialties": [
+          "Crowd Control",
+          "Initiator"
+        ]
+      },
       "estes": {
         "lanes": [
           "roam"
         ],
         "tier": "S",
-        "score": 0.484709,
+        "score": 0.488705,
         "roles": [
           "Support"
         ],
@@ -197,7 +211,7 @@
           "mid"
         ],
         "tier": "A",
-        "score": 0.8831319999999999,
+        "score": 0.882382,
         "roles": [
           "Mage",
           "Assassin"
@@ -212,7 +226,7 @@
           "exp"
         ],
         "tier": "A",
-        "score": 0.8787119999999999,
+        "score": 0.8777440000000001,
         "roles": [
           "Fighter"
         ],
@@ -226,7 +240,7 @@
           "jungle"
         ],
         "tier": "A",
-        "score": 0.8315779999999999,
+        "score": 0.832776,
         "roles": [
           "Fighter",
           "Tank"
@@ -241,7 +255,7 @@
           "exp"
         ],
         "tier": "A",
-        "score": 0.805231,
+        "score": 0.808437,
         "roles": [
           "Fighter",
           "Assassin"
@@ -256,7 +270,7 @@
           "mid"
         ],
         "tier": "A",
-        "score": 0.793317,
+        "score": 0.79513,
         "roles": [
           "Mage"
         ],
@@ -265,40 +279,12 @@
           "Finisher"
         ]
       },
-      "argus": {
-        "lanes": [
-          "exp"
-        ],
-        "tier": "A",
-        "score": 0.781534,
-        "roles": [
-          "Fighter"
-        ],
-        "specialties": [
-          "Charge",
-          "Burst"
-        ]
-      },
-      "ling": {
-        "lanes": [
-          "jungle"
-        ],
-        "tier": "A",
-        "score": 0.777846,
-        "roles": [
-          "Assassin"
-        ],
-        "specialties": [
-          "Chase",
-          "Burst"
-        ]
-      },
       "valir": {
         "lanes": [
           "mid"
         ],
         "tier": "A",
-        "score": 0.772988,
+        "score": 0.789679,
         "roles": [
           "Mage"
         ],
@@ -307,18 +293,32 @@
           "Guard"
         ]
       },
-      "khufra": {
+      "ling": {
         "lanes": [
-          "roam"
+          "jungle"
         ],
         "tier": "A",
-        "score": 0.77252,
+        "score": 0.787358,
         "roles": [
-          "Tank"
+          "Assassin"
         ],
         "specialties": [
-          "Initiator",
-          "Crowd Control"
+          "Chase",
+          "Burst"
+        ]
+      },
+      "argus": {
+        "lanes": [
+          "exp"
+        ],
+        "tier": "A",
+        "score": 0.782867,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Charge",
+          "Burst"
         ]
       },
       "barats": {
@@ -327,7 +327,7 @@
           "jungle"
         ],
         "tier": "A",
-        "score": 0.7700940000000001,
+        "score": 0.771738,
         "roles": [
           "Tank",
           "Fighter"
@@ -337,18 +337,18 @@
           "Crowd Control"
         ]
       },
-      "atlas": {
+      "khufra": {
         "lanes": [
           "roam"
         ],
         "tier": "A",
-        "score": 0.76607,
+        "score": 0.767084,
         "roles": [
           "Tank"
         ],
         "specialties": [
-          "Crowd Control",
-          "Initiator"
+          "Initiator",
+          "Crowd Control"
         ]
       },
       "yisunshin": {
@@ -356,7 +356,7 @@
           "jungle"
         ],
         "tier": "A",
-        "score": 0.7557849999999999,
+        "score": 0.756181,
         "roles": [
           "Assassin",
           "Marksman"
@@ -371,7 +371,7 @@
           "mid"
         ],
         "tier": "A",
-        "score": 0.746032,
+        "score": 0.746236,
         "roles": [
           "Mage"
         ],
@@ -385,10 +385,39 @@
           "exp"
         ],
         "tier": "A",
-        "score": 0.7388669999999999,
+        "score": 0.7360410000000001,
         "roles": [
           "Fighter",
           "Assassin"
+        ],
+        "specialties": [
+          "Charge",
+          "Burst"
+        ]
+      },
+      "nolan": {
+        "lanes": [
+          "jungle"
+        ],
+        "tier": "A",
+        "score": 0.722163,
+        "roles": [
+          "Assassin"
+        ],
+        "specialties": [
+          "Chase",
+          "Burst"
+        ]
+      },
+      "badang": {
+        "lanes": [
+          "roam",
+          "exp"
+        ],
+        "tier": "A",
+        "score": 0.7203630000000001,
+        "roles": [
+          "Fighter"
         ],
         "specialties": [
           "Charge",
@@ -400,7 +429,7 @@
           "gold"
         ],
         "tier": "A",
-        "score": 0.733623,
+        "score": 0.7186699999999999,
         "roles": [
           "Marksman"
         ],
@@ -409,17 +438,17 @@
           "Damage"
         ]
       },
-      "nolan": {
+      "cecilion": {
         "lanes": [
-          "jungle"
+          "mid"
         ],
         "tier": "A",
-        "score": 0.7254579999999999,
+        "score": 0.7146760000000001,
         "roles": [
-          "Assassin"
+          "Mage"
         ],
         "specialties": [
-          "Chase",
+          "Poke",
           "Burst"
         ]
       },
@@ -428,7 +457,7 @@
           "gold"
         ],
         "tier": "A",
-        "score": 0.7219800000000001,
+        "score": 0.714292,
         "roles": [
           "Marksman"
         ],
@@ -437,13 +466,27 @@
           "Burst"
         ]
       },
+      "belerick": {
+        "lanes": [
+          "roam"
+        ],
+        "tier": "A",
+        "score": 0.701544,
+        "roles": [
+          "Tank"
+        ],
+        "specialties": [
+          "Crowd Control",
+          "Regen"
+        ]
+      },
       "selena": {
         "lanes": [
           "mid",
           "roam"
         ],
         "tier": "A",
-        "score": 0.7180019999999999,
+        "score": 0.696152,
         "roles": [
           "Assassin",
           "Mage"
@@ -453,70 +496,13 @@
           "Finisher"
         ]
       },
-      "cecilion": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "A",
-        "score": 0.7150380000000001,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Poke",
-          "Burst"
-        ]
-      },
-      "badang": {
-        "lanes": [
-          "roam",
-          "exp"
-        ],
-        "tier": "A",
-        "score": 0.7085009999999999,
-        "roles": [
-          "Fighter"
-        ],
-        "specialties": [
-          "Charge",
-          "Burst"
-        ]
-      },
-      "belerick": {
-        "lanes": [
-          "roam"
-        ],
-        "tier": "A",
-        "score": 0.6946380000000001,
-        "roles": [
-          "Tank"
-        ],
-        "specialties": [
-          "Crowd Control",
-          "Regen"
-        ]
-      },
-      "odette": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "A",
-        "score": 0.685169,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Burst",
-          "Poke"
-        ]
-      },
       "alice": {
         "lanes": [
           "exp",
           "jungle"
         ],
         "tier": "A",
-        "score": 0.670156,
+        "score": 0.6806420000000001,
         "roles": [
           "Tank",
           "Mage"
@@ -526,12 +512,26 @@
           "Regen"
         ]
       },
+      "odette": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "A",
+        "score": 0.675509,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Burst",
+          "Poke"
+        ]
+      },
       "moskov": {
         "lanes": [
           "gold"
         ],
         "tier": "A",
-        "score": 0.664326,
+        "score": 0.667258,
         "roles": [
           "Marksman"
         ],
@@ -540,12 +540,41 @@
           "Chase"
         ]
       },
+      "saber": {
+        "lanes": [
+          "jungle",
+          "roam"
+        ],
+        "tier": "A",
+        "score": 0.664047,
+        "roles": [
+          "Assassin"
+        ],
+        "specialties": [
+          "Charge",
+          "Finisher"
+        ]
+      },
+      "diggie": {
+        "lanes": [
+          "roam"
+        ],
+        "tier": "A",
+        "score": 0.649179,
+        "roles": [
+          "Support"
+        ],
+        "specialties": [
+          "Guard",
+          "Poke"
+        ]
+      },
       "clint": {
         "lanes": [
           "gold"
         ],
         "tier": "A",
-        "score": 0.6608769999999999,
+        "score": 0.645269,
         "roles": [
           "Marksman"
         ],
@@ -560,7 +589,7 @@
           "jungle"
         ],
         "tier": "A",
-        "score": 0.6541440000000001,
+        "score": 0.64271,
         "roles": [
           "Fighter"
         ],
@@ -569,41 +598,12 @@
           "Damage"
         ]
       },
-      "saber": {
-        "lanes": [
-          "jungle",
-          "roam"
-        ],
-        "tier": "A",
-        "score": 0.654018,
-        "roles": [
-          "Assassin"
-        ],
-        "specialties": [
-          "Charge",
-          "Finisher"
-        ]
-      },
-      "diggie": {
-        "lanes": [
-          "roam"
-        ],
-        "tier": "A",
-        "score": 0.65334,
-        "roles": [
-          "Support"
-        ],
-        "specialties": [
-          "Guard",
-          "Poke"
-        ]
-      },
       "novaria": {
         "lanes": [
           "mid"
         ],
         "tier": "A",
-        "score": 0.650318,
+        "score": 0.639054,
         "roles": [
           "Mage"
         ],
@@ -617,7 +617,7 @@
           "exp"
         ],
         "tier": "A",
-        "score": 0.6402190000000001,
+        "score": 0.6390520000000001,
         "roles": [
           "Assassin",
           "Fighter"
@@ -627,27 +627,12 @@
           "Burst"
         ]
       },
-      "dyrroth": {
-        "lanes": [
-          "exp",
-          "jungle"
-        ],
-        "tier": "A",
-        "score": 0.610885,
-        "roles": [
-          "Fighter"
-        ],
-        "specialties": [
-          "Charge",
-          "Burst"
-        ]
-      },
       "brody": {
         "lanes": [
           "gold"
         ],
         "tier": "A",
-        "score": 0.6078680000000001,
+        "score": 0.616274,
         "roles": [
           "Marksman"
         ],
@@ -656,32 +641,19 @@
           "Finisher"
         ]
       },
-      "miya": {
+      "dyrroth": {
         "lanes": [
-          "gold"
+          "exp",
+          "jungle"
         ],
         "tier": "A",
-        "score": 0.598446,
-        "roles": [
-          "Marksman"
-        ],
-        "specialties": [
-          "Finisher",
-          "Damage"
-        ]
-      },
-      "yuzhong": {
-        "lanes": [
-          "exp"
-        ],
-        "tier": "A",
-        "score": 0.590072,
+        "score": 0.6142029999999999,
         "roles": [
           "Fighter"
         ],
         "specialties": [
-          "Regen",
-          "Damage"
+          "Charge",
+          "Burst"
         ]
       },
       "minsitthar": {
@@ -690,7 +662,7 @@
           "roam"
         ],
         "tier": "A",
-        "score": 0.588975,
+        "score": 0.6085069999999999,
         "roles": [
           "Fighter"
         ],
@@ -699,18 +671,18 @@
           "Crowd Control"
         ]
       },
-      "leomord": {
+      "miya": {
         "lanes": [
-          "jungle"
+          "gold"
         ],
         "tier": "A",
-        "score": 0.5841040000000001,
+        "score": 0.5997279999999999,
         "roles": [
-          "Fighter"
+          "Marksman"
         ],
         "specialties": [
-          "Chase",
-          "Burst"
+          "Finisher",
+          "Damage"
         ]
       },
       "sun": {
@@ -719,7 +691,7 @@
           "jungle"
         ],
         "tier": "A",
-        "score": 0.576073,
+        "score": 0.5873189999999999,
         "roles": [
           "Fighter"
         ],
@@ -728,18 +700,32 @@
           "Damage"
         ]
       },
-      "zhuxin": {
+      "yuzhong": {
         "lanes": [
-          "mid"
+          "exp"
         ],
         "tier": "A",
-        "score": 0.5627859999999999,
+        "score": 0.581792,
         "roles": [
-          "Mage"
+          "Fighter"
         ],
         "specialties": [
-          "Damage",
-          "Crowd Control"
+          "Regen",
+          "Damage"
+        ]
+      },
+      "leomord": {
+        "lanes": [
+          "jungle"
+        ],
+        "tier": "A",
+        "score": 0.579932,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Chase",
+          "Burst"
         ]
       },
       "suyou": {
@@ -747,7 +733,7 @@
           "jungle"
         ],
         "tier": "A",
-        "score": 0.5623319999999999,
+        "score": 0.5719059999999999,
         "roles": [
           "Assassin",
           "Fighter"
@@ -762,7 +748,7 @@
           "mid"
         ],
         "tier": "A",
-        "score": 0.556945,
+        "score": 0.561014,
         "roles": [
           "Mage"
         ],
@@ -771,18 +757,18 @@
           "Burst"
         ]
       },
-      "ruby": {
+      "zetian": {
         "lanes": [
-          "exp"
+          "mid"
         ],
-        "tier": "B",
-        "score": 0.556177,
+        "tier": "A",
+        "score": 0.554686,
         "roles": [
-          "Fighter"
+          "Mage"
         ],
         "specialties": [
-          "Crowd Control",
-          "Regen"
+          "Damage",
+          "Crowd Control"
         ]
       },
       "edith": {
@@ -790,8 +776,8 @@
           "exp",
           "roam"
         ],
-        "tier": "B",
-        "score": 0.554006,
+        "tier": "A",
+        "score": 0.5535180000000001,
         "roles": [
           "Tank",
           "Marksman"
@@ -801,12 +787,54 @@
           "Burst"
         ]
       },
+      "zhuxin": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "B",
+        "score": 0.5513049999999999,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Damage",
+          "Crowd Control"
+        ]
+      },
+      "ruby": {
+        "lanes": [
+          "exp"
+        ],
+        "tier": "B",
+        "score": 0.5501929999999999,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Crowd Control",
+          "Regen"
+        ]
+      },
+      "yve": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "B",
+        "score": 0.540899,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Poke",
+          "Burst"
+        ]
+      },
       "arlott": {
         "lanes": [
           "exp"
         ],
         "tier": "B",
-        "score": 0.5420860000000001,
+        "score": 0.526678,
         "roles": [
           "Fighter",
           "Assassin"
@@ -816,41 +844,13 @@
           "Burst"
         ]
       },
-      "zetian": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "B",
-        "score": 0.540679,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Damage",
-          "Crowd Control"
-        ]
-      },
-      "yve": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "B",
-        "score": 0.540366,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Poke",
-          "Burst"
-        ]
-      },
       "popolandkupa": {
         "lanes": [
           "jungle",
           "gold"
         ],
         "tier": "B",
-        "score": 0.519679,
+        "score": 0.526572,
         "roles": [
           "Marksman"
         ],
@@ -864,7 +864,7 @@
           "gold"
         ],
         "tier": "B",
-        "score": 0.518894,
+        "score": 0.511439,
         "roles": [
           "Marksman"
         ],
@@ -873,26 +873,12 @@
           "Damage"
         ]
       },
-      "aamon": {
-        "lanes": [
-          "jungle"
-        ],
-        "tier": "B",
-        "score": 0.511625,
-        "roles": [
-          "Assassin"
-        ],
-        "specialties": [
-          "Chase",
-          "Magic Damage"
-        ]
-      },
       "irithel": {
         "lanes": [
           "gold"
         ],
         "tier": "B",
-        "score": 0.495527,
+        "score": 0.509595,
         "roles": [
           "Marksman"
         ],
@@ -901,13 +887,41 @@
           "Burst"
         ]
       },
+      "aamon": {
+        "lanes": [
+          "jungle"
+        ],
+        "tier": "B",
+        "score": 0.502521,
+        "roles": [
+          "Assassin"
+        ],
+        "specialties": [
+          "Chase",
+          "Magic Damage"
+        ]
+      },
+      "cyclops": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "B",
+        "score": 0.494627,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Damage",
+          "Control"
+        ]
+      },
       "gusion": {
         "lanes": [
           "jungle",
           "mid"
         ],
         "tier": "B",
-        "score": 0.49352300000000004,
+        "score": 0.49393400000000004,
         "roles": [
           "Assassin"
         ],
@@ -916,12 +930,40 @@
           "Magic Damage"
         ]
       },
+      "natan": {
+        "lanes": [
+          "gold"
+        ],
+        "tier": "B",
+        "score": 0.49102999999999997,
+        "roles": [
+          "Marksman"
+        ],
+        "specialties": [
+          "Burst",
+          "Magic Damage"
+        ]
+      },
+      "hanabi": {
+        "lanes": [
+          "gold"
+        ],
+        "tier": "B",
+        "score": 0.488058,
+        "roles": [
+          "Marksman"
+        ],
+        "specialties": [
+          "Finisher",
+          "Damage"
+        ]
+      },
       "esmeralda": {
         "lanes": [
           "exp"
         ],
         "tier": "B",
-        "score": 0.487656,
+        "score": 0.487832,
         "roles": [
           "Tank",
           "Mage"
@@ -937,7 +979,7 @@
           "exp"
         ],
         "tier": "B",
-        "score": 0.484998,
+        "score": 0.485952,
         "roles": [
           "Fighter",
           "Mage"
@@ -947,81 +989,12 @@
           "Burst"
         ]
       },
-      "natan": {
-        "lanes": [
-          "gold"
-        ],
-        "tier": "B",
-        "score": 0.48436,
-        "roles": [
-          "Marksman"
-        ],
-        "specialties": [
-          "Burst",
-          "Magic Damage"
-        ]
-      },
-      "hanabi": {
-        "lanes": [
-          "gold"
-        ],
-        "tier": "B",
-        "score": 0.483244,
-        "roles": [
-          "Marksman"
-        ],
-        "specialties": [
-          "Finisher",
-          "Damage"
-        ]
-      },
-      "uranus": {
-        "lanes": [
-          "exp"
-        ],
-        "tier": "B",
-        "score": 0.480754,
-        "roles": [
-          "Tank"
-        ],
-        "specialties": [
-          "Regen"
-        ]
-      },
-      "cyclops": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "B",
-        "score": 0.48052300000000003,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Damage",
-          "Control"
-        ]
-      },
-      "cici": {
-        "lanes": [
-          "exp"
-        ],
-        "tier": "B",
-        "score": 0.478644,
-        "roles": [
-          "Fighter"
-        ],
-        "specialties": [
-          "Damage",
-          "Regen"
-        ]
-      },
       "zhask": {
         "lanes": [
           "mid"
         ],
         "tier": "B",
-        "score": 0.47393,
+        "score": 0.477305,
         "roles": [
           "Mage"
         ],
@@ -1036,7 +1009,7 @@
           "exp"
         ],
         "tier": "B",
-        "score": 0.46543799999999996,
+        "score": 0.47410599999999997,
         "roles": [
           "Assassin",
           "Fighter"
@@ -1046,13 +1019,40 @@
           "Magic Damage"
         ]
       },
+      "uranus": {
+        "lanes": [
+          "exp"
+        ],
+        "tier": "B",
+        "score": 0.47406,
+        "roles": [
+          "Tank"
+        ],
+        "specialties": [
+          "Regen"
+        ]
+      },
+      "cici": {
+        "lanes": [
+          "exp"
+        ],
+        "tier": "B",
+        "score": 0.47354599999999997,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Damage",
+          "Regen"
+        ]
+      },
       "natalia": {
         "lanes": [
           "jungle",
           "roam"
         ],
         "tier": "B",
-        "score": 0.46219499999999997,
+        "score": 0.461174,
         "roles": [
           "Assassin"
         ],
@@ -1067,7 +1067,7 @@
           "exp"
         ],
         "tier": "B",
-        "score": 0.460553,
+        "score": 0.452177,
         "roles": [
           "Fighter",
           "Assassin"
@@ -1082,7 +1082,7 @@
           "exp"
         ],
         "tier": "B",
-        "score": 0.455187,
+        "score": 0.44717599999999996,
         "roles": [
           "Fighter"
         ],
@@ -1096,7 +1096,7 @@
           "jungle"
         ],
         "tier": "B",
-        "score": 0.447454,
+        "score": 0.446338,
         "roles": [
           "Assassin"
         ],
@@ -1110,7 +1110,7 @@
           "roam"
         ],
         "tier": "B",
-        "score": 0.430361,
+        "score": 0.432465,
         "roles": [
           "Support"
         ],
@@ -1119,42 +1119,12 @@
           "Charge"
         ]
       },
-      "granger": {
-        "lanes": [
-          "gold"
-        ],
-        "tier": "B",
-        "score": 0.427307,
-        "roles": [
-          "Marksman"
-        ],
-        "specialties": [
-          "Burst",
-          "Finisher"
-        ]
-      },
-      "kimmy": {
-        "lanes": [
-          "mid",
-          "gold"
-        ],
-        "tier": "B",
-        "score": 0.42518599999999995,
-        "roles": [
-          "Marksman",
-          "Mage"
-        ],
-        "specialties": [
-          "Damage",
-          "Magic Damage"
-        ]
-      },
       "terizla": {
         "lanes": [
           "exp"
         ],
         "tier": "B",
-        "score": 0.420685,
+        "score": 0.423457,
         "roles": [
           "Fighter",
           "Tank"
@@ -1164,54 +1134,12 @@
           "Crowd Control"
         ]
       },
-      "lunox": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "B",
-        "score": 0.411906,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Burst",
-          "Damage"
-        ]
-      },
-      "xborg": {
-        "lanes": [
-          "exp"
-        ],
-        "tier": "B",
-        "score": 0.410642,
-        "roles": [
-          "Fighter"
-        ],
-        "specialties": [
-          "Regen",
-          "Burst"
-        ]
-      },
-      "vexana": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "B",
-        "score": 0.410537,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Poke",
-          "Control"
-        ]
-      },
       "angela": {
         "lanes": [
           "roam"
         ],
         "tier": "B",
-        "score": 0.40974900000000003,
+        "score": 0.423145,
         "roles": [
           "Support"
         ],
@@ -1220,13 +1148,85 @@
           "Support"
         ]
       },
+      "vexana": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "B",
+        "score": 0.42143400000000003,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Poke",
+          "Control"
+        ]
+      },
+      "kimmy": {
+        "lanes": [
+          "mid",
+          "gold"
+        ],
+        "tier": "B",
+        "score": 0.418844,
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "specialties": [
+          "Damage",
+          "Magic Damage"
+        ]
+      },
+      "xborg": {
+        "lanes": [
+          "exp"
+        ],
+        "tier": "B",
+        "score": 0.41837599999999997,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Regen",
+          "Burst"
+        ]
+      },
+      "silvanna": {
+        "lanes": [
+          "exp"
+        ],
+        "tier": "B",
+        "score": 0.414419,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Initiator",
+          "Magic Damage"
+        ]
+      },
+      "lunox": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "B",
+        "score": 0.40699599999999997,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Burst",
+          "Damage"
+        ]
+      },
       "faramis": {
         "lanes": [
           "mid",
           "roam"
         ],
         "tier": "B",
-        "score": 0.403583,
+        "score": 0.404548,
         "roles": [
           "Support",
           "Mage"
@@ -1236,12 +1236,26 @@
           "Charge"
         ]
       },
+      "granger": {
+        "lanes": [
+          "gold"
+        ],
+        "tier": "B",
+        "score": 0.40226799999999996,
+        "roles": [
+          "Marksman"
+        ],
+        "specialties": [
+          "Burst",
+          "Finisher"
+        ]
+      },
       "lesley": {
         "lanes": [
           "gold"
         ],
         "tier": "B",
-        "score": 0.403492,
+        "score": 0.40204,
         "roles": [
           "Marksman",
           "Assassin"
@@ -1251,69 +1265,12 @@
           "Burst"
         ]
       },
-      "thamuz": {
-        "lanes": [
-          "exp"
-        ],
-        "tier": "B",
-        "score": 0.40248700000000004,
-        "roles": [
-          "Fighter"
-        ],
-        "specialties": [
-          "Chase",
-          "Damage"
-        ]
-      },
-      "silvanna": {
-        "lanes": [
-          "exp"
-        ],
-        "tier": "B",
-        "score": 0.400719,
-        "roles": [
-          "Fighter"
-        ],
-        "specialties": [
-          "Initiator",
-          "Magic Damage"
-        ]
-      },
-      "khaleed": {
-        "lanes": [
-          "roam",
-          "exp"
-        ],
-        "tier": "B",
-        "score": 0.399189,
-        "roles": [
-          "Fighter"
-        ],
-        "specialties": [
-          "Damage",
-          "Regen"
-        ]
-      },
-      "hayabusa": {
-        "lanes": [
-          "jungle"
-        ],
-        "tier": "B",
-        "score": 0.39567599999999997,
-        "roles": [
-          "Assassin"
-        ],
-        "specialties": [
-          "Chase",
-          "Burst"
-        ]
-      },
       "akai": {
         "lanes": [
           "roam"
         ],
         "tier": "B",
-        "score": 0.395235,
+        "score": 0.400966,
         "roles": [
           "Tank"
         ],
@@ -1322,12 +1279,55 @@
           "Crowd Control"
         ]
       },
+      "hayabusa": {
+        "lanes": [
+          "jungle"
+        ],
+        "tier": "B",
+        "score": 0.400868,
+        "roles": [
+          "Assassin"
+        ],
+        "specialties": [
+          "Chase",
+          "Burst"
+        ]
+      },
+      "thamuz": {
+        "lanes": [
+          "exp"
+        ],
+        "tier": "B",
+        "score": 0.398887,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Chase",
+          "Damage"
+        ]
+      },
+      "khaleed": {
+        "lanes": [
+          "roam",
+          "exp"
+        ],
+        "tier": "B",
+        "score": 0.396918,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Damage",
+          "Regen"
+        ]
+      },
       "aurora": {
         "lanes": [
           "mid"
         ],
         "tier": "B",
-        "score": 0.392449,
+        "score": 0.39392200000000005,
         "roles": [
           "Mage"
         ],
@@ -1341,7 +1341,7 @@
           "mid"
         ],
         "tier": "B",
-        "score": 0.392286,
+        "score": 0.384595,
         "roles": [
           "Mage"
         ],
@@ -1350,43 +1350,12 @@
           "Damage"
         ]
       },
-      "harley": {
-        "lanes": [
-          "jungle",
-          "mid"
-        ],
-        "tier": "B",
-        "score": 0.383227,
-        "roles": [
-          "Assassin",
-          "Mage"
-        ],
-        "specialties": [
-          "Burst",
-          "Poke"
-        ]
-      },
-      "alucard": {
-        "lanes": [
-          "jungle"
-        ],
-        "tier": "B",
-        "score": 0.379359,
-        "roles": [
-          "Fighter",
-          "Assassin"
-        ],
-        "specialties": [
-          "Chase",
-          "Damage"
-        ]
-      },
       "lolita": {
         "lanes": [
           "roam"
         ],
         "tier": "B",
-        "score": 0.379183,
+        "score": 0.380776,
         "roles": [
           "Support",
           "Tank"
@@ -1401,7 +1370,7 @@
           "gold"
         ],
         "tier": "B",
-        "score": 0.373467,
+        "score": 0.380048,
         "roles": [
           "Marksman"
         ],
@@ -1410,12 +1379,28 @@
           "Chase"
         ]
       },
+      "harley": {
+        "lanes": [
+          "jungle",
+          "mid"
+        ],
+        "tier": "B",
+        "score": 0.379474,
+        "roles": [
+          "Assassin",
+          "Mage"
+        ],
+        "specialties": [
+          "Burst",
+          "Poke"
+        ]
+      },
       "lapulapu": {
         "lanes": [
           "exp"
         ],
         "tier": "B",
-        "score": 0.373021,
+        "score": 0.36712700000000004,
         "roles": [
           "Fighter"
         ],
@@ -1429,7 +1414,7 @@
           "gold"
         ],
         "tier": "B",
-        "score": 0.36854000000000003,
+        "score": 0.363228,
         "roles": [
           "Marksman"
         ],
@@ -1438,13 +1423,28 @@
           "Damage"
         ]
       },
+      "alucard": {
+        "lanes": [
+          "jungle"
+        ],
+        "tier": "B",
+        "score": 0.362367,
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "specialties": [
+          "Chase",
+          "Damage"
+        ]
+      },
       "baxia": {
         "lanes": [
           "jungle",
           "roam"
         ],
-        "tier": "B",
-        "score": 0.352354,
+        "tier": "C",
+        "score": 0.344971,
         "roles": [
           "Tank"
         ],
@@ -1457,8 +1457,8 @@
         "lanes": [
           "roam"
         ],
-        "tier": "B",
-        "score": 0.350302,
+        "tier": "C",
+        "score": 0.344384,
         "roles": [
           "Tank",
           "Support"
@@ -1472,8 +1472,8 @@
         "lanes": [
           "gold"
         ],
-        "tier": "B",
-        "score": 0.34573899999999996,
+        "tier": "C",
+        "score": 0.33036200000000004,
         "roles": [
           "Mage"
         ],
@@ -1488,7 +1488,7 @@
           "roam"
         ],
         "tier": "C",
-        "score": 0.32488799999999995,
+        "score": 0.315546,
         "roles": [
           "Fighter"
         ],
@@ -1497,26 +1497,12 @@
           "Control"
         ]
       },
-      "fanny": {
-        "lanes": [
-          "jungle"
-        ],
-        "tier": "C",
-        "score": 0.30935399999999996,
-        "roles": [
-          "Assassin"
-        ],
-        "specialties": [
-          "Chase",
-          "Finisher"
-        ]
-      },
       "phoveus": {
         "lanes": [
           "exp"
         ],
         "tier": "C",
-        "score": 0.309121,
+        "score": 0.312239,
         "roles": [
           "Fighter"
         ],
@@ -1525,98 +1511,13 @@
           "Damage"
         ]
       },
-      "tigreal": {
-        "lanes": [
-          "roam"
-        ],
-        "tier": "C",
-        "score": 0.305194,
-        "roles": [
-          "Tank"
-        ],
-        "specialties": [
-          "Crowd Control"
-        ]
-      },
-      "pharsa": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "C",
-        "score": 0.303299,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Burst",
-          "Poke"
-        ]
-      },
-      "chip": {
-        "lanes": [
-          "roam"
-        ],
-        "tier": "C",
-        "score": 0.302262,
-        "roles": [
-          "Support",
-          "Tank"
-        ],
-        "specialties": [
-          "Support",
-          "Crowd Control"
-        ]
-      },
-      "vale": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "C",
-        "score": 0.300917,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Burst",
-          "Crowd Control"
-        ]
-      },
-      "valentina": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "C",
-        "score": 0.300916,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Burst",
-          "Finisher"
-        ]
-      },
-      "martis": {
-        "lanes": [
-          "jungle",
-          "exp"
-        ],
-        "tier": "C",
-        "score": 0.299624,
-        "roles": [
-          "Fighter"
-        ],
-        "specialties": [
-          "Finisher",
-          "Charge"
-        ]
-      },
       "alpha": {
         "lanes": [
           "jungle",
           "exp"
         ],
         "tier": "C",
-        "score": 0.29929700000000004,
+        "score": 0.30874599999999996,
         "roles": [
           "Fighter"
         ],
@@ -1625,12 +1526,54 @@
           "Damage"
         ]
       },
+      "tigreal": {
+        "lanes": [
+          "roam"
+        ],
+        "tier": "C",
+        "score": 0.307442,
+        "roles": [
+          "Tank"
+        ],
+        "specialties": [
+          "Crowd Control"
+        ]
+      },
+      "vale": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "C",
+        "score": 0.302931,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Burst",
+          "Crowd Control"
+        ]
+      },
+      "martis": {
+        "lanes": [
+          "jungle",
+          "exp"
+        ],
+        "tier": "C",
+        "score": 0.298399,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Finisher",
+          "Charge"
+        ]
+      },
       "hanzo": {
         "lanes": [
           "jungle"
         ],
         "tier": "C",
-        "score": 0.296736,
+        "score": 0.29813,
         "roles": [
           "Assassin"
         ],
@@ -1639,12 +1582,40 @@
           "Burst"
         ]
       },
+      "fanny": {
+        "lanes": [
+          "jungle"
+        ],
+        "tier": "C",
+        "score": 0.297259,
+        "roles": [
+          "Assassin"
+        ],
+        "specialties": [
+          "Chase",
+          "Finisher"
+        ]
+      },
+      "pharsa": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "C",
+        "score": 0.295802,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Burst",
+          "Poke"
+        ]
+      },
       "karina": {
         "lanes": [
           "jungle"
         ],
         "tier": "C",
-        "score": 0.28531599999999996,
+        "score": 0.292419,
         "roles": [
           "Assassin"
         ],
@@ -1653,12 +1624,41 @@
           "Magic Damage"
         ]
       },
+      "chip": {
+        "lanes": [
+          "roam"
+        ],
+        "tier": "C",
+        "score": 0.29114100000000004,
+        "roles": [
+          "Support",
+          "Tank"
+        ],
+        "specialties": [
+          "Support",
+          "Crowd Control"
+        ]
+      },
+      "valentina": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "C",
+        "score": 0.284947,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Burst",
+          "Finisher"
+        ]
+      },
       "grock": {
         "lanes": [
           "roam"
         ],
         "tier": "C",
-        "score": 0.285163,
+        "score": 0.284902,
         "roles": [
           "Tank",
           "Fighter"
@@ -1673,7 +1673,7 @@
           "roam"
         ],
         "tier": "C",
-        "score": 0.278345,
+        "score": 0.27988999999999997,
         "roles": [
           "Tank"
         ],
@@ -1688,7 +1688,7 @@
           "exp"
         ],
         "tier": "C",
-        "score": 0.27049900000000004,
+        "score": 0.271864,
         "roles": [
           "Fighter",
           "Tank"
@@ -1703,7 +1703,7 @@
           "gold"
         ],
         "tier": "C",
-        "score": 0.262702,
+        "score": 0.266914,
         "roles": [
           "Marksman"
         ],
@@ -1717,7 +1717,7 @@
           "mid"
         ],
         "tier": "C",
-        "score": 0.25962999999999997,
+        "score": 0.263108,
         "roles": [
           "Mage"
         ],
@@ -1731,7 +1731,7 @@
           "roam"
         ],
         "tier": "C",
-        "score": 0.25725,
+        "score": 0.250438,
         "roles": [
           "Support",
           "Assassin"
@@ -1747,12 +1747,26 @@
           "roam"
         ],
         "tier": "C",
-        "score": 0.24882200000000002,
+        "score": 0.239445,
         "roles": [
           "Assassin"
         ],
         "specialties": [
           "Push",
+          "Burst"
+        ]
+      },
+      "change": {
+        "lanes": [
+          "mid"
+        ],
+        "tier": "C",
+        "score": 0.238719,
+        "roles": [
+          "Mage"
+        ],
+        "specialties": [
+          "Poke",
           "Burst"
         ]
       },
@@ -1762,7 +1776,7 @@
           "exp"
         ],
         "tier": "C",
-        "score": 0.237148,
+        "score": 0.233233,
         "roles": [
           "Tank",
           "Fighter"
@@ -1772,40 +1786,12 @@
           "Burst"
         ]
       },
-      "change": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "C",
-        "score": 0.23569,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Poke",
-          "Burst"
-        ]
-      },
-      "luoyi": {
-        "lanes": [
-          "mid"
-        ],
-        "tier": "D",
-        "score": 0.217918,
-        "roles": [
-          "Mage"
-        ],
-        "specialties": [
-          "Support",
-          "Crowd Control"
-        ]
-      },
       "roger": {
         "lanes": [
           "jungle"
         ],
         "tier": "D",
-        "score": 0.213701,
+        "score": 0.21806399999999998,
         "roles": [
           "Fighter",
           "Marksman"
@@ -1815,19 +1801,18 @@
           "Burst"
         ]
       },
-      "jawhead": {
+      "luoyi": {
         "lanes": [
-          "exp",
-          "roam"
+          "mid"
         ],
         "tier": "D",
-        "score": 0.212323,
+        "score": 0.21787399999999998,
         "roles": [
-          "Fighter"
+          "Mage"
         ],
         "specialties": [
-          "Charge",
-          "Burst"
+          "Support",
+          "Crowd Control"
         ]
       },
       "franco": {
@@ -1835,7 +1820,7 @@
           "roam"
         ],
         "tier": "D",
-        "score": 0.212103,
+        "score": 0.213842,
         "roles": [
           "Tank"
         ],
@@ -1844,13 +1829,28 @@
           "Control"
         ]
       },
+      "jawhead": {
+        "lanes": [
+          "exp",
+          "roam"
+        ],
+        "tier": "D",
+        "score": 0.212137,
+        "roles": [
+          "Fighter"
+        ],
+        "specialties": [
+          "Charge",
+          "Burst"
+        ]
+      },
       "balmond": {
         "lanes": [
           "jungle",
           "exp"
         ],
         "tier": "D",
-        "score": 0.205477,
+        "score": 0.206484,
         "roles": [
           "Fighter"
         ],
@@ -1864,7 +1864,7 @@
           "gold"
         ],
         "tier": "D",
-        "score": 0.205352,
+        "score": 0.205593,
         "roles": [
           "Marksman"
         ],
@@ -1878,7 +1878,7 @@
           "roam"
         ],
         "tier": "D",
-        "score": 0.205088,
+        "score": 0.200983,
         "roles": [
           "Support",
           "Fighter"
@@ -1893,7 +1893,7 @@
           "gold"
         ],
         "tier": "D",
-        "score": 0.194219,
+        "score": 0.19652,
         "roles": [
           "Marksman"
         ],
@@ -1907,7 +1907,7 @@
           "jungle"
         ],
         "tier": "D",
-        "score": 0.17819200000000002,
+        "score": 0.18096500000000001,
         "roles": [
           "Assassin"
         ],
@@ -1921,7 +1921,7 @@
           "exp"
         ],
         "tier": "D",
-        "score": 0.155577,
+        "score": 0.155015,
         "roles": [
           "Fighter",
           "Assassin"
