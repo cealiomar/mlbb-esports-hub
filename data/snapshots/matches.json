@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1791118165,
+  "harvestedAt": 1791119756,
   "data": [
     {
       "id": "1791108000-mlbb-super-league-thailand-season-2-regular-season-bac-hd",
@@ -61,38 +61,6 @@
       "regionSlug": null,
       "streamUrls": [
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Turkiye"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1791111600-mlbb-continental-championships-season-8-regular-season-omnx-ch",
-      "startsAt": 1791111600,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "OMNX",
-          "name": "Omnix",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "CH",
-          "name": "CyberHero",
-          "pageSlug": "CyberHero",
-          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 6",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/twitch/MLBB_CIS",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EECA_Esports"
       ],
       "vodUrls": []
     },
@@ -162,7 +130,7 @@
     {
       "id": "1791118800-mlbb-continental-championships-season-8-regular-season-arv-lvl",
       "startsAt": 1791118800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -170,7 +138,7 @@
           "name": "Aurevia Team",
           "pageSlug": "",
           "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -178,7 +146,7 @@
           "name": "Level UP",
           "pageSlug": "",
           "logoUrl": "/teams/42px-Level_Up_Esports_2021_allmode-7de16a3a.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -312,7 +280,10 @@
       "tournamentName": "MCC Season 8 - Week 6",
       "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/twitch/MLBB_CIS",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EECA_Esports"
+      ],
       "vodUrls": []
     },
     {
@@ -1476,6 +1447,35 @@
       "vodUrls": []
     },
     {
+      "id": "1791630000-mtc-turkiye-championship-season-8-regular-season-aur-dia",
+      "startsAt": 1791630000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AUR",
+          "name": "Aurora Gaming",
+          "pageSlug": "Aurora_Gaming",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "DIA",
+          "name": "DIA Ozarox",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-DIA_Esports_darkmode-ce3313a9.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 5",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1791113400-mpl-philippines-season-18-regular-season-flcp-omg",
       "startsAt": 1791113400,
       "status": "completed",
@@ -1501,6 +1501,35 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 7",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791111600-mlbb-continental-championships-season-8-regular-season-omnx-ch",
+      "startsAt": 1791111600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OMNX",
+          "name": "Omnix",
+          "pageSlug": "",
+          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "CH",
+          "name": "CyberHero",
+          "pageSlug": "CyberHero",
+          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Week 6",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2920,35 +2949,6 @@
         "https://www.youtube.com/live/odmibPXAaBg?t=6826",
         "https://www.youtube.com/live/odmibPXAaBg?t=8585"
       ]
-    },
-    {
-      "id": "1790776800-mlbb-super-league-thailand-season-2-regular-season-bru-kog",
-      "startsAt": 1790776800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BRU",
-          "name": "Buriram United Esports",
-          "pageSlug": "Buriram_United_Esports",
-          "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "KOG",
-          "name": "King of Gamers Club",
-          "pageSlug": "King_of_Gamers_Club",
-          "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 3",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }

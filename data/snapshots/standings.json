@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1791097532,
+  "harvestedAt": 1791120088,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -10,6 +10,22 @@
       "rows": [
         {
           "position": 1,
+          "team": {
+            "code": "TLI",
+            "name": "Team Liquid ID",
+            "pageSlug": "Team_Liquid_ID",
+            "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png"
+          },
+          "matchWins": 10,
+          "matchLosses": 3,
+          "gameWins": 22,
+          "gameLosses": 9,
+          "gameDiff": 13,
+          "points": null,
+          "zone": "advance"
+        },
+        {
+          "position": 2,
           "team": {
             "code": "NV",
             "name": "Natus Vincere",
@@ -25,22 +41,6 @@
           "zone": "advance"
         },
         {
-          "position": 2,
-          "team": {
-            "code": "TLI",
-            "name": "Team Liquid ID",
-            "pageSlug": "Team_Liquid_ID",
-            "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png"
-          },
-          "matchWins": 9,
-          "matchLosses": 3,
-          "gameWins": 20,
-          "gameLosses": 9,
-          "gameDiff": 11,
-          "points": null,
-          "zone": "advance"
-        },
-        {
           "position": 3,
           "team": {
             "code": "AE",
@@ -49,10 +49,10 @@
             "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png"
           },
           "matchWins": 8,
-          "matchLosses": 4,
+          "matchLosses": 5,
           "gameWins": 18,
-          "gameLosses": 9,
-          "gameDiff": 9,
+          "gameLosses": 11,
+          "gameDiff": 7,
           "points": null,
           "zone": "playoff"
         },
@@ -81,10 +81,10 @@
             "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png"
           },
           "matchWins": 5,
-          "matchLosses": 5,
-          "gameWins": 11,
-          "gameLosses": 12,
-          "gameDiff": -1,
+          "matchLosses": 6,
+          "gameWins": 12,
+          "gameLosses": 14,
+          "gameDiff": -2,
           "points": null,
           "zone": "playoff"
         },
@@ -123,6 +123,22 @@
         {
           "position": 8,
           "team": {
+            "code": "RH",
+            "name": "RRQ Hoshi",
+            "pageSlug": "RRQ_Hoshi",
+            "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png"
+          },
+          "matchWins": 3,
+          "matchLosses": 9,
+          "gameWins": 10,
+          "gameLosses": 20,
+          "gameDiff": -10,
+          "points": null,
+          "zone": "eliminated"
+        },
+        {
+          "position": 9,
+          "team": {
             "code": "GFI",
             "name": "Geek Fam ID",
             "pageSlug": "Geek_Fam_ID",
@@ -133,22 +149,6 @@
           "gameWins": 10,
           "gameLosses": 22,
           "gameDiff": -12,
-          "points": null,
-          "zone": "eliminated"
-        },
-        {
-          "position": 9,
-          "team": {
-            "code": "RH",
-            "name": "RRQ Hoshi",
-            "pageSlug": "RRQ_Hoshi",
-            "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png"
-          },
-          "matchWins": 2,
-          "matchLosses": 9,
-          "gameWins": 8,
-          "gameLosses": 19,
-          "gameDiff": -11,
           "points": null,
           "zone": "eliminated"
         }
@@ -169,12 +169,12 @@
             "pageSlug": "Team_Falcons_PH",
             "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png"
           },
-          "matchWins": 10,
+          "matchWins": 11,
           "matchLosses": 1,
-          "gameWins": 21,
+          "gameWins": 23,
           "gameLosses": 7,
-          "gameDiff": 14,
-          "points": 10,
+          "gameDiff": 16,
+          "points": 11,
           "zone": "advance"
         },
         {
@@ -185,12 +185,12 @@
             "pageSlug": "Team_Liquid_PH",
             "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png"
           },
-          "matchWins": 8,
+          "matchWins": 9,
           "matchLosses": 2,
-          "gameWins": 17,
+          "gameWins": 19,
           "gameLosses": 5,
-          "gameDiff": 12,
-          "points": 8,
+          "gameDiff": 14,
+          "points": 9,
           "zone": "advance"
         },
         {
@@ -234,10 +234,10 @@
             "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png"
           },
           "matchWins": 6,
-          "matchLosses": 6,
+          "matchLosses": 7,
           "gameWins": 13,
-          "gameLosses": 16,
-          "gameDiff": -3,
+          "gameLosses": 18,
+          "gameDiff": -5,
           "points": 6,
           "zone": "playoff"
         },
@@ -266,10 +266,10 @@
             "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png"
           },
           "matchWins": 3,
-          "matchLosses": 9,
+          "matchLosses": 10,
           "gameWins": 10,
-          "gameLosses": 19,
-          "gameDiff": -9,
+          "gameLosses": 21,
+          "gameDiff": -11,
           "points": 3,
           "zone": "eliminated"
         },
