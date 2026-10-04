@@ -1,39 +1,6 @@
 {
-  "harvestedAt": 1791074564,
+  "harvestedAt": 1791094606,
   "data": [
-    {
-      "id": "1791075600-mct-2026-americas-split-2-swiss-stage-nh-rto",
-      "startsAt": 1791075600,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "NH",
-          "name": "The Night Horde",
-          "pageSlug": "The_Night_Horde",
-          "logoUrl": "/teams/52px-The_Night_Horde_darkmode-f2658762.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RTO",
-          "name": "Retaliation",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Round 4",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1791097200-mpl-indonesia-season-18-regular-season-ae-tlid",
       "startsAt": 1791097200,
@@ -60,7 +27,10 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 7",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -1452,6 +1422,64 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 5",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791617400-mlbb-super-league-myanmar-season-4-regular-season-ai-t7",
+      "startsAt": 1791617400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AI",
+          "name": "AI Esports",
+          "pageSlug": "AI_Esports",
+          "logoUrl": "/teams/50px-J_27DAI_2026_allmode-5eb1b722.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "T7",
+          "name": "Team 7",
+          "pageSlug": "Team_7",
+          "logoUrl": "/teams/63px-Team_7_2024_allmode-25d48748.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Myanmar Season 4 - RS: Week 5",
+      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
+      "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791075600-mct-2026-americas-split-2-swiss-stage-nh-rto",
+      "startsAt": 1791075600,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "NH",
+          "name": "The Night Horde",
+          "pageSlug": "The_Night_Horde",
+          "logoUrl": "/teams/52px-The_Night_Horde_darkmode-f2658762.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "RTO",
+          "name": "Retaliation",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 2,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 4",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2905,38 +2933,6 @@
       "vodUrls": [
         "https://www.youtube.com/live/iJSSDDwsD_U?t=30279",
         "https://www.youtube.com/live/iJSSDDwsD_U?t=32682"
-      ]
-    },
-    {
-      "id": "1790747100-asian-games-2026-playoffs-mgl-hkg",
-      "startsAt": 1790747100,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "MGL",
-          "name": "Mongolia",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Mongolia_4_by_3-f389cfa4.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "HKG",
-          "name": "Hong Kong",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Hong_Kong_4_by_3-76565b58.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "2026 Asian Games",
-      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/iJSSDDwsD_U?t=23463",
-        "https://www.youtube.com/live/iJSSDDwsD_U?t=25177"
       ]
     }
   ]
