@@ -1,72 +1,6 @@
 {
-  "harvestedAt": 1791064485,
+  "harvestedAt": 1791074564,
   "data": [
-    {
-      "id": "1791057600-mct-2026-americas-split-2-swiss-stage-dmx-infi",
-      "startsAt": 1791057600,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "DMX",
-          "name": "DreamMax e-Sports",
-          "pageSlug": "DreamMax_e-Sports",
-          "logoUrl": "/teams/54px-DreamMax_e-Sports_allmode-84401a53.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "INFI",
-          "name": "Infinity",
-          "pageSlug": "Infinity",
-          "logoUrl": "/teams/63px-Infinity_2021_darkmode-c807e562.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Round 4",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1791066600-mct-2026-americas-split-2-swiss-stage-lyon-tuna",
-      "startsAt": 1791066600,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "LYON",
-          "name": "LYON",
-          "pageSlug": "LYON",
-          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TUNA",
-          "name": "Nopa Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/51px-Nopa_Esports_allmode-0e617867.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Round 4",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1791075600-mct-2026-americas-split-2-swiss-stage-nh-rto",
       "startsAt": 1791075600,
@@ -93,7 +27,11 @@
       "tournamentName": "MCT AMER 2026 - Round 4",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
@@ -1460,6 +1398,122 @@
       "vodUrls": []
     },
     {
+      "id": "1791550800-mpl-indonesia-season-18-regular-season-dewa-navi",
+      "startsAt": 1791550800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DEWA",
+          "name": "Dewa United Esports",
+          "pageSlug": "Dewa_United_Esports",
+          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "NAVI",
+          "name": "Natus Vincere",
+          "pageSlug": "Natus_Vincere",
+          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 8",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791554400-mlbb-super-league-thailand-season-2-regular-season-leon-ten",
+      "startsAt": 1791554400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "LEON",
+          "name": "Leon Esports",
+          "pageSlug": "Leon_Esports",
+          "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TEN",
+          "name": "Tenacity",
+          "pageSlug": "",
+          "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - RS: Week 5",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791066600-mct-2026-americas-split-2-swiss-stage-lyon-tuna",
+      "startsAt": 1791066600,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "LYON",
+          "name": "LYON",
+          "pageSlug": "LYON",
+          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "TUNA",
+          "name": "Nopa Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/51px-Nopa_Esports_allmode-0e617867.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 4",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791057600-mct-2026-americas-split-2-swiss-stage-dmx-infi",
+      "startsAt": 1791057600,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "DMX",
+          "name": "DreamMax e-Sports",
+          "pageSlug": "DreamMax_e-Sports",
+          "logoUrl": "/teams/54px-DreamMax_e-Sports_allmode-84401a53.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "INFI",
+          "name": "Infinity",
+          "pageSlug": "Infinity",
+          "logoUrl": "/teams/63px-Infinity_2021_darkmode-c807e562.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Round 4",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1791057600-mpl-mena-season-10-regular-season-wod-xp",
       "startsAt": 1791057600,
       "status": "completed",
@@ -1776,7 +1830,11 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=yjYYl7YDJW4",
+        "https://www.youtube.com/watch?v=20zZ_DzcrRU",
+        "https://www.youtube.com/watch?v=0Q7p1jS8wWc"
+      ]
     },
     {
       "id": "1791028800-mlbb-super-league-thailand-season-2-regular-season-bac-ea",
@@ -1921,7 +1979,11 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=NrG5qwXhsiM",
+        "https://www.youtube.com/watch?v=NrG5qwXhsiM",
+        "https://www.youtube.com/watch?v=_kPG_uqGDKM"
+      ]
     },
     {
       "id": "1791021600-mlbb-super-league-thailand-season-2-regular-season-fs-ten",
@@ -2037,7 +2099,11 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=3kr_kODbnoY",
+        "https://www.youtube.com/watch?v=3PjlTwJbnYc",
+        "https://www.youtube.com/watch?v=W-Dlk147yd4"
+      ]
     },
     {
       "id": "1791009000-mpl-philippines-season-18-regular-season-twph-omg",
@@ -2871,71 +2937,6 @@
       "vodUrls": [
         "https://www.youtube.com/live/iJSSDDwsD_U?t=23463",
         "https://www.youtube.com/live/iJSSDDwsD_U?t=25177"
-      ]
-    },
-    {
-      "id": "1790740200-asian-games-2026-playoffs-phi-idn",
-      "startsAt": 1790740200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "PHI",
-          "name": "Team Philippines",
-          "pageSlug": "Team_Philippines",
-          "logoUrl": "/teams/67px-Flag_of_Philippines_4_by_3-7ee26721.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "IDN",
-          "name": "Team Indonesia",
-          "pageSlug": "Team_Indonesia",
-          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "2026 Asian Games",
-      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/iJSSDDwsD_U?t=16173",
-        "https://www.youtube.com/live/iJSSDDwsD_U?t=18353",
-        "https://www.youtube.com/live/iJSSDDwsD_U?t=20074"
-      ]
-    },
-    {
-      "id": "1790733300-asian-games-2026-playoffs-mas-jor",
-      "startsAt": 1790733300,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "MAS",
-          "name": "Team Malaysia",
-          "pageSlug": "Team_Malaysia",
-          "logoUrl": "/teams/67px-Flag_of_Malaysia_4_by_3-ee1c1457.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "JOR",
-          "name": "Team Jordan",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Jordan_4_by_3-6d789992.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "2026 Asian Games",
-      "tournamentPageSlug": "Asian_Games/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/iJSSDDwsD_U?t=10322",
-        "https://www.youtube.com/live/iJSSDDwsD_U?t=12330"
       ]
     }
   ]
