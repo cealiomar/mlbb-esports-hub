@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1791120088,
+  "harvestedAt": 1791150019,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -33,10 +33,10 @@
             "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png"
           },
           "matchWins": 9,
-          "matchLosses": 2,
-          "gameWins": 18,
-          "gameLosses": 7,
-          "gameDiff": 11,
+          "matchLosses": 3,
+          "gameWins": 19,
+          "gameLosses": 9,
+          "gameDiff": 10,
           "points": null,
           "zone": "advance"
         },
@@ -75,6 +75,22 @@
         {
           "position": 5,
           "team": {
+            "code": "ONI",
+            "name": "ONIC",
+            "pageSlug": "ONIC",
+            "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png"
+          },
+          "matchWins": 5,
+          "matchLosses": 7,
+          "gameWins": 14,
+          "gameLosses": 15,
+          "gameDiff": -1,
+          "points": null,
+          "zone": "playoff"
+        },
+        {
+          "position": 6,
+          "team": {
             "code": "EVO",
             "name": "EVOS",
             "pageSlug": "EVOS",
@@ -89,7 +105,7 @@
           "zone": "playoff"
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "code": "DUE",
             "name": "Dewa United Esports",
@@ -101,22 +117,6 @@
           "gameWins": 12,
           "gameLosses": 17,
           "gameDiff": -5,
-          "points": null,
-          "zone": "playoff"
-        },
-        {
-          "position": 7,
-          "team": {
-            "code": "ONI",
-            "name": "ONIC",
-            "pageSlug": "ONIC",
-            "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png"
-          },
-          "matchWins": 4,
-          "matchLosses": 7,
-          "gameWins": 12,
-          "gameLosses": 14,
-          "gameDiff": -2,
           "points": null,
           "zone": "eliminated"
         },
@@ -918,12 +918,12 @@
             "pageSlug": "Leon_Esports",
             "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png"
           },
-          "matchWins": 6,
+          "matchWins": 7,
           "matchLosses": 0,
-          "gameWins": 12,
+          "gameWins": 14,
           "gameLosses": 2,
-          "gameDiff": 10,
-          "points": 6,
+          "gameDiff": 12,
+          "points": 7,
           "zone": "advance"
         },
         {
@@ -945,6 +945,22 @@
         {
           "position": 3,
           "team": {
+            "code": "BT",
+            "name": "Bacon Time",
+            "pageSlug": "Bacon_Time",
+            "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png"
+          },
+          "matchWins": 6,
+          "matchLosses": 1,
+          "gameWins": 12,
+          "gameLosses": 4,
+          "gameDiff": 8,
+          "points": 6,
+          "zone": "playoff"
+        },
+        {
+          "position": 4,
+          "team": {
             "code": "KOG",
             "name": "King of Gamers Club",
             "pageSlug": "King_of_Gamers_Club",
@@ -955,22 +971,6 @@
           "gameWins": 11,
           "gameLosses": 4,
           "gameDiff": 7,
-          "points": 5,
-          "zone": "playoff"
-        },
-        {
-          "position": 4,
-          "team": {
-            "code": "BT",
-            "name": "Bacon Time",
-            "pageSlug": "Bacon_Time",
-            "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png"
-          },
-          "matchWins": 5,
-          "matchLosses": 1,
-          "gameWins": 10,
-          "gameLosses": 4,
-          "gameDiff": 6,
           "points": 5,
           "zone": "playoff"
         },
@@ -998,12 +998,12 @@
             "pageSlug": "Buriram_United_Esports",
             "logoUrl": "/teams/38px-Buriram_United_Esports_2026_allmode-9b64714f.png"
           },
-          "matchWins": 2,
+          "matchWins": 3,
           "matchLosses": 4,
-          "gameWins": 4,
-          "gameLosses": 9,
-          "gameDiff": -5,
-          "points": 2,
+          "gameWins": 6,
+          "gameLosses": 10,
+          "gameDiff": -4,
+          "points": 3,
           "zone": "playoff"
         },
         {
@@ -1015,10 +1015,10 @@
             "logoUrl": "/teams/50px-EArena_2022_allmode-54a15d94.png"
           },
           "matchWins": 2,
-          "matchLosses": 5,
+          "matchLosses": 6,
           "gameWins": 5,
-          "gameLosses": 10,
-          "gameDiff": -5,
+          "gameLosses": 12,
+          "gameDiff": -7,
           "points": 2,
           "zone": "eliminated"
         },
@@ -1047,10 +1047,10 @@
             "logoUrl": "/teams/100px-Solyx_allmode-ff12a1c2.png"
           },
           "matchWins": 1,
-          "matchLosses": 5,
-          "gameWins": 5,
-          "gameLosses": 10,
-          "gameDiff": -5,
+          "matchLosses": 6,
+          "gameWins": 6,
+          "gameLosses": 12,
+          "gameDiff": -6,
           "points": 1,
           "zone": "eliminated"
         },
@@ -1063,10 +1063,10 @@
             "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png"
           },
           "matchWins": 1,
-          "matchLosses": 5,
+          "matchLosses": 6,
           "gameWins": 3,
-          "gameLosses": 11,
-          "gameDiff": -8,
+          "gameLosses": 13,
+          "gameDiff": -10,
           "points": 1,
           "zone": "eliminated"
         }
