@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1791425198,
+  "harvestedAt": 1791450649,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -21,7 +21,7 @@
           "gameWins": 22,
           "gameLosses": 9,
           "gameDiff": 13,
-          "points": null,
+          "points": 10,
           "zone": "advance"
         },
         {
@@ -37,7 +37,7 @@
           "gameWins": 19,
           "gameLosses": 9,
           "gameDiff": 10,
-          "points": null,
+          "points": 9,
           "zone": "advance"
         },
         {
@@ -53,7 +53,7 @@
           "gameWins": 18,
           "gameLosses": 11,
           "gameDiff": 7,
-          "points": null,
+          "points": 8,
           "zone": "playoff"
         },
         {
@@ -69,11 +69,27 @@
           "gameWins": 15,
           "gameLosses": 15,
           "gameDiff": 0,
-          "points": null,
+          "points": 7,
           "zone": "playoff"
         },
         {
           "position": 5,
+          "team": {
+            "code": "EVO",
+            "name": "EVOS",
+            "pageSlug": "EVOS",
+            "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png"
+          },
+          "matchWins": 6,
+          "matchLosses": 6,
+          "gameWins": 14,
+          "gameLosses": 15,
+          "gameDiff": -1,
+          "points": 6,
+          "zone": "playoff"
+        },
+        {
+          "position": 6,
           "team": {
             "code": "ONI",
             "name": "ONIC",
@@ -85,23 +101,7 @@
           "gameWins": 14,
           "gameLosses": 15,
           "gameDiff": -1,
-          "points": null,
-          "zone": "playoff"
-        },
-        {
-          "position": 6,
-          "team": {
-            "code": "EVO",
-            "name": "EVOS",
-            "pageSlug": "EVOS",
-            "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png"
-          },
-          "matchWins": 5,
-          "matchLosses": 6,
-          "gameWins": 12,
-          "gameLosses": 14,
-          "gameDiff": -2,
-          "points": null,
+          "points": 5,
           "zone": "playoff"
         },
         {
@@ -113,11 +113,11 @@
             "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png"
           },
           "matchWins": 5,
-          "matchLosses": 7,
-          "gameWins": 12,
-          "gameLosses": 17,
-          "gameDiff": -5,
-          "points": null,
+          "matchLosses": 8,
+          "gameWins": 13,
+          "gameLosses": 19,
+          "gameDiff": -6,
+          "points": 5,
           "zone": "eliminated"
         },
         {
@@ -133,7 +133,7 @@
           "gameWins": 10,
           "gameLosses": 20,
           "gameDiff": -10,
-          "points": null,
+          "points": 3,
           "zone": "eliminated"
         },
         {
@@ -149,7 +149,7 @@
           "gameWins": 10,
           "gameLosses": 22,
           "gameDiff": -12,
-          "points": null,
+          "points": 3,
           "zone": "eliminated"
         }
       ]
@@ -754,7 +754,7 @@
           "gameWins": 14,
           "gameLosses": 4,
           "gameDiff": 10,
-          "points": null,
+          "points": 7,
           "zone": "advance"
         },
         {
@@ -770,7 +770,7 @@
           "gameWins": 12,
           "gameLosses": 0,
           "gameDiff": 12,
-          "points": null,
+          "points": 6,
           "zone": "advance"
         },
         {
@@ -786,7 +786,7 @@
           "gameWins": 12,
           "gameLosses": 4,
           "gameDiff": 8,
-          "points": null,
+          "points": 6,
           "zone": "playoff"
         },
         {
@@ -802,7 +802,7 @@
           "gameWins": 12,
           "gameLosses": 5,
           "gameDiff": 7,
-          "points": null,
+          "points": 5,
           "zone": "playoff"
         },
         {
@@ -818,7 +818,7 @@
           "gameWins": 8,
           "gameLosses": 10,
           "gameDiff": -2,
-          "points": null,
+          "points": 3,
           "zone": "neutral"
         },
         {
@@ -834,7 +834,7 @@
           "gameWins": 9,
           "gameLosses": 13,
           "gameDiff": -4,
-          "points": null,
+          "points": 3,
           "zone": "neutral"
         },
         {
@@ -850,7 +850,7 @@
           "gameWins": 7,
           "gameLosses": 12,
           "gameDiff": -5,
-          "points": null,
+          "points": 3,
           "zone": "neutral"
         },
         {
@@ -866,7 +866,7 @@
           "gameWins": 6,
           "gameLosses": 11,
           "gameDiff": -5,
-          "points": null,
+          "points": 2,
           "zone": "neutral"
         },
         {
@@ -882,7 +882,7 @@
           "gameWins": 4,
           "gameLosses": 13,
           "gameDiff": -9,
-          "points": null,
+          "points": 1,
           "zone": "eliminated"
         },
         {
@@ -898,7 +898,7 @@
           "gameWins": 2,
           "gameLosses": 14,
           "gameDiff": -12,
-          "points": null,
+          "points": 0,
           "zone": "eliminated"
         }
       ]
