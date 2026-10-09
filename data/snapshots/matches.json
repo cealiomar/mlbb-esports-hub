@@ -1,106 +1,10 @@
 {
-  "harvestedAt": 1791562845,
+  "harvestedAt": 1791577120,
   "data": [
-    {
-      "id": "1791547200-mlbb-continental-championships-season-8-playoffs-arv-lvl",
-      "startsAt": 1791547200,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "ARV",
-          "name": "Aurevia Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "LVL",
-          "name": "Level UP",
-          "pageSlug": "",
-          "logoUrl": "/teams/42px-Level_Up_Esports_2021_allmode-7de16a3a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Playoffs",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/twitch/MLBB_CIS",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EECA_Esports"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1791556200-mlbb-continental-championships-season-8-playoffs-rkz-ch",
-      "startsAt": 1791556200,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "RKZ",
-          "name": "RAKUZAN",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "CH",
-          "name": "CyberHero",
-          "pageSlug": "CyberHero",
-          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Playoffs",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/twitch/MLBB_CIS",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EECA_Esports"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1791561600-mpl-mena-season-10-playoffs-flcm-gs",
-      "startsAt": 1791561600,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "FLCM",
-          "name": "Team Falcons",
-          "pageSlug": "Team_Falcons",
-          "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "GS",
-          "name": "GS Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/21px-GS_Team_darkmode-b2852177.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL MENA Season 10 - Playoffs",
-      "tournamentPageSlug": "MPL/MENA/Season_10/Playoffs",
-      "regionSlug": "mena",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Arabia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Arabia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1791568800-mpl-mena-season-10-playoffs-twis-xp",
       "startsAt": 1791568800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -108,7 +12,7 @@
           "name": "Twisted Minds",
           "pageSlug": "Twisted_Minds",
           "logoUrl": "/teams/71px-Twisted_Minds_2023_allmode-3d43ef74.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -116,7 +20,7 @@
           "name": "XProjekt Esports",
           "pageSlug": "",
           "logoUrl": "/teams/55px-XPROJEKT_ESPORTS_allmode-0093d9de.png",
-          "score": null,
+          "score": 2,
           "isWinner": false
         }
       ],
@@ -391,7 +295,7 @@
       "vodUrls": []
     },
     {
-      "id": "1791633600-mlbb-continental-championships-season-8-playoffs-yndx-tbd",
+      "id": "1791633600-mlbb-continental-championships-season-8-playoffs-yndx-arv",
       "startsAt": 1791633600,
       "status": "upcoming",
       "bestOf": 5,
@@ -405,10 +309,10 @@
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "ARV",
+          "name": "Aurevia Team",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
           "score": null,
           "isWinner": false
         }
@@ -507,7 +411,7 @@
       "vodUrls": []
     },
     {
-      "id": "1791640800-mpl-mena-season-10-playoffs-gk-tbd",
+      "id": "1791640800-mpl-mena-season-10-playoffs-gk-flcm",
       "startsAt": 1791640800,
       "status": "upcoming",
       "bestOf": 5,
@@ -521,10 +425,10 @@
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "FLCM",
+          "name": "Team Falcons",
+          "pageSlug": "Team_Falcons",
+          "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png",
           "score": null,
           "isWinner": false
         }
@@ -565,7 +469,7 @@
       "vodUrls": []
     },
     {
-      "id": "1791642600-mlbb-continental-championships-season-8-playoffs-ts-tbd",
+      "id": "1791642600-mlbb-continental-championships-season-8-playoffs-ts-rkz",
       "startsAt": 1791642600,
       "status": "upcoming",
       "bestOf": 5,
@@ -579,10 +483,10 @@
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "RKZ",
+          "name": "RAKUZAN",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
           "score": null,
           "isWinner": false
         }
@@ -1464,6 +1368,151 @@
       "vodUrls": []
     },
     {
+      "id": "1792130400-mpl-cambodia-season-11-regular-season-tnr-rvz",
+      "startsAt": 1792130400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TNR",
+          "name": "TNR Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-TNR_Esports_allmode-012f8490.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RVZ",
+          "name": "Team RVZ",
+          "pageSlug": "",
+          "logoUrl": "/teams/76px-Team_RVZ_darkmode-038e820d.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
+      "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792137600-mpl-indonesia-season-18-regular-season-navi-rrq",
+      "startsAt": 1792137600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "NAVI",
+          "name": "Natus Vincere",
+          "pageSlug": "Natus_Vincere",
+          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RRQ",
+          "name": "RRQ Hoshi",
+          "pageSlug": "RRQ_Hoshi",
+          "logoUrl": "/teams/70px-Rex_Regum_Qeon_allmode-ef1ff30a.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - RS: Week 9",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792139400-mpl-cambodia-season-11-regular-season-flkh-val",
+      "startsAt": 1792139400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FLKH",
+          "name": "Team Flash KH",
+          "pageSlug": "Team_Flash_KH",
+          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "Val",
+          "name": "Valhalla",
+          "pageSlug": "",
+          "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - RS: Week 3",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
+      "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791561600-mpl-mena-season-10-playoffs-flcm-gs",
+      "startsAt": 1791561600,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "FLCM",
+          "name": "Team Falcons",
+          "pageSlug": "Team_Falcons",
+          "logoUrl": "/teams/50px-Team_Falcons_MENA_2026_allmode-66992827.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "GS",
+          "name": "GS Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/21px-GS_Team_darkmode-b2852177.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL MENA Season 10 - Playoffs",
+      "tournamentPageSlug": "MPL/MENA/Season_10/Playoffs",
+      "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791556200-mlbb-continental-championships-season-8-playoffs-rkz-ch",
+      "startsAt": 1791556200,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "RKZ",
+          "name": "RAKUZAN",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "CH",
+          "name": "CyberHero",
+          "pageSlug": "CyberHero",
+          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Playoffs",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1791554400-mlbb-super-league-thailand-season-2-regular-season-leon-ten",
       "startsAt": 1791554400,
       "status": "completed",
@@ -1547,6 +1596,35 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 7",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791547200-mlbb-continental-championships-season-8-playoffs-arv-lvl",
+      "startsAt": 1791547200,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "ARV",
+          "name": "Aurevia Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "LVL",
+          "name": "Level UP",
+          "pageSlug": "",
+          "logoUrl": "/teams/42px-Level_Up_Esports_2021_allmode-7de16a3a.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Playoffs",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2839,93 +2917,6 @@
       ],
       "tournamentName": "MCT AMER 2026 - Round 5",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Swiss_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791134400-mtc-turkiye-championship-season-8-regular-season-bw-bgt",
-      "startsAt": 1791134400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BW",
-          "name": "Bushido Wildcats",
-          "pageSlug": "Bushido_Wildcats",
-          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "BGT",
-          "name": "Boostgate Esports",
-          "pageSlug": "Boostgate_Esports",
-          "logoUrl": "/teams/39px-Boostgate_Esports_allmode-8bcbcf5b.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 4",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791133200-mlbb-continental-championships-season-8-regular-season-yndx-ts",
-      "startsAt": 1791133200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TS",
-          "name": "Team Spirit",
-          "pageSlug": "Team_Spirit",
-          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Week 6",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791127800-mtc-turkiye-championship-season-8-regular-season-ida-aur",
-      "startsAt": 1791127800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "IDA",
-          "name": "IDA Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/95px-IDA_Esports_2025_allmode-31209f50.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "AUR",
-          "name": "Aurora Gaming",
-          "pageSlug": "Aurora_Gaming",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 4",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
