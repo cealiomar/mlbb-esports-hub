@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1791512436,
+  "harvestedAt": 1791537671,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -59,6 +59,22 @@
         {
           "position": 4,
           "team": {
+            "code": "EVO",
+            "name": "EVOS",
+            "pageSlug": "EVOS",
+            "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png"
+          },
+          "matchWins": 7,
+          "matchLosses": 6,
+          "gameWins": 16,
+          "gameLosses": 16,
+          "gameDiff": 0,
+          "points": 7,
+          "zone": "playoff"
+        },
+        {
+          "position": 5,
+          "team": {
             "code": "BBV",
             "name": "Bigetron by Vitality",
             "pageSlug": "Bigetron_by_Vitality",
@@ -73,22 +89,6 @@
           "zone": "playoff"
         },
         {
-          "position": 5,
-          "team": {
-            "code": "EVO",
-            "name": "EVOS",
-            "pageSlug": "EVOS",
-            "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png"
-          },
-          "matchWins": 6,
-          "matchLosses": 6,
-          "gameWins": 14,
-          "gameLosses": 15,
-          "gameDiff": -1,
-          "points": 6,
-          "zone": "playoff"
-        },
-        {
           "position": 6,
           "team": {
             "code": "ONI",
@@ -97,10 +97,10 @@
             "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png"
           },
           "matchWins": 5,
-          "matchLosses": 7,
-          "gameWins": 14,
-          "gameLosses": 15,
-          "gameDiff": -1,
+          "matchLosses": 8,
+          "gameWins": 15,
+          "gameLosses": 17,
+          "gameDiff": -2,
           "points": 5,
           "zone": "playoff"
         },
@@ -233,12 +233,12 @@
             "pageSlug": "Omega_Esports",
             "logoUrl": "/teams/63px-Omega_Esports__28Philippines_29_2025_darkmode-cde22ca5.png"
           },
-          "matchWins": 6,
+          "matchWins": 7,
           "matchLosses": 7,
-          "gameWins": 13,
+          "gameWins": 15,
           "gameLosses": 18,
-          "gameDiff": -5,
-          "points": 6,
+          "gameDiff": -3,
+          "points": 7,
           "zone": "playoff"
         },
         {
@@ -266,10 +266,10 @@
             "logoUrl": "/teams/39px-AP_Bren_allmode-524209ab.png"
           },
           "matchWins": 3,
-          "matchLosses": 10,
+          "matchLosses": 11,
           "gameWins": 10,
-          "gameLosses": 21,
-          "gameDiff": -11,
+          "gameLosses": 23,
+          "gameDiff": -13,
           "points": 3,
           "zone": "eliminated"
         },
@@ -749,12 +749,12 @@
             "pageSlug": "Yangon_Galacticos",
             "logoUrl": "/teams/55px-Yangon_Galacticos_2021_allmode-fe9968df.png"
           },
-          "matchWins": 7,
+          "matchWins": 8,
           "matchLosses": 0,
-          "gameWins": 14,
-          "gameLosses": 0,
-          "gameDiff": 14,
-          "points": 7,
+          "gameWins": 16,
+          "gameLosses": 1,
+          "gameDiff": 15,
+          "points": 8,
           "zone": "advance"
         },
         {
@@ -798,10 +798,10 @@
             "logoUrl": "/teams/100px-Team_Secret_darkmode-d119a2cd.png"
           },
           "matchWins": 5,
-          "matchLosses": 2,
-          "gameWins": 12,
-          "gameLosses": 5,
-          "gameDiff": 7,
+          "matchLosses": 3,
+          "gameWins": 13,
+          "gameLosses": 7,
+          "gameDiff": 6,
           "points": 5,
           "zone": "playoff"
         },
