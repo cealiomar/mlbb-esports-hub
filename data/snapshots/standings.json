@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1791597194,
+  "harvestedAt": 1791621664,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -824,32 +824,32 @@
         {
           "position": 6,
           "team": {
+            "code": "AE",
+            "name": "AI Esports",
+            "pageSlug": "AI_Esports",
+            "logoUrl": "/teams/50px-J_27DAI_2026_allmode-5eb1b722.png"
+          },
+          "matchWins": 4,
+          "matchLosses": 5,
+          "gameWins": 9,
+          "gameLosses": 12,
+          "gameDiff": -3,
+          "points": 4,
+          "zone": "neutral"
+        },
+        {
+          "position": 7,
+          "team": {
             "code": "T7",
             "name": "Team 7",
             "pageSlug": "Team_7",
             "logoUrl": "/teams/63px-Team_7_2024_allmode-25d48748.png"
           },
           "matchWins": 3,
-          "matchLosses": 5,
+          "matchLosses": 6,
           "gameWins": 9,
-          "gameLosses": 13,
-          "gameDiff": -4,
-          "points": 3,
-          "zone": "neutral"
-        },
-        {
-          "position": 7,
-          "team": {
-            "code": "AE",
-            "name": "AI Esports",
-            "pageSlug": "AI_Esports",
-            "logoUrl": "/teams/50px-J_27DAI_2026_allmode-5eb1b722.png"
-          },
-          "matchWins": 3,
-          "matchLosses": 5,
-          "gameWins": 7,
-          "gameLosses": 12,
-          "gameDiff": -5,
+          "gameLosses": 15,
+          "gameDiff": -6,
           "points": 3,
           "zone": "neutral"
         },
