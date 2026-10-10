@@ -1,99 +1,6 @@
 {
-  "harvestedAt": 1791669487,
+  "harvestedAt": 1791675426,
   "data": [
-    {
-      "id": "1791636000-mtc-turkiye-championship-season-8-regular-season-ida-bgt",
-      "startsAt": 1791636000,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "IDA",
-          "name": "IDA Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/95px-IDA_Esports_2025_allmode-31209f50.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "BGT",
-          "name": "Boostgate Esports",
-          "pageSlug": "Boostgate_Esports",
-          "logoUrl": "/teams/39px-Boostgate_Esports_allmode-8bcbcf5b.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 5",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Turkiye"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1791643200-mtc-turkiye-championship-season-8-regular-season-dp-bw",
-      "startsAt": 1791643200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DP",
-          "name": "Dark Passage",
-          "pageSlug": "Dark_Passage",
-          "logoUrl": "/teams/46px-Dark_Passage_2023_darkmode-452224e0.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "BW",
-          "name": "Bushido Wildcats",
-          "pageSlug": "Bushido_Wildcats",
-          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 5",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Turkiye"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1791649800-mtc-turkiye-championship-season-8-regular-season-fut-pcf",
-      "startsAt": 1791649800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FUT",
-          "name": "FUT Esports",
-          "pageSlug": "FUT_Esports",
-          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "PCF",
-          "name": "PCIFIC Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/74px-PCIFIC_Esports_2025_allmode-f8103617.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 5",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Turkiye"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1791700200-mpl-malaysia-season-18-regular-season-fl-vms",
       "startsAt": 1791700200,
@@ -1458,6 +1365,93 @@
       "vodUrls": []
     },
     {
+      "id": "1792254600-mtc-turkiye-championship-season-8-regular-season-aur-bw",
+      "startsAt": 1792254600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AUR",
+          "name": "Aurora Gaming",
+          "pageSlug": "Aurora_Gaming",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "BW",
+          "name": "Bushido Wildcats",
+          "pageSlug": "Bushido_Wildcats",
+          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 6",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792258200-mlbb-super-league-myanmar-season-4-playins-fcon-tbd",
+      "startsAt": 1792258200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "FCON",
+          "name": "Falcon Esports",
+          "pageSlug": "Falcon_Esports",
+          "logoUrl": "/teams/48px-Falcon_Esports_Myanmar_allmode-7ced0a37.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Myanmar Season 4",
+      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Playins",
+      "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792258200-mlbb-super-league-myanmar-season-4-playins-yg-tbd",
+      "startsAt": 1792258200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "YG",
+          "name": "Yangon Galacticos",
+          "pageSlug": "Yangon_Galacticos",
+          "logoUrl": "/teams/55px-Yangon_Galacticos_2021_allmode-fe9968df.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Myanmar Season 4",
+      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Playins",
+      "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1791655200-mpl-mena-season-10-playoffs-gk-xp",
       "startsAt": 1791655200,
       "status": "completed",
@@ -1487,6 +1481,35 @@
       "vodUrls": []
     },
     {
+      "id": "1791649800-mtc-turkiye-championship-season-8-regular-season-fut-pcf",
+      "startsAt": 1791649800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FUT",
+          "name": "FUT Esports",
+          "pageSlug": "FUT_Esports",
+          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "PCF",
+          "name": "PCIFIC Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/74px-PCIFIC_Esports_2025_allmode-f8103617.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 5",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1791648000-mpl-mena-season-10-playoffs-tec-xp",
       "startsAt": 1791648000,
       "status": "completed",
@@ -1512,6 +1535,35 @@
       "tournamentName": "MPL MENA Season 10 - Playoffs",
       "tournamentPageSlug": "MPL/MENA/Season_10/Playoffs",
       "regionSlug": "mena",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791643200-mtc-turkiye-championship-season-8-regular-season-dp-bw",
+      "startsAt": 1791643200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DP",
+          "name": "Dark Passage",
+          "pageSlug": "Dark_Passage",
+          "logoUrl": "/teams/46px-Dark_Passage_2023_darkmode-452224e0.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "BW",
+          "name": "Bushido Wildcats",
+          "pageSlug": "Bushido_Wildcats",
+          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 5",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1628,6 +1680,35 @@
       "tournamentName": "VMC Fall 2026: Playoffs - Playoffs",
       "tournamentPageSlug": "Vietnam_MLBB_Championship/2026/Fall/Playoffs",
       "regionSlug": "vietnam",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1791636000-mtc-turkiye-championship-season-8-regular-season-ida-bgt",
+      "startsAt": 1791636000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "IDA",
+          "name": "IDA Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/95px-IDA_Esports_2025_allmode-31209f50.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "BGT",
+          "name": "Boostgate Esports",
+          "pageSlug": "Boostgate_Esports",
+          "logoUrl": "/teams/39px-Boostgate_Esports_allmode-8bcbcf5b.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Week 5",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2833,97 +2914,6 @@
       "tournamentName": "MPL Philippines Season 18 - RS: Week 8",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Regular_Season",
       "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791444600-mlbb-super-league-myanmar-season-4-regular-season-myth-df",
-      "startsAt": 1791444600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "MYTH",
-          "name": "Mythic SEAL",
-          "pageSlug": "Mythic_SEAL",
-          "logoUrl": "/teams/50px-Mythic_Seal_allmode-c6d031ba.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "DF",
-          "name": "D Family",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MSL Myanmar Season 4 - RS: Week 5",
-      "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Regular_Season",
-      "regionSlug": "myanmar",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791443700-mpl-indonesia-season-18-regular-season-evos-dewa",
-      "startsAt": 1791443700,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "EVOS",
-          "name": "EVOS",
-          "pageSlug": "EVOS",
-          "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "DEWA",
-          "name": "Dewa United Esports",
-          "pageSlug": "Dewa_United_Esports",
-          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 8",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=A2tc_KX7-8g",
-        "https://www.youtube.com/watch?v=cDWSm-6TbsY",
-        "https://www.youtube.com/watch?v=_M8OitW1-hU"
-      ]
-    },
-    {
-      "id": "1791374400-mlbb-academy-league-season-6-regular-season-phase-2-hgoz-vlad",
-      "startsAt": 1791374400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "HGOZ",
-          "name": "HG x Originz",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-HG_x_ORIGINZ_darkmode-8a453529.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "VLAD",
-          "name": "VLAD Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/45px-VLAD_Esports_2026_allmode-aa0558d8.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MAL S6 RS - Week 6",
-      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Regular_Season/Phase_2",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     }

@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1791621664,
+  "harvestedAt": 1791675760,
   "data": [
     {
       "id": "indonesia-regular-season-25",
@@ -749,12 +749,12 @@
             "pageSlug": "Yangon_Galacticos",
             "logoUrl": "/teams/55px-Yangon_Galacticos_2021_allmode-fe9968df.png"
           },
-          "matchWins": 8,
+          "matchWins": 9,
           "matchLosses": 0,
-          "gameWins": 16,
+          "gameWins": 18,
           "gameLosses": 1,
-          "gameDiff": 15,
-          "points": 8,
+          "gameDiff": 17,
+          "points": 9,
           "zone": "advance"
         },
         {
@@ -782,10 +782,10 @@
             "logoUrl": "/teams/100px-TEC_x_BG_2026_allmode-9e28ed92.png"
           },
           "matchWins": 7,
-          "matchLosses": 1,
+          "matchLosses": 2,
           "gameWins": 14,
-          "gameLosses": 4,
-          "gameDiff": 10,
+          "gameLosses": 6,
+          "gameDiff": 8,
           "points": 7,
           "zone": "playoff"
         },
@@ -798,10 +798,10 @@
             "logoUrl": "/teams/100px-Team_Secret_darkmode-d119a2cd.png"
           },
           "matchWins": 5,
-          "matchLosses": 3,
+          "matchLosses": 4,
           "gameWins": 13,
-          "gameLosses": 7,
-          "gameDiff": 6,
+          "gameLosses": 9,
+          "gameDiff": 4,
           "points": 5,
           "zone": "playoff"
         },
@@ -840,6 +840,22 @@
         {
           "position": 7,
           "team": {
+            "code": "WE",
+            "name": "Wyverns Esports",
+            "pageSlug": "",
+            "logoUrl": "/teams/45px-Wyverns_Esports_darkmode-09c29f03.png"
+          },
+          "matchWins": 3,
+          "matchLosses": 6,
+          "gameWins": 8,
+          "gameLosses": 13,
+          "gameDiff": -5,
+          "points": 3,
+          "zone": "neutral"
+        },
+        {
+          "position": 8,
+          "team": {
             "code": "T7",
             "name": "Team 7",
             "pageSlug": "Team_7",
@@ -851,22 +867,6 @@
           "gameLosses": 15,
           "gameDiff": -6,
           "points": 3,
-          "zone": "neutral"
-        },
-        {
-          "position": 8,
-          "team": {
-            "code": "WE",
-            "name": "Wyverns Esports",
-            "pageSlug": "",
-            "logoUrl": "/teams/45px-Wyverns_Esports_darkmode-09c29f03.png"
-          },
-          "matchWins": 2,
-          "matchLosses": 6,
-          "gameWins": 6,
-          "gameLosses": 13,
-          "gameDiff": -7,
-          "points": 2,
           "zone": "neutral"
         },
         {
@@ -918,28 +918,12 @@
             "pageSlug": "Leon_Esports",
             "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png"
           },
-          "matchWins": 8,
+          "matchWins": 9,
           "matchLosses": 0,
-          "gameWins": 16,
+          "gameWins": 18,
           "gameLosses": 3,
-          "gameDiff": 13,
-          "points": 8,
-          "zone": "advance"
-        },
-        {
-          "position": 2,
-          "team": {
-            "code": "BT",
-            "name": "Bacon Time",
-            "pageSlug": "Bacon_Time",
-            "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png"
-          },
-          "matchWins": 6,
-          "matchLosses": 1,
-          "gameWins": 12,
-          "gameLosses": 4,
-          "gameDiff": 8,
-          "points": 6,
+          "gameDiff": 15,
+          "points": 9,
           "zone": "advance"
         },
         {
@@ -950,11 +934,27 @@
             "pageSlug": "",
             "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png"
           },
+          "matchWins": 7,
+          "matchLosses": 2,
+          "gameWins": 16,
+          "gameLosses": 6,
+          "gameDiff": 10,
+          "points": 7,
+          "zone": "advance"
+        },
+        {
+          "position": 3,
+          "team": {
+            "code": "BT",
+            "name": "Bacon Time",
+            "pageSlug": "Bacon_Time",
+            "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png"
+          },
           "matchWins": 6,
           "matchLosses": 2,
-          "gameWins": 14,
+          "gameWins": 12,
           "gameLosses": 6,
-          "gameDiff": 8,
+          "gameDiff": 6,
           "points": 6,
           "zone": "playoff"
         },
@@ -967,10 +967,10 @@
             "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png"
           },
           "matchWins": 5,
-          "matchLosses": 2,
+          "matchLosses": 3,
           "gameWins": 11,
-          "gameLosses": 4,
-          "gameDiff": 7,
+          "gameLosses": 6,
+          "gameDiff": 5,
           "points": 5,
           "zone": "playoff"
         },
@@ -982,12 +982,12 @@
             "pageSlug": "",
             "logoUrl": "/teams/52px-Valee_Thai_Esports_allmode-e71a3ed4.png"
           },
-          "matchWins": 3,
+          "matchWins": 4,
           "matchLosses": 4,
-          "gameWins": 9,
+          "gameWins": 11,
           "gameLosses": 10,
-          "gameDiff": -1,
-          "points": 3,
+          "gameDiff": 1,
+          "points": 4,
           "zone": "playoff"
         },
         {
@@ -1063,17 +1063,17 @@
             "logoUrl": "/teams/57px-Hydra_Esports_Allmode-e1c8f4c5.png"
           },
           "matchWins": 1,
-          "matchLosses": 6,
+          "matchLosses": 7,
           "gameWins": 3,
-          "gameLosses": 13,
-          "gameDiff": -10,
+          "gameLosses": 15,
+          "gameDiff": -12,
           "points": 1,
           "zone": "eliminated"
         }
       ]
     },
     {
-      "id": "vietnam-group-stage-11",
+      "id": "vietnam-group-stage-12",
       "regionSlug": "vietnam",
       "leagueName": "Vietnam MLBB Championship",
       "leaguePageSlug": "Vietnam_MLBB_Championship/2026/Fall",
