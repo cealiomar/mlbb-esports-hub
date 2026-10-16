@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1792165747,
+  "harvestedAt": 1792171796,
   "data": [
     {
       "id": "1792180800-mct-2026-americas-split-2-playoffs-9z-a7",
@@ -2046,6 +2046,40 @@
       "vodUrls": []
     },
     {
+      "id": "1791720000-mlbb-continental-championships-season-8-playoffs-arv-ts",
+      "startsAt": 1791720000,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "ARV",
+          "name": "Aurevia Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "TS",
+          "name": "Team Spirit",
+          "pageSlug": "Team_Spirit",
+          "logoUrl": "/teams/43px-Team_Spirit_2022_darkmode-ab12d6d1.png",
+          "score": 3,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MCC Season 8 - Playoffs",
+      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": [
+        "https://www.youtube.com/live/Bka4WgNoU9o?si=shulKtn8AQIM8W8y&t=4440",
+        "https://www.youtube.com/live/Bka4WgNoU9o?si=BM5OiDClQlWYbbVD&t=6577",
+        "https://www.youtube.com/live/Bka4WgNoU9o?si=J3ncWqBqsPoL5Zuw&t=8257",
+        "https://www.youtube.com/live/Bka4WgNoU9o?si=7y9Xh0ToArsxxiGg&t=10826"
+      ]
+    },
+    {
       "id": "1791720000-mlbb-super-league-thailand-season-2-regular-season-bac-vlth",
       "startsAt": 1791720000,
       "status": "completed",
@@ -2908,35 +2942,6 @@
       "tournamentName": "MSL Thailand Season 2 - RS: Week 5",
       "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
       "regionSlug": "thailand",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791631800-mlbb-china-masters-season-3-playoffs-gzg-dfyg",
-      "startsAt": 1791631800,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "GZG",
-          "name": "Guangzhou Gaming",
-          "pageSlug": "Guangzhou_Gaming",
-          "logoUrl": "/teams/52px-Guangzhou_Gaming_allmode-525b6a90.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "DFYG",
-          "name": "DianFengYaoGuai",
-          "pageSlug": "DianFengYaoGuai",
-          "logoUrl": "/teams/49px-DFYG_allmode-9665ae4d.png",
-          "score": 3,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "CN Masters Season 3 - Playoffs",
-      "tournamentPageSlug": "MLBB_China_Masters/Season_3/Playoffs",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     }
