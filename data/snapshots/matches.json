@@ -1,39 +1,10 @@
 {
-  "harvestedAt": 1792188670,
+  "harvestedAt": 1792197889,
   "data": [
-    {
-      "id": "1792180800-mct-2026-americas-split-2-playoffs-9z-a7",
-      "startsAt": 1792180800,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "9z",
-          "name": "9z Team",
-          "pageSlug": "9z_Team",
-          "logoUrl": "/teams/60px-9z_Team_2024_darkmode-2310fbf0.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "A7",
-          "name": "Alpha7 Esports",
-          "pageSlug": "Alpha7_Esports",
-          "logoUrl": "/teams/73px-A7_eSports_darkmode-11af375c.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Split 2 - Group South",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1792189800-mct-2026-americas-split-2-playoffs-nh-lyon",
       "startsAt": 1792189800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -41,7 +12,7 @@
           "name": "The Night Horde",
           "pageSlug": "The_Night_Horde",
           "logoUrl": "/teams/52px-The_Night_Horde_darkmode-f2658762.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -49,7 +20,7 @@
           "name": "LYON",
           "pageSlug": "LYON",
           "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -1447,6 +1418,64 @@
       ],
       "tournamentName": "MAL MY Season 6 - Playoffs",
       "tournamentPageSlug": "MLBB_Academy_League/Season_6/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792738800-mpl-philippines-season-18-playoffs-tbd-tbd",
+      "startsAt": 1792738800,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Philippines Season 18 - Playoffs",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Playoffs",
+      "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792180800-mct-2026-americas-split-2-playoffs-9z-a7",
+      "startsAt": 1792180800,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "9z",
+          "name": "9z Team",
+          "pageSlug": "9z_Team",
+          "logoUrl": "/teams/60px-9z_Team_2024_darkmode-2310fbf0.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "A7",
+          "name": "Alpha7 Esports",
+          "pageSlug": "Alpha7_Esports",
+          "logoUrl": "/teams/73px-A7_eSports_darkmode-11af375c.png",
+          "score": 2,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Split 2 - Group South",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -2915,35 +2944,6 @@
         "https://www.youtube.com/live/OtHqfHt80N8?si=IhsHOYi02JYln9pS&t=7992",
         "https://www.youtube.com/live/OtHqfHt80N8?si=-O55eoWK1FOe6eCp&t=10108"
       ]
-    },
-    {
-      "id": "1791633600-mlbb-super-league-thailand-season-2-regular-season-bac-ten",
-      "startsAt": 1791633600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BAC",
-          "name": "Bacon Time",
-          "pageSlug": "Bacon_Time",
-          "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TEN",
-          "name": "Tenacity",
-          "pageSlug": "",
-          "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 5",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
