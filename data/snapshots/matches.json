@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1792279329,
+  "harvestedAt": 1792286963,
   "data": [
     {
       "id": "1792276200-mct-2026-americas-split-2-playoffs-vnd-rto",
       "startsAt": 1792276200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "Vendetta",
           "pageSlug": "",
           "logoUrl": "/teams/51px-Vendetta_2026_allmode-c2385521.png",
-          "score": null,
+          "score": 2,
           "isWinner": false
         },
         {
@@ -20,7 +20,7 @@
           "name": "Retaliation",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 2,
           "isWinner": false
         }
       ],
@@ -60,7 +60,10 @@
       "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
       "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
       "regionSlug": "singapore",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
+      ],
       "vodUrls": []
     },
     {
@@ -89,7 +92,10 @@
       "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
       "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
       "regionSlug": "singapore",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
+      ],
       "vodUrls": []
     },
     {
@@ -1569,7 +1575,11 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=jes730IPIao",
+        "https://www.youtube.com/watch?v=VgpaT2KJERQ",
+        "https://www.youtube.com/watch?v=IhPtDaOsShg"
+      ]
     },
     {
       "id": "1792241400-mtc-turkiye-championship-season-8-regular-season-dia-pcf",
