@@ -1,132 +1,6 @@
 {
-  "harvestedAt": 1792286963,
+  "harvestedAt": 1792305197,
   "data": [
-    {
-      "id": "1792276200-mct-2026-americas-split-2-playoffs-vnd-rto",
-      "startsAt": 1792276200,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "VND",
-          "name": "Vendetta",
-          "pageSlug": "",
-          "logoUrl": "/teams/51px-Vendetta_2026_allmode-c2385521.png",
-          "score": 2,
-          "isWinner": false
-        },
-        {
-          "code": "RTO",
-          "name": "Retaliation",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Split 2 - Group North",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1792292400-mpl-singapore-season-12-regular-season-wsp-ex",
-      "startsAt": 1792292400,
-      "status": "upcoming",
-      "bestOf": 2,
-      "opponents": [
-        {
-          "code": "WSP",
-          "name": "Wisp Inc",
-          "pageSlug": "",
-          "logoUrl": "/teams/32px-Wisp_Inc_Allmode-a5e587aa.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "EX",
-          "name": "EX FACTOR",
-          "pageSlug": "",
-          "logoUrl": "/teams/53px-EX_FACTOR_Allmode-e5c71395.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
-      "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
-      "regionSlug": "singapore",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1792292400-mpl-singapore-season-12-regular-season-evil-evg",
-      "startsAt": 1792292400,
-      "status": "upcoming",
-      "bestOf": 2,
-      "opponents": [
-        {
-          "code": "Evil",
-          "name": "Evil",
-          "pageSlug": "Evil",
-          "logoUrl": "/teams/45px-EVIL_SG_allmode-f3cfb246.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "EVG",
-          "name": "EverGarden",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
-      "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
-      "regionSlug": "singapore",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1792296900-mpl-singapore-season-12-regular-season-kgdm-sin",
-      "startsAt": 1792296900,
-      "status": "upcoming",
-      "bestOf": 2,
-      "opponents": [
-        {
-          "code": "KGDM",
-          "name": "Kingdom Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/62px-Kingdom_Esports__28mlbb_team_29_allmode-b75bbdf3.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "SIN",
-          "name": "Sindicate Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Sindicate_Esports_allmode-411bc06a.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
-      "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
-      "regionSlug": "singapore",
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1792296900-mpl-singapore-season-12-regular-season-az-lfx",
       "startsAt": 1792296900,
@@ -153,13 +27,16 @@
       "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
       "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
       "regionSlug": "singapore",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
+      ],
       "vodUrls": []
     },
     {
       "id": "1792301400-mpl-singapore-season-12-regular-season-ign-wsp",
       "startsAt": 1792301400,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 2,
       "opponents": [
         {
@@ -167,7 +44,7 @@
           "name": "IGNITE Gaming",
           "pageSlug": "IGNITE_Gaming",
           "logoUrl": "/teams/50px-IGNITE_Gaming_allmode-ed21cb9d.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -175,14 +52,17 @@
           "name": "Wisp Inc",
           "pageSlug": "",
           "logoUrl": "/teams/32px-Wisp_Inc_Allmode-a5e587aa.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
       "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
       "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
       "regionSlug": "singapore",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
+      ],
       "vodUrls": []
     },
     {
@@ -211,13 +91,16 @@
       "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
       "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
       "regionSlug": "singapore",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
+      ],
       "vodUrls": []
     },
     {
       "id": "1792303200-mpl-cambodia-season-11-regular-season-flkh-gxl",
       "startsAt": 1792303200,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 3,
       "opponents": [
         {
@@ -225,7 +108,7 @@
           "name": "Team Flash KH",
           "pageSlug": "Team_Flash_KH",
           "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -233,14 +116,17 @@
           "name": "Galaxy Legends",
           "pageSlug": "Galaxy_Legends",
           "logoUrl": "/teams/100px-Galaxy_Legends_2025_darkmode-26acc47c.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
       "tournamentName": "MPL Cambodia Season 11 - RS: Week 3",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
       "regionSlug": "cambodia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ],
       "vodUrls": []
     },
     {
@@ -269,7 +155,10 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 8",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
       "vodUrls": []
     },
     {
@@ -298,7 +187,10 @@
       "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
       "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
       "regionSlug": "singapore",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
+      ],
       "vodUrls": []
     },
     {
@@ -327,7 +219,10 @@
       "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
       "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
       "regionSlug": "singapore",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
+      ],
       "vodUrls": []
     },
     {
@@ -356,7 +251,10 @@
       "tournamentName": "MPL Indonesia Season 18 - RS: Week 9",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
       "vodUrls": []
     },
     {
@@ -385,7 +283,10 @@
       "tournamentName": "MSL Myanmar Season 4",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Playins",
       "regionSlug": "myanmar",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MSL_Myanmar",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MSL_Myanmar"
+      ],
       "vodUrls": []
     },
     {
@@ -414,7 +315,10 @@
       "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
       "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
       "regionSlug": "singapore",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
+      ],
       "vodUrls": []
     },
     {
@@ -443,7 +347,10 @@
       "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
       "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
       "regionSlug": "singapore",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Singapore",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Singapore"
+      ],
       "vodUrls": []
     },
     {
@@ -472,7 +379,10 @@
       "tournamentName": "MPL Cambodia Season 11 - RS: Week 3",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
       "regionSlug": "cambodia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ],
       "vodUrls": []
     },
     {
@@ -501,6 +411,35 @@
       "tournamentName": "MPL Malaysia Season 18 - RS: Week 8",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
       "regionSlug": "malaysia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792314000-mlbb-super-league-thailand-season-2-playoffs-bac-leon",
+      "startsAt": 1792314000,
+      "status": "upcoming",
+      "bestOf": 7,
+      "opponents": [
+        {
+          "code": "BAC",
+          "name": "Bacon Time",
+          "pageSlug": "Bacon_Time",
+          "logoUrl": "/teams/56px-Bacon_Time_2022_allmode-3553ab98.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "LEON",
+          "name": "Leon Esports",
+          "pageSlug": "Leon_Esports",
+          "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - Playoffs",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Playoffs",
+      "regionSlug": "thailand",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1458,6 +1397,238 @@
       "tournamentName": "MSL Myanmar Season 4 - Playoffs",
       "tournamentPageSlug": "MLBB_Super_League/Myanmar/Season_4/Playoffs",
       "regionSlug": "myanmar",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792908000-mpl-cambodia-season-11-regular-season-sys-tnr",
+      "startsAt": 1792908000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "SYS",
+          "name": "See You Soon",
+          "pageSlug": "See_You_Soon",
+          "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TNR",
+          "name": "TNR Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-TNR_Esports_allmode-012f8490.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
+      "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792911600-mlbb-academy-league-season-6-playoffs-tbd-tbd",
+      "startsAt": 1792911600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MAL MY Season 6 - Playoffs",
+      "tournamentPageSlug": "MLBB_Academy_League/Season_6/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792917000-mpl-cambodia-season-11-regular-season-vgr-pro",
+      "startsAt": 1792917000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "VGR",
+          "name": "Vigor Apex",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Vigor_Apex_allmode-8df99e65.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "PRO",
+          "name": "PRO Esports",
+          "pageSlug": "PRO_Esports",
+          "logoUrl": "/teams/78px-PRO_Esports_v3_allmode-dacc9aa3.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - RS: Week 4",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
+      "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792299600-mlbb-super-league-thailand-season-2-playoffs-leon-ten",
+      "startsAt": 1792299600,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "LEON",
+          "name": "Leon Esports",
+          "pageSlug": "Leon_Esports",
+          "logoUrl": "/teams/60px-Leon_Esports_allmode-a5ff1e37.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "TEN",
+          "name": "Tenacity",
+          "pageSlug": "",
+          "logoUrl": "/teams/78px-Tenacity_allmode-d99ed8f6.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MSL Thailand Season 2 - Playoffs",
+      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Playoffs",
+      "regionSlug": "thailand",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792296900-mpl-singapore-season-12-regular-season-kgdm-sin",
+      "startsAt": 1792296900,
+      "status": "completed",
+      "bestOf": 2,
+      "opponents": [
+        {
+          "code": "KGDM",
+          "name": "Kingdom Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/62px-Kingdom_Esports__28mlbb_team_29_allmode-b75bbdf3.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "SIN",
+          "name": "Sindicate Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/48px-Sindicate_Esports_allmode-411bc06a.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
+      "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
+      "regionSlug": "singapore",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792292400-mpl-singapore-season-12-regular-season-wsp-ex",
+      "startsAt": 1792292400,
+      "status": "completed",
+      "bestOf": 2,
+      "opponents": [
+        {
+          "code": "WSP",
+          "name": "Wisp Inc",
+          "pageSlug": "",
+          "logoUrl": "/teams/32px-Wisp_Inc_Allmode-a5e587aa.png",
+          "score": 1,
+          "isWinner": true
+        },
+        {
+          "code": "EX",
+          "name": "EX FACTOR",
+          "pageSlug": "",
+          "logoUrl": "/teams/53px-EX_FACTOR_Allmode-e5c71395.png",
+          "score": 1,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
+      "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
+      "regionSlug": "singapore",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792292400-mpl-singapore-season-12-regular-season-evil-evg",
+      "startsAt": 1792292400,
+      "status": "completed",
+      "bestOf": 2,
+      "opponents": [
+        {
+          "code": "Evil",
+          "name": "Evil",
+          "pageSlug": "Evil",
+          "logoUrl": "/teams/45px-EVIL_SG_allmode-f3cfb246.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "EVG",
+          "name": "EverGarden",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Singapore Season 12 - RS: Day 2",
+      "tournamentPageSlug": "MPL/Singapore/Season_12/Regular_Season",
+      "regionSlug": "singapore",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792276200-mct-2026-americas-split-2-playoffs-vnd-rto",
+      "startsAt": 1792276200,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "VND",
+          "name": "Vendetta",
+          "pageSlug": "",
+          "logoUrl": "/teams/51px-Vendetta_2026_allmode-c2385521.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "RTO",
+          "name": "Retaliation",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 2,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Split 2 - Group North",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2802,158 +2973,6 @@
       "tournamentName": "MPL MENA Season 10 - Playoffs",
       "tournamentPageSlug": "MPL/MENA/Season_10/Playoffs",
       "regionSlug": "mena",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791729600-mtc-turkiye-championship-season-8-regular-season-bgt-aur",
-      "startsAt": 1791729600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BGT",
-          "name": "Boostgate Esports",
-          "pageSlug": "Boostgate_Esports",
-          "logoUrl": "/teams/39px-Boostgate_Esports_allmode-8bcbcf5b.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "AUR",
-          "name": "Aurora Gaming",
-          "pageSlug": "Aurora_Gaming",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 5",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791729000-mlbb-continental-championships-season-8-playoffs-yndx-rkz",
-      "startsAt": 1791729000,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "RKZ",
-          "name": "RAKUZAN",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCC Season 8 - Playoffs",
-      "tournamentPageSlug": "MLBB_Continental_Championships/Season_8/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/Bka4WgNoU9o?si=1jtLmg5dr_ibGye2&t=13922",
-        "https://www.youtube.com/live/Bka4WgNoU9o?si=EakrsB9VpSxEsIu9&t=15738",
-        "https://www.youtube.com/live/Bka4WgNoU9o?si=4IcLO3IyqnaM7IXE&t=17583"
-      ]
-    },
-    {
-      "id": "1791727200-mlbb-super-league-thailand-season-2-regular-season-kog-slx",
-      "startsAt": 1791727200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KOG",
-          "name": "King of Gamers Club",
-          "pageSlug": "King_of_Gamers_Club",
-          "logoUrl": "/teams/87px-King_of_Gamers_darkmode-b7c1693a.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "SLX",
-          "name": "SOLYX",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Solyx_allmode-ff12a1c2.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MSL Thailand Season 2 - RS: Week 5",
-      "tournamentPageSlug": "MLBB_Super_League/Thailand/Season_2/Regular_Season",
-      "regionSlug": "thailand",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1791723600-mpl-indonesia-season-18-regular-season-dewa-btr",
-      "startsAt": 1791723600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DEWA",
-          "name": "Dewa United Esports",
-          "pageSlug": "Dewa_United_Esports",
-          "logoUrl": "/teams/76px-Dewa_United_Esports_allmode-3deec087.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "BTR",
-          "name": "Bigetron by Vitality",
-          "pageSlug": "Bigetron_by_Vitality",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - RS: Week 8",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Regular_Season",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=qwoAWlNjDsM",
-        "https://www.youtube.com/watch?v=8hc7dWvCOP0"
-      ]
-    },
-    {
-      "id": "1791722400-mtc-turkiye-championship-season-8-regular-season-bw-ida",
-      "startsAt": 1791722400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BW",
-          "name": "Bushido Wildcats",
-          "pageSlug": "Bushido_Wildcats",
-          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "IDA",
-          "name": "IDA Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/95px-IDA_Esports_2025_allmode-31209f50.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Week 5",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Regular_Season",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     }
