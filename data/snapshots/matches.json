@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1792560851,
+  "harvestedAt": 1792578807,
   "data": [
     {
       "id": "1792566000-mpl-philippines-season-18-playoffs-onph-tnc",
       "startsAt": 1792566000,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "ONIC Philippines",
           "pageSlug": "ONIC_Philippines",
           "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
+          "score": 2,
           "isWinner": false
         },
         {
@@ -20,14 +20,17 @@
           "name": "TNC Pro Team",
           "pageSlug": "TNC_Pro_Team",
           "logoUrl": "/teams/47px-TNC_Pro_Team_2021_allmode-a0170804.png",
-          "score": null,
+          "score": 2,
           "isWinner": false
         }
       ],
       "tournamentName": "MPL Philippines Season 18 - Playoffs",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Playoffs",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
@@ -56,7 +59,10 @@
       "tournamentName": "MPL Philippines Season 18 - Playoffs",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Playoffs",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
+      ],
       "vodUrls": []
     },
     {
