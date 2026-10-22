@@ -1,26 +1,26 @@
 {
-  "harvestedAt": 1792650783,
+  "harvestedAt": 1792671601,
   "data": [
     {
-      "id": "1792652400-mpl-philippines-season-18-playoffs-flcp-onph",
-      "startsAt": 1792652400,
-      "status": "upcoming",
+      "id": "1792666800-mpl-philippines-season-18-playoffs-tlph-rora",
+      "startsAt": 1792666800,
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "FLCP",
-          "name": "Team Falcons PH",
-          "pageSlug": "Team_Falcons_PH",
-          "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png",
-          "score": null,
+          "code": "TLPH",
+          "name": "Team Liquid PH",
+          "pageSlug": "Team_Liquid_PH",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": 1,
           "isWinner": false
         },
         {
-          "code": "ONPH",
-          "name": "ONIC Philippines",
-          "pageSlug": "ONIC_Philippines",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": null,
+          "code": "RORA",
+          "name": "Aurora Gaming PH",
+          "pageSlug": "Aurora_Gaming_PH",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -31,35 +31,6 @@
         "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Philippines",
         "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Philippines"
       ],
-      "vodUrls": []
-    },
-    {
-      "id": "1792666800-mpl-philippines-season-18-playoffs-tlph-rora",
-      "startsAt": 1792666800,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TLPH",
-          "name": "Team Liquid PH",
-          "pageSlug": "Team_Liquid_PH",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "RORA",
-          "name": "Aurora Gaming PH",
-          "pageSlug": "Aurora_Gaming_PH",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Philippines Season 18 - Playoffs",
-      "tournamentPageSlug": "MPL/Philippines/Season_18/Playoffs",
-      "regionSlug": "philippines",
-      "streamUrls": [],
       "vodUrls": []
     },
     {
@@ -179,64 +150,6 @@
       "vodUrls": []
     },
     {
-      "id": "1792735200-mct-2026-americas-split-2-playoffs-tuna-tbd",
-      "startsAt": 1792735200,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TUNA",
-          "name": "Nopa Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/51px-Nopa_Esports_allmode-0e617867.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Split 2 - Group North",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1792735200-mct-2026-americas-split-2-playoffs-a7-tbd",
-      "startsAt": 1792735200,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "A7",
-          "name": "Alpha7 Esports",
-          "pageSlug": "Alpha7_Esports",
-          "logoUrl": "/teams/73px-A7_eSports_darkmode-11af375c.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 - Split 2 - Group South",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
       "id": "1792735200-mpl-cambodia-season-11-regular-season-sys-val",
       "startsAt": 1792735200,
       "status": "upcoming",
@@ -295,16 +208,16 @@
       "vodUrls": []
     },
     {
-      "id": "1792738800-mpl-philippines-season-18-playoffs-tbd-tbd",
+      "id": "1792738800-mpl-philippines-season-18-playoffs-onph-tbd",
       "startsAt": 1792738800,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "ONPH",
+          "name": "ONIC Philippines",
+          "pageSlug": "ONIC_Philippines",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
           "score": null,
           "isWinner": false
         },
@@ -498,16 +411,16 @@
       "vodUrls": []
     },
     {
-      "id": "1792753200-mpl-philippines-season-18-playoffs-tbd-tbd",
+      "id": "1792753200-mpl-philippines-season-18-playoffs-flcp-tbd",
       "startsAt": 1792753200,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "FLCP",
+          "name": "Team Falcons PH",
+          "pageSlug": "Team_Falcons_PH",
+          "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png",
           "score": null,
           "isWinner": false
         },
@@ -523,6 +436,64 @@
       "tournamentName": "MPL Philippines Season 18 - Playoffs",
       "tournamentPageSlug": "MPL/Philippines/Season_18/Playoffs",
       "regionSlug": "philippines",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792785600-mct-2026-americas-split-2-playoffs-e7-octa",
+      "startsAt": 1792785600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "E7",
+          "name": "Entity7",
+          "pageSlug": "Entity7",
+          "logoUrl": "/teams/33px-Entity7_2025_darkmode-1881d4b0.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OCTA",
+          "name": "Octa Gaming",
+          "pageSlug": "",
+          "logoUrl": "/teams/42px-Octa_Gaming_2026_darkmode-fe113849.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Split 2 - Group South",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792794600-mct-2026-americas-split-2-playoffs-b2g-nh",
+      "startsAt": 1792794600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "B2G",
+          "name": "Deportivo B2G",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-Deportivo_B2G_allmode-05f09465.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "NH",
+          "name": "The Night Horde",
+          "pageSlug": "The_Night_Horde",
+          "logoUrl": "/teams/52px-The_Night_Horde_darkmode-f2658762.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Split 2 - Group North",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1049,6 +1020,64 @@
       "vodUrls": []
     },
     {
+      "id": "1792872000-mct-2026-americas-split-2-playoffs-9z-dmx",
+      "startsAt": 1792872000,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "9z",
+          "name": "9z Team",
+          "pageSlug": "9z_Team",
+          "logoUrl": "/teams/60px-9z_Team_2024_darkmode-2310fbf0.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "DMX",
+          "name": "DreamMax e-Sports",
+          "pageSlug": "DreamMax_e-Sports",
+          "logoUrl": "/teams/54px-DreamMax_e-Sports_allmode-84401a53.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Split 2 - Group South",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1792881000-mct-2026-americas-split-2-playoffs-tuna-tbd",
+      "startsAt": 1792881000,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TUNA",
+          "name": "Nopa Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/51px-Nopa_Esports_allmode-0e617867.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Split 2 - Group North",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1792900800-mlbb-super-league-myanmar-season-4-playoffs-tbd-tbd",
       "startsAt": 1792900800,
       "status": "upcoming",
@@ -1426,31 +1455,31 @@
       "vodUrls": []
     },
     {
-      "id": "1793170800-mpl-malaysia-season-18-playoffs-vms-fl",
-      "startsAt": 1793170800,
-      "status": "upcoming",
+      "id": "1792652400-mpl-philippines-season-18-playoffs-flcp-onph",
+      "startsAt": 1792652400,
+      "status": "completed",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "VMS",
-          "name": "Team Vamos",
-          "pageSlug": "Team_Vamos",
-          "logoUrl": "/teams/43px-Team_Vamos_darkmode-af6ed226.png",
-          "score": null,
-          "isWinner": false
+          "code": "FLCP",
+          "name": "Team Falcons PH",
+          "pageSlug": "Team_Falcons_PH",
+          "logoUrl": "/teams/41px-Team_Falcons_2022_allmode-ffc4fafd.png",
+          "score": 3,
+          "isWinner": true
         },
         {
-          "code": "FL",
-          "name": "Team Flash",
-          "pageSlug": "Team_Flash",
-          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": null,
+          "code": "ONPH",
+          "name": "ONIC Philippines",
+          "pageSlug": "ONIC_Philippines",
+          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
+          "score": 0,
           "isWinner": false
         }
       ],
-      "tournamentName": "MPL Malaysia Season 18 - Playoffs",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Playoffs",
-      "regionSlug": "malaysia",
+      "tournamentName": "MPL Philippines Season 18 - Playoffs",
+      "tournamentPageSlug": "MPL/Philippines/Season_18/Playoffs",
+      "regionSlug": "philippines",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2965,35 +2994,6 @@
         "https://youtu.be/fnUAZEgNXaw?t=17520",
         "https://youtu.be/fnUAZEgNXaw?t=19415"
       ]
-    },
-    {
-      "id": "1792218600-mpl-malaysia-season-18-regular-season-btrm-fl",
-      "startsAt": 1792218600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BTRM",
-          "name": "Bigetron MY by VIT",
-          "pageSlug": "Bigetron_MY_by_VIT",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "FL",
-          "name": "Team Flash",
-          "pageSlug": "Team_Flash",
-          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - RS: Week 8",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Regular_Season",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": []
     }
   ]
 }
