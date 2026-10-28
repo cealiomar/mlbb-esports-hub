@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1793141445,
+  "harvestedAt": 1793174351,
   "data": [
     {
       "id": "1793170800-mpl-malaysia-season-18-playoffs-vms-fl",
       "startsAt": 1793170800,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "Team Vamos",
           "pageSlug": "Team_Vamos",
           "logoUrl": "/teams/43px-Team_Vamos_darkmode-af6ed226.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         },
         {
@@ -20,14 +20,17 @@
           "name": "Team Flash",
           "pageSlug": "Team_Flash",
           "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
       "tournamentName": "MPL Malaysia Season 18 - Playoffs",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Playoffs",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
       "vodUrls": []
     },
     {
