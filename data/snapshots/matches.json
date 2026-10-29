@@ -1,10 +1,10 @@
 {
-  "harvestedAt": 1793233294,
+  "harvestedAt": 1793255024,
   "data": [
     {
       "id": "1793246400-mdl-philippines-season-8-playoffs-mmtm-fire",
       "startsAt": 1793246400,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 5,
       "opponents": [
         {
@@ -12,7 +12,7 @@
           "name": "Martial Mayhem TM",
           "pageSlug": "",
           "logoUrl": "/teams/54px-Martial_Mayhem_TM_allmode-1e07a1ea.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -20,43 +20,17 @@
           "name": "TEAM FUEGO",
           "pageSlug": "",
           "logoUrl": "/teams/32px-TEAM_FUEGO_darkmode-1f58b75a.png",
-          "score": null,
+          "score": 1,
           "isWinner": false
         }
       ],
       "tournamentName": "MDL Philippines Season 8 - Playoffs",
       "tournamentPageSlug": "MDL/Philippines/Season_8/Playoffs",
       "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793250000-mct-2026-east-asia-split-2-group-stage-mahp-zrg",
-      "startsAt": 1793250000,
-      "status": "upcoming",
-      "bestOf": 2,
-      "opponents": [
-        {
-          "code": "MAHP",
-          "name": "Mio Ahp",
-          "pageSlug": "",
-          "logoUrl": "/teams/40px-Team_Mio_allmode-6dab2a41.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "ZRG",
-          "name": "Zero Gravity",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Zero_Gravity__28Korean_team_29_darkmode-d5cdfbdd.png",
-          "score": null,
-          "isWinner": false
-        }
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_PH",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MDL_PH"
       ],
-      "tournamentName": "MCT EA 2026 Ulaanbaatar - Group A",
-      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
       "vodUrls": []
     },
     {
@@ -85,7 +59,9 @@
       "tournamentName": "MCT EA 2026 Ulaanbaatar - Group B",
       "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBBEAEsports"
+      ],
       "vodUrls": []
     },
     {
@@ -114,7 +90,10 @@
       "tournamentName": "MDL ID S14: Playoffs",
       "tournamentPageSlug": "MDL/Indonesia/Season_14/Playoffs",
       "regionSlug": "indonesia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MDL_ID"
+      ],
       "vodUrls": []
     },
     {
@@ -143,7 +122,10 @@
       "tournamentName": "MDL Philippines Season 8 - Playoffs",
       "tournamentPageSlug": "MDL/Philippines/Season_8/Playoffs",
       "regionSlug": "philippines",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MDL_PH",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MDL_PH"
+      ],
       "vodUrls": []
     },
     {
@@ -172,7 +154,10 @@
       "tournamentName": "MPL Malaysia Season 18 - Playoffs",
       "tournamentPageSlug": "MPL/Malaysia/Season_18/Playoffs",
       "regionSlug": "malaysia",
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Malaysia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Malaysia"
+      ],
       "vodUrls": []
     },
     {
@@ -201,7 +186,9 @@
       "tournamentName": "MCT EA 2026 Ulaanbaatar - Group A",
       "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBBEAEsports"
+      ],
       "vodUrls": []
     },
     {
@@ -669,6 +656,35 @@
       "vodUrls": []
     },
     {
+      "id": "1793399400-mct-2026-americas-split-2-playoffs-lyon-b2g",
+      "startsAt": 1793399400,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "LYON",
+          "name": "LYON",
+          "pageSlug": "LYON",
+          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "B2G",
+          "name": "Deportivo B2G",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-Deportivo_B2G_allmode-05f09465.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 - Split 2 - Group North",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1793426400-mpl-cambodia-season-11-regular-season-rvz-eye",
       "startsAt": 1793426400,
       "status": "upcoming",
@@ -1075,8 +1091,8 @@
       "vodUrls": []
     },
     {
-      "id": "1793566800-mct-2026-americas-split-2-playoffs-vnd-tbd",
-      "startsAt": 1793566800,
+      "id": "1793563200-mct-2026-americas-split-2-playoffs-vnd-tbd",
+      "startsAt": 1793563200,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
@@ -1447,6 +1463,35 @@
       ],
       "tournamentName": "MCT SEA 2026 - Group B",
       "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793250000-mct-2026-east-asia-split-2-group-stage-mahp-zrg",
+      "startsAt": 1793250000,
+      "status": "completed",
+      "bestOf": 2,
+      "opponents": [
+        {
+          "code": "MAHP",
+          "name": "Mio Ahp",
+          "pageSlug": "",
+          "logoUrl": "/teams/40px-Team_Mio_allmode-6dab2a41.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "ZRG",
+          "name": "Zero Gravity",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Zero_Gravity__28Korean_team_29_darkmode-d5cdfbdd.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT EA 2026 Ulaanbaatar - Group A",
+      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/Group_Stage",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
@@ -3007,38 +3052,6 @@
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1792735200-mpl-cambodia-season-11-regular-season-sys-val",
-      "startsAt": 1792735200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "SYS",
-          "name": "See You Soon",
-          "pageSlug": "See_You_Soon",
-          "logoUrl": "/teams/46px-See_You_Soon_allmode-9d915e51.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "Val",
-          "name": "Valhalla",
-          "pageSlug": "",
-          "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - RS: Week 4",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/oUUoZFkWip4?si=Avit8nBp1eDYHgs9&t=2622",
-        "https://www.youtube.com/live/oUUoZFkWip4?si=lZXoKMpVQYyYgXt2&t=4593"
-      ]
     }
   ]
 }
