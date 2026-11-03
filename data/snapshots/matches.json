@@ -1,6 +1,215 @@
 {
-  "harvestedAt": 1793670483,
+  "harvestedAt": 1793695950,
   "data": [
+    {
+      "id": "1793691000-mahar-invitational-cup-2026-season-3-group-stage-vd-hl",
+      "startsAt": 1793691000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "VD",
+          "name": "Void Discipline",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "HL",
+          "name": "The Hidden Leaf",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Group A",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/Mahar_Esports_Official",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/Mahar_Esports_Official"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1793698200-mahar-invitational-cup-2026-season-3-group-stage-ag-vek",
+      "startsAt": 1793698200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AG",
+          "name": "Team Aogiri",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "VEK",
+          "name": "Vevevek",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Group D",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/Mahar_Esports_Official",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/Mahar_Esports_Official"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1793705400-mahar-invitational-cup-2026-season-3-group-stage-te-beon",
+      "startsAt": 1793705400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TE",
+          "name": "Talkie Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Talkie_Eports_allmode-d9a8e55f.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "BEON",
+          "name": "Beyond Pneuma",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Beyond_pneuma_darkmode-4c44fb3e.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Group C",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793707200-betboom-rise-of-legends-season-11-group-stage-rkz-tw",
+      "startsAt": 1793707200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "RKZ",
+          "name": "RAKUZAN",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TW",
+          "name": "The World",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-The_World_allmode-1441fe18.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 2",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793712600-betboom-rise-of-legends-season-11-group-stage-arv-to",
+      "startsAt": 1793712600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "ARV",
+          "name": "Aurevia Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TO",
+          "name": "Team Oblivion",
+          "pageSlug": "",
+          "logoUrl": "/teams/58px-Team_Oblivion_mlbb_darkmode-db10cff1.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 2",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793718000-betboom-rise-of-legends-season-11-group-stage-tst-chm",
+      "startsAt": 1793718000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TST",
+          "name": "The Soulless Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-The_Soulless_Team_allmode-70131a7e.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "CHM",
+          "name": "Chempiki",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 2",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793723400-betboom-rise-of-legends-season-11-group-stage-omnx-nmd",
+      "startsAt": 1793723400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "OMNX",
+          "name": "Omnix",
+          "pageSlug": "",
+          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "NMD",
+          "name": "Never maind",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 2",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
     {
       "id": "1793772000-mpl-indonesia-season-18-playoffs-ae-onic",
       "startsAt": 1793772000,
@@ -1249,205 +1458,147 @@
       "vodUrls": []
     },
     {
-      "id": "1797573600-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797573600,
-      "status": "upcoming",
-      "bestOf": 1,
+      "id": "1793683800-mahar-invitational-cup-2026-season-3-group-stage-tl-bl",
+      "startsAt": 1793683800,
+      "status": "completed",
+      "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "TL",
+          "name": "Team Labubu",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "BL",
+          "name": "BlueLock",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
-          "isWinner": false
+          "score": 2,
+          "isWinner": true
         }
       ],
-      "tournamentName": "M8 World Championship - Wildcard Group A",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "tournamentName": "MIC Season 3 - Group B",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
     {
-      "id": "1797577200-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797577200,
-      "status": "upcoming",
-      "bestOf": 1,
+      "id": "1793637000-betboom-rise-of-legends-season-11-group-stage-nt-hg",
+      "startsAt": 1793637000,
+      "status": "completed",
+      "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "NT",
+          "name": "Nice Try",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
-          "isWinner": false
+          "score": 2,
+          "isWinner": true
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "HG",
+          "name": "HARD GRIND",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
-      "tournamentName": "M8 World Championship - Wildcard Group B",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 1",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     },
     {
-      "id": "1797580800-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797580800,
-      "status": "upcoming",
-      "bestOf": 1,
+      "id": "1793631600-betboom-rise-of-legends-season-11-group-stage-ch-bw",
+      "startsAt": 1793631600,
+      "status": "completed",
+      "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
+          "code": "CH",
+          "name": "CyberHero",
+          "pageSlug": "CyberHero",
+          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
+          "score": 2,
+          "isWinner": true
         },
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
+          "code": "BW",
+          "name": "Bushido Wildcats",
+          "pageSlug": "Bushido_Wildcats",
+          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
+          "score": 0,
           "isWinner": false
         }
       ],
-      "tournamentName": "M8 World Championship - Wildcard Group A",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 1",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     },
     {
-      "id": "1797584400-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797584400,
-      "status": "upcoming",
-      "bestOf": 1,
+      "id": "1793626200-betboom-rise-of-legends-season-11-group-stage-fut-dp",
+      "startsAt": 1793626200,
+      "status": "completed",
+      "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
+          "code": "FUT",
+          "name": "FUT Esports",
+          "pageSlug": "FUT_Esports",
+          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
+          "score": 2,
+          "isWinner": true
         },
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
+          "code": "DP",
+          "name": "Dark Phoenix",
+          "pageSlug": "Dark_Phoenix",
+          "logoUrl": "/teams/50px-Dark_Phoenix_2025_allmode-acbb8719.png",
+          "score": 0,
           "isWinner": false
         }
       ],
-      "tournamentName": "M8 World Championship - Wildcard Group B",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 1",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     },
     {
-      "id": "1797588000-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797588000,
-      "status": "upcoming",
-      "bestOf": 1,
+      "id": "1793620800-betboom-rise-of-legends-season-11-group-stage-yndx-af",
+      "startsAt": 1793620800,
+      "status": "completed",
+      "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "Team_Yandex",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": 2,
+          "isWinner": true
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "AF",
+          "name": "Aura Farmers",
           "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
+          "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
+          "score": 0,
           "isWinner": false
         }
       ],
-      "tournamentName": "M8 World Championship - Wildcard Group A",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797591600-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797591600,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group B",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797595200-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797595200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group A",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 1",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1594,7 +1745,15 @@
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/rSfBNl7iijs?t=2760",
+        "https://youtu.be/rSfBNl7iijs?t=4475",
+        "https://youtu.be/rSfBNl7iijs?t=6607",
+        "https://youtu.be/rSfBNl7iijs?t=8418",
+        "https://youtu.be/rSfBNl7iijs?t=10769",
+        "https://youtu.be/rSfBNl7iijs?t=13471",
+        "https://youtu.be/rSfBNl7iijs?t=15942"
+      ]
     },
     {
       "id": "1793530800-mpl-cambodia-season-11-regular-season-pro-rvz",
@@ -2855,162 +3014,6 @@
       "vodUrls": [
         "https://youtu.be/qavo4oULz4Q?t=21255",
         "https://youtu.be/qavo4oULz4Q?t=22983"
-      ]
-    },
-    {
-      "id": "1793260800-mct-2026-east-asia-split-2-group-stage-dfyg-zrg",
-      "startsAt": 1793260800,
-      "status": "completed",
-      "bestOf": 2,
-      "opponents": [
-        {
-          "code": "DFYG",
-          "name": "DianFengYaoGuai",
-          "pageSlug": "DianFengYaoGuai",
-          "logoUrl": "/teams/49px-DFYG_allmode-9665ae4d.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "ZRG",
-          "name": "Zero Gravity",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Zero_Gravity__28Korean_team_29_darkmode-d5cdfbdd.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT EA 2026 Ulaanbaatar - Group A",
-      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/qavo4oULz4Q?t=16777",
-        "https://youtu.be/qavo4oULz4Q?t=18893"
-      ]
-    },
-    {
-      "id": "1793260800-mct-2026-southeast-asia-laos-189-khod",
-      "startsAt": 1793260800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "189",
-          "name": "189 Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-189_Esports_allmode-0b810012.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "KHOD",
-          "name": "Khod Frist",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA '26 LA Qualifier - Playoffs",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Laos",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793257200-mdl-indonesia-season-14-playoffs-evs-kage",
-      "startsAt": 1793257200,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "EVS",
-          "name": "EVOS Icon",
-          "pageSlug": "EVOS_Icon",
-          "logoUrl": "/teams/52px-EVOS_Icon_allmode-efec0f78.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "KAGE",
-          "name": "Kagendra",
-          "pageSlug": "Kagendra",
-          "logoUrl": "/teams/79px-Kagendra_allmode-eb24ab2c.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Playoffs",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Playoffs",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793257200-mdl-philippines-season-8-playoffs-oncu-tmrw",
-      "startsAt": 1793257200,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "ONCU",
-          "name": "ONIC Uprising",
-          "pageSlug": "ONIC_Uprising",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "TMRW",
-          "name": "Twisted Minds RWE",
-          "pageSlug": "Twisted_Minds_RWE",
-          "logoUrl": "/teams/91px-Twisted_Minds_RWE_darkmode-49622833.png",
-          "score": 3,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MDL Philippines Season 8 - Playoffs",
-      "tournamentPageSlug": "MDL/Philippines/Season_8/Playoffs",
-      "regionSlug": "philippines",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/op7N7mygHfk?si=ji-bXB4GoYnvuSkl",
-        "https://youtu.be/Fu7gZRLFJmU?si=8iQUEYTzlNbeftOv",
-        "https://youtu.be/awcflaEbExI?si=rXGasGQhgxBNGsed"
-      ]
-    },
-    {
-      "id": "1793257200-mpl-malaysia-season-18-playoffs-rey-vms",
-      "startsAt": 1793257200,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "REY",
-          "name": "Team Rey",
-          "pageSlug": "Team_Rey",
-          "logoUrl": "/teams/34px-Team_Rey_allmode-d5112b3a.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "VMS",
-          "name": "Team Vamos",
-          "pageSlug": "Team_Vamos",
-          "logoUrl": "/teams/43px-Team_Vamos_darkmode-af6ed226.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Malaysia Season 18 - Playoffs",
-      "tournamentPageSlug": "MPL/Malaysia/Season_18/Playoffs",
-      "regionSlug": "malaysia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/L6y-lfuUT74?si=7DTgo2SwlubdQ56w&t=2542s",
-        "https://www.youtube.com/live/L6y-lfuUT74?si=yETqV3NU9Bx8Afst&t=5968s",
-        "https://www.youtube.com/live/L6y-lfuUT74?si=EwzxcC4RZhuAmPEu&t=8607s"
       ]
     }
   ]
