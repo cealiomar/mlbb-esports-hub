@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1793816044,
+  "harvestedAt": 1793836517,
   "data": [
     {
       "id": "1793856600-mahar-invitational-cup-2026-season-3-group-stage-aura-tl",
@@ -147,6 +147,35 @@
       "vodUrls": []
     },
     {
+      "id": "1793880000-betboom-rise-of-legends-season-11-group-stage-af-tw",
+      "startsAt": 1793880000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AF",
+          "name": "Aura Farmers",
+          "pageSlug": "",
+          "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TW",
+          "name": "The World",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-The_World_allmode-1441fe18.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 4",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1793880900-mpl-indonesia-season-18-playoffs-tlid-btr",
       "startsAt": 1793880900,
       "status": "upcoming",
@@ -172,6 +201,93 @@
       "tournamentName": "MPL Indonesia Season 18 - Playoffs",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
       "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793885400-betboom-rise-of-legends-season-11-group-stage-dp-to",
+      "startsAt": 1793885400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DP",
+          "name": "Dark Phoenix",
+          "pageSlug": "Dark_Phoenix",
+          "logoUrl": "/teams/50px-Dark_Phoenix_2025_allmode-acbb8719.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TO",
+          "name": "Team Oblivion",
+          "pageSlug": "",
+          "logoUrl": "/teams/51px-Team_Oblivion__28Russian_team_29_mlbb_darkmode-0995b2ea.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 4",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793890800-betboom-rise-of-legends-season-11-group-stage-bw-chm",
+      "startsAt": 1793890800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BW",
+          "name": "Bushido Wildcats",
+          "pageSlug": "Bushido_Wildcats",
+          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "CHM",
+          "name": "Chempiki",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 4",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793896200-betboom-rise-of-legends-season-11-group-stage-hg-nmd",
+      "startsAt": 1793896200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "HG",
+          "name": "HARD GRIND",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "NMD",
+          "name": "Never maind",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Day 4",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1332,122 +1448,6 @@
       "tournamentName": "MPL Cambodia Season 11 - Playoffs",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Playoffs",
       "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794686400-mct-2026-americas-split-2-playoffs-dmx-lyon",
-      "startsAt": 1794686400,
-      "status": "upcoming",
-      "bestOf": 7,
-      "opponents": [
-        {
-          "code": "DMX",
-          "name": "DreamMax e-Sports",
-          "pageSlug": "DreamMax_e-Sports",
-          "logoUrl": "/teams/54px-DreamMax_e-Sports_allmode-84401a53.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "LYON",
-          "name": "LYON",
-          "pageSlug": "LYON",
-          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 Split 2 Playoffs - AMER Grand Final",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794726000-mpl-cambodia-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794726000,
-      "status": "upcoming",
-      "bestOf": 7,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - Playoffs",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Playoffs",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group A",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-2",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group A",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
