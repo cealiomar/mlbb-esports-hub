@@ -1,154 +1,6 @@
 {
-  "harvestedAt": 1793885303,
+  "harvestedAt": 1793911751,
   "data": [
-    {
-      "id": "1793880000-betboom-rise-of-legends-season-11-group-stage-af-tw",
-      "startsAt": 1793880000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AF",
-          "name": "Aura Farmers",
-          "pageSlug": "",
-          "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TW",
-          "name": "The World",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-The_World_allmode-1441fe18.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 4",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793880900-mpl-indonesia-season-18-playoffs-tlid-btr",
-      "startsAt": 1793880900,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TLID",
-          "name": "Team Liquid ID",
-          "pageSlug": "Team_Liquid_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "BTR",
-          "name": "Bigetron by Vitality",
-          "pageSlug": "Bigetron_by_Vitality",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - Playoffs",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
-      "regionSlug": "indonesia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1793885400-betboom-rise-of-legends-season-11-group-stage-dp-to",
-      "startsAt": 1793885400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DP",
-          "name": "Dark Phoenix",
-          "pageSlug": "Dark_Phoenix",
-          "logoUrl": "/teams/50px-Dark_Phoenix_2025_allmode-acbb8719.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TO",
-          "name": "Team Oblivion",
-          "pageSlug": "",
-          "logoUrl": "/teams/51px-Team_Oblivion__28Russian_team_29_mlbb_darkmode-0995b2ea.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 4",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793890800-betboom-rise-of-legends-season-11-group-stage-bw-chm",
-      "startsAt": 1793890800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BW",
-          "name": "Bushido Wildcats",
-          "pageSlug": "Bushido_Wildcats",
-          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "CHM",
-          "name": "Chempiki",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 4",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793896200-betboom-rise-of-legends-season-11-group-stage-hg-nmd",
-      "startsAt": 1793896200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "HG",
-          "name": "HARD GRIND",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "NMD",
-          "name": "Never maind",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 4",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1793930400-china-asean-esports-competition-2026-cam-mas",
       "startsAt": 1793930400,
@@ -498,7 +350,7 @@
       "vodUrls": []
     },
     {
-      "id": "1793950200-mpl-indonesia-season-18-playoffs-ae-tbd",
+      "id": "1793950200-mpl-indonesia-season-18-playoffs-ae-btr",
       "startsAt": 1793950200,
       "status": "upcoming",
       "bestOf": 5,
@@ -512,10 +364,10 @@
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "BTR",
+          "name": "Bigetron by Vitality",
+          "pageSlug": "Bigetron_by_Vitality",
+          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
           "score": null,
           "isWinner": false
         }
@@ -585,7 +437,36 @@
       "vodUrls": []
     },
     {
-      "id": "1793967300-mpl-indonesia-season-18-playoffs-navi-tbd",
+      "id": "1793966400-betboom-rise-of-legends-season-11-group-stage-yndx-tw",
+      "startsAt": 1793966400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "Team_Yandex",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TW",
+          "name": "The World",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-The_World_allmode-1441fe18.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group A",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793967300-mpl-indonesia-season-18-playoffs-navi-tlid",
       "startsAt": 1793967300,
       "status": "upcoming",
       "bestOf": 5,
@@ -599,10 +480,10 @@
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "TLID",
+          "name": "Team Liquid ID",
+          "pageSlug": "Team_Liquid_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
           "score": null,
           "isWinner": false
         }
@@ -610,6 +491,93 @@
       "tournamentName": "MPL Indonesia Season 18 - Playoffs",
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
       "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793971800-betboom-rise-of-legends-season-11-group-stage-fut-to",
+      "startsAt": 1793971800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FUT",
+          "name": "FUT Esports",
+          "pageSlug": "FUT_Esports",
+          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TO",
+          "name": "Team Oblivion",
+          "pageSlug": "",
+          "logoUrl": "/teams/51px-Team_Oblivion__28Russian_team_29_mlbb_darkmode-0995b2ea.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793977200-betboom-rise-of-legends-season-11-group-stage-ch-chm",
+      "startsAt": 1793977200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "CH",
+          "name": "CyberHero",
+          "pageSlug": "CyberHero",
+          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "CHM",
+          "name": "Chempiki",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793982600-betboom-rise-of-legends-season-11-group-stage-nt-nmd",
+      "startsAt": 1793982600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "NT",
+          "name": "Nice Try",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "NMD",
+          "name": "Never maind",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1455,6 +1423,185 @@
       "vodUrls": []
     },
     {
+      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-4",
+      "startsAt": 1796749200,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT SEA 2026 - Group B",
+      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793896200-betboom-rise-of-legends-season-11-group-stage-hg-nmd",
+      "startsAt": 1793896200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "HG",
+          "name": "HARD GRIND",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "NMD",
+          "name": "Never maind",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793890800-betboom-rise-of-legends-season-11-group-stage-bw-chm",
+      "startsAt": 1793890800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BW",
+          "name": "Bushido Wildcats",
+          "pageSlug": "Bushido_Wildcats",
+          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "CHM",
+          "name": "Chempiki",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793885400-betboom-rise-of-legends-season-11-group-stage-dp-to",
+      "startsAt": 1793885400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DP",
+          "name": "Dark Phoenix",
+          "pageSlug": "Dark_Phoenix",
+          "logoUrl": "/teams/50px-Dark_Phoenix_2025_allmode-acbb8719.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "TO",
+          "name": "Team Oblivion",
+          "pageSlug": "",
+          "logoUrl": "/teams/51px-Team_Oblivion__28Russian_team_29_mlbb_darkmode-0995b2ea.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1793880900-mpl-indonesia-season-18-playoffs-tlid-btr",
+      "startsAt": 1793880900,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TLID",
+          "name": "Team Liquid ID",
+          "pageSlug": "Team_Liquid_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "BTR",
+          "name": "Bigetron by Vitality",
+          "pageSlug": "Bigetron_by_Vitality",
+          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - Playoffs",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
+      "regionSlug": "indonesia",
+      "streamUrls": [],
+      "vodUrls": [
+        "https://youtu.be/4ahAkF7nJi8",
+        "https://youtu.be/c4cO1mRy8IM",
+        "https://youtu.be/tR3onebTYyU",
+        "https://youtu.be/tjQM6Lnt65U"
+      ]
+    },
+    {
+      "id": "1793880000-betboom-rise-of-legends-season-11-group-stage-af-tw",
+      "startsAt": 1793880000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AF",
+          "name": "Aura Farmers",
+          "pageSlug": "",
+          "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "TW",
+          "name": "The World",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-The_World_allmode-1441fe18.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group A",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1793878200-mahar-invitational-cup-2026-season-3-group-stage-fw-vek",
       "startsAt": 1793878200,
       "status": "completed",
@@ -1627,7 +1774,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 3",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -1656,7 +1803,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 3",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -1685,7 +1832,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 3",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -1749,7 +1896,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 3",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group A",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -1928,7 +2075,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 2",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -1957,7 +2104,7 @@
           "isWinner": true
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 2",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -1986,7 +2133,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 2",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -2015,7 +2162,7 @@
           "isWinner": true
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 2",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group A",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -2160,7 +2307,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 1",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -2189,7 +2336,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 1",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -2218,7 +2365,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 1",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -2247,7 +2394,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Day 1",
+      "tournamentName": "BetBoom Rise of Legends S11 - Group A",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
@@ -2814,167 +2961,6 @@
         "https://youtu.be/V__klONNZMA?t=26119",
         "https://youtu.be/V__klONNZMA?t=27939",
         "https://youtu.be/V__klONNZMA?t=29500"
-      ]
-    },
-    {
-      "id": "1793430000-mdl-indonesia-season-14-playoffs-evs-vl",
-      "startsAt": 1793430000,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "EVS",
-          "name": "EVOS Icon",
-          "pageSlug": "EVOS_Icon",
-          "logoUrl": "/teams/52px-EVOS_Icon_allmode-efec0f78.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "VL",
-          "name": "VL Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/54px-VL_Team_allmode-bcf1c26c.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MDL Indonesia Season 14 - Playoffs",
-      "tournamentPageSlug": "MDL/Indonesia/Season_14/Playoffs",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793426400-mpl-cambodia-season-11-regular-season-rvz-eye",
-      "startsAt": 1793426400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RVZ",
-          "name": "Team RVZ",
-          "pageSlug": "",
-          "logoUrl": "/teams/76px-Team_RVZ_darkmode-038e820d.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "EYE",
-          "name": "Evil Eye Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/69px-Evil_Eye_Esports_allmode-9c400004.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - RS: Week 5",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Regular_Season",
-      "regionSlug": "cambodia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/live/AT3W2erChOo?si=zch-uRnaBWRxa_Ot&t=2730",
-        "https://www.youtube.com/live/AT3W2erChOo?si=xf3z1cYmsv468y4A&t=5065",
-        "https://www.youtube.com/live/AT3W2erChOo?si=2Lcdypp-BX2OgXPp&t=7235"
-      ]
-    },
-    {
-      "id": "1793422800-mct-2026-east-asia-split-2-knockout-stage-gzg-mglz",
-      "startsAt": 1793422800,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "GZG",
-          "name": "Guangzhou Gaming",
-          "pageSlug": "Guangzhou_Gaming",
-          "logoUrl": "/teams/52px-Guangzhou_Gaming_allmode-525b6a90.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "MGLZ",
-          "name": "The MongolZ",
-          "pageSlug": "The_MongolZ",
-          "logoUrl": "/teams/39px-The_MongolZ_2024_03_allmode-644d7f27.png",
-          "score": 3,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MCT EA 2026 Ulaanbaatar - Knockout Stage",
-      "tournamentPageSlug": "MCT/2026/East_Asia/Split_2/Knockout_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/V__klONNZMA?t=4600",
-        "https://youtu.be/V__klONNZMA?t=6773",
-        "https://youtu.be/V__klONNZMA?t=8865"
-      ]
-    },
-    {
-      "id": "1793399400-mct-2026-americas-split-2-playoffs-lyon-b2g",
-      "startsAt": 1793399400,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "LYON",
-          "name": "LYON",
-          "pageSlug": "LYON",
-          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "B2G",
-          "name": "Deportivo B2G",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-Deportivo_B2G_allmode-05f09465.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 Split 2 Playoffs - Group North",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/DoB3moFWTiU?t=10867",
-        "https://youtu.be/DoB3moFWTiU?t=12655",
-        "https://youtu.be/DoB3moFWTiU?t=14862"
-      ]
-    },
-    {
-      "id": "1793390400-mct-2026-americas-split-2-playoffs-dmx-a7",
-      "startsAt": 1793390400,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "DMX",
-          "name": "DreamMax e-Sports",
-          "pageSlug": "DreamMax_e-Sports",
-          "logoUrl": "/teams/54px-DreamMax_e-Sports_allmode-84401a53.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "A7",
-          "name": "Alpha7 Esports",
-          "pageSlug": "Alpha7_Esports",
-          "logoUrl": "/teams/73px-A7_eSports_darkmode-11af375c.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 Split 2 Playoffs - Group South",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/DoB3moFWTiU?t=2884",
-        "https://youtu.be/DoB3moFWTiU?t=5258",
-        "https://youtu.be/DoB3moFWTiU?t=7131"
       ]
     }
   ]
