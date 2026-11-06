@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-11-06T21:48:35.688Z",
+  "currentPatch": "2.2.16",
+  "files": {
+    "drafts.json": {
+      "sha256": "a7fd82f13c427ed3293baeda3a4024071e563963ae55e6860beb79e8294b5beb",
+      "bytes": 829690
+    },
+    "patches.json": {
+      "sha256": "64564f498d32fd3cdc932839311beb91df7d8a883fa70bce380452922444e54e",
+      "bytes": 725
+    },
+    "teams.json": {
+      "sha256": "472d57a122bcb5eb524e6c5e40d0086d99e905c4e59b762769539e334f82774d",
+      "bytes": 7712
+    },
+    "patch-meta.json": {
+      "sha256": "fe0e2cf8bead0c57688c17db6712de06c7fb56dea5782dcd25ccc3f36c5ff458",
+      "bytes": 34618
+    },
+    "hero-catalog.json": {
+      "sha256": "0c8ef3d0c3ae422eb8ef8180c219bad5c8680fd3d53f6907c2f16e69c778fa3a",
+      "bytes": 21875
+    }
+  },
+  "counts": {
+    "games": 578,
+    "tournaments": 6,
+    "teams": 77,
+    "patches": 10
+  }
+}
