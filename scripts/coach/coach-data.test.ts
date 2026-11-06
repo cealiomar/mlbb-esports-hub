@@ -82,6 +82,19 @@ describe('coach data assembly', () => {
     expect(leagues[1].regionSlug).toBe('international')
   })
 
+  it('merges differently cased spellings of one team', () => {
+    const state = emptyState()
+    state.patches = patches
+    state.pages = {
+      'MPL/MENA/Season_10/Regular_Season': { family: 'mena', parsedAt: '2026-11-06T03:30:00Z', series: [series('s1', 'MPL/MENA/Season_10/Regular_Season', '2026-10-25', 'titan_esports_club_ar', 'Twisted_Minds')] },
+      'MPL/MENA/Season_10/Playoffs': { family: 'mena', parsedAt: '2026-11-06T03:30:00Z', series: [series('s2', 'MPL/MENA/Season_10/Playoffs', '2026-10-28', 'Titan_Esports_Club_AR', 'twisted_minds')] },
+    }
+    const leagues = buildLeagues(state, families)
+    const teams = buildTeams(leagues)
+    expect(teams.map((t) => `${t.pageSlug}:${t.games}`)).toEqual(['Titan_Esports_Club_AR:4', 'Twisted_Minds:4'])
+    expect(leagues[0].series.every((s) => s.team1.pageSlug === 'Titan_Esports_Club_AR' && s.team2.pageSlug === 'Twisted_Minds')).toBe(true)
+  })
+
   it('lists teams with game counts and flags wildcard participants', () => {
     const state = emptyState()
     state.patches = patches

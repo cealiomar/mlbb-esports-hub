@@ -4,7 +4,7 @@
  * feed it fixtures.
  */
 import { createHash } from 'node:crypto'
-import type { DraftLeague, DraftSeries } from '@/lib/data/types'
+import type { DraftLeague, DraftSeries, DraftTeam } from '@/lib/data/types'
 import { patchForDate, type PatchRelease } from './patches'
 
 export type TournamentKind = 'mpl' | 'national' | 'international'
@@ -91,7 +91,34 @@ export function buildLeagues(state: CoachState, families: Family[]): CoachLeague
       series: sorted,
     })
   }
-  return leagues
+  return canonicalTeams(leagues)
+}
+
+/**
+ * Liquipedia pages spell the same team differently ("Titan Esports Club AR"
+ * on one page, "titan esports club ar" on another). Merge by lower-cased slug
+ * and keep the best-cased spelling so scouting and team search see one team.
+ */
+export function canonicalTeams(leagues: CoachLeague[]): CoachLeague[] {
+  const best = new Map<string, DraftTeam>()
+  const key = (team: DraftTeam) => (team.pageSlug || team.name).toLowerCase()
+  const score = (team: DraftTeam) => (team.name.match(/[A-Z]/g) ?? []).length
+  for (const league of leagues) {
+    for (const series of league.series) {
+      for (const team of [series.team1, series.team2]) {
+        const current = best.get(key(team))
+        if (!current || score(team) > score(current)) best.set(key(team), { name: team.name, pageSlug: team.pageSlug || team.name })
+      }
+    }
+  }
+  return leagues.map((league) => ({
+    ...league,
+    series: league.series.map((series) => ({
+      ...series,
+      team1: best.get(key(series.team1)) ?? series.team1,
+      team2: best.get(key(series.team2)) ?? series.team2,
+    })),
+  }))
 }
 
 export function buildTeams(leagues: CoachLeague[]): CoachTeam[] {
