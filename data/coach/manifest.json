@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-06T21:48:35.688Z",
+  "generatedAt": "2026-11-06T22:00:24.364Z",
   "currentPatch": "2.2.16",
   "files": {
     "drafts.json": {
-      "sha256": "a7fd82f13c427ed3293baeda3a4024071e563963ae55e6860beb79e8294b5beb",
-      "bytes": 829690
+      "sha256": "9335076619537875f25f7999bc96294b46a4b1a3b236734016090a83c69e897b",
+      "bytes": 1961205
     },
     "patches.json": {
-      "sha256": "64564f498d32fd3cdc932839311beb91df7d8a883fa70bce380452922444e54e",
+      "sha256": "f7652b4a8bc5fa3f1e6e88f4acb107068d4947e0e51c54546e04a7a1d6a4f438",
       "bytes": 725
     },
     "teams.json": {
-      "sha256": "472d57a122bcb5eb524e6c5e40d0086d99e905c4e59b762769539e334f82774d",
-      "bytes": 7712
+      "sha256": "2ca5b355a27a06e9de3649bf3861a9dd370dd3246804cbbdcf48348320b6f7b1",
+      "bytes": 18935
     },
     "patch-meta.json": {
       "sha256": "fe0e2cf8bead0c57688c17db6712de06c7fb56dea5782dcd25ccc3f36c5ff458",
@@ -24,9 +24,9 @@
     }
   },
   "counts": {
-    "games": 578,
-    "tournaments": 6,
-    "teams": 77,
+    "games": 1374,
+    "tournaments": 15,
+    "teams": 186,
     "patches": 10
   }
 }
