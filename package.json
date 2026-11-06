@@ -17,7 +17,10 @@
     "sync:hero-catalog": "tsx scripts/sync-hero-catalog.ts",
     "coach-engine:build": "node packages/coach-engine/build.mjs",
     "coach-engine:test": "npm run coach-engine:build && vitest run packages/coach-engine",
-    "coach-engine:fixtures": "npm run coach-engine:build && node packages/coach-engine/fixtures.mjs"
+    "coach-engine:fixtures": "npm run coach-engine:build && node packages/coach-engine/fixtures.mjs",
+    "coach:daily": "tsx scripts/coach/build-coach-data.ts",
+    "coach:offline": "tsx scripts/coach/build-coach-data.ts --offline",
+    "coach:test": "vitest run scripts/coach"
   },
   "dependencies": {
     "next": "16.3.2",

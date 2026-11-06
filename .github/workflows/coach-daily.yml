@@ -1,0 +1,59 @@
+name: Coach data (daily)
+
+# Once a day: harvest every official tournament's drafts, assign patches and
+# publish data/coach/ for the Draft Coach iOS app. Separate from harvest.yml
+# (hourly, for the website) so the app's data cadence is its own.
+on:
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+    inputs:
+      full:
+        description: Re-parse every tournament page, not only stale ones
+        type: boolean
+        default: false
+
+concurrency:
+  group: coach-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  coach:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Harvest official tournaments and patch calendar
+        env:
+          COACH_MAX_PARSES: '110'
+        run: |
+          if [ "${{ inputs.full }}" = "true" ]; then npm run coach:daily -- --full; else npm run coach:daily; fi
+
+      - name: Validate before publishing
+        run: npm run coach:test
+
+      - name: Commit coach data
+        run: |
+          git config user.name  "mlbb-hub-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/coach
+          if git diff --staged --quiet; then
+            echo "no data change"
+          else
+            git commit -m "chore: refresh coach data"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
