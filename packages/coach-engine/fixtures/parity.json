@@ -1,0 +1,7306 @@
+{
+ "engine": "351a11b",
+ "generatedAt": "2026-11-06T20:23:36.792Z",
+ "buildModel": {
+  "windowDays": 30,
+  "patch": null,
+  "minPatchGames": 40,
+  "mapName": null
+ },
+ "cases": [
+  {
+   "name": "step-0-ally-ban",
+   "input": {
+    "state": {
+     "allyPicks": [],
+     "enemyPicks": [],
+     "allyBans": [],
+     "enemyBans": [],
+     "allyPickLanes": [],
+     "enemyPickLanes": []
+    },
+    "action": {
+     "side": "ally",
+     "kind": "ban",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [
+     {
+      "key": "nolan",
+      "id": "nolan",
+      "name": "Nolan",
+      "score": 75,
+      "confidence": "high",
+      "sampleSize": 53,
+      "resultGames": 53,
+      "wins": 33,
+      "losses": 20,
+      "observedWinRate": 0.6226415094339622,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.40458015267175573,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.07633587786259542,
+      "winRate": 0.6101694915254238,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "eudora",
+      "id": "eudora",
+      "name": "Eudora",
+      "score": 74,
+      "confidence": "high",
+      "sampleSize": 39,
+      "resultGames": 39,
+      "wins": 21,
+      "losses": 18,
+      "observedWinRate": 0.5384615384615384,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.29770992366412213,
+      "banRate": 0.12213740458015267,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.5333333333333333,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "obsidia",
+      "id": "obsidia",
+      "name": "Obsidia",
+      "score": 74,
+      "confidence": "high",
+      "sampleSize": 52,
+      "resultGames": 52,
+      "wins": 27,
+      "losses": 25,
+      "observedWinRate": 0.5192307692307693,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "SS",
+      "pickRate": 0.3969465648854962,
+      "banRate": 0.29770992366412213,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5172413793103449,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     }
+    ],
+    "recommendations": [
+     {
+      "key": "carmilla",
+      "id": "carmilla",
+      "name": "Carmilla",
+      "score": 56,
+      "confidence": "high",
+      "sampleSize": 123,
+      "resultGames": 37,
+      "wins": 20,
+      "losses": 17,
+      "observedWinRate": 0.5405405405405406,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.2824427480916031,
+      "banRate": 0.6564885496183206,
+      "firstBanRate": 0.1450381679389313,
+      "earlyBanRate": 0.5801526717557252,
+      "winRate": 0.5348837209302325,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "freya",
+      "id": "freya",
+      "name": "Freya",
+      "score": 56,
+      "confidence": "high",
+      "sampleSize": 121,
+      "resultGames": 37,
+      "wins": 18,
+      "losses": 19,
+      "observedWinRate": 0.4864864864864865,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.2824427480916031,
+      "banRate": 0.6412213740458015,
+      "firstBanRate": 0.24427480916030533,
+      "earlyBanRate": 0.6259541984732825,
+      "winRate": 0.4883720930232558,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "hirara",
+      "id": "hirara",
+      "name": "Hirara",
+      "score": 54,
+      "confidence": "high",
+      "sampleSize": 127,
+      "resultGames": 51,
+      "wins": 24,
+      "losses": 27,
+      "observedWinRate": 0.47058823529411764,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.3893129770992366,
+      "banRate": 0.5801526717557252,
+      "firstBanRate": 0.22900763358778625,
+      "earlyBanRate": 0.5648854961832062,
+      "winRate": 0.47368421052631576,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 40,
+      "confidence": "high",
+      "sampleSize": 85,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 39,
+      "confidence": "high",
+      "sampleSize": 70,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "atlas",
+      "id": "atlas",
+      "name": "Atlas",
+      "score": 56,
+      "confidence": "high",
+      "sampleSize": 120,
+      "resultGames": 35,
+      "wins": 18,
+      "losses": 17,
+      "observedWinRate": 0.5142857142857142,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.26717557251908397,
+      "banRate": 0.648854961832061,
+      "firstBanRate": 0.183206106870229,
+      "earlyBanRate": 0.6259541984732825,
+      "winRate": 0.5121951219512195,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "masha",
+      "id": "masha",
+      "name": "Masha",
+      "score": 49,
+      "confidence": "high",
+      "sampleSize": 79,
+      "resultGames": 13,
+      "wins": 6,
+      "losses": 7,
+      "observedWinRate": 0.46153846153846156,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.09923664122137404,
+      "banRate": 0.5038167938931297,
+      "firstBanRate": 0.29770992366412213,
+      "earlyBanRate": 0.5038167938931297,
+      "winRate": 0.47368421052631576,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "aulus",
+      "id": "aulus",
+      "name": "Aulus",
+      "score": 42,
+      "confidence": "high",
+      "sampleSize": 89,
+      "resultGames": 49,
+      "wins": 31,
+      "losses": 18,
+      "observedWinRate": 0.6326530612244898,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.3053435114503817,
+      "firstBanRate": 0.08396946564885496,
+      "earlyBanRate": 0.2824427480916031,
+      "winRate": 0.6181818181818182,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta",
+       "winRate"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-1-enemy-ban",
+   "input": {
+    "state": {
+     "allyPicks": [],
+     "enemyPicks": [],
+     "allyBans": [
+      "carmilla"
+     ],
+     "enemyBans": [],
+     "allyPickLanes": [],
+     "enemyPickLanes": []
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "ally",
+     "kind": "ban",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "freya",
+      "id": "freya",
+      "name": "Freya",
+      "score": 56,
+      "confidence": "high",
+      "sampleSize": 121,
+      "resultGames": 37,
+      "wins": 18,
+      "losses": 19,
+      "observedWinRate": 0.4864864864864865,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.2824427480916031,
+      "banRate": 0.6412213740458015,
+      "firstBanRate": 0.24427480916030533,
+      "earlyBanRate": 0.6259541984732825,
+      "winRate": 0.4883720930232558,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "atlas",
+      "id": "atlas",
+      "name": "Atlas",
+      "score": 56,
+      "confidence": "high",
+      "sampleSize": 120,
+      "resultGames": 35,
+      "wins": 18,
+      "losses": 17,
+      "observedWinRate": 0.5142857142857142,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.26717557251908397,
+      "banRate": 0.648854961832061,
+      "firstBanRate": 0.183206106870229,
+      "earlyBanRate": 0.6259541984732825,
+      "winRate": 0.5121951219512195,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "hirara",
+      "id": "hirara",
+      "name": "Hirara",
+      "score": 54,
+      "confidence": "high",
+      "sampleSize": 127,
+      "resultGames": 51,
+      "wins": 24,
+      "losses": 27,
+      "observedWinRate": 0.47058823529411764,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.3893129770992366,
+      "banRate": 0.5801526717557252,
+      "firstBanRate": 0.22900763358778625,
+      "earlyBanRate": 0.5648854961832062,
+      "winRate": 0.47368421052631576,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 40,
+      "confidence": "high",
+      "sampleSize": 85,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 39,
+      "confidence": "high",
+      "sampleSize": 70,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "masha",
+      "id": "masha",
+      "name": "Masha",
+      "score": 49,
+      "confidence": "high",
+      "sampleSize": 79,
+      "resultGames": 13,
+      "wins": 6,
+      "losses": 7,
+      "observedWinRate": 0.46153846153846156,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.09923664122137404,
+      "banRate": 0.5038167938931297,
+      "firstBanRate": 0.29770992366412213,
+      "earlyBanRate": 0.5038167938931297,
+      "winRate": 0.47368421052631576,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "aulus",
+      "id": "aulus",
+      "name": "Aulus",
+      "score": 42,
+      "confidence": "high",
+      "sampleSize": 89,
+      "resultGames": 49,
+      "wins": 31,
+      "losses": 18,
+      "observedWinRate": 0.6326530612244898,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.3053435114503817,
+      "firstBanRate": 0.08396946564885496,
+      "earlyBanRate": 0.2824427480916031,
+      "winRate": 0.6181818181818182,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "fanny",
+      "id": "fanny",
+      "name": "Fanny",
+      "score": 41,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 10,
+      "wins": 3,
+      "losses": 7,
+      "observedWinRate": 0.3,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.07633587786259542,
+      "banRate": 0.40458015267175573,
+      "firstBanRate": 0.0916030534351145,
+      "earlyBanRate": 0.29770992366412213,
+      "winRate": 0.375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-2-ally-ban",
+   "input": {
+    "state": {
+     "allyPicks": [],
+     "enemyPicks": [],
+     "allyBans": [
+      "carmilla"
+     ],
+     "enemyBans": [
+      "freya"
+     ],
+     "allyPickLanes": [],
+     "enemyPickLanes": []
+    },
+    "action": {
+     "side": "ally",
+     "kind": "ban",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [
+     {
+      "key": "nolan",
+      "id": "nolan",
+      "name": "Nolan",
+      "score": 75,
+      "confidence": "high",
+      "sampleSize": 53,
+      "resultGames": 53,
+      "wins": 33,
+      "losses": 20,
+      "observedWinRate": 0.6226415094339622,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.40458015267175573,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.07633587786259542,
+      "winRate": 0.6101694915254238,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "eudora",
+      "id": "eudora",
+      "name": "Eudora",
+      "score": 74,
+      "confidence": "high",
+      "sampleSize": 39,
+      "resultGames": 39,
+      "wins": 21,
+      "losses": 18,
+      "observedWinRate": 0.5384615384615384,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.29770992366412213,
+      "banRate": 0.12213740458015267,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.5333333333333333,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "obsidia",
+      "id": "obsidia",
+      "name": "Obsidia",
+      "score": 74,
+      "confidence": "high",
+      "sampleSize": 52,
+      "resultGames": 52,
+      "wins": 27,
+      "losses": 25,
+      "observedWinRate": 0.5192307692307693,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "SS",
+      "pickRate": 0.3969465648854962,
+      "banRate": 0.29770992366412213,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5172413793103449,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     }
+    ],
+    "recommendations": [
+     {
+      "key": "atlas",
+      "id": "atlas",
+      "name": "Atlas",
+      "score": 56,
+      "confidence": "high",
+      "sampleSize": 120,
+      "resultGames": 35,
+      "wins": 18,
+      "losses": 17,
+      "observedWinRate": 0.5142857142857142,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.26717557251908397,
+      "banRate": 0.648854961832061,
+      "firstBanRate": 0.183206106870229,
+      "earlyBanRate": 0.6259541984732825,
+      "winRate": 0.5121951219512195,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "hirara",
+      "id": "hirara",
+      "name": "Hirara",
+      "score": 54,
+      "confidence": "high",
+      "sampleSize": 127,
+      "resultGames": 51,
+      "wins": 24,
+      "losses": 27,
+      "observedWinRate": 0.47058823529411764,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.3893129770992366,
+      "banRate": 0.5801526717557252,
+      "firstBanRate": 0.22900763358778625,
+      "earlyBanRate": 0.5648854961832062,
+      "winRate": 0.47368421052631576,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 40,
+      "confidence": "high",
+      "sampleSize": 85,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 39,
+      "confidence": "high",
+      "sampleSize": 70,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "brody",
+      "id": "brody",
+      "name": "Brody",
+      "score": 31,
+      "confidence": "high",
+      "sampleSize": 32,
+      "resultGames": 15,
+      "wins": 12,
+      "losses": 3,
+      "observedWinRate": 0.8,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.1297709923664122,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.7142857142857143,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "winRate"
+      ]
+     },
+     {
+      "key": "masha",
+      "id": "masha",
+      "name": "Masha",
+      "score": 49,
+      "confidence": "high",
+      "sampleSize": 79,
+      "resultGames": 13,
+      "wins": 6,
+      "losses": 7,
+      "observedWinRate": 0.46153846153846156,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.09923664122137404,
+      "banRate": 0.5038167938931297,
+      "firstBanRate": 0.29770992366412213,
+      "earlyBanRate": 0.5038167938931297,
+      "winRate": 0.47368421052631576,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "aulus",
+      "id": "aulus",
+      "name": "Aulus",
+      "score": 42,
+      "confidence": "high",
+      "sampleSize": 89,
+      "resultGames": 49,
+      "wins": 31,
+      "losses": 18,
+      "observedWinRate": 0.6326530612244898,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.3053435114503817,
+      "firstBanRate": 0.08396946564885496,
+      "earlyBanRate": 0.2824427480916031,
+      "winRate": 0.6181818181818182,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "fanny",
+      "id": "fanny",
+      "name": "Fanny",
+      "score": 41,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 10,
+      "wins": 3,
+      "losses": 7,
+      "observedWinRate": 0.3,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.07633587786259542,
+      "banRate": 0.40458015267175573,
+      "firstBanRate": 0.0916030534351145,
+      "earlyBanRate": 0.29770992366412213,
+      "winRate": 0.375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-3-enemy-ban",
+   "input": {
+    "state": {
+     "allyPicks": [],
+     "enemyPicks": [],
+     "allyBans": [
+      "carmilla",
+      "atlas"
+     ],
+     "enemyBans": [
+      "freya"
+     ],
+     "allyPickLanes": [],
+     "enemyPickLanes": []
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "ally",
+     "kind": "ban",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "hirara",
+      "id": "hirara",
+      "name": "Hirara",
+      "score": 54,
+      "confidence": "high",
+      "sampleSize": 127,
+      "resultGames": 51,
+      "wins": 24,
+      "losses": 27,
+      "observedWinRate": 0.47058823529411764,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.3893129770992366,
+      "banRate": 0.5801526717557252,
+      "firstBanRate": 0.22900763358778625,
+      "earlyBanRate": 0.5648854961832062,
+      "winRate": 0.47368421052631576,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "masha",
+      "id": "masha",
+      "name": "Masha",
+      "score": 49,
+      "confidence": "high",
+      "sampleSize": 79,
+      "resultGames": 13,
+      "wins": 6,
+      "losses": 7,
+      "observedWinRate": 0.46153846153846156,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.09923664122137404,
+      "banRate": 0.5038167938931297,
+      "firstBanRate": 0.29770992366412213,
+      "earlyBanRate": 0.5038167938931297,
+      "winRate": 0.47368421052631576,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 40,
+      "confidence": "high",
+      "sampleSize": 85,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 39,
+      "confidence": "high",
+      "sampleSize": 70,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "obsidia",
+      "id": "obsidia",
+      "name": "Obsidia",
+      "score": 38,
+      "confidence": "high",
+      "sampleSize": 91,
+      "resultGames": 52,
+      "wins": 27,
+      "losses": 25,
+      "observedWinRate": 0.5192307692307693,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "SS",
+      "pickRate": 0.3969465648854962,
+      "banRate": 0.29770992366412213,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5172413793103449,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "aulus",
+      "id": "aulus",
+      "name": "Aulus",
+      "score": 42,
+      "confidence": "high",
+      "sampleSize": 89,
+      "resultGames": 49,
+      "wins": 31,
+      "losses": 18,
+      "observedWinRate": 0.6326530612244898,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.3053435114503817,
+      "firstBanRate": 0.08396946564885496,
+      "earlyBanRate": 0.2824427480916031,
+      "winRate": 0.6181818181818182,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "fanny",
+      "id": "fanny",
+      "name": "Fanny",
+      "score": 41,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 10,
+      "wins": 3,
+      "losses": 7,
+      "observedWinRate": 0.3,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.07633587786259542,
+      "banRate": 0.40458015267175573,
+      "firstBanRate": 0.0916030534351145,
+      "earlyBanRate": 0.29770992366412213,
+      "winRate": 0.375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "marcel",
+      "id": "marcel",
+      "name": "Marcel",
+      "score": 41,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 15,
+      "wins": 9,
+      "losses": 6,
+      "observedWinRate": 0.6,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.366412213740458,
+      "firstBanRate": 0.13740458015267176,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.5714285714285714,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta",
+       "winRate"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-4-ally-ban",
+   "input": {
+    "state": {
+     "allyPicks": [],
+     "enemyPicks": [],
+     "allyBans": [
+      "carmilla",
+      "atlas"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara"
+     ],
+     "allyPickLanes": [],
+     "enemyPickLanes": []
+    },
+    "action": {
+     "side": "ally",
+     "kind": "ban",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [
+     {
+      "key": "nolan",
+      "id": "nolan",
+      "name": "Nolan",
+      "score": 75,
+      "confidence": "high",
+      "sampleSize": 53,
+      "resultGames": 53,
+      "wins": 33,
+      "losses": 20,
+      "observedWinRate": 0.6226415094339622,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.40458015267175573,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.07633587786259542,
+      "winRate": 0.6101694915254238,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "eudora",
+      "id": "eudora",
+      "name": "Eudora",
+      "score": 74,
+      "confidence": "high",
+      "sampleSize": 39,
+      "resultGames": 39,
+      "wins": 21,
+      "losses": 18,
+      "observedWinRate": 0.5384615384615384,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.29770992366412213,
+      "banRate": 0.12213740458015267,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.5333333333333333,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "obsidia",
+      "id": "obsidia",
+      "name": "Obsidia",
+      "score": 74,
+      "confidence": "high",
+      "sampleSize": 52,
+      "resultGames": 52,
+      "wins": 27,
+      "losses": 25,
+      "observedWinRate": 0.5192307692307693,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "SS",
+      "pickRate": 0.3969465648854962,
+      "banRate": 0.29770992366412213,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5172413793103449,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     }
+    ],
+    "recommendations": [
+     {
+      "key": "masha",
+      "id": "masha",
+      "name": "Masha",
+      "score": 49,
+      "confidence": "high",
+      "sampleSize": 79,
+      "resultGames": 13,
+      "wins": 6,
+      "losses": 7,
+      "observedWinRate": 0.46153846153846156,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.09923664122137404,
+      "banRate": 0.5038167938931297,
+      "firstBanRate": 0.29770992366412213,
+      "earlyBanRate": 0.5038167938931297,
+      "winRate": 0.47368421052631576,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "aulus",
+      "id": "aulus",
+      "name": "Aulus",
+      "score": 42,
+      "confidence": "high",
+      "sampleSize": 89,
+      "resultGames": 49,
+      "wins": 31,
+      "losses": 18,
+      "observedWinRate": 0.6326530612244898,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.3053435114503817,
+      "firstBanRate": 0.08396946564885496,
+      "earlyBanRate": 0.2824427480916031,
+      "winRate": 0.6181818181818182,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 40,
+      "confidence": "high",
+      "sampleSize": 85,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 39,
+      "confidence": "high",
+      "sampleSize": 70,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "brody",
+      "id": "brody",
+      "name": "Brody",
+      "score": 31,
+      "confidence": "high",
+      "sampleSize": 32,
+      "resultGames": 15,
+      "wins": 12,
+      "losses": 3,
+      "observedWinRate": 0.8,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.1297709923664122,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.7142857142857143,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "winRate"
+      ]
+     },
+     {
+      "key": "fanny",
+      "id": "fanny",
+      "name": "Fanny",
+      "score": 41,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 10,
+      "wins": 3,
+      "losses": 7,
+      "observedWinRate": 0.3,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.07633587786259542,
+      "banRate": 0.40458015267175573,
+      "firstBanRate": 0.0916030534351145,
+      "earlyBanRate": 0.29770992366412213,
+      "winRate": 0.375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "marcel",
+      "id": "marcel",
+      "name": "Marcel",
+      "score": 41,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 15,
+      "wins": 9,
+      "losses": 6,
+      "observedWinRate": 0.6,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.366412213740458,
+      "firstBanRate": 0.13740458015267176,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.5714285714285714,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "paquito",
+      "id": "paquito",
+      "name": "Paquito",
+      "score": 40,
+      "confidence": "high",
+      "sampleSize": 99,
+      "resultGames": 62,
+      "wins": 23,
+      "losses": 39,
+      "observedWinRate": 0.3709677419354839,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.2824427480916031,
+      "firstBanRate": 0.05343511450381679,
+      "earlyBanRate": 0.25190839694656486,
+      "winRate": 0.38235294117647056,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-5-enemy-ban",
+   "input": {
+    "state": {
+     "allyPicks": [],
+     "enemyPicks": [],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara"
+     ],
+     "allyPickLanes": [],
+     "enemyPickLanes": []
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "aulus",
+      "id": "aulus",
+      "name": "Aulus",
+      "score": 42,
+      "confidence": "high",
+      "sampleSize": 89,
+      "resultGames": 49,
+      "wins": 31,
+      "losses": 18,
+      "observedWinRate": 0.6326530612244898,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.3053435114503817,
+      "firstBanRate": 0.08396946564885496,
+      "earlyBanRate": 0.2824427480916031,
+      "winRate": 0.6181818181818182,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "marcel",
+      "id": "marcel",
+      "name": "Marcel",
+      "score": 41,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 15,
+      "wins": 9,
+      "losses": 6,
+      "observedWinRate": 0.6,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.366412213740458,
+      "firstBanRate": 0.13740458015267176,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.5714285714285714,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 40,
+      "confidence": "high",
+      "sampleSize": 85,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 39,
+      "confidence": "high",
+      "sampleSize": 70,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "obsidia",
+      "id": "obsidia",
+      "name": "Obsidia",
+      "score": 38,
+      "confidence": "high",
+      "sampleSize": 91,
+      "resultGames": 52,
+      "wins": 27,
+      "losses": 25,
+      "observedWinRate": 0.5192307692307693,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "SS",
+      "pickRate": 0.3969465648854962,
+      "banRate": 0.29770992366412213,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5172413793103449,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "fanny",
+      "id": "fanny",
+      "name": "Fanny",
+      "score": 41,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 10,
+      "wins": 3,
+      "losses": 7,
+      "observedWinRate": 0.3,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.07633587786259542,
+      "banRate": 0.40458015267175573,
+      "firstBanRate": 0.0916030534351145,
+      "earlyBanRate": 0.29770992366412213,
+      "winRate": 0.375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "paquito",
+      "id": "paquito",
+      "name": "Paquito",
+      "score": 40,
+      "confidence": "high",
+      "sampleSize": 99,
+      "resultGames": 62,
+      "wins": 23,
+      "losses": 39,
+      "observedWinRate": 0.3709677419354839,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.2824427480916031,
+      "firstBanRate": 0.05343511450381679,
+      "earlyBanRate": 0.25190839694656486,
+      "winRate": 0.38235294117647056,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "selena",
+      "id": "selena",
+      "name": "Selena",
+      "score": 38,
+      "confidence": "high",
+      "sampleSize": 61,
+      "resultGames": 24,
+      "wins": 10,
+      "losses": 14,
+      "observedWinRate": 0.4166666666666667,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid",
+       "roam"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.183206106870229,
+      "banRate": 0.2824427480916031,
+      "firstBanRate": 0.10687022900763359,
+      "earlyBanRate": 0.22137404580152673,
+      "winRate": 0.43333333333333335,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-6-ally-pick",
+   "input": {
+    "state": {
+     "allyPicks": [],
+     "enemyPicks": [],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus"
+     ],
+     "allyPickLanes": [],
+     "enemyPickLanes": []
+    },
+    "action": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [
+     "exp",
+     "jungle",
+     "mid",
+     "gold",
+     "roam"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "nolan",
+      "id": "nolan",
+      "name": "Nolan",
+      "score": 75,
+      "confidence": "high",
+      "sampleSize": 53,
+      "resultGames": 53,
+      "wins": 33,
+      "losses": 20,
+      "observedWinRate": 0.6226415094339622,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.40458015267175573,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.07633587786259542,
+      "winRate": 0.6101694915254238,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "eudora",
+      "id": "eudora",
+      "name": "Eudora",
+      "score": 74,
+      "confidence": "high",
+      "sampleSize": 39,
+      "resultGames": 39,
+      "wins": 21,
+      "losses": 18,
+      "observedWinRate": 0.5384615384615384,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.29770992366412213,
+      "banRate": 0.12213740458015267,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.5333333333333333,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "obsidia",
+      "id": "obsidia",
+      "name": "Obsidia",
+      "score": 74,
+      "confidence": "high",
+      "sampleSize": 52,
+      "resultGames": 52,
+      "wins": 27,
+      "losses": 25,
+      "observedWinRate": 0.5192307692307693,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "SS",
+      "pickRate": 0.3969465648854962,
+      "banRate": 0.29770992366412213,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5172413793103449,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "belerick",
+      "id": "belerick",
+      "name": "Belerick",
+      "score": 69,
+      "confidence": "high",
+      "sampleSize": 49,
+      "resultGames": 49,
+      "wins": 24,
+      "losses": 25,
+      "observedWinRate": 0.4897959183673469,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.11450381679389313,
+      "firstBanRate": 0.007633587786259542,
+      "earlyBanRate": 0.03816793893129771,
+      "winRate": 0.4909090909090909,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 63,
+      "confidence": "medium",
+      "sampleSize": 25,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 73,
+      "confidence": "high",
+      "sampleSize": 42,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "valentina",
+      "id": "valentina",
+      "name": "Valentina",
+      "score": 72,
+      "confidence": "high",
+      "sampleSize": 37,
+      "resultGames": 37,
+      "wins": 17,
+      "losses": 20,
+      "observedWinRate": 0.4594594594594595,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.2824427480916031,
+      "banRate": 0.2748091603053435,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.16793893129770993,
+      "winRate": 0.46511627906976744,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "minotaur",
+      "id": "minotaur",
+      "name": "Minotaur",
+      "score": 67,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 62,
+      "wins": 31,
+      "losses": 31,
+      "observedWinRate": 0.5,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.25190839694656486,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5,
+      "matchupRate": null,
+      "matchupGames": 0,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-7-enemy-pick",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan"
+     ],
+     "enemyPicks": [],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus"
+     ],
+     "allyPickLanes": [
+      "jungle"
+     ],
+     "enemyPickLanes": []
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [
+     "exp",
+     "jungle",
+     "mid",
+     "gold",
+     "roam"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "obsidia",
+      "id": "obsidia",
+      "name": "Obsidia",
+      "score": 74,
+      "confidence": "high",
+      "sampleSize": 52,
+      "resultGames": 52,
+      "wins": 27,
+      "losses": 25,
+      "observedWinRate": 0.5192307692307693,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "SS",
+      "pickRate": 0.3969465648854962,
+      "banRate": 0.29770992366412213,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5172413793103449,
+      "matchupRate": 0.5,
+      "matchupGames": 12,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "eudora",
+      "id": "eudora",
+      "name": "Eudora",
+      "score": 73,
+      "confidence": "high",
+      "sampleSize": 39,
+      "resultGames": 39,
+      "wins": 21,
+      "losses": 18,
+      "observedWinRate": 0.5384615384615384,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.29770992366412213,
+      "banRate": 0.12213740458015267,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.5333333333333333,
+      "matchupRate": 0.4,
+      "matchupGames": 9,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "gloo",
+      "id": "gloo",
+      "name": "Gloo",
+      "score": 65,
+      "confidence": "medium",
+      "sampleSize": 24,
+      "resultGames": 24,
+      "wins": 17,
+      "losses": 7,
+      "observedWinRate": 0.7083333333333334,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.183206106870229,
+      "banRate": 0.20610687022900764,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.030534351145038167,
+      "winRate": 0.6666666666666666,
+      "matchupRate": 0.6363636363636364,
+      "matchupGames": 5,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "counter",
+       "flex"
+      ]
+     },
+     {
+      "key": "paquito",
+      "id": "paquito",
+      "name": "Paquito",
+      "score": 65,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 62,
+      "wins": 23,
+      "losses": 39,
+      "observedWinRate": 0.3709677419354839,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.2824427480916031,
+      "firstBanRate": 0.05343511450381679,
+      "earlyBanRate": 0.25190839694656486,
+      "winRate": 0.38235294117647056,
+      "matchupRate": 0.3888888888888889,
+      "matchupGames": 12,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "sora",
+      "id": "sora",
+      "name": "Sora",
+      "score": 62,
+      "confidence": "medium",
+      "sampleSize": 21,
+      "resultGames": 21,
+      "wins": 12,
+      "losses": 9,
+      "observedWinRate": 0.5714285714285714,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.16030534351145037,
+      "banRate": 0.07633587786259542,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.6,
+      "matchupGames": 4,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "counter",
+       "winRate"
+      ]
+     },
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 72,
+      "confidence": "high",
+      "sampleSize": 42,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": 0.3888888888888889,
+      "matchupGames": 12,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "valentina",
+      "id": "valentina",
+      "name": "Valentina",
+      "score": 72,
+      "confidence": "high",
+      "sampleSize": 37,
+      "resultGames": 37,
+      "wins": 17,
+      "losses": 20,
+      "observedWinRate": 0.4594594594594595,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.2824427480916031,
+      "banRate": 0.2748091603053435,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.16793893129770993,
+      "winRate": 0.46511627906976744,
+      "matchupRate": 0.5384615384615384,
+      "matchupGames": 7,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "belerick",
+      "id": "belerick",
+      "name": "Belerick",
+      "score": 67,
+      "confidence": "high",
+      "sampleSize": 49,
+      "resultGames": 49,
+      "wins": 24,
+      "losses": 25,
+      "observedWinRate": 0.4897959183673469,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.11450381679389313,
+      "firstBanRate": 0.007633587786259542,
+      "earlyBanRate": 0.03816793893129771,
+      "winRate": 0.4909090909090909,
+      "matchupRate": 0.4117647058823529,
+      "matchupGames": 11,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-8-enemy-pick",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan"
+     ],
+     "enemyPicks": [
+      "obsidia"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus"
+     ],
+     "allyPickLanes": [
+      "jungle"
+     ],
+     "enemyPickLanes": [
+      "gold"
+     ]
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [
+     "exp",
+     "jungle",
+     "mid",
+     "roam"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "eudora",
+      "id": "eudora",
+      "name": "Eudora",
+      "score": 75,
+      "confidence": "high",
+      "sampleSize": 39,
+      "resultGames": 39,
+      "wins": 21,
+      "losses": 18,
+      "observedWinRate": 0.5384615384615384,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.29770992366412213,
+      "banRate": 0.12213740458015267,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.5333333333333333,
+      "matchupRate": 0.4,
+      "matchupGames": 9,
+      "synergyRate": 0.5454545454545454,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "gloo",
+      "id": "gloo",
+      "name": "Gloo",
+      "score": 69,
+      "confidence": "medium",
+      "sampleSize": 24,
+      "resultGames": 24,
+      "wins": 17,
+      "losses": 7,
+      "observedWinRate": 0.7083333333333334,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.183206106870229,
+      "banRate": 0.20610687022900764,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.030534351145038167,
+      "winRate": 0.6666666666666666,
+      "matchupRate": 0.6363636363636364,
+      "matchupGames": 5,
+      "synergyRate": 0.6,
+      "synergyGames": 4,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "sora",
+      "id": "sora",
+      "name": "Sora",
+      "score": 65,
+      "confidence": "medium",
+      "sampleSize": 21,
+      "resultGames": 21,
+      "wins": 12,
+      "losses": 9,
+      "observedWinRate": 0.5714285714285714,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.16030534351145037,
+      "banRate": 0.07633587786259542,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.6,
+      "matchupGames": 4,
+      "synergyRate": 0.6,
+      "synergyGames": 4,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "paquito",
+      "id": "paquito",
+      "name": "Paquito",
+      "score": 66,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 62,
+      "wins": 23,
+      "losses": 39,
+      "observedWinRate": 0.3709677419354839,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.2824427480916031,
+      "firstBanRate": 0.05343511450381679,
+      "earlyBanRate": 0.25190839694656486,
+      "winRate": 0.38235294117647056,
+      "matchupRate": 0.3888888888888889,
+      "matchupGames": 12,
+      "synergyRate": 0.38461538461538464,
+      "synergyGames": 7,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 73,
+      "confidence": "high",
+      "sampleSize": 42,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": 0.3888888888888889,
+      "matchupGames": 12,
+      "synergyRate": 0.45454545454545453,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "valentina",
+      "id": "valentina",
+      "name": "Valentina",
+      "score": 73,
+      "confidence": "high",
+      "sampleSize": 37,
+      "resultGames": 37,
+      "wins": 17,
+      "losses": 20,
+      "observedWinRate": 0.4594594594594595,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.2824427480916031,
+      "banRate": 0.2748091603053435,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.16793893129770993,
+      "winRate": 0.46511627906976744,
+      "matchupRate": 0.5384615384615384,
+      "matchupGames": 7,
+      "synergyRate": 0.4117647058823529,
+      "synergyGames": 11,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "belerick",
+      "id": "belerick",
+      "name": "Belerick",
+      "score": 70,
+      "confidence": "high",
+      "sampleSize": 49,
+      "resultGames": 49,
+      "wins": 24,
+      "losses": 25,
+      "observedWinRate": 0.4897959183673469,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.11450381679389313,
+      "firstBanRate": 0.007633587786259542,
+      "earlyBanRate": 0.03816793893129771,
+      "winRate": 0.4909090909090909,
+      "matchupRate": 0.4117647058823529,
+      "matchupGames": 11,
+      "synergyRate": 0.5294117647058824,
+      "synergyGames": 11,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "minotaur",
+      "id": "minotaur",
+      "name": "Minotaur",
+      "score": 69,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 62,
+      "wins": 31,
+      "losses": 31,
+      "observedWinRate": 0.5,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.25190839694656486,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5,
+      "matchupRate": 0.375,
+      "matchupGames": 10,
+      "synergyRate": 0.5789473684210527,
+      "synergyGames": 13,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-9-ally-pick",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus"
+     ],
+     "allyPickLanes": [
+      "jungle"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid"
+     ]
+    },
+    "action": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 1
+    },
+    "plan": "balanced",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [
+     "exp",
+     "mid",
+     "gold",
+     "roam"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "zhuxin",
+      "id": "zhuxin",
+      "name": "Zhuxin",
+      "score": 73,
+      "confidence": "high",
+      "sampleSize": 42,
+      "resultGames": 42,
+      "wins": 18,
+      "losses": 24,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.32061068702290074,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.21374045801526717,
+      "winRate": 0.4375,
+      "matchupRate": 0.35294117647058826,
+      "matchupGames": 11,
+      "synergyRate": 0.5,
+      "synergyGames": 6,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "gloo",
+      "id": "gloo",
+      "name": "Gloo",
+      "score": 69,
+      "confidence": "medium",
+      "sampleSize": 24,
+      "resultGames": 24,
+      "wins": 17,
+      "losses": 7,
+      "observedWinRate": 0.7083333333333334,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.183206106870229,
+      "banRate": 0.20610687022900764,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.030534351145038167,
+      "winRate": 0.6666666666666666,
+      "matchupRate": 0.5882352941176471,
+      "matchupGames": 11,
+      "synergyRate": 0.6666666666666666,
+      "synergyGames": 3,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 66,
+      "confidence": "medium",
+      "sampleSize": 25,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": 0.5333333333333333,
+      "matchupGames": 9,
+      "synergyRate": 0.5454545454545454,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "miya",
+      "id": "miya",
+      "name": "Miya",
+      "score": 65,
+      "confidence": "medium",
+      "sampleSize": 19,
+      "resultGames": 19,
+      "wins": 11,
+      "losses": 8,
+      "observedWinRate": 0.5789473684210527,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.1450381679389313,
+      "banRate": 0.06870229007633588,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.56,
+      "matchupRate": 0.5333333333333333,
+      "matchupGames": 9,
+      "synergyRate": 0.6666666666666666,
+      "synergyGames": 6,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "valentina",
+      "id": "valentina",
+      "name": "Valentina",
+      "score": 73,
+      "confidence": "high",
+      "sampleSize": 37,
+      "resultGames": 37,
+      "wins": 17,
+      "losses": 20,
+      "observedWinRate": 0.4594594594594595,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.2824427480916031,
+      "banRate": 0.2748091603053435,
+      "firstBanRate": 0.04580152671755725,
+      "earlyBanRate": 0.16793893129770993,
+      "winRate": 0.46511627906976744,
+      "matchupRate": 0.5,
+      "matchupGames": 12,
+      "synergyRate": 0.4666666666666667,
+      "synergyGames": 9,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "belerick",
+      "id": "belerick",
+      "name": "Belerick",
+      "score": 71,
+      "confidence": "high",
+      "sampleSize": 49,
+      "resultGames": 49,
+      "wins": 24,
+      "losses": 25,
+      "observedWinRate": 0.4897959183673469,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.11450381679389313,
+      "firstBanRate": 0.007633587786259542,
+      "earlyBanRate": 0.03816793893129771,
+      "winRate": 0.4909090909090909,
+      "matchupRate": 0.4,
+      "matchupGames": 19,
+      "synergyRate": 0.6,
+      "synergyGames": 4,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "zetian",
+      "id": "zetian",
+      "name": "Zetian",
+      "score": 70,
+      "confidence": "medium",
+      "sampleSize": 24,
+      "resultGames": 24,
+      "wins": 16,
+      "losses": 8,
+      "observedWinRate": 0.6666666666666666,
+      "primaryLane": "mid",
+      "suggestedLane": "mid",
+      "flexLanes": [
+       "mid"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.183206106870229,
+      "banRate": 0.07633587786259542,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.6333333333333333,
+      "matchupRate": 0.6428571428571429,
+      "matchupGames": 8,
+      "synergyRate": 0.6363636363636364,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "minotaur",
+      "id": "minotaur",
+      "name": "Minotaur",
+      "score": 68,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 62,
+      "wins": 31,
+      "losses": 31,
+      "observedWinRate": 0.5,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.25190839694656486,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5,
+      "matchupRate": 0.43333333333333335,
+      "matchupGames": 24,
+      "synergyRate": 0.47368421052631576,
+      "synergyGames": 13,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     }
+    ],
+    "duos": [
+     {
+      "first": {
+       "key": "valentina",
+       "id": "valentina",
+       "name": "Valentina",
+       "score": 73,
+       "confidence": "high",
+       "sampleSize": 37,
+       "resultGames": 37,
+       "wins": 17,
+       "losses": 20,
+       "observedWinRate": 0.4594594594594595,
+       "primaryLane": "mid",
+       "suggestedLane": "mid",
+       "flexLanes": [
+        "mid"
+       ],
+       "patchMetaTier": "D",
+       "pickRate": 0.2824427480916031,
+       "banRate": 0.2748091603053435,
+       "firstBanRate": 0.04580152671755725,
+       "earlyBanRate": 0.16793893129770993,
+       "winRate": 0.46511627906976744,
+       "matchupRate": 0.5,
+       "matchupGames": 12,
+       "synergyRate": 0.4666666666666667,
+       "synergyGames": 9,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta"
+       ]
+      },
+      "second": {
+       "key": "minotaur",
+       "id": "minotaur",
+       "name": "Minotaur",
+       "score": 68,
+       "confidence": "high",
+       "sampleSize": 62,
+       "resultGames": 62,
+       "wins": 31,
+       "losses": 31,
+       "observedWinRate": 0.5,
+       "primaryLane": "roam",
+       "suggestedLane": "roam",
+       "flexLanes": [
+        "exp",
+        "roam"
+       ],
+       "patchMetaTier": "A",
+       "pickRate": 0.4732824427480916,
+       "banRate": 0.25190839694656486,
+       "firstBanRate": 0,
+       "earlyBanRate": 0.08396946564885496,
+       "winRate": 0.5,
+       "matchupRate": 0.43333333333333335,
+       "matchupGames": 24,
+       "synergyRate": 0.47368421052631576,
+       "synergyGames": 13,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta",
+        "flex"
+       ]
+      },
+      "games": 17,
+      "winRate": 0.5652173913043478,
+      "score": 78
+     },
+     {
+      "first": {
+       "key": "belerick",
+       "id": "belerick",
+       "name": "Belerick",
+       "score": 71,
+       "confidence": "high",
+       "sampleSize": 49,
+       "resultGames": 49,
+       "wins": 24,
+       "losses": 25,
+       "observedWinRate": 0.4897959183673469,
+       "primaryLane": "roam",
+       "suggestedLane": "roam",
+       "flexLanes": [
+        "exp",
+        "roam"
+       ],
+       "patchMetaTier": "A",
+       "pickRate": 0.37404580152671757,
+       "banRate": 0.11450381679389313,
+       "firstBanRate": 0.007633587786259542,
+       "earlyBanRate": 0.03816793893129771,
+       "winRate": 0.4909090909090909,
+       "matchupRate": 0.4,
+       "matchupGames": 19,
+       "synergyRate": 0.6,
+       "synergyGames": 4,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta",
+        "composition",
+        "synergy"
+       ]
+      },
+      "second": {
+       "key": "zetian",
+       "id": "zetian",
+       "name": "Zetian",
+       "score": 70,
+       "confidence": "medium",
+       "sampleSize": 24,
+       "resultGames": 24,
+       "wins": 16,
+       "losses": 8,
+       "observedWinRate": 0.6666666666666666,
+       "primaryLane": "mid",
+       "suggestedLane": "mid",
+       "flexLanes": [
+        "mid"
+       ],
+       "patchMetaTier": "A",
+       "pickRate": 0.183206106870229,
+       "banRate": 0.07633587786259542,
+       "firstBanRate": 0,
+       "earlyBanRate": 0.015267175572519083,
+       "winRate": 0.6333333333333333,
+       "matchupRate": 0.6428571428571429,
+       "matchupGames": 8,
+       "synergyRate": 0.6363636363636364,
+       "synergyGames": 5,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta",
+        "composition",
+        "synergy"
+       ]
+      },
+      "games": 9,
+      "winRate": 0.6,
+      "score": 78
+     },
+     {
+      "first": {
+       "key": "zhuxin",
+       "id": "zhuxin",
+       "name": "Zhuxin",
+       "score": 73,
+       "confidence": "high",
+       "sampleSize": 42,
+       "resultGames": 42,
+       "wins": 18,
+       "losses": 24,
+       "observedWinRate": 0.42857142857142855,
+       "primaryLane": "mid",
+       "suggestedLane": "mid",
+       "flexLanes": [
+        "mid"
+       ],
+       "patchMetaTier": "C",
+       "pickRate": 0.32061068702290074,
+       "banRate": 0.3282442748091603,
+       "firstBanRate": 0.04580152671755725,
+       "earlyBanRate": 0.21374045801526717,
+       "winRate": 0.4375,
+       "matchupRate": 0.35294117647058826,
+       "matchupGames": 11,
+       "synergyRate": 0.5,
+       "synergyGames": 6,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta"
+       ]
+      },
+      "second": {
+       "key": "belerick",
+       "id": "belerick",
+       "name": "Belerick",
+       "score": 71,
+       "confidence": "high",
+       "sampleSize": 49,
+       "resultGames": 49,
+       "wins": 24,
+       "losses": 25,
+       "observedWinRate": 0.4897959183673469,
+       "primaryLane": "roam",
+       "suggestedLane": "roam",
+       "flexLanes": [
+        "exp",
+        "roam"
+       ],
+       "patchMetaTier": "A",
+       "pickRate": 0.37404580152671757,
+       "banRate": 0.11450381679389313,
+       "firstBanRate": 0.007633587786259542,
+       "earlyBanRate": 0.03816793893129771,
+       "winRate": 0.4909090909090909,
+       "matchupRate": 0.4,
+       "matchupGames": 19,
+       "synergyRate": 0.6,
+       "synergyGames": 4,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta",
+        "composition",
+        "synergy"
+       ]
+      },
+      "games": 8,
+      "winRate": 0.5714285714285714,
+      "score": 78
+     }
+    ]
+   }
+  },
+  {
+   "name": "step-10-ally-pick",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid"
+     ]
+    },
+    "action": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 1
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 1
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [
+     "exp",
+     "gold",
+     "roam"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "gloo",
+      "id": "gloo",
+      "name": "Gloo",
+      "score": 66,
+      "confidence": "medium",
+      "sampleSize": 24,
+      "resultGames": 24,
+      "wins": 17,
+      "losses": 7,
+      "observedWinRate": 0.7083333333333334,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.183206106870229,
+      "banRate": 0.20610687022900764,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.030534351145038167,
+      "winRate": 0.6666666666666666,
+      "matchupRate": 0.5882352941176471,
+      "matchupGames": 11,
+      "synergyRate": 0.6363636363636364,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "synergy",
+       "counter"
+      ]
+     },
+     {
+      "key": "brody",
+      "id": "brody",
+      "name": "Brody",
+      "score": 64,
+      "confidence": "medium",
+      "sampleSize": 15,
+      "resultGames": 15,
+      "wins": 12,
+      "losses": 3,
+      "observedWinRate": 0.8,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.1297709923664122,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.7142857142857143,
+      "matchupRate": 0.625,
+      "matchupGames": 2,
+      "synergyRate": 0.7,
+      "synergyGames": 4,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 62,
+      "confidence": "medium",
+      "sampleSize": 25,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": 0.5333333333333333,
+      "matchupGames": 9,
+      "synergyRate": 0.5,
+      "synergyGames": 8,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "marcel",
+      "id": "marcel",
+      "name": "Marcel",
+      "score": 61,
+      "confidence": "medium",
+      "sampleSize": 15,
+      "resultGames": 15,
+      "wins": 9,
+      "losses": 6,
+      "observedWinRate": 0.6,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.366412213740458,
+      "firstBanRate": 0.13740458015267176,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.5714285714285714,
+      "matchupRate": 0.5833333333333334,
+      "matchupGames": 6,
+      "synergyRate": 0.6,
+      "synergyGames": 9,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "synergy",
+       "counter"
+      ]
+     },
+     {
+      "key": "belerick",
+      "id": "belerick",
+      "name": "Belerick",
+      "score": 60,
+      "confidence": "high",
+      "sampleSize": 49,
+      "resultGames": 49,
+      "wins": 24,
+      "losses": 25,
+      "observedWinRate": 0.4897959183673469,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.11450381679389313,
+      "firstBanRate": 0.007633587786259542,
+      "earlyBanRate": 0.03816793893129771,
+      "winRate": 0.4909090909090909,
+      "matchupRate": 0.4,
+      "matchupGames": 19,
+      "synergyRate": 0.6111111111111112,
+      "synergyGames": 12,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "synergy",
+       "flex"
+      ]
+     },
+     {
+      "key": "miya",
+      "id": "miya",
+      "name": "Miya",
+      "score": 60,
+      "confidence": "medium",
+      "sampleSize": 19,
+      "resultGames": 19,
+      "wins": 11,
+      "losses": 8,
+      "observedWinRate": 0.5789473684210527,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.1450381679389313,
+      "banRate": 0.06870229007633588,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.56,
+      "matchupRate": 0.5333333333333333,
+      "matchupGames": 9,
+      "synergyRate": 0.5,
+      "synergyGames": 10,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "minotaur",
+      "id": "minotaur",
+      "name": "Minotaur",
+      "score": 59,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 62,
+      "wins": 31,
+      "losses": 31,
+      "observedWinRate": 0.5,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.25190839694656486,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5,
+      "matchupRate": 0.43333333333333335,
+      "matchupGames": 24,
+      "synergyRate": 0.46153846153846156,
+      "synergyGames": 20,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "claude",
+      "id": "claude",
+      "name": "Claude",
+      "score": 59,
+      "confidence": "medium",
+      "sampleSize": 21,
+      "resultGames": 21,
+      "wins": 12,
+      "losses": 9,
+      "observedWinRate": 0.5714285714285714,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.16030534351145037,
+      "banRate": 0.04580152671755725,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.5,
+      "matchupGames": 10,
+      "synergyRate": 0.5,
+      "synergyGames": 10,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "winRate"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-11-enemy-pick",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin",
+      "gloo"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid",
+      "roam"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid"
+     ]
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 1
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 2
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [
+     "exp",
+     "jungle",
+     "roam"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "sora",
+      "id": "sora",
+      "name": "Sora",
+      "score": 61,
+      "confidence": "medium",
+      "sampleSize": 21,
+      "resultGames": 21,
+      "wins": 12,
+      "losses": 9,
+      "observedWinRate": 0.5714285714285714,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.16030534351145037,
+      "banRate": 0.07633587786259542,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.5,
+      "matchupGames": 6,
+      "synergyRate": 0.6666666666666666,
+      "synergyGames": 6,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "synergy",
+       "winRate"
+      ]
+     },
+     {
+      "key": "marcel",
+      "id": "marcel",
+      "name": "Marcel",
+      "score": 59,
+      "confidence": "medium",
+      "sampleSize": 15,
+      "resultGames": 15,
+      "wins": 9,
+      "losses": 6,
+      "observedWinRate": 0.6,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.366412213740458,
+      "firstBanRate": 0.13740458015267176,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.5714285714285714,
+      "matchupRate": 0.5555555555555556,
+      "matchupGames": 3,
+      "synergyRate": 0.5,
+      "synergyGames": 4,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "counter",
+       "winRate"
+      ]
+     },
+     {
+      "key": "saber",
+      "id": "saber",
+      "name": "Saber",
+      "score": 53,
+      "confidence": "low",
+      "sampleSize": 3,
+      "resultGames": 3,
+      "wins": 2,
+      "losses": 1,
+      "observedWinRate": 0.6666666666666666,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.022900763358778626,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.5,
+      "matchupGames": 2,
+      "synergyRate": 0.625,
+      "synergyGames": 2,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "minotaur",
+      "id": "minotaur",
+      "name": "Minotaur",
+      "score": 61,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 62,
+      "wins": 31,
+      "losses": 31,
+      "observedWinRate": 0.5,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.25190839694656486,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5,
+      "matchupRate": 0.4482758620689655,
+      "matchupGames": 23,
+      "synergyRate": 0.6071428571428571,
+      "synergyGames": 22,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "lukas",
+      "id": "lukas",
+      "name": "Lukas",
+      "score": 59,
+      "confidence": "medium",
+      "sampleSize": 29,
+      "resultGames": 29,
+      "wins": 15,
+      "losses": 14,
+      "observedWinRate": 0.5172413793103449,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.22137404580152673,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.12213740458015267,
+      "winRate": 0.5142857142857142,
+      "matchupRate": 0.5555555555555556,
+      "matchupGames": 12,
+      "synergyRate": 0.5,
+      "synergyGames": 6,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "counter",
+       "flex"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 59,
+      "confidence": "medium",
+      "sampleSize": 25,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": 0.47058823529411764,
+      "matchupGames": 11,
+      "synergyRate": 0.5,
+      "synergyGames": 8,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "belerick",
+      "id": "belerick",
+      "name": "Belerick",
+      "score": 58,
+      "confidence": "high",
+      "sampleSize": 49,
+      "resultGames": 49,
+      "wins": 24,
+      "losses": 25,
+      "observedWinRate": 0.4897959183673469,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.11450381679389313,
+      "firstBanRate": 0.007633587786259542,
+      "earlyBanRate": 0.03816793893129771,
+      "winRate": 0.4909090909090909,
+      "matchupRate": 0.37037037037037035,
+      "matchupGames": 21,
+      "synergyRate": 0.48,
+      "synergyGames": 19,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "alice",
+      "id": "alice",
+      "name": "Alice",
+      "score": 58,
+      "confidence": "high",
+      "sampleSize": 35,
+      "resultGames": 35,
+      "wins": 18,
+      "losses": 17,
+      "observedWinRate": 0.5142857142857142,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.26717557251908397,
+      "banRate": 0.09923664122137404,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.5121951219512195,
+      "matchupRate": 0.45,
+      "matchupGames": 14,
+      "synergyRate": 0.5,
+      "synergyGames": 10,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-12-enemy-ban",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin",
+      "gloo"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora",
+      "sora"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid",
+      "roam"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid",
+      "exp"
+     ]
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 2
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "ally",
+     "kind": "ban",
+     "phase": 2
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "brody",
+      "id": "brody",
+      "name": "Brody",
+      "score": 49,
+      "confidence": "high",
+      "sampleSize": 32,
+      "resultGames": 15,
+      "wins": 12,
+      "losses": 3,
+      "observedWinRate": 0.8,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.1297709923664122,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.7142857142857143,
+      "matchupRate": 0.6,
+      "matchupGames": 4,
+      "synergyRate": 0.75,
+      "synergyGames": 6,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "counter",
+       "synergy",
+       "winRate"
+      ]
+     },
+     {
+      "key": "esmeralda",
+      "id": "esmeralda",
+      "name": "Esmeralda",
+      "score": 48,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 19,
+      "wins": 11,
+      "losses": 8,
+      "observedWinRate": 0.5789473684210527,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.1450381679389313,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.0916030534351145,
+      "winRate": 0.56,
+      "matchupRate": 0.5,
+      "matchupGames": 2,
+      "synergyRate": 0.6666666666666666,
+      "synergyGames": 6,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "synergy",
+       "meta"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 46,
+      "confidence": "high",
+      "sampleSize": 70,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": 0.5,
+      "matchupGames": 10,
+      "synergyRate": 0.5333333333333333,
+      "synergyGames": 9,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "dyrroth",
+      "id": "dyrroth",
+      "name": "Dyrroth",
+      "score": 45,
+      "confidence": "medium",
+      "sampleSize": 21,
+      "resultGames": 14,
+      "wins": 6,
+      "losses": 8,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.10687022900763359,
+      "banRate": 0.05343511450381679,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.45,
+      "matchupRate": 0.6363636363636364,
+      "matchupGames": 5,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 8,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "counter",
+       "synergy"
+      ]
+     },
+     {
+      "key": "hanabi",
+      "id": "hanabi",
+      "name": "Hanabi",
+      "score": 44,
+      "confidence": "low",
+      "sampleSize": 4,
+      "resultGames": 4,
+      "wins": 3,
+      "losses": 1,
+      "observedWinRate": 0.75,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.030534351145038167,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.6,
+      "matchupRate": 0.625,
+      "matchupGames": 2,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "winRate",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "paquito",
+      "id": "paquito",
+      "name": "Paquito",
+      "score": 43,
+      "confidence": "high",
+      "sampleSize": 99,
+      "resultGames": 62,
+      "wins": 23,
+      "losses": 39,
+      "observedWinRate": 0.3709677419354839,
+      "primaryLane": "jungle",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.2824427480916031,
+      "firstBanRate": 0.05343511450381679,
+      "earlyBanRate": 0.25190839694656486,
+      "winRate": 0.38235294117647056,
+      "matchupRate": 0.39473684210526316,
+      "matchupGames": 32,
+      "synergyRate": 0.5,
+      "synergyGames": 18,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "minotaur",
+      "id": "minotaur",
+      "name": "Minotaur",
+      "score": 43,
+      "confidence": "high",
+      "sampleSize": 95,
+      "resultGames": 62,
+      "wins": 31,
+      "losses": 31,
+      "observedWinRate": 0.5,
+      "primaryLane": "roam",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.25190839694656486,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5,
+      "matchupRate": 0.45454545454545453,
+      "matchupGames": 27,
+      "synergyRate": 0.4827586206896552,
+      "synergyGames": 23,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "cici",
+      "id": "cici",
+      "name": "Cici",
+      "score": 43,
+      "confidence": "high",
+      "sampleSize": 61,
+      "resultGames": 38,
+      "wins": 15,
+      "losses": 23,
+      "observedWinRate": 0.39473684210526316,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.2900763358778626,
+      "banRate": 0.17557251908396945,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.06870229007633588,
+      "winRate": 0.4090909090909091,
+      "matchupRate": 0.5,
+      "matchupGames": 10,
+      "synergyRate": 0.4782608695652174,
+      "synergyGames": 17,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-13-ally-ban",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin",
+      "gloo"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora",
+      "sora"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus",
+      "brody"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid",
+      "roam"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid",
+      "exp"
+     ]
+    },
+    "action": {
+     "side": "ally",
+     "kind": "ban",
+     "phase": 2
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 2
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "marcel",
+      "id": "marcel",
+      "name": "Marcel",
+      "score": 48,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 15,
+      "wins": 9,
+      "losses": 6,
+      "observedWinRate": 0.6,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "roam"
+      ],
+      "patchMetaTier": "S",
+      "pickRate": 0.11450381679389313,
+      "banRate": 0.366412213740458,
+      "firstBanRate": 0.13740458015267176,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.5714285714285714,
+      "matchupRate": 0.5555555555555556,
+      "matchupGames": 3,
+      "synergyRate": 0.5,
+      "synergyGames": 4,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "counter",
+       "meta"
+      ]
+     },
+     {
+      "key": "lukas",
+      "id": "lukas",
+      "name": "Lukas",
+      "score": 45,
+      "confidence": "high",
+      "sampleSize": 58,
+      "resultGames": 29,
+      "wins": 15,
+      "losses": 14,
+      "observedWinRate": 0.5172413793103449,
+      "primaryLane": "exp",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.22137404580152673,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.12213740458015267,
+      "winRate": 0.5142857142857142,
+      "matchupRate": 0.5555555555555556,
+      "matchupGames": 12,
+      "synergyRate": 0.5,
+      "synergyGames": 8,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "counter"
+      ]
+     },
+     {
+      "key": "minotaur",
+      "id": "minotaur",
+      "name": "Minotaur",
+      "score": 45,
+      "confidence": "high",
+      "sampleSize": 95,
+      "resultGames": 62,
+      "wins": 31,
+      "losses": 31,
+      "observedWinRate": 0.5,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.25190839694656486,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5,
+      "matchupRate": 0.4482758620689655,
+      "matchupGames": 23,
+      "synergyRate": 0.59375,
+      "synergyGames": 26,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "synergy",
+       "meta"
+      ]
+     },
+     {
+      "key": "guinevere",
+      "id": "guinevere",
+      "name": "Guinevere",
+      "score": 45,
+      "confidence": "medium",
+      "sampleSize": 18,
+      "resultGames": 7,
+      "wins": 5,
+      "losses": 2,
+      "observedWinRate": 0.7142857142857143,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.05343511450381679,
+      "banRate": 0.08396946564885496,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.04580152671755725,
+      "winRate": 0.6153846153846154,
+      "matchupRate": 0.6,
+      "matchupGames": 4,
+      "synergyRate": 0.5454545454545454,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "counter",
+       "synergy",
+       "winRate"
+      ]
+     },
+     {
+      "key": "chou",
+      "id": "chou",
+      "name": "Chou",
+      "score": 44,
+      "confidence": "medium",
+      "sampleSize": 19,
+      "resultGames": 14,
+      "wins": 6,
+      "losses": 8,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "gold",
+       "roam"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.10687022900763359,
+      "banRate": 0.03816793893129771,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.45,
+      "matchupRate": 0.6666666666666666,
+      "matchupGames": 6,
+      "synergyRate": 0.4166666666666667,
+      "synergyGames": 6,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "counter"
+      ]
+     },
+     {
+      "key": "khaleed",
+      "id": "khaleed",
+      "name": "Khaleed",
+      "score": 43,
+      "confidence": "low",
+      "sampleSize": 4,
+      "resultGames": 2,
+      "wins": 2,
+      "losses": 0,
+      "observedWinRate": 1,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.015267175572519083,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.625,
+      "matchupRate": 0.5714285714285714,
+      "matchupGames": 1,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "xborg",
+      "id": "x.borg",
+      "name": "X.Borg",
+      "score": 43,
+      "confidence": "low",
+      "sampleSize": 1,
+      "resultGames": 1,
+      "wins": 1,
+      "losses": 0,
+      "observedWinRate": 1,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.007633587786259542,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5714285714285714,
+      "matchupRate": 0.5714285714285714,
+      "matchupGames": 1,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "saber",
+      "id": "saber",
+      "name": "Saber",
+      "score": 42,
+      "confidence": "low",
+      "sampleSize": 5,
+      "resultGames": 3,
+      "wins": 2,
+      "losses": 1,
+      "observedWinRate": 0.6666666666666666,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.022900763358778626,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.5,
+      "matchupGames": 2,
+      "synergyRate": 0.625,
+      "synergyGames": 2,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-14-enemy-ban",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin",
+      "gloo"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora",
+      "sora"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha",
+      "marcel"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus",
+      "brody"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid",
+      "roam"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid",
+      "exp"
+     ]
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "ban",
+     "phase": 2
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "ally",
+     "kind": "ban",
+     "phase": 2
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "esmeralda",
+      "id": "esmeralda",
+      "name": "Esmeralda",
+      "score": 48,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 19,
+      "wins": 11,
+      "losses": 8,
+      "observedWinRate": 0.5789473684210527,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.1450381679389313,
+      "banRate": 0.3282442748091603,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.0916030534351145,
+      "winRate": 0.56,
+      "matchupRate": 0.5,
+      "matchupGames": 2,
+      "synergyRate": 0.6666666666666666,
+      "synergyGames": 6,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "synergy",
+       "meta"
+      ]
+     },
+     {
+      "key": "hanabi",
+      "id": "hanabi",
+      "name": "Hanabi",
+      "score": 44,
+      "confidence": "low",
+      "sampleSize": 4,
+      "resultGames": 4,
+      "wins": 3,
+      "losses": 1,
+      "observedWinRate": 0.75,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.030534351145038167,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.6,
+      "matchupRate": 0.625,
+      "matchupGames": 2,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "winRate",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 46,
+      "confidence": "high",
+      "sampleSize": 70,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": 0.5,
+      "matchupGames": 10,
+      "synergyRate": 0.5333333333333333,
+      "synergyGames": 9,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "dyrroth",
+      "id": "dyrroth",
+      "name": "Dyrroth",
+      "score": 45,
+      "confidence": "medium",
+      "sampleSize": 21,
+      "resultGames": 14,
+      "wins": 6,
+      "losses": 8,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.10687022900763359,
+      "banRate": 0.05343511450381679,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.45,
+      "matchupRate": 0.6363636363636364,
+      "matchupGames": 5,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 8,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "counter",
+       "synergy"
+      ]
+     },
+     {
+      "key": "paquito",
+      "id": "paquito",
+      "name": "Paquito",
+      "score": 43,
+      "confidence": "high",
+      "sampleSize": 99,
+      "resultGames": 62,
+      "wins": 23,
+      "losses": 39,
+      "observedWinRate": 0.3709677419354839,
+      "primaryLane": "jungle",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.2824427480916031,
+      "firstBanRate": 0.05343511450381679,
+      "earlyBanRate": 0.25190839694656486,
+      "winRate": 0.38235294117647056,
+      "matchupRate": 0.39473684210526316,
+      "matchupGames": 32,
+      "synergyRate": 0.5,
+      "synergyGames": 18,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "minotaur",
+      "id": "minotaur",
+      "name": "Minotaur",
+      "score": 43,
+      "confidence": "high",
+      "sampleSize": 95,
+      "resultGames": 62,
+      "wins": 31,
+      "losses": 31,
+      "observedWinRate": 0.5,
+      "primaryLane": "roam",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.25190839694656486,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5,
+      "matchupRate": 0.45454545454545453,
+      "matchupGames": 27,
+      "synergyRate": 0.4827586206896552,
+      "synergyGames": 23,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     },
+     {
+      "key": "cici",
+      "id": "cici",
+      "name": "Cici",
+      "score": 43,
+      "confidence": "high",
+      "sampleSize": 61,
+      "resultGames": 38,
+      "wins": 15,
+      "losses": 23,
+      "observedWinRate": 0.39473684210526316,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.2900763358778626,
+      "banRate": 0.17557251908396945,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.06870229007633588,
+      "winRate": 0.4090909090909091,
+      "matchupRate": 0.5,
+      "matchupGames": 10,
+      "synergyRate": 0.4782608695652174,
+      "synergyGames": 17,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole"
+      ]
+     },
+     {
+      "key": "lukas",
+      "id": "lukas",
+      "name": "Lukas",
+      "score": 43,
+      "confidence": "high",
+      "sampleSize": 58,
+      "resultGames": 29,
+      "wins": 15,
+      "losses": 14,
+      "observedWinRate": 0.5172413793103449,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.22137404580152673,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.12213740458015267,
+      "winRate": 0.5142857142857142,
+      "matchupRate": 0.4375,
+      "matchupGames": 10,
+      "synergyRate": 0.5294117647058824,
+      "synergyGames": 11,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-15-ally-ban",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin",
+      "gloo"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora",
+      "sora"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha",
+      "marcel"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus",
+      "brody",
+      "esmeralda"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid",
+      "roam"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid",
+      "exp"
+     ]
+    },
+    "action": {
+     "side": "ally",
+     "kind": "ban",
+     "phase": 2
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 2
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "minotaur",
+      "id": "minotaur",
+      "name": "Minotaur",
+      "score": 45,
+      "confidence": "high",
+      "sampleSize": 95,
+      "resultGames": 62,
+      "wins": 31,
+      "losses": 31,
+      "observedWinRate": 0.5,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.25190839694656486,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.08396946564885496,
+      "winRate": 0.5,
+      "matchupRate": 0.4482758620689655,
+      "matchupGames": 23,
+      "synergyRate": 0.59375,
+      "synergyGames": 26,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "synergy",
+       "meta"
+      ]
+     },
+     {
+      "key": "lukas",
+      "id": "lukas",
+      "name": "Lukas",
+      "score": 45,
+      "confidence": "high",
+      "sampleSize": 58,
+      "resultGames": 29,
+      "wins": 15,
+      "losses": 14,
+      "observedWinRate": 0.5172413793103449,
+      "primaryLane": "exp",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.22137404580152673,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.12213740458015267,
+      "winRate": 0.5142857142857142,
+      "matchupRate": 0.5555555555555556,
+      "matchupGames": 12,
+      "synergyRate": 0.5,
+      "synergyGames": 8,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "counter"
+      ]
+     },
+     {
+      "key": "guinevere",
+      "id": "guinevere",
+      "name": "Guinevere",
+      "score": 45,
+      "confidence": "medium",
+      "sampleSize": 18,
+      "resultGames": 7,
+      "wins": 5,
+      "losses": 2,
+      "observedWinRate": 0.7142857142857143,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.05343511450381679,
+      "banRate": 0.08396946564885496,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.04580152671755725,
+      "winRate": 0.6153846153846154,
+      "matchupRate": 0.6,
+      "matchupGames": 4,
+      "synergyRate": 0.5454545454545454,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "counter",
+       "synergy",
+       "winRate"
+      ]
+     },
+     {
+      "key": "chou",
+      "id": "chou",
+      "name": "Chou",
+      "score": 44,
+      "confidence": "medium",
+      "sampleSize": 19,
+      "resultGames": 14,
+      "wins": 6,
+      "losses": 8,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "gold",
+       "roam"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.10687022900763359,
+      "banRate": 0.03816793893129771,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.45,
+      "matchupRate": 0.6666666666666666,
+      "matchupGames": 6,
+      "synergyRate": 0.4166666666666667,
+      "synergyGames": 6,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "counter"
+      ]
+     },
+     {
+      "key": "khaleed",
+      "id": "khaleed",
+      "name": "Khaleed",
+      "score": 43,
+      "confidence": "low",
+      "sampleSize": 4,
+      "resultGames": 2,
+      "wins": 2,
+      "losses": 0,
+      "observedWinRate": 1,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.015267175572519083,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.625,
+      "matchupRate": 0.5714285714285714,
+      "matchupGames": 1,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "xborg",
+      "id": "x.borg",
+      "name": "X.Borg",
+      "score": 43,
+      "confidence": "low",
+      "sampleSize": 1,
+      "resultGames": 1,
+      "wins": 1,
+      "losses": 0,
+      "observedWinRate": 1,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.007633587786259542,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5714285714285714,
+      "matchupRate": 0.5714285714285714,
+      "matchupGames": 1,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "saber",
+      "id": "saber",
+      "name": "Saber",
+      "score": 42,
+      "confidence": "low",
+      "sampleSize": 5,
+      "resultGames": 3,
+      "wins": 2,
+      "losses": 1,
+      "observedWinRate": 0.6666666666666666,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.022900763358778626,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.5,
+      "matchupGames": 2,
+      "synergyRate": 0.625,
+      "synergyGames": 2,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole"
+      ]
+     },
+     {
+      "key": "fanny",
+      "id": "fanny",
+      "name": "Fanny",
+      "score": 41,
+      "confidence": "high",
+      "sampleSize": 63,
+      "resultGames": 10,
+      "wins": 3,
+      "losses": 7,
+      "observedWinRate": 0.3,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "D",
+      "pickRate": 0.07633587786259542,
+      "banRate": 0.40458015267175573,
+      "firstBanRate": 0.0916030534351145,
+      "earlyBanRate": 0.29770992366412213,
+      "winRate": 0.375,
+      "matchupRate": 0.4166666666666667,
+      "matchupGames": 6,
+      "synergyRate": 0.3,
+      "synergyGames": 4,
+      "teamRate": null,
+      "reasons": [
+       "targetOpenRole",
+       "firstBanPriority",
+       "meta"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-16-enemy-pick",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin",
+      "gloo"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora",
+      "sora"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha",
+      "marcel",
+      "minotaur"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus",
+      "brody",
+      "esmeralda"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid",
+      "roam"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid",
+      "exp"
+     ]
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 2
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 2
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [
+     "jungle",
+     "roam"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "belerick",
+      "id": "belerick",
+      "name": "Belerick",
+      "score": 57,
+      "confidence": "high",
+      "sampleSize": 49,
+      "resultGames": 49,
+      "wins": 24,
+      "losses": 25,
+      "observedWinRate": 0.4897959183673469,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.37404580152671757,
+      "banRate": 0.11450381679389313,
+      "firstBanRate": 0.007633587786259542,
+      "earlyBanRate": 0.03816793893129771,
+      "winRate": 0.4909090909090909,
+      "matchupRate": 0.37037037037037035,
+      "matchupGames": 21,
+      "synergyRate": 0.48148148148148145,
+      "synergyGames": 21,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "suyou",
+      "id": "suyou",
+      "name": "Suyou",
+      "score": 52,
+      "confidence": "low",
+      "sampleSize": 9,
+      "resultGames": 9,
+      "wins": 2,
+      "losses": 7,
+      "observedWinRate": 0.2222222222222222,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.06870229007633588,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.3333333333333333,
+      "matchupRate": 0.5,
+      "matchupGames": 2,
+      "synergyRate": 0.4444444444444444,
+      "synergyGames": 3,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "paquito",
+      "id": "paquito",
+      "name": "Paquito",
+      "score": 53,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 62,
+      "wins": 23,
+      "losses": 39,
+      "observedWinRate": 0.3709677419354839,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.2824427480916031,
+      "firstBanRate": 0.05343511450381679,
+      "earlyBanRate": 0.25190839694656486,
+      "winRate": 0.38235294117647056,
+      "matchupRate": 0.32142857142857145,
+      "matchupGames": 22,
+      "synergyRate": 0.42857142857142855,
+      "synergyGames": 22,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "khaleed",
+      "id": "khaleed",
+      "name": "Khaleed",
+      "score": 53,
+      "confidence": "low",
+      "sampleSize": 2,
+      "resultGames": 2,
+      "wins": 2,
+      "losses": 0,
+      "observedWinRate": 1,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "exp",
+       "roam"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.015267175572519083,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.625,
+      "matchupRate": 0.5714285714285714,
+      "matchupGames": 1,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "flex",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "hylos",
+      "id": "hylos",
+      "name": "Hylos",
+      "score": 52,
+      "confidence": "medium",
+      "sampleSize": 13,
+      "resultGames": 13,
+      "wins": 5,
+      "losses": 8,
+      "observedWinRate": 0.38461538461538464,
+      "primaryLane": "roam",
+      "suggestedLane": "roam",
+      "flexLanes": [
+       "roam"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.09923664122137404,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.42105263157894735,
+      "matchupRate": 0.5,
+      "matchupGames": 4,
+      "synergyRate": 0.4,
+      "synergyGames": 4,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     },
+     {
+      "key": "leomord",
+      "id": "leomord",
+      "name": "Leomord",
+      "score": 52,
+      "confidence": "low",
+      "sampleSize": 8,
+      "resultGames": 8,
+      "wins": 6,
+      "losses": 2,
+      "observedWinRate": 0.75,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.061068702290076333,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.007633587786259542,
+      "winRate": 0.6428571428571429,
+      "matchupRate": 0.42857142857142855,
+      "matchupGames": 1,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "guinevere",
+      "id": "guinevere",
+      "name": "Guinevere",
+      "score": 52,
+      "confidence": "low",
+      "sampleSize": 7,
+      "resultGames": 7,
+      "wins": 5,
+      "losses": 2,
+      "observedWinRate": 0.7142857142857143,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.05343511450381679,
+      "banRate": 0.08396946564885496,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.04580152671755725,
+      "winRate": 0.6153846153846154,
+      "matchupRate": 0.6,
+      "matchupGames": 4,
+      "synergyRate": 0.5454545454545454,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "synergy",
+       "counter"
+      ]
+     },
+     {
+      "key": "saber",
+      "id": "saber",
+      "name": "Saber",
+      "score": 52,
+      "confidence": "low",
+      "sampleSize": 3,
+      "resultGames": 3,
+      "wins": 2,
+      "losses": 1,
+      "observedWinRate": 0.6666666666666666,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.022900763358778626,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.5,
+      "matchupGames": 2,
+      "synergyRate": 0.625,
+      "synergyGames": 2,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex",
+       "limitedSample"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-17-ally-pick",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin",
+      "gloo"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora",
+      "sora",
+      "belerick"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha",
+      "marcel",
+      "minotaur"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus",
+      "brody",
+      "esmeralda"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid",
+      "roam"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid",
+      "exp",
+      "roam"
+     ]
+    },
+    "action": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 2
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 2
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": null,
+    "openLanes": [
+     "exp",
+     "gold"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "miya",
+      "id": "miya",
+      "name": "Miya",
+      "score": 63,
+      "confidence": "medium",
+      "sampleSize": 19,
+      "resultGames": 19,
+      "wins": 11,
+      "losses": 8,
+      "observedWinRate": 0.5789473684210527,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.1450381679389313,
+      "banRate": 0.06870229007633588,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.56,
+      "matchupRate": 0.5882352941176471,
+      "matchupGames": 11,
+      "synergyRate": 0.5789473684210527,
+      "synergyGames": 13,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 59,
+      "confidence": "medium",
+      "sampleSize": 25,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": 0.47058823529411764,
+      "matchupGames": 11,
+      "synergyRate": 0.5333333333333333,
+      "synergyGames": 9,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition"
+      ]
+     },
+     {
+      "key": "alice",
+      "id": "alice",
+      "name": "Alice",
+      "score": 59,
+      "confidence": "high",
+      "sampleSize": 35,
+      "resultGames": 35,
+      "wins": 18,
+      "losses": 17,
+      "observedWinRate": 0.5142857142857142,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.26717557251908397,
+      "banRate": 0.09923664122137404,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.5121951219512195,
+      "matchupRate": 0.48148148148148145,
+      "matchupGames": 21,
+      "synergyRate": 0.5,
+      "synergyGames": 18,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "claude",
+      "id": "claude",
+      "name": "Claude",
+      "score": 59,
+      "confidence": "medium",
+      "sampleSize": 21,
+      "resultGames": 21,
+      "wins": 12,
+      "losses": 9,
+      "observedWinRate": 0.5714285714285714,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.16030534351145037,
+      "banRate": 0.04580152671755725,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.5,
+      "matchupGames": 10,
+      "synergyRate": 0.5,
+      "synergyGames": 10,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "winRate"
+      ]
+     },
+     {
+      "key": "hanabi",
+      "id": "hanabi",
+      "name": "Hanabi",
+      "score": 58,
+      "confidence": "low",
+      "sampleSize": 4,
+      "resultGames": 4,
+      "wins": 3,
+      "losses": 1,
+      "observedWinRate": 0.75,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.030534351145038167,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.6,
+      "matchupRate": 0.625,
+      "matchupGames": 2,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "winRate",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "terizla",
+      "id": "terizla",
+      "name": "Terizla",
+      "score": 58,
+      "confidence": "low",
+      "sampleSize": 3,
+      "resultGames": 3,
+      "wins": 2,
+      "losses": 1,
+      "observedWinRate": 0.6666666666666666,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.022900763358778626,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.625,
+      "matchupGames": 2,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "dyrroth",
+      "id": "dyrroth",
+      "name": "Dyrroth",
+      "score": 57,
+      "confidence": "medium",
+      "sampleSize": 14,
+      "resultGames": 14,
+      "wins": 6,
+      "losses": 8,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.10687022900763359,
+      "banRate": 0.05343511450381679,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.45,
+      "matchupRate": 0.6363636363636364,
+      "matchupGames": 5,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 8,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "moskov",
+      "id": "moskov",
+      "name": "Moskov",
+      "score": 56,
+      "confidence": "medium",
+      "sampleSize": 17,
+      "resultGames": 17,
+      "wins": 7,
+      "losses": 10,
+      "observedWinRate": 0.4117647058823529,
+      "primaryLane": "gold",
+      "suggestedLane": "gold",
+      "flexLanes": [
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.1297709923664122,
+      "banRate": 0.061068702290076333,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.43478260869565216,
+      "matchupRate": 0.5,
+      "matchupGames": 10,
+      "synergyRate": 0.47058823529411764,
+      "synergyGames": 11,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     }
+    ],
+    "duos": [
+     {
+      "first": {
+       "key": "alice",
+       "id": "alice",
+       "name": "Alice",
+       "score": 59,
+       "confidence": "high",
+       "sampleSize": 35,
+       "resultGames": 35,
+       "wins": 18,
+       "losses": 17,
+       "observedWinRate": 0.5142857142857142,
+       "primaryLane": "exp",
+       "suggestedLane": "exp",
+       "flexLanes": [
+        "exp",
+        "jungle"
+       ],
+       "patchMetaTier": "A",
+       "pickRate": 0.26717557251908397,
+       "banRate": 0.09923664122137404,
+       "firstBanRate": 0,
+       "earlyBanRate": 0.015267175572519083,
+       "winRate": 0.5121951219512195,
+       "matchupRate": 0.48148148148148145,
+       "matchupGames": 21,
+       "synergyRate": 0.5,
+       "synergyGames": 18,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta",
+        "flex"
+       ]
+      },
+      "second": {
+       "key": "claude",
+       "id": "claude",
+       "name": "Claude",
+       "score": 59,
+       "confidence": "medium",
+       "sampleSize": 21,
+       "resultGames": 21,
+       "wins": 12,
+       "losses": 9,
+       "observedWinRate": 0.5714285714285714,
+       "primaryLane": "gold",
+       "suggestedLane": "gold",
+       "flexLanes": [
+        "gold"
+       ],
+       "patchMetaTier": "B",
+       "pickRate": 0.16030534351145037,
+       "banRate": 0.04580152671755725,
+       "firstBanRate": 0,
+       "earlyBanRate": 0,
+       "winRate": 0.5555555555555556,
+       "matchupRate": 0.5,
+       "matchupGames": 10,
+       "synergyRate": 0.5,
+       "synergyGames": 10,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta",
+        "winRate"
+       ]
+      },
+      "games": 3,
+      "winRate": 0.5555555555555556,
+      "score": 59
+     },
+     {
+      "first": {
+       "key": "miya",
+       "id": "miya",
+       "name": "Miya",
+       "score": 63,
+       "confidence": "medium",
+       "sampleSize": 19,
+       "resultGames": 19,
+       "wins": 11,
+       "losses": 8,
+       "observedWinRate": 0.5789473684210527,
+       "primaryLane": "gold",
+       "suggestedLane": "gold",
+       "flexLanes": [
+        "gold"
+       ],
+       "patchMetaTier": "A",
+       "pickRate": 0.1450381679389313,
+       "banRate": 0.06870229007633588,
+       "firstBanRate": 0,
+       "earlyBanRate": 0,
+       "winRate": 0.56,
+       "matchupRate": 0.5882352941176471,
+       "matchupGames": 11,
+       "synergyRate": 0.5789473684210527,
+       "synergyGames": 13,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta",
+        "composition",
+        "synergy"
+       ]
+      },
+      "second": {
+       "key": "alice",
+       "id": "alice",
+       "name": "Alice",
+       "score": 59,
+       "confidence": "high",
+       "sampleSize": 35,
+       "resultGames": 35,
+       "wins": 18,
+       "losses": 17,
+       "observedWinRate": 0.5142857142857142,
+       "primaryLane": "exp",
+       "suggestedLane": "exp",
+       "flexLanes": [
+        "exp",
+        "jungle"
+       ],
+       "patchMetaTier": "A",
+       "pickRate": 0.26717557251908397,
+       "banRate": 0.09923664122137404,
+       "firstBanRate": 0,
+       "earlyBanRate": 0.015267175572519083,
+       "winRate": 0.5121951219512195,
+       "matchupRate": 0.48148148148148145,
+       "matchupGames": 21,
+       "synergyRate": 0.5,
+       "synergyGames": 18,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta",
+        "flex"
+       ]
+      },
+      "games": 2,
+      "winRate": 0.5,
+      "score": 59
+     },
+     {
+      "first": {
+       "key": "uranus",
+       "id": "uranus",
+       "name": "Uranus",
+       "score": 59,
+       "confidence": "medium",
+       "sampleSize": 25,
+       "resultGames": 25,
+       "wins": 11,
+       "losses": 14,
+       "observedWinRate": 0.44,
+       "primaryLane": "exp",
+       "suggestedLane": "exp",
+       "flexLanes": [
+        "exp"
+       ],
+       "patchMetaTier": "B",
+       "pickRate": 0.19083969465648856,
+       "banRate": 0.3435114503816794,
+       "firstBanRate": 0.06870229007633588,
+       "earlyBanRate": 0.22900763358778625,
+       "winRate": 0.45161290322580644,
+       "matchupRate": 0.47058823529411764,
+       "matchupGames": 11,
+       "synergyRate": 0.5333333333333333,
+       "synergyGames": 9,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta",
+        "composition"
+       ]
+      },
+      "second": {
+       "key": "moskov",
+       "id": "moskov",
+       "name": "Moskov",
+       "score": 56,
+       "confidence": "medium",
+       "sampleSize": 17,
+       "resultGames": 17,
+       "wins": 7,
+       "losses": 10,
+       "observedWinRate": 0.4117647058823529,
+       "primaryLane": "gold",
+       "suggestedLane": "gold",
+       "flexLanes": [
+        "gold"
+       ],
+       "patchMetaTier": "A",
+       "pickRate": 0.1297709923664122,
+       "banRate": 0.061068702290076333,
+       "firstBanRate": 0,
+       "earlyBanRate": 0,
+       "winRate": 0.43478260869565216,
+       "matchupRate": 0.5,
+       "matchupGames": 10,
+       "synergyRate": 0.47058823529411764,
+       "synergyGames": 11,
+       "teamRate": null,
+       "reasons": [
+        "lane",
+        "meta"
+       ]
+      },
+      "games": 2,
+      "winRate": 0.625,
+      "score": 59
+     }
+    ]
+   }
+  },
+  {
+   "name": "step-18-ally-pick",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin",
+      "gloo",
+      "miya"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora",
+      "sora",
+      "belerick"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha",
+      "marcel",
+      "minotaur"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus",
+      "brody",
+      "esmeralda"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid",
+      "roam",
+      "gold"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid",
+      "exp",
+      "roam"
+     ]
+    },
+    "action": {
+     "side": "ally",
+     "kind": "pick",
+     "phase": 2
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 2
+    },
+    "limit": 8
+   },
+   "output": {
+    "targetLane": "exp",
+    "openLanes": [
+     "exp"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "alice",
+      "id": "alice",
+      "name": "Alice",
+      "score": 59,
+      "confidence": "high",
+      "sampleSize": 35,
+      "resultGames": 35,
+      "wins": 18,
+      "losses": 17,
+      "observedWinRate": 0.5142857142857142,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.26717557251908397,
+      "banRate": 0.09923664122137404,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.5121951219512195,
+      "matchupRate": 0.48148148148148145,
+      "matchupGames": 21,
+      "synergyRate": 0.5,
+      "synergyGames": 18,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "uranus",
+      "id": "uranus",
+      "name": "Uranus",
+      "score": 59,
+      "confidence": "medium",
+      "sampleSize": 25,
+      "resultGames": 25,
+      "wins": 11,
+      "losses": 14,
+      "observedWinRate": 0.44,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.19083969465648856,
+      "banRate": 0.3435114503816794,
+      "firstBanRate": 0.06870229007633588,
+      "earlyBanRate": 0.22900763358778625,
+      "winRate": 0.45161290322580644,
+      "matchupRate": 0.47058823529411764,
+      "matchupGames": 11,
+      "synergyRate": 0.5333333333333333,
+      "synergyGames": 9,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition"
+      ]
+     },
+     {
+      "key": "terizla",
+      "id": "terizla",
+      "name": "Terizla",
+      "score": 58,
+      "confidence": "low",
+      "sampleSize": 3,
+      "resultGames": 3,
+      "wins": 2,
+      "losses": 1,
+      "observedWinRate": 0.6666666666666666,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.022900763358778626,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.625,
+      "matchupGames": 2,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "dyrroth",
+      "id": "dyrroth",
+      "name": "Dyrroth",
+      "score": 56,
+      "confidence": "medium",
+      "sampleSize": 14,
+      "resultGames": 14,
+      "wins": 6,
+      "losses": 8,
+      "observedWinRate": 0.42857142857142855,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.10687022900763359,
+      "banRate": 0.05343511450381679,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.015267175572519083,
+      "winRate": 0.45,
+      "matchupRate": 0.6363636363636364,
+      "matchupGames": 5,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 8,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "balmond",
+      "id": "balmond",
+      "name": "Balmond",
+      "score": 55,
+      "confidence": "low",
+      "sampleSize": 2,
+      "resultGames": 2,
+      "wins": 2,
+      "losses": 0,
+      "observedWinRate": 1,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.015267175572519083,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.625,
+      "matchupRate": 0.625,
+      "matchupGames": 2,
+      "synergyRate": null,
+      "synergyGames": 0,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "flex",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "cici",
+      "id": "cici",
+      "name": "Cici",
+      "score": 54,
+      "confidence": "high",
+      "sampleSize": 38,
+      "resultGames": 38,
+      "wins": 15,
+      "losses": 23,
+      "observedWinRate": 0.39473684210526316,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "gold"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.2900763358778626,
+      "banRate": 0.17557251908396945,
+      "firstBanRate": 0.022900763358778626,
+      "earlyBanRate": 0.06870229007633588,
+      "winRate": 0.4090909090909091,
+      "matchupRate": 0.4090909090909091,
+      "matchupGames": 16,
+      "synergyRate": 0.4782608695652174,
+      "synergyGames": 17,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "arlott",
+      "id": "arlott",
+      "name": "Arlott",
+      "score": 54,
+      "confidence": "low",
+      "sampleSize": 9,
+      "resultGames": 9,
+      "wins": 5,
+      "losses": 4,
+      "observedWinRate": 0.5555555555555556,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp"
+      ],
+      "patchMetaTier": "C",
+      "pickRate": 0.06870229007633588,
+      "banRate": 0.13740458015267176,
+      "firstBanRate": 0.030534351145038167,
+      "earlyBanRate": 0.05343511450381679,
+      "winRate": 0.5333333333333333,
+      "matchupRate": 0.5,
+      "matchupGames": 2,
+      "synergyRate": 0.5454545454545454,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "synergy"
+      ]
+     },
+     {
+      "key": "lukas",
+      "id": "lukas",
+      "name": "Lukas",
+      "score": 53,
+      "confidence": "medium",
+      "sampleSize": 29,
+      "resultGames": 29,
+      "wins": 15,
+      "losses": 14,
+      "observedWinRate": 0.5172413793103449,
+      "primaryLane": "exp",
+      "suggestedLane": "exp",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.22137404580152673,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.12213740458015267,
+      "winRate": 0.5142857142857142,
+      "matchupRate": 0.42105263157894735,
+      "matchupGames": 13,
+      "synergyRate": 0.5294117647058824,
+      "synergyGames": 11,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  },
+  {
+   "name": "step-19-enemy-pick",
+   "input": {
+    "state": {
+     "allyPicks": [
+      "nolan",
+      "zhuxin",
+      "gloo",
+      "miya",
+      "alice"
+     ],
+     "enemyPicks": [
+      "obsidia",
+      "eudora",
+      "sora",
+      "belerick"
+     ],
+     "allyBans": [
+      "carmilla",
+      "atlas",
+      "masha",
+      "marcel",
+      "minotaur"
+     ],
+     "enemyBans": [
+      "freya",
+      "hirara",
+      "aulus",
+      "brody",
+      "esmeralda"
+     ],
+     "allyPickLanes": [
+      "jungle",
+      "mid",
+      "roam",
+      "gold",
+      "exp"
+     ],
+     "enemyPickLanes": [
+      "gold",
+      "mid",
+      "exp",
+      "roam"
+     ]
+    },
+    "action": {
+     "side": "enemy",
+     "kind": "pick",
+     "phase": 2
+    },
+    "plan": "counter",
+    "allyFirstPick": true,
+    "allyTeam": null,
+    "enemyTeam": null,
+    "preferredHeroes": [],
+    "nextAction": null,
+    "limit": 8
+   },
+   "output": {
+    "targetLane": "jungle",
+    "openLanes": [
+     "jungle"
+    ],
+    "priorityPicks": [],
+    "recommendations": [
+     {
+      "key": "saber",
+      "id": "saber",
+      "name": "Saber",
+      "score": 54,
+      "confidence": "low",
+      "sampleSize": 3,
+      "resultGames": 3,
+      "wins": 2,
+      "losses": 1,
+      "observedWinRate": 0.6666666666666666,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "roam"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.022900763358778626,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5555555555555556,
+      "matchupRate": 0.5555555555555556,
+      "matchupGames": 3,
+      "synergyRate": 0.625,
+      "synergyGames": 2,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "counter",
+       "flex"
+      ]
+     },
+     {
+      "key": "paquito",
+      "id": "paquito",
+      "name": "Paquito",
+      "score": 53,
+      "confidence": "high",
+      "sampleSize": 62,
+      "resultGames": 62,
+      "wins": 23,
+      "losses": 39,
+      "observedWinRate": 0.3709677419354839,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.4732824427480916,
+      "banRate": 0.2824427480916031,
+      "firstBanRate": 0.05343511450381679,
+      "earlyBanRate": 0.25190839694656486,
+      "winRate": 0.38235294117647056,
+      "matchupRate": 0.30303030303030304,
+      "matchupGames": 27,
+      "synergyRate": 0.4594594594594595,
+      "synergyGames": 31,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "flex"
+      ]
+     },
+     {
+      "key": "lukas",
+      "id": "lukas",
+      "name": "Lukas",
+      "score": 53,
+      "confidence": "medium",
+      "sampleSize": 29,
+      "resultGames": 29,
+      "wins": 15,
+      "losses": 14,
+      "observedWinRate": 0.5172413793103449,
+      "primaryLane": "exp",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle",
+       "gold"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.22137404580152673,
+      "banRate": 0.22137404580152673,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.12213740458015267,
+      "winRate": 0.5142857142857142,
+      "matchupRate": 0.6,
+      "matchupGames": 14,
+      "synergyRate": 0.5,
+      "synergyGames": 8,
+      "teamRate": null,
+      "reasons": [
+       "meta",
+       "counter",
+       "flex"
+      ]
+     },
+     {
+      "key": "guinevere",
+      "id": "guinevere",
+      "name": "Guinevere",
+      "score": 52,
+      "confidence": "low",
+      "sampleSize": 7,
+      "resultGames": 7,
+      "wins": 5,
+      "losses": 2,
+      "observedWinRate": 0.7142857142857143,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "exp",
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.05343511450381679,
+      "banRate": 0.08396946564885496,
+      "firstBanRate": 0.015267175572519083,
+      "earlyBanRate": 0.04580152671755725,
+      "winRate": 0.6153846153846154,
+      "matchupRate": 0.6,
+      "matchupGames": 4,
+      "synergyRate": 0.5454545454545454,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "composition",
+       "synergy"
+      ]
+     },
+     {
+      "key": "leomord",
+      "id": "leomord",
+      "name": "Leomord",
+      "score": 51,
+      "confidence": "low",
+      "sampleSize": 8,
+      "resultGames": 8,
+      "wins": 6,
+      "losses": 2,
+      "observedWinRate": 0.75,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.061068702290076333,
+      "banRate": 0.015267175572519083,
+      "firstBanRate": 0,
+      "earlyBanRate": 0.007633587786259542,
+      "winRate": 0.6428571428571429,
+      "matchupRate": 0.42857142857142855,
+      "matchupGames": 1,
+      "synergyRate": 0.5555555555555556,
+      "synergyGames": 3,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "synergy",
+       "winRate"
+      ]
+     },
+     {
+      "key": "xborg",
+      "id": "x.borg",
+      "name": "X.Borg",
+      "score": 51,
+      "confidence": "low",
+      "sampleSize": 1,
+      "resultGames": 1,
+      "wins": 1,
+      "losses": 0,
+      "observedWinRate": 1,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.007633587786259542,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5714285714285714,
+      "matchupRate": 0.5714285714285714,
+      "matchupGames": 1,
+      "synergyRate": 0.5714285714285714,
+      "synergyGames": 1,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "hayabusa",
+      "id": "hayabusa",
+      "name": "Hayabusa",
+      "score": 50,
+      "confidence": "low",
+      "sampleSize": 4,
+      "resultGames": 4,
+      "wins": 2,
+      "losses": 2,
+      "observedWinRate": 0.5,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "B",
+      "pickRate": 0.030534351145038167,
+      "banRate": 0.007633587786259542,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.5,
+      "matchupRate": 0.5,
+      "matchupGames": 4,
+      "synergyRate": 0.4444444444444444,
+      "synergyGames": 3,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta",
+       "limitedSample"
+      ]
+     },
+     {
+      "key": "suyou",
+      "id": "suyou",
+      "name": "Suyou",
+      "score": 49,
+      "confidence": "low",
+      "sampleSize": 9,
+      "resultGames": 9,
+      "wins": 2,
+      "losses": 7,
+      "observedWinRate": 0.2222222222222222,
+      "primaryLane": "jungle",
+      "suggestedLane": "jungle",
+      "flexLanes": [
+       "jungle"
+      ],
+      "patchMetaTier": "A",
+      "pickRate": 0.06870229007633588,
+      "banRate": 0,
+      "firstBanRate": 0,
+      "earlyBanRate": 0,
+      "winRate": 0.3333333333333333,
+      "matchupRate": 0.4444444444444444,
+      "matchupGames": 3,
+      "synergyRate": 0.45454545454545453,
+      "synergyGames": 5,
+      "teamRate": null,
+      "reasons": [
+       "lane",
+       "meta"
+      ]
+     }
+    ],
+    "duos": []
+   }
+  }
+ ],
+ "compare": {
+  "state": {
+   "allyPicks": [
+    "nolan",
+    "zhuxin",
+    "gloo",
+    "miya",
+    "alice"
+   ],
+   "enemyPicks": [
+    "obsidia",
+    "eudora",
+    "sora",
+    "belerick",
+    "saber"
+   ],
+   "allyBans": [
+    "carmilla",
+    "atlas",
+    "masha",
+    "marcel",
+    "minotaur"
+   ],
+   "enemyBans": [
+    "freya",
+    "hirara",
+    "aulus",
+    "brody",
+    "esmeralda"
+   ],
+   "allyPickLanes": [
+    "jungle",
+    "mid",
+    "roam",
+    "gold",
+    "exp"
+   ],
+   "enemyPickLanes": [
+    "gold",
+    "mid",
+    "exp",
+    "roam",
+    "jungle"
+   ]
+  },
+  "output": {
+   "allyWinProbability": 0.500225779015033,
+   "enemyWinProbability": 0.49977422098496704,
+   "allyProForm": 0.557306256028662,
+   "enemyProForm": 0.5305189829327761,
+   "allySynergy": 0.5158883669521968,
+   "enemySynergy": 0.5339508530685001,
+   "allyCompositionFit": 0.5621621621621622,
+   "enemyCompositionFit": 0.5866666666666667,
+   "allyMatchupEdge": 0.5170564892623717,
+   "enemyMatchupEdge": 0.4829435107376285,
+   "gamesAnalyzed": 131,
+   "confidence": "medium"
+  }
+ }
+}
