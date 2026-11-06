@@ -49,14 +49,16 @@ function families(): Family[] {
     root: region.liquipediaLeaguePage,
     regionSlug: region.slug,
   }))
-  const international: Family[] = (officialTournaments as Array<{ slug: string; kind: TournamentKind; label: string; root: string }>).map((item) => ({
+  // Leagues the website does not show live on regions.json but the coach still learns from.
+  // `regionSlug` names the region for scouting labels; international events share one.
+  const extra: Family[] = (officialTournaments as Array<{ slug: string; kind: TournamentKind; label: string; root: string; regionSlug?: string }>).map((item) => ({
     slug: item.slug,
     kind: item.kind,
     label: item.label,
     root: slugOf(item.root),
-    regionSlug: 'international',
+    regionSlug: item.regionSlug ?? 'international',
   }))
-  return [...regional, ...international]
+  return [...regional, ...extra]
 }
 
 function readState(): CoachState {

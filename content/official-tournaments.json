@@ -10,5 +10,32 @@
     "kind": "international",
     "label": "M7 World Championship",
     "root": "M7_World_Championship"
+  },
+  {
+    "slug": "games-of-the-future",
+    "kind": "international",
+    "label": "Games of the Future 2026",
+    "root": "Games_of_the_Future/2026"
+  },
+  {
+    "slug": "brazil",
+    "kind": "mpl",
+    "label": "MPL Brazil",
+    "root": "MPL/Brazil/Season_5",
+    "regionSlug": "brazil"
+  },
+  {
+    "slug": "china",
+    "kind": "national",
+    "label": "MLBB China Masters",
+    "root": "MLBB_China_Masters/Season_3",
+    "regionSlug": "china"
+  },
+  {
+    "slug": "north-america",
+    "kind": "national",
+    "label": "NACT",
+    "root": "NACT/2025/Spring",
+    "regionSlug": "north-america"
   }
 ]
