@@ -17,6 +17,12 @@ export interface Family {
   root: string
   /** regionSlug carried into drafts.json ("indonesia", or "international"). */
   regionSlug: string
+  /**
+   * Parse every subpage (up to two levels) instead of only recognised stage
+   * names: MCT splits keep national qualifiers (Japan, South Korea, Laos)
+   * under the split page, and those hold the only games some teams play.
+   */
+  includeAll?: boolean
 }
 
 export interface PageState {

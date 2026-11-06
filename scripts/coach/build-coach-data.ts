@@ -33,8 +33,9 @@ import { baseVersion, mergePatches, parseReleaseDate, type PatchRelease } from '
 
 const OUT_DIR = path.join(process.cwd(), 'data', 'coach')
 const STATE_FILE = path.join(OUT_DIR, 'state.json')
-const STAGE_WORDS = ['Regular Season', 'Playoffs', 'Group Stage', 'Knockout Stage', 'Swiss Stage', 'Wildcard', 'Wild Card', 'Play-In', 'Main Event', 'Grand Final', 'Week ']
-const SKIP_WORDS = ['Statistics', 'Additional Content', 'Qualification', 'Qualifier', 'Broadcast', 'Talent']
+const STAGE_WORDS = ['Regular Season', 'Playoffs', 'Group Stage', 'Knockout Stage', 'Swiss Stage', 'Wildcard', 'Wild Card', 'Play-In', 'Play-in', 'Main Event', 'Grand Final', 'Week ']
+const ALWAYS_SKIP = ['Statistics', 'Additional Content', 'Broadcast', 'Talent']
+const SKIP_UNLESS_ALL = ['Qualification', 'Qualifier']
 const FRESH_HOURS = 20
 
 const offline = process.argv.includes('--offline')
@@ -51,12 +52,13 @@ function families(): Family[] {
   }))
   // Leagues the website does not show live on regions.json but the coach still learns from.
   // `regionSlug` names the region for scouting labels; international events share one.
-  const extra: Family[] = (officialTournaments as Array<{ slug: string; kind: TournamentKind; label: string; root: string; regionSlug?: string }>).map((item) => ({
+  const extra: Family[] = (officialTournaments as Array<{ slug: string; kind: TournamentKind; label: string; root: string; regionSlug?: string; includeAll?: boolean }>).map((item) => ({
     slug: item.slug,
     kind: item.kind,
     label: item.label,
     root: slugOf(item.root),
     regionSlug: item.regionSlug ?? 'international',
+    includeAll: item.includeAll ?? false,
   }))
   return [...regional, ...extra]
 }
@@ -66,13 +68,16 @@ function readState(): CoachState {
   return JSON.parse(readFileSync(STATE_FILE, 'utf8')) as CoachState
 }
 
-function isStagePage(title: string, root: string): boolean {
+function isStagePage(title: string, root: string, includeAll: boolean): boolean {
   const normalized = slugOf(title)
   if (!normalized.startsWith(`${root}/`)) return false
-  const rest = normalized.slice(root.length + 1)
-  if (rest.includes('/')) return false
-  if (SKIP_WORDS.some((word) => titleOf(rest).includes(word))) return false
-  return STAGE_WORDS.some((word) => titleOf(rest).includes(word))
+  const rest = titleOf(normalized.slice(root.length + 1))
+  const depth = rest.split('/').length
+  if (ALWAYS_SKIP.some((word) => rest.includes(word))) return false
+  if (includeAll) return depth <= 2
+  if (depth > 1) return false
+  if (SKIP_UNLESS_ALL.some((word) => rest.includes(word))) return false
+  return STAGE_WORDS.some((word) => rest.includes(word))
 }
 
 /** Season roots: the configured page plus a newer numbered season when one exists. */
@@ -91,8 +96,8 @@ async function discoverPages(api: CoachLiquipedia, family: Family): Promise<stri
   const pages: string[] = []
   for (const root of await seasonRoots(api, family)) {
     pages.push(root)
-    const titles = await api.listPages(`${titleOf(root)}/`, 50)
-    for (const title of titles) if (isStagePage(title, root)) pages.push(slugOf(title))
+    const titles = await api.listPages(`${titleOf(root)}/`, 100)
+    for (const title of titles) if (isStagePage(title, root, family.includeAll ?? false)) pages.push(slugOf(title))
   }
   return [...new Set(pages)]
 }
