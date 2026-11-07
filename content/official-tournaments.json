@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "m8",
+    "kind": "international",
+    "label": "M8 World Championship",
+    "root": "M8_World_Championship"
+  },
+  {
+    "slug": "m7",
+    "kind": "international",
+    "label": "M7 World Championship",
+    "root": "M7_World_Championship"
+  },
+  {
+    "slug": "msc",
+    "kind": "international",
+    "label": "MSC 2026",
+    "root": "MSC/2026"
+  },
+  {
+    "slug": "games-of-the-future",
+    "kind": "international",
+    "label": "Games of the Future 2026",
+    "root": "Games_of_the_Future/2026"
+  },
+  {
+    "slug": "mct-east-asia-2",
+    "kind": "national",
+    "label": "MCT East Asia 2026 Split 2",
+    "root": "MCT/2026/East_Asia/Split_2",
+    "regionSlug": "east-asia",
+    "includeAll": true
+  },
+  {
+    "slug": "mct-east-asia-1",
+    "kind": "national",
+    "label": "MCT East Asia 2026 Split 1",
+    "root": "MCT/2026/East_Asia/Split_1",
+    "regionSlug": "east-asia",
+    "includeAll": true
+  },
+  {
+    "slug": "esn-mongolia",
+    "kind": "national",
+    "label": "ESN National Championship 2026",
+    "root": "ESN/National_Championship/2026/Season_1/Men",
+    "regionSlug": "mongolia",
+    "includeAll": true
+  },
+  {
+    "slug": "esn-league",
+    "kind": "national",
+    "label": "ESN National Championship League",
+    "root": "ESN/National_Championship_League/Season_1",
+    "regionSlug": "mongolia"
+  },
+  {
+    "slug": "mct-americas-2",
+    "kind": "national",
+    "label": "MCT Americas 2026 Split 2",
+    "root": "MCT/2026/Americas/Split_2",
+    "regionSlug": "americas",
+    "includeAll": true
+  },
+  {
+    "slug": "mct-americas-1",
+    "kind": "national",
+    "label": "MCT Americas 2026 Split 1",
+    "root": "MCT/2026/Americas/Split_1",
+    "regionSlug": "americas",
+    "includeAll": true
+  },
+  {
+    "slug": "mct-sea",
+    "kind": "national",
+    "label": "MCT Southeast Asia 2026",
+    "root": "MCT/2026/Southeast_Asia",
+    "regionSlug": "southeast-asia",
+    "includeAll": true
+  },
+  {
+    "slug": "brazil",
+    "kind": "mpl",
+    "label": "MPL Brazil",
+    "root": "MPL/Brazil/Season_5",
+    "regionSlug": "brazil"
+  },
+  {
+    "slug": "china",
+    "kind": "national",
+    "label": "MLBB China Masters",
+    "root": "MLBB_China_Masters/Season_3",
+    "regionSlug": "china"
+  },
+  {
+    "slug": "north-america",
+    "kind": "national",
+    "label": "NACT",
+    "root": "NACT/2025/Spring",
+    "regionSlug": "north-america"
+  }
+]
