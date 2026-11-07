@@ -5,7 +5,9 @@ import { fileURLToPath } from 'node:url'
 
 const here = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(here, '../..')
-const snapshot = (name) => JSON.parse(readFileSync(path.join(root, 'data/snapshots', `${name}.json`), 'utf8'))
+// COACH_DATA_DIR=data/coach generates fixtures from the daily job's output instead of the site snapshots.
+const dataDir = path.join(root, process.env.COACH_DATA_DIR ?? 'data/snapshots')
+const snapshot = (name) => JSON.parse(readFileSync(path.join(dataDir, `${name}.json`), 'utf8'))
 
 const context = vm.createContext({
   __COACH_DATA__: { patchMeta: snapshot('patch-meta'), heroCatalog: snapshot('hero-catalog') },
@@ -19,7 +21,9 @@ const call = (name, args) => {
 }
 
 call('load', { drafts: snapshot('drafts'), heroCatalog: snapshot('hero-catalog') })
-const buildModel = { windowDays: 30, patch: null, minPatchGames: 40, mapName: null }
+// With coach data the series carry patches, so exercise the patch scope the app uses.
+const currentPatch = process.env.COACH_DATA_DIR ? JSON.parse(readFileSync(path.join(dataDir, 'manifest.json'), 'utf8')).currentPatch : null
+const buildModel = { windowDays: 30, patch: currentPatch, minPatchGames: 40, mapName: null }
 call('buildModel', buildModel)
 const flow = call('flow', true)
 const empty = { allyPicks: [], enemyPicks: [], allyBans: [], enemyBans: [], allyPickLanes: [], enemyPickLanes: [] }
