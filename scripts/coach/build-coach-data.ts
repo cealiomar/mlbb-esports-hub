@@ -107,8 +107,14 @@ async function harvest(state: CoachState, list: Family[]): Promise<void> {
   let parses = 0
   const budgetLeft = () => parses < maxParses
 
-  // 1. Patch calendar: only pages never seen before cost a parse.
-  const patchTitles = await api.listPages('Patch 2.', 100)
+  // 1. Patch calendar: only pages never seen before cost a parse. A failed
+  // listing keeps yesterday's calendar rather than failing the whole run.
+  let patchTitles: string[] = []
+  try {
+    patchTitles = await api.listPages('Patch 2.', 100)
+  } catch (error) {
+    console.warn(`patch listing failed, keeping ${state.patches.length} known patches: ${error instanceof Error ? error.message : String(error)}`)
+  }
   const seen = new Set(state.patchPagesSeen)
   const found: PatchRelease[] = [...state.patches]
   for (const title of patchTitles) {

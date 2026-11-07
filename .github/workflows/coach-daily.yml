@@ -5,7 +5,10 @@ name: Coach data (daily)
 # (hourly, for the website) so the app's data cadence is its own.
 on:
   schedule:
-    - cron: '30 3 * * *'
+    # 04:45 UTC sits between the website's :37 and :57 ticker runs; the shared
+    # "pages" group below also queues this job behind the hourly full harvest
+    # instead of hitting Liquipedia from two runners at once.
+    - cron: '45 4 * * *'
   workflow_dispatch:
     inputs:
       full:
@@ -14,7 +17,7 @@ on:
         default: false
 
 concurrency:
-  group: coach-data
+  group: pages
   cancel-in-progress: false
 
 permissions:
