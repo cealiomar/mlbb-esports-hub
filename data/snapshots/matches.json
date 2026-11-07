@@ -1,11 +1,133 @@
 {
-  "harvestedAt": 1794014949,
+  "harvestedAt": 1794061888,
   "data": [
     {
-      "id": "1794016800-china-asean-esports-competition-2026-group-stage-cam-bru",
-      "startsAt": 1794016800,
+      "id": "1794047400-mpl-indonesia-season-18-playoffs-tlid-btr",
+      "startsAt": 1794047400,
+      "status": "live",
+      "bestOf": 7,
+      "opponents": [
+        {
+          "code": "TLID",
+          "name": "Team Liquid ID",
+          "pageSlug": "Team_Liquid_ID",
+          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
+          "score": 2,
+          "isWinner": false
+        },
+        {
+          "code": "BTR",
+          "name": "Bigetron by Vitality",
+          "pageSlug": "Bigetron_by_Vitality",
+          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
+          "score": 3,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Indonesia Season 18 - Playoffs",
+      "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
+      "regionSlug": "indonesia",
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Indonesia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Indonesia"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794056400-mtc-turkiye-championship-season-8-playoffs-aur-fut",
+      "startsAt": 1794056400,
+      "status": "live",
+      "bestOf": 7,
+      "opponents": [
+        {
+          "code": "AUR",
+          "name": "Aurora Gaming",
+          "pageSlug": "Aurora_Gaming",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "FUT",
+          "name": "FUT Esports",
+          "pageSlug": "FUT_Esports",
+          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Playoffs",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Turkiye",
+        "https://liquipedia.net/mobilelegends/Special:Stream/kick/MLBB_Esports_T%C3%BCrkiye"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794063600-betboom-rise-of-legends-season-11-group-stage-af-rkz",
+      "startsAt": 1794063600,
       "status": "upcoming",
-      "bestOf": 1,
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AF",
+          "name": "Aura Farmers",
+          "pageSlug": "",
+          "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "RKZ",
+          "name": "RAKUZAN",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group A",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794069000-betboom-rise-of-legends-season-11-group-stage-hg-omnx",
+      "startsAt": 1794069000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "HG",
+          "name": "HARD GRIND",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "OMNX",
+          "name": "Omnix",
+          "pageSlug": "",
+          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794103200-china-asean-esports-competition-2026-playoffs-cam-chn",
+      "startsAt": 1794103200,
+      "status": "upcoming",
+      "bestOf": 3,
       "opponents": [
         {
           "code": "CAM",
@@ -16,31 +138,31 @@
           "isWinner": false
         },
         {
-          "code": "BRU",
-          "name": "Brunei",
+          "code": "CHN",
+          "name": "Team China",
           "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Brunei_4_by_3-3ea539e6.png",
+          "logoUrl": "/teams/67px-Flag_of_China_4_by_3-9f6e7770.png",
           "score": null,
           "isWinner": false
         }
       ],
-      "tournamentName": "CAEC 2026 - Group A",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
+      "tournamentName": "CAEC 2026 - Playoffs",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
     {
-      "id": "1794018600-china-asean-esports-competition-2026-group-stage-mas-mya",
-      "startsAt": 1794018600,
+      "id": "1794114000-china-asean-esports-competition-2026-playoffs-idn-mya",
+      "startsAt": 1794114000,
       "status": "upcoming",
-      "bestOf": 1,
+      "bestOf": 3,
       "opponents": [
         {
-          "code": "MAS",
-          "name": "Team Malaysia",
-          "pageSlug": "Team_Malaysia",
-          "logoUrl": "/teams/67px-Flag_of_Malaysia_4_by_3-ee1c1457.png",
+          "code": "IDN",
+          "name": "Team Indonesia",
+          "pageSlug": "Team_Indonesia",
+          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
           "score": null,
           "isWinner": false
         },
@@ -53,413 +175,7 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "CAEC 2026 - Group A",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794020400-china-asean-esports-competition-2026-group-stage-chn-idn",
-      "startsAt": 1794020400,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "CHN",
-          "name": "Team China",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_China_4_by_3-9f6e7770.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "IDN",
-          "name": "Team Indonesia",
-          "pageSlug": "Team_Indonesia",
-          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026 - Group B",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794022200-china-asean-esports-competition-2026-group-stage-vie-chn",
-      "startsAt": 1794022200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "VIE",
-          "name": "Team Vietnam",
-          "pageSlug": "Team_Vietnam",
-          "logoUrl": "/teams/67px-Flag_of_Vietnam_4_by_3-3a1f70bc.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "CHN",
-          "name": "Team China",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_China_4_by_3-9f6e7770.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026 - Group B",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794027600-china-asean-esports-competition-2026-group-stage-tha-lao",
-      "startsAt": 1794027600,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "THA",
-          "name": "Team Thailand",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_Thailand_4_by_3-fa80fdb8.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "LAO",
-          "name": "Team Laos",
-          "pageSlug": "Team_Laos",
-          "logoUrl": "/teams/67px-Flag_of_Laos_4_by_3-3cd6fb21.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026 - Group B",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794029400-china-asean-esports-competition-2026-group-stage-lao-vie",
-      "startsAt": 1794029400,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "LAO",
-          "name": "Team Laos",
-          "pageSlug": "Team_Laos",
-          "logoUrl": "/teams/67px-Flag_of_Laos_4_by_3-3cd6fb21.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "VIE",
-          "name": "Team Vietnam",
-          "pageSlug": "Team_Vietnam",
-          "logoUrl": "/teams/67px-Flag_of_Vietnam_4_by_3-3a1f70bc.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026 - Group B",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794029400-mahar-invitational-cup-2026-season-3-group-stage-kmd-vd",
-      "startsAt": 1794029400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "KMD",
-          "name": "KMD College",
-          "pageSlug": "",
-          "logoUrl": "/teams/81px-Kmd_college_darkmode-02b002b8.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "VD",
-          "name": "Void Discipline",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group A",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794033000-china-asean-esports-competition-2026-playoffs-cam-tbd",
-      "startsAt": 1794033000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "CAM",
-          "name": "Team Cambodia",
-          "pageSlug": "Team_Cambodia",
-          "logoUrl": "/teams/67px-Flag_of_Cambodia_4_by_3-b3f52261.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794036600-mahar-invitational-cup-2026-season-3-group-stage-dg-te",
-      "startsAt": 1794036600,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DG",
-          "name": "Divine Gang",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TE",
-          "name": "Talkie Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Talkie_Eports_allmode-d9a8e55f.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group C",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794038400-china-asean-esports-competition-2026-playoffs-tbd-tbd",
-      "startsAt": 1794038400,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794043800-mahar-invitational-cup-2026-season-3-group-stage-fw-ag",
-      "startsAt": 1794043800,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FW",
-          "name": "Fantastic Warriors",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "AG",
-          "name": "Team Aogiri",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group D",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794047400-mpl-indonesia-season-18-playoffs-tlid-btr",
-      "startsAt": 1794047400,
-      "status": "upcoming",
-      "bestOf": 7,
-      "opponents": [
-        {
-          "code": "TLID",
-          "name": "Team Liquid ID",
-          "pageSlug": "Team_Liquid_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "BTR",
-          "name": "Bigetron by Vitality",
-          "pageSlug": "Bigetron_by_Vitality",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - Playoffs",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794051000-mahar-invitational-cup-2026-season-3-group-stage-aura-nme",
-      "startsAt": 1794051000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AURA",
-          "name": "Aura Generation",
-          "pageSlug": "",
-          "logoUrl": "/teams/60px-Aura_Generation_darkmode-5f735b71.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "NME",
-          "name": "Nemesis Family",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group B",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794056400-mtc-turkiye-championship-season-8-playoffs-aur-fut",
-      "startsAt": 1794056400,
-      "status": "upcoming",
-      "bestOf": 7,
-      "opponents": [
-        {
-          "code": "AUR",
-          "name": "Aurora Gaming",
-          "pageSlug": "Aurora_Gaming",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "FUT",
-          "name": "FUT Esports",
-          "pageSlug": "FUT_Esports",
-          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Playoffs",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794103200-china-asean-esports-competition-2026-playoffs-tbd-tbd",
-      "startsAt": 1794103200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794114000-china-asean-esports-competition-2026-playoffs-tbd-tbd",
-      "startsAt": 1794114000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026",
+      "tournamentName": "CAEC 2026 - Playoffs",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
@@ -1452,8 +1168,722 @@
       "vodUrls": []
     },
     {
-      "id": "1793980800-betboom-rise-of-legends-season-11-group-stage-nt-nmd",
-      "startsAt": 1793980800,
+      "id": "1797487200-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797487200,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group B",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797490800-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797490800,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group A",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797494400-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797494400,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group B",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797498000-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797498000,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group A",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797501600-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797501600,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group B",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797505200-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797505200,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group A",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797508800-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797508800,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group B",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797512400-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797512400,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group A",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797516000-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797516000,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group B",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797570000-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797570000,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group B",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794058200-betboom-rise-of-legends-season-11-group-stage-dp-arv",
+      "startsAt": 1794058200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DP",
+          "name": "Dark Phoenix",
+          "pageSlug": "Dark_Phoenix",
+          "logoUrl": "/teams/50px-Dark_Phoenix_2025_allmode-acbb8719.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "ARV",
+          "name": "Aurevia Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794052800-betboom-rise-of-legends-season-11-group-stage-bw-tst",
+      "startsAt": 1794052800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "BW",
+          "name": "Bushido Wildcats",
+          "pageSlug": "Bushido_Wildcats",
+          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "TST",
+          "name": "The Soulless Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/52px-The_Soulless_Team_allmode-70131a7e.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794051000-mahar-invitational-cup-2026-season-3-group-stage-aura-nme",
+      "startsAt": 1794051000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AURA",
+          "name": "Aura Generation",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Aura_Generation_darkmode-5f735b71.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "NME",
+          "name": "Nemesis Family",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Group B",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794043800-mahar-invitational-cup-2026-season-3-group-stage-fw-ag",
+      "startsAt": 1794043800,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "FW",
+          "name": "Fantastic Warriors",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "AG",
+          "name": "Team Aogiri",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Group D",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794038400-china-asean-esports-competition-2026-playoffs-chn-mya",
+      "startsAt": 1794038400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "CHN",
+          "name": "Team China",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_China_4_by_3-9f6e7770.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "MYA",
+          "name": "Team Myanmar",
+          "pageSlug": "Team_Myanmar",
+          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Playoffs",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": [
+        "https://youtu.be/2ZRZDEtnlEY?t=25016",
+        "https://youtu.be/2ZRZDEtnlEY?t=27394"
+      ]
+    },
+    {
+      "id": "1794036600-mahar-invitational-cup-2026-season-3-group-stage-dg-te",
+      "startsAt": 1794036600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DG",
+          "name": "Divine Gang",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "TE",
+          "name": "Talkie Esports",
+          "pageSlug": "",
+          "logoUrl": "/teams/100px-Talkie_Eports_allmode-d9a8e55f.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Group C",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794033000-china-asean-esports-competition-2026-playoffs-cam-idn",
+      "startsAt": 1794033000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "CAM",
+          "name": "Team Cambodia",
+          "pageSlug": "Team_Cambodia",
+          "logoUrl": "/teams/67px-Flag_of_Cambodia_4_by_3-b3f52261.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "IDN",
+          "name": "Team Indonesia",
+          "pageSlug": "Team_Indonesia",
+          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Playoffs",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": [
+        "https://youtu.be/2ZRZDEtnlEY?t=18471",
+        "https://youtu.be/2ZRZDEtnlEY?t=21574"
+      ]
+    },
+    {
+      "id": "1794029400-china-asean-esports-competition-2026-group-stage-lao-vie",
+      "startsAt": 1794029400,
+      "status": "completed",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "LAO",
+          "name": "Team Laos",
+          "pageSlug": "Team_Laos",
+          "logoUrl": "/teams/67px-Flag_of_Laos_4_by_3-3cd6fb21.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "VIE",
+          "name": "Team Vietnam",
+          "pageSlug": "Team_Vietnam",
+          "logoUrl": "/teams/67px-Flag_of_Vietnam_4_by_3-3a1f70bc.png",
+          "score": 1,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://youtu.be/2ZRZDEtnlEY?t=16337"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794029400-mahar-invitational-cup-2026-season-3-group-stage-kmd-vd",
+      "startsAt": 1794029400,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "KMD",
+          "name": "KMD College",
+          "pageSlug": "",
+          "logoUrl": "/teams/81px-Kmd_college_darkmode-02b002b8.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "VD",
+          "name": "Void Discipline",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Group A",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794027600-china-asean-esports-competition-2026-group-stage-tha-lao",
+      "startsAt": 1794027600,
+      "status": "completed",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "THA",
+          "name": "Team Thailand",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_Thailand_4_by_3-fa80fdb8.png",
+          "score": 1,
+          "isWinner": true
+        },
+        {
+          "code": "LAO",
+          "name": "Team Laos",
+          "pageSlug": "Team_Laos",
+          "logoUrl": "/teams/67px-Flag_of_Laos_4_by_3-3cd6fb21.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://youtu.be/2ZRZDEtnlEY?t=13616"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794022200-china-asean-esports-competition-2026-group-stage-vie-chn",
+      "startsAt": 1794022200,
+      "status": "completed",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "VIE",
+          "name": "Team Vietnam",
+          "pageSlug": "Team_Vietnam",
+          "logoUrl": "/teams/67px-Flag_of_Vietnam_4_by_3-3a1f70bc.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "CHN",
+          "name": "Team China",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_China_4_by_3-9f6e7770.png",
+          "score": 1,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://youtu.be/2ZRZDEtnlEY?t=9081"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794020400-china-asean-esports-competition-2026-group-stage-chn-idn",
+      "startsAt": 1794020400,
+      "status": "completed",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "CHN",
+          "name": "Team China",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_China_4_by_3-9f6e7770.png",
+          "score": 1,
+          "isWinner": true
+        },
+        {
+          "code": "IDN",
+          "name": "Team Indonesia",
+          "pageSlug": "Team_Indonesia",
+          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://youtu.be/2ZRZDEtnlEY?t=6528"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794018600-china-asean-esports-competition-2026-group-stage-mas-mya",
+      "startsAt": 1794018600,
+      "status": "completed",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "MAS",
+          "name": "Team Malaysia",
+          "pageSlug": "Team_Malaysia",
+          "logoUrl": "/teams/67px-Flag_of_Malaysia_4_by_3-ee1c1457.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "MYA",
+          "name": "Team Myanmar",
+          "pageSlug": "Team_Myanmar",
+          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
+          "score": 1,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Group Stage - Group A",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://youtu.be/2ZRZDEtnlEY?t=4124"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794016800-china-asean-esports-competition-2026-group-stage-cam-bru",
+      "startsAt": 1794016800,
+      "status": "completed",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "CAM",
+          "name": "Team Cambodia",
+          "pageSlug": "Team_Cambodia",
+          "logoUrl": "/teams/67px-Flag_of_Cambodia_4_by_3-b3f52261.png",
+          "score": 1,
+          "isWinner": true
+        },
+        {
+          "code": "BRU",
+          "name": "Brunei",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_Brunei_4_by_3-3ea539e6.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Group Stage - Group A",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://youtu.be/2ZRZDEtnlEY?t=1722"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1793982600-betboom-rise-of-legends-season-11-group-stage-nt-nmd",
+      "startsAt": 1793982600,
       "status": "completed",
       "bestOf": 3,
       "opponents": [
@@ -1565,7 +1995,13 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/DBSsEQuMVro",
+        "https://youtu.be/BecZSISuEjw",
+        "https://youtu.be/7yT6JHW7ouY",
+        "https://youtu.be/SVad0ErQeGI",
+        "https://youtu.be/xQBHB6sZSGw"
+      ]
     },
     {
       "id": "1793966400-betboom-rise-of-legends-season-11-group-stage-yndx-tw",
@@ -1677,10 +2113,12 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "CAEC 2026 - Group B",
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=25236"
+      ],
       "vodUrls": []
     },
     {
@@ -1739,7 +2177,13 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/byJ-SMIAPQU",
+        "https://youtu.be/zXyRyb7yq0o",
+        "https://youtu.be/KZeA498pO08",
+        "https://youtu.be/l8Z3-CUdY7Q",
+        "https://youtu.be/SfMDGEwHxsE"
+      ]
     },
     {
       "id": "1793948400-china-asean-esports-competition-2026-group-stage-lao-chn",
@@ -1764,10 +2208,12 @@
           "isWinner": true
         }
       ],
-      "tournamentName": "CAEC 2026 - Group B",
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=23190"
+      ],
       "vodUrls": []
     },
     {
@@ -1793,10 +2239,12 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "CAEC 2026 - Group B",
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=16667"
+      ],
       "vodUrls": []
     },
     {
@@ -1822,10 +2270,12 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "CAEC 2026 - Group B",
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=19189"
+      ],
       "vodUrls": []
     },
     {
@@ -1851,10 +2301,12 @@
           "isWinner": true
         }
       ],
-      "tournamentName": "CAEC 2026 - Group B",
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=14156"
+      ],
       "vodUrls": []
     },
     {
@@ -1880,10 +2332,12 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "CAEC 2026 - Group B",
+      "tournamentName": "CAEC 2026 - Group Stage - Group B",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=11659"
+      ],
       "vodUrls": []
     },
     {
@@ -1909,10 +2363,12 @@
           "isWinner": true
         }
       ],
-      "tournamentName": "CAEC 2026 - Group A",
+      "tournamentName": "CAEC 2026 - Group Stage - Group A",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=8834"
+      ],
       "vodUrls": []
     },
     {
@@ -1938,10 +2394,12 @@
           "isWinner": true
         }
       ],
-      "tournamentName": "CAEC 2026 - Group A",
+      "tournamentName": "CAEC 2026 - Group Stage - Group A",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=5981"
+      ],
       "vodUrls": []
     },
     {
@@ -1967,10 +2425,12 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "CAEC 2026 - Group A",
+      "tournamentName": "CAEC 2026 - Group Stage - Group A",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=2969"
+      ],
       "vodUrls": []
     },
     {
@@ -1996,10 +2456,12 @@
           "isWinner": false
         }
       ],
-      "tournamentName": "CAEC 2026 - Group A",
+      "tournamentName": "CAEC 2026 - Group Stage - Group A",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://youtu.be/i0mCj5R5qW4?t=433"
+      ],
       "vodUrls": []
     },
     {
@@ -2508,417 +2970,6 @@
       "tournamentName": "MIC Season 3 - Group A",
       "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
       "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793777400-mahar-invitational-cup-2026-season-3-group-stage-myth-ag",
-      "startsAt": 1793777400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "MYTH",
-          "name": "Mythic SEAL",
-          "pageSlug": "Mythic_SEAL",
-          "logoUrl": "/teams/50px-Mythic_Seal_allmode-c6d031ba.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "AG",
-          "name": "Team Aogiri",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group D",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793777400-mpl-indonesia-season-18-playoffs-ae-onic",
-      "startsAt": 1793777400,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "AE",
-          "name": "Alter Ego",
-          "pageSlug": "Alter_Ego",
-          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "ONIC",
-          "name": "ONIC",
-          "pageSlug": "ONIC",
-          "logoUrl": "/teams/74px-ONIC_Esports_2019_allmode-603f8d2f.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - Playoffs",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/0wKrqbSSuns",
-        "https://youtu.be/Uq_-ddYuokQ",
-        "https://youtu.be/Mn6P13wwOhM",
-        "https://youtu.be/hhNDtg5HHt0"
-      ]
-    },
-    {
-      "id": "1793770200-mahar-invitational-cup-2026-season-3-group-stage-nme-bl",
-      "startsAt": 1793770200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "NME",
-          "name": "Nemesis Family",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "BL",
-          "name": "BlueLock",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group B",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793723400-betboom-rise-of-legends-season-11-group-stage-omnx-nmd",
-      "startsAt": 1793723400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "OMNX",
-          "name": "Omnix",
-          "pageSlug": "",
-          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "NMD",
-          "name": "Never maind",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793718000-betboom-rise-of-legends-season-11-group-stage-tst-chm",
-      "startsAt": 1793718000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TST",
-          "name": "The Soulless Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-The_Soulless_Team_allmode-70131a7e.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "CHM",
-          "name": "Chempiki",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793712600-betboom-rise-of-legends-season-11-group-stage-arv-to",
-      "startsAt": 1793712600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "ARV",
-          "name": "Aurevia Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "TO",
-          "name": "Team Oblivion",
-          "pageSlug": "",
-          "logoUrl": "/teams/51px-Team_Oblivion__28Russian_team_29_mlbb_darkmode-0995b2ea.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793707200-betboom-rise-of-legends-season-11-group-stage-rkz-tw",
-      "startsAt": 1793707200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "RKZ",
-          "name": "RAKUZAN",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "TW",
-          "name": "The World",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-The_World_allmode-1441fe18.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group A",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793705400-mahar-invitational-cup-2026-season-3-group-stage-te-beon",
-      "startsAt": 1793705400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TE",
-          "name": "Talkie Esports",
-          "pageSlug": "",
-          "logoUrl": "/teams/100px-Talkie_Eports_allmode-d9a8e55f.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "BEON",
-          "name": "Beyond Pneuma",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Beyond_pneuma_darkmode-4c44fb3e.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group C",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793698200-mahar-invitational-cup-2026-season-3-group-stage-ag-vek",
-      "startsAt": 1793698200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AG",
-          "name": "Team Aogiri",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "VEK",
-          "name": "Vevevek",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group D",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793691000-mahar-invitational-cup-2026-season-3-group-stage-vd-hl",
-      "startsAt": 1793691000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "VD",
-          "name": "Void Discipline",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "HL",
-          "name": "The Hidden Leaf",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group A",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793683800-mahar-invitational-cup-2026-season-3-group-stage-tl-bl",
-      "startsAt": 1793683800,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "TL",
-          "name": "Team Labubu",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "BL",
-          "name": "BlueLock",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group B",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793637000-betboom-rise-of-legends-season-11-group-stage-nt-hg",
-      "startsAt": 1793637000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "NT",
-          "name": "Nice Try",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "HG",
-          "name": "HARD GRIND",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793631600-betboom-rise-of-legends-season-11-group-stage-ch-bw",
-      "startsAt": 1793631600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "CH",
-          "name": "CyberHero",
-          "pageSlug": "CyberHero",
-          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "BW",
-          "name": "Bushido Wildcats",
-          "pageSlug": "Bushido_Wildcats",
-          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793626200-betboom-rise-of-legends-season-11-group-stage-fut-dp",
-      "startsAt": 1793626200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FUT",
-          "name": "FUT Esports",
-          "pageSlug": "FUT_Esports",
-          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "DP",
-          "name": "Dark Phoenix",
-          "pageSlug": "Dark_Phoenix",
-          "logoUrl": "/teams/50px-Dark_Phoenix_2025_allmode-acbb8719.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     }
