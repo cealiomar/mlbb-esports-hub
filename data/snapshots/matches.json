@@ -1,38 +1,6 @@
 {
-  "harvestedAt": 1794092236,
+  "harvestedAt": 1794103831,
   "data": [
-    {
-      "id": "1794056400-mtc-turkiye-championship-season-8-playoffs-aur-fut",
-      "startsAt": 1794056400,
-      "status": "live",
-      "bestOf": 7,
-      "opponents": [
-        {
-          "code": "AUR",
-          "name": "Aurora Gaming",
-          "pageSlug": "Aurora_Gaming",
-          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
-          "score": 3,
-          "isWinner": false
-        },
-        {
-          "code": "FUT",
-          "name": "FUT Esports",
-          "pageSlug": "FUT_Esports",
-          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": 3,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MTC Season 8 - Playoffs",
-      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_Turkiye",
-        "https://liquipedia.net/mobilelegends/Special:Stream/kick/MLBB_Esports_T%C3%BCrkiye"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1794103200-china-asean-esports-competition-2026-playoffs-cam-chn",
       "startsAt": 1794103200,
@@ -59,7 +27,9 @@
       "tournamentName": "CAEC 2026 - Playoffs",
       "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EA_Esports"
+      ],
       "vodUrls": []
     },
     {
@@ -1455,6 +1425,35 @@
       "vodUrls": []
     },
     {
+      "id": "1797584400-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797584400,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group B",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1794069000-betboom-rise-of-legends-season-11-group-stage-hg-omnx",
       "startsAt": 1794069000,
       "status": "completed",
@@ -1538,6 +1537,35 @@
       "tournamentName": "BetBoom Rise of Legends S11 - Group B",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794056400-mtc-turkiye-championship-season-8-playoffs-aur-fut",
+      "startsAt": 1794056400,
+      "status": "completed",
+      "bestOf": 7,
+      "opponents": [
+        {
+          "code": "AUR",
+          "name": "Aurora Gaming",
+          "pageSlug": "Aurora_Gaming",
+          "logoUrl": "/teams/50px-Aurora_Gaming_2025_allmode-192e499e.png",
+          "score": 4,
+          "isWinner": true
+        },
+        {
+          "code": "FUT",
+          "name": "FUT Esports",
+          "pageSlug": "FUT_Esports",
+          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
+          "score": 3,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MTC Season 8 - Playoffs",
+      "tournamentPageSlug": "MTC_Turkiye_Championship/Season_8/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1626,7 +1654,15 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://youtu.be/exGcQ1kgjPw",
+        "https://youtu.be/SWLwQ7W-r0M",
+        "https://youtu.be/ysz2WDc7RGI",
+        "https://youtu.be/lmQceU6Dy6c",
+        "https://www.youtube.com/live/It7bA88tO40?t=15924",
+        "https://youtu.be/7_3XxVkFhts",
+        "https://youtu.be/ciIwPuxLIgc"
+      ]
     },
     {
       "id": "1794043800-mahar-invitational-cup-2026-season-3-group-stage-fw-ag",
@@ -2934,41 +2970,6 @@
       "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1793794500-mpl-indonesia-season-18-playoffs-btr-evos",
-      "startsAt": 1793794500,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "BTR",
-          "name": "Bigetron by Vitality",
-          "pageSlug": "Bigetron_by_Vitality",
-          "logoUrl": "/teams/56px-Bigetron_2020_allmode-bf6d1ca7.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "EVOS",
-          "name": "EVOS",
-          "pageSlug": "EVOS",
-          "logoUrl": "/teams/52px-EVOS_Esports_allmode-40442207.png",
-          "score": 2,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - Playoffs",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://youtu.be/vzZZ7w5JkIc",
-        "https://youtu.be/oprIR0xdJpE",
-        "https://youtu.be/Ix5ogMNCjwo",
-        "https://youtu.be/ldIfXcMsCqM",
-        "https://youtu.be/nbdNHZISXvw"
-      ]
     }
   ]
 }
