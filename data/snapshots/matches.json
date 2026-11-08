@@ -1,66 +1,6 @@
 {
-  "harvestedAt": 1794103831,
+  "harvestedAt": 1794130017,
   "data": [
-    {
-      "id": "1794103200-china-asean-esports-competition-2026-playoffs-cam-chn",
-      "startsAt": 1794103200,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "CAM",
-          "name": "Team Cambodia",
-          "pageSlug": "Team_Cambodia",
-          "logoUrl": "/teams/67px-Flag_of_Cambodia_4_by_3-b3f52261.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "CHN",
-          "name": "Team China",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Flag_of_China_4_by_3-9f6e7770.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026 - Playoffs",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_EA_Esports"
-      ],
-      "vodUrls": []
-    },
-    {
-      "id": "1794114000-china-asean-esports-competition-2026-playoffs-idn-mya",
-      "startsAt": 1794114000,
-      "status": "upcoming",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "IDN",
-          "name": "Team Indonesia",
-          "pageSlug": "Team_Indonesia",
-          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "MYA",
-          "name": "Team Myanmar",
-          "pageSlug": "Team_Myanmar",
-          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "CAEC 2026 - Playoffs",
-      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1794133800-mpl-indonesia-season-18-playoffs-navi-btr",
       "startsAt": 1794133800,
@@ -1452,6 +1392,128 @@
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
+    },
+    {
+      "id": "1797588000-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797588000,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group A",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797591600-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797591600,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group B",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794114000-china-asean-esports-competition-2026-playoffs-idn-mya",
+      "startsAt": 1794114000,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "IDN",
+          "name": "Team Indonesia",
+          "pageSlug": "Team_Indonesia",
+          "logoUrl": "/teams/67px-Flag_of_Indonesia_4_by_3-c2bcd10c.png",
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "MYA",
+          "name": "Team Myanmar",
+          "pageSlug": "Team_Myanmar",
+          "logoUrl": "/teams/67px-Flag_of_Myanmar_4_by_3-81578103.png",
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Playoffs",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": [
+        "https://youtu.be/pM6RmYezYBk?t=12756",
+        "https://youtu.be/pM6RmYezYBk?t=14587"
+      ]
+    },
+    {
+      "id": "1794103200-china-asean-esports-competition-2026-playoffs-cam-chn",
+      "startsAt": 1794103200,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "CAM",
+          "name": "Team Cambodia",
+          "pageSlug": "Team_Cambodia",
+          "logoUrl": "/teams/67px-Flag_of_Cambodia_4_by_3-b3f52261.png",
+          "score": 2,
+          "isWinner": true
+        },
+        {
+          "code": "CHN",
+          "name": "Team China",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Flag_of_China_4_by_3-9f6e7770.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "CAEC 2026 - Playoffs",
+      "tournamentPageSlug": "China-ASEAN_Esports_Competition/2026/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": [
+        "https://youtu.be/pM6RmYezYBk?t=2626",
+        "https://youtu.be/pM6RmYezYBk?t=4572"
+      ]
     },
     {
       "id": "1794069000-betboom-rise-of-legends-season-11-group-stage-hg-omnx",
@@ -2908,64 +2970,6 @@
         }
       ],
       "tournamentName": "BetBoom Rise of Legends S11 - Group D",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793804400-betboom-rise-of-legends-season-11-group-stage-ch-tst",
-      "startsAt": 1793804400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "CH",
-          "name": "CyberHero",
-          "pageSlug": "CyberHero",
-          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "TST",
-          "name": "The Soulless Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/52px-The_Soulless_Team_allmode-70131a7e.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793799000-betboom-rise-of-legends-season-11-group-stage-fut-arv",
-      "startsAt": 1793799000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FUT",
-          "name": "FUT Esports",
-          "pageSlug": "FUT_Esports",
-          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "ARV",
-          "name": "Aurevia Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
