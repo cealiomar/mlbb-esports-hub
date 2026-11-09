@@ -1,32 +1,93 @@
 {
-  "harvestedAt": 1794183704,
+  "harvestedAt": 1794207992,
   "data": [
     {
-      "id": "1794155400-betboom-rise-of-legends-season-11-group-stage-hg-nt",
-      "startsAt": 1794155400,
+      "id": "1794209400-mahar-invitational-cup-2026-season-3-playoffs-wyv-df",
+      "startsAt": 1794209400,
       "status": "upcoming",
       "bestOf": 3,
       "opponents": [
         {
-          "code": "HG",
-          "name": "HARD GRIND",
+          "code": "WYV",
+          "name": "Wyverns Esports",
+          "pageSlug": "Wyverns_Esports",
+          "logoUrl": "/teams/45px-Wyverns_Esports_darkmode-09c29f03.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "DF",
+          "name": "D Family",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Playoffs",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/Mahar_Esports_Official",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/Mahar_Esports_Official"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794216600-mahar-invitational-cup-2026-season-3-playoffs-aura-fw",
+      "startsAt": 1794216600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "AURA",
+          "name": "Aura Generation",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Aura_Generation_darkmode-5f735b71.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "FW",
+          "name": "Fantastic Warriors",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Playoffs",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794223800-mahar-invitational-cup-2026-season-3-playoffs-hl-dg",
+      "startsAt": 1794223800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "HL",
+          "name": "The Hidden Leaf",
           "pageSlug": "",
           "logoUrl": null,
           "score": null,
           "isWinner": false
         },
         {
-          "code": "NT",
-          "name": "Nice Try",
+          "code": "DG",
+          "name": "Divine Gang",
           "pageSlug": "",
           "logoUrl": null,
           "score": null,
           "isWinner": false
         }
       ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
+      "tournamentName": "MIC Season 3 - Playoffs",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1394,60 +1455,60 @@
       "vodUrls": []
     },
     {
-      "id": "1797508800-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797508800,
-      "status": "upcoming",
-      "bestOf": 1,
+      "id": "1794202200-mahar-invitational-cup-2026-season-3-playoffs-bl-myth",
+      "startsAt": 1794202200,
+      "status": "completed",
+      "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "BL",
+          "name": "BlueLock",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
+          "code": "MYTH",
+          "name": "Mythic SEAL",
+          "pageSlug": "Mythic_SEAL",
+          "logoUrl": "/teams/50px-Mythic_Seal_allmode-c6d031ba.png",
+          "score": 2,
+          "isWinner": true
         }
       ],
-      "tournamentName": "M8 World Championship - Wildcard Group B",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "tournamentName": "MIC Season 3 - Playoffs",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
     {
-      "id": "1797512400-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797512400,
-      "status": "upcoming",
-      "bestOf": 1,
+      "id": "1794155400-betboom-rise-of-legends-season-11-group-stage-hg-nt",
+      "startsAt": 1794155400,
+      "status": "completed",
+      "bestOf": 3,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "HG",
+          "name": "HARD GRIND",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "NT",
+          "name": "Nice Try",
           "pageSlug": "",
           "logoUrl": null,
-          "score": null,
-          "isWinner": false
+          "score": 2,
+          "isWinner": true
         }
       ],
-      "tournamentName": "M8 World Championship - Wildcard Group A",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
+      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1565,7 +1626,15 @@
       "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
       "regionSlug": "indonesia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/watch?v=crq0r1vEtPg",
+        "https://www.youtube.com/watch?v=_GFphMZpiWM",
+        "https://www.youtube.com/watch?v=5JR4F-70TKE",
+        "https://www.youtube.com/watch?v=kgO4jSwXZMM",
+        "https://www.youtube.com/watch?v=uQi-R8FHwUQ",
+        "https://www.youtube.com/watch?v=OEmSJby8SEA",
+        "https://www.youtube.com/watch?v=q08dpTaaAVs"
+      ]
     },
     {
       "id": "1794114000-china-asean-esports-competition-2026-playoffs-idn-mya",
@@ -1833,13 +1902,13 @@
       "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": [
-        "https://youtu.be/exGcQ1kgjPw",
-        "https://youtu.be/SWLwQ7W-r0M",
-        "https://youtu.be/ysz2WDc7RGI",
-        "https://youtu.be/lmQceU6Dy6c",
-        "https://www.youtube.com/live/It7bA88tO40?t=15924",
-        "https://youtu.be/7_3XxVkFhts",
-        "https://youtu.be/ciIwPuxLIgc"
+        "https://www.youtube.com/watch?v=exGcQ1kgjPw",
+        "https://www.youtube.com/watch?v=SWLwQ7W-r0M",
+        "https://www.youtube.com/watch?v=ysz2WDc7RGI",
+        "https://www.youtube.com/watch?v=lmQceU6Dy6c",
+        "https://www.youtube.com/watch?v=tPk65bj1hbM",
+        "https://www.youtube.com/watch?v=7_3XxVkFhts",
+        "https://www.youtube.com/watch?v=ciIwPuxLIgc"
       ]
     },
     {
@@ -2294,11 +2363,11 @@
       "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": [
-        "https://youtu.be/DBSsEQuMVro",
-        "https://youtu.be/BecZSISuEjw",
-        "https://youtu.be/7yT6JHW7ouY",
-        "https://youtu.be/SVad0ErQeGI",
-        "https://youtu.be/xQBHB6sZSGw"
+        "https://www.youtube.com/watch?v=DBSsEQuMVro",
+        "https://www.youtube.com/watch?v=BecZSISuEjw",
+        "https://www.youtube.com/watch?v=7yT6JHW7ouY",
+        "https://www.youtube.com/watch?v=SVad0ErQeGI",
+        "https://www.youtube.com/watch?v=xQBHB6sZSGw"
       ]
     },
     {
@@ -2476,11 +2545,11 @@
       "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": [
-        "https://youtu.be/byJ-SMIAPQU",
-        "https://youtu.be/zXyRyb7yq0o",
-        "https://youtu.be/KZeA498pO08",
-        "https://youtu.be/l8Z3-CUdY7Q",
-        "https://youtu.be/SfMDGEwHxsE"
+        "https://www.youtube.com/watch?v=byJ-SMIAPQU",
+        "https://www.youtube.com/watch?v=zXyRyb7yq0o",
+        "https://www.youtube.com/watch?v=KZeA498pO08",
+        "https://www.youtube.com/watch?v=l8Z3-CUdY7Q",
+        "https://www.youtube.com/watch?v=SfMDGEwHxsE"
       ]
     },
     {
@@ -2877,10 +2946,10 @@
       "regionSlug": "indonesia",
       "streamUrls": [],
       "vodUrls": [
-        "https://youtu.be/4ahAkF7nJi8",
-        "https://youtu.be/c4cO1mRy8IM",
-        "https://youtu.be/tR3onebTYyU",
-        "https://youtu.be/tjQM6Lnt65U"
+        "https://www.youtube.com/watch?v=4ahAkF7nJi8",
+        "https://www.youtube.com/watch?v=c4cO1mRy8IM",
+        "https://www.youtube.com/watch?v=tR3onebTYyU",
+        "https://www.youtube.com/watch?v=tjQM6Lnt65U"
       ]
     },
     {
@@ -2911,69 +2980,6 @@
       "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1793878200-mahar-invitational-cup-2026-season-3-group-stage-fw-vek",
-      "startsAt": 1793878200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "FW",
-          "name": "Fantastic Warriors",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-FW_allmode-a5755a60.png",
-          "score": 2,
-          "isWinner": true
-        },
-        {
-          "code": "VEK",
-          "name": "Vevevek",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Group D",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1793863800-mpl-indonesia-season-18-playoffs-navi-ae",
-      "startsAt": 1793863800,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "NAVI",
-          "name": "Natus Vincere",
-          "pageSlug": "Natus_Vincere",
-          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "AE",
-          "name": "Alter Ego",
-          "pageSlug": "Alter_Ego",
-          "logoUrl": "/teams/51px-Alter_Ego_2022_allmode-a3715a21.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - Playoffs",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=m2ArfPQQa9Q",
-        "https://www.youtube.com/watch?v=VRJFTEqxI38",
-        "https://www.youtube.com/watch?v=dbGzoMCjZnc",
-        "https://www.youtube.com/watch?v=4iiJwBSDXF0"
-      ]
     }
   ]
 }
