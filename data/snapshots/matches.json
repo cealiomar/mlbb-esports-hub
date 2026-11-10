@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1794272414,
+  "harvestedAt": 1794300559,
   "data": [
     {
       "id": "1794241800-betboom-rise-of-legends-season-11-group-stage-tw-rkz",
@@ -28,6 +28,70 @@
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794295800-mahar-invitational-cup-2026-season-3-playoffs-bl-aura",
+      "startsAt": 1794295800,
+      "status": "live",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "BL",
+          "name": "BlueLock",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "AURA",
+          "name": "Aura Generation",
+          "pageSlug": "",
+          "logoUrl": "/teams/60px-Aura_Generation_darkmode-5f735b71.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Playoffs",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/Mahar_Esports_Official",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/Mahar_Esports_Official"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794306600-mahar-invitational-cup-2026-season-3-playoffs-df-hl",
+      "startsAt": 1794306600,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "DF",
+          "name": "D Family",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "HL",
+          "name": "The Hidden Leaf",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Playoffs",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/Mahar_Esports_Official",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/Mahar_Esports_Official"
+      ],
       "vodUrls": []
     },
     {
@@ -147,6 +211,93 @@
       "vodUrls": []
     },
     {
+      "id": "1794382200-gg-gaming-festival-2026-men-playoffs-myth-vd",
+      "startsAt": 1794382200,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "MYTH",
+          "name": "Mythic SEAL",
+          "pageSlug": "Mythic_SEAL",
+          "logoUrl": "/teams/50px-Mythic_Seal_allmode-c6d031ba.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "VD",
+          "name": "Void Discipline",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "GG Fest 2026 Men - Bracket A",
+      "tournamentPageSlug": "GG_Gaming_Festival/2026/Men/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794387600-gg-gaming-festival-2026-men-playoffs-df-yd",
+      "startsAt": 1794387600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "DF",
+          "name": "D Family",
+          "pageSlug": "",
+          "logoUrl": "/teams/50px-Dfamily_allmode-2cdf1e14.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "YD",
+          "name": "Team Yandex (Burmese team)",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "GG Fest 2026 Men - Bracket A",
+      "tournamentPageSlug": "GG_Gaming_Festival/2026/Men/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794393000-gg-gaming-festival-2026-men-playoffs-tbd-tbd",
+      "startsAt": 1794393000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "GG Fest 2026 Men - Bracket A",
+      "tournamentPageSlug": "GG_Gaming_Festival/2026/Men/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1794463200-mpl-cambodia-season-11-playoffs-pro-tnr",
       "startsAt": 1794463200,
       "status": "upcoming",
@@ -172,6 +323,64 @@
       "tournamentName": "MPL Cambodia Season 11 - Playoffs",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Playoffs",
       "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794468600-gg-gaming-festival-2026-men-playoffs-tbd-tbd",
+      "startsAt": 1794468600,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "GG Fest 2026 Men - Bracket B",
+      "tournamentPageSlug": "GG_Gaming_Festival/2026/Men/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794474000-gg-gaming-festival-2026-men-playoffs-tbd-tbd",
+      "startsAt": 1794474000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "GG Fest 2026 Men - Bracket B",
+      "tournamentPageSlug": "GG_Gaming_Festival/2026/Men/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -230,6 +439,64 @@
       "tournamentName": "MPL Cambodia Season 11 - Playoffs",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Playoffs",
       "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794555000-gg-gaming-festival-2026-men-playoffs-yg-tbd",
+      "startsAt": 1794555000,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "YG",
+          "name": "Yangon Galacticos",
+          "pageSlug": "Yangon_Galacticos",
+          "logoUrl": "/teams/55px-Yangon_Galacticos_2021_allmode-fe9968df.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "GG Fest 2026 Men - Bracket A",
+      "tournamentPageSlug": "GG_Gaming_Festival/2026/Men/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794562200-gg-gaming-festival-2026-men-playoffs-tbd-tbd",
+      "startsAt": 1794562200,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "GG Fest 2026 Men - Bracket B",
+      "tournamentPageSlug": "GG_Gaming_Festival/2026/Men/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1164,267 +1431,6 @@
     {
       "id": "1797494400-m8-world-championship-wildcard-tbd-tbd",
       "startsAt": 1797494400,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group B",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797498000-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797498000,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group A",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797501600-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797501600,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group B",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797505200-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797505200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group A",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797508800-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797508800,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group B",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797512400-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797512400,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group A",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797516000-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797516000,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group B",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797570000-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797570000,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group B",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797573600-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797573600,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "M8 World Championship - Wildcard Group A",
-      "tournamentPageSlug": "M8_World_Championship/Wildcard",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1797577200-m8-world-championship-wildcard-tbd-tbd",
-      "startsAt": 1797577200,
       "status": "upcoming",
       "bestOf": 1,
       "opponents": [
