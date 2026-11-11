@@ -1,35 +1,6 @@
 {
-  "harvestedAt": 1794418550,
+  "harvestedAt": 1794440543,
   "data": [
-    {
-      "id": "1794414600-betboom-rise-of-legends-season-11-group-stage-nmd-hg",
-      "startsAt": 1794414600,
-      "status": "live",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "NMD",
-          "name": "Never maind",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "HG",
-          "name": "HARD GRIND",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1794463200-mpl-cambodia-season-11-playoffs-pro-tnr",
       "startsAt": 1794463200,
@@ -1448,6 +1419,64 @@
       "tournamentName": "M8 World Championship - Wildcard Group A",
       "tournamentPageSlug": "M8_World_Championship/Wildcard",
       "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1797584400-m8-world-championship-wildcard-tbd-tbd",
+      "startsAt": 1797584400,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Wildcard Group B",
+      "tournamentPageSlug": "M8_World_Championship/Wildcard",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794414600-betboom-rise-of-legends-season-11-group-stage-nmd-hg",
+      "startsAt": 1794414600,
+      "status": "completed",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "NMD",
+          "name": "Never maind",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 0,
+          "isWinner": false
+        },
+        {
+          "code": "HG",
+          "name": "HARD GRIND",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 2,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
+      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     },
@@ -2918,41 +2947,6 @@
       "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
-    },
-    {
-      "id": "1793970000-mpl-indonesia-season-18-playoffs-navi-tlid",
-      "startsAt": 1793970000,
-      "status": "completed",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "NAVI",
-          "name": "Natus Vincere",
-          "pageSlug": "Natus_Vincere",
-          "logoUrl": "/teams/57px-Natus_Vincere_2021_allmode-e35f6f92.png",
-          "score": 3,
-          "isWinner": true
-        },
-        {
-          "code": "TLID",
-          "name": "Team Liquid ID",
-          "pageSlug": "Team_Liquid_ID",
-          "logoUrl": "/teams/44px-Team_Liquid_2024_darkmode-6cf5f613.png",
-          "score": 2,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Indonesia Season 18 - Playoffs",
-      "tournamentPageSlug": "MPL/Indonesia/Season_18/Playoffs",
-      "regionSlug": "indonesia",
-      "streamUrls": [],
-      "vodUrls": [
-        "https://www.youtube.com/watch?v=DBSsEQuMVro",
-        "https://www.youtube.com/watch?v=BecZSISuEjw",
-        "https://www.youtube.com/watch?v=7yT6JHW7ouY",
-        "https://www.youtube.com/watch?v=SVad0ErQeGI",
-        "https://www.youtube.com/watch?v=xQBHB6sZSGw"
-      ]
     }
   ]
 }
