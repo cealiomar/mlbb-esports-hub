@@ -14,6 +14,7 @@ export function Nav({ locale }: { locale: string }) {
     { href: `/${locale}/#standings`, label: t('standings'), icon: 'standings' },
     { href: `/${locale}/drafts`, label: t('drafts'), icon: 'drafts' },
     { href: `/${locale}/draft-coach`, label: t('coach'), icon: 'coach' },
+    { href: `/${locale}/academy`, label: t('academy'), icon: 'academy' },
   ]
 
   return (

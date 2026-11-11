@@ -56,6 +56,11 @@ jobs:
         continue-on-error: true
         run: npm run harvest:meta
 
+      - name: Refresh player portraits independently
+        if: github.event.schedule != '37,57 * * * *' && inputs.mode != 'matches'
+        continue-on-error: true
+        run: npm run harvest:players
+
       - name: Validate before publishing
         run: npm test -- lib/data lib/matches lib/drafts
 
@@ -77,7 +82,7 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           # New team crests are downloaded during harvest and must ship with
           # the snapshot. Omitting public/teams makes them break after deploy.
-          git add data/snapshots/matches.json data/snapshots/standings.json data/snapshots/teams.json data/snapshots/drafts.json data/snapshots/patch-meta.json public/teams public/heroes
+          git add data/snapshots/matches.json data/snapshots/standings.json data/snapshots/teams.json data/snapshots/drafts.json data/snapshots/patch-meta.json data/snapshots/player-photos.json public/teams public/heroes public/players
           if git diff --staged --quiet; then
             echo "no data change"
           else

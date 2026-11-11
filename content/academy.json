@@ -1,0 +1,302 @@
+{
+  "tracks": [
+    {
+      "id": "foundations",
+      "title": { "en": "Foundations", "ar": "الأساسيات" },
+      "summary": {
+        "en": "Lanes, gold and the map. Everything a new player needs before the first ranked game.",
+        "ar": "المسارات والذهب والخريطة. كل ما يحتاجه اللاعب الجديد قبل أول مباراة مصنّفة."
+      }
+    },
+    {
+      "id": "teamplay",
+      "title": { "en": "Team play", "ar": "اللعب الجماعي" },
+      "summary": {
+        "en": "Rotations, objectives and fights. How five players move as one.",
+        "ar": "التحركات والأهداف والاشتباكات. كيف يتحرك خمسة لاعبين كفريق واحد."
+      }
+    },
+    {
+      "id": "competitive",
+      "title": { "en": "Competitive", "ar": "الاحتراف" },
+      "summary": {
+        "en": "Drafting, tempo and review. The habits that separate a scrim team from a ranked stack.",
+        "ar": "الدرافت والإيقاع والمراجعة. العادات التي تفرّق بين فريق تدريبات وفريق تصنيف."
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "five-lanes",
+      "track": "foundations",
+      "role": "all",
+      "minutes": 4,
+      "title": { "en": "The five roles and what each one owes the team", "ar": "الأدوار الخمسة وما يقدّمه كل دور للفريق" },
+      "summary": {
+        "en": "Every role has one job nobody else can do. Know yours before you pick a hero.",
+        "ar": "لكل دور مهمة لا يقوم بها غيره. اعرف مهمتك قبل أن تختار البطل."
+      },
+      "points": {
+        "en": [
+          "Gold lane carries the late game: farm safely, stay alive, and arrive at fights with items.",
+          "EXP lane holds the side lane alone and becomes the front line or the flanker in fights.",
+          "Mid lane clears the wave fast, then moves first to help whichever side is fighting.",
+          "Jungle owns Retribution: the buffs, the Turtle and the Lord are your responsibility.",
+          "Roam gives up gold on purpose to provide vision, protection and the first engage."
+        ],
+        "ar": [
+          "مسار الذهب يحمل نهاية المباراة: اجمع بأمان، ابقَ حيًّا، وادخل الاشتباك بعتادك كاملًا.",
+          "مسار الخبرة يصمد وحده في الجانب، ثم يصبح خط المواجهة أو المهاجم من الخلف في الاشتباكات.",
+          "المسار الأوسط ينظّف الموجة بسرعة، ثم يتحرك أولًا لدعم الجهة التي يدور فيها القتال.",
+          "الغابة تملك العقاب (Retribution): البفات والسلحفاة واللورد مسؤوليتك.",
+          "الروم يتنازل عن الذهب عمدًا ليقدّم الرؤية والحماية وبداية الاشتباك."
+        ]
+      }
+    },
+    {
+      "slug": "gold-and-farming",
+      "track": "foundations",
+      "role": "gold",
+      "minutes": 5,
+      "title": { "en": "Gold wins games: farming without dying", "ar": "الذهب يحسم المباراة: الجمع من دون أن تموت" },
+      "summary": {
+        "en": "Kills are loud, gold is what actually decides the game. Learn to stay ahead quietly.",
+        "ar": "القتلات تلفت النظر، لكن الذهب هو ما يحسم المباراة فعلًا. تعلّم أن تتقدم بهدوء."
+      },
+      "points": {
+        "en": [
+          "Last-hit every minion you can; a missed wave costs more than a missed kill.",
+          "Never be on the map with nothing to farm: after a wave, take a jungle camp or move to the next wave.",
+          "A death hands the enemy gold and costs you every wave that arrives while you respawn.",
+          "Track the gold difference on the scoreboard, not the kill count.",
+          "Buy your core items in order before adapting; finished items beat half-built ones."
+        ],
+        "ar": [
+          "اضرب الضربة الأخيرة على كل جندي تستطيعه؛ موجة ضائعة تكلّفك أكثر من قتلة ضائعة.",
+          "لا تقف على الخريطة بلا شيء تجمعه: بعد الموجة خذ معسكر غابة أو انتقل إلى الموجة التالية.",
+          "موتك يعطي الخصم ذهبًا ويحرمك من كل موجة تصل أثناء عودتك.",
+          "راقب فارق الذهب في لوحة النتائج، لا عدد القتلات.",
+          "أكمل عتادك الأساسي بالترتيب قبل أن تعدّل؛ القطعة المكتملة أقوى من قطعتين ناقصتين."
+        ]
+      }
+    },
+    {
+      "slug": "reading-the-minimap",
+      "track": "foundations",
+      "role": "all",
+      "minutes": 4,
+      "title": { "en": "Reading the minimap", "ar": "قراءة الخريطة المصغّرة" },
+      "summary": {
+        "en": "Most deaths are announced on the minimap a few seconds early. Build the habit of looking.",
+        "ar": "أغلب الموتات تظهر على الخريطة المصغّرة قبل وقوعها بثوانٍ. اجعل النظر إليها عادة."
+      },
+      "points": {
+        "en": [
+          "Glance at the minimap after every last hit and every skill cast.",
+          "Count the enemies you can see. If three are missing, assume they are coming for you.",
+          "A missing enemy jungler near an objective timer means they are already there.",
+          "Do not push past the river without knowing where the enemy roamer and jungler are.",
+          "Ping what you see. Information only helps when the whole team has it."
+        ],
+        "ar": [
+          "انظر إلى الخريطة المصغّرة بعد كل ضربة أخيرة وكل مهارة تستخدمها.",
+          "عُدّ الخصوم الظاهرين. إن غاب ثلاثة فافترض أنهم قادمون إليك.",
+          "غياب غابة الخصم قرب موعد هدف يعني أنه هناك بالفعل.",
+          "لا تتقدم بعد النهر من دون أن تعرف مكان روم وغابة الخصم.",
+          "أرسل إشارة بما تراه. المعلومة لا تنفع إلا حين يعرفها الفريق كله."
+        ]
+      }
+    },
+    {
+      "slug": "jungle-pathing",
+      "track": "teamplay",
+      "role": "jungle",
+      "minutes": 6,
+      "title": { "en": "Jungle pathing and Retribution control", "ar": "مسار الغابة والتحكم في العقاب" },
+      "summary": {
+        "en": "The jungler sets the pace of the whole team. A planned route is worth more than fast hands.",
+        "ar": "لاعب الغابة يحدد إيقاع الفريق كله. المسار المخطَّط أهم من سرعة اليد."
+      },
+      "points": {
+        "en": [
+          "Decide your first clear before the game loads, based on which lane you want to help first.",
+          "Finish your clear on the side of the next objective so you arrive with full resources.",
+          "Keep Retribution for the objective. Using it on a camp just before a Turtle fight loses the Turtle.",
+          "Gank the lane that has crowd control or a pushed enemy; skip the lane that cannot follow up.",
+          "If you fall behind, trade: give the objective you cannot contest and take camps or a tower elsewhere."
+        ],
+        "ar": [
+          "حدّد مسارك الأول قبل بدء المباراة بحسب المسار الذي تريد مساعدته أولًا.",
+          "أنهِ جولتك في جهة الهدف القادم لتصل إليه بكامل مواردك.",
+          "احتفظ بالعقاب للهدف. استخدامه على معسكر قبل قتال السلحفاة يعني خسارة السلحفاة.",
+          "اهجم على المسار الذي يملك تحكمًا أو خصمًا متقدمًا، واترك المسار الذي لا يستطيع المتابعة.",
+          "إن تأخرت فبادل: اترك الهدف الذي لا تقدر عليه وخذ معسكرات أو برجًا في مكان آخر."
+        ]
+      }
+    },
+    {
+      "slug": "rotations",
+      "track": "teamplay",
+      "role": "mid",
+      "minutes": 5,
+      "title": { "en": "Rotations: clear, move, arrive first", "ar": "التحركات: نظّف، تحرّك، وصِل أولًا" },
+      "summary": {
+        "en": "A rotation is only good if your wave is handled first. Learn the order that keeps you ahead.",
+        "ar": "التحرك لا يكون صحيحًا إلا إذا أنهيت موجتك أولًا. تعلّم الترتيب الذي يبقيك متقدمًا."
+      },
+      "points": {
+        "en": [
+          "Clear the wave, then move. Leaving a wave under your tower pays the enemy for your rotation.",
+          "Mid and roam move together; two arriving at once win the fight that one would only join.",
+          "Rotate toward the objective that is about to spawn, not toward the last fight.",
+          "If you cannot arrive in time, do not go. Push your lane and take something in return.",
+          "After a successful rotation, convert it: take the tower, the Turtle or the enemy jungle."
+        ],
+        "ar": [
+          "نظّف الموجة ثم تحرّك. ترك الموجة تحت برجك يعني أنك دفعت للخصم ثمن تحركك.",
+          "الوسط والروم يتحركان معًا؛ وصول اثنين في لحظة واحدة يحسم قتالًا كان الواحد سيلحق به فقط.",
+          "تحرّك نحو الهدف الذي سيظهر، لا نحو القتال الذي انتهى.",
+          "إن لم تستطع الوصول في الوقت فلا تذهب. ادفع مسارك وخذ شيئًا في المقابل.",
+          "بعد تحرك ناجح حوّله إلى مكسب: برج أو سلحفاة أو غابة الخصم."
+        ]
+      }
+    },
+    {
+      "slug": "objectives",
+      "track": "teamplay",
+      "role": "all",
+      "minutes": 5,
+      "title": { "en": "Turtle, Lord and towers: what to take and when", "ar": "السلحفاة واللورد والأبراج: ماذا تأخذ ومتى" },
+      "summary": {
+        "en": "Fights are a means. The game is won by objectives, and each one has a right moment.",
+        "ar": "القتال وسيلة. المباراة تُحسم بالأهداف، ولكل هدف لحظته المناسبة."
+      },
+      "points": {
+        "en": [
+          "Set up before the objective spawns: push the nearby lanes, then take position first.",
+          "A numbers advantage is a timer. Spend it on an objective before the enemy respawns.",
+          "The Lord is strongest when your side lanes are already pushed, so the enemy has to split.",
+          "Outer towers open the enemy jungle; take them to make every later objective safer.",
+          "Losing a fight near your own objective is worse than giving it up cleanly."
+        ],
+        "ar": [
+          "جهّز قبل ظهور الهدف: ادفع المسارات القريبة ثم خذ موقعك أولًا.",
+          "التفوق العددي له وقت محدود. استثمره في هدف قبل أن يعود الخصم.",
+          "اللورد يكون أقوى حين تكون مساراتك الجانبية مدفوعة، فيضطر الخصم إلى الانقسام.",
+          "الأبراج الخارجية تفتح غابة الخصم؛ خذها لتجعل كل هدف لاحق أكثر أمانًا.",
+          "خسارة قتال قرب هدفك أسوأ من تركه بلا خسائر."
+        ]
+      }
+    },
+    {
+      "slug": "vision-and-roaming",
+      "track": "teamplay",
+      "role": "roam",
+      "minutes": 5,
+      "title": { "en": "Roaming: vision, protection and the first engage", "ar": "الروم: الرؤية والحماية وبداية الاشتباك" },
+      "summary": {
+        "en": "A roamer is judged by what the team knows and who stays alive, not by the scoreboard.",
+        "ar": "يُقاس الروم بما يعرفه الفريق ومن يبقى حيًّا، لا بلوحة النتائج."
+      },
+      "points": {
+        "en": [
+          "Check the bushes before your carry walks in. Your face is cheaper than theirs.",
+          "Stand between the enemy and your gold laner in the early game; that lane decides the late game.",
+          "Follow your jungler to every objective; arrive before the fight starts, not during it.",
+          "Engage only when your damage dealers are in range to follow.",
+          "When you are behind, stop engaging and peel: protecting one fed carry wins more than a risky initiation."
+        ],
+        "ar": [
+          "افحص الأحراش قبل أن يدخلها حامل الفريق. خسارتك أرخص من خسارته.",
+          "قف بين الخصم ولاعب الذهب في بداية المباراة؛ هذا المسار يحدد نهايتها.",
+          "رافق لاعب الغابة إلى كل هدف، وصِل قبل بدء القتال لا في أثنائه.",
+          "لا تبدأ الاشتباك إلا حين يكون أصحاب الضرر في مدى يسمح بالمتابعة.",
+          "حين تتأخرون توقّف عن البدء واحمِ: حماية حامل قوي تكسب أكثر من اندفاع خطِر."
+        ]
+      }
+    },
+    {
+      "slug": "draft-basics",
+      "track": "competitive",
+      "role": "all",
+      "minutes": 6,
+      "title": { "en": "Draft basics: bans, priority picks and counters", "ar": "أساسيات الدرافت: الحظر والاختيارات ذات الأولوية والكاونتر" },
+      "summary": {
+        "en": "A draft is a plan for how you intend to win. Pick heroes that serve it, not five favourites.",
+        "ar": "الدرافت خطة لطريقة فوزك. اختر الأبطال الذين يخدمونها، لا خمسة أبطال تحبهم."
+      },
+      "points": {
+        "en": [
+          "Ban what you cannot play against, not simply what is strong.",
+          "Take flexible heroes early: a pick that fits two lanes hides your plan.",
+          "Save the counter-pick for the lane that matters most to your win condition.",
+          "Check the five boxes: front line, crowd control, sustained damage, burst and wave clear.",
+          "Use the Draft Coach to see what the current patch and real pro drafts recommend for each slot."
+        ],
+        "ar": [
+          "احظر ما لا تستطيع اللعب ضده، لا ما هو قوي فقط.",
+          "خذ الأبطال المرنين مبكرًا: اختيار يصلح لمسارين يخفي خطتك.",
+          "احتفظ بالكاونتر للمسار الأهم في طريقة فوزك.",
+          "راجع العناصر الخمسة: خط أمامي، تحكم، ضرر مستمر، ضرر خاطف، وتنظيف موجات.",
+          "استخدم مدرّب الدرافت لترى ما يقترحه الباتش الحالي ودرافتات المحترفين الفعلية لكل خانة."
+        ]
+      }
+    },
+    {
+      "slug": "win-conditions",
+      "track": "competitive",
+      "role": "all",
+      "minutes": 5,
+      "title": { "en": "Win conditions and tempo", "ar": "طرق الفوز والإيقاع" },
+      "summary": {
+        "en": "Know when your lineup is strongest and force the game to be played at that minute.",
+        "ar": "اعرف متى تكون تشكيلتك في أقوى حالاتها، وافرض أن تُلعب المباراة في تلك الدقيقة."
+      },
+      "points": {
+        "en": [
+          "Early-game lineups must convert leads into towers before the enemy carries come online.",
+          "Late-game lineups trade objectives for time and refuse fights they do not need.",
+          "Split-push lineups need a side laner who wins the duel and a team that can stall four against five.",
+          "Say the plan out loud before minute one; a team with a bad plan beats a team with none.",
+          "When the plan stops working, change it together, not one player at a time."
+        ],
+        "ar": [
+          "تشكيلات بداية المباراة يجب أن تحوّل تقدمها إلى أبراج قبل أن يقوى حاملو الخصم.",
+          "تشكيلات نهاية المباراة تبادل الأهداف بالوقت وترفض القتالات التي لا تحتاجها.",
+          "تشكيلات الدفع المنفرد تحتاج لاعبًا جانبيًّا يفوز بالمواجهة وفريقًا يصمد أربعة ضد خمسة.",
+          "قولوا الخطة بصوت مسموع قبل الدقيقة الأولى؛ فريق بخطة ضعيفة يغلب فريقًا بلا خطة.",
+          "حين تتوقف الخطة عن العمل غيّروها معًا، لا كل لاعب وحده."
+        ]
+      }
+    },
+    {
+      "slug": "reviewing-your-games",
+      "track": "competitive",
+      "role": "all",
+      "minutes": 4,
+      "title": { "en": "Reviewing your own games", "ar": "مراجعة مبارياتك" },
+      "summary": {
+        "en": "Improvement comes from replays, not from playing more. A short review after each session is enough.",
+        "ar": "التطور يأتي من الإعادات لا من كثرة اللعب. مراجعة قصيرة بعد كل جلسة تكفي."
+      },
+      "points": {
+        "en": [
+          "Review losses first, and start from your own deaths: where were you, and what did the minimap show?",
+          "Note the gold difference at each objective. It shows where the game actually turned.",
+          "Pick one habit to fix per session. Fixing five at once fixes none.",
+          "Watch a pro player in your role from the same patch and compare their first three minutes with yours.",
+          "Keep the review about decisions, never about teammates."
+        ],
+        "ar": [
+          "راجع الخسائر أولًا وابدأ بموتاتك: أين كنت، وماذا كانت تُظهر الخريطة المصغّرة؟",
+          "دوّن فارق الذهب عند كل هدف. هذا يكشف أين انقلبت المباراة فعلًا.",
+          "اختر عادة واحدة تصلحها في كل جلسة. إصلاح خمس دفعة واحدة لا يصلح شيئًا.",
+          "شاهد لاعبًا محترفًا في دورك من الباتش نفسه وقارن دقائقه الثلاث الأولى بدقائقك.",
+          "اجعل المراجعة عن القرارات، لا عن زملائك."
+        ]
+      }
+    }
+  ],
+  "creators": [],
+  "events": []
+}

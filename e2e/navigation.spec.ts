@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-const DESTINATIONS = ['Home', 'Matches', 'Standings', 'Drafts', 'Coach']
+const DESTINATIONS = ['Home', 'Matches', 'Standings', 'Drafts', 'Coach', 'Academy']
 
 test.describe('phone navigation', () => {
   // Sized rather than device-emulated: switching browser engine inside a
@@ -33,6 +33,8 @@ test.describe('phone navigation', () => {
       ['/en/matches/', 'Matches'],
       ['/en/drafts/', 'Drafts'],
       ['/en/draft-coach/', 'Coach'],
+      ['/en/academy/', 'Academy'],
+      ['/en/academy/draft-basics/', 'Academy'],
     ] as const) {
       await page.goto(path)
       const current = page.locator('.mobile-nav a[aria-current="page"]')

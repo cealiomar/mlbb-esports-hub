@@ -17,7 +17,7 @@ async function tinyText(page: Page): Promise<string[]> {
   )
 }
 
-for (const path of ['/en/', '/ar/', '/en/matches/', '/en/drafts/', '/ar/drafts/', '/en/draft-coach/']) {
+for (const path of ['/en/', '/ar/', '/en/matches/', '/en/drafts/', '/ar/drafts/', '/en/draft-coach/', '/en/academy/', '/ar/academy/', '/ar/academy/draft-basics/']) {
   test(`no visible text below 11px on ${path}`, async ({ page }) => {
     await page.setViewportSize(PHONE)
     await page.goto(path)

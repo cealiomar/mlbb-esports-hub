@@ -39,6 +39,16 @@ export interface Player {
   country: string | null
 }
 
+/** A mirrored portrait, tied to one roster entry of one team. */
+export interface PlayerPhoto {
+  teamPageSlug: string
+  handle: string
+  /** Local path under `public/players/`. */
+  photoUrl: string
+  /** The Liquipedia file it was mirrored from, for attribution. */
+  sourceFile: string
+}
+
 export interface Team {
   pageSlug: string
   name: string

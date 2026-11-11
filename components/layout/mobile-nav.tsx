@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 /**
  * Thumb-reachable navigation for phones.
  *
- * The top bar cannot hold five destinations at a usable size on a 375px
+ * The top bar cannot hold six destinations at a usable size on a 375px
  * screen — squeezing them there produced 36px targets a single pixel apart,
  * and Home disappeared entirely. Down here each destination gets a full
  * target and the whole set stays reachable without stretching.
@@ -56,10 +56,19 @@ function IconCoach() {
   )
 }
 
+function IconAcademy() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden className="mobile-nav__icon">
+      <path d="M2.5 9.5 12 5l9.5 4.5L12 14z" />
+      <path d="M6.5 11.6V16c1.6 1.4 3.4 2 5.5 2s3.9-.6 5.5-2v-4.4" />
+    </svg>
+  )
+}
+
 export interface MobileNavItem {
   href: string
   label: string
-  icon: 'home' | 'matches' | 'standings' | 'drafts' | 'coach'
+  icon: 'home' | 'matches' | 'standings' | 'drafts' | 'coach' | 'academy'
 }
 
 const ICONS = {
@@ -68,6 +77,7 @@ const ICONS = {
   standings: IconStandings,
   drafts: IconDrafts,
   coach: IconCoach,
+  academy: IconAcademy,
 } as const
 
 function isCurrent(pathname: string, href: string): boolean {
