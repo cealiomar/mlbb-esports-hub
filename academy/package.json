@@ -1,0 +1,22 @@
+{
+  "name": "mpl-mena-academy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sync": "node scripts/sync-assets.mjs",
+    "dev": "npm run sync && next dev --webpack -p 3200",
+    "build": "npm run sync && next build --webpack",
+    "preview": "npx serve out -l 3200"
+  },
+  "dependencies": {
+    "next": "16.3.2",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

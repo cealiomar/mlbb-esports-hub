@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // A separate site with its own build and config.
+    "academy/**",
   ]),
 ]);
 

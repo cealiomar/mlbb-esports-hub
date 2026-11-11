@@ -1,0 +1,9 @@
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+# Copied from the repository root by scripts/sync-assets.mjs before each build.
+public/heroes/
+public/teams/
+public/players/
+public/brand/
