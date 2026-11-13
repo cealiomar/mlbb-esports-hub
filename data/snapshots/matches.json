@@ -1,5 +1,5 @@
 {
-  "harvestedAt": 1794591169,
+  "harvestedAt": 1794610216,
   "data": [
     {
       "id": "1794636000-mpl-cambodia-season-11-playoffs-vgr-flkh",
@@ -89,22 +89,51 @@
       "vodUrls": []
     },
     {
-      "id": "1794657600-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794657600,
+      "id": "1794650400-betboom-rise-of-legends-season-11-playoffs-yndx-omnx",
+      "startsAt": 1794650400,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "Team_Yandex",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "OMNX",
+          "name": "Omnix",
+          "pageSlug": "",
+          "logoUrl": "/teams/48px-Omnix_darkmode-52e53d56.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Playoffs",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Playoffs",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794655800-betboom-rise-of-legends-season-11-playoffs-fut-chm",
+      "startsAt": 1794655800,
+      "status": "upcoming",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "FUT",
+          "name": "FUT Esports",
+          "pageSlug": "FUT_Esports",
+          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "CHM",
+          "name": "Chempiki",
           "pageSlug": "",
           "logoUrl": null,
           "score": null,
@@ -118,24 +147,24 @@
       "vodUrls": []
     },
     {
-      "id": "1794663000-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794663000,
+      "id": "1794661200-betboom-rise-of-legends-season-11-playoffs-ch-arv",
+      "startsAt": 1794661200,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "code": "CH",
+          "name": "CyberHero",
+          "pageSlug": "CyberHero",
+          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
           "score": null,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "ARV",
+          "name": "Aurevia Team",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
           "score": null,
           "isWinner": false
         }
@@ -147,53 +176,24 @@
       "vodUrls": []
     },
     {
-      "id": "1794668400-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794668400,
+      "id": "1794666600-betboom-rise-of-legends-season-11-playoffs-nt-rkz",
+      "startsAt": 1794666600,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "NT",
+          "name": "Nice Try",
           "pageSlug": "",
           "logoUrl": null,
           "score": null,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "RKZ",
+          "name": "RAKUZAN",
           "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Playoffs",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Playoffs",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794673800-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794673800,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
           "score": null,
           "isWinner": false
         }
@@ -263,8 +263,8 @@
       "vodUrls": []
     },
     {
-      "id": "1794744000-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794744000,
+      "id": "1794736800-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
+      "startsAt": 1794736800,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
@@ -292,8 +292,8 @@
       "vodUrls": []
     },
     {
-      "id": "1794749400-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794749400,
+      "id": "1794742200-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
+      "startsAt": 1794742200,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
@@ -321,8 +321,8 @@
       "vodUrls": []
     },
     {
-      "id": "1794754800-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794754800,
+      "id": "1794747600-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
+      "startsAt": 1794747600,
       "status": "upcoming",
       "bestOf": 5,
       "opponents": [
@@ -350,8 +350,8 @@
       "vodUrls": []
     },
     {
-      "id": "1794760200-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794760200,
+      "id": "1794753000-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
+      "startsAt": 1794753000,
       "status": "upcoming",
       "bestOf": 7,
       "opponents": [
