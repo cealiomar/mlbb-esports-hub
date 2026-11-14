@@ -1,35 +1,6 @@
 {
-  "harvestedAt": 1794672957,
+  "harvestedAt": 1794689694,
   "data": [
-    {
-      "id": "1794666600-betboom-rise-of-legends-season-11-playoffs-nt-rkz",
-      "startsAt": 1794666600,
-      "status": "live",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "NT",
-          "name": "Nice Try",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "RKZ",
-          "name": "RAKUZAN",
-          "pageSlug": "",
-          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Playoffs",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Playoffs",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
     {
       "id": "1794686400-mct-2026-americas-split-2-playoffs-dmx-lyon",
       "startsAt": 1794686400,
@@ -56,7 +27,11 @@
       "tournamentName": "MCT AMER 2026 Split 2 Playoffs - AMER Grand Final",
       "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
+      ],
       "vodUrls": []
     },
     {
@@ -118,7 +93,7 @@
       "vodUrls": []
     },
     {
-      "id": "1794742200-betboom-rise-of-legends-season-11-playoffs-arv-tbd",
+      "id": "1794742200-betboom-rise-of-legends-season-11-playoffs-arv-rkz",
       "startsAt": 1794742200,
       "status": "upcoming",
       "bestOf": 5,
@@ -132,10 +107,10 @@
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "RKZ",
+          "name": "RAKUZAN",
           "pageSlug": "",
-          "logoUrl": null,
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
           "score": null,
           "isWinner": false
         }
@@ -1452,6 +1427,64 @@
       "vodUrls": []
     },
     {
+      "id": "1798988400-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1798988400,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Round 1",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794666600-betboom-rise-of-legends-season-11-playoffs-nt-rkz",
+      "startsAt": 1794666600,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "NT",
+          "name": "Nice Try",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": 1,
+          "isWinner": false
+        },
+        {
+          "code": "RKZ",
+          "name": "RAKUZAN",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
+          "score": 3,
+          "isWinner": true
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Playoffs",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Playoffs",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1794661200-betboom-rise-of-legends-season-11-playoffs-ch-arv",
       "startsAt": 1794661200,
       "status": "completed",
@@ -1565,7 +1598,11 @@
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Playoffs",
       "regionSlug": "cambodia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/live/p_ZyZ2hxGSk?si=xjAYU2GsRJtcM4Nc&t=18349",
+        "https://www.youtube.com/live/p_ZyZ2hxGSk?si=2MZqmwc-rpJOgg4Y&t=20318",
+        "https://www.youtube.com/live/p_ZyZ2hxGSk?si=ri18WG3VzS14K8MN&t=22630"
+      ]
     },
     {
       "id": "1794646800-mahar-invitational-cup-2026-season-3-playoffs-wyv-aura",
@@ -1623,7 +1660,11 @@
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Playoffs",
       "regionSlug": "cambodia",
       "streamUrls": [],
-      "vodUrls": []
+      "vodUrls": [
+        "https://www.youtube.com/live/p_ZyZ2hxGSk?si=MOeONLx6fNVU9uNP&t=3638",
+        "https://www.youtube.com/live/p_ZyZ2hxGSk?si=Diq9UJdUJe4eFo0g&t=6249",
+        "https://www.youtube.com/live/p_ZyZ2hxGSk?si=NS3lrvBK4lSccngL&t=8761"
+      ]
     },
     {
       "id": "1794582000-betboom-rise-of-legends-season-11-group-stage-omnx-hg",
@@ -2918,35 +2959,6 @@
         }
       ],
       "tournamentName": "BetBoom Rise of Legends S11 - Group B",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794139200-betboom-rise-of-legends-season-11-group-stage-af-yndx",
-      "startsAt": 1794139200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "AF",
-          "name": "Aura Farmers",
-          "pageSlug": "",
-          "logoUrl": "/teams/79px-Aura_Famers_icon_darkmode-8108d744.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "Team_Yandex",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group A",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
