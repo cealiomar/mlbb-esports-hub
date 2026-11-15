@@ -1,39 +1,6 @@
 {
-  "harvestedAt": 1794703383,
+  "harvestedAt": 1794727397,
   "data": [
-    {
-      "id": "1794686400-mct-2026-americas-split-2-playoffs-dmx-lyon",
-      "startsAt": 1794686400,
-      "status": "live",
-      "bestOf": 7,
-      "opponents": [
-        {
-          "code": "DMX",
-          "name": "DreamMax e-Sports",
-          "pageSlug": "DreamMax_e-Sports",
-          "logoUrl": "/teams/54px-DreamMax_e-Sports_allmode-84401a53.png",
-          "score": 3,
-          "isWinner": false
-        },
-        {
-          "code": "LYON",
-          "name": "LYON",
-          "pageSlug": "LYON",
-          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
-          "score": 1,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT AMER 2026 Split 2 Playoffs - AMER Grand Final",
-      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_North_America",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MLBB_LATAM",
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Latam"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1794726000-mpl-cambodia-season-11-playoffs-vgr-flkh",
       "startsAt": 1794726000,
@@ -60,6 +27,38 @@
       "tournamentName": "MPL Cambodia Season 11 - Playoffs",
       "tournamentPageSlug": "MPL/Cambodia/Season_11/Playoffs",
       "regionSlug": "cambodia",
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
+      ],
+      "vodUrls": []
+    },
+    {
+      "id": "1794731400-mahar-invitational-cup-2026-season-3-playoffs-myth-wyv",
+      "startsAt": 1794731400,
+      "status": "upcoming",
+      "bestOf": 7,
+      "opponents": [
+        {
+          "code": "MYTH",
+          "name": "Mythic SEAL",
+          "pageSlug": "Mythic_SEAL",
+          "logoUrl": "/teams/50px-Mythic_Seal_allmode-c6d031ba.png",
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "WYV",
+          "name": "Wyverns Esports",
+          "pageSlug": "Wyverns_Esports",
+          "logoUrl": "/teams/45px-Wyverns_Esports_darkmode-09c29f03.png",
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MIC Season 3 - Playoffs",
+      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
+      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1454,6 +1453,41 @@
       "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
+    },
+    {
+      "id": "1794686400-mct-2026-americas-split-2-playoffs-dmx-lyon",
+      "startsAt": 1794686400,
+      "status": "completed",
+      "bestOf": 7,
+      "opponents": [
+        {
+          "code": "DMX",
+          "name": "DreamMax e-Sports",
+          "pageSlug": "DreamMax_e-Sports",
+          "logoUrl": "/teams/54px-DreamMax_e-Sports_allmode-84401a53.png",
+          "score": 4,
+          "isWinner": true
+        },
+        {
+          "code": "LYON",
+          "name": "LYON",
+          "pageSlug": "LYON",
+          "logoUrl": "/teams/43px-LYON_2025_allmode-add6fffc.png",
+          "score": 1,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MCT AMER 2026 Split 2 Playoffs - AMER Grand Final",
+      "tournamentPageSlug": "MCT/2026/Americas/Split_2/Playoffs",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": [
+        "https://youtu.be/hZcTcIGbJI4?t=2757",
+        "https://youtu.be/hZcTcIGbJI4?t=5828",
+        "https://youtu.be/hZcTcIGbJI4?t=8473",
+        "https://youtu.be/hZcTcIGbJI4?t=11951",
+        "https://youtu.be/hZcTcIGbJI4?t=14577"
+      ]
     },
     {
       "id": "1794666600-betboom-rise-of-legends-season-11-playoffs-nt-rkz",
@@ -2930,35 +2964,6 @@
         }
       ],
       "tournamentName": "BetBoom Rise of Legends S11 - Group C",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794144600-betboom-rise-of-legends-season-11-group-stage-dp-fut",
-      "startsAt": 1794144600,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "DP",
-          "name": "Dark Phoenix",
-          "pageSlug": "Dark_Phoenix",
-          "logoUrl": "/teams/50px-Dark_Phoenix_2025_allmode-acbb8719.png",
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "FUT",
-          "name": "FUT Esports",
-          "pageSlug": "FUT_Esports",
-          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group B",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
       "regionSlug": "cis",
       "streamUrls": [],
