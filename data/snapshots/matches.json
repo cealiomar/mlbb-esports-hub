@@ -1,42 +1,10 @@
 {
-  "harvestedAt": 1794727397,
+  "harvestedAt": 1794754639,
   "data": [
-    {
-      "id": "1794726000-mpl-cambodia-season-11-playoffs-vgr-flkh",
-      "startsAt": 1794726000,
-      "status": "upcoming",
-      "bestOf": 7,
-      "opponents": [
-        {
-          "code": "VGR",
-          "name": "Vigor Apex",
-          "pageSlug": "",
-          "logoUrl": "/teams/50px-Vigor_Apex_allmode-8df99e65.png",
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "FLKH",
-          "name": "Team Flash KH",
-          "pageSlug": "Team_Flash_KH",
-          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MPL Cambodia Season 11 - Playoffs",
-      "tournamentPageSlug": "MPL/Cambodia/Season_11/Playoffs",
-      "regionSlug": "cambodia",
-      "streamUrls": [
-        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/MPL_Cambodia",
-        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/MPL_Cambodia"
-      ],
-      "vodUrls": []
-    },
     {
       "id": "1794731400-mahar-invitational-cup-2026-season-3-playoffs-myth-wyv",
       "startsAt": 1794731400,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 7,
       "opponents": [
         {
@@ -44,7 +12,7 @@
           "name": "Mythic SEAL",
           "pageSlug": "Mythic_SEAL",
           "logoUrl": "/teams/50px-Mythic_Seal_allmode-c6d031ba.png",
-          "score": null,
+          "score": 2,
           "isWinner": false
         },
         {
@@ -52,57 +20,31 @@
           "name": "Wyverns Esports",
           "pageSlug": "Wyverns_Esports",
           "logoUrl": "/teams/45px-Wyverns_Esports_darkmode-09c29f03.png",
-          "score": null,
+          "score": 3,
           "isWinner": false
         }
       ],
       "tournamentName": "MIC Season 3 - Playoffs",
       "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
+      "streamUrls": [
+        "https://liquipedia.net/mobilelegends/Special:Stream/youtube/Mahar_Esports_Official",
+        "https://liquipedia.net/mobilelegends/Special:Stream/facebook/Mahar_Esports_Official"
+      ],
       "vodUrls": []
     },
     {
-      "id": "1794736800-betboom-rise-of-legends-season-11-playoffs-yndx-fut",
-      "startsAt": 1794736800,
-      "status": "upcoming",
+      "id": "1794747600-betboom-rise-of-legends-season-11-playoffs-fut-rkz",
+      "startsAt": 1794747600,
+      "status": "live",
       "bestOf": 5,
       "opponents": [
-        {
-          "code": "YNDX",
-          "name": "Team Yandex",
-          "pageSlug": "Team_Yandex",
-          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
-          "score": null,
-          "isWinner": false
-        },
         {
           "code": "FUT",
           "name": "FUT Esports",
           "pageSlug": "FUT_Esports",
           "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Playoffs",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Playoffs",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794742200-betboom-rise-of-legends-season-11-playoffs-arv-rkz",
-      "startsAt": 1794742200,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "ARV",
-          "name": "Aurevia Team",
-          "pageSlug": "",
-          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         },
         {
@@ -110,7 +52,7 @@
           "name": "RAKUZAN",
           "pageSlug": "",
           "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
-          "score": null,
+          "score": 0,
           "isWinner": false
         }
       ],
@@ -121,495 +63,31 @@
       "vodUrls": []
     },
     {
-      "id": "1794747600-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
-      "startsAt": 1794747600,
-      "status": "upcoming",
-      "bestOf": 5,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Playoffs",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Playoffs",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794753000-betboom-rise-of-legends-season-11-playoffs-tbd-tbd",
+      "id": "1794753000-betboom-rise-of-legends-season-11-playoffs-yndx-arv",
       "startsAt": 1794753000,
-      "status": "upcoming",
+      "status": "live",
       "bestOf": 7,
       "opponents": [
         {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "Team_Yandex",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": 0,
           "isWinner": false
         },
         {
-          "code": "TBD",
-          "name": "TBD",
+          "code": "ARV",
+          "name": "Aurevia Team",
           "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": 0,
           "isWinner": false
         }
       ],
       "tournamentName": "BetBoom Rise of Legends S11 - Playoffs",
       "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Playoffs",
       "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group A",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-2",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group A",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-3",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group A",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-4",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group B",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-5",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group B",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-6",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group B",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-7",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group C",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-8",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group C",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-9",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group C",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-10",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group D",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-11",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group D",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796749200-mct-2026-southeast-asia-group-stage-tbd-tbd-12",
-      "startsAt": 1796749200,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026 - Group D",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Group_Stage",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796835600-mct-2026-southeast-asia-last-chance-qualifier-tbd-tbd",
-      "startsAt": 1796835600,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Last_Chance_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796835600-mct-2026-southeast-asia-last-chance-qualifier-tbd-tbd-2",
-      "startsAt": 1796835600,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Last_Chance_Qualifier",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1796835600-mct-2026-southeast-asia-last-chance-qualifier-tbd-tbd-3",
-      "startsAt": 1796835600,
-      "status": "upcoming",
-      "bestOf": 1,
-      "opponents": [
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        },
-        {
-          "code": "TBD",
-          "name": "TBD",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": null,
-          "isWinner": false
-        }
-      ],
-      "tournamentName": "MCT SEA 2026",
-      "tournamentPageSlug": "MCT/2026/Southeast_Asia/Last_Chance_Qualifier",
-      "regionSlug": null,
       "streamUrls": [],
       "vodUrls": []
     },
@@ -1455,6 +933,615 @@
       "vodUrls": []
     },
     {
+      "id": "1798992000-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1798992000,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Round 1",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1798995600-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1798995600,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Round 1",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799056800-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799056800,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - High (1-0)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799060400-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799060400,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - High (1-0)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799064000-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799064000,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - High (1-0)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799067600-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799067600,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - High (1-0)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799071200-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799071200,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Low (0-1)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799074800-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799074800,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Low (0-1)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799078400-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799078400,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Low (0-1)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799082000-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799082000,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Low (0-1)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799235000-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799235000,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Low (0-2)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799242200-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799242200,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Mid (1-1)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799245800-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799245800,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Mid (1-1)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799249400-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799249400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - High (2-0)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799321400-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799321400,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Low (0-2)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799328600-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799328600,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Mid (1-1)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799332200-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799332200,
+      "status": "upcoming",
+      "bestOf": 1,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - Mid (1-1)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1799335800-m8-world-championship-swiss-stage-tbd-tbd",
+      "startsAt": 1799335800,
+      "status": "upcoming",
+      "bestOf": 3,
+      "opponents": [
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "pageSlug": "",
+          "logoUrl": null,
+          "score": null,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "M8 World Championship - High (2-0)",
+      "tournamentPageSlug": "M8_World_Championship/Swiss_Stage",
+      "regionSlug": null,
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794746700-betboom-rise-of-legends-season-11-playoffs-arv-rkz",
+      "startsAt": 1794746700,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "ARV",
+          "name": "Aurevia Team",
+          "pageSlug": "",
+          "logoUrl": "/teams/67px-Aurevia_Team_allmode-f9697f06.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "RKZ",
+          "name": "RAKUZAN",
+          "pageSlug": "",
+          "logoUrl": "/teams/63px-Rakuzan_darkmode-adbdfc2f.png",
+          "score": 0,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Playoffs",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Playoffs",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794736800-betboom-rise-of-legends-season-11-playoffs-yndx-fut",
+      "startsAt": 1794736800,
+      "status": "completed",
+      "bestOf": 5,
+      "opponents": [
+        {
+          "code": "YNDX",
+          "name": "Team Yandex",
+          "pageSlug": "Team_Yandex",
+          "logoUrl": "/teams/60px-Team_Yandex_darkmode-b55fe52a.png",
+          "score": 3,
+          "isWinner": true
+        },
+        {
+          "code": "FUT",
+          "name": "FUT Esports",
+          "pageSlug": "FUT_Esports",
+          "logoUrl": "/teams/26px-Futbolist_2021_darkmode-162d8890.png",
+          "score": 2,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "BetBoom Rise of Legends S11 - Playoffs",
+      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Playoffs",
+      "regionSlug": "cis",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
+      "id": "1794726000-mpl-cambodia-season-11-playoffs-vgr-flkh",
+      "startsAt": 1794726000,
+      "status": "completed",
+      "bestOf": 7,
+      "opponents": [
+        {
+          "code": "VGR",
+          "name": "Vigor Apex",
+          "pageSlug": "Vigor_Apex",
+          "logoUrl": "/teams/50px-Vigor_Apex_allmode-8df99e65.png",
+          "score": 4,
+          "isWinner": true
+        },
+        {
+          "code": "FLKH",
+          "name": "Team Flash KH",
+          "pageSlug": "Team_Flash_KH",
+          "logoUrl": "/teams/56px-Team_Flash_allmode-c79a21c3.png",
+          "score": 2,
+          "isWinner": false
+        }
+      ],
+      "tournamentName": "MPL Cambodia Season 11 - Playoffs",
+      "tournamentPageSlug": "MPL/Cambodia/Season_11/Playoffs",
+      "regionSlug": "cambodia",
+      "streamUrls": [],
+      "vodUrls": []
+    },
+    {
       "id": "1794686400-mct-2026-americas-split-2-playoffs-dmx-lyon",
       "startsAt": 1794686400,
       "status": "completed",
@@ -1676,7 +1763,7 @@
         {
           "code": "VGR",
           "name": "Vigor Apex",
-          "pageSlug": "",
+          "pageSlug": "Vigor_Apex",
           "logoUrl": "/teams/50px-Vigor_Apex_allmode-8df99e65.png",
           "score": 3,
           "isWinner": true
@@ -1901,7 +1988,7 @@
         {
           "code": "VGR",
           "name": "Vigor Apex",
-          "pageSlug": "",
+          "pageSlug": "Vigor_Apex",
           "logoUrl": "/teams/50px-Vigor_Apex_allmode-8df99e65.png",
           "score": 3,
           "isWinner": true
@@ -2090,7 +2177,7 @@
         {
           "code": "Val",
           "name": "Valhalla",
-          "pageSlug": "",
+          "pageSlug": "Valhalla",
           "logoUrl": "/teams/38px-VALHALLA_allmode-1537d573.png",
           "score": 2,
           "isWinner": false
@@ -2879,93 +2966,6 @@
       "tournamentName": "MIC Season 3 - Playoffs",
       "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
       "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794202200-mahar-invitational-cup-2026-season-3-playoffs-bl-myth",
-      "startsAt": 1794202200,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BL",
-          "name": "BlueLock",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "MYTH",
-          "name": "Mythic SEAL",
-          "pageSlug": "Mythic_SEAL",
-          "logoUrl": "/teams/50px-Mythic_Seal_allmode-c6d031ba.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "MIC Season 3 - Playoffs",
-      "tournamentPageSlug": "Mahar_Invitational_Cup/2026/Season_3/Playoffs",
-      "regionSlug": null,
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794155400-betboom-rise-of-legends-season-11-group-stage-hg-nt",
-      "startsAt": 1794155400,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "HG",
-          "name": "HARD GRIND",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 0,
-          "isWinner": false
-        },
-        {
-          "code": "NT",
-          "name": "Nice Try",
-          "pageSlug": "",
-          "logoUrl": null,
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group D",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
-      "streamUrls": [],
-      "vodUrls": []
-    },
-    {
-      "id": "1794150000-betboom-rise-of-legends-season-11-group-stage-bw-ch",
-      "startsAt": 1794150000,
-      "status": "completed",
-      "bestOf": 3,
-      "opponents": [
-        {
-          "code": "BW",
-          "name": "Bushido Wildcats",
-          "pageSlug": "Bushido_Wildcats",
-          "logoUrl": "/teams/53px-Bushido_Wildcats_2026_allmode-681ab4a6.png",
-          "score": 1,
-          "isWinner": false
-        },
-        {
-          "code": "CH",
-          "name": "CyberHero",
-          "pageSlug": "CyberHero",
-          "logoUrl": "/teams/44px-CyberHero_2025_darkmode-f0676f44.png",
-          "score": 2,
-          "isWinner": true
-        }
-      ],
-      "tournamentName": "BetBoom Rise of Legends S11 - Group C",
-      "tournamentPageSlug": "BetBoom_Rise_of_Legends/Season_11/Group_Stage",
-      "regionSlug": "cis",
       "streamUrls": [],
       "vodUrls": []
     }
